@@ -589,6 +589,12 @@ textarea {
   width: 100%;
 }
 
+.config-status {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
 .method-list {
   display: grid;
   gap: 8px;

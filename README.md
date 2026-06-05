@@ -91,6 +91,8 @@ The source form on `sources.html` cannot write to GitHub directly because GitHub
 
 After that, GitHub Actions will use the new source in the next run.
 
+On `sources.html`, the source list's `修改` button locates the matching entry in the `sources.json` text area for manual editing. If you add a source with an existing journal or account name, the page will not duplicate it; it locates the existing JSON entry instead.
+
 To update sources on GitHub after exporting `/Users/xcli/Documents/Codex/prj_paper-daily/sources.json`:
 
 1. Open the GitHub repository.
