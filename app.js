@@ -235,7 +235,7 @@ const logs = [
     date: "今日更新",
     title: "Paper Daily 原型上线",
     body:
-      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报展示近 5 日质量分最高的 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置；GitHub 自动更新设置为北京时间每日 04:00。"
+      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报按日期展示近 5 日结果，每天单独筛选质量分 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置，并对同名信源执行更新而非重复添加；GitHub 自动更新设置为北京时间每日 04:00。"
   },
   {
     version: "next",
@@ -292,12 +292,42 @@ function isRecentPaper(paper) {
   if (!paper.date) return true;
   const date = new Date(`${paper.date}T00:00:00`);
   if (Number.isNaN(date.getTime())) return true;
-  const ageMs = Date.now() - date.getTime();
-  return ageMs <= RECENT_DAYS * 24 * 60 * 60 * 1000;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const cutoff = new Date(today);
+  cutoff.setDate(cutoff.getDate() - RECENT_DAYS + 1);
+  return date >= cutoff && date <= today;
 }
 
 function recentPapers() {
   return papers.filter(isRecentPaper);
+}
+
+function dateKeyForPaper(paper) {
+  return paper.date || "undated";
+}
+
+function dateLabel(date) {
+  return date === "undated" ? "未标日期" : date;
+}
+
+function groupPapersByDate(items) {
+  const byDate = new Map();
+  items.forEach((paper) => {
+    const key = dateKeyForPaper(paper);
+    if (!byDate.has(key)) byDate.set(key, []);
+    byDate.get(key).push(paper);
+  });
+  return [...byDate.entries()]
+    .sort(([a], [b]) => {
+      if (a === "undated") return 1;
+      if (b === "undated") return -1;
+      return b.localeCompare(a);
+    })
+    .map(([date, entries]) => ({
+      date,
+      entries: [...entries].sort((a, b) => adjustedScore(b) - adjustedScore(a))
+    }));
 }
 
 async function loadGeneratedData() {
@@ -559,8 +589,8 @@ function renderUpdates() {
       <button class="tab active" data-filter="all">全部</button>
       <button class="tab" data-filter="comprehensive">综合期刊</button>
       <button class="tab" data-filter="professional">专业期刊</button>
-      <button class="tab" data-filter="wechat">微信公众号</button>
       <button class="tab" data-filter="news">新闻报道</button>
+      <button class="tab" data-filter="wechat">微信公众号</button>
     </div>
     <section class="grid" id="feed"></section>
   `;
@@ -573,26 +603,40 @@ function renderFeed(filter = activeFeedFilter) {
   const visible = filter === "all" ? pool : pool.filter((paper) => paper.sourceType === filter);
   const feedback = getFeedback();
   renderThemePanel();
-  document.querySelector("#feed").innerHTML = visible
+  document.querySelector("#feed").innerHTML = groupPapersByDate(visible)
     .map(
-      (paper) => `
-        <article class="card feed-item">
-          <div>
-            <div class="feed-title"><a href="${paper.paperUrl}">${paper.title}</a></div>
-            <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
-            <div class="tag-row feed-tags">
-              ${paper.tags
-                .map((tag) => `<span class="tag">${topicLabels[tag] || tag}</span>`)
-                .join("")}
+      (group) => `
+        <section class="date-section">
+          <div class="date-heading">
+            <strong>${dateLabel(group.date)}</strong>
+            <span>${group.entries.length} 条</span>
+          </div>
+          <div class="grid">
+            ${group.entries
+              .map(
+                (paper) => `
+                  <article class="card feed-item">
+                    <div>
+                      <div class="feed-title"><a href="${paper.paperUrl}">${paper.title}</a></div>
+                      <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
+                      <div class="tag-row feed-tags">
+                        ${paper.tags
+                          .map((tag) => `<span class="tag">${topicLabels[tag] || tag}</span>`)
+                          .join("")}
+                      </div>
+                      ${referenceBlock(paper)}
+                    </div>
+                    <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
+                    <div class="feedback" aria-label="主题反馈">
+                      <button class="${feedback[paper.id] === "like" ? "active" : ""}" data-feedback="like" data-paper="${paper.id}" title="like" aria-label="like">${feedbackIcon("like")}</button>
+                      <button class="${feedback[paper.id] === "dislike" ? "active negative" : ""}" data-feedback="dislike" data-paper="${paper.id}" title="不喜欢" aria-label="不喜欢">${feedbackIcon("dislike")}</button>
+                    </div>
+                  </article>
+                `
+              )
+              .join("")}
             </div>
-            ${referenceBlock(paper)}
-          </div>
-          <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
-          <div class="feedback" aria-label="主题反馈">
-            <button class="${feedback[paper.id] === "like" ? "active" : ""}" data-feedback="like" data-paper="${paper.id}" title="like" aria-label="like">${feedbackIcon("like")}</button>
-            <button class="${feedback[paper.id] === "dislike" ? "active negative" : ""}" data-feedback="dislike" data-paper="${paper.id}" title="不喜欢" aria-label="不喜欢">${feedbackIcon("dislike")}</button>
-          </div>
-        </article>
+        </section>
       `
     )
     .join("");
@@ -694,10 +738,27 @@ function bindFeed() {
 }
 
 function renderDaily() {
-  const selected = [...recentPapers()].sort((a, b) => adjustedScore(b) - adjustedScore(a)).slice(0, 10);
+  const groups = groupPapersByDate(recentPapers()).map((group) => ({
+    ...group,
+    entries: group.entries.slice(0, 10)
+  }));
   root.innerHTML = `
-    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · top 10 selected`)}
-    <section class="grid" id="dailyList">${selected.map((paper) => paperCard(paper)).join("")}</section>
+    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · 每日 top 10 selected`)}
+    <section class="grid" id="dailyList">
+      ${groups
+        .map(
+          (group) => `
+            <section class="date-section">
+              <div class="date-heading">
+                <strong>${dateLabel(group.date)}</strong>
+                <span>Top ${group.entries.length}</span>
+              </div>
+              <div class="grid">${group.entries.map((paper) => paperCard(paper)).join("")}</div>
+            </section>
+          `
+        )
+        .join("")}
+    </section>
   `;
 }
 
@@ -712,6 +773,14 @@ function slugify(value) {
 
 function likelyFeedUrl(url) {
   return /\.(rss|xml|atom)($|\?)/i.test(url) || /rss|feed|atom/i.test(url);
+}
+
+function normalizeSourceName(value = "") {
+  return value.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function sourceKey(item) {
+  return normalizeSourceName(item.name) || item.id || slugify(item.feedUrl || item.pageUrl || "");
 }
 
 function sourceFormToConfig({ name, category, weight, url }) {
@@ -760,7 +829,9 @@ function sourceConfigToDisplay(item) {
 function mergeSourceConfigs(items) {
   const map = new Map();
   items.forEach((item) => {
-    map.set(item.id || slugify(item.name), item);
+    const key = sourceKey(item);
+    const existing = map.get(key);
+    map.set(key, existing ? { ...existing, ...item, id: existing.id || item.id } : item);
   });
   return [...map.values()];
 }
@@ -791,10 +862,10 @@ function renderSources() {
         <div class="field">
           <label for="sourceType">信源类型</label>
           <select id="sourceType">
-            <option value="professional">期刊 RSS</option>
-            <option value="wechat">微信公众号</option>
-            <option value="news">新闻报道 RSS</option>
             <option value="comprehensive">综合期刊</option>
+            <option value="professional">期刊 RSS</option>
+            <option value="news">新闻报道 RSS</option>
+            <option value="wechat">微信公众号</option>
           </select>
         </div>
         <div class="field">
@@ -863,9 +934,10 @@ function renderSources() {
 }
 
 function bindSources() {
-  const saved = JSON.parse(localStorage.getItem("paperDailySourceConfigs") || "[]").filter(
-    (item) => item && item.id && item.name
-  );
+  const saved = mergeSourceConfigs(
+    JSON.parse(localStorage.getItem("paperDailySourceConfigs") || "[]")
+  ).filter((item) => item && item.id && item.name);
+  localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
   const list = document.querySelector("#sourceList");
   const output = document.querySelector("#sourceConfigOutput");
   let currentConfigs = [];
@@ -875,8 +947,8 @@ function bindSources() {
     const labels = {
       comprehensive: "综合期刊",
       professional: "专业期刊 RSS",
-      wechat: "微信公众号",
-      news: "新闻报道 RSS"
+      news: "新闻报道 RSS",
+      wechat: "微信公众号"
     };
 
     list.innerHTML = Object.entries(labels)
@@ -922,7 +994,12 @@ function bindSources() {
       weight: Number(document.querySelector("#sourceTier").value),
       url: document.querySelector("#sourceUrl").value.trim()
     });
-    saved.push(item);
+    const savedIndex = saved.findIndex((entry) => sourceKey(entry) === sourceKey(item));
+    if (savedIndex >= 0) {
+      saved[savedIndex] = { ...saved[savedIndex], ...item, id: saved[savedIndex].id || item.id };
+    } else {
+      saved.push(item);
+    }
     localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
     currentConfigs = mergeSourceConfigs([...currentConfigs, item]);
     draw(currentConfigs);
