@@ -1,10 +1,41 @@
 {
-  "generatedAt": "2026-06-05T18:20:00.457Z",
+  "generatedAt": "2026-06-05T18:45:26.407Z",
   "dryRun": false,
   "prescreenModel": "deepseek-v4-flash",
   "scoreModel": "deepseek-v4-pro",
   "topicWeights": {},
   "items": [
+    {
+      "id": "nature-ecology-evolution-2-QmlvZGl2ZXJz",
+      "title": "Biodiversity loss will decrease the future creditworthiness of nations",
+      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03081-7 Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.",
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03081-7",
+      "url": "https://www.nature.com/articles/s41559-026-03081-7",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03081-7"
+        }
+      ],
+      "tags": [
+        "methods"
+      ],
+      "oneLine": "情景模型评估生物多样性丧失对主权信用评级的影响，涉及生态经济建模方法。",
+      "summary": "本研究利用情景模型评估了生物多样性丧失对23个国家主权信用评级的影响。模拟考虑了木材生产、野生授粉和海洋渔业部分崩溃的情景，结果发现这些生态服务的衰退将显著降低国家的信用评级并推高借贷成本。该研究将生态模型与经济风险直接挂钩，展示了自然资本流失如何转化为国家财政压力。虽然主题偏离用户关注的植物入侵与面源污染，但其生态模型方法在风险管理中的应用对生态建模领域有一定启示。",
+      "reason": "涉及生态情景模型，但主题聚焦经济信用评级，与用户核心的植物入侵、风电、农田排水等方向关联度低，属于外围相关。",
+      "score": 71,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "Biodiversity loss will decrease the future creditworthiness of nations. (2026). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03081-7",
+      "generatedAt": "2026-06-05T18:43:50.226Z"
+    },
     {
       "id": "nature-ecology-evolution-0-TmF0dXJlIEVj",
       "title": "Nature Ecology & Evolution",
@@ -24,17 +55,48 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "该研究发现生态系统服务损失可能实质性增加政府借贷成本，揭示了生态退化对国家财政的经济风险。",
-      "summary": "本研究将生态经济情景与机器学习模型相结合，模拟国家信用评级的形成机制，评估生态系统服务退化对政府借贷成本的影响。结果显示，即使仅三种服务（如传粉、滨海防护、淡水供给）发生部分损失，也可能显著推高借贷成本。研究揭示了自然资本退化的宏观经济后果，为将生态风险纳入财政决策提供了量化依据。尽管不直接针对植物入侵或农田面源污染等具体议题，其耦合生态过程与金融风险的方法，对生态监测与管理具有跨学科参考价值。",
-      "reason": "该论文研究生态系统服务丧失对主权借贷成本的经济影响，虽涉及生态经济模型与机器学习，但与用户关注的植物入侵、农田排水、遥感监测等核心方向无直接关联，主题相关性较弱。",
-      "score": 61,
+      "oneLine": "生态系统服务损失可能通过影响国家信用评级进而提高政府借贷成本，但与用户核心研究方向关联弱。",
+      "summary": "该研究将生态经济情景与机器学习模型结合，模拟了三种生态系统服务损失对国家信用评级的影响，发现即使部分服务退化也可能导致主权信用评级下调，从而提高政府借贷成本。这一发现将自然资本损耗与金融风险相挂钩。然而，该主题属于生态经济学与金融交叉，与用户关注的植物入侵、风电、农田排水和生态遥感监测等方向重合度低，仅作为交叉方法参考。",
+      "reason": "研究生态经济情景与信用评级，与植物入侵、风电、面源污染及生态遥感监测等核心方向均无直接关联，仅方法上有生态模型元素，主题相关性弱。",
+      "score": 56,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 20,
+        "theme": 15,
         "type": 17
       },
-      "citation": "Nature Ecology & Evolution. (2026). Nature Ecology & Evolution. doi:10.1038/s41559-026-03101-6",
-      "generatedAt": "2026-06-05T18:18:16.724Z"
+      "citation": "Nature Ecology & Evolution. (2026, June 5). [Ecological-economic scenarios and credit ratings]. Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03101-6",
+      "generatedAt": "2026-06-05T18:43:02.592Z"
+    },
+    {
+      "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
+      "title": "Latitudinal patterns and environmental correlates of plant root exudation",
+      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.",
+      "journal": "Nature Ecology & Evolution",
+      "type": "Methods",
+      "doi": "10.1038/s41559-026-03103-4",
+      "url": "https://www.nature.com/articles/s41559-026-03103-4",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03103-4"
+        }
+      ],
+      "tags": [
+        "methods"
+      ],
+      "oneLine": "该研究通过汇编全球数据集，分析了植物根系分泌物速率的纬度格局及环境驱动，发现土壤磷缺乏是关键影响因素。",
+      "summary": "本研究通过汇编全球植物根系分泌物速率、根性状和环境协变量的数据集，分析了根系碳分泌的纬度格局及其驱动因素。研究发现，根系分泌物速率一般从高纬度向低纬度增加，土壤磷缺乏是最重要的影响因子。这一成果揭示了植物地下碳分配的宏观生态模式，为理解生态系统碳循环对全球变化的响应提供了新视角。然而，其主题与用户核心方向如植物入侵、火烧风险、风电项目、农田排水或生态遥感模型无直接联系，仅具有背景性参考价值。",
+      "reason": "该研究聚焦植物根系分泌物纬度格局，与用户关注的风电、入侵、面源污染、遥感监测无直接关联，属于植物生态学基础研究，相关性弱。",
+      "score": 53,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 15,
+        "type": 14
+      },
+      "citation": "Latitudinal patterns and environmental correlates of plant root exudation. (2026). *Nature Ecology & Evolution*. Advance online publication. https://doi.org/10.1038/s41559-026-03103-4",
+      "generatedAt": "2026-06-05T18:43:26.692Z"
     },
     {
       "id": "science-4-R2xvYmFsIGV4",
@@ -55,79 +117,17 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "该研究利用高分辨率卫星数据量化全球树木覆盖损失，为生态遥感监测提供技术参考。",
-      "summary": "本研究利用高分辨率卫星数据对全球树木覆盖损失进行量化，并分析其驱动因素。通过遥感影像解析，揭示了树木覆盖变化的时空格局及主要驱动力，展示了高分辨率遥感在植被动态监测中的应用潜力。该研究为生态遥感监测提供了方法论借鉴，尤其可为火烧、入侵等导致的植被丧失监测提供技术参考，但未直接涉及植物入侵或风力发电等特定场景。",
-      "reason": "研究利用高分辨率卫星数据量化全球树木覆盖损失，属于生态遥感监测方法，可为用户提供高分辨率植被变化监测的技术参考，但与植物入侵、火烧、风电等核心课题无直接关联，属于相关但偏外围。",
-      "score": 81,
+      "oneLine": "本研究利用高分辨率卫星数据量化了全球树冠覆盖损失的规模及其驱动因素，为生态遥感监测方法提供了新见解。",
+      "summary": "这项发表于《Science》的研究利用高分辨率卫星影像，在全球尺度上系统量化了树冠覆盖损失的时空格局及主要驱动因子。通过高分辨率数据，研究能够更准确地识别树冠损失的规模和位置，并分析其与人类活动、气候变化等驱动因素的关系。该方法为生态遥感监测提供了高精度的技术手段，可用于评估森林退化、碳动态及生物多样性影响。对于关注生态遥感、土地利用变化和监测方法的研究者而言，该研究展示了卫星数据在精细尺度生态评估中的潜力，为相关领域的模型开发和管理决策提供了重要参考。尽管研究未直接涉及植物入侵或风力发电，但其方法框架可应用于入侵物种监测和风电项目对植被影响的评估中，因此具有广泛的借鉴价值。",
+      "reason": "该研究聚焦高分辨率卫星遥感方法在量化全球树冠覆盖损失中的应用，直接命中用户核心兴趣“生态遥感、模型和监测方法”，可支持监测方案开发，主题高度相关。",
+      "score": 95,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 34,
+        "theme": 48,
         "type": 17
       },
       "citation": "Global extent and drivers of tree cover loss quantified with high-resolution satellite data. (2026). Science, 392(6802). https://doi.org/10.1126/science.adz9042",
-      "generatedAt": "2026-06-05T18:12:15.609Z"
-    },
-    {
-      "id": "science-7-RmlyZXMgcmV2",
-      "title": "Fires reverse progress toward ozone air quality standards in the United States",
-      "abstract": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026.",
-      "journal": "Science",
-      "type": "Article",
-      "doi": "10.1126/science.aed3197",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R",
-      "date": "2026-06-04",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R"
-        }
-      ],
-      "tags": [
-        "fire"
-      ],
-      "oneLine": "野火逆转了美国臭氧空气质量标准的改善进程。",
-      "summary": "该研究分析了美国野火对臭氧空气质量标准进展的影响。研究发现，随着野火频发，其排放的污染物导致地面臭氧浓度上升，部分抵消了人为减排努力所取得的空气质量改善。研究基于长期监测数据，揭示了气候驱动的火灾事件对空气质量管理构成的挑战。尽管大气污染物控制政策取得一定成效，但火灾的增强效应可能使达标进程停滞甚至逆转。这一发现提示，在环境政策制定中需考虑自然灾害的干扰，并对未来气候情景下的空气质量风险进行评估。对于关注火烧生态与管理的读者，该研究提供了火灾对大气环境影响的宏观证据，但未涉及植物入侵与火烧的相互作用。",
-      "reason": "论文聚焦野火对美国臭氧空气质量标准的影响，属于火生态范畴，但用户核心方向为植物入侵与火烧风险关系，此论文不涉及植物入侵，相关性较弱。",
-      "score": 79,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 32,
-        "type": 17
-      },
-      "citation": "Fires reverse progress toward ozone air quality standards in the United States. (2026, June 4). Science, 392(6802), 1088–1092. https://doi.org/10.1126/science.aed3197",
-      "generatedAt": "2026-06-05T18:12:50.094Z"
-    },
-    {
-      "id": "science-17-TGFuZHNjYXBl",
-      "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
-      "abstract": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026.",
-      "journal": "Science",
-      "type": "Article",
-      "doi": "10.1126/science.aea9058",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R",
-      "date": "2026-06-04",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R"
-        }
-      ],
-      "tags": [
-        "methods"
-      ],
-      "oneLine": "该研究提出了景观效率前沿，用于权衡生物多样性、气候减缓与经济效益，可能包含生态模型方法。",
-      "summary": "本文发表于《Science》，提出“景观效率前沿”的分析框架，用于权衡生物多样性保护、气候减缓与净经济价值等多目标。研究可能整合生态模型与优化方法，在不同土地利用情景下评估效率表现。然而，由于摘要信息缺失，具体方法、数据与主要发现不详。该工作提供景观尺度决策支持，但与本日报关注的植物入侵风险、风电项目生态影响、农田面源污染等课题关联较弱，生态模型方法论的参考价值也有限。建议相关研究者按需追溯原文。",
-      "reason": "涉及景观多目标优化方法，与用户核心方向（植物入侵、风电、农田排水）关联较弱，仅作为生态模型参考。",
-      "score": 67,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 20,
-        "type": 17
-      },
-      "citation": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value. (2026). Science, 392(6802), 1069–1074. https://doi.org/10.1126/science.aea9058",
-      "generatedAt": "2026-06-05T18:13:31.638Z"
+      "generatedAt": "2026-06-05T18:39:00.259Z"
     },
     {
       "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
@@ -146,20 +146,19 @@
         }
       ],
       "tags": [
-        "wind",
-        "methods"
+        "wind"
       ],
-      "oneLine": "中国风电扩张的规划尺度差异显著改变生物多样性影响格局，为可再生能源的生态友好选址提供了关键证据。",
-      "summary": "该研究模拟了中国到2060年太阳能和风电扩张在国家统一规划与分省规划两种情景下的空间布局，并量化其对生物多样性的影响。结果表明，不同规划尺度会导致截然不同的生物多样性权衡：国家层面统筹可能更有利于保护全局关键栖息地，但可能忽略区域特有物种；省级自主规划则可能加剧栖息地破碎化。研究强调，必须采用跨尺度综合选址策略，才能同时实现气候目标与生物多样性保护。论文的方法框架可直接用于评估风电项目对植物入侵等具体生态风险的潜在影响，为优化项目布局提供科学依据。",
-      "reason": "研究直接评估中国风电扩张在不同规划尺度下的生物多样性影响，与用户关注的“风电项目与植物入侵风险”方向高度重叠，能为风电选址的生态风险管理提供方法和政策启示。",
-      "score": 84,
+      "oneLine": "不同规划尺度下中国风电扩张的生物多样性权衡差异为可再生能源选址提供了多视角启示。",
+      "summary": "本研究通过建模预测中国到2060年太阳能和风能扩张的路径，比较了国家与省级规划情景。结果显示，不同的规划尺度导致生物多样性出现明显不同的权衡格局，强调在气候目标与生物多样性保护之间需要多尺度、综合性的选址策略。该发现对理解风电发展的生态后果具有重要意义，尤其为平衡能源转型与自然保护提供了空间规划的依据，有助于优化风电项目布局。",
+      "reason": "研究风电扩张在不同规划尺度下对生物多样性的影响，属于风电生态效应范畴，可为风电项目的生态风险评估提供背景和方法论参考，但与植物入侵风险的直接关联较弱。",
+      "score": 81,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 43,
+        "theme": 40,
         "type": 17
       },
-      "citation": "Nature Ecology & Evolution. (2026). Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03097-z",
-      "generatedAt": "2026-06-05T18:18:43.962Z"
+      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. (2026, June 3). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03097-z",
+      "generatedAt": "2026-06-05T18:44:06.903Z"
     },
     {
       "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
@@ -180,17 +179,17 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "该综述讨论了遗传多样性损失及利用大规模生物多样性监测数据集与群体遗传学指导保护决策，属于生态方法领域。",
-      "summary": "这篇综述指出遗传多样性丧失是种群恢复力的主要威胁，对保护工作构成挑战。它强调通过整合大规模生物多样性监测数据集与群体遗传学原理，能够赋能不同治理层级上的生物多样性伙伴，从而做出有效的保护决策。这为生态监测方法提供了系统视角，尤其是如何利用大规模监测数据与遗传学工具的结合来支持决策。尽管不直接涉及用户关注的入侵或污染主题，但其方法论对生态遥感和监测模型研究有一定参考意义，适合关注生态数据科学和监测方法的研究者了解。",
-      "reason": "该文探讨遗传多样性监测与群体遗传学整合，属于生态监测方法，与用户核心方向（植物入侵、火烧、风电、面源污染）关联较弱，但大规模数据集成方法可能有一定借鉴价值，预筛相关性30分。",
+      "oneLine": "综述讨论了整合生物多样性监测与遗传学以辅助保护决策，但与用户特定课题相关度有限。",
+      "summary": "该综述聚焦于遗传多样性丧失对种群恢复力的威胁，并探讨如何整合大规模生物多样性监测数据与群体遗传学原理来优化保护决策。文章指出，跨治理层级的合作可有效利用监测数据集，提升保护行动的科学基础。尽管主题偏向保护遗传学，但其强调的监测思路对生态遥感及模型构建有一定启发，但未涉及用户关注的植物入侵、火烧风险或面源污染等具体场景。",
+      "reason": "本文讨论遗传多样性监测与群体遗传学，虽涉及大规模生态监测方法，但未直接针对用户核心的植物入侵、火烧风险、风电或面源污染，属于外围相关方法论。",
       "score": 77,
       "scoreBreakdown": {
         "source": 27,
         "theme": 30,
         "type": 20
       },
-      "citation": "Nature Reviews Biodiversity. (2026). Nature Reviews Biodiversity. Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00162-0",
-      "generatedAt": "2026-06-05T18:14:50.481Z"
+      "citation": "Nature Reviews Biodiversity. (2026). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00162-0",
+      "generatedAt": "2026-06-05T18:40:48.965Z"
     },
     {
       "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
@@ -211,106 +210,17 @@
       "tags": [
         "fire"
       ],
-      "oneLine": "一篇关于2025年全球野火状况的综述，关注极端火灾事件及其潜在生态影响。",
-      "summary": "本文综述了2025年全球野火状况，尽管过火面积与CO₂排放为2002年以来第二和第三低，但极端火灾事件仍频发，加拿大连续第三年出现异常火排放，洛杉矶、韩国和欧洲等地火灾造成超90人死亡、30余万人疏散。研究基于全球火排放数据集，揭示了气候异常与大规模火灾的关联。对于关注植物入侵与火烧风险的研究者，该综述提供的极端火事件时空分布和强度信息，有助于理解火情变化如何影响入侵植物的扩散、火后生境演替以及管理决策，可作为评估未来火烧风险加剧下入侵物种响应的宏观背景。",
-      "reason": "直接关联火灾动态，可为植物入侵与火烧风险方向提供极端事件背景与宏观趋势参考，未涉及入侵物种。",
-      "score": 89,
+      "oneLine": "2025年全球野火面积创历史第二低，但加拿大、洛杉矶等地极端火灾频发，造成重大伤亡和撤离。",
+      "summary": "本文综述了2025年全球野火形势。尽管过火总面积和二氧化碳排放总量创2002年以来第二和第三低，但局地极端火灾频发：加拿大连续第三年出现极端野火排放，洛杉矶、韩国及欧洲的灾难性火灾共造成90余人死亡、超30万人被迫撤离。全球范围内，火灾风险呈现显著的空间分化——总体指标下降，但人口密集区脆弱性上升。这些发现提示气候变化下火烧格局的复杂性，以及极端事件对生态安全与人类社会的冲击加剧。对于植物入侵与火烧风险交叉研究，该综述提供了最新的宏观背景和热点事件案例，有助于理解火干扰作为驱动力的变化趋势，并启发关于入侵植物适应性与火后管理策略的思考。",
+      "reason": "直接讨论全球野火动态与极端火灾事件，与火烧风险高度相关，可为植物入侵与火烧研究提供背景",
+      "score": 92,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 42,
+        "theme": 45,
         "type": 20
       },
       "citation": "Wildfires in 2025. (2026, June 1). Nature Reviews Earth & Environment. https://doi.org/10.1038/s43017-026-00793-z",
-      "generatedAt": "2026-06-05T18:15:25.935Z"
-    },
-    {
-      "id": "trends-ecology-evolution-11-TmF2aWdhdGlu",
-      "title": "Navigating transformations from degraded to functional ecosystems",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning",
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [],
-      "oneLine": "这篇综述探讨从退化到功能性生态系统的转变，提供恢复生态学一般知识，与用户核心课题间接相关。",
-      "summary": "本文综述了将退化生态系统转变为功能性生态系统的途径与方法，涉及恢复生态学的概念框架、监测指标和适应性管理策略。文章未针对特定退化类型（如入侵、火烧）展开，但总结了跨生态系统通用的恢复原则，包括生物多样性重建、生态系统功能恢复和可持续性评估。对关注生态恢复背景知识的读者有参考价值，但不直接回应用户关于植物入侵与火烧风险、风电项目入侵风险或农田排水面源污染的核心课题，其模型与监测讨论也停留在宏观层面，未涉及遥感具体技术。",
-      "reason": "综述恢复生态学一般原则，与用户关注的植物入侵、火烧风险、风电项目、农田排水及生态遥感无直接契合，仅提供背景性知识，需人工判断是否保留。",
-      "score": 64,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 20,
-        "type": 17
-      },
-      "citation": "Neaves, L. E., Gordon, I. J., & Manning, A. D. (2026). Navigating transformations from degraded to functional ecosystems. Trends in Ecology & Evolution, 41(6). https://www.sciencedirect.com/science/article/pii/S0169534726000303",
-      "generatedAt": "2026-06-05T18:16:23.312Z"
-    },
-    {
-      "id": "trends-ecology-evolution-12-V2hvIGZpbmRz",
-      "title": "Who finds the seeds? Personality matters",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bo Wang",
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001102?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001102?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "invasion"
-      ],
-      "oneLine": "动物个性影响种子发现，为理解植物入侵的种子传播环节提供新视角。",
-      "summary": "本文《谁找到种子？个性很重要》发表于《Trends in Ecology & Evolution》，探讨动物个性在种子发现过程中的作用。种子传播是植物入侵的关键环节，动物行为差异可能影响传播效率与方向，但文章是否直接关联入侵风险尚不明确。对于关注入侵机制的读者，可提供行为生态学的补充视角。",
-      "reason": "文章聚焦动物个性与种子发现，属于种子传播机制的基础研究，与植物入侵主题仅有间接关联，未涉及入侵风险或管理，相关性较弱。",
-      "score": 64,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 20,
-        "type": 17
-      },
-      "citation": "Wang, B. (2026). Who finds the seeds? Personality matters. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-05T18:16:51.397Z"
-    },
-    {
-      "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
-      "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [],
-      "oneLine": "该文倡导以土壤生物多样性重构巴西半干旱区的荒漠化治理框架。",
-      "summary": "本文提倡在巴西半干旱区的荒漠化防治与生态恢复工作中，将土壤生物多样性作为优先考量。作者批判了当前治理方案对地下生态过程的忽视，通过综合现有证据，强调土壤生物在维持土壤健康、促进植被恢复及逆转荒漠化中的关键作用，并提出了以土壤生物多样性为纲的治理重构方案。该文为生态恢复与土地管理领域提供了新视角，但方法论和案例均未涉及用户核心的入侵植物、能源基础设施或农业面源污染议题，仅可作外围参考。",
-      "reason": "文章聚焦巴西半干旱区的土壤生物多样性与荒漠化治理，与用户关注的植物入侵、风电影响、农田排水及生态遥感方向关联度很低，仅提供一般性生态管理视角。",
-      "score": 59,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 15,
-        "type": 17
-      },
-      "citation": "Araujo, A.S.F., de Medeiros, E.V., da Costa, D.P., Mendes, L.W., Cherubin, M.R., Beirigo, R.M., Lambais, G.R., Melo, V.M.M., Santana, R.M., Kavamura, V.N. & Pereira, A.P.A. (2026). Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region. Trends in Ecology & Evolution, 41(6). URL: https://www.sciencedirect.com/science/article/pii/S0169534726000777",
-      "generatedAt": "2026-06-05T18:17:35.268Z"
+      "generatedAt": "2026-06-05T18:41:17.415Z"
     }
   ]
 }
