@@ -1,18 +1,18 @@
 [
   {
-    "id": "science-0-U2NpZW5jZQ",
-    "title": "Science",
+    "id": "science-0-Vm9sdW1lIDM5",
+    "title": "Volume 392, Issue 6802, Page 1028-1028, June 2026.",
     "abstract": "Science, Volume 392, Issue 6802, Page 1028-1028, June 2026.",
     "journal": "Science",
     "type": "Article",
-    "doi": "",
-    "url": "https://www.science.org/loi/science?af=R",
+    "doi": "10.1126/science.aef3173",
+    "url": "https://www.science.org/doi/abs/10.1126/science.aef3173?af=R",
     "date": "2026-06-04",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Science",
-        "url": "https://www.science.org/loi/science?af=R"
+        "url": "https://www.science.org/doi/abs/10.1126/science.aef3173?af=R"
       }
     ]
   },
@@ -340,19 +340,19 @@
     ]
   },
   {
-    "id": "nature-0-TmF0dXJl",
-    "title": "Nature",
+    "id": "nature-0-TmF0dXJlIHN0",
+    "title": "Nature staff discuss some of the week’s top science news.",
     "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01831-y Nature staff discuss some of the week’s top science news.",
     "journal": "Nature",
     "type": "News",
     "doi": "10.1038/d41586-026-01831-y",
-    "url": "http://feeds.nature.com/nature/rss/current",
+    "url": "https://www.nature.com/articles/d41586-026-01831-y",
     "date": "2026-06-05",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Nature",
-        "url": "http://feeds.nature.com/nature/rss/current"
+        "url": "https://www.nature.com/articles/d41586-026-01831-y"
       }
     ]
   },
@@ -680,19 +680,19 @@
     ]
   },
   {
-    "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
-    "title": "Nature Reviews Biodiversity",
+    "id": "nature-reviews-biodiversity-0-VGhlIGxvc3Mg",
+    "title": "The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts.",
     "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
     "journal": "Nature Reviews Biodiversity",
     "type": "Review",
     "doi": "10.1038/s44358-026-00162-0",
-    "url": "http://feeds.nature.com/nrbd/rss/current",
+    "url": "https://www.nature.com/articles/s44358-026-00162-0",
     "date": "2026-06-03",
     "sourceSignals": [
       {
         "type": "reviewJournal",
         "name": "Nature Reviews Biodiversity",
-        "url": "http://feeds.nature.com/nrbd/rss/current"
+        "url": "https://www.nature.com/articles/s44358-026-00162-0"
       }
     ]
   },
@@ -731,19 +731,19 @@
     ]
   },
   {
-    "id": "nature-reviews-earth-environment-0-TmF0dXJlIFJl",
-    "title": "Nature Reviews Earth & Environment",
+    "id": "nature-reviews-earth-environment-0-Q29tcG91bmQg",
+    "title": "Compound weather and climate events in 2025",
     "abstract": "Nature Reviews Earth & Environment, Published online: 03 June 2026; doi:10.1038/s43017-026-00797-9 Compound weather and climate events in 2025",
     "journal": "Nature Reviews Earth & Environment",
     "type": "Review",
     "doi": "10.1038/s43017-026-00797-9",
-    "url": "http://feeds.nature.com/natrevearthenviron/rss/current",
+    "url": "https://www.nature.com/articles/s43017-026-00797-9",
     "date": "2026-06-03",
     "sourceSignals": [
       {
         "type": "reviewJournal",
         "name": "Nature Reviews Earth & Environment",
-        "url": "http://feeds.nature.com/natrevearthenviron/rss/current"
+        "url": "https://www.nature.com/articles/s43017-026-00797-9"
       }
     ]
   },
@@ -1145,13 +1145,13 @@
     "journal": "Nature Ecology & Evolution",
     "type": "Article",
     "doi": "10.1038/s41559-026-03101-6",
-    "url": "http://feeds.nature.com/natecolevol/rss/current",
+    "url": "https://www.nature.com/articles/s41559-026-03101-6",
     "date": "2026-06-05",
     "sourceSignals": [
       {
         "type": "professionalJournal",
         "name": "Nature Ecology & Evolution",
-        "url": "http://feeds.nature.com/natecolevol/rss/current"
+        "url": "https://www.nature.com/articles/s41559-026-03101-6"
       }
     ]
   },
@@ -1276,8 +1276,8 @@
   },
   {
     "id": "sciencedaily-agriculture-food-0-QSBoaWRkZW4g",
-    "title": "A hidden pollutant is changing how the world&#039;s forests breathe",
-    "abstract": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem&#039;s condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.",
+    "title": "A hidden pollutant is changing how the world's forests breathe",
+    "abstract": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.",
     "journal": "ScienceDaily Agriculture and Food",
     "type": "Article",
     "doi": "",
@@ -1320,13 +1320,13 @@
     "journal": "Science News",
     "type": "Article",
     "doi": "",
-    "url": "http://www.atypon.com/",
+    "url": "https://www.science.org/content/article/protein-name-confusion-created-antibody-mix-affecting-hundreds-papers",
     "date": "2026-06-05",
     "sourceSignals": [
       {
         "type": "natureScienceNews",
         "name": "Science News",
-        "url": "http://www.atypon.com/"
+        "url": "https://www.science.org/content/article/protein-name-confusion-created-antibody-mix-affecting-hundreds-papers"
       }
     ]
   },
@@ -1484,19 +1484,19 @@
     ]
   },
   {
-    "id": "science-advances-0-U2NpZW5jZSBB",
-    "title": "Science Advances",
+    "id": "science-advances-0-Vm9sdW1lIDEy",
+    "title": "Volume 12, Issue 23, June 2026.",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
     "type": "Article",
-    "doi": "",
-    "url": "https://www.science.org/loi/sciadv?af=R",
+    "doi": "10.1126/sciadv.adz3081",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz3081?af=R",
     "date": "2026-06-03",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Science Advances",
-        "url": "https://www.science.org/loi/sciadv?af=R"
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz3081?af=R"
       }
     ]
   },

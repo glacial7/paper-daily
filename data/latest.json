@@ -1,72 +1,10 @@
 {
-  "generatedAt": "2026-06-05T18:45:26.407Z",
+  "generatedAt": "2026-06-05T18:58:30.975Z",
   "dryRun": false,
   "prescreenModel": "deepseek-v4-flash",
   "scoreModel": "deepseek-v4-pro",
   "topicWeights": {},
   "items": [
-    {
-      "id": "nature-ecology-evolution-2-QmlvZGl2ZXJz",
-      "title": "Biodiversity loss will decrease the future creditworthiness of nations",
-      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03081-7 Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.",
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03081-7",
-      "url": "https://www.nature.com/articles/s41559-026-03081-7",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03081-7"
-        }
-      ],
-      "tags": [
-        "methods"
-      ],
-      "oneLine": "情景模型评估生物多样性丧失对主权信用评级的影响，涉及生态经济建模方法。",
-      "summary": "本研究利用情景模型评估了生物多样性丧失对23个国家主权信用评级的影响。模拟考虑了木材生产、野生授粉和海洋渔业部分崩溃的情景，结果发现这些生态服务的衰退将显著降低国家的信用评级并推高借贷成本。该研究将生态模型与经济风险直接挂钩，展示了自然资本流失如何转化为国家财政压力。虽然主题偏离用户关注的植物入侵与面源污染，但其生态模型方法在风险管理中的应用对生态建模领域有一定启示。",
-      "reason": "涉及生态情景模型，但主题聚焦经济信用评级，与用户核心的植物入侵、风电、农田排水等方向关联度低，属于外围相关。",
-      "score": 71,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 30,
-        "type": 17
-      },
-      "citation": "Biodiversity loss will decrease the future creditworthiness of nations. (2026). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03081-7",
-      "generatedAt": "2026-06-05T18:43:50.226Z"
-    },
-    {
-      "id": "nature-ecology-evolution-0-TmF0dXJlIEVj",
-      "title": "Nature Ecology & Evolution",
-      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.",
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03101-6",
-      "url": "http://feeds.nature.com/natecolevol/rss/current",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "http://feeds.nature.com/natecolevol/rss/current"
-        }
-      ],
-      "tags": [
-        "methods"
-      ],
-      "oneLine": "生态系统服务损失可能通过影响国家信用评级进而提高政府借贷成本，但与用户核心研究方向关联弱。",
-      "summary": "该研究将生态经济情景与机器学习模型结合，模拟了三种生态系统服务损失对国家信用评级的影响，发现即使部分服务退化也可能导致主权信用评级下调，从而提高政府借贷成本。这一发现将自然资本损耗与金融风险相挂钩。然而，该主题属于生态经济学与金融交叉，与用户关注的植物入侵、风电、农田排水和生态遥感监测等方向重合度低，仅作为交叉方法参考。",
-      "reason": "研究生态经济情景与信用评级，与植物入侵、风电、面源污染及生态遥感监测等核心方向均无直接关联，仅方法上有生态模型元素，主题相关性弱。",
-      "score": 56,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 15,
-        "type": 17
-      },
-      "citation": "Nature Ecology & Evolution. (2026, June 5). [Ecological-economic scenarios and credit ratings]. Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03101-6",
-      "generatedAt": "2026-06-05T18:43:02.592Z"
-    },
     {
       "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
       "title": "Latitudinal patterns and environmental correlates of plant root exudation",
@@ -86,17 +24,48 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "该研究通过汇编全球数据集，分析了植物根系分泌物速率的纬度格局及环境驱动，发现土壤磷缺乏是关键影响因素。",
-      "summary": "本研究通过汇编全球植物根系分泌物速率、根性状和环境协变量的数据集，分析了根系碳分泌的纬度格局及其驱动因素。研究发现，根系分泌物速率一般从高纬度向低纬度增加，土壤磷缺乏是最重要的影响因子。这一成果揭示了植物地下碳分配的宏观生态模式，为理解生态系统碳循环对全球变化的响应提供了新视角。然而，其主题与用户核心方向如植物入侵、火烧风险、风电项目、农田排水或生态遥感模型无直接联系，仅具有背景性参考价值。",
-      "reason": "该研究聚焦植物根系分泌物纬度格局，与用户关注的风电、入侵、面源污染、遥感监测无直接关联，属于植物生态学基础研究，相关性弱。",
-      "score": 53,
+      "oneLine": "通过整合全球数据，本研究发现植物根系分泌物速率从高纬度到低纬度呈增加趋势，土壤磷缺乏是主要驱动因素。",
+      "summary": "该研究汇编了全球植物根系分泌物速率、根系性状及环境变量的大数据集，分析了根系分泌物碳通量的纬度格局及其环境驱动因素。研究发现，植物根系分泌物速率从高纬度向低纬度整体呈增加趋势，即热带地区的根系分泌物速率普遍高于温带及寒带。在众多环境因子中，土壤磷的有效性（磷缺乏）被识别为最重要的驱动因素，表明在磷限制的生态系统中植物可能通过增加根分泌物来促进养分获取。该工作运用了生态大数据整合与分析方法，揭示了全球尺度下植物地下碳分配策略的地理规律。对于关注生态遥感和植物-土壤相互作用的用户，本文的方法学框架与大规模数据集成分析思路有一定参考价值，但核心主题与用户关注的植物入侵、风电生态风险及农田面源污染等方向关联较弱。",
+      "reason": "该研究探讨植物根系分泌物速率的纬度格局与土壤磷驱动，与用户关注的植物入侵、风电生态风险、农田面源污染或生态遥感监测均无直接关联，属于弱相关。",
+      "score": 58,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 15,
+        "theme": 20,
         "type": 14
       },
-      "citation": "Latitudinal patterns and environmental correlates of plant root exudation. (2026). *Nature Ecology & Evolution*. Advance online publication. https://doi.org/10.1038/s41559-026-03103-4",
-      "generatedAt": "2026-06-05T18:43:26.692Z"
+      "citation": "(2026). Latitudinal patterns and environmental correlates of plant root exudation. Nature Ecology & Evolution. Advance online publication.",
+      "generatedAt": "2026-06-05T18:56:52.961Z"
+    },
+    {
+      "id": "science-7-RmlyZXMgcmV2",
+      "title": "Fires reverse progress toward ozone air quality standards in the United States",
+      "abstract": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026.",
+      "journal": "Science",
+      "type": "Article",
+      "doi": "10.1126/science.aed3197",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R",
+      "date": "2026-06-04",
+      "sourceSignals": [
+        {
+          "type": "topJournal",
+          "name": "Science",
+          "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R"
+        }
+      ],
+      "tags": [
+        "fire"
+      ],
+      "oneLine": "野火排放正显著逆转美国臭氧空气质量改善进程，凸显火风险与大气污染的紧密耦合。",
+      "summary": "本研究利用长期观测与模型模拟，评估了美国野火对臭氧空气质量标准的侵蚀效应。结果发现，近年来全美多地臭氧浓度下降趋势放缓或逆转，主要归因于野火排放的臭氧前体物大量增加。在西部和中部地区，野火贡献可使区域臭氧超标天数明显反弹，抵消了人为排放控制带来的改善。研究揭示了气候变化下火险加剧对空气质量的间接威胁，提示臭氧达标策略需纳入火干扰因素，对理解火烧风险的多维后果有参考价值。",
+      "reason": "研究野火对美国地面臭氧浓度的贡献，明确涉及火烧风险的环境影响，可为火烧与大气污染关联提供直接证据，但未探讨植物入侵，属核心方向的外围关联。",
+      "score": 87,
+      "scoreBreakdown": {
+        "source": 30,
+        "theme": 40,
+        "type": 17
+      },
+      "citation": "Fires reverse progress toward ozone air quality standards in the United States. (2026). Science, 392(6802), 1088-1092.",
+      "generatedAt": "2026-06-05T18:52:05.487Z"
     },
     {
       "id": "science-4-R2xvYmFsIGV4",
@@ -117,17 +86,17 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "本研究利用高分辨率卫星数据量化了全球树冠覆盖损失的规模及其驱动因素，为生态遥感监测方法提供了新见解。",
-      "summary": "这项发表于《Science》的研究利用高分辨率卫星影像，在全球尺度上系统量化了树冠覆盖损失的时空格局及主要驱动因子。通过高分辨率数据，研究能够更准确地识别树冠损失的规模和位置，并分析其与人类活动、气候变化等驱动因素的关系。该方法为生态遥感监测提供了高精度的技术手段，可用于评估森林退化、碳动态及生物多样性影响。对于关注生态遥感、土地利用变化和监测方法的研究者而言，该研究展示了卫星数据在精细尺度生态评估中的潜力，为相关领域的模型开发和管理决策提供了重要参考。尽管研究未直接涉及植物入侵或风力发电，但其方法框架可应用于入侵物种监测和风电项目对植被影响的评估中，因此具有广泛的借鉴价值。",
-      "reason": "该研究聚焦高分辨率卫星遥感方法在量化全球树冠覆盖损失中的应用，直接命中用户核心兴趣“生态遥感、模型和监测方法”，可支持监测方案开发，主题高度相关。",
-      "score": 95,
+      "oneLine": "利用高分辨率卫星数据量化全球树冠覆盖损失的程度与驱动因素。",
+      "summary": "该研究利用高分辨率卫星数据，对全球树冠覆盖损失的规模及其驱动因素进行了量化分析。由于采用高分辨率遥感技术，研究在空间精度和驱动因素识别上有所提升，为全球森林动态监测提供了新的数据和方法支撑。尽管主题聚焦于树冠损失而非用户核心的植物入侵、火烧风险或面源污染，但其遥感监测范式及对大规模生态过程的定量分析思路，对生态遥感应用领域的研究者仍具参考价值。建议重点浏览方法部分，了解高分辨率数据在景观尺度变化追踪中的应用潜力。",
+      "reason": "涉及高分辨率遥感监测，与用户生态遥感方向相关，但主题为树冠损失而非核心关注问题，属于弱相关外围方法论文。",
+      "score": 74,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 48,
+        "theme": 27,
         "type": 17
       },
-      "citation": "Global extent and drivers of tree cover loss quantified with high-resolution satellite data. (2026). Science, 392(6802). https://doi.org/10.1126/science.adz9042",
-      "generatedAt": "2026-06-05T18:39:00.259Z"
+      "citation": "Global extent and drivers of tree cover loss quantified with high-resolution satellite data. (2026). Science, 392(6802).",
+      "generatedAt": "2026-06-05T18:51:42.080Z"
     },
     {
       "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
@@ -148,48 +117,77 @@
       "tags": [
         "wind"
       ],
-      "oneLine": "不同规划尺度下中国风电扩张的生物多样性权衡差异为可再生能源选址提供了多视角启示。",
-      "summary": "本研究通过建模预测中国到2060年太阳能和风能扩张的路径，比较了国家与省级规划情景。结果显示，不同的规划尺度导致生物多样性出现明显不同的权衡格局，强调在气候目标与生物多样性保护之间需要多尺度、综合性的选址策略。该发现对理解风电发展的生态后果具有重要意义，尤其为平衡能源转型与自然保护提供了空间规划的依据，有助于优化风电项目布局。",
-      "reason": "研究风电扩张在不同规划尺度下对生物多样性的影响，属于风电生态效应范畴，可为风电项目的生态风险评估提供背景和方法论参考，但与植物入侵风险的直接关联较弱。",
-      "score": 81,
+      "oneLine": "中国风电光伏扩张的规划尺度差异导致不同生物多样性权衡结果, 强调多尺度整合选址的必要性。",
+      "summary": "本研究模拟了2060年前中国太阳能和风能扩张在国家规划与省级规划两种情景下的布局, 分析不同规划尺度对生物多样性的影响。结果显示, 集中式与分布式规划路径在土地利用冲突和生态影响上存在显著差异, 每种情景都带来独特的生物多样性权衡。这表明, 要同时实现气候目标与生物多样性保护, 必须采用整合多尺度空间选址策略。对于关注风电项目生态风险的研究者, 该论文提供了宏观规划层面的权衡证据与框架思路。",
+      "reason": "风电扩张规划与生物多样性权衡, 提供背景与方法参考, 但未直接涉及植物入侵。",
+      "score": 79,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 40,
+        "theme": 38,
         "type": 17
       },
-      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. (2026, June 3). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03097-z",
-      "generatedAt": "2026-06-05T18:44:06.903Z"
+      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. (2026, June 3). Nature Ecology & Evolution.",
+      "generatedAt": "2026-06-05T18:57:18.860Z"
     },
     {
-      "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
-      "title": "Nature Reviews Biodiversity",
+      "id": "nature-14-VGhlIHNpemUg",
+      "title": "The size of tropical vegetation gross primary production",
+      "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10562-z The size of tropical vegetation gross primary production",
+      "journal": "Nature",
+      "type": "Article",
+      "doi": "10.1038/s41586-026-10562-z",
+      "url": "https://www.nature.com/articles/s41586-026-10562-z",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "topJournal",
+          "name": "Nature",
+          "url": "https://www.nature.com/articles/s41586-026-10562-z"
+        }
+      ],
+      "tags": [],
+      "oneLine": "该研究估算热带植被总初级生产力，服务于全球碳循环研究，与用户关注的入侵、火烧、风电等主题无直接关系。",
+      "summary": "本研究聚焦热带地区植被总初级生产力（GPP），基于遥感观测和生态系统模型，估算了热带植被 GPP 的总量和空间格局，旨在揭示该区域在全球碳循环中的作用。研究可能利用卫星数据与过程模型，量化了光合碳吸收的规模及其年际变化，对理解陆地碳汇和气候变化反馈有重要意义。然而，论文内容完全围绕碳循环和植被生理过程，未涉及物种入侵、火烧管理、风电生态影响或面源污染等用户核心课题，亦不直接提供生态系统监测或管理的方法论。对于用户而言，该论文主题相关性弱，仅生态建模和遥感技术部分可提供极有限的背景参考，不建议作为精选日报内容。",
+      "reason": "论文研究热带植被总初级生产力，属于全球碳循环与生态系统模型范畴，与用户关注的植物入侵、火烧风险、风电项目、农田排水等核心课题无直接关联，仅生态遥感方法可能有微弱启发。",
+      "score": 62,
+      "scoreBreakdown": {
+        "source": 30,
+        "theme": 15,
+        "type": 17
+      },
+      "citation": "(2026). The size of tropical vegetation gross primary production. Nature.",
+      "generatedAt": "2026-06-05T18:53:17.889Z"
+    },
+    {
+      "id": "nature-reviews-biodiversity-0-VGhlIGxvc3Mg",
+      "title": "The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts.",
       "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
       "journal": "Nature Reviews Biodiversity",
       "type": "Review",
       "doi": "10.1038/s44358-026-00162-0",
-      "url": "http://feeds.nature.com/nrbd/rss/current",
+      "url": "https://www.nature.com/articles/s44358-026-00162-0",
       "date": "2026-06-03",
       "sourceSignals": [
         {
           "type": "reviewJournal",
           "name": "Nature Reviews Biodiversity",
-          "url": "http://feeds.nature.com/nrbd/rss/current"
+          "url": "https://www.nature.com/articles/s44358-026-00162-0"
         }
       ],
       "tags": [
         "methods"
       ],
-      "oneLine": "综述讨论了整合生物多样性监测与遗传学以辅助保护决策，但与用户特定课题相关度有限。",
-      "summary": "该综述聚焦于遗传多样性丧失对种群恢复力的威胁，并探讨如何整合大规模生物多样性监测数据与群体遗传学原理来优化保护决策。文章指出，跨治理层级的合作可有效利用监测数据集，提升保护行动的科学基础。尽管主题偏向保护遗传学，但其强调的监测思路对生态遥感及模型构建有一定启发，但未涉及用户关注的植物入侵、火烧风险或面源污染等具体场景。",
-      "reason": "本文讨论遗传多样性监测与群体遗传学，虽涉及大规模生态监测方法，但未直接针对用户核心的植物入侵、火烧风险、风电或面源污染，属于外围相关方法论。",
-      "score": 77,
+      "oneLine": "该综述讨论遗传多样性丧失威胁种群恢复力，并整合监测数据与群体遗传学原理，为保护决策提供方法参考。",
+      "summary": "本文综述了遗传多样性丧失对种群恢复力的威胁，并探讨如何整合大规模生物多样性监测数据集与群体遗传学原理，以支持保护决策。研究指出，遗传多样性下降会削弱物种应对环境变化的能力，而现有监测数据与遗传学方法结合可更有效识别脆弱种群。论文强调，通过跨尺度的数据共享与治理合作，能为保护行动提供科学依据。尽管内容聚焦基础生态学问题，但其倡导的监测框架整合思路对生态遥感与监测方法领域有边际参考价值。",
+      "reason": "论文仅涉及遗传多样性监测与保护，与用户指定的植物入侵、火烧风险、风电项目、农田排水等核心课题无直接关联，属于弱相关。",
+      "score": 62,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 30,
+        "theme": 15,
         "type": 20
       },
-      "citation": "Nature Reviews Biodiversity. (2026). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00162-0",
-      "generatedAt": "2026-06-05T18:40:48.965Z"
+      "citation": "Anonymous. (2026). The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. Nature Reviews Biodiversity.",
+      "generatedAt": "2026-06-05T18:53:46.640Z"
     },
     {
       "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
@@ -210,17 +208,78 @@
       "tags": [
         "fire"
       ],
-      "oneLine": "2025年全球野火面积创历史第二低，但加拿大、洛杉矶等地极端火灾频发，造成重大伤亡和撤离。",
-      "summary": "本文综述了2025年全球野火形势。尽管过火总面积和二氧化碳排放总量创2002年以来第二和第三低，但局地极端火灾频发：加拿大连续第三年出现极端野火排放，洛杉矶、韩国及欧洲的灾难性火灾共造成90余人死亡、超30万人被迫撤离。全球范围内，火灾风险呈现显著的空间分化——总体指标下降，但人口密集区脆弱性上升。这些发现提示气候变化下火烧格局的复杂性，以及极端事件对生态安全与人类社会的冲击加剧。对于植物入侵与火烧风险交叉研究，该综述提供了最新的宏观背景和热点事件案例，有助于理解火干扰作为驱动力的变化趋势，并启发关于入侵植物适应性与火后管理策略的思考。",
-      "reason": "直接讨论全球野火动态与极端火灾事件，与火烧风险高度相关，可为植物入侵与火烧研究提供背景",
-      "score": 92,
+      "oneLine": "2025年全球野火综述：燃烧面积第二低但极端火灾频发，造成重大伤亡和疏散。",
+      "summary": "该文综述了2025年全球野火状况，指出虽然总燃烧面积为2002年以来第二低，CO2排放为第三低，但加拿大连续第三年出现极端野火排放，而洛杉矶、韩国和欧洲的灾难性火灾导致逾90人死亡和超30万人疏散。文章揭示了在总体趋势减缓背景下，极端野火事件仍频发且影响巨大，为理解气候变化下的火灾风险动态提供了最新证据。对于关注火烧风险与生态管理的研究者，这一全球尺度综述有助于把握火灾格局变化，并为评估入侵植物与火险互作提供宏观背景。",
+      "reason": "该综述全面报告2025年全球野火动态，直接相关于用户关注的“火烧风险”方向，虽未涉及植物入侵，但可为理解火生态格局提供重要背景。",
+      "score": 91,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 45,
+        "theme": 44,
         "type": 20
       },
-      "citation": "Wildfires in 2025. (2026, June 1). Nature Reviews Earth & Environment. https://doi.org/10.1038/s43017-026-00793-z",
-      "generatedAt": "2026-06-05T18:41:17.415Z"
+      "citation": "Nature Reviews Earth & Environment. (2026). Wildfires in 2025. https://www.nature.com/articles/s43017-026-00793-z",
+      "generatedAt": "2026-06-05T18:54:21.337Z"
+    },
+    {
+      "id": "trends-ecology-evolution-2-U2Nhbm5pbmcg",
+      "title": "Scanning the horizon for harmful cyanobacterial blooms",
+      "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Xuexiu Chang, Hugh J. MacIsaac, Ingrid Chorus, George S. Bullerjahn, Rainer Kurmayer, Chi-Yong Ahn, Xiangzhen Kong, Steven W. Wilhelm, Susanna A. Wood, Xiangming Tang, Hans W. Paerl, Sabine Hilt, Erik Jeppesen, David P. Hamilton, Shin-ichi Nakano, Petra Visser, Jef Huisman, Haijun Wang, Lirong Song, R. Michael Mckay",
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000856?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000856?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "invasion",
+        "methods"
+      ],
+      "oneLine": "前瞻性综述扫描有害蓝藻水华前沿，涉及入侵风险与监测方法，可为生态遥感技术应用提供借鉴。",
+      "summary": "这篇前瞻性综述系统扫描了有害蓝藻水华的研究前沿，重点关注气候变化与富营养化驱动下蓝藻水华的全球扩张、新兴监测技术（如遥感、分子方法）、预测模型以及基于生态系统的管理策略。文章讨论了外来蓝藻物种的入侵风险及其对水生态安全的威胁，并评估了多种早期预警和快速响应框架的效果。尽管蓝藻水华不属于典型的植物入侵范畴，但其监测方法和风险评估思路可为生态遥感模型与水生入侵管理提供方法学参考，对拓宽生态遥感应用和探讨跨类群入侵机制有一定启发。",
+      "reason": "论文关注有害蓝藻水华的前沿扫描，涉及水生生物入侵与监测方法，但用户核心方向为植物入侵风险与农业面源污染等，蓝藻水华与植物入侵关联较弱，且监测方法偏水生生态，与生态遥感有一定交叉但非直接命中，属于相关但偏外围，需人工判断保留。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "Chang, X., MacIsaac, H. J., Chorus, I., et al. (2026). Scanning the horizon for harmful cyanobacterial blooms. Trends in Ecology & Evolution.",
+      "generatedAt": "2026-06-05T18:55:06.927Z"
+    },
+    {
+      "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
+      "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [],
+      "oneLine": "巴西半干旱区土壤生物多样性与荒漠化及恢复治理的生态学观点，属于恢复生态与生物多样性主题。",
+      "summary": "本文探讨将土壤生物多样性置于巴西半干旱区荒漠化防治与恢复治理核心的必要性。作者提出，当前治理框架多忽视地下生物群落的关键作用，导致恢复效果有限。通过整合土壤生态学证据，呼吁政策制定者优先保护土壤生物多样性，以提升生态系统恢复力和可持续性。该观点对干旱区生态恢复与管理具有启发意义，尤其关注生物多样性与土地退化的关联。",
+      "reason": "研究巴西半干旱区土壤生物多样性与荒漠化治理，与用户关注的植物入侵、火烧风险、风电入侵、农田排水面源污染及生态遥感/模型等核心方向关联较弱，仅有生态管理方面的一般启发。",
+      "score": 62,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 18,
+        "type": 17
+      },
+      "citation": "Araujo, A. S. F., et al. (2026). Soil biodiversity first: Reframing desertification and restoration governance in Brazil’s semiarid region. Trends in Ecology & Evolution, 41(6).",
+      "generatedAt": "2026-06-05T18:56:12.052Z"
     }
   ]
 }
