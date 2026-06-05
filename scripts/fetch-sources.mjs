@@ -14,7 +14,9 @@ function decodeEntities(value = "") {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
 }
 
 function stripHtml(value = "") {
@@ -32,6 +34,17 @@ function firstTag(block, names) {
 function firstAttr(block, tagName, attrName) {
   const match = block.match(new RegExp(`<${tagName}[^>]*\\s${attrName}=["']([^"']+)["'][^>]*>`, "i"));
   return match ? decodeEntities(match[1]) : "";
+}
+
+function allLinks(block) {
+  const values = [];
+  for (const match of block.matchAll(/<link[^>]*href=["']([^"']+)["'][^>]*>/gi)) {
+    values.push(decodeEntities(match[1]));
+  }
+  for (const match of block.matchAll(/<link[^>]*>([\s\S]*?)<\/link>/gi)) {
+    values.push(stripHtml(match[1]));
+  }
+  return values.filter(Boolean);
 }
 
 function absoluteUrl(url, base) {
@@ -72,15 +85,18 @@ function parseFeed(xml, source) {
     : [...xml.matchAll(/<item[\s\S]*?<\/item>/gi)].map((match) => match[0]);
 
   return blocks.slice(0, MAX_PER_SOURCE).map((block, index) => {
-    const title = firstTag(block, ["title"]);
-    const link =
-      firstTag(block, ["link"]) ||
-      firstAttr(block, "link", "href") ||
-      firstTag(block, ["guid", "id"]);
+    let title = firstTag(block, ["title"]);
+    const links = allLinks(block);
     const abstract = firstTag(block, ["description", "summary", "content:encoded", "content"]);
     const dateText = firstTag(block, ["pubDate", "published", "updated", "dc:date"]);
     const date = dateText ? new Date(dateText) : null;
-    const doiMatch = `${title} ${abstract} ${link}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
+    const doiMatch = `${title} ${abstract} ${links.join(" ")}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
+    const doi = doiMatch ? doiMatch[0].replace(/[.,;)\]]+$/, "") : "";
+    if (!title || title.trim().toLowerCase() === source.name.toLowerCase()) {
+      title = inferTitleFromAbstract(abstract, source.name, doi) || title;
+    }
+    const link = chooseArticleLink(links, source, doi) || firstTag(block, ["guid", "id"]);
+    const url = resolveArticleUrl(link, source, doi);
 
     return {
       id: `${source.id}-${index}-${Buffer.from(title || link).toString("base64url").slice(0, 12)}`,
@@ -88,18 +104,48 @@ function parseFeed(xml, source) {
       abstract,
       journal: source.name,
       type: inferType(title, abstract),
-      doi: doiMatch ? doiMatch[0] : "",
-      url: absoluteUrl(link, source.pageUrl || source.feedUrl),
+      doi,
+      url,
       date: date && !Number.isNaN(date.getTime()) ? date.toISOString().slice(0, 10) : "",
       sourceSignals: [
         {
           type: source.type,
           name: source.name,
-          url: absoluteUrl(link, source.pageUrl || source.feedUrl)
+          url
         }
       ]
     };
   });
+}
+
+function chooseArticleLink(links, source, doi = "") {
+  const feedUrl = source.feedUrl || "";
+  const normalizedFeed = feedUrl.replace(/\/$/, "");
+  return (
+    links.find((link) => /\/articles?\//i.test(link)) ||
+    links.find((link) => doi && link.toLowerCase().includes(doi.toLowerCase())) ||
+    links.find((link) => /^https?:\/\//i.test(link) && link.replace(/\/$/, "") !== normalizedFeed) ||
+    links[0] ||
+    ""
+  );
+}
+
+function resolveArticleUrl(link, source, doi = "") {
+  const url = absoluteUrl(link, source.pageUrl || source.feedUrl);
+  const feedUrl = source.feedUrl || "";
+  if (!url || url.replace(/\/$/, "") === feedUrl.replace(/\/$/, "")) {
+    return doi ? `https://doi.org/${doi}` : url;
+  }
+  return url;
+}
+
+function inferTitleFromAbstract(abstract = "", journal = "", doi = "") {
+  let text = stripHtml(abstract);
+  if (journal) text = text.replace(new RegExp(`^${journal.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*,?\\s*`, "i"), "");
+  text = text.replace(/^Published online:\s*[^;]+;\s*/i, "");
+  if (doi) text = text.replace(new RegExp(`doi:?\\s*${doi.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "");
+  const sentence = text.split(/(?<=[.!?])\s+/)[0] || text;
+  return sentence.length > 12 && sentence.length < 220 ? sentence.trim() : "";
 }
 
 function inferType(title = "", abstract = "") {

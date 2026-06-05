@@ -125,7 +125,8 @@ const SCORE_PROMPT = `
 2. 讲清研究对象、方法/证据、主要发现、为什么值得看。
 3. 不要夸大结论，不要凭空添加 DOI、作者或期刊。
 4. 引用信息只能使用输入元数据；缺失则保留空缺或用已有字段。
-5. 输出严格 JSON，不要输出解释文字。
+5. citation 不要包含 DOI、doi: 字样或 DOI URL；DOI 会由页面单独显示。
+6. 输出严格 JSON，不要输出解释文字。
 `;
 
 function normalizeTitle(title) {
@@ -172,6 +173,17 @@ function extractJson(text) {
   const match = trimmed.match(/\{[\s\S]*\}/);
   if (!match) throw new Error(`No JSON object found in model response: ${text.slice(0, 200)}`);
   return JSON.parse(match[0]);
+}
+
+function stripDoiFromCitation(citation = "", doi = "") {
+  let value = citation;
+  if (doi) {
+    const escaped = doi.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    value = value
+      .replace(new RegExp(`https?://(?:dx\\.)?doi\\.org/${escaped}`, "ig"), "")
+      .replace(new RegExp(`doi:?\\s*${escaped}`, "ig"), "");
+  }
+  return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
 }
 
 async function deepseekJson(model, messages) {
@@ -260,7 +272,7 @@ function dryScore(paper, pre) {
     type,
     total: source + theme + type,
     summary: paper.abstract || pre.oneLine || paper.title,
-    citation: `${paper.title}. (${paper.date || "n.d."}). ${paper.journal || "Journal Name"}. ${paper.doi ? `https://doi.org/${paper.doi}` : ""}`.trim()
+    citation: `${paper.title}. (${paper.date || "n.d."}). ${paper.journal || "Journal Name"}.`
   };
 }
 
@@ -310,7 +322,7 @@ async function scorePaper(paper, pre, topicWeights) {
           reason: "short Chinese reason for theme score",
           summary: "about 200 Chinese characters",
           oneLine: "one Chinese sentence",
-          citation: "APA-like reference using provided metadata only"
+          citation: "APA-like reference using provided metadata only, without DOI"
         }
       })
     }
@@ -331,7 +343,7 @@ async function scorePaper(paper, pre, topicWeights) {
     summary: modelScore.summary,
     oneLine: modelScore.oneLine || pre.oneLine,
     reason: modelScore.reason,
-    citation: modelScore.citation || dryScore(paper, pre).citation
+    citation: stripDoiFromCitation(modelScore.citation || dryScore(paper, pre).citation, paper.doi)
   };
 }
 

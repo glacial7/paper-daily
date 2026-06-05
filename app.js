@@ -235,7 +235,7 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源；修正 Science、Science Advances 和 Science News 等信源归类。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示；移除易误触的删除操作，修改按钮改为定位到 sources.json 对应条目，重复添加同名信源时也会定位提示。自动更新时间调整为北京时间每日 08:00。"
+      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源；修正 Science、Science Advances 和 Science News 等信源归类。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示；移除易误触的删除操作，修改按钮改为定位到 sources.json 对应条目，重复添加同名信源时也会定位提示。修复部分 RSS 条目标题退化为期刊名、标题跳转到 RSS feed 页，以及 DOI 在引用和 DOI 行重复显示的问题。自动更新时间调整为北京时间每日 08:00。"
   },
   {
     version: "2026-06-05",
@@ -259,15 +259,62 @@ let feedFull = false;
 let activeFeedFilter = "all";
 const RECENT_DAYS = 5;
 
+function decodeText(value = "") {
+  return value
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
+}
+
+function stripDoiFromCitation(citation = "", doi = "") {
+  let value = decodeText(citation);
+  if (doi) {
+    const escaped = doi.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    value = value
+      .replace(new RegExp(`https?://(?:dx\\.)?doi\\.org/${escaped}`, "ig"), "")
+      .replace(new RegExp(`doi:?\\s*${escaped}`, "ig"), "");
+  }
+  return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
+}
+
+function inferTitleFromText(abstract = "", journal = "", doi = "") {
+  let text = decodeText(abstract || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (journal) {
+    text = text.replace(new RegExp(`^${journal.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*,?\\s*`, "i"), "");
+  }
+  text = text.replace(/^Published online:\s*[^;]+;\s*/i, "");
+  if (doi) {
+    text = text.replace(new RegExp(`doi:?\\s*${doi.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "");
+  }
+  const first = text.split(/(?<=[.!?])\s+/)[0] || text;
+  return first.length > 12 && first.length < 220 ? first.trim() : "";
+}
+
+function normalizePaperUrl(url = "", doi = "") {
+  if (!url || /\.(rss|xml|atom)($|\?)/i.test(url) || /\/rss\/|feed=rss|current\.rss/i.test(url)) {
+    return doi ? `https://doi.org/${doi}` : url || "#";
+  }
+  return url;
+}
+
 function normalizeGeneratedItem(item, index) {
   const sourceSignals = item.sourceSignals || [];
   const firstType = sourceSignals[0]?.type;
   const primarySource = item.journal || sourceSignals[0]?.name || "Unknown source";
+  const title =
+    !item.title || item.title.trim().toLowerCase() === primarySource.toLowerCase()
+      ? inferTitleFromText(item.abstract || item.summary || "", primarySource, item.doi) || item.title
+      : decodeText(item.title);
+  const paperUrl = normalizePaperUrl(item.url, item.doi);
   return {
     id: item.id || item.doi || `generated-${index}`,
     time: item.generatedAt ? item.generatedAt.slice(11, 16) : "00:00",
     date: item.date || (item.generatedAt ? item.generatedAt.slice(0, 10) : ""),
-    title: item.title,
+    title,
     source: primarySource,
     sourceSignals,
     sourceType:
@@ -280,16 +327,16 @@ function normalizeGeneratedItem(item, index) {
             : "professional",
     type: item.type || "Article",
     tags: item.tags || [],
-    oneLine: item.oneLine || item.abstract || item.title,
-    summary: item.summary || item.abstract || "",
+    oneLine: decodeText(item.oneLine || item.abstract || title),
+    summary: decodeText(item.summary || item.abstract || ""),
     reason: "由两阶段模型评分流程生成。",
-    paperUrl: item.url || (item.doi ? `https://doi.org/${item.doi}` : "#"),
+    paperUrl,
     doi: item.doi,
     sourceUrls: sourceSignals.map((signal) => ({
       label: signal.name,
-      url: signal.url || "#"
+      url: normalizePaperUrl(signal.url, item.doi)
     })),
-    citation: item.citation || item.title,
+    citation: stripDoiFromCitation(item.citation || title, item.doi),
     generatedScore: item.score,
     generatedBreakdown: item.scoreBreakdown
   };
@@ -493,9 +540,10 @@ function sourceSignalLabel(type) {
 }
 
 function referenceBlock(paper) {
+  const citation = stripDoiFromCitation(paper.citation || paper.title, paper.doi);
   return `
     <div class="reference-block">
-      <p>${paper.citation}</p>
+      <p>${citation}</p>
       ${paper.doi ? `<div class="doi-line">DOI: ${paper.doi}</div>` : ""}
       <div class="reference-links">
         <a href="${paper.paperUrl}">原始论文</a>
