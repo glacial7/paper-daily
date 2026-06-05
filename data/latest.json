@@ -1,81 +1,194 @@
 {
-  "generatedAt": "2026-06-05T14:20:41.747Z",
+  "generatedAt": "2026-06-05T14:43:32.713Z",
   "dryRun": false,
   "prescreenModel": "deepseek-v4-flash",
   "scoreModel": "deepseek-v4-pro",
   "items": [
     {
-      "id": "demo-drainage-001",
-      "title": "农田排水沟渠的氮磷削减效率与生态工程设计",
-      "abstract": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
-      "journal": "Annual Review of Ecology, Evolution, and Systematics",
+      "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
+      "title": "Nature Reviews Biodiversity",
+      "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
+      "journal": "Nature Reviews Biodiversity",
       "type": "Review",
-      "doi": "10.xxxx/example.002",
-      "url": "https://doi.org/10.xxxx/example.002",
-      "date": "2026-06-05",
+      "doi": "10.1038/s44358-026-00162-0",
+      "url": "http://feeds.nature.com/nrbd/rss/current",
+      "date": "2026-06-03",
       "sourceSignals": [
         {
           "type": "reviewJournal",
-          "name": "Annual Reviews",
-          "url": "https://doi.org/10.xxxx/example.002"
+          "name": "Nature Reviews Biodiversity",
+          "url": "http://feeds.nature.com/nrbd/rss/current"
         }
       ],
       "tags": [
-        "drainage"
+        "methods"
       ],
-      "oneLine": "该综述总结了农田排水沟渠的氮磷削减效率及生态工程设计，与农田排水主题高度相关。",
-      "summary": "该综述系统梳理了农田排水沟渠对氮、磷和悬浮颗粒物的削减效果，重点比较了不同植被配置与水力停留时间的影响。研究发现，合理设计的生态沟渠可显著降低面源污染物输出，其中植被类型、密度和停留时间是关键调控因子。文章进一步讨论了生态工程设计的优化策略，如复合植被带和多级塘系统，并指出长期运行中可能出现的底泥饱和与维护问题。这一综合性评估为农田面源污染治理提供了科学依据和实践指导，尤其有助于排水管理决策和生态工程监测方案的制定。",
-      "reason": "直接命中‘农田排水与面源污染’核心课题，系统总结沟渠削减效率与设计参数，对选题和监测方案有高参考价值。",
-      "score": 96,
+      "oneLine": "该综述探讨了整合大规模生物多样性监测与群体遗传学辅助保护决策的方法，与生态监测方法及管理应用直接相关。",
+      "summary": "本文综述了将大规模生物多样性监测数据集与群体遗传学原理相结合以支撑保护决策的途径。研究指出，遗传多样性丧失已成为威胁种群恢复力的关键因素，而整合监测与遗传学方法能够帮助各级治理主体制定更有效的保护策略。综述梳理了现有监测框架、遗传学指标及案例，展示了如何从大规模数据中提取遗传信息，并将其转化为管理行动。该研究为生态监测方法与管理实践之间架设了桥梁，尤其对关注监测技术如何服务于生物多样性保护的用户具有参考价值，也提供了方法论与决策支持层面的启发。",
+      "reason": "该综述聚焦大规模生物多样性监测数据与群体遗传学原理的整合，直接对应生态监测方法及其在保护决策中的应用，与用户关注的生态遥感、模型和监测方法高度相关。",
+      "score": 89,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 49,
+        "theme": 42,
         "type": 20
       },
-      "citation": "Anonymous. (2026). 农田排水沟渠的氮磷削减效率与生态工程设计. Annual Review of Ecology, Evolution, and Systematics. https://doi.org/10.xxxx/example.002",
-      "generatedAt": "2026-06-05T14:20:41.747Z"
+      "citation": "Nature Reviews Biodiversity. (2026, June 3). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00162-0",
+      "generatedAt": "2026-06-05T14:40:18.474Z"
     },
     {
-      "id": "demo-invasion-fire-001",
-      "title": "入侵草本植物改变可燃物结构并放大火后恢复差异",
-      "abstract": "研究比较入侵草本群落和本地群落在可燃物连续性、含水量、火后恢复速度上的差异。",
-      "journal": "Nature",
-      "type": "Article",
-      "doi": "10.xxxx/example.001",
-      "url": "https://doi.org/10.xxxx/example.001",
-      "date": "2026-06-05",
+      "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
+      "title": "Wildfires in 2025",
+      "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00793-z Globally, fires in 2025 burned the second-lowest area on record since 2002 and emitted the third-lowest CO2 total. Yet, a third successive year of extreme wildfire emissions prevailed in Canada, and catastrophic fires in Los Angeles, South Korea and Europe killed over 90 people and forced over 300,000 evacuations.",
+      "journal": "Nature Reviews Earth & Environment",
+      "type": "Review",
+      "doi": "10.1038/s43017-026-00793-z",
+      "url": "https://www.nature.com/articles/s43017-026-00793-z",
+      "date": "2026-06-01",
       "sourceSignals": [
         {
-          "type": "topJournal",
-          "name": "Nature",
-          "url": "https://doi.org/10.xxxx/example.001"
-        },
-        {
-          "type": "natureScienceNews",
-          "name": "Nature News",
-          "url": "https://example.com/nature-news"
-        },
-        {
-          "type": "wechat",
-          "name": "生态学者",
-          "url": "https://example.com/wechat"
+          "type": "reviewJournal",
+          "name": "Nature Reviews Earth & Environment",
+          "url": "https://www.nature.com/articles/s43017-026-00793-z"
         }
       ],
       "tags": [
-        "invasion",
         "fire"
       ],
-      "oneLine": "入侵草本植物通过改变可燃物结构增加火风险并加速自身火后恢复。",
-      "summary": "本研究对比了入侵草本植物群落与本地植物群落在可燃物连续性、含水量及火后恢复速度上的差异。结果发现，入侵种通过形成更连续的可燃物层和降低植被含水量，显著改变了火行为，并在火灾后恢复更快，可能加剧本地种群落退化。该研究为理解入侵植物如何影响火烧风险及火后生态系统恢复提供了直接证据，对制定入侵管理和火险防控策略具有参考价值。",
-      "reason": "论文直接研究入侵草本植物对可燃物结构、含水量和火后恢复速度的影响，与用户核心课题‘植物入侵与火烧风险’高度吻合，可支持选题、综述框架和研究假设。",
-      "score": 95,
+      "oneLine": "该综述回顾2025年全球野火状况，记录了低总面积但极端事件频发的格局，为火烧风险研究提供宏观背景。",
+      "summary": "本文综述了2025年全球野火情况。尽管全年总过火面积和二氧化碳排放分别创下2002年以来第二低和第三低，但加拿大连续第三年遭遇极端野火排放，洛杉矶、韩国和欧洲的灾难性火灾共导致超过90人死亡，30多万人疏散。文章汇总了各地火灾特征和影响，突显了气候变化背景下极端火灾事件频发的现实。对火烧风险研究者而言，这篇综述提供了最新的全球火灾宏观统计与极端事件案例，可作为监测方案和风险背景的重要参考。",
+      "reason": "该综述直接提供2025年全球野火烧毁面积和碳排放数据，与火烧风险高度相关，但未涉及植物入侵，因此未达到直接命中核心课题的满分标准。",
+      "score": 87,
       "scoreBreakdown": {
-        "source": 30,
-        "theme": 48,
+        "source": 27,
+        "theme": 40,
+        "type": 20
+      },
+      "citation": "Wildfires in 2025. (2026, June 1). Nature Reviews Earth & Environment. https://doi.org/10.1038/s43017-026-00793-z",
+      "generatedAt": "2026-06-05T14:41:17.928Z"
+    },
+    {
+      "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
+      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+      "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03097-z",
+      "url": "https://www.nature.com/articles/s41559-026-03097-z",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03097-z"
+        }
+      ],
+      "tags": [
+        "wind"
+      ],
+      "oneLine": "不同规划尺度的中国风电与太阳能扩展路径产生不同的生物多样性权衡，强调多尺度综合选址的必要性。",
+      "summary": "本研究模拟了中国至2060年国家与省级两种规划尺度下的太阳能和风电扩展路径，利用建模分析发现不同集权程度导致差异化的生物多样性影响。结果显示，两种路径在气候目标与生态保护之间产生不同的权衡关系，表明需要综合多尺度选址策略以平衡可再生能源发展与生物多样性保护目标。该研究为风电项目生态影响评估提供了量化比较框架，对理解大规模可再生能源布局的生态后果具有参考价值。",
+      "reason": "研究中国风电与太阳能扩展规划尺度对生物多样性的权衡，使用建模方法，为风电项目生态影响评估提供背景和方法参考，与'风电项目与植物入侵风险'方向明确相关但未直接涉及入侵，故评分40。",
+      "score": 81,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 40,
         "type": 17
       },
-      "citation": "(2026). 入侵草本植物改变可燃物结构并放大火后恢复差异. Nature. https://doi.org/10.xxxx/example.001",
-      "generatedAt": "2026-06-05T14:20:26.037Z"
+      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. (2026). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03097-z",
+      "generatedAt": "2026-06-05T14:42:04.417Z"
+    },
+    {
+      "id": "nature-reviews-biodiversity-5-UnVubmluZyB0",
+      "title": "Running the numbers on biodiversity change",
+      "abstract": "Nature Reviews Biodiversity, Published online: 20 May 2026; doi:10.1038/s44358-026-00163-z Predictive modelling and attribution science have advanced further in climate science than in biodiversity science, despite a history of strong quantitative approaches in ecology. Efforts to attribute biodiversity loss to anthropogenic drivers are escalating, given the urgency of providing evidence of biodiversity loss and identifying effective interventions.",
+      "journal": "Nature Reviews Biodiversity",
+      "type": "Review",
+      "doi": "10.1038/s44358-026-00163-z",
+      "url": "https://www.nature.com/articles/s44358-026-00163-z",
+      "date": "2026-05-20",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Nature Reviews Biodiversity",
+          "url": "https://www.nature.com/articles/s44358-026-00163-z"
+        }
+      ],
+      "tags": [
+        "methods"
+      ],
+      "oneLine": "这篇综述聚焦生物多样性变化的预测模型与归因方法，为生态模型和监测研究提供前沿方法学视角。",
+      "summary": "本文综述了生物多样性变化预测建模和归因科学的进展，指出尽管生态学有定量传统，但在预测和归因方面仍落后于气候科学。随着提供生物多样性丧失证据和识别有效干预措施的紧迫性增加，归因研究正加速推进。文章梳理了定量方法在生物多样性监测与模拟中的应用，为从事生态模型和监测工作的研究者提供方法论参考，但未涉及植物入侵、风电项目或农田排水等具体场景。",
+      "reason": "讨论生物多样性变化的预测模型和归因方法，与用户关注的生态遥感、模型和监测方法有方法学关联，但未直接针对植物入侵或农田排水等具体方向，属于外围相关，需人工判断是否保留。",
+      "score": 79,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 32,
+        "type": 20
+      },
+      "citation": "Running the numbers on biodiversity change. (2026, May 20). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00163-z",
+      "generatedAt": "2026-06-05T14:40:50.996Z"
+    },
+    {
+      "id": "sciencedaily-agriculture-food-4-UGxhbnQgYmVs",
+      "title": "Plant believed extinct for 60 years suddenly reappears",
+      "abstract": "A random photo snapped in the Australian outback has led to the rediscovery of a plant thought extinct for nearly 60 years — proving that ordinary people with smartphones are quietly transforming science. After bird bander Aaron Bean uploaded pictures of a strange shrub to iNaturalist, botanist Anthony Bean immediately recognized it as Ptilotus senarius, a rare species missing since 1967.",
+      "journal": "ScienceDaily Agriculture and Food",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
+      "date": "2026-05-18",
+      "sourceSignals": [
+        {
+          "type": "scienceDaily",
+          "name": "ScienceDaily Agriculture and Food",
+          "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm"
+        }
+      ],
+      "tags": [
+        "methods"
+      ],
+      "oneLine": "公民科学平台iNaturalist助力重新发现灭绝60年的植物，展示公众参与生态监测的新途径。",
+      "summary": "澳大利亚一名鸟类环志者在内陆偶然拍摄到一种陌生灌木，并上传至iNaturalist平台，植物学家迅速识别出这是自1967年后被认为灭绝的稀有物种Ptilotus senarius。该事件证明普通公众借助智能手机可推动科学发现，尤其凸显公民科学在偏远地区生物多样性监测中的价值。研究虽未涉及复杂模型，但为低成本、广覆盖的生态监测提供了鲜活案例，对完善监测网络、激励公众参与具有启示。",
+      "reason": "该文报道了公民科学平台iNaturalist在植物再发现中的应用，属于生态监测方法范畴，与用户‘生态遥感、模型和监测方法’方向有相关性，但非核心的入侵或污染课题，预筛相关性30分，维持此评分。",
+      "score": 63,
+      "scoreBreakdown": {
+        "source": 16,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "Plant believed extinct for 60 years suddenly reappears. (2026, May 18). ScienceDaily Agriculture and Food. https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
+      "generatedAt": "2026-06-05T14:43:26.372Z"
+    },
+    {
+      "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
+      "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
+      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.",
+      "journal": "Nature Ecology & Evolution",
+      "type": "Methods",
+      "doi": "10.1038/s41559-026-03087-1",
+      "url": "https://www.nature.com/articles/s41559-026-03087-1",
+      "date": "2026-06-02",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03087-1"
+        }
+      ],
+      "tags": [
+        "methods"
+      ],
+      "oneLine": "sPYce是一种无需序列比对的跨物种单核ATAC-seq整合方法，为基因调控进化比较研究提供新工具。",
+      "summary": "Nature Ecology & Evolution发表的这篇方法学论文提出了sPYce，一种无需序列比对的跨物种单核ATAC-seq数据整合方法。单核ATAC-seq是一种研究染色质可及性的高通量技术，可用于解析基因调控元件。sPYce通过计算不同物种间单核ATAC-seq谱的相似性，实现跨物种比较，从而帮助学者研究基因调控进化。该方法在多个物种数据集上得到验证，展示了其整合能力和生物学发现潜力。尽管该工具为进化发育生物学和比较基因组学提供了新手段，但对于关注宏观生态过程如植物入侵、污染治理及遥感监测的用户而言，其直接应用价值有限，仅作为潜在的基础方法储备值得了解。",
+      "reason": "该研究为方法学论文，提出sPYce工具用于跨物种单核ATAC-seq整合，属于分子进化基因组学领域，与用户关注的植物入侵、风电、农田排水及生态遥感监测等宏观生态课题无直接关联，仅有极微弱的方法学参考价值。",
+      "score": 48,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 10,
+        "type": 14
+      },
+      "citation": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce. (2026). Nature Ecology & Evolution. Advance online publication. https://doi.org/10.1038/s41559-026-03087-1",
+      "generatedAt": "2026-06-05T14:42:47.266Z"
     }
   ]
 }

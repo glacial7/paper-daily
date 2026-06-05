@@ -1,30 +1,891 @@
 [
   {
-    "id": "demo-invasion-fire-001",
-    "title": "入侵草本植物改变可燃物结构并放大火后恢复差异",
-    "abstract": "研究比较入侵草本群落和本地群落在可燃物连续性、含水量、火后恢复速度上的差异。",
+    "id": "nature-0-TmF0dXJl",
+    "title": "Nature",
+    "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01610-9 European governments are choosing European digital tools — and some universities and researchers are doing the same.",
     "journal": "Nature",
     "type": "Article",
-    "doi": "10.xxxx/example.001",
-    "url": "https://doi.org/10.xxxx/example.001",
+    "doi": "10.1038/d41586-026-01610-9",
+    "url": "http://feeds.nature.com/nature/rss/current",
     "date": "2026-06-05",
     "sourceSignals": [
-      { "type": "topJournal", "name": "Nature", "url": "https://doi.org/10.xxxx/example.001" },
-      { "type": "natureScienceNews", "name": "Nature News", "url": "https://example.com/nature-news" },
-      { "type": "wechat", "name": "生态学者", "url": "https://example.com/wechat" }
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "http://feeds.nature.com/nature/rss/current"
+      }
     ]
   },
   {
-    "id": "demo-drainage-001",
-    "title": "农田排水沟渠的氮磷削减效率与生态工程设计",
-    "abstract": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
-    "journal": "Annual Review of Ecology, Evolution, and Systematics",
-    "type": "Review",
-    "doi": "10.xxxx/example.002",
-    "url": "https://doi.org/10.xxxx/example.002",
+    "id": "nature-1-U2VlIGEgaGVs",
+    "title": "See a helicopter destined for Mars and a spectacular flowery frame for the Milky Way — May's best science images",
+    "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01609-2 The month’s sharpest science shots, selected by Nature’s photo team.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01609-2",
+    "url": "https://www.nature.com/articles/d41586-026-01609-2",
     "date": "2026-06-05",
     "sourceSignals": [
-      { "type": "reviewJournal", "name": "Annual Reviews", "url": "https://doi.org/10.xxxx/example.002" }
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01609-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-2-RWxlY3RyaWMg",
+    "title": "Electric vehicles cut pollution in China – and prevent 260,000 premature deaths",
+    "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01781-5 Having fewer fossil-fuel powered cars on the road is reducing some pollutants, but not others.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01781-5",
+    "url": "https://www.nature.com/articles/d41586-026-01781-5",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01781-5"
+      }
+    ]
+  },
+  {
+    "id": "nature-3-QXV0aG9yIENv",
+    "title": "Author Correction: Physiology and immunology of a pig-to-human decedent kidney xenotransplant",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/s41586-026-10694-2 Author Correction: Physiology and immunology of a pig-to-human decedent kidney xenotransplant",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10694-2",
+    "url": "https://www.nature.com/articles/s41586-026-10694-2",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10694-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-4-RGV2aWNlIGNv",
+    "title": "Device could sniff out fusion reactors secretly making material for a nuclear bomb",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01764-6 Antineutrinos made alongside the production of weapons-grade plutonium could be spotted with existing technology.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01764-6",
+    "url": "https://www.nature.com/articles/d41586-026-01764-6",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01764-6"
+      }
+    ]
+  },
+  {
+    "id": "nature-5-QmFiaWVz4oCZ",
+    "title": "Babies’ birth weight improves with help of payments to parents",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01765-5 Interventions that included home visits and cash transfers led to more strapping infants in an Indian state.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01765-5",
+    "url": "https://www.nature.com/articles/d41586-026-01765-5",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01765-5"
+      }
+    ]
+  },
+  {
+    "id": "nature-6-VGhpcyBteXN0",
+    "title": "This mysterious lung disease affects millions of people — but a drug tested in mice shows promise",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01789-x The therapy activates a protein that could stop pulmonary fibrosis from progressing.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01789-x",
+    "url": "https://www.nature.com/articles/d41586-026-01789-x",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01789-x"
+      }
+    ]
+  },
+  {
+    "id": "nature-7-U2NpZW5jZSB3",
+    "title": "Science with military applications is cited more than civilian-only research",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01770-8 Researchers analysed the scientific impact of dual-use research in US patent records and bibliometric databases.",
+    "journal": "Nature",
+    "type": "Methods",
+    "doi": "10.1038/d41586-026-01770-8",
+    "url": "https://www.nature.com/articles/d41586-026-01770-8",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01770-8"
+      }
+    ]
+  },
+  {
+    "id": "nature-8-V2hhdOKAmXMg",
+    "title": "What’s behind China’s historically high counts of corresponding authors?",
+    "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01623-4 From 2016 to 2020, almost one-third of papers by authors in China had multiple corresponding authors — but policy reforms are expected to have dampened the trend.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01623-4",
+    "url": "https://www.nature.com/articles/d41586-026-01623-4",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01623-4"
+      }
+    ]
+  },
+  {
+    "id": "nature-9-RWRpdG9yaWFs",
+    "title": "Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10727-w Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10727-w",
+    "url": "https://www.nature.com/articles/s41586-026-10727-w",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10727-w"
+      }
+    ]
+  },
+  {
+    "id": "nature-10-QUkgaW4gc2Np",
+    "title": "AI in science recruitment: friend or foe? Join our free webinar",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01774-4 Discover the strengths, limitations and risks associated with using artificial intelligence in your science job applications.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01774-4",
+    "url": "https://www.nature.com/articles/d41586-026-01774-4",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01774-4"
+      }
+    ]
+  },
+  {
+    "id": "nature-11-WW91ciBwaG9u",
+    "title": "Your phone can use tiny skin-colour changes to measure your heart rate",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01793-1 Passive heart-rate monitoring during regular phone use could provide early warning of health issues — plus, testing Richard Feynman’s solution to the ‘restaurant dilemma’ problem.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01793-1",
+    "url": "https://www.nature.com/articles/d41586-026-01793-1",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01793-1"
+      }
+    ]
+  },
+  {
+    "id": "nature-12-UmVwbHkgdG86",
+    "title": "Reply to: The size of tropical vegetation gross primary production",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10561-0",
+    "url": "https://www.nature.com/articles/s41586-026-10561-0",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10561-0"
+      }
+    ]
+  },
+  {
+    "id": "nature-13-VGhlIHNpemUg",
+    "title": "The size of tropical vegetation gross primary production",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10562-z The size of tropical vegetation gross primary production",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10562-z",
+    "url": "https://www.nature.com/articles/s41586-026-10562-z",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10562-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-14-QSBuYXR1cmFs",
+    "title": "A natural depsipeptide antibiotic binds the E-site of the bacterial ribosome",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10589-2 Improved fractionation strategies can identify antibiotics with previously unseen scaffolds and mechanisms, exemplified by manikomycin from Streptomyces rimosus, which acts by targeting the E-site of the bacterial large ribosomal subunit.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10589-2",
+    "url": "https://www.nature.com/articles/s41586-026-10589-2",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10589-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-15-RWFydGjigJlz",
+    "title": "Earth’s east–west albedo symmetry",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10624-2 Analysis of a 25-year satellite record shows that Earth has a persistent east–west albedo symmetry split at 27° E, with clear-sky albedo, cloud radiative effect and open-ocean fraction exhibiting a triple symmetry around this meridian.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10624-2",
+    "url": "https://www.nature.com/articles/s41586-026-10624-2",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10624-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-16-UmVsYXRpdmlz",
+    "title": "Relativistic electron acceleration at the bow shock of Jupiter and beyond",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10473-z NASA’s Juno observations show relativistic electron acceleration at the bow shock of Jupiter and establish a universal scaling law linking shock size to maximum cosmic ray energy.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10473-z",
+    "url": "https://www.nature.com/articles/s41586-026-10473-z",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10473-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-17-QWNxdWlyZWQg",
+    "title": "Acquired genetic and cell-state changes in IDH-mutant glioma progression",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10612-6 Longitudinal transcriptomic, chromatin and genomic analyses of the two types of IDH-mutant glioma reveal in detail how disease progression is influenced by interdependent genetic, epigenetic and microenvironmental factors.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10612-6",
+    "url": "https://www.nature.com/articles/s41586-026-10612-6",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10612-6"
+      }
+    ]
+  },
+  {
+    "id": "nature-18-TWluaW5nIHRy",
+    "title": "Mining triggers extensive additional deforestation in sub-Saharan Africa",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10551-2 Extensive mining activity leads to large-scale deforestation of dense tropical forests across sub-Saharan Africa, driven particularly by key energy transition minerals such as cobalt.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10551-2",
+    "url": "https://www.nature.com/articles/s41586-026-10551-2",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10551-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-19-Q29sZC1pbmR1",
+    "title": "Cold-induced peptide signalling secures pollen resilience and crop yield",
+    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10603-7 A small-peptide signalling axis involving RGF family members controls resilience to cold stress in tomatoes and rice; modulating this pathway prevents cold-induced yield losses.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/s41586-026-10603-7",
+    "url": "https://www.nature.com/articles/s41586-026-10603-7",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10603-7"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
+    "title": "Nature Reviews Biodiversity",
+    "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00162-0",
+    "url": "http://feeds.nature.com/nrbd/rss/current",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "http://feeds.nature.com/nrbd/rss/current"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-1-QXV0aG9yIENv",
+    "title": "Author Correction: The fate of mountain biodiversity in a warming world",
+    "abstract": "Nature Reviews Biodiversity, Published online: 02 June 2026; doi:10.1038/s44358-026-00172-y Author Correction: The fate of mountain biodiversity in a warming world",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00172-y",
+    "url": "https://www.nature.com/articles/s44358-026-00172-y",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00172-y"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-2-VGhlIGFydCBv",
+    "title": "The art of the proposal",
+    "abstract": "Nature Reviews Biodiversity, Published online: 01 June 2026; doi:10.1038/s44358-026-00174-w Nature Reviews Biodiversity mainly publishes commissioned articles, but we also welcome proposals. Understanding what the editors look for in a proposal is the first step towards preparing a successful pitch.",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00174-w",
+    "url": "https://www.nature.com/articles/s44358-026-00174-w",
+    "date": "2026-06-01",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00174-w"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-3-VGhlIHByaW5j",
+    "title": "The principles underpinning the evolution of the brain",
+    "abstract": "Nature Reviews Biodiversity, Published online: 27 May 2026; doi:10.1038/s44358-026-00171-z The principles underpinning the evolution of the brain",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00171-z",
+    "url": "https://www.nature.com/articles/s44358-026-00171-z",
+    "date": "2026-05-27",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00171-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-4-VGhlIGZhdGUg",
+    "title": "The fate of mountain biodiversity in a warming world",
+    "abstract": "Nature Reviews Biodiversity, Published online: 25 May 2026; doi:10.1038/s44358-026-00167-9 Species living on mountains are thought to be especially vulnerable to ongoing climate change. This Review explores past and present responses of mountaintop species to climate warming to help to understand mountain species’ vulnerabilities and resilience to future warming.",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00167-9",
+    "url": "https://www.nature.com/articles/s44358-026-00167-9",
+    "date": "2026-05-25",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00167-9"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-5-UnVubmluZyB0",
+    "title": "Running the numbers on biodiversity change",
+    "abstract": "Nature Reviews Biodiversity, Published online: 20 May 2026; doi:10.1038/s44358-026-00163-z Predictive modelling and attribution science have advanced further in climate science than in biodiversity science, despite a history of strong quantitative approaches in ecology. Efforts to attribute biodiversity loss to anthropogenic drivers are escalating, given the urgency of providing evidence of biodiversity loss and identifying effective interventions.",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00163-z",
+    "url": "https://www.nature.com/articles/s44358-026-00163-z",
+    "date": "2026-05-20",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00163-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-6-QmlvZGl2ZXJz",
+    "title": "Biodiversity conservation in the era of environmental instability",
+    "abstract": "Nature Reviews Biodiversity, Published online: 19 May 2026; doi:10.1038/s44358-026-00168-8 Biodiversity conservation in the era of environmental instability",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00168-8",
+    "url": "https://www.nature.com/articles/s44358-026-00168-8",
+    "date": "2026-05-19",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00168-8"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-biodiversity-7-VXBkYXRpbmcg",
+    "title": "Updating species representation targets for protected and conserved area planning",
+    "abstract": "Nature Reviews Biodiversity, Published online: 19 May 2026; doi:10.1038/s44358-026-00169-7 Current standards for assessing species representation in protected areas are outdated. We propose raising the minimum representation target to 30% of a species range, lowering the threshold for assigning a 100% representation target to species with ranges below 200 km2, and adopting dynamic targets that evolve with global conservation commitments.",
+    "journal": "Nature Reviews Biodiversity",
+    "type": "Review",
+    "doi": "10.1038/s44358-026-00169-7",
+    "url": "https://www.nature.com/articles/s44358-026-00169-7",
+    "date": "2026-05-19",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Biodiversity",
+        "url": "https://www.nature.com/articles/s44358-026-00169-7"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-0-TmF0dXJlIFJl",
+    "title": "Nature Reviews Earth & Environment",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 03 June 2026; doi:10.1038/s43017-026-00797-9 Compound weather and climate events in 2025",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00797-9",
+    "url": "http://feeds.nature.com/natrevearthenviron/rss/current",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "http://feeds.nature.com/natrevearthenviron/rss/current"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
+    "title": "Wildfires in 2025",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00793-z Globally, fires in 2025 burned the second-lowest area on record since 2002 and emitted the third-lowest CO2 total. Yet, a third successive year of extreme wildfire emissions prevailed in Canada, and catastrophic fires in Los Angeles, South Korea and Europe killed over 90 people and forced over 300,000 evacuations.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00793-z",
+    "url": "https://www.nature.com/articles/s43017-026-00793-z",
+    "date": "2026-06-01",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00793-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-2-Q2xpbWF0ZSBp",
+    "title": "Climate impacts of hydrogen emissions",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00792-0 Although hydrogen is not a direct greenhouse gas, its interactions with atmospheric chemistry lead to indirect climate impacts. This Review discusses sources and sinks of atmospheric hydrogen, including uncertainties and data gaps, and how the warming effect of hydrogen emissions can be estimated and accounted for in policies and standards.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00792-0",
+    "url": "https://www.nature.com/articles/s43017-026-00792-0",
+    "date": "2026-06-01",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00792-0"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-3-RGVveHlnZW5h",
+    "title": "Deoxygenation in inland freshwater systems",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00795-x Widespread declines in dissolved oxygen concentrations in lakes and rivers have ecological and socioeconomic consequences. This Review highlights spatial and temporal trends, climate and anthropogenic drivers, impacts and strategies for the management and mitigation of inland freshwater deoxygenation.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00795-x",
+    "url": "https://www.nature.com/articles/s43017-026-00795-x",
+    "date": "2026-06-01",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00795-x"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-4-RW5oYW5jaW5n",
+    "title": "Enhancing in situ coral feeding with a programmable underwater light",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 29 May 2026; doi:10.1038/s43017-026-00802-1 Shannon Dixon explains how the Underwater Zooplankton Enhancement Light Array is used as a minimally invasive, in situ method to supply supplemental nutrition to coral, improving coral growth and survivorship.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00802-1",
+    "url": "https://www.nature.com/articles/s43017-026-00802-1",
+    "date": "2026-05-29",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00802-1"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-5-UHJlY2lwaXRh",
+    "title": "Precipitation extremes in 2025",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 26 May 2026; doi:10.1038/s43017-026-00794-y Extreme rainfall events in 2025 were globally associated with exceptional short-duration intensities consistent with hydrological intensification in a warming climate. A total of 46 events were considered, including 18 tropical cyclones and 10 convective storms, producing widespread flooding, economic losses and substantial societal impacts.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00794-y",
+    "url": "https://www.nature.com/articles/s43017-026-00794-y",
+    "date": "2026-05-26",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00794-y"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-6-RHJpdmVycyBh",
+    "title": "Drivers and environmental impacts of Arctic shipping",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 26 May 2026; doi:10.1038/s43017-026-00790-2 Arctic shipping is increasing owing to sea ice melt offering more efficient alternatives to traditional shipping routes, leading to negative impacts across the atmosphere, cryosphere, hydrosphere and biosphere. This Review discusses the factors influencing trends in Arctic shipping, the associated environmental impacts and potential pathways towards sustainable solutions.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00790-2",
+    "url": "https://www.nature.com/articles/s43017-026-00790-2",
+    "date": "2026-05-26",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00790-2"
+      }
+    ]
+  },
+  {
+    "id": "nature-reviews-earth-environment-7-UGh5dG9wbGFu",
+    "title": "Phytoplankton mortality in a changing ocean",
+    "abstract": "Nature Reviews Earth & Environment, Published online: 21 May 2026; doi:10.1038/s43017-026-00789-9 Nature Reviews Earth & Environment interviewed Kyle Mayers about their project investigating phytoplankton mortality and how climate change might influence it.",
+    "journal": "Nature Reviews Earth & Environment",
+    "type": "Review",
+    "doi": "10.1038/s43017-026-00789-9",
+    "url": "https://www.nature.com/articles/s43017-026-00789-9",
+    "date": "2026-05-21",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Nature Reviews Earth & Environment",
+        "url": "https://www.nature.com/articles/s43017-026-00789-9"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-0-TmF0dXJlIEVj",
+    "title": "Nature Ecology & Evolution",
+    "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03101-6",
+    "url": "http://feeds.nature.com/natecolevol/rss/current",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "http://feeds.nature.com/natecolevol/rss/current"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
+    "title": "Latitudinal patterns and environmental correlates of plant root exudation",
+    "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Methods",
+    "doi": "10.1038/s41559-026-03103-4",
+    "url": "https://www.nature.com/articles/s41559-026-03103-4",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03103-4"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-2-QmlvZGl2ZXJz",
+    "title": "Biodiversity loss will decrease the future creditworthiness of nations",
+    "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03081-7 Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03081-7",
+    "url": "https://www.nature.com/articles/s41559-026-03081-7",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03081-7"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
+    "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+    "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03097-z",
+    "url": "https://www.nature.com/articles/s41559-026-03097-z",
+    "date": "2026-06-03",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03097-z"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-4-VHdlbnRpZXRo",
+    "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
+    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03083-5",
+    "url": "https://www.nature.com/articles/s41559-026-03083-5",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03083-5"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
+    "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
+    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Methods",
+    "doi": "10.1038/s41559-026-03087-1",
+    "url": "https://www.nature.com/articles/s41559-026-03087-1",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03087-1"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-6-R2VuZSBib2R5",
+    "title": "Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian",
+    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03090-6 Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03090-6",
+    "url": "https://www.nature.com/articles/s41559-026-03090-6",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03090-6"
+      }
+    ]
+  },
+  {
+    "id": "nature-ecology-evolution-7-TmluZXR5LXll",
+    "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
+    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.",
+    "journal": "Nature Ecology & Evolution",
+    "type": "Article",
+    "doi": "10.1038/s41559-026-03074-6",
+    "url": "https://www.nature.com/articles/s41559-026-03074-6",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "professionalJournal",
+        "name": "Nature Ecology & Evolution",
+        "url": "https://www.nature.com/articles/s41559-026-03074-6"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-agriculture-food-0-QSBoaWRkZW4g",
+    "title": "A hidden pollutant is changing how the world&#039;s forests breathe",
+    "abstract": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem&#039;s condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.",
+    "journal": "ScienceDaily Agriculture and Food",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Agriculture and Food",
+        "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
+      },
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Ecology",
+        "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-agriculture-food-1-VGhpcyBibG9v",
+    "title": "This blood-feeding fly sacrifices its sight after finding a host",
+    "abstract": "Deer keds rely on flight and vision to find a host, but everything changes once they land. After shedding their wings forever, these parasites reduce the activity of key vision-related genes by about half. Scientists believe they are effectively trading sharp eyesight for extra energy that can be used for feeding and reproduction.",
+    "journal": "ScienceDaily Agriculture and Food",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/06/260602021633.htm",
+    "date": "2026-06-02",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Agriculture and Food",
+        "url": "https://www.sciencedaily.com/releases/2026/06/260602021633.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-agriculture-food-2-U2NpZW50aXN0",
+    "title": "Scientists say evolution may work differently than we thought",
+    "abstract": "A major research study is challenging one of evolution’s most influential ideas: that most genetic changes that become permanent are essentially neutral. Researchers at the University of Michigan found that beneficial mutations are actually far more common than scientists have long assumed. The puzzle is that these advantageous mutations rarely spread through entire populations. Their answer? Nature keeps changing the rules.",
+    "journal": "ScienceDaily Agriculture and Food",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260529030329.htm",
+    "date": "2026-05-29",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Agriculture and Food",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260529030329.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-agriculture-food-3-QSBOZXcgWW9y",
+    "title": "A New York cemetery was hiding 5.5 million bees underground",
+    "abstract": "A casual walk through an Ithaca cemetery led to the discovery of a gigantic hidden bee population — roughly 5.5 million ground-nesting bees packed beneath the soil. Scientists believe it may be one of the largest bee aggregations ever documented and say the insects are crucial pollinators for apple orchards and other crops. The bees have likely lived there for more than 100 years, thriving in the cemetery’s undisturbed sandy soil.",
+    "journal": "ScienceDaily Agriculture and Food",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260527023218.htm",
+    "date": "2026-05-28",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Agriculture and Food",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260527023218.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-agriculture-food-4-UGxhbnQgYmVs",
+    "title": "Plant believed extinct for 60 years suddenly reappears",
+    "abstract": "A random photo snapped in the Australian outback has led to the rediscovery of a plant thought extinct for nearly 60 years — proving that ordinary people with smartphones are quietly transforming science. After bird bander Aaron Bean uploaded pictures of a strange shrub to iNaturalist, botanist Anthony Bean immediately recognized it as Ptilotus senarius, a rare species missing since 1967.",
+    "journal": "ScienceDaily Agriculture and Food",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
+    "date": "2026-05-18",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Agriculture and Food",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-ecology-1-QXJjdGljIE9j",
+    "title": "Arctic Ocean passed a tipping point and scientists say it may never recover",
+    "abstract": "The Arctic Ocean may have crossed a dangerous tipping point. Scientists say the rapid disappearance of sea ice is triggering a hidden chemical shift that is stripping the ocean of nitrate — a nutrient essential for the tiny plankton that support Arctic life. As nitrate levels plunge, the entire food web could feel the impact, from fish and seabirds to whales and polar ecosystems.",
+    "journal": "ScienceDaily Ecology",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260528082457.htm",
+    "date": "2026-05-28",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Ecology",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260528082457.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-ecology-2-SHVtYW5pdHkg",
+    "title": "Humanity has already exceeded Earth’s limits, study warns",
+    "abstract": "Humanity may already be living far beyond what Earth can sustainably support, according to a sweeping new study analyzing more than 200 years of population and environmental data. Researchers found that while population growth once fueled innovation and expansion, the trend shifted decades ago as the planet’s resources became increasingly strained.",
+    "journal": "ScienceDaily Ecology",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260526022021.htm",
+    "date": "2026-05-27",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Ecology",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260526022021.htm"
+      }
+    ]
+  },
+  {
+    "id": "sciencedaily-ecology-3-TG9zdCBmb3Ig",
+    "title": "Lost for 150,000 years: Rainforest discovery upends human history",
+    "abstract": "For decades, scientists believed ancient humans avoided dense rainforests, treating them as nearly impossible environments for early survival. But a groundbreaking discovery in West Africa is rewriting that story. Researchers uncovered evidence that humans were living deep within rainforest environments in present-day Côte d&#039;Ivoire around 150,000 years ago — far earlier than anyone thought possible.",
+    "journal": "ScienceDaily Ecology",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260519003311.htm",
+    "date": "2026-05-20",
+    "sourceSignals": [
+      {
+        "type": "scienceDaily",
+        "name": "ScienceDaily Ecology",
+        "url": "https://www.sciencedaily.com/releases/2026/05/260519003311.htm"
+      }
     ]
   }
 ]
