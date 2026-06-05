@@ -71,3 +71,28 @@ Current scoring:
 - Source quality: 30
 - Topic relevance: 50
 - Paper type: 20
+
+## Source links
+
+The links in `config/sources.json` can be journal homepages, news pages, or RSS feeds.
+
+For each source:
+
+- `pageUrl`: normal webpage URL, such as a journal homepage.
+- `feedUrl`: optional RSS/Atom URL.
+
+If `feedUrl` is missing, `scripts/fetch-sources.mjs` tries to discover an RSS/Atom feed from the page HTML. If no feed is discovered, the source is skipped and a warning is printed. Some publisher pages block bots or do not expose RSS feeds, so they may need a manually supplied feed URL later.
+
+The source form on `sources.html` cannot write to GitHub directly because GitHub Pages is static. It generates a real `sources.json` configuration. Download it and upload it to:
+
+`config/sources.json`
+
+After that, GitHub Actions will use the new source in the next run.
+
+## Feedback config
+
+The like/dislike buttons are stored in the browser first. To make feedback affect future GitHub Actions scoring, use the `导出反馈` button on `index.html`, then upload the downloaded file to:
+
+`config/topic-feedback.json`
+
+The scoring script reads this file and applies topic preference adjustments after a topic has at least 3 feedback samples.

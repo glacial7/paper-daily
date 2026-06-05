@@ -537,7 +537,7 @@ function renderUpdates() {
     ${renderHead(
       "全部论文动态",
       "2026-06-05 · 28 candidates · feedback collected for next scoring run",
-      '<button class="btn" id="feedMode">完整</button>'
+      '<button class="btn" id="exportFeedback">导出反馈</button><button class="btn" id="feedMode">完整</button>'
     )}
     <section class="theme-panel card" id="themePanel"></section>
     <div class="tabs">
@@ -561,7 +561,6 @@ function renderFeed(filter = activeFeedFilter) {
     .map(
       (paper) => `
         <article class="card feed-item">
-          <div class="feed-time">${paper.time}</div>
           <div>
             <div class="feed-title"><a href="${paper.paperUrl}">${paper.title}</a></div>
             <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
@@ -584,8 +583,6 @@ function renderFeed(filter = activeFeedFilter) {
 }
 
 function renderThemePanel() {
-  const themeWeights = getThemeWeights();
-  const stats = feedbackStatsByTopic();
   const topTopics = Object.entries(topicLabels)
     .map(([key, label]) => ({
       key,
@@ -597,23 +594,42 @@ function renderThemePanel() {
     .slice(0, 4);
   document.querySelector("#themePanel").innerHTML = `
     <div class="theme-head">
-      <strong>主题权重</strong>
-      <span>每个主题至少 3 篇正负反馈后才生效</span>
-    </div>
-    <div class="theme-list">
-      ${Object.entries(topicLabels)
-        .map(([key, label]) => {
-          const value = Number(themeWeights[key] || 0);
-          const count = stats[key]?.count || 0;
-          const status = count >= 3 ? `${value >= 0 ? "+" : ""}${value}` : `${count}/3`;
-          return `<span class="theme-chip">${label} <b>${status}</b></span>`;
-        })
-        .join("")}
+      <strong>今日主题</strong>
+      <span>${papers.length} 条动态</span>
     </div>
     <div class="theme-summary">
-      今日主题：${topTopics.map((topic) => `${topic.label} ${topic.count}`).join(" · ")}
+      ${topTopics.map((topic) => `${topic.label} ${topic.count}`).join(" · ")}
     </div>
   `;
+}
+
+function feedbackConfig() {
+  const feedback = getFeedback();
+  return {
+    minFeedbackPerTopic: 3,
+    feedback: Object.entries(feedback).map(([paperId, value]) => {
+      const paper = papers.find((item) => item.id === paperId);
+      return {
+        paperId,
+        title: paper?.title || "",
+        doi: paper?.doi || "",
+        tags: paper?.tags || [],
+        value
+      };
+    })
+  };
+}
+
+function downloadJson(filename, data) {
+  const blob = new Blob([`${JSON.stringify(data, null, 2)}\n`], {
+    type: "application/json"
+  });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 function bindFeed() {
@@ -628,6 +644,9 @@ function bindFeed() {
     feedFull = !feedFull;
     event.currentTarget.textContent = feedFull ? "紧凑" : "完整";
     renderFeed();
+  });
+  document.querySelector("#exportFeedback").addEventListener("click", () => {
+    downloadJson("topic-feedback.json", feedbackConfig());
   });
   document.querySelector("#feed").addEventListener("click", (event) => {
     const button = event.target.closest("[data-feedback]");
@@ -644,6 +663,88 @@ function renderDaily() {
     ${renderHead("论文日报", "VOL.2026.06.05 · top 10 selected")}
     <section class="grid" id="dailyList">${selected.map((paper) => paperCard(paper)).join("")}</section>
   `;
+}
+
+function slugify(value) {
+  return value
+    .toLowerCase()
+    .replace(/https?:\/\//g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+function likelyFeedUrl(url) {
+  return /\.(rss|xml|atom)($|\?)/i.test(url) || /rss|feed|atom/i.test(url);
+}
+
+function sourceFormToConfig({ name, category, weight, url }) {
+  const isFeed = likelyFeedUrl(url);
+  const type =
+    category === "comprehensive"
+      ? "topJournal"
+      : category === "wechat"
+        ? "wechat"
+        : category === "news"
+          ? /sciencedaily/i.test(name + url)
+            ? "scienceDaily"
+            : "natureScienceNews"
+          : /review|annual|trends/i.test(name)
+            ? "reviewJournal"
+            : "professionalJournal";
+  return {
+    id: slugify(name || url || `source-${Date.now()}`),
+    name,
+    type,
+    category,
+    ...(isFeed ? { feedUrl: url } : { pageUrl: url }),
+    weight,
+    status: isFeed ? "feed configured" : "homepage, feed discovery required"
+  };
+}
+
+function sourceConfigToDisplay(item) {
+  return {
+    name: item.name,
+    category: item.category,
+    weight: item.weight || 3,
+    daily: item.daily || 0,
+    typeLabel:
+      item.category === "wechat"
+        ? "微信公众号"
+        : item.category === "news"
+          ? "新闻报道 RSS"
+          : item.category === "comprehensive"
+            ? "综合期刊"
+            : "期刊/页面",
+    urlLabel: item.feedUrl ? "RSS 已配置" : item.pageUrl ? "网页待发现 RSS" : "待配置"
+  };
+}
+
+function mergeSourceConfigs(items) {
+  const map = new Map();
+  items.forEach((item) => {
+    map.set(item.id || slugify(item.name), item);
+  });
+  return [...map.values()];
+}
+
+async function loadBaseSourceConfigs() {
+  try {
+    const response = await fetch("./config/sources.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("no config");
+    return await response.json();
+  } catch {
+    return sources.map(([typeLabel, name, category, weight, daily]) => ({
+      id: slugify(name),
+      name,
+      type: category === "wechat" ? "wechat" : category === "news" ? "scienceDaily" : "professionalJournal",
+      category,
+      weight,
+      daily,
+      status: typeLabel
+    }));
+  }
 }
 
 function renderSources() {
@@ -683,8 +784,21 @@ function renderSources() {
         <label for="sourceNote">主题</label>
         <textarea id="sourceNote" placeholder="invasive plant, wildfire, wind farm, agricultural drainage"></textarea>
       </div>
-      <button class="btn primary" type="submit">添加到本地列表</button>
+      <button class="btn primary" type="submit">加入待提交配置</button>
     </form>
+    <section class="method-section">
+      <div class="cluster-head">
+        <strong>待提交信源配置</strong>
+        <span>下载后覆盖 config/sources.json，再提交到 GitHub</span>
+      </div>
+      <div class="card config-export">
+        <textarea id="sourceConfigOutput" readonly></textarea>
+        <div class="actions">
+          <button class="btn" id="copySourcesConfig">复制配置</button>
+          <button class="btn primary" id="downloadSourcesConfig">下载 sources.json</button>
+        </div>
+      </div>
+    </section>
     <section class="method-section">
       <div class="cluster-head">
         <strong>微信公众号抓取方案</strong>
@@ -713,19 +827,15 @@ function renderSources() {
 }
 
 function bindSources() {
-  const rawSaved = JSON.parse(localStorage.getItem("paperDailySources") || "[]");
-  const saved = rawSaved.map((item) => {
-    if (item.length >= 5) return item;
-    const oldTier = item[2];
-    const tier = oldTier === "wechat" ? "wechat" : oldTier === "news" ? "news" : "professional";
-    const type = tier === "wechat" ? "微信公众号" : tier === "news" ? "新闻报道 RSS" : "期刊 RSS";
-    return [type, item[1] || "未命名信源", tier, 3, 0];
-  });
-  localStorage.setItem("paperDailySources", JSON.stringify(saved));
-  const all = [...sources, ...saved];
+  const saved = JSON.parse(localStorage.getItem("paperDailySourceConfigs") || "[]").filter(
+    (item) => item && item.id && item.name
+  );
   const list = document.querySelector("#sourceList");
+  const output = document.querySelector("#sourceConfigOutput");
+  let currentConfigs = [];
 
   const draw = (items) => {
+    const displayItems = items.map(sourceConfigToDisplay);
     const labels = {
       comprehensive: "综合期刊",
       professional: "专业期刊 RSS",
@@ -735,8 +845,8 @@ function bindSources() {
 
     list.innerHTML = Object.entries(labels)
       .map(([key, label]) => {
-        const group = items.filter((item) => item[2] === key);
-        const volume = group.reduce((sum, item) => sum + Number(item[4] || 0), 0);
+        const group = displayItems.filter((item) => item.category === key);
+        const volume = group.reduce((sum, item) => sum + Number(item.daily || 0), 0);
         return `
           <section class="source-cluster">
             <div class="cluster-head">
@@ -746,10 +856,10 @@ function bindSources() {
             <div class="source-list">
               ${group
                 .map(
-                  ([type, name, tier, weight, daily]) => `
+                  (item) => `
                     <article class="card source-item">
-                      <strong>${name}</strong>
-                      <span>${type} · 权重 ${weight} · 约 ${daily || 0} 条/日</span>
+                      <strong>${item.name}</strong>
+                      <span>${item.typeLabel} · 权重 ${item.weight} · ${item.urlLabel}</span>
                     </article>
                   `
                 )
@@ -759,24 +869,36 @@ function bindSources() {
         `;
       })
       .join("");
+    output.value = JSON.stringify(items, null, 2);
   };
 
-  draw(all);
+  loadBaseSourceConfigs().then((baseConfigs) => {
+    currentConfigs = mergeSourceConfigs([...baseConfigs, ...saved]);
+    draw(currentConfigs);
+  });
 
   document.querySelector("#sourceForm").addEventListener("submit", (event) => {
     event.preventDefault();
     const sourceType = document.querySelector("#sourceType");
-    const item = [
-      sourceType.options[sourceType.selectedIndex].text,
-      document.querySelector("#sourceName").value || "未命名信源",
-      sourceType.value,
-      Number(document.querySelector("#sourceTier").value),
-      0
-    ];
+    const item = sourceFormToConfig({
+      name: document.querySelector("#sourceName").value || "未命名信源",
+      category: sourceType.value,
+      weight: Number(document.querySelector("#sourceTier").value),
+      url: document.querySelector("#sourceUrl").value.trim()
+    });
     saved.push(item);
-    localStorage.setItem("paperDailySources", JSON.stringify(saved));
-    draw([...sources, ...saved]);
+    localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
+    currentConfigs = mergeSourceConfigs([...currentConfigs, item]);
+    draw(currentConfigs);
     event.target.reset();
+  });
+
+  document.querySelector("#copySourcesConfig").addEventListener("click", async () => {
+    await navigator.clipboard?.writeText(output.value);
+  });
+
+  document.querySelector("#downloadSourcesConfig").addEventListener("click", () => {
+    downloadJson("sources.json", JSON.parse(output.value || "[]"));
   });
 }
 

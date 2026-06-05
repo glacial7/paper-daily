@@ -4,6 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const INPUT = path.join(ROOT, "data", "candidates.json");
 const OUTPUT = path.join(ROOT, "data", "latest.json");
+const FEEDBACK = path.join(ROOT, "config", "topic-feedback.json");
 const API_KEY = process.env.DEEPSEEK_API_KEY;
 const DRY_RUN = process.env.PAPER_DAILY_DRY_RUN === "1" || !API_KEY;
 
@@ -42,6 +43,35 @@ const paperTypeScores = {
   ResearchHighlight: 6,
   News: 8
 };
+
+async function readTopicFeedback() {
+  try {
+    return JSON.parse(await fs.readFile(FEEDBACK, "utf8"));
+  } catch {
+    return { minFeedbackPerTopic: 3, feedback: [] };
+  }
+}
+
+function topicWeightsFromFeedback(config) {
+  if (config.weights && typeof config.weights === "object") return config.weights;
+  const min = Number(config.minFeedbackPerTopic || 3);
+  const stats = {};
+  for (const item of config.feedback || []) {
+    const delta = item.value === "dislike" ? -1 : item.value === "like" ? 1 : 0;
+    if (!delta) continue;
+    for (const tag of item.tags || []) {
+      if (!stats[tag]) stats[tag] = { count: 0, total: 0 };
+      stats[tag].count += 1;
+      stats[tag].total += delta;
+    }
+  }
+  return Object.fromEntries(
+    Object.entries(stats).map(([tag, stat]) => {
+      if (stat.count < min) return [tag, 0];
+      return [tag, Math.max(-3, Math.min(3, Math.round(stat.total / stat.count)))];
+    })
+  );
+}
 
 const PRESCREEN_PROMPT = `
 你是 Paper Daily 的低成本预筛模型。你的任务不是写摘要，而是判断候选条目是否值得进入高质量评分阶段。
@@ -220,7 +250,7 @@ function dryScore(paper, pre) {
   };
 }
 
-async function scorePaper(paper, pre) {
+async function scorePaper(paper, pre, topicWeights) {
   if (DRY_RUN) return dryScore(paper, pre);
   const modelScore = await deepseekJson(SCORE_MODEL, [
     {
@@ -253,7 +283,12 @@ async function scorePaper(paper, pre) {
   ]);
   const source = sourceScore(paper);
   const type = typeScore(paper);
-  const theme = Math.max(0, Math.min(Number(modelScore.theme || pre.relevance || 0), 50));
+  const modelTheme = Math.max(0, Math.min(Number(modelScore.theme || pre.relevance || 0), 50));
+  const preferenceBonus = (pre.tags || []).reduce(
+    (sum, tag) => sum + Number(topicWeights[tag] || 0) * 3,
+    0
+  );
+  const theme = Math.max(0, Math.min(Math.round(modelTheme + preferenceBonus), 50));
   return {
     source,
     theme,
@@ -270,12 +305,13 @@ async function main() {
   const raw = await fs.readFile(INPUT, "utf8");
   const candidates = JSON.parse(raw);
   const clusters = clusterCandidates(candidates);
+  const topicWeights = topicWeightsFromFeedback(await readTopicFeedback());
   const selected = [];
 
   for (const paper of clusters) {
     const pre = await prescreen(paper);
     if (!pre.pass) continue;
-    const score = await scorePaper(paper, pre);
+    const score = await scorePaper(paper, pre, topicWeights);
     selected.push({
       ...paper,
       tags: pre.tags || [],
@@ -299,6 +335,7 @@ async function main() {
     dryRun: DRY_RUN,
     prescreenModel: DRY_RUN ? "local-rule" : PRESCREEN_MODEL,
     scoreModel: DRY_RUN ? "local-rule" : SCORE_MODEL,
+    topicWeights,
     items: selected.slice(0, 10)
   };
 
