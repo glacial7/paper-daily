@@ -33,10 +33,10 @@ your DeepSeek API key.
 
 The workflow `.github/workflows/update-daily.yml` runs a two-stage scoring pipeline:
 
-1. `deepseek-v4-flash` prescreens title, abstract, and metadata for topic relevance.
+1. `deepseek-v4-flash` first checks whether the item is broad ecology research, then prescreens title, abstract, and metadata for topic relevance.
 2. `deepseek-v4-pro` scores passed candidates and generates the daily summary.
 
-It writes the result to `data/latest.json`. The current display window is the most recent 5 days, and the daily page selects the top 10 papers from that window.
+It writes the result to `data/latest.json`. The current display window is the most recent 5 days. The daily page keeps these days separated and selects the top 10 papers for each day.
 
 ## Hidden `.github` folder
 
@@ -90,6 +90,16 @@ The source form on `sources.html` cannot write to GitHub directly because GitHub
 `config/sources.json`
 
 After that, GitHub Actions will use the new source in the next run.
+
+To update sources on GitHub after exporting `/Users/xcli/Documents/Codex/prj_paper-daily/sources.json`:
+
+1. Open the GitHub repository.
+2. Open the `config` folder.
+3. Open `sources.json`.
+4. Click the pencil edit button.
+5. Replace all content with the exported `sources.json` content.
+6. Commit the change.
+7. Go to `Actions -> Update Paper Daily -> Run workflow` if you want to refresh immediately. Otherwise the next automatic 04:00 Beijing run will use it.
 
 ## Feedback config
 

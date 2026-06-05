@@ -76,6 +76,13 @@ function topicWeightsFromFeedback(config) {
 const PRESCREEN_PROMPT = `
 你是 Paper Daily 的低成本预筛模型。你的任务不是写摘要，而是判断候选条目是否值得进入高质量评分阶段。
 
+第一道门：先判断候选是否属于“泛生态学研究”。泛生态学包括但不限于：
+- 群落生态、生态系统生态、景观生态、全球变化生态、恢复生态、城市生态、农业生态、森林/草地/湿地/淡水生态
+- 生物多样性、保护生物学、物种分布、植物-土壤/植物-微生物互作、入侵生态、火生态、生态水文、生态遥感和生态模型
+- 以生态过程、生态格局、生态功能、生态管理或生态风险为核心的问题
+
+不属于泛生态学的条目应 pass=false，即使来自综合期刊、微信公众号或新闻报道。
+
 用户关注主题：
 - invasion: 植物入侵、生物入侵、外来植物风险、入侵管理
 - fire: 火风险、野火、火干扰、可燃物、火后恢复
@@ -85,10 +92,11 @@ const PRESCREEN_PROMPT = `
 
 预筛规则：
 1. 只根据标题、摘要、期刊、文章类型和来源信号判断。
-2. 与至少一个关注主题明确相关，pass=true。
-3. 只有泛泛生态、泛泛农业、泛泛气候变化，但无法连接到上述主题，pass=false。
-4. 微信公众号或新闻报道可以作为发现入口；如果内容指向一篇可能相关论文，也可以 pass=true。
-5. 输出严格 JSON，不要输出解释文字。
+2. 先判断 isEcology。isEcology=false 时，pass=false。
+3. isEcology=true 且与至少一个关注主题明确相关，pass=true。
+4. isEcology=true 但只是泛泛生态、泛泛农业、泛泛气候变化，无法连接到上述主题，通常 pass=false；如果它明显属于农业生态、城市生态、恢复生态、生物多样性或生态方法，并对用户主题有潜在价值，可给低 relevance 后 pass=true。
+5. 微信公众号或新闻报道可以作为发现入口；如果内容指向一篇可能相关论文，也可以 pass=true，但仍必须满足 isEcology=true。
+6. 输出严格 JSON，不要输出解释文字。
 `;
 
 const SCORE_PROMPT = `
@@ -192,6 +200,10 @@ async function deepseekJson(model, messages) {
 
 function dryPrescreen(paper) {
   const text = `${paper.title} ${paper.abstract || ""}`.toLowerCase();
+  const isEcology =
+    /ecolog|ecosystem|biodiversity|conservation|restoration|urban ecology|agroecolog|agricultural ecology|landscape|community|invasion|invasive|wildfire|fire|drainage|hydrology|remote sensing|vegetation|species distribution|生态|生态学|生物多样性|保护生物学|恢复生态|城市生态|农业生态|景观|群落|生态系统|入侵|火|排水|遥感|植被/.test(
+      text
+    );
   const tags = [];
   if (/入侵|invasion|invasive/.test(text)) tags.push("invasion");
   if (/火|fire|wildfire/.test(text)) tags.push("fire");
@@ -199,7 +211,8 @@ function dryPrescreen(paper) {
   if (/排水|沟渠|drainage|ditch|phosphorus|nitrogen/.test(text)) tags.push("drainage");
   if (/遥感|remote sensing|model|machine learning/.test(text)) tags.push("methods");
   return {
-    pass: tags.length > 0,
+    pass: isEcology && tags.length > 0,
+    isEcology,
     tags,
     relevance: Math.min(40 + Math.max(tags.length - 1, 0) * 2, 50),
     oneLine: paper.abstract || paper.title
@@ -227,6 +240,7 @@ async function prescreen(paper) {
         },
         output_schema: {
           pass: "boolean",
+          isEcology: "boolean",
           tags: "array of theme keys",
           relevance: "0-50 integer",
           oneLine: "one Chinese sentence"
@@ -248,6 +262,26 @@ function dryScore(paper, pre) {
     summary: paper.abstract || pre.oneLine || paper.title,
     citation: `${paper.title}. (${paper.date || "n.d."}). ${paper.journal || "Journal Name"}. ${paper.doi ? `https://doi.org/${paper.doi}` : ""}`.trim()
   };
+}
+
+function dateKeyForPaper(paper) {
+  return paper.date || "undated";
+}
+
+function topPerDay(items, limit = 10) {
+  const byDate = new Map();
+  for (const item of items) {
+    const key = dateKeyForPaper(item);
+    if (!byDate.has(key)) byDate.set(key, []);
+    byDate.get(key).push(item);
+  }
+  return [...byDate.entries()]
+    .sort(([a], [b]) => {
+      if (a === "undated") return 1;
+      if (b === "undated") return -1;
+      return b.localeCompare(a);
+    })
+    .flatMap(([, entries]) => entries.sort((a, b) => b.score - a.score).slice(0, limit));
 }
 
 async function scorePaper(paper, pre, topicWeights) {
@@ -310,7 +344,7 @@ async function main() {
 
   for (const paper of clusters) {
     const pre = await prescreen(paper);
-    if (!pre.pass) continue;
+    if (!pre.pass || pre.isEcology === false) continue;
     const score = await scorePaper(paper, pre, topicWeights);
     selected.push({
       ...paper,
@@ -330,13 +364,14 @@ async function main() {
   }
 
   selected.sort((a, b) => b.score - a.score);
+  const items = topPerDay(selected, 10);
   const output = {
     generatedAt: new Date().toISOString(),
     dryRun: DRY_RUN,
     prescreenModel: DRY_RUN ? "local-rule" : PRESCREEN_MODEL,
     scoreModel: DRY_RUN ? "local-rule" : SCORE_MODEL,
     topicWeights,
-    items: selected.slice(0, 10)
+    items
   };
 
   await fs.writeFile(OUTPUT, `${JSON.stringify(output, null, 2)}\n`);

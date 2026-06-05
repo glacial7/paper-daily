@@ -5,8 +5,9 @@
     "type": "topJournal",
     "category": "comprehensive",
     "pageUrl": "https://www.science.org/",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 5,
+    "feedUrl": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
   },
   {
     "id": "nature",
@@ -24,8 +25,9 @@
     "type": "reviewJournal",
     "category": "professional",
     "pageUrl": "https://www.nature.com/nrbd/",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 4,
+    "feedUrl": "https://www.nature.com/nrbd.rss"
   },
   {
     "id": "nature-reviews-earth-environment",
@@ -33,8 +35,9 @@
     "type": "reviewJournal",
     "category": "professional",
     "pageUrl": "https://www.nature.com/natrevearthenviron/",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 4,
+    "feedUrl": "https://www.nature.com/natrevearthenviron.rss"
   },
   {
     "id": "annual-review-ecology-evolution-systematics",
@@ -42,8 +45,9 @@
     "type": "reviewJournal",
     "category": "professional",
     "pageUrl": "https://www.annualreviews.org/content/journals/ecolsys",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 5,
+    "feedUrl": "https://www.annualreviews.org/action/showFeed?ui=45mu4&mi=3fndc3&ai=sh&jc=ecolsys&type=etoc&feed=rss"
   },
   {
     "id": "trends-ecology-evolution",
@@ -51,8 +55,9 @@
     "type": "reviewJournal",
     "category": "professional",
     "pageUrl": "https://www.cell.com/trends/ecology-evolution/home",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 5,
+    "feedUrl": "https://rss.sciencedirect.com/publication/science/01695347/"
   },
   {
     "id": "frontiers-ecology-environment",
@@ -60,8 +65,9 @@
     "type": "professionalJournal",
     "category": "professional",
     "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/15409309",
-    "status": "homepage, feed discovery required",
-    "weight": 4
+    "status": "feed configured",
+    "weight": 4,
+    "feedUrl": "http://www.esajournals.org/action/showFeed?type=etoc&feed=rss&jc=fron"
   },
   {
     "id": "nature-ecology-evolution",
@@ -79,8 +85,9 @@
     "type": "professionalJournal",
     "category": "professional",
     "pageUrl": "https://onlinelibrary.wiley.com/journal/14610248",
-    "status": "homepage, feed discovery required",
-    "weight": 5
+    "status": "feed configured",
+    "weight": 5,
+    "feedUrl": "https://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1461-0248"
   },
   {
     "id": "sciencedaily-agriculture-food",
@@ -110,5 +117,35 @@
     "pageUrl": "",
     "weight": 4,
     "status": "pending we-mp-rss"
+  },
+  {
+    "id": "science-news",
+    "name": "Science News",
+    "type": "natureScienceNews",
+    "category": "news",
+    "feedUrl": "https://www.science.org/rss/news_current.xml",
+    "weight": 3,
+    "status": "feed configured",
+    "pageUrl": "https://www.science.org/news"
+  },
+  {
+    "id": "science-advances",
+    "name": "Science Advances",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "feedUrl": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+    "weight": 4,
+    "status": "feed configured",
+    "pageUrl": "https://www.science.org/journal/sciadv"
+  },
+  {
+    "id": "journal-of-ecology",
+    "name": "Journal of Ecology",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://besjournals.onlinelibrary.wiley.com/journal/13652745",
+    "feedUrl": "https://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2745",
+    "status": "feed configured",
+    "weight": 5
   }
 ]

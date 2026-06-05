@@ -231,6 +231,13 @@ const paperTypeScores = {
 
 const logs = [
   {
+    version: "2026-06-06",
+    date: "今日更新",
+    title: "信源与筛选策略完善",
+    body:
+      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示，并支持修改和删除，导出的 sources.json 会同步反映这些调整。"
+  },
+  {
     version: "2026-06-05",
     date: "今日更新",
     title: "Paper Daily 原型上线",
@@ -810,9 +817,11 @@ function sourceFormToConfig({ name, category, weight, url }) {
 
 function sourceConfigToDisplay(item) {
   return {
+    key: sourceKey(item),
     name: item.name,
     category: item.category,
     weight: item.weight || 3,
+    sourceScore: sourceQualityScores[item.type] || 0,
     daily: item.daily || 0,
     typeLabel:
       item.category === "wechat"
@@ -891,7 +900,10 @@ function renderSources() {
         <label for="sourceNote">主题</label>
         <textarea id="sourceNote" placeholder="invasive plant, wildfire, wind farm, agricultural drainage"></textarea>
       </div>
-      <button class="btn primary" type="submit">加入待提交配置</button>
+      <div class="actions">
+        <button class="btn primary" id="sourceSubmit" type="submit">加入待提交配置</button>
+        <button class="btn" id="cancelSourceEdit" type="button" hidden>取消修改</button>
+      </div>
     </form>
     <section class="method-section">
       <div class="cluster-head">
@@ -934,13 +946,33 @@ function renderSources() {
 }
 
 function bindSources() {
-  const saved = mergeSourceConfigs(
-    JSON.parse(localStorage.getItem("paperDailySourceConfigs") || "[]")
+  let saved = mergeSourceConfigs(
+    readJson("paperDailySourceConfigs", [])
   ).filter((item) => item && item.id && item.name);
+  const deleted = new Set(readJson("paperDailyDeletedSources", []));
   localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
   const list = document.querySelector("#sourceList");
   const output = document.querySelector("#sourceConfigOutput");
+  const submitButton = document.querySelector("#sourceSubmit");
+  const cancelButton = document.querySelector("#cancelSourceEdit");
   let currentConfigs = [];
+  let editingKey = "";
+
+  const persistDeleted = () => {
+    localStorage.setItem("paperDailyDeletedSources", JSON.stringify([...deleted]));
+  };
+
+  const persistSaved = () => {
+    saved = mergeSourceConfigs(saved).filter((item) => item && item.id && item.name);
+    localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
+  };
+
+  const resetSourceForm = () => {
+    document.querySelector("#sourceForm").reset();
+    editingKey = "";
+    submitButton.textContent = "加入待提交配置";
+    cancelButton.hidden = true;
+  };
 
   const draw = (items) => {
     const displayItems = items.map(sourceConfigToDisplay);
@@ -966,8 +998,14 @@ function bindSources() {
                 .map(
                   (item) => `
                     <article class="card source-item">
-                      <strong>${item.name}</strong>
-                      <span>${item.typeLabel} · 权重 ${item.weight} · ${item.urlLabel}</span>
+                      <div>
+                        <strong>${item.name}</strong>
+                        <span>${item.typeLabel} · 权重 ${item.weight} · 信源分 ${item.sourceScore}/30 · ${item.urlLabel}</span>
+                      </div>
+                      <div class="source-actions">
+                        <button class="btn" data-source-action="edit" data-source-key="${encodeURIComponent(item.key)}">修改</button>
+                        <button class="btn" data-source-action="delete" data-source-key="${encodeURIComponent(item.key)}">删除</button>
+                      </div>
                     </article>
                   `
                 )
@@ -981,7 +1019,9 @@ function bindSources() {
   };
 
   loadBaseSourceConfigs().then((baseConfigs) => {
-    currentConfigs = mergeSourceConfigs([...baseConfigs, ...saved]);
+    const activeBase = baseConfigs.filter((item) => !deleted.has(sourceKey(item)));
+    const activeSaved = saved.filter((item) => !deleted.has(sourceKey(item)));
+    currentConfigs = mergeSourceConfigs([...activeBase, ...activeSaved]);
     draw(currentConfigs);
   });
 
@@ -994,16 +1034,59 @@ function bindSources() {
       weight: Number(document.querySelector("#sourceTier").value),
       url: document.querySelector("#sourceUrl").value.trim()
     });
-    const savedIndex = saved.findIndex((entry) => sourceKey(entry) === sourceKey(item));
+    const existing = editingKey
+      ? currentConfigs.find((entry) => sourceKey(entry) === editingKey)
+      : currentConfigs.find((entry) => sourceKey(entry) === sourceKey(item));
+    if (existing?.id) item.id = existing.id;
+    const itemKey = sourceKey(item);
+    if (editingKey && editingKey !== itemKey) {
+      deleted.add(editingKey);
+    }
+    deleted.delete(itemKey);
+    persistDeleted();
+    const savedIndex = saved.findIndex((entry) => sourceKey(entry) === itemKey || sourceKey(entry) === editingKey);
     if (savedIndex >= 0) {
       saved[savedIndex] = { ...saved[savedIndex], ...item, id: saved[savedIndex].id || item.id };
     } else {
       saved.push(item);
     }
-    localStorage.setItem("paperDailySourceConfigs", JSON.stringify(saved));
-    currentConfigs = mergeSourceConfigs([...currentConfigs, item]);
+    persistSaved();
+    currentConfigs = mergeSourceConfigs([
+      ...currentConfigs.filter((entry) => sourceKey(entry) !== editingKey && sourceKey(entry) !== itemKey),
+      item
+    ]);
     draw(currentConfigs);
-    event.target.reset();
+    resetSourceForm();
+  });
+
+  cancelButton.addEventListener("click", resetSourceForm);
+
+  list.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-source-action]");
+    if (!button) return;
+    const key = decodeURIComponent(button.dataset.sourceKey || "");
+    const item = currentConfigs.find((entry) => sourceKey(entry) === key);
+    if (!item) return;
+
+    if (button.dataset.sourceAction === "delete") {
+      deleted.add(key);
+      persistDeleted();
+      saved = saved.filter((entry) => sourceKey(entry) !== key);
+      persistSaved();
+      currentConfigs = currentConfigs.filter((entry) => sourceKey(entry) !== key);
+      draw(currentConfigs);
+      if (editingKey === key) resetSourceForm();
+      return;
+    }
+
+    editingKey = key;
+    document.querySelector("#sourceType").value = item.category || "professional";
+    document.querySelector("#sourceTier").value = String(item.weight || 3);
+    document.querySelector("#sourceName").value = item.name || "";
+    document.querySelector("#sourceUrl").value = item.feedUrl || item.pageUrl || "";
+    document.querySelector("#sourceNote").value = item.topics || "";
+    submitButton.textContent = "保存修改";
+    cancelButton.hidden = false;
   });
 
   document.querySelector("#copySourcesConfig").addEventListener("click", async () => {

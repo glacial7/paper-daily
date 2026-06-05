@@ -194,6 +194,30 @@ textarea {
   gap: 10px;
 }
 
+.date-section {
+  display: grid;
+  gap: 8px;
+}
+
+.date-section + .date-section {
+  margin-top: 14px;
+}
+
+.date-heading {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  font-size: 0.86rem;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 4px 2px 7px;
+}
+
+.date-heading strong {
+  color: var(--ink);
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -520,6 +544,13 @@ textarea {
   padding: 12px 14px;
 }
 
+.source-item {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
 .source-item strong,
 .log-item strong {
   display: block;
@@ -531,6 +562,11 @@ textarea {
   color: var(--muted);
   line-height: 1.55;
   margin: 0;
+}
+
+.source-actions {
+  display: flex;
+  gap: 6px;
 }
 
 .method-section {
@@ -671,6 +707,10 @@ textarea {
   .feed-item {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+
+  .source-item {
+    grid-template-columns: 1fr;
   }
 
   .feedback {
