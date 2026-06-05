@@ -13,6 +13,8 @@ Static prototype for a paper daily website.
 
 Upload all files in this folder to a GitHub repository, then enable GitHub Pages from the repository settings.
 
+The GitHub Actions workflow updates the site automatically every day at 04:00 Beijing time. Manual `Run workflow` is only needed when you want to refresh immediately or after changing source/feedback configuration.
+
 ## DeepSeek scoring
 
 Do not put your API key in `app.js` or any frontend file.
@@ -34,7 +36,7 @@ The workflow `.github/workflows/update-daily.yml` runs a two-stage scoring pipel
 1. `deepseek-v4-flash` prescreens title, abstract, and metadata for topic relevance.
 2. `deepseek-v4-pro` scores passed candidates and generates the daily summary.
 
-It writes the result to `data/latest.json`.
+It writes the result to `data/latest.json`. The current display window is the most recent 5 days, and the daily page selects the top 10 papers from that window.
 
 ## Hidden `.github` folder
 

@@ -235,7 +235,7 @@ const logs = [
     date: "今日更新",
     title: "Paper Daily 原型上线",
     body:
-      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、查看今日主题统计，并记录 like/不喜欢反馈；论文日报按质量分筛选 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置。"
+      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报展示近 5 日质量分最高的 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置；GitHub 自动更新设置为北京时间每日 04:00。"
   },
   {
     version: "next",
@@ -250,6 +250,7 @@ const page = document.body.dataset.page || "updates";
 const root = document.querySelector("#pageContent");
 let feedFull = false;
 let activeFeedFilter = "all";
+const RECENT_DAYS = 5;
 
 function normalizeGeneratedItem(item, index) {
   const sourceSignals = item.sourceSignals || [];
@@ -258,6 +259,7 @@ function normalizeGeneratedItem(item, index) {
   return {
     id: item.id || item.doi || `generated-${index}`,
     time: item.generatedAt ? item.generatedAt.slice(11, 16) : "00:00",
+    date: item.date || (item.generatedAt ? item.generatedAt.slice(0, 10) : ""),
     title: item.title,
     source: primarySource,
     sourceSignals,
@@ -284,6 +286,18 @@ function normalizeGeneratedItem(item, index) {
     generatedScore: item.score,
     generatedBreakdown: item.scoreBreakdown
   };
+}
+
+function isRecentPaper(paper) {
+  if (!paper.date) return true;
+  const date = new Date(`${paper.date}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return true;
+  const ageMs = Date.now() - date.getTime();
+  return ageMs <= RECENT_DAYS * 24 * 60 * 60 * 1000;
+}
+
+function recentPapers() {
+  return papers.filter(isRecentPaper);
 }
 
 async function loadGeneratedData() {
@@ -533,10 +547,11 @@ function feedbackIcon(type) {
 }
 
 function renderUpdates() {
+  const pool = recentPapers();
   root.innerHTML = `
     ${renderHead(
       "全部论文动态",
-      "2026-06-05 · 28 candidates · feedback collected for next scoring run",
+      `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 每日 04:00 更新`,
       '<button class="btn" id="exportFeedback">导出反馈</button><button class="btn" id="feedMode">完整</button>'
     )}
     <section class="theme-panel card" id="themePanel"></section>
@@ -554,7 +569,8 @@ function renderUpdates() {
 
 function renderFeed(filter = activeFeedFilter) {
   activeFeedFilter = filter;
-  const visible = filter === "all" ? papers : papers.filter((paper) => paper.sourceType === filter);
+  const pool = recentPapers();
+  const visible = filter === "all" ? pool : pool.filter((paper) => paper.sourceType === filter);
   const feedback = getFeedback();
   renderThemePanel();
   document.querySelector("#feed").innerHTML = visible
@@ -583,22 +599,42 @@ function renderFeed(filter = activeFeedFilter) {
 }
 
 function renderThemePanel() {
-  const topTopics = Object.entries(topicLabels)
-    .map(([key, label]) => ({
-      key,
-      label,
-      count: papers.filter((paper) => paper.tags.includes(key)).length
-    }))
-    .filter((topic) => topic.count > 0)
-    .sort((a, b) => b.count - a.count)
-    .slice(0, 4);
+  const pool = recentPapers();
+  const byDate = new Map();
+  pool.forEach((paper) => {
+    const key = paper.date || "undated";
+    if (!byDate.has(key)) byDate.set(key, []);
+    byDate.get(key).push(paper);
+  });
+  const dailyStats = [...byDate.entries()]
+    .sort(([a], [b]) => {
+      if (a === "undated") return 1;
+      if (b === "undated") return -1;
+      return b.localeCompare(a);
+    })
+    .slice(0, RECENT_DAYS)
+    .map(([date, items]) => {
+      const topicCounts = Object.entries(topicLabels)
+        .map(([key, label]) => ({
+          label,
+          count: items.filter((paper) => paper.tags.includes(key)).length
+        }))
+        .filter((topic) => topic.count > 0)
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 3);
+      const dateLabel = date === "undated" ? "未标日期" : date.slice(5);
+      const topicText = topicCounts.length
+        ? topicCounts.map((topic) => `${topic.label} ${topic.count}`).join(" · ")
+        : "暂无主题";
+      return `${dateLabel}：${topicText} · 共 ${items.length} 条`;
+    });
   document.querySelector("#themePanel").innerHTML = `
     <div class="theme-head">
-      <strong>今日主题</strong>
-      <span>${papers.length} 条动态</span>
+      <strong>每日主题以及统计信息</strong>
+      <span>近 ${RECENT_DAYS} 日 ${pool.length} 条动态</span>
     </div>
     <div class="theme-summary">
-      ${topTopics.map((topic) => `${topic.label} ${topic.count}`).join(" · ")}
+      ${dailyStats.join("<br />")}
     </div>
   `;
 }
@@ -658,9 +694,9 @@ function bindFeed() {
 }
 
 function renderDaily() {
-  const selected = [...papers].sort((a, b) => adjustedScore(b) - adjustedScore(a)).slice(0, 10);
+  const selected = [...recentPapers()].sort((a, b) => adjustedScore(b) - adjustedScore(a)).slice(0, 10);
   root.innerHTML = `
-    ${renderHead("论文日报", "VOL.2026.06.05 · top 10 selected")}
+    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · top 10 selected`)}
     <section class="grid" id="dailyList">${selected.map((paper) => paperCard(paper)).join("")}</section>
   `;
 }

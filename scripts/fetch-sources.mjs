@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const SOURCES = path.join(ROOT, "config", "sources.json");
 const OUTPUT = path.join(ROOT, "data", "candidates.json");
-const LOOKBACK_DAYS = Number(process.env.PAPER_DAILY_LOOKBACK_DAYS || 21);
+const LOOKBACK_DAYS = Number(process.env.PAPER_DAILY_LOOKBACK_DAYS || 5);
 const MAX_PER_SOURCE = Number(process.env.PAPER_DAILY_MAX_PER_SOURCE || 20);
 
 function decodeEntities(value = "") {
