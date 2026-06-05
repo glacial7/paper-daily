@@ -1,0 +1,103 @@
+[
+  {
+    "id": "science",
+    "name": "Science",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.science.org/",
+    "weight": 5
+  },
+  {
+    "id": "nature",
+    "name": "Nature",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.nature.com/",
+    "feedUrl": "https://www.nature.com/nature.rss",
+    "weight": 5
+  },
+  {
+    "id": "nature-reviews-biodiversity",
+    "name": "Nature Reviews Biodiversity",
+    "type": "reviewJournal",
+    "category": "professional",
+    "pageUrl": "https://www.nature.com/nrbd/",
+    "weight": 5
+  },
+  {
+    "id": "nature-reviews-earth-environment",
+    "name": "Nature Reviews Earth & Environment",
+    "type": "reviewJournal",
+    "category": "professional",
+    "pageUrl": "https://www.nature.com/natrevearthenviron/",
+    "weight": 5
+  },
+  {
+    "id": "annual-review-ecology-evolution-systematics",
+    "name": "Annual Review of Ecology, Evolution, and Systematics",
+    "type": "reviewJournal",
+    "category": "professional",
+    "pageUrl": "https://www.annualreviews.org/content/journals/ecolsys",
+    "weight": 5
+  },
+  {
+    "id": "trends-ecology-evolution",
+    "name": "Trends in Ecology & Evolution",
+    "type": "reviewJournal",
+    "category": "professional",
+    "pageUrl": "https://www.cell.com/trends/ecology-evolution/home",
+    "weight": 5
+  },
+  {
+    "id": "frontiers-ecology-environment",
+    "name": "Frontiers in Ecology and the Environment",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/15409309",
+    "weight": 4
+  },
+  {
+    "id": "nature-ecology-evolution",
+    "name": "Nature Ecology & Evolution",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://www.nature.com/natecolevol/",
+    "feedUrl": "https://www.nature.com/natecolevol.rss",
+    "weight": 5
+  },
+  {
+    "id": "ecology-letters",
+    "name": "Ecology Letters",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://onlinelibrary.wiley.com/journal/14610248",
+    "weight": 5
+  },
+  {
+    "id": "sciencedaily-agriculture-food",
+    "name": "ScienceDaily Agriculture and Food",
+    "type": "scienceDaily",
+    "category": "news",
+    "pageUrl": "https://www.sciencedaily.com/news/plants_animals/agriculture_and_food/",
+    "feedUrl": "https://www.sciencedaily.com/rss/plants_animals/agriculture_and_food.xml",
+    "weight": 3
+  },
+  {
+    "id": "sciencedaily-ecology",
+    "name": "ScienceDaily Ecology",
+    "type": "scienceDaily",
+    "category": "news",
+    "pageUrl": "https://www.sciencedaily.com/news/earth_climate/ecology/",
+    "feedUrl": "https://www.sciencedaily.com/rss/earth_climate/ecology.xml",
+    "weight": 3
+  },
+  {
+    "id": "wechat-ecologist-all",
+    "name": "生态学者（Ecologist-all）",
+    "type": "wechat",
+    "category": "wechat",
+    "pageUrl": "",
+    "weight": 4,
+    "status": "pending we-mp-rss"
+  }
+]

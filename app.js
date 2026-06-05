@@ -156,12 +156,18 @@ const topicLabels = {
 };
 
 const sources = [
+  ["期刊/页面", "Science", "comprehensive", 5, 30],
+  ["期刊 RSS", "Nature", "comprehensive", 5, 30],
+  ["期刊/页面", "Nature Reviews Biodiversity", "professional", 5, 4],
+  ["期刊/页面", "Nature Reviews Earth & Environment", "professional", 5, 4],
+  ["期刊/页面", "Annual Review of Ecology, Evolution, and Systematics", "professional", 5, 3],
+  ["期刊/页面", "Trends in Ecology & Evolution", "professional", 5, 8],
+  ["期刊/页面", "Frontiers in Ecology and the Environment", "professional", 4, 8],
   ["期刊 RSS", "Nature Ecology & Evolution", "professional", 5, 12],
-  ["期刊 RSS", "Trends in Ecology & Evolution", "professional", 5, 8],
-  ["微信公众号", "植物入侵与生态恢复专题号", "wechat", 4, 3],
-  ["微信公众号", "生态学者（Ecologist-all）", "wechat", 4, 2],
-  ["新闻报道 RSS", "Nature News", "news", 3, 10],
-  ["新闻报道 RSS", "ScienceDaily Ecology", "news", 3, 18]
+  ["期刊/页面", "Ecology Letters", "professional", 5, 10],
+  ["新闻报道 RSS", "ScienceDaily Agriculture and Food", "news", 3, 18],
+  ["新闻报道 RSS", "ScienceDaily Ecology", "news", 3, 18],
+  ["微信公众号", "生态学者（Ecologist-all）", "wechat", 4, 2]
 ];
 
 const wechatTools = [
@@ -225,64 +231,18 @@ const paperTypeScores = {
 
 const logs = [
   {
-    version: "v0.9",
-    date: "2026-06-05",
-    title: "引用与来源链接",
-    body: "论文日报和动态页增加参考文献格式、DOI、原始论文链接和折叠来源链接；当前仍是原型示例数据，真实抓取后由 DOI/Crossref/期刊页面填充。"
-  },
-  {
-    version: "v0.8",
-    date: "2026-06-05",
-    title: "两阶段模型流程",
-    body: "部署时采用便宜模型做主题预筛，只处理标题、摘要和元数据；通过预筛的候选再交给高质量模型评分和生成日报摘要。"
-  },
-  {
-    version: "v0.7",
-    date: "2026-06-05",
-    title: "论文类型权重补全",
-    body: "论文类型评分加入 Correspondence、Letter、Editorial、News & Views、Research Highlight 等低权重类型，避免短评和通讯类内容挤占精选。"
-  },
-  {
-    version: "v0.6",
-    date: "2026-06-05",
-    title: "论文簇合并",
-    body: "同一篇论文按 DOI、标题作者匹配和 embedding 相似度合并为一个簇；主条优先选原论文页面，其次期刊新闻、综合新闻、ScienceDaily、公众号。"
-  },
-  {
-    version: "v0.5",
-    date: "2026-06-05",
-    title: "三维质量分",
-    body: "质量分改为信源 30 分、主题相关性 50 分、论文类型 20 分；同一论文多信源合并成簇，以最高信源质量为主，多个公众号推荐给予小幅加分。"
-  },
-  {
-    version: "v0.4",
-    date: "2026-06-05",
-    title: "主题反馈机制",
-    body: "全部论文动态增加 like 和不喜欢反馈；同一主题至少累计 3 篇正负反馈后才更新主题权重，影响后续质量分计算，不即时改写当日论文日报。"
-  },
-  {
-    version: "v0.3",
-    date: "2026-06-05",
-    title: "信息架构调整",
-    body: "左侧保留 Paper Daily 和四个入口；全部论文动态按综合期刊、专业期刊、微信公众号、新闻报道分类。"
-  },
-  {
-    version: "v0.2",
-    date: "2026-06-05",
-    title: "信源策略",
-    body: "综合期刊不全量追踪，只在主题命中、新闻报道反链或微信公众号推荐时进入候选池。"
-  },
-  {
-    version: "v0.1",
-    date: "2026-06-05",
-    title: "MVP 原型",
-    body: "建立静态网页、论文日报、信源添加和更新日志页面；先用示例数据验证信息密度。"
+    version: "2026-06-05",
+    date: "今日更新",
+    title: "Paper Daily MVP 与评分管线",
+    body:
+      "完成 Paper Daily 静态站点、全部论文动态、论文日报、信源添加和更新日志页面；建立三维质量分体系：信源 30 分、主题相关性 50 分、论文类型 20 分；加入 like/不喜欢反馈，单主题至少 3 篇反馈后才影响后续评分；加入 DOI、参考文献、原始论文链接和来源折叠；新增论文簇合并规则、Top 10 精选逻辑、DeepSeek 两阶段预筛/评分工作流，以及基于 config/sources.json 的真实 RSS 抓取入口。"
   },
   {
     version: "next",
     date: "计划中",
-    title: "抓取与 token 控制",
-    body: "先用 RSS 元数据和规则预筛，只把去重后的高分候选交给模型；精选论文再生成约 200 字摘要。"
+    title: "真实信源扩展",
+    body:
+      "继续完善真实 RSS 抓取、公众号 we-mp-rss 接入、DOI/Crossref 元数据补全、embedding 去重和 GitHub 登录权限反馈后台。"
   }
 ];
 
