@@ -262,6 +262,44 @@ textarea {
   font-size: 0.78rem;
 }
 
+.reference-block {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  padding-top: 10px;
+}
+
+.reference-block p {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.doi-line {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.reference-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.reference-links a {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 3px 7px;
+}
+
+.reference-links a:hover {
+  color: var(--ink);
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -349,6 +387,10 @@ textarea {
 .feed-title {
   font-weight: 700;
   line-height: 1.35;
+}
+
+.feed-title a:hover {
+  color: var(--green);
 }
 
 .feed-desc {

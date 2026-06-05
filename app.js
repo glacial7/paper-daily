@@ -16,7 +16,16 @@ const papers = [
     oneLine: "入侵草本通过改变可燃物连续性和含水量，可能放大火后群落恢复差异。",
     summary:
       "研究聚焦入侵草本植物与火干扰之间的反馈关系，比较了入侵群落和本地群落在可燃物结构、地表覆盖、含水量和火后恢复速度上的差异。论文的价值在于把“入侵改变燃料条件”和“火后入侵优势扩大”连接成可检验机制链条。若原文包含长期样地、实验燃烧或遥感证据，可作为植物入侵与火风险综述中的核心文献。",
-    reason: "服务植物入侵与火烧风险主线。"
+    reason: "服务植物入侵与火烧风险主线。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.001",
+    sourceUrls: [
+      { label: "Nature 原文", url: "#" },
+      { label: "Nature News", url: "#" },
+      { label: "公众号推荐", url: "#" }
+    ],
+    citation:
+      "Author, A. A., & Author, B. B. (2026). 入侵草本植物改变可燃物结构并放大火后恢复差异. Nature, 000, 000-000. https://doi.org/xx.xxxx/example"
   },
   {
     id: "wind-invasion-001",
@@ -34,7 +43,15 @@ const papers = [
     oneLine: "风电场道路和施工平台可能形成外来植物扩散廊道，并改变局地生境边缘效应。",
     summary:
       "论文围绕风电场道路、施工平台和输电通道带来的生境破碎化与传播廊道效应，分析外来植物在扰动边缘、道路交汇点和维护通道附近的出现频率。重点值得看的是其是否采用 BACI 设计、景观连通性指标或物种分布模型。如果方法扎实，可直接转化为风电项目外来植物风险分区和野外监测点位设计。",
-    reason: "服务风电项目与植物入侵风险。"
+    reason: "服务风电项目与植物入侵风险。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.002",
+    sourceUrls: [
+      { label: "Journal of Ecology 原文", url: "#" },
+      { label: "ScienceDaily 报道", url: "#" }
+    ],
+    citation:
+      "Author, C. C., Author, D. D., & Author, E. E. (2026). 风电场道路网络对外来植物扩散的廊道效应. Journal of Ecology, 000, 000-000. https://doi.org/xx.xxxx/example"
   },
   {
     id: "drainage-001",
@@ -52,7 +69,15 @@ const papers = [
     oneLine: "沟渠结构、植被配置和水力停留时间共同影响农田排水中的氮磷削减效率。",
     summary:
       "综述总结农田排水沟渠在氮、磷和悬浮颗粒物削减中的作用，比较不同沟渠断面、植被配置、水力停留时间和季节水文条件下的净化效率。日报中应优先保留可量化参数和工程设计建议，例如缓坡、植被带宽度、沉积区设置和维护频率。该类文章适合沉淀为农田面源污染和沟渠生态功能的长期知识卡。",
-    reason: "支撑农田排水面源污染研究。"
+    reason: "支撑农田排水面源污染研究。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.003",
+    sourceUrls: [
+      { label: "Annual Reviews 原文", url: "#" },
+      { label: "公众号推荐", url: "#" }
+    ],
+    citation:
+      "Author, F. F., & Author, G. G. (2026). 农田排水沟渠的氮磷削减效率与生态工程设计. Annual Review of Ecology, Evolution, and Systematics, 000, 000-000. https://doi.org/xx.xxxx/example"
   },
   {
     id: "methods-fire-001",
@@ -67,12 +92,17 @@ const papers = [
     oneLine: "多源遥感可用于重建火烧、施工和农业排水扰动后的植被恢复轨迹。",
     summary:
       "方法论文整合光学遥感、雷达或时间序列植被指数，识别扰动后植被恢复轨迹和异常恢复区域。阅读时应关注数据源、空间分辨率、时间窗口、模型泛化能力、代码开放情况，以及是否能迁移到风电扰动、火烧迹地或农田沟渠监测。若有清晰流程和可复用代码，可进入方法工具库。",
-    reason: "补充遥感监测技术路线。"
+    reason: "补充遥感监测技术路线。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.004",
+    sourceUrls: [{ label: "Remote Sensing of Environment 原文", url: "#" }],
+    citation:
+      "Author, H. H., Author, I. I., & Author, J. J. (2026). 多源遥感识别生态扰动后的植被恢复轨迹. Remote Sensing of Environment, 000, 000-000. https://doi.org/xx.xxxx/example"
   },
   {
     id: "wechat-invasion-001",
     time: "07:08",
-    title: "微信公众号推荐：外来植物风险评估的新综述",
+    title: "外来植物风险评估的新综述",
     source: "植物入侵与生态恢复专题号",
     sourceSignals: [
       { type: "wechat", name: "植物入侵与生态恢复专题号" },
@@ -85,7 +115,15 @@ const papers = [
     oneLine: "公众号推荐可作为发现入口，但需要反向定位 DOI 和原始期刊。",
     summary:
       "微信公众号内容不直接作为论文证据源，而是作为主题发现和中文解读入口。处理流程应是先记录推荐标题、关键词和提到的结论，再反向查找原论文、DOI、期刊和发布时间。只有能定位到原始论文并确认研究质量后，才进入论文日报。无法找到原文的内容保留在动态页，不进入精选推荐。",
-    reason: "弥补高发文量期刊不全量订阅造成的漏检。"
+    reason: "弥补高发文量期刊不全量订阅造成的漏检。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.005",
+    sourceUrls: [
+      { label: "公众号推荐 A", url: "#" },
+      { label: "公众号推荐 B", url: "#" }
+    ],
+    citation:
+      "Author, K. K. (2026). 外来植物风险评估的新综述. Journal Name, 000, 000-000. https://doi.org/xx.xxxx/example"
   },
   {
     id: "news-drainage-001",
@@ -100,7 +138,12 @@ const papers = [
     oneLine: "新闻报道适合发现新论文，但必须回到原论文确认。",
     summary:
       "新闻报道源包括 ScienceDaily、Nature News、期刊官网新闻和研究机构新闻稿。它们适合快速发现新论文和获得通俗摘要，但不能替代原文。抓取时应保存新闻链接、原始论文链接、期刊、发布日期和研究机构。找不到原论文或只有宣传性表述的内容，不进入论文日报精选。",
-    reason: "低成本扩展候选池。"
+    reason: "低成本扩展候选池。",
+    paperUrl: "#",
+    doi: "10.xxxx/example.006",
+    sourceUrls: [{ label: "ScienceDaily 报道", url: "#" }],
+    citation:
+      "Author, L. L., & Author, M. M. (2026). ScienceDaily 农业污染新闻反链论文. Journal Name, 000, 000-000. https://doi.org/xx.xxxx/example"
   }
 ];
 
@@ -182,6 +225,18 @@ const paperTypeScores = {
 
 const logs = [
   {
+    version: "v0.9",
+    date: "2026-06-05",
+    title: "引用与来源链接",
+    body: "论文日报和动态页增加参考文献格式、DOI、原始论文链接和折叠来源链接；当前仍是原型示例数据，真实抓取后由 DOI/Crossref/期刊页面填充。"
+  },
+  {
+    version: "v0.8",
+    date: "2026-06-05",
+    title: "两阶段模型流程",
+    body: "部署时采用便宜模型做主题预筛，只处理标题、摘要和元数据；通过预筛的候选再交给高质量模型评分和生成日报摘要。"
+  },
+  {
     version: "v0.7",
     date: "2026-06-05",
     title: "论文类型权重补全",
@@ -235,6 +290,53 @@ const page = document.body.dataset.page || "updates";
 const root = document.querySelector("#pageContent");
 let feedFull = false;
 let activeFeedFilter = "all";
+
+function normalizeGeneratedItem(item, index) {
+  const sourceSignals = item.sourceSignals || [];
+  const firstType = sourceSignals[0]?.type;
+  const primarySource = item.journal || sourceSignals[0]?.name || "Unknown source";
+  return {
+    id: item.id || item.doi || `generated-${index}`,
+    time: item.generatedAt ? item.generatedAt.slice(11, 16) : "00:00",
+    title: item.title,
+    source: primarySource,
+    sourceSignals,
+    sourceType:
+      firstType === "topJournal"
+        ? "comprehensive"
+        : firstType === "scienceDaily"
+          ? "news"
+          : firstType === "wechat"
+            ? "wechat"
+            : "professional",
+    type: item.type || "Article",
+    tags: item.tags || [],
+    oneLine: item.oneLine || item.abstract || item.title,
+    summary: item.summary || item.abstract || "",
+    reason: "由两阶段模型评分流程生成。",
+    paperUrl: item.url || (item.doi ? `https://doi.org/${item.doi}` : "#"),
+    doi: item.doi,
+    sourceUrls: sourceSignals.map((signal) => ({
+      label: signal.name,
+      url: signal.url || "#"
+    })),
+    citation: item.citation || item.title,
+    generatedScore: item.score,
+    generatedBreakdown: item.scoreBreakdown
+  };
+}
+
+async function loadGeneratedData() {
+  try {
+    const response = await fetch("./data/latest.json", { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (!Array.isArray(data.items) || !data.items.length) return;
+    papers.splice(0, papers.length, ...data.items.map(normalizeGeneratedItem));
+  } catch {
+    // Keep prototype data when opened from file:// or before the workflow runs.
+  }
+}
 
 function readJson(key, fallback) {
   try {
@@ -299,6 +401,7 @@ function feedbackStatsByTopic() {
 }
 
 function sourceScore(paper) {
+  if (paper.generatedBreakdown?.source != null) return paper.generatedBreakdown.source;
   const signals = paper.sourceSignals || [];
   const base = signals.length
     ? Math.max(...signals.map((signal) => sourceQualityScores[signal.type] || 0))
@@ -309,6 +412,7 @@ function sourceScore(paper) {
 }
 
 function themeScore(paper) {
+  if (paper.generatedBreakdown?.theme != null) return paper.generatedBreakdown.theme;
   if (!paper.tags.length) return 0;
   const themeWeights = getThemeWeights();
   const initialScore = 40;
@@ -321,6 +425,7 @@ function themeScore(paper) {
 }
 
 function typeScore(paper) {
+  if (paper.generatedBreakdown?.type != null) return paper.generatedBreakdown.type;
   return paperTypeScores[paper.type] || 8;
 }
 
@@ -333,6 +438,7 @@ function scoreBreakdown(paper) {
 }
 
 function adjustedScore(paper) {
+  if (paper.generatedScore != null) return paper.generatedScore;
   const score = scoreBreakdown(paper);
   return clamp(score.source + score.theme + score.type, 0, 100);
 }
@@ -375,6 +481,21 @@ function sourceSignalLabel(type) {
   }[type] || "其他";
 }
 
+function referenceBlock(paper) {
+  return `
+    <div class="reference-block">
+      <p>${paper.citation}</p>
+      ${paper.doi ? `<div class="doi-line">DOI: ${paper.doi}</div>` : ""}
+      <div class="reference-links">
+        <a href="${paper.paperUrl}">原始论文</a>
+        ${(paper.sourceUrls || [])
+          .map((item) => `<a href="${item.url}">${item.label}</a>`)
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
 function paperCard(paper) {
   const score = adjustedScore(paper);
   const parts = scoreBreakdown(paper);
@@ -383,7 +504,7 @@ function paperCard(paper) {
     <article class="card paper">
       <div class="paper-top">
         <div>
-          <h2><a href="#">${paper.title}</a></h2>
+          <h2><a href="${paper.paperUrl}">${paper.title}</a></h2>
           <div class="source-line">
             <span>${paper.source}</span>
             <span>${paper.type}</span>
@@ -405,6 +526,7 @@ function paperCard(paper) {
             .join("")}
         </div>
       </details>
+      ${referenceBlock(paper)}
       <div class="score-parts">
         <span>信源 ${parts.source}/30</span>
         <span>主题 ${parts.theme}/50</span>
@@ -481,13 +603,14 @@ function renderFeed(filter = activeFeedFilter) {
         <article class="card feed-item">
           <div class="feed-time">${paper.time}</div>
           <div>
-            <div class="feed-title">${paper.title}</div>
+            <div class="feed-title"><a href="${paper.paperUrl}">${paper.title}</a></div>
             <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
             <div class="tag-row feed-tags">
               ${paper.tags
                 .map((tag) => `<span class="tag">${topicLabels[tag] || tag}</span>`)
                 .join("")}
             </div>
+            ${referenceBlock(paper)}
           </div>
           <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
           <div class="feedback" aria-label="主题反馈">
@@ -723,4 +846,6 @@ const renderers = {
   changelog: renderChangelog
 };
 
-renderers[page]?.();
+loadGeneratedData().finally(() => {
+  renderers[page]?.();
+});

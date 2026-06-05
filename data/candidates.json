@@ -1,0 +1,30 @@
+[
+  {
+    "id": "demo-invasion-fire-001",
+    "title": "入侵草本植物改变可燃物结构并放大火后恢复差异",
+    "abstract": "研究比较入侵草本群落和本地群落在可燃物连续性、含水量、火后恢复速度上的差异。",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.xxxx/example.001",
+    "url": "https://doi.org/10.xxxx/example.001",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      { "type": "topJournal", "name": "Nature", "url": "https://doi.org/10.xxxx/example.001" },
+      { "type": "natureScienceNews", "name": "Nature News", "url": "https://example.com/nature-news" },
+      { "type": "wechat", "name": "生态学者", "url": "https://example.com/wechat" }
+    ]
+  },
+  {
+    "id": "demo-drainage-001",
+    "title": "农田排水沟渠的氮磷削减效率与生态工程设计",
+    "abstract": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
+    "journal": "Annual Review of Ecology, Evolution, and Systematics",
+    "type": "Review",
+    "doi": "10.xxxx/example.002",
+    "url": "https://doi.org/10.xxxx/example.002",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      { "type": "reviewJournal", "name": "Annual Reviews", "url": "https://doi.org/10.xxxx/example.002" }
+    ]
+  }
+]
