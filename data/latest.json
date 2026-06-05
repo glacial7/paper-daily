@@ -1,9 +1,40 @@
 {
-  "generatedAt": "2026-06-05T14:04:33.781Z",
-  "dryRun": true,
-  "prescreenModel": "local-rule",
-  "scoreModel": "local-rule",
+  "generatedAt": "2026-06-05T14:20:41.747Z",
+  "dryRun": false,
+  "prescreenModel": "deepseek-v4-flash",
+  "scoreModel": "deepseek-v4-pro",
   "items": [
+    {
+      "id": "demo-drainage-001",
+      "title": "农田排水沟渠的氮磷削减效率与生态工程设计",
+      "abstract": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
+      "journal": "Annual Review of Ecology, Evolution, and Systematics",
+      "type": "Review",
+      "doi": "10.xxxx/example.002",
+      "url": "https://doi.org/10.xxxx/example.002",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Annual Reviews",
+          "url": "https://doi.org/10.xxxx/example.002"
+        }
+      ],
+      "tags": [
+        "drainage"
+      ],
+      "oneLine": "该综述总结了农田排水沟渠的氮磷削减效率及生态工程设计，与农田排水主题高度相关。",
+      "summary": "该综述系统梳理了农田排水沟渠对氮、磷和悬浮颗粒物的削减效果，重点比较了不同植被配置与水力停留时间的影响。研究发现，合理设计的生态沟渠可显著降低面源污染物输出，其中植被类型、密度和停留时间是关键调控因子。文章进一步讨论了生态工程设计的优化策略，如复合植被带和多级塘系统，并指出长期运行中可能出现的底泥饱和与维护问题。这一综合性评估为农田面源污染治理提供了科学依据和实践指导，尤其有助于排水管理决策和生态工程监测方案的制定。",
+      "reason": "直接命中‘农田排水与面源污染’核心课题，系统总结沟渠削减效率与设计参数，对选题和监测方案有高参考价值。",
+      "score": 96,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 49,
+        "type": 20
+      },
+      "citation": "Anonymous. (2026). 农田排水沟渠的氮磷削减效率与生态工程设计. Annual Review of Ecology, Evolution, and Systematics. https://doi.org/10.xxxx/example.002",
+      "generatedAt": "2026-06-05T14:20:41.747Z"
+    },
     {
       "id": "demo-invasion-fire-001",
       "title": "入侵草本植物改变可燃物结构并放大火后恢复差异",
@@ -34,48 +65,17 @@
         "invasion",
         "fire"
       ],
-      "oneLine": "研究比较入侵草本群落和本地群落在可燃物连续性、含水量、火后恢复速度上的差异。",
-      "summary": "研究比较入侵草本群落和本地群落在可燃物连续性、含水量、火后恢复速度上的差异。",
-      "reason": "通过主题预筛并进入三维评分。",
-      "score": 89,
+      "oneLine": "入侵草本植物通过改变可燃物结构增加火风险并加速自身火后恢复。",
+      "summary": "本研究对比了入侵草本植物群落与本地植物群落在可燃物连续性、含水量及火后恢复速度上的差异。结果发现，入侵种通过形成更连续的可燃物层和降低植被含水量，显著改变了火行为，并在火灾后恢复更快，可能加剧本地种群落退化。该研究为理解入侵植物如何影响火烧风险及火后生态系统恢复提供了直接证据，对制定入侵管理和火险防控策略具有参考价值。",
+      "reason": "论文直接研究入侵草本植物对可燃物结构、含水量和火后恢复速度的影响，与用户核心课题‘植物入侵与火烧风险’高度吻合，可支持选题、综述框架和研究假设。",
+      "score": 95,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 42,
+        "theme": 48,
         "type": 17
       },
-      "citation": "入侵草本植物改变可燃物结构并放大火后恢复差异. (2026-06-05). Nature. https://doi.org/10.xxxx/example.001",
-      "generatedAt": "2026-06-05T14:04:33.781Z"
-    },
-    {
-      "id": "demo-drainage-001",
-      "title": "农田排水沟渠的氮磷削减效率与生态工程设计",
-      "abstract": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
-      "journal": "Annual Review of Ecology, Evolution, and Systematics",
-      "type": "Review",
-      "doi": "10.xxxx/example.002",
-      "url": "https://doi.org/10.xxxx/example.002",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Annual Reviews",
-          "url": "https://doi.org/10.xxxx/example.002"
-        }
-      ],
-      "tags": [
-        "drainage"
-      ],
-      "oneLine": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
-      "summary": "综述农田沟渠在氮、磷、悬浮颗粒物削减中的作用，并比较植被配置和水力停留时间的影响。",
-      "reason": "通过主题预筛并进入三维评分。",
-      "score": 87,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 40,
-        "type": 20
-      },
-      "citation": "农田排水沟渠的氮磷削减效率与生态工程设计. (2026-06-05). Annual Review of Ecology, Evolution, and Systematics. https://doi.org/10.xxxx/example.002",
-      "generatedAt": "2026-06-05T14:04:33.781Z"
+      "citation": "(2026). 入侵草本植物改变可燃物结构并放大火后恢复差异. Nature. https://doi.org/10.xxxx/example.001",
+      "generatedAt": "2026-06-05T14:20:26.037Z"
     }
   ]
 }
