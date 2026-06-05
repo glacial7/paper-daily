@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Fetch source feeds
+        run: node scripts/fetch-sources.mjs
+
       - name: Score papers with DeepSeek
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -31,4 +34,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update daily paper data"
-          file_pattern: data/latest.json
+          file_pattern: data/candidates.json data/latest.json
