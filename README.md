@@ -13,7 +13,7 @@ Static prototype for a paper daily website.
 
 Upload all files in this folder to a GitHub repository, then enable GitHub Pages from the repository settings.
 
-The GitHub Actions workflow updates the site automatically every day at 04:00 Beijing time. Manual `Run workflow` is only needed when you want to refresh immediately or after changing source/feedback configuration.
+The GitHub Actions workflow updates the site automatically every day at 08:00 Beijing time. Manual `Run workflow` is only needed when you want to refresh immediately or after changing source/feedback configuration.
 
 ## DeepSeek scoring
 
@@ -99,7 +99,7 @@ To update sources on GitHub after exporting `/Users/xcli/Documents/Codex/prj_pap
 4. Click the pencil edit button.
 5. Replace all content with the exported `sources.json` content.
 6. Commit the change.
-7. Go to `Actions -> Update Paper Daily -> Run workflow` if you want to refresh immediately. Otherwise the next automatic 04:00 Beijing run will use it.
+7. Go to `Actions -> Update Paper Daily -> Run workflow` if you want to refresh immediately. Otherwise the next automatic 08:00 Beijing run will use it.
 
 ## Feedback config
 

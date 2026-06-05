@@ -235,14 +235,14 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示，并支持修改和删除，导出的 sources.json 会同步反映这些调整。"
+      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示，并支持修改和删除，导出的 sources.json 会同步反映这些调整。自动更新时间调整为北京时间每日 08:00。"
   },
   {
     version: "2026-06-05",
     date: "今日更新",
     title: "Paper Daily 原型上线",
     body:
-      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报按日期展示近 5 日结果，每天单独筛选质量分 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置，并对同名信源执行更新而非重复添加；GitHub 自动更新设置为北京时间每日 04:00。"
+      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报按日期展示近 5 日结果，每天单独筛选质量分 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置，并对同名信源执行更新而非重复添加。"
   },
   {
     version: "next",
@@ -588,7 +588,7 @@ function renderUpdates() {
   root.innerHTML = `
     ${renderHead(
       "全部论文动态",
-      `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 每日 04:00 更新`,
+      `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 每日 08:00 更新`,
       '<button class="btn" id="exportFeedback">导出反馈</button><button class="btn" id="feedMode">完整</button>'
     )}
     <section class="theme-panel card" id="themePanel"></section>
