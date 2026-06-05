@@ -1,40 +1,10 @@
 {
-  "generatedAt": "2026-06-05T14:43:32.713Z",
+  "generatedAt": "2026-06-05T15:03:30.321Z",
   "dryRun": false,
   "prescreenModel": "deepseek-v4-flash",
   "scoreModel": "deepseek-v4-pro",
+  "topicWeights": {},
   "items": [
-    {
-      "id": "nature-reviews-biodiversity-0-TmF0dXJlIFJl",
-      "title": "Nature Reviews Biodiversity",
-      "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
-      "journal": "Nature Reviews Biodiversity",
-      "type": "Review",
-      "doi": "10.1038/s44358-026-00162-0",
-      "url": "http://feeds.nature.com/nrbd/rss/current",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Nature Reviews Biodiversity",
-          "url": "http://feeds.nature.com/nrbd/rss/current"
-        }
-      ],
-      "tags": [
-        "methods"
-      ],
-      "oneLine": "该综述探讨了整合大规模生物多样性监测与群体遗传学辅助保护决策的方法，与生态监测方法及管理应用直接相关。",
-      "summary": "本文综述了将大规模生物多样性监测数据集与群体遗传学原理相结合以支撑保护决策的途径。研究指出，遗传多样性丧失已成为威胁种群恢复力的关键因素，而整合监测与遗传学方法能够帮助各级治理主体制定更有效的保护策略。综述梳理了现有监测框架、遗传学指标及案例，展示了如何从大规模数据中提取遗传信息，并将其转化为管理行动。该研究为生态监测方法与管理实践之间架设了桥梁，尤其对关注监测技术如何服务于生物多样性保护的用户具有参考价值，也提供了方法论与决策支持层面的启发。",
-      "reason": "该综述聚焦大规模生物多样性监测数据与群体遗传学原理的整合，直接对应生态监测方法及其在保护决策中的应用，与用户关注的生态遥感、模型和监测方法高度相关。",
-      "score": 89,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 42,
-        "type": 20
-      },
-      "citation": "Nature Reviews Biodiversity. (2026, June 3). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00162-0",
-      "generatedAt": "2026-06-05T14:40:18.474Z"
-    },
     {
       "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
       "title": "Wildfires in 2025",
@@ -54,9 +24,9 @@
       "tags": [
         "fire"
       ],
-      "oneLine": "该综述回顾2025年全球野火状况，记录了低总面积但极端事件频发的格局，为火烧风险研究提供宏观背景。",
-      "summary": "本文综述了2025年全球野火情况。尽管全年总过火面积和二氧化碳排放分别创下2002年以来第二低和第三低，但加拿大连续第三年遭遇极端野火排放，洛杉矶、韩国和欧洲的灾难性火灾共导致超过90人死亡，30多万人疏散。文章汇总了各地火灾特征和影响，突显了气候变化背景下极端火灾事件频发的现实。对火烧风险研究者而言，这篇综述提供了最新的全球火灾宏观统计与极端事件案例，可作为监测方案和风险背景的重要参考。",
-      "reason": "该综述直接提供2025年全球野火烧毁面积和碳排放数据，与火烧风险高度相关，但未涉及植物入侵，因此未达到直接命中核心课题的满分标准。",
+      "oneLine": "2025年全球野火综述揭示，尽管总体上燃烧面积和排放处于历史低位，但极端火灾事件仍频发，造成重大社会影响。",
+      "summary": "本文综述了2025年全球野火情况。虽然燃烧总面积和二氧化碳排放量分别为2002年以来第二低和第三低，但加拿大连续第三年出现极端火灾排放，而洛杉矶、韩国和欧洲的灾难性火灾造成超过90人死亡和30多万人疏散。该综述基于全球火情记录和排放数据，展示了气候变化下野火风险的区域差异和极端化趋势。对于关注植物入侵与火烧风险的研究者，此文提供了最新的全球火格局背景，有助于理解火的频率、强度及其生态影响，并为火烧风险评估和管理提供宏观参考。",
+      "reason": "该综述提供了2025年全球野火的整体概况和极端事件，可为植物入侵与火烧风险方向提供重要的火动态背景和案例支撑。",
       "score": 87,
       "scoreBreakdown": {
         "source": 27,
@@ -64,38 +34,7 @@
         "type": 20
       },
       "citation": "Wildfires in 2025. (2026, June 1). Nature Reviews Earth & Environment. https://doi.org/10.1038/s43017-026-00793-z",
-      "generatedAt": "2026-06-05T14:41:17.928Z"
-    },
-    {
-      "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
-      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
-      "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03097-z",
-      "url": "https://www.nature.com/articles/s41559-026-03097-z",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03097-z"
-        }
-      ],
-      "tags": [
-        "wind"
-      ],
-      "oneLine": "不同规划尺度的中国风电与太阳能扩展路径产生不同的生物多样性权衡，强调多尺度综合选址的必要性。",
-      "summary": "本研究模拟了中国至2060年国家与省级两种规划尺度下的太阳能和风电扩展路径，利用建模分析发现不同集权程度导致差异化的生物多样性影响。结果显示，两种路径在气候目标与生态保护之间产生不同的权衡关系，表明需要综合多尺度选址策略以平衡可再生能源发展与生物多样性保护目标。该研究为风电项目生态影响评估提供了量化比较框架，对理解大规模可再生能源布局的生态后果具有参考价值。",
-      "reason": "研究中国风电与太阳能扩展规划尺度对生物多样性的权衡，使用建模方法，为风电项目生态影响评估提供背景和方法参考，与'风电项目与植物入侵风险'方向明确相关但未直接涉及入侵，故评分40。",
-      "score": 81,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 40,
-        "type": 17
-      },
-      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. (2026). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03097-z",
-      "generatedAt": "2026-06-05T14:42:04.417Z"
+      "generatedAt": "2026-06-05T15:02:01.537Z"
     },
     {
       "id": "nature-reviews-biodiversity-5-UnVubmluZyB0",
@@ -116,48 +55,49 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "这篇综述聚焦生物多样性变化的预测模型与归因方法，为生态模型和监测研究提供前沿方法学视角。",
-      "summary": "本文综述了生物多样性变化预测建模和归因科学的进展，指出尽管生态学有定量传统，但在预测和归因方面仍落后于气候科学。随着提供生物多样性丧失证据和识别有效干预措施的紧迫性增加，归因研究正加速推进。文章梳理了定量方法在生物多样性监测与模拟中的应用，为从事生态模型和监测工作的研究者提供方法论参考，但未涉及植物入侵、风电项目或农田排水等具体场景。",
-      "reason": "讨论生物多样性变化的预测模型和归因方法，与用户关注的生态遥感、模型和监测方法有方法学关联，但未直接针对植物入侵或农田排水等具体方向，属于外围相关，需人工判断是否保留。",
-      "score": 79,
+      "oneLine": "该综述梳理了生物多样性预测建模与归因科学的进展，为生态定量方法提供了跨学科背景。",
+      "summary": "这篇综述讨论了生物多样性变化预测建模和归因科学的发展。尽管生态学有深厚的定量传统，但生物多样性科学在预测建模和归因研究上仍落后于气候科学。文章指出，由于需要提供生物多样性丧失的证据并识别有效干预措施，归因于人为驱动因素的尝试正在加速。文中比较了气候与生物多样性领域的定量方法进展，强调了加强预测和归因能力的紧迫性。对于从事生态遥感、模型构建和环境监测的研究者，本文提供了方法学参考和跨学科视角，有助于理解当前定量生态学的前沿与挑战。",
+      "reason": "该文综述生物多样性预测建模与归因方法，虽属生态模型方向，但未直接涉及植物入侵、火烧、风电或面源污染等核心课题，相关性偏外围。",
+      "score": 77,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 32,
+        "theme": 30,
         "type": 20
       },
-      "citation": "Running the numbers on biodiversity change. (2026, May 20). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00163-z",
-      "generatedAt": "2026-06-05T14:40:50.996Z"
+      "citation": "Running the numbers on biodiversity change. (2026). Nature Reviews Biodiversity. https://doi.org/10.1038/s44358-026-00163-z",
+      "generatedAt": "2026-06-05T15:01:37.601Z"
     },
     {
-      "id": "sciencedaily-agriculture-food-4-UGxhbnQgYmVs",
-      "title": "Plant believed extinct for 60 years suddenly reappears",
-      "abstract": "A random photo snapped in the Australian outback has led to the rediscovery of a plant thought extinct for nearly 60 years — proving that ordinary people with smartphones are quietly transforming science. After bird bander Aaron Bean uploaded pictures of a strange shrub to iNaturalist, botanist Anthony Bean immediately recognized it as Ptilotus senarius, a rare species missing since 1967.",
-      "journal": "ScienceDaily Agriculture and Food",
+      "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
+      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+      "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
+      "journal": "Nature Ecology & Evolution",
       "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
-      "date": "2026-05-18",
+      "doi": "10.1038/s41559-026-03097-z",
+      "url": "https://www.nature.com/articles/s41559-026-03097-z",
+      "date": "2026-06-03",
       "sourceSignals": [
         {
-          "type": "scienceDaily",
-          "name": "ScienceDaily Agriculture and Food",
-          "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm"
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03097-z"
         }
       ],
       "tags": [
+        "wind",
         "methods"
       ],
-      "oneLine": "公民科学平台iNaturalist助力重新发现灭绝60年的植物，展示公众参与生态监测的新途径。",
-      "summary": "澳大利亚一名鸟类环志者在内陆偶然拍摄到一种陌生灌木，并上传至iNaturalist平台，植物学家迅速识别出这是自1967年后被认为灭绝的稀有物种Ptilotus senarius。该事件证明普通公众借助智能手机可推动科学发现，尤其凸显公民科学在偏远地区生物多样性监测中的价值。研究虽未涉及复杂模型，但为低成本、广覆盖的生态监测提供了鲜活案例，对完善监测网络、激励公众参与具有启示。",
-      "reason": "该文报道了公民科学平台iNaturalist在植物再发现中的应用，属于生态监测方法范畴，与用户‘生态遥感、模型和监测方法’方向有相关性，但非核心的入侵或污染课题，预筛相关性30分，维持此评分。",
-      "score": 63,
+      "oneLine": "中国不同规划尺度下的风电扩张将产生迥异的生物多样性权衡，虽未涉及入侵物种，但为风电项目生态风险评估提供了宏观背景。",
+      "summary": "本文以中国为研究区，预测2060年前国家与省级规划情景下太阳能和风能的扩张趋势，并模拟不同规划尺度对生物多样性的影响。结果显示，不同集权程度的规划路径会导致差异化的生物多样性权衡，表明需要多尺度综合选址才能协同气候与生物多样性保护目标。该研究虽未提及植物入侵，但揭示了风电大规模开发可能引发的生态影响，为评估风电项目的生态风险提供宏观框架，尤其在其可能改变景观连通性、促进外来物种传播方面具有启示意义。",
+      "reason": "该研究模拟中国风电和太阳能扩张对生物多样性的影响，直接涉及风电项目规划，但未讨论植物入侵风险，仅间接为风电开发导致的生态干扰提供宏观背景。",
+      "score": 73,
       "scoreBreakdown": {
-        "source": 16,
-        "theme": 30,
+        "source": 24,
+        "theme": 32,
         "type": 17
       },
-      "citation": "Plant believed extinct for 60 years suddenly reappears. (2026, May 18). ScienceDaily Agriculture and Food. https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
-      "generatedAt": "2026-06-05T14:43:26.372Z"
+      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. Nature Ecology & Evolution, 2026. doi:10.1038/s41559-026-03097-z",
+      "generatedAt": "2026-06-05T15:02:40.530Z"
     },
     {
       "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
@@ -178,17 +118,17 @@
       "tags": [
         "methods"
       ],
-      "oneLine": "sPYce是一种无需序列比对的跨物种单核ATAC-seq整合方法，为基因调控进化比较研究提供新工具。",
-      "summary": "Nature Ecology & Evolution发表的这篇方法学论文提出了sPYce，一种无需序列比对的跨物种单核ATAC-seq数据整合方法。单核ATAC-seq是一种研究染色质可及性的高通量技术，可用于解析基因调控元件。sPYce通过计算不同物种间单核ATAC-seq谱的相似性，实现跨物种比较，从而帮助学者研究基因调控进化。该方法在多个物种数据集上得到验证，展示了其整合能力和生物学发现潜力。尽管该工具为进化发育生物学和比较基因组学提供了新手段，但对于关注宏观生态过程如植物入侵、污染治理及遥感监测的用户而言，其直接应用价值有限，仅作为潜在的基础方法储备值得了解。",
-      "reason": "该研究为方法学论文，提出sPYce工具用于跨物种单核ATAC-seq整合，属于分子进化基因组学领域，与用户关注的植物入侵、风电、农田排水及生态遥感监测等宏观生态课题无直接关联，仅有极微弱的方法学参考价值。",
-      "score": 48,
+      "oneLine": "提出了一种不依赖序列比对的跨物种单核ATAC-seq整合方法sPYce，有助于比较基因调控进化。",
+      "summary": "本研究提出了一个名为sPYce的无序列比对方法，用于整合不同物种的单核ATAC-seq数据，从而跨物种比较基因调控进化。该方法通过标准化染色质可及性图谱，克服了物种间基因组差异带来的比对难题，能够在没有参考基因组完整比对的情况下，识别保守的调控元件和细胞类型特异性模式。研究展示了sPYce在多种组织中的性能，证实其可有效发现物种间保守的调控程序，为进化发育生物学和比较基因组学提供了新工具。虽然该工作主要服务于分子进化领域，但其跨物种数据整合思路对生态学研究中利用分子标记进行物种鉴定或环境DNA监测的方法开发可能带来启发。",
+      "reason": "该方法属于跨物种单核ATAC-seq数据整合，聚焦基因调控进化，与用户关注的植物入侵、风电、农田排水等核心议题直接关联较弱，但作为分子工具对生态遥感与监测方法有一定潜在参考价值，故评为偏外围相关。",
+      "score": 70,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 10,
+        "theme": 32,
         "type": 14
       },
-      "citation": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce. (2026). Nature Ecology & Evolution. Advance online publication. https://doi.org/10.1038/s41559-026-03087-1",
-      "generatedAt": "2026-06-05T14:42:47.266Z"
+      "citation": "sPYce: Alignment-free integration of single-nucleus ATAC-seq across species. (2026). Nature Ecology & Evolution. https://doi.org/10.1038/s41559-026-03087-1",
+      "generatedAt": "2026-06-05T15:03:03.894Z"
     }
   ]
 }
