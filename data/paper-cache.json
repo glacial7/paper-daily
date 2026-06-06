@@ -1,0 +1,4303 @@
+{
+  "version": "2026-06-06-type-v2",
+  "updatedAt": "2026-06-06T09:00:12.369Z",
+  "items": {
+    "doi:10.1126/science.aef3173": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "3732d0927bfe0815f3070ec46743bf11b7fbf49a72d9b1369ba4dbef2627b235",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1028-1028, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.254Z"
+    },
+    "doi:10.1126/science.aeg1982": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "18f0c459f9296b806ff4d1d19ea630b6a5d3a05d3dac56bae092f85bc8fdc9da",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1027-1027, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.ads4664": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "73240ecf029bb77fb06959d00bf41611db87d9fc1e463ec83fcb8e47990f1caf",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "modeling_methods",
+          "community_ecosystem",
+          "genetics_evolution",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "relevance": 44,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "score": {
+        "source": 30,
+        "theme": 44,
+        "type": 17,
+        "total": 91,
+        "title": "Competition enables rapid adaptation to a warming range edge in a model plant community",
+        "oneLine": "该研究围绕“Competition enables rapid adaptation to a warming range edge in a model plant community”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Competition enables rapid adaptation to a warming range edge in a model plant community”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "science-2-Q29tcGV0aXRp",
+        "title": "Competition enables rapid adaptation to a warming range edge in a model plant community",
+        "abstract": "Science, Volume 392, Issue 6802, June 2026.",
+        "authors": [
+          "Takuji Usui, Amy L. Angert"
+        ],
+        "journal": "Science",
+        "type": "ResearchArticle",
+        "doi": "10.1126/science.ads4664",
+        "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R",
+        "date": "2026-06-04",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Science",
+            "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R"
+          }
+        ],
+        "tags": [
+          "modeling_methods",
+          "community_ecosystem",
+          "genetics_evolution",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Competition enables rapid adaptation to a warming range edge in a model plant community”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Competition enables rapid adaptation to a warming range edge in a model plant community”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 91,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 44,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.256Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.adz7118": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "6cf5d459f77805aabb1d1396d405801a57d1700dde370a5f746ed5da2c876f5b",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.adz9042": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "43ebd72a2257d5fe3f477b9ca46b61247bb78f23d6a36ca596223122f6b1431c",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aec7671": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "73725ce69e75a401453ed287b5425ae1dc89bc6bc52debff64c4a9c2851c7c2a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aec9483": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "33ab25d4535dae8f3054b7dfe17188bbb62afe2c784ee1b41c9e56de5d3a1ceb",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aed3197": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2da7521002f9b19aef77b77d6100b43d5cfc67b5d2254bf747904e3be8184a37",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "disturbance"
+        ],
+        "relevance": 32,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026."
+      },
+      "score": {
+        "source": 30,
+        "theme": 32,
+        "type": 17,
+        "total": 79,
+        "title": "Fires reverse progress toward ozone air quality standards in the United States",
+        "oneLine": "该研究围绕“Fires reverse progress toward ozone air quality standards in the United States”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Fires reverse progress toward ozone air quality standards in the United States”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "science-7-RmlyZXMgcmV2",
+        "title": "Fires reverse progress toward ozone air quality standards in the United States",
+        "abstract": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026.",
+        "authors": [
+          "Weizhi Deng, Jun Wang, Meng Zhou, Xi Chen, Xiaodong Wu, Huanxin Zhang, Jason B. Cohen, Jing Wei, Arlindo da Silva, Guy P. Brasseur, Claire Granier, Laurence Rouil"
+        ],
+        "journal": "Science",
+        "type": "ResearchArticle",
+        "doi": "10.1126/science.aed3197",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R",
+        "date": "2026-06-04",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Science",
+            "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R"
+          }
+        ],
+        "tags": [
+          "disturbance"
+        ],
+        "oneLine": "该研究围绕“Fires reverse progress toward ozone air quality standards in the United States”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Fires reverse progress toward ozone air quality standards in the United States”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 79,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.256Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aed6068": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "7244ebbc2f82b24b1046e43579347cdebaa8660bf1392f99788ff0dcabeef6fa",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aed8630": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a64636a91e3f5235fe434e34d3ce3653e1abbd1185c3c931a83ac269daaa41f2",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aee3446": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "6ed754723ddf848bb75afdbce26e7a4a257560b6959eca1f628581b9c8ed2bdd",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1061-1064, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aef6981": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "c240d560ccc6480e0d85cb2a5e014de897fbd63c4f47212d6e50f9b74ed6f92b",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1075-1081, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aeg8963": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0c6308bd130681c8c9807041387a2f978d38ea75140963a323d81d593553bee3",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1056-1060, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    "doi:10.1126/science.aec9773": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "5371ede51e68632548d6b938cfec539ca8fb4c9a6b8a349614697e0f23aaacd1",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1082-1087, June 2026."
+      },
+      "score": {
+        "source": 30,
+        "theme": 32,
+        "type": 17,
+        "total": 79,
+        "title": "Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades",
+        "oneLine": "该研究围绕“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "science-13-VW5leHBlY3Rl",
+        "title": "Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades",
+        "abstract": "Science, Volume 392, Issue 6802, Page 1082-1087, June 2026.",
+        "authors": [
+          "Zhen Zhang, Nicholas J. Murray, Xiao-Peng Song, Pete Bunting, Thomas A. Worthington, Lola Fatoyinbo, Dehua Mao, Mingming Jia, Virni Budi Arifanti, Toh Aung, San San Htay, Daniel A. Friess"
+        ],
+        "journal": "Science",
+        "type": "ResearchArticle",
+        "doi": "10.1126/science.aec9773",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aec9773?af=R",
+        "date": "2026-06-04",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Science",
+            "url": "https://www.science.org/doi/abs/10.1126/science.aec9773?af=R"
+          }
+        ],
+        "tags": [
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 79,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.257Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.adx5816": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "6e045da352af48fa44479561f127cec56e34a8307cb6e965fc1ef076f4022bae",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1065-1068, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.aef9946": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "bcc14f7753fcc9a0fb4eb7d6fcbda07120af30dc6041dac0635c7277f90474eb",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1050-1055, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.aea9058": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "20cc16c80f264ac13b72f4656c82e2ab65067309eb222dbf92599d0930bdc0f2",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "landscape_macroecology"
+        ],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026."
+      },
+      "score": {
+        "source": 30,
+        "theme": 30,
+        "type": 17,
+        "total": 77,
+        "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
+        "oneLine": "该研究围绕“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "science-16-TGFuZHNjYXBl",
+        "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
+        "abstract": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026.",
+        "authors": [
+          "Stephen Polasky, Peter L. Hawthorne, Rebecca Chaplin-Kramer, Jeffrey Smith, James S. Gerber, Saleh Mamun, Mary Ruckelshaus, Jason Russ, Rafael Schmitt, Adrian L. Vogl, Adam C. Castonguay, James Douglass, Virginia Kowal, Ian Madden, Richard Sharp, Brent Sohngen, Jinfeng Chang, Gretchen Daily, Martin Philipp Heger, Matthew Holden, Justin Johnson, Lisa Mandle, Eve McDonald-Madden, Urvashi Narain, Deepak Ray, Giovanni Ruta, Paul C. West, Stacie Wolny, Esha Zaveri, Richard Damania"
+        ],
+        "journal": "Science",
+        "type": "ResearchArticle",
+        "doi": "10.1126/science.aea9058",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R",
+        "date": "2026-06-04",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Science",
+            "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R"
+          }
+        ],
+        "tags": [
+          "landscape_macroecology"
+        ],
+        "oneLine": "该研究围绕“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 77,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.257Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.ady1618": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "9f0e402ad277cf4cf47157c894d421be9c8d2177f97faaec58cbb2f12b05cc5a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1046-1049, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.aej3528": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b0dcd1852462b7212996f4cc6427a094676be638e215f2c10b852becf6dcdb7f",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1094-1094, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1126/science.aej3527": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "45ac30253c94895c956055df62b6a4eaefb7c3661e600572d534189144eec866",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science, Volume 392, Issue 6802, Page 1037-1038, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    "doi:10.1038/d41586-026-01831-y": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0718d83e3def7608738e1a4cbc2ff851b7b2c6c46d68ed9fec20ad185652c04c",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "aquatic_microbe"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01831-y Nature staff discuss some of the week’s top science news."
+      },
+      "score": {
+        "source": 20,
+        "theme": 30,
+        "type": 8,
+        "total": 58,
+        "title": "Briefing chat: Spinosaurs with salt glands could have lived in marine environments",
+        "oneLine": "该研究围绕“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”。原始摘要显示，研究关注Nature staff discuss some of the week’s top science news.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-0-TmF0dXJlIHN0",
+        "title": "Briefing chat: Spinosaurs with salt glands could have lived in marine environments",
+        "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01831-y Nature staff discuss some of the week’s top science news.",
+        "authors": [
+          "Benjamin Thompson",
+          "Maren Hunsberger"
+        ],
+        "journal": "Nature",
+        "type": "News",
+        "doi": "10.1038/d41586-026-01831-y",
+        "url": "https://www.nature.com/articles/d41586-026-01831-y",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "natureScienceNews",
+            "name": "Nature",
+            "url": "https://www.nature.com/articles/d41586-026-01831-y"
+          }
+        ],
+        "tags": [
+          "aquatic_microbe"
+        ],
+        "oneLine": "该研究围绕“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”。原始摘要显示，研究关注Nature staff discuss some of the week’s top science news.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 58,
+        "scoreBreakdown": {
+          "source": 20,
+          "theme": 30,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.258Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01827-8": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "3be8eebd7dc5b4e8f44d76df866470b3c0a648b0bc12a856c613a3c6bfebfa12",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01827-8 The ‘base editing’ technique that researchers used is far from ready for the clinic, but critics worry it will spur a rush to commercialization."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01610-9": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "72d3071a587c5ee8040bf8eff1bdca9e7ed9a37549bdb3477c245f358e593cfc",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01610-9 European governments are choosing European digital tools — and some universities and researchers are doing the same."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01609-2": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "041d611482bdf769d42eeec23ea0913f063f031c168413735ea27223492c74ab",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01609-2 The month’s sharpest science shots, selected by Nature’s photo team."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01781-5": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a7121b743a88d9cb072e969f14fdddbda75bd7ff01d48fc8f1e7104849a9c099",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01781-5 Having fewer fossil-fuel powered cars on the road is reducing some pollutants, but not others."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10694-2": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "276c89b28ec45730d698a73074b7636756399186211cab977799447f713a59f3",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 0,
+        "oneLine": ""
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01764-6": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "fda131cdcae21b1a87b11cd19620336e7b02a9b290746db437e5d387a37e4927",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01764-6 Antineutrinos made alongside the production of weapons-grade plutonium could be spotted with existing technology."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01765-5": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ad17470a416c311b992eb73ae5c21a39c59dfc502a1da7acb71022ea2e740163",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01765-5 Interventions that included home visits and cash transfers led to more strapping infants in an Indian state."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01789-x": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "28e66c035e908eaa8bd7c90147ccb793380cd90bcd2b66a61fe9bf7326c0ba33",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01789-x The therapy activates a protein that could stop pulmonary fibrosis from progressing."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01770-8": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "72ac43a323e89e4309d07e1f307e6e4f9ad5ad83190410ad36589156af1ca3a8",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods"
+        ],
+        "relevance": 32,
+        "oneLine": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01770-8 Researchers analysed the scientific impact of dual-use research in US patent records and bibliometric databases."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01623-4": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2265fd49c398b5f8cdaf3efe36abb5ab9f0b7f8484c9824716d989aef12224d1",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "conservation_management"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01623-4 From 2016 to 2020, almost one-third of papers by authors in China had multiple corresponding authors — but policy reforms are expected to have dampened the trend."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10727-w": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "5e222a111e2f7c77d6bc3051ffb4955d0c6c9a8be367a6d83ddd1fdce200c10a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10727-w Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo"
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01774-4": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8eb4f62ffaabf113d565d26fe3b2831a4f3a41b0618a89011ac086fb21202c24",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01774-4 Discover the strengths, limitations and risks associated with using artificial intelligence in your science job applications."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/d41586-026-01793-1": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "d106d5f126e6ab048ff09c5f505fdc9e372386d124f54d89fc89239db59d5476",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01793-1 Passive heart-rate monitoring during regular phone use could provide early warning of health issues — plus, testing Richard Feynman’s solution to the ‘restaurant dilemma’ problem."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10561-0": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "e95529044c6a97e71151c6bd5a6b8534634a6da8034d41a25bf635ab85e1c3de",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production"
+      },
+      "score": {
+        "source": 30,
+        "theme": 32,
+        "type": 17,
+        "total": 79,
+        "title": "Reply to: The size of tropical vegetation gross primary production",
+        "oneLine": "该研究围绕“Reply to: The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Reply to: The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-14-UmVwbHkgdG86",
+        "title": "Reply to: The size of tropical vegetation gross primary production",
+        "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production",
+        "authors": [
+          "Jiameng Lai",
+          "Linda M. J. Kooijmans",
+          "Wu Sun",
+          "Danica Lombardozzi",
+          "J. Elliott Campbell",
+          "Lianhong Gu",
+          "Yiqi Luo",
+          "Le Kuai",
+          "Ying Sun"
+        ],
+        "journal": "Nature",
+        "type": "Article",
+        "doi": "10.1038/s41586-026-10561-0",
+        "url": "https://www.nature.com/articles/s41586-026-10561-0",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Nature",
+            "url": "https://www.nature.com/articles/s41586-026-10561-0"
+          }
+        ],
+        "tags": [
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Reply to: The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Reply to: The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 79,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.258Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10562-z": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "5c85a2626bc28c7e05773a477d5e5fa5cfd32c1b6563f9d36b569f907d38270c",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10562-z The size of tropical vegetation gross primary production"
+      },
+      "score": {
+        "source": 30,
+        "theme": 32,
+        "type": 17,
+        "total": 79,
+        "title": "The size of tropical vegetation gross primary production",
+        "oneLine": "该研究围绕“The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-15-VGhlIHNpemUg",
+        "title": "The size of tropical vegetation gross primary production",
+        "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10562-z The size of tropical vegetation gross primary production",
+        "authors": [
+          "Jie Tian",
+          "Xiaojuan Huang",
+          "Huilin Chen",
+          "Jing Ming Chen",
+          "Philippe Ciais",
+          "Maarten Krol",
+          "Shunlin Liang",
+          "Shilong Piao",
+          "Jin Wu",
+          "Jingfeng Xiao",
+          "Xiuzhi Chen",
+          "Wenping Yuan"
+        ],
+        "journal": "Nature",
+        "type": "Article",
+        "doi": "10.1038/s41586-026-10562-z",
+        "url": "https://www.nature.com/articles/s41586-026-10562-z",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "topJournal",
+            "name": "Nature",
+            "url": "https://www.nature.com/articles/s41586-026-10562-z"
+          }
+        ],
+        "tags": [
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 79,
+        "scoreBreakdown": {
+          "source": 30,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.258Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10589-2": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "950f9726eb45a7b30e2563a7f0185907e1347546be57a0df73180ba9ba224406",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10589-2 Improved fractionation strategies can identify antibiotics with previously unseen scaffolds and mechanisms, exemplified by manikomycin from Streptomyces rimosus, which acts by targeting the E-site of the bacterial large ribosomal subunit."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10624-2": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "e34a350bb00ae86171c24de818c13cf29196cda083a26d97a32b0f16f73a0977",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10624-2 Analysis of a 25-year satellite record shows that Earth has a persistent east–west albedo symmetry split at 27° E, with clear-sky albedo, cloud radiative effect and open-ocean fraction exhibiting a triple symmetry around this meridian."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10473-z": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b34d340c974c8132cf4ec6da2fd871ae9f6eff78c445a321f082b45c60ac5e0a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10473-z NASA’s Juno observations show relativistic electron acceleration at the bow shock of Jupiter and establish a universal scaling law linking shock size to maximum cosmic ray energy."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s41586-026-10612-6": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "afcbe4b23afa9134278d5fe01096e8124a0c290e9642e861f4025f53d9013279",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10612-6 Longitudinal transcriptomic, chromatin and genomic analyses of the two types of IDH-mutant glioma reveal in detail how disease progression is influenced by interdependent genetic, epigenetic and microenvironmental factors."
+      },
+      "updatedAt": "2026-06-06T09:00:02.258Z"
+    },
+    "doi:10.1038/s44358-026-00162-0": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "591a736fcf358518ee36af3c4270cfbf1038ee95de31a00810f2e357b7b8d3f7",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "modeling_methods",
+          "population_traits",
+          "genetics_evolution",
+          "landscape_macroecology",
+          "conservation_management"
+        ],
+        "relevance": 40,
+        "oneLine": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions."
+      },
+      "score": {
+        "source": 27,
+        "theme": 40,
+        "type": 20,
+        "total": 87,
+        "title": "Halting genetic diversity loss, from local to international action and policy",
+        "oneLine": "该研究围绕“Halting genetic diversity loss, from local to international action and policy”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Halting genetic diversity loss, from local to international action and policy”。原始摘要显示，研究关注The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-reviews-biodiversity-0-VGhlIGxvc3Mg",
+        "title": "Halting genetic diversity loss, from local to international action and policy",
+        "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
+        "authors": [
+          "Robyn E. Shaw",
+          "Carole P. Elliott",
+          "David J. Coates",
+          "Kym M. Ottewell",
+          "Gernot Segelbacher",
+          "Joachim Mergeay",
+          "Katherine A. Farquharson",
+          "Catherine E. Grueber"
+        ],
+        "journal": "Nature Reviews Biodiversity",
+        "type": "Review",
+        "doi": "10.1038/s44358-026-00162-0",
+        "url": "https://www.nature.com/articles/s44358-026-00162-0",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Nature Reviews Biodiversity",
+            "url": "https://www.nature.com/articles/s44358-026-00162-0"
+          }
+        ],
+        "tags": [
+          "modeling_methods",
+          "population_traits",
+          "genetics_evolution",
+          "landscape_macroecology",
+          "conservation_management"
+        ],
+        "oneLine": "该研究围绕“Halting genetic diversity loss, from local to international action and policy”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Halting genetic diversity loss, from local to international action and policy”。原始摘要显示，研究关注The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 87,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 40,
+          "type": 20
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "doi:10.1038/s44358-026-00172-y": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "47f46a1e0ada2ab7d39e87469e75373b625d47a6709a8b8d5e62de80e5a71bfb",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 0,
+        "oneLine": ""
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "doi:10.1038/s43017-026-00797-9": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8616556d9f29b315a418db80ae4bf50af7138f0b388c9f9f7b7eb4834fcca928",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Nature Reviews Earth & Environment, Published online: 03 June 2026; doi:10.1038/s43017-026-00797-9 Compound weather and climate events in 2025"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001114": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "fd901c1124b6d1c07d42cb5075d31ba759b349cb3e43217fda83cb627028d239",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: Available online 4 June 2026 Source: Trends in Ecology & Evolution Author(s): Danai Papageorgiou, Monique Borgerhoff Mulder, Sarah F. Brosnan, Eli D. Strauss"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Levelling: behaviours that constrain inequality in animal societies",
+        "oneLine": "该研究围绕“Levelling: behaviours that constrain inequality in animal societies”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Levelling: behaviours that constrain inequality in animal societies”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-0-TGV2ZWxsaW5n",
+        "title": "Levelling: behaviours that constrain inequality in animal societies",
+        "abstract": "Publication date: Available online 4 June 2026 Source: Trends in Ecology & Evolution Author(s): Danai Papageorgiou, Monique Borgerhoff Mulder, Sarah F. Brosnan, Eli D. Strauss",
+        "authors": [
+          "Danai Papageorgiou",
+          "Monique Borgerhoff Mulder",
+          "Sarah F. Brosnan",
+          "Eli D. Strauss"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001114?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001114?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Levelling: behaviours that constrain inequality in animal societies”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Levelling: behaviours that constrain inequality in animal societies”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s016953472600114x": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "f7f16634e308c39956e8f370f415703d1c1d41a30f4bdebf7686d83d24631b56",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "population_traits",
+          "genetics_evolution"
+        ],
+        "relevance": 32,
+        "oneLine": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Laura Touzot, Marlène Gamelon"
+      },
+      "score": {
+        "source": 27,
+        "theme": 32,
+        "type": 17,
+        "total": 76,
+        "title": "A pioneering theory for anticipating changes in population growth?",
+        "oneLine": "该研究围绕“A pioneering theory for anticipating changes in population growth?”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“A pioneering theory for anticipating changes in population growth?”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-1-QSBwaW9uZWVy",
+        "title": "A pioneering theory for anticipating changes in population growth?",
+        "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Laura Touzot, Marlène Gamelon",
+        "authors": [
+          "Laura Touzot",
+          "Marlène Gamelon"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "population_traits",
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“A pioneering theory for anticipating changes in population growth?”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“A pioneering theory for anticipating changes in population growth?”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 76,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000856": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "fa1d115ccf829ff53340eb15e5780df42b2c7a6e5b4d7bf2f41c9d28aa45a531",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Xuexiu Chang, Hugh J. MacIsaac, Ingrid Chorus, George S. Bullerjahn, Rainer Kurmayer, Chi-Yong Ahn, Xiangzhen Kong, Steven W. Wilhelm, Susanna A. Wood, Xiangming Tang, Hans W. Paerl, Sabine Hilt, Erik Jeppesen, David P. Hamilton, Shin-ichi Nakano, Petra Visser, Jef Huisman, Haijun Wang, Lirong Song, R. Michael Mckay"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Scanning the horizon for harmful cyanobacterial blooms",
+        "oneLine": "该研究围绕“Scanning the horizon for harmful cyanobacterial blooms”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Scanning the horizon for harmful cyanobacterial blooms”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-2-U2Nhbm5pbmcg",
+        "title": "Scanning the horizon for harmful cyanobacterial blooms",
+        "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Xuexiu Chang, Hugh J. MacIsaac, Ingrid Chorus, George S. Bullerjahn, Rainer Kurmayer, Chi-Yong Ahn, Xiangzhen Kong, Steven W. Wilhelm, Susanna A. Wood, Xiangming Tang, Hans W. Paerl, Sabine Hilt, Erik Jeppesen, David P. Hamilton, Shin-ichi Nakano, Petra Visser, Jef Huisman, Haijun Wang, Lirong Song, R. Michael Mckay",
+        "authors": [
+          "Xuexiu Chang",
+          "Hugh J. MacIsaac",
+          "Ingrid Chorus",
+          "George S. Bullerjahn",
+          "Rainer Kurmayer",
+          "Chi-Yong Ahn",
+          "Xiangzhen Kong",
+          "Steven W. Wilhelm",
+          "Susanna A. Wood",
+          "Xiangming Tang",
+          "Hans W. Paerl",
+          "Sabine Hilt",
+          "Erik Jeppesen",
+          "David P. Hamilton",
+          "Shin-ichi Nakano",
+          "Petra Visser",
+          "Jef Huisman",
+          "Haijun Wang",
+          "Lirong Song",
+          "R. Michael Mckay"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000856?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000856?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Scanning the horizon for harmful cyanobacterial blooms”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Scanning the horizon for harmful cyanobacterial blooms”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001151": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b47d29909f0358303b8f05cfb3932e97aa2285c55a565b4eaca896b48ab40653",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "population_traits",
+          "genetics_evolution"
+        ],
+        "relevance": 32,
+        "oneLine": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Michael Opoku Adomako, James D. Bever, Bernhard Schmid, Fei-Hai Yu"
+      },
+      "score": {
+        "source": 27,
+        "theme": 32,
+        "type": 17,
+        "total": 76,
+        "title": "Environmentally induced phenotypic diversity drives population overyielding",
+        "oneLine": "该研究围绕“Environmentally induced phenotypic diversity drives population overyielding”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Environmentally induced phenotypic diversity drives population overyielding”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-3-RW52aXJvbm1l",
+        "title": "Environmentally induced phenotypic diversity drives population overyielding",
+        "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Michael Opoku Adomako, James D. Bever, Bernhard Schmid, Fei-Hai Yu",
+        "authors": [
+          "Michael Opoku Adomako",
+          "James D. Bever",
+          "Bernhard Schmid",
+          "Fei-Hai Yu"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "population_traits",
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Environmentally induced phenotypic diversity drives population overyielding”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Environmentally induced phenotypic diversity drives population overyielding”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 76,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001230": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "80623c308bdf2572b7be5b14826acca7c4aed49205a1b2fae61ffbd58a226c99",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 0,
+        "oneLine": ""
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000522": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "621683b87ed75f863fdc938496fc03f22aef86068e5ea95b0a51b3d04b8022e6",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "climate_anthropogenic"
+        ],
+        "relevance": 34,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Adam M. Siepielski, Michael O’Connor, Alisha A. Shah, Alexander A. Mauro, Cameron K. Ghalambor"
+      },
+      "score": {
+        "source": 27,
+        "theme": 34,
+        "type": 17,
+        "total": 78,
+        "title": "The reshaping of trade-offs under climate warming",
+        "oneLine": "该研究围绕“The reshaping of trade-offs under climate warming”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“The reshaping of trade-offs under climate warming”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-5-VGhlIHJlc2hh",
+        "title": "The reshaping of trade-offs under climate warming",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Adam M. Siepielski, Michael O’Connor, Alisha A. Shah, Alexander A. Mauro, Cameron K. Ghalambor",
+        "authors": [
+          "Adam M. Siepielski",
+          "Michael O’Connor",
+          "Alisha A. Shah",
+          "Alexander A. Mauro",
+          "Cameron K. Ghalambor"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000522?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000522?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "climate_anthropogenic"
+        ],
+        "oneLine": "该研究围绕“The reshaping of trade-offs under climate warming”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“The reshaping of trade-offs under climate warming”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 78,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 34,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000510": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "01caff4ba49c8b000604f8e261c36db26854eaac8b05776c8ea5869f00dca157",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "conservation_management",
+          "aquatic_microbe"
+        ],
+        "relevance": 34,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Torben Riehl, Monika Böhm, Simone N. Brandão, Angelika Brandt, Chong Chen, Gregory D. Edgecombe, Hosea J. ‶Ze″ Frank, Austin J. Gallagher, Rebecca Goldburg, Pat Hutchings, Fabrizio M. Machado, Volker Mosbrugger, Riley A. Pollom, Jan Steger, Anne H. Tandberg, Swati Thiyagarajan, Ekin Tilic, Alica Torkov, Miguel Vences, Ruth Wasmund"
+      },
+      "score": {
+        "source": 27,
+        "theme": 34,
+        "type": 17,
+        "total": 78,
+        "title": "Marine conservation: linking taxonomy, Red Listing, and public engagement",
+        "oneLine": "该研究围绕“Marine conservation: linking taxonomy, Red Listing, and public engagement”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Marine conservation: linking taxonomy, Red Listing, and public engagement”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-6-TWFyaW5lIGNv",
+        "title": "Marine conservation: linking taxonomy, Red Listing, and public engagement",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Torben Riehl, Monika Böhm, Simone N. Brandão, Angelika Brandt, Chong Chen, Gregory D. Edgecombe, Hosea J. ‶Ze″ Frank, Austin J. Gallagher, Rebecca Goldburg, Pat Hutchings, Fabrizio M. Machado, Volker Mosbrugger, Riley A. Pollom, Jan Steger, Anne H. Tandberg, Swati Thiyagarajan, Ekin Tilic, Alica Torkov, Miguel Vences, Ruth Wasmund",
+        "authors": [
+          "Torben Riehl",
+          "Monika Böhm",
+          "Simone N. Brandão",
+          "Angelika Brandt",
+          "Chong Chen",
+          "Gregory D. Edgecombe",
+          "Hosea J. ‶Ze″ Frank",
+          "Austin J. Gallagher",
+          "Rebecca Goldburg",
+          "Pat Hutchings",
+          "Fabrizio M. Machado",
+          "Volker Mosbrugger",
+          "Riley A. Pollom",
+          "Jan Steger",
+          "Anne H. Tandberg",
+          "Swati Thiyagarajan",
+          "Ekin Tilic",
+          "Alica Torkov",
+          "Miguel Vences",
+          "Ruth Wasmund"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000510?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000510?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "conservation_management",
+          "aquatic_microbe"
+        ],
+        "oneLine": "该研究围绕“Marine conservation: linking taxonomy, Red Listing, and public engagement”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Marine conservation: linking taxonomy, Red Listing, and public engagement”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 78,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 34,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000509": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "040104bf4b242c9866737451292a3d45a94159f95fbf5a495c0594c66ac5084d",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bradley D. Ohlinger, Josep Call, Mathieu Charbonneau, Takao Sasaki"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Animal cumulative culture through changing environments",
+        "oneLine": "该研究围绕“Animal cumulative culture through changing environments”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Animal cumulative culture through changing environments”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-7-QW5pbWFsIGN1",
+        "title": "Animal cumulative culture through changing environments",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bradley D. Ohlinger, Josep Call, Mathieu Charbonneau, Takao Sasaki",
+        "authors": [
+          "Bradley D. Ohlinger",
+          "Josep Call",
+          "Mathieu Charbonneau",
+          "Takao Sasaki"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000509?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000509?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Animal cumulative culture through changing environments”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Animal cumulative culture through changing environments”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000443": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8945e1638c9496beece034953ea4ae14992ebb3bdc047eea81b68aec9ca33177",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "plant_agroecology"
+        ],
+        "relevance": 34,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Jeanne Tonnabel, Patrice David, Tim Janicke"
+      },
+      "score": {
+        "source": 27,
+        "theme": 34,
+        "type": 17,
+        "total": 78,
+        "title": "Sexual selection in plants and animals: toward a unified framework",
+        "oneLine": "该研究围绕“Sexual selection in plants and animals: toward a unified framework”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Sexual selection in plants and animals: toward a unified framework”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-8-U2V4dWFsIHNl",
+        "title": "Sexual selection in plants and animals: toward a unified framework",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Jeanne Tonnabel, Patrice David, Tim Janicke",
+        "authors": [
+          "Jeanne Tonnabel",
+          "Patrice David",
+          "Tim Janicke"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000443?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000443?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Sexual selection in plants and animals: toward a unified framework”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Sexual selection in plants and animals: toward a unified framework”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 78,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 34,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000546": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "551dadc7f3eb7c95cae6c188acdb077235191dbe8b1775eb037ce31380c26422",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Christine W. Miller, Dominic Cram, Sarah M. Lane, Romain Boisseau, Sophia Fitzgerald, Nicole Lopez, Allen J. Moore, Christina J. Painting, Alexandre V. Palaoro, Michael Ryan, Ummat Somjee, Camille Thomas-Bulle, Douglas Emlen, David Labonte"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Toward an integrated understanding of animal weapons",
+        "oneLine": "该研究围绕“Toward an integrated understanding of animal weapons”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Toward an integrated understanding of animal weapons”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-9-VG93YXJkIGFu",
+        "title": "Toward an integrated understanding of animal weapons",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Christine W. Miller, Dominic Cram, Sarah M. Lane, Romain Boisseau, Sophia Fitzgerald, Nicole Lopez, Allen J. Moore, Christina J. Painting, Alexandre V. Palaoro, Michael Ryan, Ummat Somjee, Camille Thomas-Bulle, Douglas Emlen, David Labonte",
+        "authors": [
+          "Christine W. Miller",
+          "Dominic Cram",
+          "Sarah M. Lane",
+          "Romain Boisseau",
+          "Sophia Fitzgerald",
+          "Nicole Lopez",
+          "Allen J. Moore",
+          "Christina J. Painting",
+          "Alexandre V. Palaoro",
+          "Michael Ryan",
+          "Ummat Somjee",
+          "Camille Thomas-Bulle",
+          "Douglas Emlen",
+          "David Labonte"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000546?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000546?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Toward an integrated understanding of animal weapons”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Toward an integrated understanding of animal weapons”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000534": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "29652bc5afffdc75457cce6cfd26dea9c44922e25ae73d7d94b4b8589bed98cc",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Andreas Nord, Marc T. Freeman, Andrew E. McKechnie"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Physiological constraints on heat adaptation in birds",
+        "oneLine": "该研究围绕“Physiological constraints on heat adaptation in birds”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Physiological constraints on heat adaptation in birds”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-10-UGh5c2lvbG9n",
+        "title": "Physiological constraints on heat adaptation in birds",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Andreas Nord, Marc T. Freeman, Andrew E. McKechnie",
+        "authors": [
+          "Andreas Nord",
+          "Marc T. Freeman",
+          "Andrew E. McKechnie"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Physiological constraints on heat adaptation in birds”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Physiological constraints on heat adaptation in birds”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000303": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2372244aa0b43d335670d9454cec4e406e63ebc8221e1f02c9fbe75cac949f00",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "community_ecosystem",
+          "genetics_evolution"
+        ],
+        "relevance": 32,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning"
+      },
+      "score": {
+        "source": 27,
+        "theme": 32,
+        "type": 17,
+        "total": 76,
+        "title": "Navigating transformations from degraded to functional ecosystems",
+        "oneLine": "该研究围绕“Navigating transformations from degraded to functional ecosystems”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Navigating transformations from degraded to functional ecosystems”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-11-TmF2aWdhdGlu",
+        "title": "Navigating transformations from degraded to functional ecosystems",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning",
+        "authors": [
+          "Linda E. Neaves",
+          "Iain J. Gordon",
+          "Adrian D. Manning"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "community_ecosystem",
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Navigating transformations from degraded to functional ecosystems”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Navigating transformations from degraded to functional ecosystems”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 76,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001102": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "9bb76e52790aa44055f65d15a88477f16c6c00bac8e6d121baf9893fa3fd1872",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bo Wang"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Who finds the seeds? Personality matters",
+        "oneLine": "该研究围绕“Who finds the seeds? Personality matters”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Who finds the seeds? Personality matters”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-12-V2hvIGZpbmRz",
+        "title": "Who finds the seeds? Personality matters",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bo Wang",
+        "authors": [
+          "Bo Wang"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001102?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001102?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Who finds the seeds? Personality matters”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Who finds the seeds? Personality matters”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001084": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "40f260f23cf926e2e9de075768e3803123667cc51288ea80cecc8f0d49a23059",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marketa Zimova, Charlotte M. Probst, Brian C. Weeks"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule",
+        "oneLine": "该研究围绕“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-13-TWVjaGFuaXN0",
+        "title": "Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marketa Zimova, Charlotte M. Probst, Brian C. Weeks",
+        "authors": [
+          "Marketa Zimova",
+          "Charlotte M. Probst",
+          "Brian C. Weeks"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001084?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001084?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000819": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "d20d6b7d2bf32a941723080b92a283ef3398cc54931f0395516c559908349d58",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marcel Rejmánek"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Positive turning points: hope in the climate crisis",
+        "oneLine": "该研究围绕“Positive turning points: hope in the climate crisis”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Positive turning points: hope in the climate crisis”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-14-UG9zaXRpdmUg",
+        "title": "Positive turning points: hope in the climate crisis",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marcel Rejmánek",
+        "authors": [
+          "Marcel Rejmánek"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Positive turning points: hope in the climate crisis”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Positive turning points: hope in the climate crisis”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000789": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "5be08b1f6f2a1805a741e417d0946127512a5e438bc10308ca768c6a5edcde3a",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "conservation_management"
+        ],
+        "relevance": 32,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Wenjie Li, Fang Han, Xuan Liu"
+      },
+      "score": {
+        "source": 27,
+        "theme": 32,
+        "type": 17,
+        "total": 76,
+        "title": "Establishing transboundary protected areas to achieve sustainability",
+        "oneLine": "该研究围绕“Establishing transboundary protected areas to achieve sustainability”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Establishing transboundary protected areas to achieve sustainability”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-15-RXN0YWJsaXNo",
+        "title": "Establishing transboundary protected areas to achieve sustainability",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Wenjie Li, Fang Han, Xuan Liu",
+        "authors": [
+          "Wenjie Li",
+          "Fang Han",
+          "Xuan Liu"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "conservation_management"
+        ],
+        "oneLine": "该研究围绕“Establishing transboundary protected areas to achieve sustainability”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Establishing transboundary protected areas to achieve sustainability”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 76,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.259Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726000777": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "965e0872b3dc1c9797ac220f462913157bb83588f5581622ea82277e1a622b08",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry",
+          "genetics_evolution",
+          "conservation_management"
+        ],
+        "relevance": 36,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira"
+      },
+      "score": {
+        "source": 27,
+        "theme": 36,
+        "type": 17,
+        "total": 80,
+        "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
+        "oneLine": "该研究围绕“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
+        "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
+        "authors": [
+          "Ademir S.F. Araujo",
+          "Erika V. de Medeiros",
+          "Diogo P. da Costa",
+          "Lucas W. Mendes",
+          "Maurício R. Cherubin",
+          "Raphael M. Beirigo",
+          "George R. Lambais",
+          "Vania M.M. Melo",
+          "Rodrigo M. Santana",
+          "Vanessa N. Kavamura",
+          "Arthur P.A. Pereira"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "biogeochemistry",
+          "genetics_evolution",
+          "conservation_management"
+        ],
+        "oneLine": "该研究围绕“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 80,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 36,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001205": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ef5da520ee65a9d69c0168c6038e4717af25c642c61c61fb21eccd85f86df7a2",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s):"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Advisory Board and Contents",
+        "oneLine": "该研究围绕“Advisory Board and Contents”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Advisory Board and Contents”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-17-QWR2aXNvcnkg",
+        "title": "Advisory Board and Contents",
+        "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s):",
+        "authors": [],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001205?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001205?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Advisory Board and Contents”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Advisory Board and Contents”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001023": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "c9a630188dfcf2b4c03558ae3a3fe16b515b5f05c1c7bed145a10f93a89ab5a3",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Publication date: Available online 30 May 2026 Source: Trends in Ecology & Evolution Author(s): Laurinne J. Balstad, Marissa L. Baskett, Stephanie M. Carlson, Curry J. Cunningham, Peter A.H. Westley"
+      },
+      "score": {
+        "source": 27,
+        "theme": 30,
+        "type": 17,
+        "total": 74,
+        "title": "Revisiting evolutionary rescue in the wild",
+        "oneLine": "该研究围绕“Revisiting evolutionary rescue in the wild”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Revisiting evolutionary rescue in the wild”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-18-UmV2aXNpdGlu",
+        "title": "Revisiting evolutionary rescue in the wild",
+        "abstract": "Publication date: Available online 30 May 2026 Source: Trends in Ecology & Evolution Author(s): Laurinne J. Balstad, Marissa L. Baskett, Stephanie M. Carlson, Curry J. Cunningham, Peter A.H. Westley",
+        "authors": [
+          "Laurinne J. Balstad",
+          "Marissa L. Baskett",
+          "Stephanie M. Carlson",
+          "Curry J. Cunningham",
+          "Peter A.H. Westley"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Revisiting evolutionary rescue in the wild”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Revisiting evolutionary rescue in the wild”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 74,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.sciencedirect.com/science/article/pii/s0169534726001175": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "cf793af9e4e4f12e9e47b517e17a9e3d88fb5c1ae6ed37190be9d1829298fcd7",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "species_distribution",
+          "disturbance"
+        ],
+        "relevance": 36,
+        "oneLine": "Publication date: Available online 28 May 2026 Source: Trends in Ecology & Evolution Author(s): Cédric Sueur, Ricard Solé, Jean-Louis Deneubourg"
+      },
+      "score": {
+        "source": 27,
+        "theme": 36,
+        "type": 17,
+        "total": 80,
+        "title": "Collective social niche construction shaping adaptive social networks",
+        "oneLine": "该研究围绕“Collective social niche construction shaping adaptive social networks”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Collective social niche construction shaping adaptive social networks”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "trends-ecology-evolution-19-Q29sbGVjdGl2",
+        "title": "Collective social niche construction shaping adaptive social networks",
+        "abstract": "Publication date: Available online 28 May 2026 Source: Trends in Ecology & Evolution Author(s): Cédric Sueur, Ricard Solé, Jean-Louis Deneubourg",
+        "authors": [
+          "Cédric Sueur",
+          "Ricard Solé",
+          "Jean-Louis Deneubourg"
+        ],
+        "journal": "Trends in Ecology & Evolution",
+        "type": "Article",
+        "doi": "",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all",
+        "date": "",
+        "sourceSignals": [
+          {
+            "type": "reviewJournal",
+            "name": "Trends in Ecology & Evolution",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "species_distribution",
+          "disturbance"
+        ],
+        "oneLine": "该研究围绕“Collective social niche construction shaping adaptive social networks”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Collective social niche construction shaping adaptive social networks”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 80,
+        "scoreBreakdown": {
+          "source": 27,
+          "theme": 36,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03101-6": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "fd02171622dff6a0339e196fe8a8108586c1476a6d583da55ebba659e10065cf",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "community_ecosystem",
+          "genetics_evolution"
+        ],
+        "relevance": 32,
+        "oneLine": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing."
+      },
+      "score": {
+        "source": 24,
+        "theme": 32,
+        "type": 17,
+        "total": 73,
+        "title": "Pricing nature into sovereign debt",
+        "oneLine": "该研究围绕“Pricing nature into sovereign debt”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Pricing nature into sovereign debt”。原始摘要显示，研究关注A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-0-QSBzdHVkeSB0",
+        "title": "Pricing nature into sovereign debt",
+        "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.",
+        "authors": [
+          "Justin Andrew Johnson"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03101-6",
+        "url": "https://www.nature.com/articles/s41559-026-03101-6",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03101-6"
+          }
+        ],
+        "tags": [
+          "community_ecosystem",
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Pricing nature into sovereign debt”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Pricing nature into sovereign debt”。原始摘要显示，研究关注A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 73,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03103-4": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b271bbec21e5aee1cd96558f46642334d74b77200b7fdbfc44bb885fdf79e033",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "modeling_methods",
+          "population_traits",
+          "biogeochemistry",
+          "genetics_evolution",
+          "plant_agroecology"
+        ],
+        "relevance": 44,
+        "oneLine": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor."
+      },
+      "score": {
+        "source": 24,
+        "theme": 44,
+        "type": 14,
+        "total": 82,
+        "title": "Latitudinal patterns and environmental correlates of plant root exudation",
+        "oneLine": "该研究围绕“Latitudinal patterns and environmental correlates of plant root exudation”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Latitudinal patterns and environmental correlates of plant root exudation”。原始摘要显示，研究关注From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
+        "title": "Latitudinal patterns and environmental correlates of plant root exudation",
+        "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.",
+        "authors": [
+          "Mengguang Han",
+          "Franciska T. de Vries",
+          "Richard D. Bardgett",
+          "Feng Jiang",
+          "Biao Zhu"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Dataset",
+        "doi": "10.1038/s41559-026-03103-4",
+        "url": "https://www.nature.com/articles/s41559-026-03103-4",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03103-4"
+          }
+        ],
+        "tags": [
+          "modeling_methods",
+          "population_traits",
+          "biogeochemistry",
+          "genetics_evolution",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Latitudinal patterns and environmental correlates of plant root exudation”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Latitudinal patterns and environmental correlates of plant root exudation”。原始摘要显示，研究关注From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 82,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 44,
+          "type": 14
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03081-7": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "31515f40b355998dec7385508581e559f3f9c10670e45a9228cf33be2c35a682",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "modeling_methods",
+          "genetics_evolution",
+          "aquatic_microbe"
+        ],
+        "relevance": 36,
+        "oneLine": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03081-7 Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries."
+      },
+      "score": {
+        "source": 24,
+        "theme": 36,
+        "type": 17,
+        "total": 77,
+        "title": "Biodiversity loss will decrease the future creditworthiness of nations",
+        "oneLine": "该研究围绕“Biodiversity loss will decrease the future creditworthiness of nations”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Biodiversity loss will decrease the future creditworthiness of nations”。原始摘要显示，研究关注Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-2-QmlvZGl2ZXJz",
+        "title": "Biodiversity loss will decrease the future creditworthiness of nations",
+        "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03081-7 Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.",
+        "authors": [
+          "Matthew Agarwala",
+          "Matt Burke",
+          "Patrycja Klusak",
+          "Moritz Kraemer",
+          "Ulrich Volz",
+          "Benjamin K. Sovacool"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03081-7",
+        "url": "https://www.nature.com/articles/s41559-026-03081-7",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03081-7"
+          }
+        ],
+        "tags": [
+          "modeling_methods",
+          "genetics_evolution",
+          "aquatic_microbe"
+        ],
+        "oneLine": "该研究围绕“Biodiversity loss will decrease the future creditworthiness of nations”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Biodiversity loss will decrease the future creditworthiness of nations”。原始摘要显示，研究关注Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 77,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 36,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03097-z": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "385255800826779ce53ed6e4cfff43d71abe77a0ea16aae9db914c29898da174",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "modeling_methods",
+          "genetics_evolution",
+          "landscape_macroecology",
+          "climate_anthropogenic",
+          "conservation_management"
+        ],
+        "relevance": 42,
+        "oneLine": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals."
+      },
+      "score": {
+        "source": 24,
+        "theme": 42,
+        "type": 17,
+        "total": 83,
+        "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+        "oneLine": "该研究围绕“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”。原始摘要显示，研究关注In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
+        "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+        "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
+        "authors": [],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03097-z",
+        "url": "https://www.nature.com/articles/s41559-026-03097-z",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03097-z"
+          }
+        ],
+        "tags": [
+          "modeling_methods",
+          "genetics_evolution",
+          "landscape_macroecology",
+          "climate_anthropogenic",
+          "conservation_management"
+        ],
+        "oneLine": "该研究围绕“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”。原始摘要显示，研究关注In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 83,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 42,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03083-5": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ac10f0d82a4775325b75a0e8616bbadeb8fff16bf3d5af3f655d0e8ca231f156",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution",
+          "climate_anthropogenic",
+          "conservation_management"
+        ],
+        "relevance": 36,
+        "oneLine": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity."
+      },
+      "score": {
+        "source": 24,
+        "theme": 36,
+        "type": 17,
+        "total": 77,
+        "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
+        "oneLine": "该研究围绕“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”。原始摘要显示，研究关注Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-4-VHdlbnRpZXRo",
+        "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
+        "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.",
+        "authors": [],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03083-5",
+        "url": "https://www.nature.com/articles/s41559-026-03083-5",
+        "date": "2026-06-02",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03083-5"
+          }
+        ],
+        "tags": [
+          "genetics_evolution",
+          "climate_anthropogenic",
+          "conservation_management"
+        ],
+        "oneLine": "该研究围绕“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”。原始摘要显示，研究关注Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 77,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 36,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03087-1": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a4c3241b34a1afdfda46c4eed5aab08a2ff234275bf803607aa76052381bb3f7",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species."
+      },
+      "score": {
+        "source": 24,
+        "theme": 30,
+        "type": 14,
+        "total": 68,
+        "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
+        "oneLine": "该研究围绕“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”。原始摘要显示，研究关注This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
+        "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
+        "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.",
+        "authors": [
+          "Leo Zeitler",
+          "Camille Berthelot"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Methods",
+        "doi": "10.1038/s41559-026-03087-1",
+        "url": "https://www.nature.com/articles/s41559-026-03087-1",
+        "date": "2026-06-02",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03087-1"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”。原始摘要显示，研究关注This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 68,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 30,
+          "type": 14
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03090-6": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "48d2a5195980d99050f683ebfd49722cc810f54776fe25872a9a9ecd50abf6d8",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03090-6 Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity."
+      },
+      "score": {
+        "source": 24,
+        "theme": 30,
+        "type": 17,
+        "total": 71,
+        "title": "Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian",
+        "oneLine": "该研究围绕“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”。原始摘要显示，研究关注Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-6-R2VuZSBib2R5",
+        "title": "Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian",
+        "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03090-6 Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.",
+        "authors": [
+          "Lan Xu",
+          "Richard Heery",
+          "Damir Baranasic",
+          "Bojan Žunar",
+          "Alvaro Segura Campaña",
+          "Vladimir Ovchinnikov",
+          "Boris Lenhard",
+          "Alex de Mendoza"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03090-6",
+        "url": "https://www.nature.com/articles/s41559-026-03090-6",
+        "date": "2026-06-02",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03090-6"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”。原始摘要显示，研究关注Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 71,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "doi:10.1038/s41559-026-03074-6": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "1924be67f0b5ea6b1dd5f6abd5be38706680c26a20c30e81428aa85b33612b03",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change."
+      },
+      "score": {
+        "source": 24,
+        "theme": 30,
+        "type": 17,
+        "total": 71,
+        "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
+        "oneLine": "该研究围绕“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”。原始摘要显示，研究关注Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "nature-ecology-evolution-7-TmluZXR5LXll",
+        "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
+        "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.",
+        "authors": [
+          "Felix Neff",
+          "Kurt Bollmann",
+          "Yannick Chittaro",
+          "Martin M. Gossner",
+          "Felix Herzog",
+          "Fränzi Korner-Nievergelt",
+          "Glenn Litsios",
+          "Carlos Martínez-Núñez",
+          "Marco Moretti",
+          "Emmanuel Rey",
+          "Andreas Sanchez",
+          "Eva Knop"
+        ],
+        "journal": "Nature Ecology & Evolution",
+        "type": "Article",
+        "doi": "10.1038/s41559-026-03074-6",
+        "url": "https://www.nature.com/articles/s41559-026-03074-6",
+        "date": "2026-06-02",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Nature Ecology & Evolution",
+            "url": "https://www.nature.com/articles/s41559-026-03074-6"
+          }
+        ],
+        "tags": [
+          "genetics_evolution"
+        ],
+        "oneLine": "该研究围绕“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”。原始摘要显示，研究关注Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 71,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 30,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.sciencedaily.com/releases/2026/06/260602021659.htm": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a0a86fa098fa8bafaa1046a7ee6a0c3d589ac3e4e73a20da152bd5d68ce27ebf",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "community_ecosystem",
+          "biogeochemistry",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "relevance": 42,
+        "oneLine": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change."
+      },
+      "score": {
+        "source": 16,
+        "theme": 42,
+        "type": 8,
+        "total": 66,
+        "title": "A hidden pollutant is changing how the world's forests breathe",
+        "oneLine": "该研究围绕“A hidden pollutant is changing how the world's forests breathe”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“A hidden pollutant is changing how the world's forests breathe”。原始摘要显示，研究关注A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "citation": ""
+      },
+      "item": {
+        "id": "sciencedaily-agriculture-food-0-QSBoaWRkZW4g",
+        "title": "A hidden pollutant is changing how the world's forests breathe",
+        "abstract": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.",
+        "authors": [],
+        "journal": "ScienceDaily Agriculture and Food",
+        "type": "News",
+        "doi": "",
+        "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
+        "date": "2026-06-02",
+        "sourceSignals": [
+          {
+            "type": "scienceDaily",
+            "name": "ScienceDaily Agriculture and Food",
+            "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
+          },
+          {
+            "type": "scienceDaily",
+            "name": "ScienceDaily Ecology",
+            "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
+          }
+        ],
+        "tags": [
+          "community_ecosystem",
+          "biogeochemistry",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“A hidden pollutant is changing how the world's forests breathe”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“A hidden pollutant is changing how the world's forests breathe”。原始摘要显示，研究关注A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 66,
+        "scoreBreakdown": {
+          "source": 16,
+          "theme": 42,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.260Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.sciencedaily.com/releases/2026/06/260602021633.htm": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "784e6d8f5a199a9aa053fc2ef203122348d7d187b668d69977ba361d23814b2e",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Deer keds rely on flight and vision to find a host, but everything changes once they land. After shedding their wings forever, these parasites reduce the activity of key vision-related genes by about half. Scientists believe they are effectively trading sharp eyesight for extra energy that can be used for feeding and reproduction."
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/protein-name-confusion-created-antibody-mix-affecting-hundreds-papers": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "46fffbfb64573e9b60583780b6f9efc86b8308bffe260011be0d13a94e0e7540",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Cancer and cell aging studies may have relied on antibodies to incorrect molecule"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/satellite-maps-sinking-coastlines-come-under-scrutiny": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8e39e76a017ef79387598ccbe5aa3db36d293c8ca12746d99f9e4e04b8e7a483",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Radar studies produce contradictory results, complicating efforts to gauge sea level rise in vulnerable areas"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/extinct-brown-bear-had-surprising-diet": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2c7ae5adeb3013879438a99be0396b6274f3f62628d48821f2f617c6d2868b57",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Unlike their modern counterparts, Atlas bears were strict vegetarians"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/does-distant-alien-world-harbor-promising-signs-life-most-astrobiologists-say-no": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "62eaec0c7b385e34c9d199d6cad50914d82b439671a45dd405a6f5ab631d090d",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods"
+        ],
+        "relevance": 32,
+        "oneLine": "Poll of nearly 500 scientists reveals how rapid surveys can take researchers’ pulse on controversial topics"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/ai-executives-join-call-stricter-regulation-synthetic-biology": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "9d62a47bd7590a50649aed24ae2d8eac910910b89918b1c8e84711dc06171a47",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Letter urges Congress to require DNA firms to screen orders to prevent AI-aided bioweapons"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/house-spending-panel-proposes-slight-raise-nih-2027": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "f03291b24f858e3ec265f2e1ee72f04d4d0b0c11eca5d40b2f557aaaa002833e",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Draft bill rejects Trump’s plan to slash and rejigger the $47 billion biomedical research agency"
+      },
+      "updatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    "url:https://www.science.org/content/article/amid-flood-ai-advances-astrophysicists-are-questioning-soul-their-field": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "11931fa5a68b8bd5d4b9dd556d0251dd55eb9488d5823ee6b65c9a829b79d27f",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Researchers see enormous power in new tools—but also the potential end of astrophysics as a human endeavor"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://www.science.org/content/article/bees-just-did-something-no-other-insect-has-been-shown-do": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8aab4d0f17c802fb5e2f90d13af77e54211b33383ad7f24222871e845ccd5974",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Like humans, bumble bees can plan ahead when working through a problem, even pausing to consider the solution"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://www.science.org/content/article/u-s-health-agencies-join-fight-against-ultraprocessed-foods-whatever-they-are": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "e29581c5d24c7b573489f406053ea167220581495d3ea3be7de43968af3e35ad",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Some scientists criticize label as ambiguous and confusing; others call it a valuable lens on diet"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://www.science.org/content/article/democrats-house-china-committee-decry-dismissal-national-science-board": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "9503e21ca7fb1f25ba8e3ad26fd0b898b7c353f3c8d9a5ed3a79597ce325cac5",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Letter also blames Trump for letting China surpass United States in research spending"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.adx0930": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0309175a52ad4c7ffd0903e94b3f0f4f7685f3d9325f1f4d23ba4ae4eae36257",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.adx9875": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0feaa07d82f8aca1e50895213cb81c4493548ced2aeb6f410a27fdad8a9715bc",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.ady1666": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b4b6f978540ce97489a065899a1eaed3614cf804627237f7bbd71a83b23c829a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.ady7359": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b88f6e2ad10a88eaa395c54a62efa23af978dfb22047b6113145f0d078192d2a",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.ady8751": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2aef3a694a5c7ed42efbb3191234d280fe22a5f6d75c5978801c14157d812350",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.adz0017": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a80221ea1c095acabd607fb2f2a8cf7c0b8a1376e04a5e5b023a0710efc40dfa",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.adz3081": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "985981bce3dde4eb2d8f8ec016c9ebf0d63c88a0d8a19317e00d2d300e819992",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.adz4338": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "48335cc014fd957f5bc7fc020db5eff6a559f4b333b6ea64b448bcd211ed4412",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aea0302": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "a0f1ea860256f510100d16ae2ba2977d254be600c9fecad7229d3a1a7257b4f8",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aea0731": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "7a75c085f100f45b0ce9d76056da9b78a40d2cca452c96d37a7c3f801f8d2c82",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aea3316": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "3a21339e4315666d33114404fccce7627dc92e78ccc21220651c76b3229e158f",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aea4500": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "69eec5bd140204b0ff7332cb139377d914281af1d146af2b8a85a9aec06ad2a0",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aea5433": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "dcb2fcfaee56869820e07ec8fce532c045a4611b86f8a0117712e9f889a80efd",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb1092": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "012cd11a8d550a883575e1d0d39ff7c4143ec3ca2c497dc7541a1346ee9ab3e9",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb1484": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "12a2056b258f799beeaa716493c144580ae684500667aa18454a0a4c202c8743",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "genetics_evolution"
+        ],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb1931": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0c105992582033187c3109dd0bf31d8404f399a8cb89e48a3d7ec3a2bdd740e2",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb2377": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "011681d9fdbd65ff507259ab7ffb61f292f361457b8079f15b8b39e44c22f790",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb2491": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ba51825949f368dd39b66155db4c1d293dfe9679c8fe352ee53b6d26f2ca2a67",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb2738": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ae1d00170c8fdd54f116a7143d9cf513eb2758a1c86c08cb306c58807d4c0416",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1126/sciadv.aeb3726": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "c129e516902ec57b4cd96bef4bd472850532126b143df1987c973e16e1baaf02",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "Science Advances, Volume 12, Issue 23, June 2026."
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1111/1365-2745.70354": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "b6471693fbc19d759ee45a449e08fb981d46f2be0f8c53be9866ccaa1adfda00",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "community_ecosystem",
+          "disturbance",
+          "plant_agroecology"
+        ],
+        "relevance": 38,
+        "oneLine": "Journal of Ecology, Volume 114, Issue 6, June 2026."
+      },
+      "score": {
+        "source": 24,
+        "theme": 38,
+        "type": 17,
+        "total": 79,
+        "title": "Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland",
+        "oneLine": "该研究围绕“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "journal-of-ecology-0-RmlyZSBpbmNy",
+        "title": "Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland",
+        "abstract": "Journal of Ecology, Volume 114, Issue 6, June 2026.",
+        "authors": [
+          "Thomas K. Merchant, Elisa Van Cleemput, Andrew J. Felton, Peter B. Adler, Laura E. Dee, Michael J. Koontz, Katharine N. Suding"
+        ],
+        "journal": "Journal of Ecology",
+        "type": "ResearchArticle",
+        "doi": "10.1111/1365-2745.70354",
+        "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70354?af=R",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Journal of Ecology",
+            "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70354?af=R"
+          }
+        ],
+        "tags": [
+          "community_ecosystem",
+          "disturbance",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 79,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 38,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.261Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "doi:10.1111/1365-2745.70362": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ab91bc9bd77d63b11f26428cb07b0b09d3dc86182082aebe83a0f7c1874101af",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "Journal of Ecology, Volume 114, Issue 6, June 2026."
+      },
+      "score": {
+        "source": 24,
+        "theme": 32,
+        "type": 17,
+        "total": 73,
+        "title": "Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size",
+        "oneLine": "该研究围绕“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "journal-of-ecology-1-UmljaG5lc3Mg",
+        "title": "Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size",
+        "abstract": "Journal of Ecology, Volume 114, Issue 6, June 2026.",
+        "authors": [
+          "Cristina Herrero‐Jáuregui, Merryn Hunt, Lenore Fahrig, Simon M. Smart"
+        ],
+        "journal": "Journal of Ecology",
+        "type": "ResearchArticle",
+        "doi": "10.1111/1365-2745.70362",
+        "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "professionalJournal",
+            "name": "Journal of Ecology",
+            "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R"
+          }
+        ],
+        "tags": [
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 73,
+        "scoreBreakdown": {
+          "source": 24,
+          "theme": 32,
+          "type": 17
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.261Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://mp.weixin.qq.com/s/wqze9lsi-mkxngeopyqwmw": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "815151c78fd552c34c5b12d860f1e2c128f63de3fb95d8cf67d8529a1327a088",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods"
+        ],
+        "relevance": 32,
+        "oneLine": "点点击蓝字关注我们近期，New Phytologist 在线发表了 Sara Beatriz Mendes"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://mp.weixin.qq.com/s/v4g9oite3gzvkw2bo9cvja": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "bf13b121049056ac044796b12dada917f224b58a213d4644f416e5006e473fa2",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods"
+        ],
+        "relevance": 32,
+        "oneLine": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://mp.weixin.qq.com/s/u0_f6899ieduv_tkjk-pmq": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "3281f640a50abcb28f4778f787991684a3fccd589a1c012d808d3e18c1382ac5",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "community_ecosystem",
+          "population_traits",
+          "plant_agroecology"
+        ],
+        "relevance": 36,
+        "oneLine": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。"
+      },
+      "score": {
+        "source": 10,
+        "theme": 36,
+        "type": 8,
+        "total": 54,
+        "title": "Journal of Ecology | 海拔与环境因子驱动亚热带森林幼苗叶片虫食的变异，而非均值",
+        "oneLine": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+        "summary": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530590_2",
+        "title": "Journal of Ecology | 海拔与环境因子驱动亚热带森林幼苗叶片虫食的变异，而非均值",
+        "abstract": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+        "journal": "Wiley生态环境",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/U0_f6899iEduV_TkjK-pmQ",
+        "date": "2026-06-06",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/U0_f6899iEduV_TkjK-pmQ"
+          }
+        ],
+        "tags": [
+          "community_ecosystem",
+          "population_traits",
+          "plant_agroecology"
+        ],
+        "oneLine": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+        "summary": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 54,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 36,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.261Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    "url:https://mp.weixin.qq.com/s/cs6xgc80k5xoqicviinl1w": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "d6f52968c1c800581060fae4ff22cf0957a187150ac0036da8375b68fdb56757",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry"
+        ],
+        "relevance": 32,
+        "oneLine": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。"
+      },
+      "score": {
+        "source": 10,
+        "theme": 32,
+        "type": 10,
+        "total": 52,
+        "title": "Ecology Letters | 华东师范大学-阿尔伯塔大学生物多样性联合实验室何芳良教授发表最新研究成果！【更新重发】",
+        "oneLine": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+        "summary": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530590_1",
+        "title": "Ecology Letters | 华东师范大学-阿尔伯塔大学生物多样性联合实验室何芳良教授发表最新研究成果！【更新重发】",
+        "abstract": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+        "journal": "Wiley生态环境",
+        "type": "Comment",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w",
+        "date": "2026-06-06",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w"
+          }
+        ],
+        "tags": [
+          "biogeochemistry"
+        ],
+        "oneLine": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+        "summary": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 52,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 32,
+          "type": 10
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/ibgxfxtahllkyfydjorlha": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "39ce1d904876bf12e2d7dbab635ddbd79a5f2ea4a0ba3c3204c9c58fd3aff8e3",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "disturbance",
+          "conservation_management",
+          "plant_agroecology"
+        ],
+        "relevance": 38,
+        "oneLine": "PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径"
+      },
+      "score": {
+        "source": 10,
+        "theme": 38,
+        "type": 8,
+        "total": 56,
+        "title": "PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径",
+        "oneLine": "该研究围绕“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3622875734-2247484238_1",
+        "title": "PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径",
+        "abstract": "",
+        "journal": "Fire ecology",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Fire ecology",
+            "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA"
+          }
+        ],
+        "tags": [
+          "disturbance",
+          "conservation_management",
+          "plant_agroecology"
+        ],
+        "oneLine": "该研究围绕“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 56,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 38,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/y5dn_dtlkztdmntfgdbjwg": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "2fa8f1088ee1a5b483964f08e0f34f3aaaed62ec39c9d4a66668b317b44e24b3",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 30,
+        "oneLine": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/9afwpzwejzanxgydtrjxvw": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "1cf083bea76457761825ee1fa0706f07da11e15e071255f7b837605ee1504d6e",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry",
+          "aquatic_microbe"
+        ],
+        "relevance": 34,
+        "oneLine": "标题：          Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity            中译：          土壤与微生物的调控共同决定了自由生活固氮速率及其温度..."
+      },
+      "score": {
+        "source": 10,
+        "theme": 34,
+        "type": 8,
+        "total": 52,
+        "title": "GCB | 土壤与微生物的调控共同决定了自由生活固氮速率及其温度敏感性的海拔分布格局",
+        "oneLine": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitr。",
+        "summary": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity 中译： 土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530573_4",
+        "title": "GCB | 土壤与微生物的调控共同决定了自由生活固氮速率及其温度敏感性的海拔分布格局",
+        "abstract": "标题：          Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity            中译：          土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+        "journal": "Wiley生态环境",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw"
+          }
+        ],
+        "tags": [
+          "biogeochemistry",
+          "aquatic_microbe"
+        ],
+        "oneLine": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitr。",
+        "summary": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity 中译： 土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 52,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 34,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/hm5qjj0dwk-p8uny166g6g": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "99afc1e88747599d5177b1b1ed2483617ab5a5d741334993b5da362239809697",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry",
+          "aquatic_microbe"
+        ],
+        "relevance": 34,
+        "oneLine": "标题：          Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude            中译：          沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同..."
+      },
+      "score": {
+        "source": 10,
+        "theme": 34,
+        "type": 8,
+        "total": 52,
+        "title": "GCB | 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同的敏感性",
+        "oneLine": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sen。",
+        "summary": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude 中译： 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530573_3",
+        "title": "GCB | 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同的敏感性",
+        "abstract": "标题：          Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude            中译：          沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+        "journal": "Wiley生态环境",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g",
+        "date": "2026-06-05",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g"
+          }
+        ],
+        "tags": [
+          "biogeochemistry",
+          "aquatic_microbe"
+        ],
+        "oneLine": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sen。",
+        "summary": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude 中译： 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 52,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 34,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/xh10os2mnxceftrlrfu15q": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "76b5d78e74bdebd293f4feb80212e0b8d4e870b89bd4dd9dba156d747f7e598b",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "plant_agroecology"
+        ],
+        "relevance": 32,
+        "oneLine": "点击上方蓝字 关注我们近日，中国科学院分子植物科学卓越创新中心谢芳研究组联合广州大学孔凡江教授团队，在 Ne"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/gvgud3lpyr4r_qaejxsdgg": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "0fd2eafc4c73b2b69f58524414de180b4726b0cb96f895a23f558f50338173a6",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [],
+        "relevance": 0,
+        "oneLine": ""
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/o4rfihpzxztohz2xkftuna": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "75a77530ed24b9c6251cacbc1bdd5808034fb73d4eb39eb36527910789de8d4d",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry"
+        ],
+        "relevance": 32,
+        "oneLine": "One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标"
+      },
+      "score": {
+        "source": 10,
+        "theme": 32,
+        "type": 8,
+        "total": 50,
+        "title": "One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标",
+        "oneLine": "该研究围绕“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3634184519-2247484333_1",
+        "title": "One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标",
+        "abstract": "",
+        "journal": "气候韧性农业和智慧农业",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/o4rfIHPzxzTohZ2XKfTuNA",
+        "date": "2026-06-04",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "气候韧性农业和智慧农业",
+            "url": "https://mp.weixin.qq.com/s/o4rfIHPzxzTohZ2XKfTuNA"
+          }
+        ],
+        "tags": [
+          "biogeochemistry"
+        ],
+        "oneLine": "该研究围绕“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 50,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 32,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/49g02jekf_m7zrtubcp8sw": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "bd5fb5d9d0e93ea287db6f61adb6535fc10f380616a2beb5b712fb2928716345",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "biogeochemistry"
+        ],
+        "relevance": 32,
+        "oneLine": "Science Bulletin：中国高分辨率国家土壤信息网格制图"
+      },
+      "score": {
+        "source": 10,
+        "theme": 32,
+        "type": 8,
+        "total": 50,
+        "title": "Science Bulletin：中国高分辨率国家土壤信息网格制图",
+        "oneLine": "该研究围绕“Science Bulletin：中国高分辨率国家土壤信息网格制图”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Science Bulletin：中国高分辨率国家土壤信息网格制图”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3634184519-2247484321_1",
+        "title": "Science Bulletin：中国高分辨率国家土壤信息网格制图",
+        "abstract": "",
+        "journal": "气候韧性农业和智慧农业",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "气候韧性农业和智慧农业",
+            "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw"
+          }
+        ],
+        "tags": [
+          "biogeochemistry"
+        ],
+        "oneLine": "该研究围绕“Science Bulletin：中国高分辨率国家土壤信息网格制图”展开，具体结论需结合原文摘要进一步确认。",
+        "summary": "该研究题为“Science Bulletin：中国高分辨率国家土壤信息网格制图”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 50,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 32,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.262Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/ldpuh9wcvrcnuzpxtkalxa": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "8830e15086e5bc3aae7a29305630700c27f611614ad8e87f5be6232d10d2f93f",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods"
+        ],
+        "relevance": 32,
+        "oneLine": "点击上方蓝字 关注我们近日，中国农业大学园艺学院李天忠/张秋雷团队在 New Phytologist 发表了"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/x7duct_tilubjousyhcjjg": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "d427c3957b5cf0425cdaf004c401b261c15395577db02cd6d4e8c8d077056f2d",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods",
+          "genetics_evolution",
+          "plant_agroecology"
+        ],
+        "relevance": 38,
+        "oneLine": "本研究构建了一个精巧的植物抗寒表观遗传和代谢协同调控模型：在正常条件下，由于低水平的组蛋白乙酰化，染色质处于浓缩状态，PtrA/NINV7基因保持沉寂"
+      },
+      "updatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    "url:https://mp.weixin.qq.com/s/upmcfbpwtlxpsewfznne8w": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "22d99ca7b23c6b0875cea137c17985c3d8fada8efeb069569f4c9f264ab4e6da",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "conservation_management"
+        ],
+        "relevance": 30,
+        "oneLine": "共存激励为何失灵"
+      },
+      "score": {
+        "source": 10,
+        "theme": 30,
+        "type": 10,
+        "total": 50,
+        "title": "【Conservation Letters】保护成效支付的成功悖论揭示瑞典食肉动物共存政策的成本与信任危机",
+        "oneLine": "共存激励为何失灵。",
+        "summary": "共存激励为何失灵",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530567_3",
+        "title": "【Conservation Letters】保护成效支付的成功悖论揭示瑞典食肉动物共存政策的成本与信任危机",
+        "abstract": "共存激励为何失灵",
+        "journal": "Wiley生态环境",
+        "type": "Comment",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w"
+          }
+        ],
+        "tags": [
+          "conservation_management"
+        ],
+        "oneLine": "共存激励为何失灵。",
+        "summary": "共存激励为何失灵",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 50,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 30,
+          "type": 10
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.263Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.263Z"
+    },
+    "url:https://mp.weixin.qq.com/s/k5n5x_noumpg5_jpsrryhw": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "ae3d4eb4f66479c32b2fe6954eaac76a85167555c773a327349752ffe4227aac",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "population_traits",
+          "plant_agroecology"
+        ],
+        "relevance": 34,
+        "oneLine": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解         📌 文献信息          期刊        ：        Journal of Ecology        （2026）         题目        ：        Defence-related traits drive leaf litter decomposit..."
+      },
+      "score": {
+        "source": 10,
+        "theme": 34,
+        "type": 8,
+        "total": 52,
+        "title": "Journal of Ecology | 叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？",
+        "oneLine": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 。",
+        "summary": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 ： Defence-related traits drive leaf litter decomposit...",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530567_2",
+        "title": "Journal of Ecology | 叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？",
+        "abstract": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解         📌 文献信息          期刊        ：        Journal of Ecology        （2026）         题目        ：        Defence-related traits drive leaf litter decomposit...",
+        "journal": "Wiley生态环境",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw"
+          }
+        ],
+        "tags": [
+          "population_traits",
+          "plant_agroecology"
+        ],
+        "oneLine": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 。",
+        "summary": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 ： Defence-related traits drive leaf litter decomposit...",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 52,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 34,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.263Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.263Z"
+    },
+    "url:https://mp.weixin.qq.com/s/895_x1bfxaerwxz-gz5kaa": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "dd0467488105412a8aa9ca871f2b494c7023387673699c4d20d3241b00242b36",
+      "status": "selected",
+      "pre": {
+        "pass": true,
+        "isEcology": true,
+        "tags": [
+          "population_traits",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "relevance": 38,
+        "oneLine": "Title:          No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city            Time:          2026年5月            DOI:    ..."
+      },
+      "score": {
+        "source": 10,
+        "theme": 38,
+        "type": 8,
+        "total": 56,
+        "title": "Journal of Applied Ecology 丨 没有一成不变的模式：城市密集化背景下局地植物多样性对传粉者及传粉服务的性状依赖性效应",
+        "oneLine": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinato。",
+        "summary": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city Time: 2026年5月 DOI: ...",
+        "citation": ""
+      },
+      "item": {
+        "id": "wechat-3564969279-2247530567_1",
+        "title": "Journal of Applied Ecology 丨 没有一成不变的模式：城市密集化背景下局地植物多样性对传粉者及传粉服务的性状依赖性效应",
+        "abstract": "Title:          No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city            Time:          2026年5月            DOI:    ...",
+        "journal": "Wiley生态环境",
+        "type": "News",
+        "doi": "",
+        "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA",
+        "date": "2026-06-03",
+        "sourceSignals": [
+          {
+            "type": "wechat",
+            "name": "Wiley生态环境",
+            "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA"
+          }
+        ],
+        "tags": [
+          "population_traits",
+          "climate_anthropogenic",
+          "plant_agroecology"
+        ],
+        "oneLine": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinato。",
+        "summary": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city Time: 2026年5月 DOI: ...",
+        "reason": "通过主题预筛并进入三维评分。",
+        "score": 56,
+        "scoreBreakdown": {
+          "source": 10,
+          "theme": 38,
+          "type": 8
+        },
+        "citation": "",
+        "generatedAt": "2026-06-06T09:00:02.263Z"
+      },
+      "updatedAt": "2026-06-06T09:00:02.263Z"
+    },
+    "url:https://mp.weixin.qq.com/s/firpysjz0gr0tgu7bg7y0g": {
+      "version": "2026-06-06-type-v2",
+      "mode": "dry-run",
+      "topicWeightsHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": "7ad5956acd3e7dbf35c9d636f766656e3ba38ae204daa0f9135e1d04f782473e",
+      "status": "rejected",
+      "pre": {
+        "pass": false,
+        "isEcology": false,
+        "tags": [
+          "modeling_methods",
+          "plant_agroecology"
+        ],
+        "relevance": 36,
+        "oneLine": "FCR: 基于机器学习和APSIM-Wheat作物模型的10米分辨率快速冬小麦产量制图"
+      },
+      "updatedAt": "2026-06-06T09:00:02.263Z"
+    }
+  }
+}

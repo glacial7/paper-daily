@@ -4,8 +4,9 @@ Static prototype for a paper daily website.
 
 ## Pages
 
-- `index.html`: all paper updates
-- `daily.html`: daily top 5 recommendations
+- `index.html`: daily top 5 recommendations
+- `updates.html`: all paper updates
+- `daily.html`: compatibility copy for daily recommendations
 - `sources.html`: source management prototype
 - `changelog.html`: version notes
 
@@ -37,6 +38,12 @@ The workflow `.github/workflows/update-daily.yml` runs a two-stage scoring pipel
 2. `deepseek-v4-pro` scores passed candidates and generates the daily summary.
 
 It writes the result to `data/latest.json`. The current display window is the most recent 5 days. The daily page keeps these days separated and selects the top 5 papers for each day.
+
+To avoid repeated token spending, the scoring script also writes:
+
+`data/paper-cache.json`
+
+The workflow still fetches recent 5-day candidates, but DeepSeek is only called for papers that are new or whose title, abstract, source signals, scoring version, model mode, or feedback weights have changed. Previously scored papers are reused from the cache.
 
 ## Hidden `.github` folder
 

@@ -120,7 +120,7 @@ function parseFeed(xml, source) {
     const links = allLinks(block);
     const abstract = firstTag(block, ["description", "summary", "content:encoded", "content"]);
     const authors = normalizeAuthorList(allTags(block, ["dc:creator", "author", "name", "creator"]));
-    const typeText = firstTag(block, ["prism:aggregationType", "dc:type", "category", "media:category"]);
+    const typeText = allTags(block, ["prism:aggregationType", "dc:type", "category", "media:category"]).join(" ");
     const dateText = firstTag(block, ["pubDate", "published", "updated", "dc:date"]);
     const date = dateText ? new Date(dateText) : null;
     const doiMatch = `${title} ${abstract} ${links.join(" ")}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
@@ -288,7 +288,7 @@ async function hydrateSuspiciousItems(items, source) {
           ...cleanItem,
           authors: cleanItem.authors?.length ? cleanItem.authors : doiMeta.authors || [],
           title: title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
-          type: doiMeta.type || inferType(title || item.title, item.abstract, htmlType, source, item.doi)
+          type: mergeTypeInference(inferType(title || item.title, item.abstract, htmlType, source, item.doi), doiMeta.type)
         };
       } catch {
         const doiMeta = await metadataFromDoi(item.doi);
@@ -296,7 +296,7 @@ async function hydrateSuspiciousItems(items, source) {
           ...cleanItem,
           authors: cleanItem.authors?.length ? cleanItem.authors : doiMeta.authors || [],
           title: doiMeta.title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
-          type: doiMeta.type || cleanItem.type
+          type: mergeTypeInference(cleanItem.type, doiMeta.type)
         };
       }
     })
@@ -309,9 +309,8 @@ function inferType(title = "", abstract = "", typeText = "", source = {}, doi = 
   if (/^10\.1038\/d41586/i.test(doi)) return "News";
   if (/systematic review|meta[- ]analysis|meta analysis|系统综述|荟萃/.test(text)) return "SystematicReview";
   if (/\breview\b|reviews|综述/.test(text)) return "Review";
-  if (/research article|original article|article type article|研究论文|原创研究/.test(text)) return "ResearchArticle";
-  if (/data descriptor|data paper|dataset|database|resource|software|数据论文|数据集|数据库|资源|软件/.test(text)) return "Dataset";
-  if (/method|methods|protocol|方法|实验方案/.test(text)) return "Methods";
+  if (/\bspotlight\b|聚焦/.test(text)) return "Spotlight";
+  if (/\bforum\b|\bessay\b|论坛|随笔/.test(text)) return "Forum";
   if (/news\s*&\s*views|news and views/.test(text)) return "NewsAndViews";
   if (/research highlight|highlight|研究亮点/.test(text)) return "ResearchHighlight";
   if (/perspective|viewpoint|opinion|观点/.test(text)) return "Perspective";
@@ -319,8 +318,16 @@ function inferType(title = "", abstract = "", typeText = "", source = {}, doi = 
   if (/correspondence|通讯|通信|来信/.test(text)) return "Correspondence";
   if (/\bletter\b|letters|信件/.test(text)) return "Letter";
   if (/editorial|社论/.test(text)) return "Editorial";
+  if (/research article|original article|article type article|研究论文|原创研究/.test(text)) return "ResearchArticle";
+  if (/data descriptor|data paper|dataset|database|resource|software|数据论文|数据集|数据库|资源|软件/.test(text)) return "Dataset";
+  if (/method|methods|protocol|方法|实验方案/.test(text)) return "Methods";
   if (/news|新闻/.test(text)) return "News";
   return "Article";
+}
+
+function mergeTypeInference(primary = "", fallback = "") {
+  if (primary && primary !== "Article") return primary;
+  return fallback || primary || "Article";
 }
 
 function isRecent(item) {

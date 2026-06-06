@@ -1,9 +1,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const ROOT = process.cwd();
 const INPUT = path.join(ROOT, "data", "candidates.json");
 const OUTPUT = path.join(ROOT, "data", "latest.json");
+const CACHE = path.join(ROOT, "data", "paper-cache.json");
 const FEEDBACK = path.join(ROOT, "config", "topic-feedback.json");
 const API_KEY = process.env.DEEPSEEK_API_KEY;
 const DRY_RUN = process.env.PAPER_DAILY_DRY_RUN === "1" || !API_KEY;
@@ -11,6 +13,8 @@ const DRY_RUN = process.env.PAPER_DAILY_DRY_RUN === "1" || !API_KEY;
 const DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
 const PRESCREEN_MODEL = process.env.DEEPSEEK_PRESCREEN_MODEL || "deepseek-v4-flash";
 const SCORE_MODEL = process.env.DEEPSEEK_SCORE_MODEL || "deepseek-v4-pro";
+const SCORING_VERSION = "2026-06-06-type-v2";
+const CACHE_MODE = DRY_RUN ? "dry-run" : `deepseek:${PRESCREEN_MODEL}:${SCORE_MODEL}`;
 
 const topicLabels = {
   modeling_methods: "模型/方法",
@@ -52,6 +56,8 @@ const paperTypeScores = {
   Perspective: 10,
   Comment: 10,
   Commentary: 10,
+  Spotlight: 10,
+  Forum: 10,
   Correspondence: 8,
   Letter: 8,
   Editorial: 7,
@@ -66,6 +72,30 @@ async function readTopicFeedback() {
   } catch {
     return { minFeedbackPerTopic: 3, feedback: [] };
   }
+}
+
+async function readCache() {
+  try {
+    const data = JSON.parse(await fs.readFile(CACHE, "utf8"));
+    return {
+      version: data.version || SCORING_VERSION,
+      updatedAt: data.updatedAt || "",
+      items: data.items && typeof data.items === "object" ? data.items : {}
+    };
+  } catch {
+    return { version: SCORING_VERSION, updatedAt: "", items: {} };
+  }
+}
+
+async function writeCache(cache) {
+  await fs.writeFile(
+    CACHE,
+    `${JSON.stringify({ version: SCORING_VERSION, updatedAt: new Date().toISOString(), items: cache.items }, null, 2)}\n`
+  );
+}
+
+function stableHash(value) {
+  return crypto.createHash("sha256").update(JSON.stringify(value)).digest("hex");
 }
 
 function topicWeightsFromFeedback(config) {
@@ -87,6 +117,42 @@ function topicWeightsFromFeedback(config) {
       return [tag, Math.max(-3, Math.min(3, Math.round(stat.total / stat.count)))];
     })
   );
+}
+
+function cacheKey(paper) {
+  if (paper.doi) return `doi:${paper.doi.toLowerCase()}`;
+  if (paper.url) {
+    try {
+      const url = new URL(paper.url);
+      url.search = "";
+      url.hash = "";
+      return `url:${url.toString().toLowerCase()}`;
+    } catch {
+      return `url:${paper.url.toLowerCase()}`;
+    }
+  }
+  return `title:${normalizeTitle(paper.title)}`;
+}
+
+function candidateFingerprint(paper) {
+  return stableHash({
+    title: normalizeTitle(paper.title || ""),
+    abstract: cleanAbstract(paper.abstract || "", paper.title || "").slice(0, 1200),
+    doi: (paper.doi || "").toLowerCase(),
+    url: paper.url || "",
+    journal: paper.journal || "",
+    type: paper.type || "",
+    authors: paper.authors || [],
+    sourceSignals: (paper.sourceSignals || []).map((signal) => ({
+      type: signal.type || "",
+      name: signal.name || "",
+      url: signal.url || ""
+    }))
+  });
+}
+
+function topicWeightsHash(topicWeights) {
+  return stableHash(topicWeights || {});
 }
 
 const PRESCREEN_PROMPT = `
@@ -449,33 +515,94 @@ async function scorePaper(paper, pre, topicWeights) {
   };
 }
 
+function cacheHit(entry, fingerprint, weightsHash) {
+  return (
+    entry &&
+    entry.version === SCORING_VERSION &&
+    entry.mode === CACHE_MODE &&
+    entry.fingerprint === fingerprint &&
+    entry.topicWeightsHash === weightsHash
+  );
+}
+
+function selectedFromScore(paper, pre, score) {
+  return {
+    ...paper,
+    title: score.title || paper.title,
+    tags: pre.tags || [],
+    oneLine: score.oneLine || pre.oneLine,
+    summary: score.summary,
+    reason: score.reason || "通过主题预筛并进入三维评分。",
+    score: score.total,
+    scoreBreakdown: {
+      source: score.source,
+      theme: score.theme,
+      type: score.type
+    },
+    citation: score.citation,
+    generatedAt: new Date().toISOString()
+  };
+}
+
 async function main() {
   const raw = await fs.readFile(INPUT, "utf8");
   const candidates = JSON.parse(raw);
   const clusters = clusterCandidates(candidates);
   const topicWeights = topicWeightsFromFeedback(await readTopicFeedback());
+  const weightsHash = topicWeightsHash(topicWeights);
+  const cache = await readCache();
   const selected = [];
+  const stats = { cacheHits: 0, cacheMisses: 0, rejectedHits: 0, rejectedMisses: 0 };
 
   for (const paper of clusters) {
+    const key = cacheKey(paper);
+    const fingerprint = candidateFingerprint(paper);
+    const cached = cache.items[key];
+
+    if (cacheHit(cached, fingerprint, weightsHash)) {
+      if (cached.status === "selected") {
+        stats.cacheHits += 1;
+        selected.push({
+          ...cached.item,
+          sourceSignals: paper.sourceSignals || cached.item.sourceSignals || [],
+          sourceUrls: undefined,
+          generatedAt: cached.item.generatedAt || cached.updatedAt || new Date().toISOString()
+        });
+      } else {
+        stats.rejectedHits += 1;
+      }
+      continue;
+    }
+
+    stats.cacheMisses += 1;
     const pre = await prescreen(paper);
-    if (!pre.pass || pre.isEcology === false) continue;
+    if (!pre.pass || pre.isEcology === false) {
+      stats.rejectedMisses += 1;
+      cache.items[key] = {
+        version: SCORING_VERSION,
+        mode: CACHE_MODE,
+        topicWeightsHash: weightsHash,
+        fingerprint,
+        status: "rejected",
+        pre,
+        updatedAt: new Date().toISOString()
+      };
+      continue;
+    }
     const score = await scorePaper(paper, pre, topicWeights);
-    selected.push({
-      ...paper,
-      title: score.title || paper.title,
-      tags: pre.tags || [],
-      oneLine: score.oneLine || pre.oneLine,
-      summary: score.summary,
-      reason: score.reason || "通过主题预筛并进入三维评分。",
-      score: score.total,
-      scoreBreakdown: {
-        source: score.source,
-        theme: score.theme,
-        type: score.type
-      },
-      citation: score.citation,
-      generatedAt: new Date().toISOString()
-    });
+    const item = selectedFromScore(paper, pre, score);
+    selected.push(item);
+    cache.items[key] = {
+      version: SCORING_VERSION,
+      mode: CACHE_MODE,
+      topicWeightsHash: weightsHash,
+      fingerprint,
+      status: "selected",
+      pre,
+      score,
+      item,
+      updatedAt: new Date().toISOString()
+    };
   }
 
   selected.sort((a, b) => b.score - a.score);
@@ -486,11 +613,22 @@ async function main() {
     prescreenModel: DRY_RUN ? "local-rule" : PRESCREEN_MODEL,
     scoreModel: DRY_RUN ? "local-rule" : SCORE_MODEL,
     topicWeights,
+    cache: {
+      mode: CACHE_MODE,
+      version: SCORING_VERSION,
+      hits: stats.cacheHits,
+      misses: stats.cacheMisses,
+      rejectedHits: stats.rejectedHits,
+      rejectedMisses: stats.rejectedMisses
+    },
     items
   };
 
   await fs.writeFile(OUTPUT, `${JSON.stringify(output, null, 2)}\n`);
-  console.log(`Wrote ${OUTPUT} with ${output.items.length} selected item(s).`);
+  await writeCache(cache);
+  console.log(
+    `Wrote ${OUTPUT} with ${output.items.length} selected item(s). Cache hits: ${stats.cacheHits}, misses: ${stats.cacheMisses}, rejected hits: ${stats.rejectedHits}.`
+  );
 }
 
 main().catch((error) => {

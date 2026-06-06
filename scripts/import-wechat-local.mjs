@@ -25,6 +25,8 @@ function inferType(title = "", abstract = "") {
   if (/review|综述/.test(text)) return "Review";
   if (/data descriptor|dataset|database|resource|software|数据论文|数据集|数据库|资源|软件/.test(text)) return "Dataset";
   if (/method|protocol|方法|实验方案/.test(text)) return "Methods";
+  if (/spotlight|聚焦/.test(text)) return "Spotlight";
+  if (/\bforum\b|\bessay\b|论坛|随笔/.test(text)) return "Forum";
   if (/perspective|viewpoint|opinion|观点/.test(text)) return "Perspective";
   if (/commentary|comment|评论/.test(text)) return "Comment";
   if (/correspondence|letter|通讯|来信|信件/.test(text)) return "Correspondence";

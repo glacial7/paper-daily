@@ -303,6 +303,12 @@ textarea {
   margin-top: 7px;
 }
 
+.research-details.inline-detail {
+  display: inline;
+  margin-left: 4px;
+  margin-top: 0;
+}
+
 .research-details summary {
   cursor: pointer;
   display: inline-flex;
@@ -310,10 +316,23 @@ textarea {
   font-size: 0.84rem;
 }
 
+.research-details.inline-detail summary {
+  display: inline-flex;
+}
+
+.research-details.inline-detail summary::marker {
+  content: "";
+}
+
 .research-details p {
   margin-top: 7px;
   color: #35413d;
   font-size: 0.9rem;
+}
+
+.research-details.inline-detail p {
+  display: block;
+  margin-top: 6px;
 }
 
 .reference-block {

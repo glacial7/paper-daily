@@ -114,7 +114,7 @@ const papers = [
     tags: ["invasion"],
     oneLine: "公众号推荐可作为发现入口，但需要反向定位 DOI 和原始期刊。",
     summary:
-      "微信公众号内容不直接作为论文证据源，而是作为主题发现和中文解读入口。处理流程应是先记录推荐标题、关键词和提到的结论，再反向查找原论文、DOI、期刊和发布时间。只有能定位到原始论文并确认研究质量后，才进入论文日报。无法找到原文的内容保留在动态页，不进入精选推荐。",
+      "微信公众号内容不直接作为论文证据源，而是作为主题发现和中文解读入口。处理流程应是先记录推荐标题、关键词和提到的结论，再反向查找原论文、DOI、期刊和发布时间。只有能定位到原始论文并确认研究质量后，才进入日报精选。无法找到原文的内容保留在动态页，不进入精选推荐。",
     reason: "弥补高发文量期刊不全量订阅造成的漏检。",
     paperUrl: "#",
     doi: "10.xxxx/example.005",
@@ -137,7 +137,7 @@ const papers = [
     tags: ["plant_agroecology", "biogeochemistry"],
     oneLine: "新闻报道适合发现新论文，但必须回到原论文确认。",
     summary:
-      "新闻报道源包括 ScienceDaily、Nature News、期刊官网新闻和研究机构新闻稿。它们适合快速发现新论文和获得通俗摘要，但不能替代原文。抓取时应保存新闻链接、原始论文链接、期刊、发布日期和研究机构。找不到原论文或只有宣传性表述的内容，不进入论文日报精选。",
+      "新闻报道源包括 ScienceDaily、Nature News、期刊官网新闻和研究机构新闻稿。它们适合快速发现新论文和获得通俗摘要，但不能替代原文。抓取时应保存新闻链接、原始论文链接、期刊、发布日期和研究机构。找不到原论文或只有宣传性表述的内容，不进入日报精选。",
     reason: "低成本扩展候选池。",
     paperUrl: "#",
     doi: "10.xxxx/example.006",
@@ -202,6 +202,8 @@ const paperTypeScores = {
   Perspective: 10,
   Comment: 10,
   Commentary: 10,
+  Spotlight: 10,
+  Forum: 10,
   Correspondence: 8,
   Letter: 8,
   Editorial: 7,
@@ -216,14 +218,14 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，并在筛查时排除征稿、会议、招聘、课程等非研究推送。\\n3. 推荐：参考生态学主题演变研究，将主题扩展为生态学主题组；论文日报改为按日期分别展示每日 Top 5。\\n4. 页面：标题优先使用英文论文题名；标签压缩为年份、期刊/来源、文章类型和少量主题；参考文献只显示作者与 DOI；论文动态用一句话介绍并可展开详细摘要。"
+      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，并在筛查时排除征稿、会议、招聘、课程等非研究推送。\\n3. 推荐：参考生态学主题演变研究，将主题扩展为生态学主题组；日报改为按日期分别展示每日 Top 5。\\n4. 成本：新增评分缓存，页面仍展示近 5 日，但模型只处理新增或发生变化的论文，减少重复 token 消耗。\\n5. 类型：加强文章类型识别，Spotlight、Forum、Comment、Perspective 等栏目不再按 Research Article 处理。\\n6. 页面：标题优先使用英文论文题名；标签压缩为年份、期刊/来源、文章类型和少量主题；参考文献只显示作者与 DOI；全部论文动态用一句话介绍并可就地展开详细摘要。"
   },
   {
     version: "2026-06-05",
     date: "今日更新",
     title: "Paper Daily 原型上线",
     body:
-      "1. 页面：建立全部论文动态、论文日报、信源添加和更新日志。\\n2. 信源：支持综合期刊、专业期刊、新闻报道和微信公众号分类。\\n3. 推荐：按信源、主题和论文类型计算质量分，并支持 like/不喜欢反馈。"
+      "1. 页面：建立日报、全部论文动态、信源添加和更新日志。\\n2. 信源：支持综合期刊、专业期刊、新闻报道和微信公众号分类。\\n3. 推荐：按信源、主题和论文类型计算质量分，并支持 like/不喜欢反馈。"
   },
   {
     version: "next",
@@ -614,9 +616,9 @@ function sourceDetails(paper) {
   `;
 }
 
-function detailBlock(paper) {
+function detailBlock(paper, mode = "block") {
   return `
-    <details class="research-details">
+    <details class="research-details ${mode === "inline" ? "inline-detail" : ""}">
       <summary>详细</summary>
       <p>${paper.summary || paper.oneLine || ""}</p>
     </details>
@@ -719,13 +721,12 @@ function renderFeed(filter = activeFeedFilter) {
                   <article class="card feed-item">
                     <div>
                       <div class="feed-title"><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
-                      <div class="feed-desc">${paper.oneLine}</div>
+                      <div class="feed-desc">${paper.oneLine} ${detailBlock(paper, "inline")}</div>
                       <div class="tag-row feed-tags">
                         ${paperMetaTags(paper)
                           .map((label) => `<span class="tag">${label}</span>`)
                           .join("")}
                       </div>
-                      ${detailBlock(paper)}
                       ${sourceDetails(paper)}
                       ${referenceBlock(paper)}
                     </div>
@@ -841,7 +842,7 @@ function renderDaily() {
     entries: group.entries.slice(0, 5)
   }));
   root.innerHTML = `
-    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · 每日 top 5 selected`)}
+    ${renderHead("日报", `近 ${RECENT_DAYS} 日 · 每日 top 5 selected`)}
     <section class="grid" id="dailyList">
       ${groups
         .map(
