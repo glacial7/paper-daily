@@ -264,10 +264,56 @@ function typeScore(paper) {
 
 function extractJson(text) {
   const trimmed = text.trim();
-  if (trimmed.startsWith("{") && trimmed.endsWith("}")) return JSON.parse(trimmed);
+  const candidates = [];
+  if (trimmed.startsWith("{")) candidates.push(trimmed);
   const match = trimmed.match(/\{[\s\S]*\}/);
-  if (!match) throw new Error(`No JSON object found in model response: ${text.slice(0, 200)}`);
-  return JSON.parse(match[0]);
+  if (match) candidates.push(match[0]);
+
+  for (const candidate of candidates) {
+    try {
+      return JSON.parse(candidate);
+    } catch {
+      const repaired = repairJsonObject(candidate);
+      if (repaired !== candidate) {
+        try {
+          return JSON.parse(repaired);
+        } catch {
+          // Try the next candidate.
+        }
+      }
+    }
+  }
+
+  throw new Error(`No valid JSON object found in model response: ${text.slice(0, 300)}`);
+}
+
+function repairJsonObject(value) {
+  let inString = false;
+  let escape = false;
+  let balance = 0;
+  for (const char of value) {
+    if (escape) {
+      escape = false;
+      continue;
+    }
+    if (char === "\\") {
+      escape = true;
+      continue;
+    }
+    if (char === '"') {
+      inString = !inString;
+      continue;
+    }
+    if (!inString && char === "{") balance += 1;
+    if (!inString && char === "}") balance -= 1;
+  }
+  if (inString || balance <= 0) return value;
+  return `${value}${"}".repeat(balance)}`;
+}
+
+function warnModelFallback(stage, paper, error) {
+  const title = String(paper?.title || "").slice(0, 120);
+  console.warn(`Model ${stage} fallback for "${title}": ${error.message}`);
 }
 
 function stripDoiFromCitation(citation = "", doi = "") {
@@ -397,33 +443,38 @@ function dryPrescreen(paper) {
 
 async function prescreen(paper) {
   if (DRY_RUN) return dryPrescreen(paper);
-  return deepseekJson(PRESCREEN_MODEL, [
-    {
-      role: "system",
-      content: PRESCREEN_PROMPT
-    },
-    {
-      role: "user",
-      content: JSON.stringify({
-        themes: topicLabels,
-        paper: {
-          title: paper.title,
-          abstract: paper.abstract,
-          journal: paper.journal,
-          type: paper.type,
-          date: paper.date,
-          sourceSignals: paper.sourceSignals || []
-        },
-        output_schema: {
-          pass: "boolean",
-          isEcology: "boolean",
-          tags: "array of theme keys",
-          relevance: "0-50 integer",
-          oneLine: "one Chinese sentence"
-        }
-      })
-    }
-  ]);
+  try {
+    return await deepseekJson(PRESCREEN_MODEL, [
+      {
+        role: "system",
+        content: PRESCREEN_PROMPT
+      },
+      {
+        role: "user",
+        content: JSON.stringify({
+          themes: topicLabels,
+          paper: {
+            title: paper.title,
+            abstract: paper.abstract,
+            journal: paper.journal,
+            type: paper.type,
+            date: paper.date,
+            sourceSignals: paper.sourceSignals || []
+          },
+          output_schema: {
+            pass: "boolean",
+            isEcology: "boolean",
+            tags: "array of theme keys",
+            relevance: "0-50 integer",
+            oneLine: "one Chinese sentence"
+          }
+        })
+      }
+    ]);
+  } catch (error) {
+    warnModelFallback("prescreen", paper, error);
+    return dryPrescreen(paper);
+  }
 }
 
 function dryScore(paper, pre) {
@@ -464,36 +515,42 @@ function topPerDay(items, limit = 5) {
 
 async function scorePaper(paper, pre, topicWeights) {
   if (DRY_RUN) return dryScore(paper, pre);
-  const modelScore = await deepseekJson(SCORE_MODEL, [
-    {
-      role: "system",
-      content: SCORE_PROMPT
-    },
-    {
-      role: "user",
-      content: JSON.stringify({
-        scoring_rule: {
-          source: "0-30, 已由规则计算",
-          theme: "0-50, 可参考预筛 relevance",
-          type: "0-20, 已由规则计算"
-        },
-        fixed_scores: {
-          source: sourceScore(paper),
-          type: typeScore(paper)
-        },
-        prescreen: pre,
-        paper,
-        output_schema: {
-          theme: "0-50 integer",
-          reason: "short Chinese reason for theme score",
-          title: "original English paper title when available; otherwise Chinese research information title",
-          summary: "about 200 Chinese characters",
-          oneLine: "one Chinese sentence",
-          citation: "APA-like reference using provided metadata only, without DOI"
-        }
-      })
-    }
-  ]);
+  let modelScore;
+  try {
+    modelScore = await deepseekJson(SCORE_MODEL, [
+      {
+        role: "system",
+        content: SCORE_PROMPT
+      },
+      {
+        role: "user",
+        content: JSON.stringify({
+          scoring_rule: {
+            source: "0-30, 已由规则计算",
+            theme: "0-50, 可参考预筛 relevance",
+            type: "0-20, 已由规则计算"
+          },
+          fixed_scores: {
+            source: sourceScore(paper),
+            type: typeScore(paper)
+          },
+          prescreen: pre,
+          paper,
+          output_schema: {
+            theme: "0-50 integer",
+            reason: "short Chinese reason for theme score",
+            title: "original English paper title when available; otherwise Chinese research information title",
+            summary: "about 200 Chinese characters",
+            oneLine: "one Chinese sentence",
+            citation: "APA-like reference using provided metadata only, without DOI"
+          }
+        })
+      }
+    ]);
+  } catch (error) {
+    warnModelFallback("score", paper, error);
+    modelScore = dryScore(paper, pre);
+  }
   const source = sourceScore(paper);
   const type = typeScore(paper);
   const modelTheme = Math.max(0, Math.min(Number(modelScore.theme || pre.relevance || 0), 50));
