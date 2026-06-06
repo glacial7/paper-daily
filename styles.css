@@ -286,6 +286,36 @@ textarea {
   font-size: 0.78rem;
 }
 
+.source-signal-list a {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  padding: 3px 7px;
+  font-size: 0.78rem;
+}
+
+.source-signal-list a:hover {
+  color: var(--ink);
+}
+
+.research-details {
+  color: var(--muted);
+  margin-top: 7px;
+}
+
+.research-details summary {
+  cursor: pointer;
+  display: inline-flex;
+  color: var(--green);
+  font-size: 0.84rem;
+}
+
+.research-details p {
+  margin-top: 7px;
+  color: #35413d;
+  font-size: 0.9rem;
+}
+
 .reference-block {
   border-top: 1px solid var(--line);
   margin-top: 12px;

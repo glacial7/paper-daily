@@ -32,6 +32,35 @@ function firstTag(block, names) {
   return "";
 }
 
+function allTags(block, names) {
+  const values = [];
+  for (const name of names) {
+    const pattern = new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`, "gi");
+    for (const match of block.matchAll(pattern)) {
+      const value = stripHtml(match[1]);
+      if (value) values.push(value);
+    }
+  }
+  return values;
+}
+
+function normalizeAuthorList(authors = []) {
+  if (authors.length === 1 && /,\s+/.test(authors[0]) && !/^[^,]+,\s*[A-Z]/.test(authors[0])) {
+    return authors[0].split(/,\s*/).map((item) => item.trim()).filter(Boolean);
+  }
+  return authors.map((item) => item.trim()).filter(Boolean);
+}
+
+function authorsFromText(text = "") {
+  const match = text.match(/Author\(s\):\s*([\s\S]+)$/i);
+  if (!match) return [];
+  return match[1]
+    .replace(/\s+/g, " ")
+    .split(/,\s*/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function firstAttr(block, tagName, attrName) {
   const match = block.match(new RegExp(`<${tagName}[^>]*\\s${attrName}=["']([^"']+)["'][^>]*>`, "i"));
   return match ? decodeEntities(match[1]) : "";
@@ -90,6 +119,7 @@ function parseFeed(xml, source) {
     let title = firstTag(block, ["title"]);
     const links = allLinks(block);
     const abstract = firstTag(block, ["description", "summary", "content:encoded", "content"]);
+    const authors = normalizeAuthorList(allTags(block, ["dc:creator", "author", "name", "creator"]));
     const typeText = firstTag(block, ["prism:aggregationType", "dc:type", "category", "media:category"]);
     const dateText = firstTag(block, ["pubDate", "published", "updated", "dc:date"]);
     const date = dateText ? new Date(dateText) : null;
@@ -108,6 +138,7 @@ function parseFeed(xml, source) {
       id: `${source.id}-${index}-${Buffer.from(title || link).toString("base64url").slice(0, 12)}`,
       title,
       abstract,
+      authors: authors.length ? authors : authorsFromText(abstract),
       journal: source.name,
       type: itemType,
       doi,
@@ -207,6 +238,17 @@ function typeFromCrossref(value = "") {
   return "";
 }
 
+function authorsFromCrossref(authors = []) {
+  return authors
+    .map((author) => {
+      const family = author.family || "";
+      const given = author.given || "";
+      const name = [family, given].filter(Boolean).join(", ");
+      return name || author.name || "";
+    })
+    .filter(Boolean);
+}
+
 async function metadataFromDoi(doi = "") {
   if (!doi) return {};
   try {
@@ -215,6 +257,7 @@ async function metadataFromDoi(doi = "") {
     const message = data.message || {};
     return {
       title: cleanMetaTitle(message.title?.[0] || ""),
+      authors: authorsFromCrossref(message.author || []),
       type: typeFromCrossref(message.type || "")
     };
   } catch {
@@ -232,16 +275,18 @@ async function hydrateSuspiciousItems(items, source) {
   return Promise.all(
     items.map(async (item) => {
       const { _needsTitleHydration, ...cleanItem } = item;
-      if (!_needsTitleHydration && !isSuspiciousTitle(item, source)) return cleanItem;
-      if (!item.url || item.url === "#") return cleanItem;
+      const needsMetadata = _needsTitleHydration || isSuspiciousTitle(item, source) || (!item.authors?.length && item.doi);
+      if (!needsMetadata) return cleanItem;
+      if ((!item.url || item.url === "#") && !item.doi) return cleanItem;
       try {
-        const html = await fetchText(item.url);
-        const pageTitle = titleFromHtml(html, source.name);
-        const htmlType = typeFromHtml(html);
-        const doiMeta = pageTitle ? {} : await metadataFromDoi(item.doi);
+        const html = item.url && item.url !== "#" ? await fetchText(item.url) : "";
+        const pageTitle = html ? titleFromHtml(html, source.name) : "";
+        const htmlType = html ? typeFromHtml(html) : "";
+        const doiMeta = item.doi ? await metadataFromDoi(item.doi) : {};
         const title = pageTitle || doiMeta.title;
         return {
           ...cleanItem,
+          authors: cleanItem.authors?.length ? cleanItem.authors : doiMeta.authors || [],
           title: title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
           type: doiMeta.type || inferType(title || item.title, item.abstract, htmlType, source, item.doi)
         };
@@ -249,6 +294,7 @@ async function hydrateSuspiciousItems(items, source) {
         const doiMeta = await metadataFromDoi(item.doi);
         return {
           ...cleanItem,
+          authors: cleanItem.authors?.length ? cleanItem.authors : doiMeta.authors || [],
           title: doiMeta.title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
           type: doiMeta.type || cleanItem.type
         };
@@ -315,6 +361,7 @@ function mergeCandidates(items) {
     const existing = map.get(key);
     existing.sourceSignals.push(...item.sourceSignals);
     existing.abstract ||= item.abstract;
+    existing.authors = existing.authors?.length ? existing.authors : item.authors || [];
     existing.doi ||= item.doi;
     existing.url ||= item.url;
   }

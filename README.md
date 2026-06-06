@@ -5,7 +5,7 @@ Static prototype for a paper daily website.
 ## Pages
 
 - `index.html`: all paper updates
-- `daily.html`: daily top 10 recommendations
+- `daily.html`: daily top 5 recommendations
 - `sources.html`: source management prototype
 - `changelog.html`: version notes
 
@@ -36,7 +36,7 @@ The workflow `.github/workflows/update-daily.yml` runs a two-stage scoring pipel
 1. `deepseek-v4-flash` first checks whether the item is broad ecology research, then prescreens title, abstract, and metadata for topic relevance.
 2. `deepseek-v4-pro` scores passed candidates and generates the daily summary.
 
-It writes the result to `data/latest.json`. The current display window is the most recent 5 days. The daily page keeps these days separated and selects the top 10 papers for each day.
+It writes the result to `data/latest.json`. The current display window is the most recent 5 days. The daily page keeps these days separated and selects the top 5 papers for each day.
 
 ## Hidden `.github` folder
 

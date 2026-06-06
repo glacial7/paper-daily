@@ -216,7 +216,7 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，上传 GitHub 后合并评分。\\n3. 推荐：参考生态学主题演变研究，将主题从少数兴趣词扩展为生态学主题组，并保留你的偏好反馈用于精选排序。\\n4. 页面：期刊名、文章类型和生态主题合并为标签；精简引用显示，修复 RSS 标题、链接和 DOI 重复问题；自动更新时间改为北京时间 08:00。"
+      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，并在筛查时排除征稿、会议、招聘、课程等非研究推送。\\n3. 推荐：参考生态学主题演变研究，将主题扩展为生态学主题组；论文日报改为按日期分别展示每日 Top 5。\\n4. 页面：标题优先使用英文论文题名；标签压缩为年份、期刊/来源、文章类型和少量主题；参考文献只显示作者与 DOI；论文动态用一句话介绍并可展开详细摘要。"
   },
   {
     version: "2026-06-05",
@@ -236,7 +236,6 @@ const logs = [
 
 const page = document.body.dataset.page || "updates";
 const root = document.querySelector("#pageContent");
-let feedFull = false;
 let activeFeedFilter = "all";
 const RECENT_DAYS = 5;
 
@@ -270,6 +269,26 @@ function compactCitation(paper) {
   if (authorMatch) author = authorMatch[1].trim();
   if (!author || author === paper.title || author === paper.source) author = "";
   return [author, year].filter(Boolean).join(" · ");
+}
+
+function shortAuthorList(authors = []) {
+  const cleaned = authors
+    .map((author) => decodeText(String(author || "")).replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+  if (!cleaned.length) return "";
+  if (cleaned.length <= 5) return cleaned.join("; ");
+  return [...cleaned.slice(0, 3), "...", ...cleaned.slice(-2)].join("; ");
+}
+
+function referenceAuthors(paper) {
+  const direct = shortAuthorList(paper.authors || []);
+  if (direct) return direct;
+  const citation = stripDoiFromCitation(paper.citation || "", paper.doi);
+  const match = citation.match(/^(.+?)\s*\((?:19|20)\d{2}\)/);
+  if (!match) return "";
+  const authorText = match[1].trim();
+  if (/publication date|available online|source:|doi:|http/i.test(authorText)) return "";
+  return authorText;
 }
 
 function inferTitleFromText(abstract = "", journal = "", doi = "") {
@@ -316,6 +335,7 @@ function normalizeGeneratedItem(item, index) {
     time: item.generatedAt ? item.generatedAt.slice(11, 16) : "00:00",
     date: item.date || (item.generatedAt ? item.generatedAt.slice(0, 10) : ""),
     title,
+    authors: item.authors || [],
     source: primarySource,
     sourceSignals,
     sourceType:
@@ -541,34 +561,71 @@ function sourceSignalLabel(type) {
 }
 
 function paperMetaTags(paper) {
+  const year = (paper.date || "").slice(0, 4);
+  const sourceKind =
+    !paper.doi && paper.sourceType === "wechat"
+      ? "微信公众号"
+      : !paper.doi && paper.sourceType === "news"
+        ? "新闻报道"
+        : paper.type;
   const labels = [
+    year,
     paper.source,
-    paper.type,
-    ...(paper.tags || []).map((tag) => topicLabels[tag] || tag)
+    sourceKind,
+    ...(paper.tags || []).slice(0, 5).map((tag) => topicLabels[tag] || tag)
   ];
   return [...new Set(labels.filter(Boolean))];
 }
 
 function referenceBlock(paper) {
-  const citation = compactCitation(paper);
+  const authors = referenceAuthors(paper);
+  if (!authors && !paper.doi) return "";
   return `
     <div class="reference-block">
-      ${citation ? `<p>${citation}</p>` : ""}
+      ${authors ? `<p>${authors}</p>` : ""}
       ${paper.doi ? `<div class="doi-line">DOI: ${paper.doi}</div>` : ""}
-      <div class="reference-links">
-        <a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">原始论文</a>
-        ${(paper.sourceUrls || [])
-          .map((item) => `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.label}</a>`)
-          .join("")}
-      </div>
     </div>
   `;
 }
 
-function paperCard(paper) {
-  const score = adjustedScore(paper);
-  const parts = scoreBreakdown(paper);
+function sourceLinks(paper) {
+  const links = (paper.sourceUrls || [])
+    .filter((item) => item.url && item.url !== "#")
+    .map((item) => ({ label: item.label, url: item.url }));
+  if (paper.paperUrl && paper.paperUrl !== "#" && !links.some((item) => item.url === paper.paperUrl)) {
+    links.unshift({ label: paper.source || "来源", url: paper.paperUrl });
+  }
+  return links;
+}
+
+function sourceDetails(paper) {
   const signals = paper.sourceSignals || [];
+  const links = sourceLinks(paper);
+  if (signals.length <= 1 && links.length <= 1) return "";
+  return `
+    <details class="source-fold">
+      <summary>来源 ${links.length || signals.length}</summary>
+      <div class="source-signal-list">
+        ${links
+          .map((item) => `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.label}</a>`)
+          .join("")}
+      </div>
+    </details>
+  `;
+}
+
+function detailBlock(paper) {
+  return `
+    <details class="research-details">
+      <summary>详细</summary>
+      <p>${paper.summary || paper.oneLine || ""}</p>
+    </details>
+  `;
+}
+
+function paperCard(paper, options = {}) {
+  const score = adjustedScore(paper);
+  const showOneLine = options.showOneLine !== false;
   return `
     <article class="card paper">
       <div class="paper-top">
@@ -580,26 +637,9 @@ function paperCard(paper) {
         </div>
         <div class="score" aria-label="质量分 ${score}">${score}</div>
       </div>
-      <p>${paper.summary}</p>
-      <p class="meta">${paper.reason}</p>
-      <details class="source-fold">
-        <summary>主条：${paper.source} · 合并 ${signals.length} 条来源</summary>
-        <div class="source-signal-list">
-          ${signals
-            .map(
-              (signal) => `
-                <span>${sourceSignalLabel(signal.type)} · ${signal.name}</span>
-              `
-            )
-            .join("")}
-        </div>
-      </details>
+      ${showOneLine ? `<p>${paper.oneLine}</p>${detailBlock(paper)}` : `<p>${paper.summary}</p>`}
+      ${sourceDetails(paper)}
       ${referenceBlock(paper)}
-      <div class="score-parts">
-        <span>信源 ${parts.source}/30</span>
-        <span>主题 ${parts.theme}/50</span>
-        <span>类型 ${parts.type}/20</span>
-      </div>
     </article>
   `;
 }
@@ -643,7 +683,7 @@ function renderUpdates() {
     ${renderHead(
       "全部论文动态",
       `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 每日 08:00 更新`,
-      '<button class="btn" id="exportFeedback">导出反馈</button><button class="btn" id="feedMode">完整</button>'
+      '<button class="btn" id="exportFeedback">导出反馈</button>'
     )}
     <section class="theme-panel card" id="themePanel"></section>
     <div class="tabs">
@@ -679,12 +719,14 @@ function renderFeed(filter = activeFeedFilter) {
                   <article class="card feed-item">
                     <div>
                       <div class="feed-title"><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
-                      <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
+                      <div class="feed-desc">${paper.oneLine}</div>
                       <div class="tag-row feed-tags">
                         ${paperMetaTags(paper)
                           .map((label) => `<span class="tag">${label}</span>`)
                           .join("")}
                       </div>
+                      ${detailBlock(paper)}
+                      ${sourceDetails(paper)}
                       ${referenceBlock(paper)}
                     </div>
                     <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
@@ -781,11 +823,6 @@ function bindFeed() {
       renderFeed(tab.dataset.filter);
     });
   });
-  document.querySelector("#feedMode").addEventListener("click", (event) => {
-    feedFull = !feedFull;
-    event.currentTarget.textContent = feedFull ? "紧凑" : "完整";
-    renderFeed();
-  });
   document.querySelector("#exportFeedback").addEventListener("click", () => {
     downloadJson("topic-feedback.json", feedbackConfig());
   });
@@ -801,10 +838,10 @@ function bindFeed() {
 function renderDaily() {
   const groups = groupPapersByDate(recentPapers()).map((group) => ({
     ...group,
-    entries: group.entries.slice(0, 10)
+    entries: group.entries.slice(0, 5)
   }));
   root.innerHTML = `
-    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · 每日 top 10 selected`)}
+    ${renderHead("论文日报", `近 ${RECENT_DAYS} 日 · 每日 top 5 selected`)}
     <section class="grid" id="dailyList">
       ${groups
         .map(
@@ -814,7 +851,7 @@ function renderDaily() {
                 <strong>${dateLabel(group.date)}</strong>
                 <span>Top ${group.entries.length}</span>
               </div>
-              <div class="grid">${group.entries.map((paper) => paperCard(paper)).join("")}</div>
+              <div class="grid">${group.entries.map((paper) => paperCard(paper, { showOneLine: false })).join("")}</div>
             </section>
           `
         )

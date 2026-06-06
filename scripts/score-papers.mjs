@@ -120,7 +120,8 @@ const PRESCREEN_PROMPT = `
 3. isEcology=true 且能归入至少一个生态主题组，pass=true。
 4. 对植物入侵、火生态/扰动、风电或能源设施生态影响、农田排水/氮磷/面源污染、生态遥感/模型/监测方法给予更高 relevance；其他生态学研究可以通过，但 relevance 应按与这些方向的距离降低。
 5. 微信公众号或新闻报道可以作为发现入口；如果内容指向一篇可能相关论文，也可以 pass=true，但仍必须满足 isEcology=true。
-6. 输出严格 JSON，不要输出解释文字。
+6. 微信公众号推送如果主要是征稿、会议、招聘、课程、广告、投稿邀请、期刊宣传、活动通知，而不是介绍一项具体研究或论文，pass=false。
+7. 输出严格 JSON，不要输出解释文字。
 `;
 
 const SCORE_PROMPT = `
@@ -146,12 +147,14 @@ const SCORE_PROMPT = `
 - 保护管理、恢复生态和生物多样性变化中能服务上述方向的研究
 
 摘要要求：
-1. 用中文写约 180-220 字。
-2. 讲清研究对象、方法/证据、主要发现、为什么值得看。
-3. 不要夸大结论，不要凭空添加 DOI、作者或期刊。
-4. 引用信息只能使用输入元数据；缺失则保留空缺或用已有字段。
-5. citation 不要包含 DOI、doi: 字样或 DOI URL；DOI 会由页面单独显示。
-6. 输出严格 JSON，不要输出解释文字。
+1. title 优先使用原始论文的英文题名；如果不能识别原始论文，则为公众号或新闻内容生成一个中文研究信息标题。
+2. oneLine 必须是中文一句话研究介绍，不要保留英文摘要原文。
+3. summary 必须用中文写约 180-220 字。
+4. 讲清研究对象、方法/证据、主要发现、为什么值得看。
+5. 不要夸大结论，不要凭空添加 DOI、作者或期刊。
+6. 引用信息只能使用输入元数据；缺失则保留空缺或用已有字段。
+7. citation 不要包含 DOI、doi: 字样或 DOI URL；DOI 会由页面单独显示。
+8. 输出严格 JSON，不要输出解释文字。
 `;
 
 function normalizeTitle(title) {
@@ -173,6 +176,7 @@ function clusterCandidates(candidates) {
     const existing = clusters.get(key);
     existing.sourceSignals.push(...(item.sourceSignals || []));
     existing.abstract ||= item.abstract;
+    existing.authors = existing.authors?.length ? existing.authors : item.authors || [];
     existing.url ||= item.url;
   }
   return [...clusters.values()];
@@ -211,6 +215,52 @@ function stripDoiFromCitation(citation = "", doi = "") {
   return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
 }
 
+function cleanAbstract(value = "", title = "") {
+  let text = String(value || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  text = text
+    .replace(/^[^,]{2,100},\s*Published online:\s*[^;]+;\s*/i, "")
+    .replace(/\bdoi:\s*10\.\d{4,9}\/[-._;()/:A-Z0-9]+\s*/gi, "")
+    .replace(/^Publication date:\s*[\s\S]*?Author\(s\):\s*[\s\S]*$/i, "")
+    .replace(/^[^,]{2,80},\s*Volume\s+\d+[\s\S]*$/i, "")
+    .replace(/^Publication date:\s*[^.。]+[.。]?\s*/i, "")
+    .replace(/^Available online\s*[^.。]+[.。]?\s*/i, "")
+    .replace(/^Source:\s*[^.。]+[.。]?\s*/i, "")
+    .replace(/^Volume\s+\d+[\s\S]*$/i, "")
+    .trim();
+  if (title) {
+    const escaped = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    text = text.replace(new RegExp(`^${escaped}\\s*[.。]?\\s*`, "i"), "");
+  }
+  return text.trim();
+}
+
+function chineseOneLine(paper) {
+  const abstract = cleanAbstract(paper.abstract || "", paper.title);
+  if (/[\u4e00-\u9fff]/.test(abstract)) {
+    return abstract.split(/[。！？]/)[0].slice(0, 90) + "。";
+  }
+  return `该研究围绕“${paper.title}”展开，具体结论需结合原文摘要进一步确认。`;
+}
+
+function chineseSummary(paper) {
+  const abstract = cleanAbstract(paper.abstract || "", paper.title);
+  if (/[\u4e00-\u9fff]/.test(abstract)) return abstract;
+  if (!abstract) return `该研究题为“${paper.title}”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。`;
+  return `该研究题为“${paper.title}”。原始摘要显示，研究关注${abstract}。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。`;
+}
+
+function likelyNonResearchPush(paper) {
+  const text = `${paper.title} ${paper.abstract || ""}`.toLowerCase();
+  if (/subscription and copyright information|copyright information|table of contents|issue information|front matter|back matter|author correction|publisher correction|correction:|corrigendum|erratum/.test(text)) {
+    return true;
+  }
+  if (!paper.sourceSignals?.some((signal) => signal.type === "wechat")) return false;
+  return /征稿|投稿|特刊|会议|研讨会|讲座|直播|课程|培训|招聘|招生|广告|优惠|会员|报名|论坛|workshop|webinar|conference|call for papers|special issue|job|hiring|recruit/.test(text);
+}
+
 function addTag(tags, tag, matched) {
   if (matched && !tags.includes(tag)) tags.push(tag);
 }
@@ -241,8 +291,17 @@ async function deepseekJson(model, messages) {
 
 function dryPrescreen(paper) {
   const text = `${paper.title} ${paper.abstract || ""}`.toLowerCase();
+  if (likelyNonResearchPush(paper)) {
+    return {
+      pass: false,
+      isEcology: false,
+      tags: [],
+      relevance: 0,
+      oneLine: ""
+    };
+  }
   const isEcology =
-    /ecolog|ecosystem|biodiversity|conservation|restoration|urban ecology|agroecolog|agricultural ecology|landscape|community|population|species|habitat|trait|biogeochem|carbon|nitrogen|phosphorus|soil|forest|grassland|wetland|freshwater|marine|microbial|microbiome|invasion|invasive|wildfire|fire|disturbance|drainage|hydrology|remote sensing|vegetation|species distribution|climate change|land use|生态|生态学|生物多样性|保护生物学|恢复生态|城市生态|农业生态|景观|群落|种群|物种|栖息地|性状|生态系统|生物地球化学|碳|氮|磷|土壤|森林|草地|湿地|淡水|海洋|微生物|入侵|火|扰动|排水|遥感|植被|气候变化|土地利用/.test(
+    /ecolog|ecosystem|biodiversity|conservation|restoration|urban ecology|agroecolog|agricultural ecology|landscape|community|population|species|habitat|trait|biogeochem|carbon|nitrogen|phosphorus|soil|forest|grassland|wetland|freshwater|marine|microbial|microbiome|\binvasion\b|\binvasive\b|wildfire|fire|disturbance|drainage|hydrology|remote sensing|vegetation|species distribution|climate change|land use|生态|生态学|生物多样性|保护生物学|恢复生态|城市生态|农业生态|景观|群落|种群|物种|栖息地|性状|生态系统|生物地球化学|碳|氮|磷|土壤|森林|草地|湿地|淡水|海洋|微生物|入侵|火|扰动|排水|遥感|植被|气候变化|土地利用/.test(
       text
     );
   const tags = [];
@@ -255,7 +314,7 @@ function dryPrescreen(paper) {
   addTag(tags, "species_distribution", /species distribution|distribution model|range shift|niche|habitat suitability|物种分布|分布模型|范围变化|生态位|栖息地适宜/.test(text));
   addTag(tags, "climate_anthropogenic", /climate change|warming|anthropogenic|urban|land use|agricultural intensification|wind farm|wind power|renewable|solar|气候变化|增温|人类影响|城市|土地利用|农业集约化|风电|新能源|太阳能/.test(text));
   addTag(tags, "disturbance", /disturbance|fire|wildfire|drought|storm|logging|construction|restoration trajectory|扰动|火灾|野火|火烧|干旱|风暴|采伐|施工|恢复轨迹/.test(text));
-  addTag(tags, "invasion", /invasion|invasive|alien species|non-native|入侵|外来种|外来物种/.test(text));
+  addTag(tags, "invasion", /\binvasion\b|\binvasive\b|alien species|non-native|入侵|外来种|外来物种/.test(text));
   addTag(tags, "conservation_management", /conservation|restoration|management|policy|protected area|risk assessment|保护|恢复|管理|政策|自然保护地|风险评估/.test(text));
   addTag(tags, "plant_agroecology", /plant|forest|grassland|herbivor|agronom|agroecolog|crop|drainage|ditch|vegetation|植物|森林|草地|植食|农业生态|农田|作物|排水|沟渠|植被/.test(text));
   addTag(tags, "aquatic_microbe", /aquatic|freshwater|marine|wetland|microbial|microbiome|水域|淡水|海洋|湿地|微生物|微生物组/.test(text));
@@ -310,8 +369,10 @@ function dryScore(paper, pre) {
     theme,
     type,
     total: source + theme + type,
-    summary: paper.abstract || pre.oneLine || paper.title,
-    citation: `${paper.title}. (${paper.date || "n.d."}). ${paper.journal || "Journal Name"}.`
+    title: paper.title,
+    oneLine: chineseOneLine(paper),
+    summary: chineseSummary(paper),
+    citation: ""
   };
 }
 
@@ -319,7 +380,7 @@ function dateKeyForPaper(paper) {
   return paper.date || "undated";
 }
 
-function topPerDay(items, limit = 10) {
+function topPerDay(items, limit = 5) {
   const byDate = new Map();
   for (const item of items) {
     const key = dateKeyForPaper(item);
@@ -359,6 +420,7 @@ async function scorePaper(paper, pre, topicWeights) {
         output_schema: {
           theme: "0-50 integer",
           reason: "short Chinese reason for theme score",
+          title: "original English paper title when available; otherwise Chinese research information title",
           summary: "about 200 Chinese characters",
           oneLine: "one Chinese sentence",
           citation: "APA-like reference using provided metadata only, without DOI"
@@ -379,6 +441,7 @@ async function scorePaper(paper, pre, topicWeights) {
     theme,
     type,
     total: source + theme + type,
+    title: modelScore.title,
     summary: modelScore.summary,
     oneLine: modelScore.oneLine || pre.oneLine,
     reason: modelScore.reason,
@@ -399,6 +462,7 @@ async function main() {
     const score = await scorePaper(paper, pre, topicWeights);
     selected.push({
       ...paper,
+      title: score.title || paper.title,
       tags: pre.tags || [],
       oneLine: score.oneLine || pre.oneLine,
       summary: score.summary,
@@ -415,7 +479,7 @@ async function main() {
   }
 
   selected.sort((a, b) => b.score - a.score);
-  const items = topPerDay(selected, 10);
+  const items = selected;
   const output = {
     generatedAt: new Date().toISOString(),
     dryRun: DRY_RUN,
