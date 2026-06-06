@@ -7,6 +7,7 @@ const OUTPUT = path.join(ROOT, "data", "wechat-candidates.json");
 const LOCAL_DB = process.env.WECHAT_DB_PATH || "/Users/xcli/data/db.db";
 const LOOKBACK_DAYS = Number(process.env.PAPER_DAILY_LOOKBACK_DAYS || 5);
 const MAX_PER_SOURCE = Number(process.env.PAPER_DAILY_MAX_PER_SOURCE || 30);
+const MAX_ABSTRACT_CHARS = Number(process.env.PAPER_DAILY_WECHAT_TEXT_CHARS || 2500);
 
 function decodeEntities(value = "") {
   return value
@@ -17,6 +18,43 @@ function decodeEntities(value = "") {
     .replace(/&#39;/g, "'")
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
+}
+
+function stripHtml(value = "") {
+  return decodeEntities(value)
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<img\b[^>]*>/gi, " ")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|section|li|h[1-6])>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[ \t\r\f\v]+/g, " ")
+    .replace(/\n\s+/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function compactText(value = "") {
+  return stripHtml(value)
+    .replace(/图片|点击蓝字关注我们|欢迎关注|免责声明|END\s*$/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function truncateText(value = "", maxChars = MAX_ABSTRACT_CHARS) {
+  const text = value.trim();
+  if (text.length <= maxChars) return text;
+  return `${text.slice(0, maxChars).trim()}...`;
+}
+
+function mergeDescriptionAndBody(description = "", body = "") {
+  if (!description) return body;
+  if (!body) return description;
+  if (body.includes(description) || body.slice(0, 300).includes(description.slice(0, 80))) {
+    return body;
+  }
+  if (description.includes(body)) return description;
+  return `${description}\n\n${body}`;
 }
 
 function inferType(title = "", abstract = "") {
@@ -47,7 +85,16 @@ feeds = {row["id"]: row["mp_name"] for row in cur.execute("select id, mp_name fr
 counts = {}
 items = []
 for row in cur.execute("""
-  select id, mp_id, title, url, description, publish_time
+  select
+    id,
+    mp_id,
+    title,
+    url,
+    description,
+    substr(coalesce(content, ''), 1, 12000) as content,
+    substr(coalesce(content_html, ''), 1, 12000) as content_html,
+    has_content,
+    publish_time
   from articles
   where status != 1000 and title is not null and title != '' and publish_time >= ?
   order by publish_time desc
@@ -65,13 +112,17 @@ for row in cur.execute("""
       "title": row["title"],
       "url": row["url"],
       "description": row["description"] or "",
+      "content": row["content"] or "",
+      "content_html": row["content_html"] or "",
+      "has_content": row["has_content"] or 0,
       "publish_time": row["publish_time"] or 0
     })
 print(json.dumps({"feeds": feeds, "items": items}, ensure_ascii=False))
 `;
   const result = spawnSync("python3", ["-", LOCAL_DB, String(LOOKBACK_DAYS), String(MAX_PER_SOURCE)], {
     input: script,
-    encoding: "utf8"
+    encoding: "utf8",
+    maxBuffer: 1024 * 1024 * 20
   });
   if (result.status !== 0) {
     throw new Error(result.stderr || "Failed to read local we-mp-rss database.");
@@ -87,7 +138,9 @@ function toIsoDate(seconds) {
 
 function toCandidate(row) {
   const title = decodeEntities(row.title || "");
-  const abstract = decodeEntities(row.description || "");
+  const description = compactText(row.description || "");
+  const body = compactText(row.content || row.content_html || "");
+  const abstract = truncateText(mergeDescriptionAndBody(description, body));
   const doiMatch = `${title} ${abstract} ${row.url || ""}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
   const doi = doiMatch ? doiMatch[0].replace(/[.,;)\]]+$/, "") : "";
   return {
@@ -99,6 +152,12 @@ function toCandidate(row) {
     doi,
     url: row.url,
     date: toIsoDate(row.publish_time),
+    wechatTextStatus: {
+      hasContent: Boolean(row.has_content),
+      descriptionChars: description.length,
+      bodyChars: body.length,
+      usedChars: abstract.length
+    },
     sourceSignals: [
       {
         type: "wechat",

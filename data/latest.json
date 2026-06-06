@@ -1,53 +1,296 @@
 {
-  "generatedAt": "2026-06-06T09:30:29.220Z",
-  "dryRun": false,
-  "prescreenModel": "deepseek-v4-flash",
-  "scoreModel": "deepseek-v4-pro",
+  "generatedAt": "2026-06-06T09:00:12.368Z",
+  "dryRun": true,
+  "prescreenModel": "local-rule",
+  "scoreModel": "local-rule",
   "topicWeights": {},
   "cache": {
-    "mode": "deepseek:deepseek-v4-flash:deepseek-v4-pro",
+    "mode": "dry-run",
     "version": "2026-06-06-type-v2",
-    "hits": 0,
-    "misses": 123,
-    "rejectedHits": 0,
-    "rejectedMisses": 76
+    "hits": 48,
+    "misses": 0,
+    "rejectedHits": 75,
+    "rejectedMisses": 0
   },
   "items": [
     {
-      "id": "science-4-R2xvYmFsIGV4",
-      "title": "Global extent and drivers of tree cover loss quantified with high-resolution satellite data",
+      "id": "science-2-Q29tcGV0aXRp",
+      "title": "Competition enables rapid adaptation to a warming range edge in a model plant community",
       "abstract": "Science, Volume 392, Issue 6802, June 2026.",
       "authors": [
-        "Alexandra Tyukavina, Andrew J. Poulson, Jeffrey Pickering, Bernard Adusei, Matthew C. Hansen, Peter Potapov, Antoine Baggett, Carolina Ortiz Dominguez, Aleksandra Mikus, Andre Oktaviandra, Svetlana Turubanova, Anna Komarova, Diana Parker, Amy H. Pickens, Viviana Zalles, Will Byrne, Steven Painter, Lauren Thomas, Arden Ireland, Yuhao He, Nancy Harris, Xiao-Peng Song"
+        "Takuji Usui, Amy L. Angert"
       ],
       "journal": "Science",
       "type": "ResearchArticle",
-      "doi": "10.1126/science.adz9042",
-      "url": "https://www.science.org/doi/abs/10.1126/science.adz9042?af=R",
+      "doi": "10.1126/science.ads4664",
+      "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R",
       "date": "2026-06-04",
       "sourceSignals": [
         {
           "type": "topJournal",
           "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.adz9042?af=R"
+          "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R"
         }
       ],
       "tags": [
         "modeling_methods",
-        "disturbance",
-        "climate_anthropogenic"
+        "community_ecosystem",
+        "genetics_evolution",
+        "climate_anthropogenic",
+        "plant_agroecology"
       ],
-      "oneLine": "利用高分辨率卫星数据量化全球树木覆盖损失的规模与主要驱动因素。",
-      "summary": "该研究利用高分辨率卫星数据（如 Landsat）制作了全球树木覆盖损失的时空动态地图，系统量化了农业扩张、林业活动、火灾等主要驱动因素对森林损失的贡献。研究团队基于长时间序列的遥感影像，通过机器学习算法识别损失斑块，解析了不同地区损失的驱动类型和强度。主要发现强调了热带地区农业开垦和温带/北方火灾是主要损失源，并揭示了政策与市场对损失格局的影响。对生态遥感监测、扰动生态学及全球变化研究至关重要，因为它提供了高确定性的基准数据，可支持扰动风险评估、保护优先级分析以及气候变化下植被动态模拟，尤其为火烧/扰动研究提供了可复用的数据产品和方法框架。",
-      "reason": "直接提供全球树木覆盖损失的高分辨率卫星量化数据，涵盖火烧等扰动驱动因素，对用户关注的扰动风险研究和遥感监测方法有很强参考价值。",
-      "score": 95,
+      "oneLine": "该研究围绕“Competition enables rapid adaptation to a warming range edge in a model plant community”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Competition enables rapid adaptation to a warming range edge in a model plant community”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 91,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 48,
+        "theme": 44,
         "type": 17
       },
-      "citation": "Tyukavina, A., Poulson, A. J., Pickering, J., Adusei, B., Hansen, M. C., Potapov, P., Baggett, A., Dominguez, C. O., Mikus, A., Oktaviandra, A., Turubanova, S., Komarova, A., Parker, D., Pickens, A. H., Zalles, V., Byrne, W., Painter, S., Thomas, L., Ireland, A., He, Y., Harris, N., & Song, X.-P. (2026). Global extent and drivers of tree cover loss quantified with high-resolution satellite data. Science, 392(6802).",
-      "generatedAt": "2026-06-06T09:07:22.893Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.256Z"
+    },
+    {
+      "id": "nature-reviews-biodiversity-0-VGhlIGxvc3Mg",
+      "title": "Halting genetic diversity loss, from local to international action and policy",
+      "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
+      "authors": [
+        "Robyn E. Shaw",
+        "Carole P. Elliott",
+        "David J. Coates",
+        "Kym M. Ottewell",
+        "Gernot Segelbacher",
+        "Joachim Mergeay",
+        "Katherine A. Farquharson",
+        "Catherine E. Grueber"
+      ],
+      "journal": "Nature Reviews Biodiversity",
+      "type": "Review",
+      "doi": "10.1038/s44358-026-00162-0",
+      "url": "https://www.nature.com/articles/s44358-026-00162-0",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Nature Reviews Biodiversity",
+          "url": "https://www.nature.com/articles/s44358-026-00162-0"
+        }
+      ],
+      "tags": [
+        "modeling_methods",
+        "population_traits",
+        "genetics_evolution",
+        "landscape_macroecology",
+        "conservation_management"
+      ],
+      "oneLine": "该研究围绕“Halting genetic diversity loss, from local to international action and policy”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Halting genetic diversity loss, from local to international action and policy”。原始摘要显示，研究关注The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 87,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 40,
+        "type": 20
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
+      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+      "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
+      "authors": [],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03097-z",
+      "url": "https://www.nature.com/articles/s41559-026-03097-z",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03097-z"
+        }
+      ],
+      "tags": [
+        "modeling_methods",
+        "genetics_evolution",
+        "landscape_macroecology",
+        "climate_anthropogenic",
+        "conservation_management"
+      ],
+      "oneLine": "该研究围绕“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China”。原始摘要显示，研究关注In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 83,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 42,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
+      "title": "Latitudinal patterns and environmental correlates of plant root exudation",
+      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.",
+      "authors": [
+        "Mengguang Han",
+        "Franciska T. de Vries",
+        "Richard D. Bardgett",
+        "Feng Jiang",
+        "Biao Zhu"
+      ],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Dataset",
+      "doi": "10.1038/s41559-026-03103-4",
+      "url": "https://www.nature.com/articles/s41559-026-03103-4",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03103-4"
+        }
+      ],
+      "tags": [
+        "modeling_methods",
+        "population_traits",
+        "biogeochemistry",
+        "genetics_evolution",
+        "plant_agroecology"
+      ],
+      "oneLine": "该研究围绕“Latitudinal patterns and environmental correlates of plant root exudation”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Latitudinal patterns and environmental correlates of plant root exudation”。原始摘要显示，研究关注From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 82,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 44,
+        "type": 14
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
+      "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
+      "authors": [
+        "Ademir S.F. Araujo",
+        "Erika V. de Medeiros",
+        "Diogo P. da Costa",
+        "Lucas W. Mendes",
+        "Maurício R. Cherubin",
+        "Raphael M. Beirigo",
+        "George R. Lambais",
+        "Vania M.M. Melo",
+        "Rodrigo M. Santana",
+        "Vanessa N. Kavamura",
+        "Arthur P.A. Pereira"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "biogeochemistry",
+        "genetics_evolution",
+        "conservation_management"
+      ],
+      "oneLine": "该研究围绕“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 80,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 36,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "trends-ecology-evolution-19-Q29sbGVjdGl2",
+      "title": "Collective social niche construction shaping adaptive social networks",
+      "abstract": "Publication date: Available online 28 May 2026 Source: Trends in Ecology & Evolution Author(s): Cédric Sueur, Ricard Solé, Jean-Louis Deneubourg",
+      "authors": [
+        "Cédric Sueur",
+        "Ricard Solé",
+        "Jean-Louis Deneubourg"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution",
+        "species_distribution",
+        "disturbance"
+      ],
+      "oneLine": "该研究围绕“Collective social niche construction shaping adaptive social networks”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Collective social niche construction shaping adaptive social networks”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 80,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 36,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "science-7-RmlyZXMgcmV2",
+      "title": "Fires reverse progress toward ozone air quality standards in the United States",
+      "abstract": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026.",
+      "authors": [
+        "Weizhi Deng, Jun Wang, Meng Zhou, Xi Chen, Xiaodong Wu, Huanxin Zhang, Jason B. Cohen, Jing Wei, Arlindo da Silva, Guy P. Brasseur, Claire Granier, Laurence Rouil"
+      ],
+      "journal": "Science",
+      "type": "ResearchArticle",
+      "doi": "10.1126/science.aed3197",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R",
+      "date": "2026-06-04",
+      "sourceSignals": [
+        {
+          "type": "topJournal",
+          "name": "Science",
+          "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R"
+        }
+      ],
+      "tags": [
+        "disturbance"
+      ],
+      "oneLine": "该研究围绕“Fires reverse progress toward ozone air quality standards in the United States”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Fires reverse progress toward ozone air quality standards in the United States”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 79,
+      "scoreBreakdown": {
+        "source": 30,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.256Z"
     },
     {
       "id": "science-13-VW5leHBlY3Rl",
@@ -69,21 +312,61 @@
         }
       ],
       "tags": [
-        "community_ecosystem",
-        "climate_anthropogenic",
         "plant_agroecology"
       ],
-      "oneLine": "过去四十年全球红树林面积出现意外扩张和自然再生，显示生态系统具有超出预期的恢复力。",
-      "summary": "该研究利用卫星遥感数据系统评估了过去40年全球红树林的面积动态，发现尽管局部有大量丧失，但全球范围红树林出现了意外的面积扩张和自然再生现象。研究通过长时序多源遥感影像分析，揭示了红树林分布变化的驱动因素和空间格局，表明在全球气候变化和人类活动影响下，红树林生态系统具有超出预期的恢复力与生长潜力。这一发现对理解海岸带生态系统响应环境变化、优化保护策略及提升碳汇功能具有重要参考价值，尤其为基于遥感技术的生态监测与恢复评估提供了新证据。",
-      "reason": "全球红树林动态研究直接支持生态遥感监测和生物多样性变化评估，可为保护管理与恢复提供基础数据，与用户核心方向中的生态遥感、监测方法和保护管理高度契合。",
-      "score": 92,
+      "oneLine": "该研究围绕“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 79,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 45,
+        "theme": 32,
         "type": 17
       },
-      "citation": "Zhang, Z., Murray, N. J., Song, X.-P., Bunting, P., Worthington, T. A., Fatoyinbo, L., Mao, D., Jia, M., Arifanti, V. B., Aung, T., Htay, S. S., & Friess, D. A. (2026). Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades. Science, 392(6802), 1082-1087.",
-      "generatedAt": "2026-06-06T09:08:22.994Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.257Z"
+    },
+    {
+      "id": "nature-14-UmVwbHkgdG86",
+      "title": "Reply to: The size of tropical vegetation gross primary production",
+      "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production",
+      "authors": [
+        "Jiameng Lai",
+        "Linda M. J. Kooijmans",
+        "Wu Sun",
+        "Danica Lombardozzi",
+        "J. Elliott Campbell",
+        "Lianhong Gu",
+        "Yiqi Luo",
+        "Le Kuai",
+        "Ying Sun"
+      ],
+      "journal": "Nature",
+      "type": "Article",
+      "doi": "10.1038/s41586-026-10561-0",
+      "url": "https://www.nature.com/articles/s41586-026-10561-0",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "topJournal",
+          "name": "Nature",
+          "url": "https://www.nature.com/articles/s41586-026-10561-0"
+        }
+      ],
+      "tags": [
+        "plant_agroecology"
+      ],
+      "oneLine": "该研究围绕“Reply to: The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Reply to: The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 79,
+      "scoreBreakdown": {
+        "source": 30,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.258Z"
     },
     {
       "id": "nature-15-VGhlIHNpemUg",
@@ -116,130 +399,19 @@
         }
       ],
       "tags": [
-        "biogeochemistry",
-        "modeling_methods"
+        "plant_agroecology"
       ],
-      "oneLine": "该研究融合多源遥感数据与模型，重新估算了热带植被总初级生产力的总量，揭示了热带生态系统对全球碳循环的重要贡献。",
-      "summary": "本研究利用多种遥感产品和生态系统过程模型，系统估算了全球热带地区植被总初级生产力（GPP）的总量及其季节和年际变异。研究整合了卫星植被指数、叶面积指数、太阳诱导叶绿素荧光等数据，并采用机器学习与光能利用率模型相结合的方法，量化了热带雨林、稀树草原等不同生物群区的 GPP 贡献。结果显示，热带植被 GPP 总量显著高于以往估计，其对全球碳汇的贡献被低估。研究揭示了厄尔尼诺-南方涛动等气候因子对热带生产力的强烈调控，强调了热带生态系统在碳循环中的关键作用。这项研究改进了全球碳收支评估，为气候变化背景下的生态系统管理与遥感监测提供了新基准，值得从事生态模型、通量遥感及碳循环研究的人员关注。",
-      "reason": "该研究直接利用多源遥感数据和过程模型估算热带植被总初级生产力，属于生态遥感与模型前沿，可服务于碳循环监测、生态系统评估，与用户关注的生态遥感、模型及监测方法高度相关。",
-      "score": 92,
+      "oneLine": "该研究围绕“The size of tropical vegetation gross primary production”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“The size of tropical vegetation gross primary production”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 79,
       "scoreBreakdown": {
         "source": 30,
-        "theme": 45,
+        "theme": 32,
         "type": 17
       },
-      "citation": "Tian, J., Huang, X., Chen, H., Chen, J. M., Ciais, P., Krol, M., Liang, S., Piao, S., Wu, J., Xiao, J., Chen, X., & Yuan, W. (2026). The size of tropical vegetation gross primary production. Nature. https://www.nature.com/articles/s41586-026-10562-z",
-      "generatedAt": "2026-06-06T09:10:15.899Z"
-    },
-    {
-      "id": "nature-reviews-biodiversity-0-VGhlIGxvc3Mg",
-      "title": "Halting genetic diversity loss, from local to international action and policy",
-      "abstract": "Nature Reviews Biodiversity, Published online: 03 June 2026; doi:10.1038/s44358-026-00162-0 The loss of genetic diversity is a major threat to population resilience, posing a challenge for conservation efforts. This Review highlights how the integration of large-scale biodiversity monitoring datasets and population genetics principles can empower biodiversity partners across governance levels to make effective conservation decisions.",
-      "authors": [
-        "Robyn E. Shaw",
-        "Carole P. Elliott",
-        "David J. Coates",
-        "Kym M. Ottewell",
-        "Gernot Segelbacher",
-        "Joachim Mergeay",
-        "Katherine A. Farquharson",
-        "Catherine E. Grueber"
-      ],
-      "journal": "Nature Reviews Biodiversity",
-      "type": "Review",
-      "doi": "10.1038/s44358-026-00162-0",
-      "url": "https://www.nature.com/articles/s44358-026-00162-0",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Nature Reviews Biodiversity",
-          "url": "https://www.nature.com/articles/s44358-026-00162-0"
-        }
-      ],
-      "tags": [
-        "genetics_evolution",
-        "conservation_management"
-      ],
-      "oneLine": "这篇综述探讨了如何通过整合遗传学原理与监测数据，推动多尺度保护政策以遏制遗传多样性丧失。",
-      "summary": "该综述系统阐述了遗传多样性丧失对种群恢复力的威胁，以及如何通过整合大规模生物多样性监测数据与群体遗传学原理，支持从地方到国际的保护决策。文章分析了现有政策框架，并介绍了遗传多样性监测与评估工具的最新进展，强调多尺度合作在保护行动中的关键作用。对于关注植物入侵、生境扰动和生物多样性变化的研究者，本文提供了从遗传视角提升保护管理有效性的新思路，尤其有助于理解如何将遗传数据纳入生态系统恢复与入侵物种管理策略。",
-      "reason": "遗传多样性丧失与保护是生物多样性管理的核心议题，直接支撑保护管理与恢复生态方向，可为植物入侵及扰动背景下的种群恢复力研究提供框架与启发。",
-      "score": 91,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 44,
-        "type": 20
-      },
-      "citation": "Shaw, R. E., Elliott, C. P., Coates, D. J., Ottewell, K. M., Segelbacher, G., Mergeay, J., Farquharson, K. A., & Grueber, C. E. (2026). Halting genetic diversity loss, from local to international action and policy. Nature Reviews Biodiversity.",
-      "generatedAt": "2026-06-06T09:10:51.083Z"
-    },
-    {
-      "id": "science-7-RmlyZXMgcmV2",
-      "title": "Fires reverse progress toward ozone air quality standards in the United States",
-      "abstract": "Science, Volume 392, Issue 6802, Page 1088-1092, June 2026.",
-      "authors": [
-        "Weizhi Deng, Jun Wang, Meng Zhou, Xi Chen, Xiaodong Wu, Huanxin Zhang, Jason B. Cohen, Jing Wei, Arlindo da Silva, Guy P. Brasseur, Claire Granier, Laurence Rouil"
-      ],
-      "journal": "Science",
-      "type": "ResearchArticle",
-      "doi": "10.1126/science.aed3197",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R",
-      "date": "2026-06-04",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.aed3197?af=R"
-        }
-      ],
-      "tags": [
-        "disturbance"
-      ],
-      "oneLine": "研究发现野火逆转了美国臭氧空气质量标准的进展。",
-      "summary": "该研究基于卫星观测与大气化学模型，分析了美国近年来野火对近地面臭氧浓度的影响。研究发现，尽管人为排放控制促使部分地区臭氧总体下降，但日益频繁和剧烈的野火事件显著推高了夏季臭氧峰值，尤其在西部各州，导致多个城市臭氧浓度不降反升，逆转了原有空气质量改善趋势。研究量化了野火贡献的臭氧增量，指出气候变化驱动下的火灾加剧正在侵蚀传统减排成果。该发现对指导未来空气质量标准制定和火灾管理具有重要启示，同时也为理解火灾—大气化学—生态系统反馈提供了关键证据。",
-      "reason": "论文研究野火对美国臭氧空气质量的影响，涉及火灾扰动这一核心课题。虽然未直接研究植物入侵，但野火作为关键生态扰动，与入侵风险及管理密切相关，对监测和跨学科理解有启发。",
-      "score": 89,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 42,
-        "type": 17
-      },
-      "citation": "Deng, W., Wang, J., Zhou, M., Chen, X., Wu, X., Zhang, H., Cohen, J. B., Wei, J., da Silva, A., Brasseur, G. P., Granier, C., & Rouil, L. (2026). Fires reverse progress toward ozone air quality standards in the United States. Science, 392(6802), 1088–1092.",
-      "generatedAt": "2026-06-06T09:07:56.405Z"
-    },
-    {
-      "id": "nature-ecology-evolution-3-RGlmZmVyZW50",
-      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
-      "abstract": "Nature Ecology & Evolution, Published online: 03 June 2026; doi:10.1038/s41559-026-03097-z In this study, China’s solar and wind expansion through to 2060 is projected under national versus provincial planning scenarios, which represent different centralization levels. Modelling shows that each pathway results in distinct trade-offs with biodiversity, which demonstrates the need for integrated, multiscale siting to align climate and biodiversity conservation goals.",
-      "authors": [],
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03097-z",
-      "url": "https://www.nature.com/articles/s41559-026-03097-z",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03097-z"
-        }
-      ],
-      "tags": [
-        "climate_anthropogenic",
-        "conservation_management",
-        "disturbance"
-      ],
-      "oneLine": "中国太阳能和风能扩张的不同规划尺度会导致与生物多样性的不同权衡，需要整合多尺度选址以协调气候和生物多样性保护目标。",
-      "summary": "该研究针对中国至2060年的太阳能和风能扩张，比较了国家级与省级规划情景下的土地利用及生物多样性影响。通过空间建模，发现集中式国家规划和地方主导的省级规划在设施选址、生境占用和保护代价上呈现显著差异，各自在生物多样性保护与气候目标间形成不同权衡。结果表明，仅靠单一尺度决策无法兼顾多重目标，必须引入跨尺度整合的选址策略，才能有效缓解能源转型对生态系统和物种的负面效应。该文为可再生能源发展如何在应对气候变化的同时避免生物多样性丧失提供了关键定量证据，对政策制定和环境评估具有直接参考价值。",
-      "reason": "直接研究中国风光电扩张与生物多样性的空间权衡，支持生态影响评价和跨尺度管理。",
-      "score": 89,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 48,
-        "type": 17
-      },
-      "citation": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China. Nature Ecology & Evolution, 2026-06-03.",
-      "generatedAt": "2026-06-06T09:17:53.498Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.258Z"
     },
     {
       "id": "journal-of-ecology-0-RmlyZSBpbmNy",
@@ -261,411 +433,21 @@
         }
       ],
       "tags": [
+        "community_ecosystem",
         "disturbance",
-        "plant_agroecology",
-        "climate_anthropogenic"
-      ],
-      "oneLine": "火灾通过将灌木地转化为一年生草地，增加了生态系统对降水的敏感性。",
-      "summary": "该研究探讨了火灾如何通过改变植被类型（从灌木地变为一年生草地）来影响生态系统对降水波动的响应。基于长期观测数据，研究者比较了火烧前后植物群落组成及净初级生产力与降水关系的变化。结果表明，火灾消除了灌木，促进了快速生长的一年生草类建立，导致生态系统生产力对年降水量变化更加敏感，且稳定性下降。这一发现揭示了在气候变化背景下，火烧与降水交互作用可能加剧生态系统波动，对理解干旱区灌丛生态系统退化和恢复管理具有重要参考意义，也为评估火烧扰动风险提供了机制性证据。",
-      "reason": "直接研究火烧如何通过将灌木地转化为一年生草地而导致生态系统对降水的敏感性增加，与火烧扰动及植被转换风险高度相关，可支持植物入侵与火烧方向的研究框架。",
-      "score": 89,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 48,
-        "type": 17
-      },
-      "citation": "Merchant, T. K., Van Cleemput, E., Felton, A. J., Adler, P. B., Dee, L. E., Koontz, M. J., & Suding, K. N. (2026). Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland. Journal of Ecology, 114(6). https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70354?af=R",
-      "generatedAt": "2026-06-06T09:22:01.923Z"
-    },
-    {
-      "id": "nature-ecology-evolution-7-TmluZXR5LXll",
-      "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
-      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.",
-      "authors": [
-        "Felix Neff",
-        "Kurt Bollmann",
-        "Yannick Chittaro",
-        "Martin M. Gossner",
-        "Felix Herzog",
-        "Fränzi Korner-Nievergelt",
-        "Glenn Litsios",
-        "Carlos Martínez-Núñez",
-        "Marco Moretti",
-        "Emmanuel Rey",
-        "Andreas Sanchez",
-        "Eva Knop"
-      ],
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03074-6",
-      "url": "https://www.nature.com/articles/s41559-026-03074-6",
-      "date": "2026-06-02",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03074-6"
-        }
-      ],
-      "tags": [
-        "population_traits",
-        "conservation_management",
-        "climate_anthropogenic",
-        "disturbance"
-      ],
-      "oneLine": "该研究通过90年时间序列揭示了瑞士蝴蝶和蛀干甲虫在20世纪中期的剧烈下降，分析了气候和土地利用变化的驱动作用。",
-      "summary": "该研究利用瑞士1930至2021年的蝴蝶和蛀干甲虫长期监测数据，重建了这两个类群的种群变化轨迹，发现昆虫数量的下降在20世纪中期最为剧烈，之后趋缓甚至有部分恢复。研究结合气候和土地利用变化数据，分析了温度、降水、农业扩张和森林管理等驱动因素的贡献，强调了长期历史数据对于准确评估生物多样性丧失趋势和制定保护策略的重要性。这一方法对开展其它区域和类群的监测具有示范意义，也为恢复生态与保护管理提供了关键基线。",
-      "reason": "该研究直接涉及生物多样性长期变化和驱动因素，可支持保护管理、恢复生态及监测方法设计，与用户核心方向高度吻合。",
-      "score": 88,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 47,
-        "type": 17
-      },
-      "citation": "Neff, F., Bollmann, K., Chittaro, Y., Gossner, M. M., Herzog, F., Korner-Nievergelt, F.,... Knop, E. (2026). Ninety-year trends reveal sharpest insect declines in the mid-twentieth century. Nature Ecology & Evolution.",
-      "generatedAt": "2026-06-06T09:18:42.702Z"
-    },
-    {
-      "id": "science-2-Q29tcGV0aXRp",
-      "title": "Competition enables rapid adaptation to a warming range edge in a model plant community",
-      "abstract": "Science, Volume 392, Issue 6802, June 2026.",
-      "authors": [
-        "Takuji Usui, Amy L. Angert"
-      ],
-      "journal": "Science",
-      "type": "ResearchArticle",
-      "doi": "10.1126/science.ads4664",
-      "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R",
-      "date": "2026-06-04",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.ads4664?af=R"
-        }
-      ],
-      "tags": [
-        "community_ecosystem",
-        "climate_anthropogenic",
         "plant_agroecology"
       ],
-      "oneLine": "通过模型植物群落研究，表明竞争能够加速种群适应气候变暖范围边缘的进化。",
-      "summary": "该研究利用模式植物群落实验，探究种间竞争如何影响种群在气候变暖范围边缘的快速适应。通过在南坡与北坡（模拟冷/暖梯度）设置竞争与无竞争处理，并跟踪适应性状的进化，发现竞争显著加快了种群向暖端边界适应的速度。竞争导致的密度依赖选择和基因流模式，促使有利等位基因在种群中更快扩散，增强了边缘种群的适合度。研究结果表明，生物相互作用而非单纯的气候因子可能是驱动物种分布区动态的关键进化机制，为预测全球变暖下生物分布范围变化和生物多样性保护提供了新视角，尤其对于理解外来种入侵的进化潜力具有启发意义。",
-      "reason": "该研究探讨植物群落中竞争对气候变暖边缘种群适应的加速作用，为理解气候变化下物种分布和适应提供直接证据，与用户关注的保护管理、生物多样性变化及入侵生态的进化背景明确相关。",
-      "score": 87,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 40,
-        "type": 17
-      },
-      "citation": "Usui, T., & Angert, A. L. (2026). Competition enables rapid adaptation to a warming range edge in a model plant community. Science, 392(6802).",
-      "generatedAt": "2026-06-06T09:06:54.304Z"
-    },
-    {
-      "id": "trends-ecology-evolution-11-TmF2aWdhdGlu",
-      "title": "Navigating transformations from degraded to functional ecosystems",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning",
-      "authors": [
-        "Linda E. Neaves",
-        "Iain J. Gordon",
-        "Adrian D. Manning"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "community_ecosystem",
-        "conservation_management"
-      ],
-      "oneLine": "综述构建了退化生态系统向功能性状态转变的导航框架，融合生态与社会维度，为恢复实践提供指导。",
-      "summary": "该综述探讨了退化生态系统向功能性生态系统转变的路径与机制。作者梳理了恢复生态学的关键概念，包括生态阈值、恢复力、适应性管理和社会-生态系统的整合，提出一个导航框架，用于指导从退化状态向健康状态的转变。研究强调，成功的生态系统恢复不仅需要关注生态过程，还需考虑社会经济和治理因素。对于我国退化农田、湿地或受扰动的生境恢复，该综述提供了系统性的理论支持和实践启示，尤其其对适应性管理的讨论有助于应对不确定性下的恢复决策。值得关注的是，它综合了当前恢复生态学的前沿思想，为制定恢复方案和管理策略提供了清晰的逻辑框架，对生态保护从业者和政策制定者均有参考价值。",
-      "reason": "综述退化生态系统恢复路径与机制，属于恢复生态学，与用户核心方向中的保护管理、恢复生态直接相关，可提供管理启发。",
-      "score": 84,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 40,
-        "type": 17
-      },
-      "citation": "Neaves, L. E., Gordon, I. J., & Manning, A. D. (2026). Navigating transformations from degraded to functional ecosystems. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:13:58.923Z"
-    },
-    {
-      "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
-      "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
-      "authors": [
-        "Ademir S.F. Araujo",
-        "Erika V. de Medeiros",
-        "Diogo P. da Costa",
-        "Lucas W. Mendes",
-        "Maurício R. Cherubin",
-        "Raphael M. Beirigo",
-        "George R. Lambais",
-        "Vania M.M. Melo",
-        "Rodrigo M. Santana",
-        "Vanessa N. Kavamura",
-        "Arthur P.A. Pereira"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000777?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "conservation_management",
-        "biogeochemistry",
-        "plant_agroecology"
-      ],
-      "oneLine": "呼吁以土壤生物多样性为核心重构巴西半干旱地区的荒漠化治理与生态恢复策略。",
-      "summary": "在巴西半干旱地区，荒漠化治理和生态恢复长期忽视土壤生物多样性的关键作用。本文提出以土壤生物多样性为核心重新构建治理框架，认为土壤微生物、动物等对维持土壤健康、促进植被恢复至关重要。通过整合土壤生态学知识，建议将土壤生物多样性指标纳入监测和评估体系，并制定保护利用政策。该框架有助于提升恢复项目的成效和可持续性，为全球干旱区退化土地管理提供新视角。",
-      "reason": "该文关注半干旱地区的荒漠化治理与恢复，以土壤生物多样性为核心，与用户关注的恢复生态和生物多样性管理方向明确相关，可提供治理策略启发。",
-      "score": 84,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 40,
-        "type": 17
-      },
-      "citation": "Araujo, A.S.F., de Medeiros, E.V., da Costa, D.P., Mendes, L.W., Cherubin, M.R., Beirigo, R.M., Lambais, G.R., Melo, V.M.M., Santana, R.M., Kavamura, V.N., & Pereira, A.P.A. (2026). Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:15:50.820Z"
-    },
-    {
-      "id": "nature-ecology-evolution-4-VHdlbnRpZXRo",
-      "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
-      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.",
-      "authors": [],
-      "journal": "Nature Ecology & Evolution",
-      "type": "Article",
-      "doi": "10.1038/s41559-026-03083-5",
-      "url": "https://www.nature.com/articles/s41559-026-03083-5",
-      "date": "2026-06-02",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03083-5"
-        }
-      ],
-      "tags": [
-        "population_traits",
-        "climate_anthropogenic",
-        "conservation_management"
-      ],
-      "oneLine": "一项基于90年数据的长期分析显示，农业集约化导致20世纪昆虫下降，而气候与保护管理仅带来部分恢复。",
-      "summary": "该研究基于蝴蝶和枯木甲虫长达90年的连续监测数据，揭示了20世纪中期昆虫多样性显著下降，其后仅实现部分恢复。下降主要归因于农业集约化，而后续的恢复和种群稳定则得益于气候变化以及更有利于生物多样性的管理措施。值得注意的是，蝴蝶的多样性仍远低于历史基线。该研究凸显了土地管理和气候在驱动长期昆虫种群变化中的作用，对于理解和预测生物多样性动态、评估保护成效具有重要价值。",
-      "reason": "研究长期昆虫种群动态及其驱动因素，可为保护管理和生物多样性变化提供重要背景和案例，与用户恢复生态和监测方向明确相关。",
-      "score": 83,
+      "oneLine": "该研究围绕“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 79,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 42,
+        "theme": 38,
         "type": 17
       },
-      "citation": "Nature Ecology & Evolution. (2026, June 2). Twentieth-century insect declines and partial recoveries driven by changes in land use and climate. Nature Ecology & Evolution. https://www.nature.com/articles/s41559-026-03083-5",
-      "generatedAt": "2026-06-06T09:18:05.971Z"
-    },
-    {
-      "id": "science-16-TGFuZHNjYXBl",
-      "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
-      "abstract": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026.",
-      "authors": [
-        "Stephen Polasky, Peter L. Hawthorne, Rebecca Chaplin-Kramer, Jeffrey Smith, James S. Gerber, Saleh Mamun, Mary Ruckelshaus, Jason Russ, Rafael Schmitt, Adrian L. Vogl, Adam C. Castonguay, James Douglass, Virginia Kowal, Ian Madden, Richard Sharp, Brent Sohngen, Jinfeng Chang, Gretchen Daily, Martin Philipp Heger, Matthew Holden, Justin Johnson, Lisa Mandle, Eve McDonald-Madden, Urvashi Narain, Deepak Ray, Giovanni Ruta, Paul C. West, Stacie Wolny, Esha Zaveri, Richard Damania"
-      ],
-      "journal": "Science",
-      "type": "ResearchArticle",
-      "doi": "10.1126/science.aea9058",
-      "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R",
-      "date": "2026-06-04",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science",
-          "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R"
-        }
-      ],
-      "tags": [
-        "landscape_macroecology",
-        "conservation_management",
-        "climate_anthropogenic",
-        "community_ecosystem"
-      ],
-      "oneLine": "该研究构建景观效率前沿以同时优化生物多样性、气候缓解和净经济价值，为多目标土地利用规划提供决策支持。",
-      "summary": "本研究针对土地利用规划中生物多样性保护、气候变化缓解和经济收益之间的权衡，提出景观效率前沿方法。通过整合生物多样性指标、碳储量和净经济价值等多维数据，在景观尺度上识别帕累托最优配置，无需牺牲任一目标即可最大化其他目标。该方法应用于全球多个案例区，模拟不同管理情景下的多目标协同效益。研究发现，通过优化景观组成和空间格局，可显著提升保护成效并降低机会成本，为平衡生态保护与经济发展提供了量化决策工具，对全球及国家尺度的自然保护与气候战略具有重要参考价值。",
-      "reason": "研究提出景观效率前沿方法，平衡生物多样性、气候缓解和经济价值，可为保护管理决策提供分析框架，但与用户核心的植物入侵、能源设施生态影响等直接联系较弱，相关但偏外围。",
-      "score": 81,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 34,
-        "type": 17
-      },
-      "citation": "Polasky, S. et al. (2026). Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value. Science, 392(6802), 1069-1074.",
-      "generatedAt": "2026-06-06T09:08:56.007Z"
-    },
-    {
-      "id": "nature-14-UmVwbHkgdG86",
-      "title": "Reply to: The size of tropical vegetation gross primary production",
-      "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production",
-      "authors": [
-        "Jiameng Lai",
-        "Linda M. J. Kooijmans",
-        "Wu Sun",
-        "Danica Lombardozzi",
-        "J. Elliott Campbell",
-        "Lianhong Gu",
-        "Yiqi Luo",
-        "Le Kuai",
-        "Ying Sun"
-      ],
-      "journal": "Nature",
-      "type": "Article",
-      "doi": "10.1038/s41586-026-10561-0",
-      "url": "https://www.nature.com/articles/s41586-026-10561-0",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Nature",
-          "url": "https://www.nature.com/articles/s41586-026-10561-0"
-        }
-      ],
-      "tags": [
-        "community_ecosystem"
-      ],
-      "oneLine": "针对热带植被总初级生产力大小的争议，本文回复了关于遥感与模型估算方法的讨论。",
-      "summary": "本文是就热带植被总初级生产力（GPP）的大小争议对先前研究的回复。研究围绕遥感、模型模拟和地面观测在估算热带GPP中的分歧，分析了不同方法导致的不确定性。作者回应了关于COS通量约束、光能利用率模型以及气候数据等关键争论点，强调多证据整合的必要性。尽管未提供新数据集，但文中对GPP估算方法的批判性讨论，为改进碳循环模型和生态遥感监测提供了参考，尤其有助于理解热带生态系统碳通量评估的难点。对于关注生态模型与遥感应用的读者，此文揭示了当前估算框架的潜在问题，具有方法论启示。",
-      "reason": "论文讨论热带植被GPP估算的回复，涉及生态遥感与碳循环模型，与用户关注模型和监测方法有相关性，但非核心入侵或能源设施方向，需人工判断。",
-      "score": 79,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 32,
-        "type": 17
-      },
-      "citation": "Lai, J., Kooijmans, L.M.J., Sun, W., Lombardozzi, D., Campbell, J.E., Gu, L., Luo, Y., Kuai, L., & Sun, Y. (2026). Reply to: The size of tropical vegetation gross primary production. Nature.",
-      "generatedAt": "2026-06-06T09:09:57.628Z"
-    },
-    {
-      "id": "trends-ecology-evolution-15-RXN0YWJsaXNo",
-      "title": "Establishing transboundary protected areas to achieve sustainability",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Wenjie Li, Fang Han, Xuan Liu",
-      "authors": [
-        "Wenjie Li",
-        "Fang Han",
-        "Xuan Liu"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "conservation_management"
-      ],
-      "oneLine": "本文探讨了建立跨界保护区对实现可持续发展的重要性，并提出了优化跨界治理的实践建议。",
-      "summary": "本文探讨了通过建立跨界保护区以实现可持续发展目标的策略与框架。研究分析了跨国界保护区在协调生态保护与区域发展中的作用，综合评估了管理机制、利益相关方协作和生态连通性等关键因素。文章指出，跨界保护区有助于维护大型生态系统完整性、促进生物多样性保护，并可能缓解因行政边界分割导致的保护缺口。研究采用文献综述与案例分析，提出了优化跨界治理、共享资源和协同监测的实践建议。该研究为跨国保护政策制定提供了理论支持，对理解区域尺度生态管理具有参考价值，尤其适合关注保护地网络设计和全球生物多样性框架的读者。",
-      "reason": "论文探讨跨界保护区与可持续发展，属于保护管理范畴，与用户核心方向（植物入侵、能源生态、农田排水等）直接关联较弱，但可作为保护管理和生物多样性变化的背景参考，需人工判断是否保留。",
-      "score": 79,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 35,
-        "type": 17
-      },
-      "citation": "Li, W., Han, F., & Liu, X. (2026). Establishing transboundary protected areas to achieve sustainability. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:15:26.792Z"
-    },
-    {
-      "id": "trends-ecology-evolution-18-UmV2aXNpdGlu",
-      "title": "Revisiting evolutionary rescue in the wild",
-      "abstract": "Publication date: Available online 30 May 2026 Source: Trends in Ecology & Evolution Author(s): Laurinne J. Balstad, Marissa L. Baskett, Stephanie M. Carlson, Curry J. Cunningham, Peter A.H. Westley",
-      "authors": [
-        "Laurinne J. Balstad",
-        "Marissa L. Baskett",
-        "Stephanie M. Carlson",
-        "Curry J. Cunningham",
-        "Peter A.H. Westley"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "genetics_evolution",
-        "conservation_management"
-      ],
-      "oneLine": "综述了野外种群进化拯救的机制及其在保护生物学中的应用。",
-      "summary": "本文综述了野外种群进化拯救的机制及其在保护生物学中的应用。进化拯救指种群通过适应性进化避免灭绝的过程，近年来在保护领域受到关注。文章整合了野外研究的证据，探讨了遗传变异、基因流、种群规模等关键因素如何影响拯救概率，并讨论了在气候变化、生境破碎化背景下，管理者如何通过促进基因流或辅助迁移等措施增强物种的适应潜力。研究指出当前野外实证仍然有限，未来需结合基因组学与长期监测来深化理解。该综述为生物多样性保护提供了进化视角的理论框架，有助于评估物种脆弱性并指导干预策略。",
-      "reason": "该综述探讨进化拯救机制及其在保护生物学中的应用，可为生物多样性保护提供基础理论参考，但与用户核心课题（植物入侵、能源设施生态影响、面源污染等）直接关联较弱，属于相关但偏外围。",
-      "score": 76,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 32,
-        "type": 17
-      },
-      "citation": "Balstad, L. J., Baskett, M. L., Carlson, S. M., Cunningham, C. J., & Westley, P. A. H. (2026). Revisiting evolutionary rescue in the wild. Trends in Ecology & Evolution. (Available online 30 May 2026)",
-      "generatedAt": "2026-06-06T09:16:13.245Z"
-    },
-    {
-      "id": "trends-ecology-evolution-1-QSBwaW9uZWVy",
-      "title": "A pioneering theory for anticipating changes in population growth?",
-      "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Laura Touzot, Marlène Gamelon",
-      "authors": [
-        "Laura Touzot",
-        "Marlène Gamelon"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "population_traits"
-      ],
-      "oneLine": "提出一种预测种群增长变化的前沿理论。",
-      "summary": "本文探讨了一种预测种群增长变化的前沿理论，该理论或可结合种群统计、环境变量与遗传信息，构建动态模型来前瞻性地估计未来种群波动。相比传统事后分析，这一理论强调过程预测，有助于提前识别受威胁物种并制定保护干预措施。其框架对理解种群衰退、应对气候变化下的生物多样性丧失有理论意义，但实际验证尚需更多实证。对生态学家而言，此文提供了预测种群响应环境变化的新视角，尤其当涉及入侵物种扩散或稀有物种保护时，该方法或许可作为补充工具。尽管不直接针对植物入侵或能源设施影响，其种群动态预测原理可间接应用于入侵植物扩散建模。",
-      "reason": "该文探讨预测种群增长的理论，可能对生物多样性监测有启发，但与植物入侵、能源生态影响等核心方向关联较弱，属于外围相关。",
-      "score": 74,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 30,
-        "type": 17
-      },
-      "citation": "Touzot, L., & Gamelon, M. (2026). A pioneering theory for anticipating changes in population growth? Trends in Ecology & Evolution. Advance online publication.",
-      "generatedAt": "2026-06-06T09:11:33.882Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.261Z"
     },
     {
       "id": "trends-ecology-evolution-5-VGhlIHJlc2hh",
@@ -691,19 +473,20 @@
         }
       ],
       "tags": [
+        "genetics_evolution",
         "climate_anthropogenic"
       ],
-      "oneLine": "气候变暖正在重塑生物生活史性状间的权衡关系，对生态适应与管理提出新挑战。",
-      "summary": "该综述系统探讨了气候变暖如何重塑生物在生长、繁殖、防御等生活史性状之间的权衡关系。作者整合了来自不同生态系统的实证研究，分析了温度升高对代谢速率、资源分配和表型可塑性的影响机制，指出变暖可能导致原有权衡的减弱、强化甚至方向反转。研究发现，变暖背景下物种可能面临新的适应困境，例如繁殖成本增加、抗氧化防御减弱等，这些变化会进一步影响种群动态和群落结构。该文为理解气候变化对生物适应和生态系统功能的深层影响提供了整合性框架，有助于生态管理和保护规划的制定。",
-      "reason": "综述探讨气候变化对生态权衡的普遍重塑，不直接针对用户核心方向（如植物入侵、能源生态影响等），但可为理解生态动态变化提供基础性背景，属于外围相关。",
-      "score": 74,
+      "oneLine": "该研究围绕“The reshaping of trade-offs under climate warming”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“The reshaping of trade-offs under climate warming”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 78,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 30,
+        "theme": 34,
         "type": 17
       },
-      "citation": "Siepielski, A. M., O’Connor, M., Shah, A. A., Mauro, A. A., & Ghalambor, C. K. (2026). The reshaping of trade-offs under climate warming. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:12:40.007Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
       "id": "trends-ecology-evolution-6-TWFyaW5lIGNv",
@@ -744,92 +527,92 @@
         }
       ],
       "tags": [
-        "conservation_management"
+        "genetics_evolution",
+        "conservation_management",
+        "aquatic_microbe"
       ],
-      "oneLine": "综述海洋保护中分类学、红色名录与公众参与的相互关系，强调跨学科合作对防止物种丧失的重要性。",
-      "summary": "本文综述海洋生物多样性保护中分类学、IUCN红色名录评估与公众参与之间的协同关系。分类学为确定物种边界和分布提供基础，红色名录则依赖准确的分类信息评估物种濒危状况，而公众科学项目可扩充观测数据并提升保护意识。文章指出，缺乏分类学支持可能导致保护优先级误判，强调分类学家、保护生物学家和公众需紧密合作，以有效应对海洋物种锐减的危机。该综述为保护决策提供了跨学科整合框架，对推动全球海洋保护行动具有参考价值。",
-      "reason": "综述探讨海洋保护的分类学、红色名录与公众参与，虽属保护生物学范畴，但与用户聚焦的植物入侵、能源设施生态等方向关联较弱，仅有一般性方法启发。",
-      "score": 74,
+      "oneLine": "该研究围绕“Marine conservation: linking taxonomy, Red Listing, and public engagement”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Marine conservation: linking taxonomy, Red Listing, and public engagement”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 78,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 30,
+        "theme": 34,
         "type": 17
       },
-      "citation": "Riehl, T., Böhm, M., Brandão, S. N., Brandt, A., Chen, C., Edgecombe, G. D., Frank, H. J. Z., Gallagher, A. J., Goldburg, R., Hutchings, P., Machado, F. M., Mosbrugger, V., Pollom, R. A., Steger, J., Tandberg, A. H., Thiyagarajan, S., Tilic, E., Torkov, A., Vences, M., & Wasmund, R. (2026). Marine conservation: linking taxonomy, Red Listing, and public engagement. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:13:08.236Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
-      "id": "journal-of-ecology-1-UmljaG5lc3Mg",
-      "title": "Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size",
-      "abstract": "Journal of Ecology, Volume 114, Issue 6, June 2026.",
+      "id": "trends-ecology-evolution-8-U2V4dWFsIHNl",
+      "title": "Sexual selection in plants and animals: toward a unified framework",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Jeanne Tonnabel, Patrice David, Tim Janicke",
       "authors": [
-        "Cristina Herrero‐Jáuregui, Merryn Hunt, Lenore Fahrig, Simon M. Smart"
-      ],
-      "journal": "Journal of Ecology",
-      "type": "ResearchArticle",
-      "doi": "10.1111/1365-2745.70362",
-      "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "professionalJournal",
-          "name": "Journal of Ecology",
-          "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R"
-        }
-      ],
-      "tags": [
-        "landscape_macroecology",
-        "conservation_management"
-      ],
-      "oneLine": "森林专性植物物种丰富度在破碎化本身作用下增加，但边缘效应和小斑块面积导致其减少。",
-      "summary": "该研究探究了栖息地破碎化的不同组分如何影响森林专性植物物种丰富度。通过分析大尺度景观数据，区分了栖息地总量、斑块大小、边缘效应和破碎化本身（斑块数量增加的独立效应）的作用。结果表明，当控制栖息地总量后，森林破碎化本身实际上增加了专性植物物种丰富度，可能因为异质性增加提供了更多生态位；然而，接近森林边缘和斑块面积缩小则显著降低了物种丰富度。这一发现强调了在保护管理中不可简单地将破碎化等同于负面效应，需要精细区分不同机制，为破碎化景观中的森林生物多样性保护提供了重要见解。",
-      "reason": "研究森林破碎化对专性植物的影响，属于景观生态与保护管理，可为生境破碎化下的生物多样性保护提供参考，但未直接涉及用户核心的入侵、能源设施或农田排水等方向。",
-      "score": 74,
-      "scoreBreakdown": {
-        "source": 24,
-        "theme": 33,
-        "type": 17
-      },
-      "citation": "Herrero‐Jáuregui, C., Hunt, M., Fahrig, L., & Smart, S. M. (2026). Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size. Journal of Ecology, 114(6).",
-      "generatedAt": "2026-06-06T09:22:24.697Z"
-    },
-    {
-      "id": "trends-ecology-evolution-3-RW52aXJvbm1l",
-      "title": "Environmentally induced phenotypic diversity drives population overyielding",
-      "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Michael Opoku Adomako, James D. Bever, Bernhard Schmid, Fei-Hai Yu",
-      "authors": [
-        "Michael Opoku Adomako",
-        "James D. Bever",
-        "Bernhard Schmid",
-        "Fei-Hai Yu"
+        "Jeanne Tonnabel",
+        "Patrice David",
+        "Tim Janicke"
       ],
       "journal": "Trends in Ecology & Evolution",
       "type": "Article",
       "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000443?dgcid=rss_sd_all",
       "date": "",
       "sourceSignals": [
         {
           "type": "reviewJournal",
           "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all"
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000443?dgcid=rss_sd_all"
         }
       ],
       "tags": [
-        "population_traits",
-        "community_ecosystem"
+        "genetics_evolution",
+        "plant_agroecology"
       ],
-      "oneLine": "环境诱导的表型多样性通过生态位分化减少种内竞争，从而驱动种群超产。",
-      "summary": "本研究通过理论分析与实证数据，揭示了环境诱导的表型可塑性如何增强种群内个体间的功能差异，从而驱动种群超产现象。研究整合了生态学中的表型可塑性、种内竞争与互补效应等概念，表明在异质环境下，同一基因型个体可通过调整形态、生理等性状占据不同生态位，减少竞争并提高资源利用效率，最终导致种群总生物量超过单一表型情形下的预期产量。文章系统梳理了相关实验证据，包括植物在不同光照、养分条件下的生长响应，并讨论了这一机制在群落构建、生态系统功能及应对环境变化中的应用前景。对于关注生物入侵、退化生态系统恢复或生物多样性-功能关系的读者而言，该研究提供了从个体表型到种群动态的跨尺度理解，有助于思考如何利用种内多样性提升系统稳定性与生产力。",
-      "reason": "论文探讨环境诱导的表型多样性对种群生产力的促进作用，属于种群生态学理论，与用户核心方向有间接联系，如植物入侵的适应性机制或恢复生态中的种内多样性效应，但并非直接命中能源、农田排水或遥感等具体课题。",
-      "score": 73,
+      "oneLine": "该研究围绕“Sexual selection in plants and animals: toward a unified framework”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Sexual selection in plants and animals: toward a unified framework”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 78,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 29,
+        "theme": 34,
         "type": 17
       },
-      "citation": "Adomako, M. O., Bever, J. D., Schmid, B., & Yu, F.-H. (2026). Environmentally induced phenotypic diversity drives population overyielding. Trends in Ecology & Evolution. Advance online publication. https://www.sciencedirect.com/science/article/pii/S0169534726001151",
-      "generatedAt": "2026-06-06T09:12:22.760Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "science-16-TGFuZHNjYXBl",
+      "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
+      "abstract": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026.",
+      "authors": [
+        "Stephen Polasky, Peter L. Hawthorne, Rebecca Chaplin-Kramer, Jeffrey Smith, James S. Gerber, Saleh Mamun, Mary Ruckelshaus, Jason Russ, Rafael Schmitt, Adrian L. Vogl, Adam C. Castonguay, James Douglass, Virginia Kowal, Ian Madden, Richard Sharp, Brent Sohngen, Jinfeng Chang, Gretchen Daily, Martin Philipp Heger, Matthew Holden, Justin Johnson, Lisa Mandle, Eve McDonald-Madden, Urvashi Narain, Deepak Ray, Giovanni Ruta, Paul C. West, Stacie Wolny, Esha Zaveri, Richard Damania"
+      ],
+      "journal": "Science",
+      "type": "ResearchArticle",
+      "doi": "10.1126/science.aea9058",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R",
+      "date": "2026-06-04",
+      "sourceSignals": [
+        {
+          "type": "topJournal",
+          "name": "Science",
+          "url": "https://www.science.org/doi/abs/10.1126/science.aea9058?af=R"
+        }
+      ],
+      "tags": [
+        "landscape_macroecology"
+      ],
+      "oneLine": "该研究围绕“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 77,
+      "scoreBreakdown": {
+        "source": 30,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.257Z"
     },
     {
       "id": "nature-ecology-evolution-2-QmlvZGl2ZXJz",
@@ -856,167 +639,240 @@
         }
       ],
       "tags": [
-        "conservation_management",
-        "community_ecosystem",
-        "climate_anthropogenic"
+        "modeling_methods",
+        "genetics_evolution",
+        "aquatic_microbe"
       ],
-      "oneLine": "模拟研究发现生物多样性丧失可能降低国家信用评级，增加借贷成本。",
-      "summary": "该研究通过情景建模，评估了23个国家在木材生产、野生授粉服务和海洋渔业部分崩溃情境下，主权信用评级和借贷成本的变化。结果显示，生物多样性丧失可能导致国家信用评级下降，推高融资成本，尤其在生态系统依赖度高的国家影响更为显著。研究将生态风险与宏观经济指标挂钩，为保护生物多样性的经济必要性提供了新证据。尽管主题聚焦金融领域，但其揭示的生态系统服务退化引起的连锁经济效应，对思考生态保护与可持续发展的权衡具有参考价值。",
-      "reason": "该研究量化生物多样性丧失对主权信用评级的经济影响，属于生态经济交叉领域，与用户核心的植物入侵、能源生态、面源污染等直接关联较弱，但可启发生态系统服务价值评估思路。",
-      "score": 71,
+      "oneLine": "该研究围绕“Biodiversity loss will decrease the future creditworthiness of nations”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Biodiversity loss will decrease the future creditworthiness of nations”。原始摘要显示，研究关注Scenario modelling reveals how sovereign credit ratings and the cost of borrowing across 23 nations would change under partial collapses in timber production, wild pollination services and marine fisheries.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 77,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 30,
+        "theme": 36,
         "type": 17
       },
-      "citation": "Agarwala, M., Burke, M., Klusak, P., Kraemer, M., Volz, U., & Sovacool, B. K. (2026). Biodiversity loss will decrease the future creditworthiness of nations. Nature Ecology & Evolution. Advance online publication.",
-      "generatedAt": "2026-06-06T09:17:25.887Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
-      "id": "nature-ecology-evolution-1-TGF0aXR1ZGlu",
-      "title": "Latitudinal patterns and environmental correlates of plant root exudation",
-      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03103-4 From an assembled dataset of plant root exudation rate, root traits and environmental covariates, this study shows that the rate of carbon exuded by roots generally increases from high to low latitudes, and soil phosphorus deficiency is the most important influencing factor.",
-      "authors": [
-        "Mengguang Han",
-        "Franciska T. de Vries",
-        "Richard D. Bardgett",
-        "Feng Jiang",
-        "Biao Zhu"
-      ],
+      "id": "nature-ecology-evolution-4-VHdlbnRpZXRo",
+      "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
+      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.",
+      "authors": [],
       "journal": "Nature Ecology & Evolution",
-      "type": "Dataset",
-      "doi": "10.1038/s41559-026-03103-4",
-      "url": "https://www.nature.com/articles/s41559-026-03103-4",
-      "date": "2026-06-05",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03083-5",
+      "url": "https://www.nature.com/articles/s41559-026-03083-5",
+      "date": "2026-06-02",
       "sourceSignals": [
         {
           "type": "professionalJournal",
           "name": "Nature Ecology & Evolution",
-          "url": "https://www.nature.com/articles/s41559-026-03103-4"
+          "url": "https://www.nature.com/articles/s41559-026-03083-5"
         }
       ],
       "tags": [
-        "biogeochemistry",
-        "plant_agroecology",
-        "landscape_macroecology"
+        "genetics_evolution",
+        "climate_anthropogenic",
+        "conservation_management"
       ],
-      "oneLine": "基于全球汇编数据揭示植物根分泌物碳速率从高纬向低纬递增，且主要受土壤磷缺乏调控。",
-      "summary": "该研究通过汇编全球植物根系分泌物速率、根系性状及环境因子数据，揭示了根分泌物碳通量从高纬度向低纬度递增的纬度格局。分析发现，土壤磷缺乏是影响根分泌物速率的最重要环境因素，而非温度或水分。这一数据集为理解植物地下碳分配策略及其对养分限制的响应提供了全球尺度证据，有助于改进陆地碳循环模型中的根际过程参数化。对于生态学家和模型研究者，该数据集合可用于进一步检验植物-土壤反馈、物种分布限制等假说。",
-      "reason": "该研究提供了全球根分泌物速率数据集，属于可复用数据资源，与用户关注的生态遥感、模型和监测数据集方向有一定关联，但不直接涉及植物入侵、能源设施或农业面源污染等核心课题，相关性偏外围。",
-      "score": 70,
+      "oneLine": "该研究围绕“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Twentieth-century insect declines and partial recoveries driven by changes in land use and climate”。原始摘要显示，研究关注Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 77,
       "scoreBreakdown": {
         "source": 24,
-        "theme": 32,
-        "type": 14
-      },
-      "citation": "Han, M., de Vries, F. T., Bardgett, R. D., Jiang, F., & Zhu, B. (2026). Latitudinal patterns and environmental correlates of plant root exudation. Nature Ecology & Evolution.",
-      "generatedAt": "2026-06-06T09:17:07.268Z"
-    },
-    {
-      "id": "science-advances-7-Q29tcGVuc2F0",
-      "title": "Compensatory respiration supports survival during extended heat stress in Microcystis aeruginosa",
-      "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-      "authors": [
-        "Oded Liran, Eli Shemesh, Dan Tchernov, Kevin J. Kunstman, Stefan J. Green, Surabhi Naik, Hagit Zer, Nir Keren, Assaf Sukenik, Reham Kh. Khalil"
-      ],
-      "journal": "Science Advances",
-      "type": "ResearchArticle",
-      "doi": "10.1126/sciadv.adz4338",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz4338?af=R",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "topJournal",
-          "name": "Science Advances",
-          "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz4338?af=R"
-        }
-      ],
-      "tags": [
-        "aquatic_microbe",
-        "climate_anthropogenic"
-      ],
-      "oneLine": "研究揭示铜绿微囊藻在持续高温胁迫下通过补偿性呼吸维持细胞生存的机制。",
-      "summary": "本研究探究了常见水华蓝藻铜绿微囊藻在长期热胁迫下的生存策略。通过生理与分子实验，发现该藻通过增强线粒体呼吸（补偿性呼吸）弥补光合抑制造成的能量亏缺，从而在高温下维持活性。结果揭示了微囊藻应对极端温度的代谢可塑性，为理解全球变暖下蓝藻水华持续机制提供新见解。这一发现有助于预测升温水体中微囊藻的竞争优势及水华风险，虽与用户关注的植物入侵、能源影响等直接关联不强，但为气候变化背景下的生态适应提供了基础知识。",
-      "reason": "研究铜绿微囊藻的热适应机制，与用户核心的植物入侵、能源生态、农田排水等方向关联微弱，仅在水生生态和气候变化背景下有潜在外围价值。",
-      "score": 67,
-      "scoreBreakdown": {
-        "source": 30,
-        "theme": 20,
+        "theme": 36,
         "type": 17
       },
-      "citation": "Liran, O., Shemesh, E., Tchernov, D., Kunstman, K. J., Green, S. J., Naik, S., Zer, H., Keren, N., Sukenik, A., & Khalil, R. K. (2026). Compensatory respiration supports survival during extended heat stress in Microcystis aeruginosa. Science Advances, 12(23).",
-      "generatedAt": "2026-06-06T09:21:07.821Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
-      "id": "trends-ecology-evolution-14-UG9zaXRpdmUg",
-      "title": "Positive turning points: hope in the climate crisis",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marcel Rejmánek",
+      "id": "trends-ecology-evolution-1-QSBwaW9uZWVy",
+      "title": "A pioneering theory for anticipating changes in population growth?",
+      "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Laura Touzot, Marlène Gamelon",
       "authors": [
-        "Marcel Rejmánek"
+        "Laura Touzot",
+        "Marlène Gamelon"
       ],
       "journal": "Trends in Ecology & Evolution",
       "type": "Article",
       "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all",
+      "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all",
       "date": "",
       "sourceSignals": [
         {
           "type": "reviewJournal",
           "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "climate_anthropogenic"
-      ],
-      "oneLine": "一篇关于在气候危机中积极转折点带来希望的生态学展望论文。",
-      "summary": "本文发表于《生态学与进化趋势》，探讨了在气候变化背景下可能出现的积极转折点，分析了生态系统中恢复力、适应和变革的潜在路径，为应对气候危机提供了希望视角。研究通过综合评估生态和社会驱动因素，指出尽管面临严峻挑战，但仍存在扭转不利趋势的机会。此类综合性论述虽未直接聚焦特定生态问题，但其对乐观前景的论证可能为宏观保护管理提供思想启发。",
-      "reason": "这篇论文是关于气候危机中积极转折点的宽泛概念性展望，与用户的核心课题（植物入侵、能源生态影响、农田排水、生态遥感等）无直接关联，仅能提供非常宏观的保护管理思想启发，属于弱相关。",
-      "score": 66,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 22,
-        "type": 17
-      },
-      "citation": "Rejmánek, M. (2026). Positive turning points: hope in the climate crisis. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:15:06.969Z"
-    },
-    {
-      "id": "trends-ecology-evolution-19-Q29sbGVjdGl2",
-      "title": "Collective social niche construction shaping adaptive social networks",
-      "abstract": "Publication date: Available online 28 May 2026 Source: Trends in Ecology & Evolution Author(s): Cédric Sueur, Ricard Solé, Jean-Louis Deneubourg",
-      "authors": [
-        "Cédric Sueur",
-        "Ricard Solé",
-        "Jean-Louis Deneubourg"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all"
+          "url": "https://www.sciencedirect.com/science/article/pii/S016953472600114X?dgcid=rss_sd_all"
         }
       ],
       "tags": [
         "population_traits",
         "genetics_evolution"
       ],
-      "oneLine": "本研究提出集体社会生态位构建塑造适应性社会网络的理论框架，为理解群体行为的进化提供新视角。",
-      "summary": "本文探讨了集体社会生态位构建如何塑造适应性社会网络。社会生态位构建指生物通过活动和选择改变社会环境，进而影响选择压力。文章综合模型与实证，提出集体行为可通过反馈循环形成网络结构，促进合作、信息传递和群体适应性。该框架整合生态位构建理论与网络科学，强调社会网络是动态构建的生态位。这一进化生态学见解有助于理解人类和动物社会的稳健性与脆弱性，但与入侵生态学等直接应用关联有限，其方法论或可为物种入侵的社会机制研究提供启发性视角。",
-      "reason": "研究社会生态位构建和群体网络适应，属于理论进化生态学，与用户核心的植物入侵、能源生态、农田水文等方向关联很弱，仅提供边缘性生态学启发。",
-      "score": 66,
+      "oneLine": "该研究围绕“A pioneering theory for anticipating changes in population growth?”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“A pioneering theory for anticipating changes in population growth?”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 76,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 22,
+        "theme": 32,
         "type": 17
       },
-      "citation": "Sueur, C., Solé, R., & Deneubourg, J.-L. (2026). Collective social niche construction shaping adaptive social networks. Trends in Ecology & Evolution.",
-      "generatedAt": "2026-06-06T09:16:37.940Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-3-RW52aXJvbm1l",
+      "title": "Environmentally induced phenotypic diversity drives population overyielding",
+      "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Michael Opoku Adomako, James D. Bever, Bernhard Schmid, Fei-Hai Yu",
+      "authors": [
+        "Michael Opoku Adomako",
+        "James D. Bever",
+        "Bernhard Schmid",
+        "Fei-Hai Yu"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001151?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "population_traits",
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Environmentally induced phenotypic diversity drives population overyielding”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Environmentally induced phenotypic diversity drives population overyielding”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 76,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-11-TmF2aWdhdGlu",
+      "title": "Navigating transformations from degraded to functional ecosystems",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning",
+      "authors": [
+        "Linda E. Neaves",
+        "Iain J. Gordon",
+        "Adrian D. Manning"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000303?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "community_ecosystem",
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Navigating transformations from degraded to functional ecosystems”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Navigating transformations from degraded to functional ecosystems”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 76,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-15-RXN0YWJsaXNo",
+      "title": "Establishing transboundary protected areas to achieve sustainability",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Wenjie Li, Fang Han, Xuan Liu",
+      "authors": [
+        "Wenjie Li",
+        "Fang Han",
+        "Xuan Liu"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000789?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution",
+        "conservation_management"
+      ],
+      "oneLine": "该研究围绕“Establishing transboundary protected areas to achieve sustainability”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Establishing transboundary protected areas to achieve sustainability”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 76,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-0-TGV2ZWxsaW5n",
+      "title": "Levelling: behaviours that constrain inequality in animal societies",
+      "abstract": "Publication date: Available online 4 June 2026 Source: Trends in Ecology & Evolution Author(s): Danai Papageorgiou, Monique Borgerhoff Mulder, Sarah F. Brosnan, Eli D. Strauss",
+      "authors": [
+        "Danai Papageorgiou",
+        "Monique Borgerhoff Mulder",
+        "Sarah F. Brosnan",
+        "Eli D. Strauss"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001114?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001114?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Levelling: behaviours that constrain inequality in animal societies”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Levelling: behaviours that constrain inequality in animal societies”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
       "id": "trends-ecology-evolution-2-U2Nhbm5pbmcg",
@@ -1057,19 +913,139 @@
         }
       ],
       "tags": [
-        "aquatic_microbe"
+        "genetics_evolution"
       ],
-      "oneLine": "综述有害蓝藻水华的发生、影响与监测方法，属于水域生态学研究。",
-      "summary": "该综述系统梳理了有害蓝藻水华的发生机制、生态影响及监测方法。文章指出，全球气候变暖和富营养化正加剧水华频率与强度，对水质安全、水生生物和人类健康构成威胁。作者评述了遥感、分子生物学和传感器等新兴监测技术，并探讨了预测模型在预警管理中的应用潜力。研究强调多学科整合对防控水华的重要性。对于关注面源污染和生态水文的研究者，文中关于氮磷驱动水华的部分可提供富营养化管理的间接参考，但整体内容偏离植物入侵与能源生态等核心议题。",
-      "reason": "论文主题为有害蓝藻水华的监测与影响，属于水域生态学，与用户核心方向（植物入侵、能源设施生态影响、农田排水面源污染等）仅有间接关联，未直接命中核心课题，相关性弱。",
-      "score": 64,
+      "oneLine": "该研究围绕“Scanning the horizon for harmful cyanobacterial blooms”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Scanning the horizon for harmful cyanobacterial blooms”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 20,
+        "theme": 30,
         "type": 17
       },
-      "citation": "Chang, X., MacIsaac, H. J., Chorus, I., Bullerjahn, G. S., Kurmayer, R., Ahn, C.-Y., Kong, X., Wilhelm, S. W., Wood, S. A., Tang, X., Paerl, H. W., Hilt, S., Jeppesen, E., Hamilton, D. P., Nakano, S.-I., Visser, P., Huisman, J., Wang, H., Song, L., & Mckay, R. M. (2026). Scanning the horizon for harmful cyanobacterial blooms. Trends in Ecology & Evolution.",
-      "generatedAt": "2026-06-06T09:11:57.185Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-7-QW5pbWFsIGN1",
+      "title": "Animal cumulative culture through changing environments",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bradley D. Ohlinger, Josep Call, Mathieu Charbonneau, Takao Sasaki",
+      "authors": [
+        "Bradley D. Ohlinger",
+        "Josep Call",
+        "Mathieu Charbonneau",
+        "Takao Sasaki"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000509?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000509?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Animal cumulative culture through changing environments”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Animal cumulative culture through changing environments”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-9-VG93YXJkIGFu",
+      "title": "Toward an integrated understanding of animal weapons",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Christine W. Miller, Dominic Cram, Sarah M. Lane, Romain Boisseau, Sophia Fitzgerald, Nicole Lopez, Allen J. Moore, Christina J. Painting, Alexandre V. Palaoro, Michael Ryan, Ummat Somjee, Camille Thomas-Bulle, Douglas Emlen, David Labonte",
+      "authors": [
+        "Christine W. Miller",
+        "Dominic Cram",
+        "Sarah M. Lane",
+        "Romain Boisseau",
+        "Sophia Fitzgerald",
+        "Nicole Lopez",
+        "Allen J. Moore",
+        "Christina J. Painting",
+        "Alexandre V. Palaoro",
+        "Michael Ryan",
+        "Ummat Somjee",
+        "Camille Thomas-Bulle",
+        "Douglas Emlen",
+        "David Labonte"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000546?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000546?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Toward an integrated understanding of animal weapons”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Toward an integrated understanding of animal weapons”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
+    },
+    {
+      "id": "trends-ecology-evolution-10-UGh5c2lvbG9n",
+      "title": "Physiological constraints on heat adaptation in birds",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Andreas Nord, Marc T. Freeman, Andrew E. McKechnie",
+      "authors": [
+        "Andreas Nord",
+        "Marc T. Freeman",
+        "Andrew E. McKechnie"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Physiological constraints on heat adaptation in birds”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Physiological constraints on heat adaptation in birds”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
       "id": "trends-ecology-evolution-12-V2hvIGZpbmRz",
@@ -1091,20 +1067,19 @@
         }
       ],
       "tags": [
-        "population_traits",
-        "community_ecosystem"
+        "genetics_evolution"
       ],
-      "oneLine": "动物个性差异在种子寻找中扮演重要角色，影响种子传播和植物更新。",
-      "summary": "本研究探讨了动物个性在种子寻找中的作用。种子传播是许多植物种群动态的关键环节，而动物行为差异可能影响种子的发现和散布。通过综述或实验证据，文章揭示了不同个性类型（如大胆或害羞）的动物在觅食种子时的表现差异，以及这些差异如何进一步影响植物更新和群落组成。研究发现，个性特征可能通过影响取食效率、扩散距离和种子命运，从而在生态系统中产生级联效应。该研究为理解动物行为与植物种群动态的联系提供了新视角，尽管与用户核心研究方向的直接关联有限，但其关于个体差异影响生态系统过程的思路，对生态建模和多样性保护有一定启发。",
-      "reason": "研究关注动物个性如何影响种子寻找行为，属于行为生态学领域，与用户关注的植物入侵、能源设施生态影响、面源污染等核心方向关联较弱。",
-      "score": 64,
+      "oneLine": "该研究围绕“Who finds the seeds? Personality matters”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Who finds the seeds? Personality matters”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 20,
+        "theme": 30,
         "type": 17
       },
-      "citation": "Wang, B. (2026). Who finds the seeds? Personality matters. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:14:21.866Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
       "id": "trends-ecology-evolution-13-TWVjaGFuaXN0",
@@ -1128,147 +1103,313 @@
         }
       ],
       "tags": [
-        "landscape_macroecology",
-        "population_traits",
         "genetics_evolution"
       ],
-      "oneLine": "该综述揭示了伯格曼法则背后由多因素交互驱动的复杂机制，挑战了传统简单热适应解释。",
-      "summary": "本研究对伯格曼法则背后的机制复杂性进行了深入探讨。伯格曼法则描述了恒温动物体型随纬度或温度变化的规律，传统上被视为简单的热适应解释。然而，作者通过整合近期研究指出，该法则的驱动机制远比表面复杂，涉及多因素交互作用，包括热调节、资源可利用性、生活史权衡和遗传约束等。研究强调，不同物种和地理背景下，这些因素的相对重要性可能不同，单一解释无法普适。本文对于理解宏观生态学格局的形成机制有重要意义，提醒生态学家在应用或推广生态地理法则时需谨慎考虑机制异质性。尽管与用户具体研究领域不直接相关，但其对生态学普遍性规律的反思具有方法论启示。",
-      "reason": "该论文聚焦于伯格曼法则的机制复杂性，属于宏观生态学与进化生物学范畴，与用户核心方向（植物入侵、能源设施生态影响、农田排水等）无直接关联，仅具弱相关背景知识价值。",
-      "score": 64,
+      "oneLine": "该研究围绕“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
       "scoreBreakdown": {
         "source": 27,
-        "theme": 20,
+        "theme": 30,
         "type": 17
       },
-      "citation": "Zimova, M., Probst, C. M., & Weeks, B. C. Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:14:39.457Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
-      "id": "wechat-3928350969-2247487422_1",
-      "title": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动",
-      "abstract": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动",
-      "journal": "野火遥感Fire Centre",
-      "type": "News",
+      "id": "trends-ecology-evolution-14-UG9zaXRpdmUg",
+      "title": "Positive turning points: hope in the climate crisis",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marcel Rejmánek",
+      "authors": [
+        "Marcel Rejmánek"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/y5Dn_DTLKztdmnTFgdbjwg",
-      "date": "2026-06-05",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all",
+      "date": "",
       "sourceSignals": [
         {
-          "type": "wechat",
-          "name": "野火遥感Fire Centre",
-          "url": "https://mp.weixin.qq.com/s/y5Dn_DTLKztdmnTFgdbjwg"
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000819?dgcid=rss_sd_all"
         }
       ],
       "tags": [
-        "modeling_methods"
+        "genetics_evolution"
       ],
-      "oneLine": "介绍一种将Google Earth Engine与智能体联动的方法，可用于生态遥感监测，降低使用门槛，提升分析自动化水平。",
-      "summary": "本文介绍了一种将Google Earth Engine与智能体（Agent）联动的新方法GEEMu-Skill，旨在降低遥感数据处理门槛，提升生态监测效率。该方法通过智能体自然语言交互，自动调用GEE的海量地理空间数据与云计算能力，完成影像检索、预处理、指数计算到结果可视化等流程，无需用户编写复杂代码。其优势在于将领域知识融入智能体决策，使研究人员能快速响应环境变化，如植被动态、水体变化或野火监测。对于生态遥感方向，GEEMu-Skill提供了可复用的自动化工具，有助于构建更灵活的监测系统，推动遥感技术在实际保护管理中的应用。",
-      "reason": "该方法直接服务于生态遥感监测、模型开发与自动化分析，可支持用户核心方向中的遥感、模型和监测方法研究。",
-      "score": 63,
+      "oneLine": "该研究围绕“Positive turning points: hope in the climate crisis”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Positive turning points: hope in the climate crisis”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
       "scoreBreakdown": {
-        "source": 10,
-        "theme": 45,
-        "type": 8
+        "source": 27,
+        "theme": 30,
+        "type": 17
       },
-      "citation": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动. (2026, June 5). 野火遥感Fire Centre. Retrieved from https://mp.weixin.qq.com/s/y5Dn_DTLKztdmnTFgdbjwg",
-      "generatedAt": "2026-06-06T09:25:53.838Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.259Z"
     },
     {
-      "id": "wechat-3634184519-2247484316_1",
-      "title": "FCR: 基于机器学习和APSIM-Wheat作物模型的10米分辨率快速冬小麦产量制图",
-      "abstract": "",
-      "journal": "气候韧性农业和智慧农业",
-      "type": "News",
+      "id": "trends-ecology-evolution-17-QWR2aXNvcnkg",
+      "title": "Advisory Board and Contents",
+      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s):",
+      "authors": [],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/firpySJZ0Gr0tgu7Bg7y0g",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001205?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001205?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Advisory Board and Contents”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Advisory Board and Contents”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "trends-ecology-evolution-18-UmV2aXNpdGlu",
+      "title": "Revisiting evolutionary rescue in the wild",
+      "abstract": "Publication date: Available online 30 May 2026 Source: Trends in Ecology & Evolution Author(s): Laurinne J. Balstad, Marissa L. Baskett, Stephanie M. Carlson, Curry J. Cunningham, Peter A.H. Westley",
+      "authors": [
+        "Laurinne J. Balstad",
+        "Marissa L. Baskett",
+        "Stephanie M. Carlson",
+        "Curry J. Cunningham",
+        "Peter A.H. Westley"
+      ],
+      "journal": "Trends in Ecology & Evolution",
+      "type": "Article",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all",
+      "date": "",
+      "sourceSignals": [
+        {
+          "type": "reviewJournal",
+          "name": "Trends in Ecology & Evolution",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001023?dgcid=rss_sd_all"
+        }
+      ],
+      "tags": [
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Revisiting evolutionary rescue in the wild”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Revisiting evolutionary rescue in the wild”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 74,
+      "scoreBreakdown": {
+        "source": 27,
+        "theme": 30,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "nature-ecology-evolution-0-QSBzdHVkeSB0",
+      "title": "Pricing nature into sovereign debt",
+      "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.",
+      "authors": [
+        "Justin Andrew Johnson"
+      ],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03101-6",
+      "url": "https://www.nature.com/articles/s41559-026-03101-6",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03101-6"
+        }
+      ],
+      "tags": [
+        "community_ecosystem",
+        "genetics_evolution"
+      ],
+      "oneLine": "该研究围绕“Pricing nature into sovereign debt”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Pricing nature into sovereign debt”。原始摘要显示，研究关注A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 73,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
+    },
+    {
+      "id": "journal-of-ecology-1-UmljaG5lc3Mg",
+      "title": "Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size",
+      "abstract": "Journal of Ecology, Volume 114, Issue 6, June 2026.",
+      "authors": [
+        "Cristina Herrero‐Jáuregui, Merryn Hunt, Lenore Fahrig, Simon M. Smart"
+      ],
+      "journal": "Journal of Ecology",
+      "type": "ResearchArticle",
+      "doi": "10.1111/1365-2745.70362",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "professionalJournal",
+          "name": "Journal of Ecology",
+          "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70362?af=R"
+        }
+      ],
+      "tags": [
+        "plant_agroecology"
+      ],
+      "oneLine": "该研究围绕“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Richness of forest specialist plant species increases with forest fragmentation per se but decreases with proximity to forest edge and reduced forest patch size”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 73,
+      "scoreBreakdown": {
+        "source": 24,
+        "theme": 32,
+        "type": 17
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    {
+      "id": "nature-ecology-evolution-6-R2VuZSBib2R5",
+      "title": "Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian",
+      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03090-6 Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.",
+      "authors": [
+        "Lan Xu",
+        "Richard Heery",
+        "Damir Baranasic",
+        "Bojan Žunar",
+        "Alvaro Segura Campaña",
+        "Vladimir Ovchinnikov",
+        "Boris Lenhard",
+        "Alex de Mendoza"
+      ],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03090-6",
+      "url": "https://www.nature.com/articles/s41559-026-03090-6",
       "date": "2026-06-02",
       "sourceSignals": [
         {
-          "type": "wechat",
-          "name": "气候韧性农业和智慧农业",
-          "url": "https://mp.weixin.qq.com/s/firpySJZ0Gr0tgu7Bg7y0g"
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03090-6"
         }
       ],
       "tags": [
-        "modeling_methods",
-        "plant_agroecology"
+        "genetics_evolution"
       ],
-      "oneLine": "基于机器学习和APSIM-Wheat作物模型的10米分辨率快速冬小麦产量制图方法",
-      "summary": "本研究提出一种融合机器学习与APSIM-Wheat作物模型的快速冬小麦产量制图方法，在10米空间分辨率下实现大范围产量估算。通过整合遥感数据、气象数据和土壤属性，利用随机森林等算法训练预测模型，并结合作物生长模型模拟结果进行校正，提高产量估算的精度和时效性。该方法在华北平原的案例中验证，表明能够捕捉田块尺度的产量变异，为精准农业管理、粮食安全评估和农业政策制定提供高分辨率数据支持。研究展示了遥感与过程模型结合在作物监测中的应用潜力，对生态遥感方法的发展具有参考价值。",
-      "reason": "论文基于机器学习和APSIM-Wheat作物模型开展10米分辨率冬小麦产量制图，属于生态遥感和模型方法，直接服务用户对监测方法和可复用数据集的需求。",
-      "score": 63,
+      "oneLine": "该研究围绕“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian”。原始摘要显示，研究关注Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 71,
       "scoreBreakdown": {
-        "source": 10,
-        "theme": 45,
-        "type": 8
+        "source": 24,
+        "theme": 30,
+        "type": 17
       },
-      "citation": "气候韧性农业和智慧农业. (2026, June 2). FCR: 基于机器学习和APSIM-Wheat作物模型的10米分辨率快速冬小麦产量制图. https://mp.weixin.qq.com/s/firpySJZ0Gr0tgu7Bg7y0g",
-      "generatedAt": "2026-06-06T09:30:29.219Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
-      "id": "wechat-3622875734-2247484238_1",
-      "title": "亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径",
-      "abstract": "",
-      "journal": "Fire ecology",
-      "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA",
-      "date": "2026-06-05",
+      "id": "nature-ecology-evolution-7-TmluZXR5LXll",
+      "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
+      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.",
+      "authors": [
+        "Felix Neff",
+        "Kurt Bollmann",
+        "Yannick Chittaro",
+        "Martin M. Gossner",
+        "Felix Herzog",
+        "Fränzi Korner-Nievergelt",
+        "Glenn Litsios",
+        "Carlos Martínez-Núñez",
+        "Marco Moretti",
+        "Emmanuel Rey",
+        "Andreas Sanchez",
+        "Eva Knop"
+      ],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Article",
+      "doi": "10.1038/s41559-026-03074-6",
+      "url": "https://www.nature.com/articles/s41559-026-03074-6",
+      "date": "2026-06-02",
       "sourceSignals": [
         {
-          "type": "wechat",
-          "name": "Fire ecology",
-          "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA"
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03074-6"
         }
       ],
       "tags": [
-        "disturbance",
-        "community_ecosystem"
+        "genetics_evolution"
       ],
-      "oneLine": "亚马逊森林在火灾、干旱和风暴等扰动后的恢复路径存在显著差异，火灾影响最为持久。",
-      "summary": "本研究利用遥感与长期监测数据，系统对比了亚马逊东南部森林在火灾、干旱和风暴三种典型扰动后的恢复路径。研究发现不同扰动类型显著影响森林的恢复速率与方向：火灾导致物种组成向耐火先锋种偏移，恢复最慢；干旱引发滞后性树木死亡，恢复轨迹呈非线性；风暴造成林隙动态，有利于次生演替。研究结合多源卫星影像与地面样方，揭示了扰动强度、前期植被状况和气候背景的交互作用。该成果为理解全球变化下热带森林韧性提供了关键证据，对火灾管理、退化林恢复规划具有参考价值，其扰动-恢复框架可启发其他生态系统扰动风险评估。",
-      "reason": "研究扰动后森林恢复，与用户关注的扰动风险相关，但非直接涉及植物入侵或能源设施，提供方法论和背景参考。",
-      "score": 58,
+      "oneLine": "该研究围绕“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Ninety-year trends reveal sharpest insect declines in the mid-twentieth century”。原始摘要显示，研究关注Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 71,
       "scoreBreakdown": {
-        "source": 10,
-        "theme": 40,
-        "type": 8
+        "source": 24,
+        "theme": 30,
+        "type": 17
       },
-      "citation": "亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径. (2026, June 5). Fire ecology. https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA",
-      "generatedAt": "2026-06-06T09:25:34.204Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
-      "id": "wechat-3634184519-2247484321_1",
-      "title": "Science Bulletin：中国高分辨率国家土壤信息网格制图",
-      "abstract": "",
-      "journal": "气候韧性农业和智慧农业",
-      "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw",
-      "date": "2026-06-03",
+      "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
+      "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
+      "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.",
+      "authors": [
+        "Leo Zeitler",
+        "Camille Berthelot"
+      ],
+      "journal": "Nature Ecology & Evolution",
+      "type": "Methods",
+      "doi": "10.1038/s41559-026-03087-1",
+      "url": "https://www.nature.com/articles/s41559-026-03087-1",
+      "date": "2026-06-02",
       "sourceSignals": [
         {
-          "type": "wechat",
-          "name": "气候韧性农业和智慧农业",
-          "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw"
+          "type": "professionalJournal",
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-026-03087-1"
         }
       ],
       "tags": [
-        "modeling_methods"
+        "genetics_evolution"
       ],
-      "oneLine": "中国高分辨率国家土壤信息网格制图研究，为生态模型与环境监测提供了关键基础数据。",
-      "summary": "该研究针对国家尺度土壤属性空间信息匮乏的现状，依托大量覆盖多样的土壤观测样品，结合气候、地形、遥感等多源环境变量，采用先进机器学习算法，构建了高分辨率（如90米）的中国土壤信息网格，预测了土壤有机碳、pH、质地等关键属性。该产品具有全国覆盖、一致性和精细化的优势，为生态模型、水文过程模拟、植被动态分析、农业区划及气候变化影响评估提供了可靠基础数据。对于研究植物入侵与土壤环境的关系、能源设施建设对土壤扰动的影响等生态问题，该数据集可提供本底参照。其方法学和数据共享模式为生态遥感领域树立了典范，加速了数字土壤制图在中国的发展。",
-      "reason": "该研究属于生态遥感和模型方法，提供高分辨率土壤信息网格，可服务于植物入侵、生态水文等方向，但非直接研究入侵或能源设施，相关性明确。",
-      "score": 58,
+      "oneLine": "该研究围绕“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Alignment-free integration of single-nucleus ATAC-seq across species with sPYce”。原始摘要显示，研究关注This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 68,
       "scoreBreakdown": {
-        "source": 10,
-        "theme": 40,
-        "type": 8
+        "source": 24,
+        "theme": 30,
+        "type": 14
       },
-      "citation": "中国高分辨率国家土壤信息网格制图. (2026, June 3). 气候韧性农业和智慧农业. https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw",
-      "generatedAt": "2026-06-06T09:28:43.471Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
       "id": "sciencedaily-agriculture-food-0-QSBoaWRkZW4g",
@@ -1293,248 +1434,123 @@
         }
       ],
       "tags": [
+        "community_ecosystem",
         "biogeochemistry",
-        "climate_anthropogenic"
+        "climate_anthropogenic",
+        "plant_agroecology"
       ],
-      "oneLine": "全球分析表明氮污染可加速或减缓森林土壤呼吸，存在临界点，影响碳储存与气候变化响应。",
-      "summary": "一项大规模的全球分析揭示了氮污染对森林土壤呼吸的复杂影响。研究发现，氮沉降可以加速或显著减缓土壤的自然“呼吸”过程，这取决于生态系统的具体状况。例如，在氮限制的森林中，氮输入可能促进微生物分解和土壤碳释放；而在氮饱和的系统中，氮过量则可能抑制呼吸作用。这些响应存在隐藏的临界点，一旦超过，森林的碳储存能力和对气候变化的响应方式可能发生根本改变。该结果强调，氮不仅是富营养化物质，更是调节森林碳循环的重要因子，为理解全球变化背景下氮-碳耦合机制提供了新证据。",
-      "reason": "该研究探讨氮沉降对森林土壤呼吸的全球影响，与用户关注的氮磷面源污染有一定关联，但聚焦于森林生态系统而非农田排水或沟渠，属于外围但可提供氮生态效应的背景知识。",
-      "score": 56,
+      "oneLine": "该研究围绕“A hidden pollutant is changing how the world's forests breathe”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“A hidden pollutant is changing how the world's forests breathe”。原始摘要显示，研究关注A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 66,
       "scoreBreakdown": {
         "source": 16,
-        "theme": 32,
+        "theme": 42,
         "type": 8
       },
-      "citation": "ScienceDaily. (2026, June 2). A hidden pollutant is changing how the world's forests breathe. https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
-      "generatedAt": "2026-06-06T09:19:15.070Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.260Z"
     },
     {
-      "id": "wechat-3564969279-2247530590_4",
-      "title": "被忽视的种子传播者：我们对于未知领域究竟了解多少？",
-      "abstract": "点点击蓝字关注我们近期，New Phytologist 在线发表了 Sara Beatriz Mendes",
-      "journal": "Wiley生态环境",
+      "id": "nature-0-TmF0dXJlIHN0",
+      "title": "Briefing chat: Spinosaurs with salt glands could have lived in marine environments",
+      "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01831-y Nature staff discuss some of the week’s top science news.",
+      "authors": [
+        "Benjamin Thompson",
+        "Maren Hunsberger"
+      ],
+      "journal": "Nature",
       "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/WQze9LsI-mkXngeoPYqwmw",
-      "date": "2026-06-06",
-      "sourceSignals": [
-        {
-          "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/WQze9LsI-mkXngeoPYqwmw"
-        }
-      ],
-      "tags": [
-        "community_ecosystem",
-        "plant_agroecology"
-      ],
-      "oneLine": "该文章系统梳理了种子传播研究中被忽视的传播者，强调了它们在植物种群与群落动态中的重要性。",
-      "summary": "该研究综述了全球种子传播网络中那些长期被忽视的传播者类群，如爬行动物、昆虫和鱼类等。通过系统文献分析，作者揭示了这些非传统传播者在植物种群动态、群落更新和生物多样性维持中的关键作用。研究发现，许多生态系统高度依赖这些传播者完成种子扩散，其功能丧失可能产生级联效应。尤其值得关注的是，生境破碎化和气候变化正在加剧这些传播者的脆弱性，进而影响植物群落恢复力。该综述为生态保护管理者提供了新视角，强调将更广泛的传播者纳入保护计划，也为理解植物入侵的传播机制提供了潜在研究方向。",
-      "reason": "种子传播与植物入侵扩散机制相关，但该研究侧重传播者多样性而非直接入侵问题，对用户核心方向间接支持。",
-      "score": 54,
-      "scoreBreakdown": {
-        "source": 10,
-        "theme": 36,
-        "type": 8
-      },
-      "citation": "Wiley生态环境. (2026). 被忽视的种子传播者：我们对于未知领域究竟了解多少？. 取自 https://mp.weixin.qq.com/s/WQze9LsI-mkXngeoPYqwmw",
-      "generatedAt": "2026-06-06T09:23:13.000Z"
-    },
-    {
-      "id": "wechat-3564969279-2247530590_3",
-      "title": "被忽视的种子传播者对植物群落的影响：一个未知领域",
-      "abstract": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？",
-      "journal": "Wiley生态环境",
-      "type": "Comment",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/V4G9OiTe3GzvKW2bo9cvJA",
-      "date": "2026-06-06",
-      "sourceSignals": [
-        {
-          "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/V4G9OiTe3GzvKW2bo9cvJA"
-        }
-      ],
-      "tags": [
-        "community_ecosystem",
-        "species_distribution"
-      ],
-      "oneLine": "观点文章探讨被忽视的种子传播者对植物群落和物种分布的影响。",
-      "summary": "本文讨论了在植物群落和物种分布研究中常被忽视的种子传播者类群，指出这些类群可能对种子传播格局、群落构建和物种迁移产生重要影响。通过梳理不同生态系统中被低估的传播者（如无脊椎动物、非典型脊椎动物等），文章强调了认识这些传播者对于理解群落动态、生物多样性维持和物种分布响应气候变化的关键作用。尽管缺乏定量分析，本文为生态学家提供了新视角，尤其对于植物入侵传播机制的思考具有启发意义，值得相关研究者关注。",
-      "reason": "文章探讨被忽视的种子传播者对植物群落的影响，可能间接关联植物入侵传播机制，但未直接涉及用户核心方向，属于相关但偏外围。",
-      "score": 50,
-      "scoreBreakdown": {
-        "source": 10,
-        "theme": 30,
-        "type": 10
-      },
-      "citation": "“被忽视的种子传播者：我们对于未知领域究竟了解多少？” (2026, June 6). Wiley生态环境. https://mp.weixin.qq.com/s/V4G9OiTe3GzvKW2bo9cvJA",
-      "generatedAt": "2026-06-06T09:23:48.719Z"
-    },
-    {
-      "id": "wechat-3564969279-2247530573_3",
-      "title": "Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude",
-      "abstract": "标题：          Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude            中译：          沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
-      "journal": "Wiley生态环境",
-      "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g",
+      "doi": "10.1038/d41586-026-01831-y",
+      "url": "https://www.nature.com/articles/d41586-026-01831-y",
       "date": "2026-06-05",
       "sourceSignals": [
         {
-          "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g"
+          "type": "natureScienceNews",
+          "name": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-01831-y"
         }
       ],
       "tags": [
-        "biogeochemistry",
         "aquatic_microbe"
       ],
-      "oneLine": "本研究揭示了不同海拔湿地甲烷排放对土壤温度的一致响应模式及敏感性差异，为评估气候变化下湿地碳反馈提供了新认识。",
-      "summary": "本研究沿海拔梯度调查了多种湿地生态系统的甲烷排放与土壤温度关系，发现不同海拔湿地甲烷排放均呈现随温度升高而增加的趋同模式，但敏感性存在显著差异，高海拔湿地更为敏感。研究通过原位观测和统计分析，揭示了土壤温度是控制甲烷通量的关键因子，但其调控强度受海拔引起的植被、水文等条件调制。这一发现有助于理解气候变化下湿地甲烷反馈的区域异质性，为湿地管理和碳循环模拟提供了科学依据，对于评估全球变暖背景下湿地生态系统的碳源汇功能转换具有重要意义。",
-      "reason": "该研究探讨湿地甲烷排放对土壤温度的响应，属于湿地生态与生物地球化学范畴，但未直接涉及用户核心方向（如植物入侵、能源设施影响、农田排水、生态遥感等），仅在外围提供生态系统过程认知，需人工判断取舍。",
-      "score": 50,
+      "oneLine": "该研究围绕“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Briefing chat: Spinosaurs with salt glands could have lived in marine environments”。原始摘要显示，研究关注Nature staff discuss some of the week’s top science news.。上线后会由 DeepSeek 将摘要翻译并压缩为中文研究介绍。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 58,
       "scoreBreakdown": {
-        "source": 10,
-        "theme": 32,
+        "source": 20,
+        "theme": 30,
         "type": 8
       },
-      "citation": "作者不详. (2026). Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude. Global Change Biology.",
-      "generatedAt": "2026-06-06T09:26:56.771Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.258Z"
     },
     {
-      "id": "wechat-3564969279-2247530573_2",
-      "title": "New Phytol | 从同源到分工：LRR受体激酶如何决定菌根与根瘤共生特异性？",
-      "abstract": "点击上方蓝字 关注我们近日，中国科学院分子植物科学卓越创新中心谢芳研究组联合广州大学孔凡江教授团队，在 Ne",
-      "journal": "Wiley生态环境",
+      "id": "wechat-3622875734-2247484238_1",
+      "title": "PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径",
+      "abstract": "",
+      "journal": "Fire ecology",
       "type": "News",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/XH10oS2mnXcEfTrLrfu15Q",
+      "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA",
       "date": "2026-06-05",
       "sourceSignals": [
         {
           "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/XH10oS2mnXcEfTrLrfu15Q"
+          "name": "Fire ecology",
+          "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA"
         }
       ],
       "tags": [
-        "community_ecosystem",
+        "disturbance",
+        "conservation_management",
         "plant_agroecology"
       ],
-      "oneLine": "该研究揭示了LRR受体激酶在豆科植物菌根共生与根瘤固氮共生特异性分化中的分子调控机制。",
-      "summary": "该研究通过分子遗传学手段，探究了豆科植物中一类LRR受体激酶如何调控菌根真菌共生与根瘤菌固氮共生的特异性。研究发现，同源基因家族成员在进化过程中发生功能分化，不同成员分别参与识别真菌或细菌信号，从而决定植物是形成菌根还是根瘤。这一机制解释了植物如何精确选择共生伙伴，为理解共生固氮体系的演化提供了关键分子证据。相关成果对通过生物技术提高作物氮营养效率具有潜在应用价值，但并非直接针对用户关注的生态影响评价、保护管理或面源污染等议题。作为基础生态学知识，可为植物-微生物互作网络的后续研究提供参考。",
-      "reason": "研究共生固氮分子机制，属基础植物微生物互作，与用户核心方向（入侵、能源设施、农田面源污染等）直接关联弱，仅提供间接生态知识背景。",
-      "score": 50,
+      "oneLine": "该研究围绕“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 56,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 32,
+        "theme": 38,
         "type": 8
       },
-      "citation": "Wiley生态环境. (2026, June 5). New Phytol | 从同源到分工：LRR受体激酶如何决定菌根与根瘤共生特异性？[微信公众号文章]. Retrieved from https://mp.weixin.qq.com/s/XH10oS2mnXcEfTrLrfu15Q",
-      "generatedAt": "2026-06-06T09:27:31.869Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
     },
     {
-      "id": "wechat-3564969279-2247530567_3",
-      "title": "保护成效支付的成功悖论：瑞典食肉动物共存政策的成本与信任危机",
-      "abstract": "共存激励为何失灵",
+      "id": "wechat-3564969279-2247530567_1",
+      "title": "Journal of Applied Ecology 丨 没有一成不变的模式：城市密集化背景下局地植物多样性对传粉者及传粉服务的性状依赖性效应",
+      "abstract": "Title:          No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city            Time:          2026年5月            DOI:    ...",
       "journal": "Wiley生态环境",
-      "type": "Comment",
+      "type": "News",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w",
+      "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA",
       "date": "2026-06-03",
       "sourceSignals": [
         {
           "type": "wechat",
           "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w"
+          "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA"
         }
       ],
       "tags": [
-        "conservation_management"
+        "population_traits",
+        "climate_anthropogenic",
+        "plant_agroecology"
       ],
-      "oneLine": "瑞典的食肉动物保护成效支付政策可能因补偿不足和信任危机而削弱公众对共存的支持，暴露出经济激励在复杂社会生态系统中应用的局限性。",
-      "summary": "本文评论了瑞典针对大型食肉动物共存实施的保护成效支付（PES）政策。尽管初衷是通过经济补偿提高公众容忍度，但实际效果可能适得其反：固定补偿额度未考虑个体损失差异，导致补偿不足；支付被部分民众视为贿赂，引发公平性质疑和信任危机。研究指出，单纯经济激励难以解决因食肉动物造成的经济与心理双重负担，反而可能削弱地方社区的自愿保护意愿。该案例提醒，设计保护激励措施时需深入理解社会文化背景，避免“一刀切”的支付方案，并强调程序正义与公众参与在提升保护政策有效性中的关键作用。",
-      "reason": "讨论保护成效支付与信任危机，属于保护管理领域，可提供政策设计启发，但与用户核心的植物入侵、能源生态影响、面源污染等方向关联较弱，适合作为外围参考。",
-      "score": 50,
+      "oneLine": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinato。",
+      "summary": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city Time: 2026年5月 DOI: ...",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 56,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 30,
-        "type": 10
-      },
-      "citation": "保护成效支付的成功悖论：瑞典食肉动物共存政策的成本与信任危机. (2026). Wiley生态环境.",
-      "generatedAt": "2026-06-06T09:29:17.530Z"
-    },
-    {
-      "id": "trends-ecology-evolution-10-UGh5c2lvbG9n",
-      "title": "Physiological constraints on heat adaptation in birds",
-      "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Andreas Nord, Marc T. Freeman, Andrew E. McKechnie",
-      "authors": [
-        "Andreas Nord",
-        "Marc T. Freeman",
-        "Andrew E. McKechnie"
-      ],
-      "journal": "Trends in Ecology & Evolution",
-      "type": "Article",
-      "doi": "",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all",
-      "date": "",
-      "sourceSignals": [
-        {
-          "type": "reviewJournal",
-          "name": "Trends in Ecology & Evolution",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0169534726000534?dgcid=rss_sd_all"
-        }
-      ],
-      "tags": [
-        "climate_anthropogenic"
-      ],
-      "oneLine": "该研究探讨了鸟类在高温下生理调节的极限，为理解气候变化对鸟类的影响提供新视角。",
-      "summary": "该论文综述了鸟类在高温适应中的生理限制。作者整合了热耐受性、蒸发冷却和代谢产热等生理机制的研究，探讨了在全球变暖背景下鸟类维持体温平衡的极限。研究发现，尽管部分鸟类可通过行为或生理调节适应短期热浪，但长期高温可能超出其散热能力，导致死亡风险增加。该综述为理解气候变化下鸟类种群的脆弱性提供了理论框架，并指出未来研究需关注不同物种和栖息地的适应差异。",
-      "reason": "研究主题为鸟类生理生态与气候变化，与用户关注的植物入侵、能源设施生态影响、农业面源污染等方向无直接关联。",
-      "score": 49,
-      "scoreBreakdown": {
-        "source": 27,
-        "theme": 5,
-        "type": 17
-      },
-      "citation": "Nord, A., Freeman, M. T., & McKechnie, A. E. (2026). Physiological constraints on heat adaptation in birds. Trends in Ecology & Evolution, 41(6).",
-      "generatedAt": "2026-06-06T09:13:40.854Z"
-    },
-    {
-      "id": "wechat-3564969279-2247530573_4",
-      "title": "Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free-Living Nitrogen Fixation Rate and Its Temperature Sensitivity",
-      "abstract": "标题：          Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity            中译：          土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
-      "journal": "Wiley生态环境",
-      "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw"
-        }
-      ],
-      "tags": [
-        "biogeochemistry",
-        "plant_agroecology",
-        "climate_anthropogenic"
-      ],
-      "oneLine": "研究揭示土壤与微生物共同调控自由生活固氮速率及其温度敏感性的海拔分布格局。",
-      "summary": "该研究探讨了土壤与微生物因素如何共同调控自由生活固氮速率及其温度敏感性在海拔梯度上的分布格局。通过沿海拔样带采集土壤样本并分析其理化性质、微生物群落组成和固氮活性，发现固氮速率和温度敏感性随海拔呈现非线性变化，且主要受到土壤养分有效性、pH和固氮微生物丰度的联合影响。研究揭示了土壤-微生物互作对氮循环的重要作用，为预测气候变化下高山生态系统氮动态提供依据。对于关注全球变化生态和生物地球化学循环的读者具有参考价值。",
-      "reason": "研究自由生活固氮速率的海拔格局及其温度敏感性，与用户核心课题（植物入侵、能源生态影响、农田排水等）关联较弱，属于生物地球化学基础研究，仅可提供背景参考。",
-      "score": 49,
-      "scoreBreakdown": {
-        "source": 10,
-        "theme": 31,
+        "theme": 38,
         "type": 8
       },
-      "citation": "(2026). Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free-Living Nitrogen Fixation Rate and Its Temperature Sensitivity. Wiley生态环境.",
-      "generatedAt": "2026-06-06T09:26:29.162Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.263Z"
     },
     {
       "id": "wechat-3564969279-2247530590_2",
@@ -1554,19 +1570,147 @@
       ],
       "tags": [
         "community_ecosystem",
+        "population_traits",
         "plant_agroecology"
       ],
-      "oneLine": "研究海拔与环境因子如何影响亚热带森林幼苗叶片虫食的变异，涉及昆虫植食与森林更新。",
-      "summary": "该研究通过亚热带森林样地调查，探讨了海拔梯度及光照、土壤等环境因子对幼苗叶片虫食变异的影响。结果发现，虫食的变异性而非均值受到海拔和环境的显著驱动，阐明了小尺度异质性在维持植食动态中的关键作用。研究方法整合了野外调查与统计建模，为理解森林更新和生物多样性维持提供了新视角。尽管未直接涉及入侵或人为干扰，但关于植食过程空间变异性的发现可作为管理或恢复生态学的背景参考。",
-      "reason": "研究关注自然森林生态系统中昆虫植食的变异，与用户核心方向（植物入侵、能源设施影响、农业面源污染等）关联较弱，属于外围生态学背景研究，需人工判断是否保留。",
-      "score": 48,
+      "oneLine": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+      "summary": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 54,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 30,
+        "theme": 36,
         "type": 8
       },
-      "citation": "Altitudinal and environmental factors drive variation, not mean, in leaf herbivory of subtropical forest seedlings. (2026). Journal of Ecology.",
-      "generatedAt": "2026-06-06T09:24:17.287Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.261Z"
+    },
+    {
+      "id": "wechat-3564969279-2247530590_1",
+      "title": "Ecology Letters | 华东师范大学-阿尔伯塔大学生物多样性联合实验室何芳良教授发表最新研究成果！【更新重发】",
+      "abstract": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+      "journal": "Wiley生态环境",
+      "type": "Comment",
+      "doi": "",
+      "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w",
+      "date": "2026-06-06",
+      "sourceSignals": [
+        {
+          "type": "wechat",
+          "name": "Wiley生态环境",
+          "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w"
+        }
+      ],
+      "tags": [
+        "biogeochemistry"
+      ],
+      "oneLine": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+      "summary": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 52,
+      "scoreBreakdown": {
+        "source": 10,
+        "theme": 32,
+        "type": 10
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    {
+      "id": "wechat-3564969279-2247530573_4",
+      "title": "GCB | 土壤与微生物的调控共同决定了自由生活固氮速率及其温度敏感性的海拔分布格局",
+      "abstract": "标题：          Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity            中译：          土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+      "journal": "Wiley生态环境",
+      "type": "News",
+      "doi": "",
+      "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "wechat",
+          "name": "Wiley生态环境",
+          "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw"
+        }
+      ],
+      "tags": [
+        "biogeochemistry",
+        "aquatic_microbe"
+      ],
+      "oneLine": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitr。",
+      "summary": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity 中译： 土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 52,
+      "scoreBreakdown": {
+        "source": 10,
+        "theme": 34,
+        "type": 8
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    {
+      "id": "wechat-3564969279-2247530573_3",
+      "title": "GCB | 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同的敏感性",
+      "abstract": "标题：          Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude            中译：          沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+      "journal": "Wiley生态环境",
+      "type": "News",
+      "doi": "",
+      "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g",
+      "date": "2026-06-05",
+      "sourceSignals": [
+        {
+          "type": "wechat",
+          "name": "Wiley生态环境",
+          "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g"
+        }
+      ],
+      "tags": [
+        "biogeochemistry",
+        "aquatic_microbe"
+      ],
+      "oneLine": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sen。",
+      "summary": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude 中译： 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 52,
+      "scoreBreakdown": {
+        "source": 10,
+        "theme": 34,
+        "type": 8
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
+    },
+    {
+      "id": "wechat-3564969279-2247530567_2",
+      "title": "Journal of Ecology | 叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？",
+      "abstract": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解         📌 文献信息          期刊        ：        Journal of Ecology        （2026）         题目        ：        Defence-related traits drive leaf litter decomposit...",
+      "journal": "Wiley生态环境",
+      "type": "News",
+      "doi": "",
+      "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw",
+      "date": "2026-06-03",
+      "sourceSignals": [
+        {
+          "type": "wechat",
+          "name": "Wiley生态环境",
+          "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw"
+        }
+      ],
+      "tags": [
+        "population_traits",
+        "plant_agroecology"
+      ],
+      "oneLine": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 。",
+      "summary": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 ： Defence-related traits drive leaf litter decomposit...",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 52,
+      "scoreBreakdown": {
+        "source": 10,
+        "theme": 34,
+        "type": 8
+      },
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.263Z"
     },
     {
       "id": "wechat-3634184519-2247484333_1",
@@ -1585,151 +1729,81 @@
         }
       ],
       "tags": [
-        "biogeochemistry",
-        "climate_anthropogenic"
+        "biogeochemistry"
       ],
-      "oneLine": "通过全球氮排放削减策略推动可持续发展目标，揭示氮管理环境协同效益。",
-      "summary": "面对全球活性氮过量排放带来的水污染、气候变化等挑战，本研究提出将全球氮排放削减三分之一的战略途径，以助力实现2030年可持续发展目标。通过整合氮循环模型和多部门情景分析，评估了农业、工业及废弃物处理等关键源的减排潜力，并探讨了技术、政策与管理措施的协同组合。结果显示，协调一致的全球行动可显著降低氮污染，同时保障粮食安全、改善空气质量并减缓温室效应。该研究为各国制定氮素管理政策和面源污染防控提供了科学依据，对从事农业环境与生态管理的研究者具有宏观参考价值。",
-      "reason": "论文聚焦全球氮排放削减与可持续发展，属于氮循环管理宏观研究，与用户关注的农田面源污染和氮磷管理有一定关联，但非直接核心课题，属外围相关。",
-      "score": 48,
+      "oneLine": "该研究围绕“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 50,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 30,
+        "theme": 32,
         "type": 8
       },
-      "citation": "气候韧性农业和智慧农业. (2026, June 4). 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标. 检索自 https://mp.weixin.qq.com/s/o4rfIHPzxzTohZ2XKfTuNA",
-      "generatedAt": "2026-06-06T09:28:11.876Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
     },
     {
-      "id": "wechat-3564969279-2247530567_2",
-      "title": "叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？",
-      "abstract": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解         📌 文献信息          期刊        ：        Journal of Ecology        （2026）         题目        ：        Defence-related traits drive leaf litter decomposit...",
-      "journal": "Wiley生态环境",
+      "id": "wechat-3634184519-2247484321_1",
+      "title": "Science Bulletin：中国高分辨率国家土壤信息网格制图",
+      "abstract": "",
+      "journal": "气候韧性农业和智慧农业",
       "type": "News",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw",
+      "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw",
       "date": "2026-06-03",
       "sourceSignals": [
         {
           "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw"
+          "name": "气候韧性农业和智慧农业",
+          "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw"
         }
       ],
       "tags": [
-        "biogeochemistry",
-        "plant_agroecology"
+        "biogeochemistry"
       ],
-      "oneLine": "亚热带森林中，防御性状比生长或形态性状更能主导叶片凋落物的分解速率。",
-      "summary": "该研究在亚热带森林中系统比较了植物生长性状、大小形态性状与防御性状对叶片凋落物分解速率的影响。通过野外凋落物袋实验和多性状测量，发现相比传统关注的比叶面积、叶片大小等生长或形态指标，物理或化学防御相关性状（如叶片韧性、单宁含量）更能解释分解速率的差异。这一发现强调在预测凋落物分解和碳、养分归还时不能忽视植物防御策略的作用，对完善生态系统养分循环模型具有启发意义。研究虽聚焦自然森林，但可为农田防护林、湿地植被管理中的凋落物养分释放提供方法参考，其性状-分解框架也有助于评估外来入侵植物凋落物对土壤养分循环的可能影响。",
-      "reason": "该研究探讨亚热带森林叶片凋落物分解的性状驱动机制，属于基础生态学，与用户重点关注的植物入侵、能源生态、农田排水等方向直接关联较弱，但可为理解生态系统养分循环提供背景知识，需人工判断是否纳入。",
-      "score": 48,
+      "oneLine": "该研究围绕“Science Bulletin：中国高分辨率国家土壤信息网格制图”展开，具体结论需结合原文摘要进一步确认。",
+      "summary": "该研究题为“Science Bulletin：中国高分辨率国家土壤信息网格制图”。当前 RSS 未提供有效摘要，需要打开原文查看研究对象、方法和主要结论。",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 50,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 30,
+        "theme": 32,
         "type": 8
       },
-      "citation": "叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？ Journal of Ecology, 2026.",
-      "generatedAt": "2026-06-06T09:29:47.866Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.262Z"
     },
     {
-      "id": "wechat-3564969279-2247530567_1",
-      "title": "No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city",
-      "abstract": "Title:          No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city            Time:          2026年5月            DOI:    ...",
-      "journal": "Wiley生态环境",
-      "type": "News",
-      "doi": "",
-      "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA",
-      "date": "2026-06-03",
-      "sourceSignals": [
-        {
-          "type": "wechat",
-          "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA"
-        }
-      ],
-      "tags": [
-        "community_ecosystem",
-        "climate_anthropogenic"
-      ],
-      "oneLine": "城市密集化背景下，本地植物多样性对传粉者的影响因功能性状而异，不存在“一刀切”的模式。",
-      "summary": "该研究在城市密集化背景下，分析了本地植物功能性状如何调节植物多样性对传粉者多样性和传粉服务的影响。结果表明，植物多样性对传粉者的正面效应并非普适，而是依赖于开花植物的资源供给性状（如花蜜量、花期长度）以及城市生境破碎化程度。在高密度城区，特定性状组合的植物才能有效维持传粉网络与授粉效率。研究强调了基于功能性状的景观设计对城市生物多样性保护的重要性，也为理解人为干扰下群落结构对生态服务的影响提供了性状介导的视角。对于我们的生态恢复与保护管理方向，该研究提示在评价生物多样性效应时需纳入功能性状，具有一定方法参考价值。",
-      "reason": "研究城市密集化对传粉的影响，属于生物多样性与人为扰动范畴，可间接为保护管理提供背景，但未直接命中植物入侵、能源设施、农田排水等核心课题，相关性偏外围，需人工判断保留。",
-      "score": 48,
-      "scoreBreakdown": {
-        "source": 10,
-        "theme": 30,
-        "type": 8
-      },
-      "citation": "No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city. (2026). Journal of Applied Ecology. 转载于 Wiley生态环境.",
-      "generatedAt": "2026-06-06T09:30:12.586Z"
-    },
-    {
-      "id": "science-news-2-RXh0aW5jdCBi",
-      "title": "Extinct brown bear had a surprising diet",
-      "abstract": "Unlike their modern counterparts, Atlas bears were strict vegetarians",
-      "authors": [
-        "Jake Buehler"
-      ],
-      "journal": "Science News",
-      "type": "News",
-      "doi": "",
-      "url": "https://www.science.org/content/article/extinct-brown-bear-had-surprising-diet",
-      "date": "2026-06-05",
-      "sourceSignals": [
-        {
-          "type": "natureScienceNews",
-          "name": "Science News",
-          "url": "https://www.science.org/content/article/extinct-brown-bear-had-surprising-diet"
-        }
-      ],
-      "tags": [
-        "genetics_evolution",
-        "population_traits"
-      ],
-      "oneLine": "已灭绝的阿特拉斯棕熊是严格素食者，研究其饮食生态。",
-      "summary": "科学家通过分析阿特拉斯棕熊化石的稳定同位素和牙齿微磨损，发现这种已灭绝的北非棕熊亚种是严格的植食动物，与现代杂食性棕熊截然不同。研究表明，它们主要取食植物，这种特化食性可能使其在人类活动压力下更容易灭绝。该发现揭示了棕熊食性演化中曾被忽视的植食分支，并提示在古生态重建中需重新审视已灭绝物种的生态角色。尽管与当前关注的生态保护核心议题关联较弱，但其同位素与微磨损结合的分析方法对动物食性监测有一定参考价值。",
-      "reason": "研究古生物饮食生态，与用户核心方向（植物入侵、能源设施生态影响、农田排水、生态遥感等）无直接关联。",
-      "score": 36,
-      "scoreBreakdown": {
-        "source": 20,
-        "theme": 8,
-        "type": 8
-      },
-      "citation": "Buehler, J. (2026, June 5). Extinct brown bear had a surprising diet. Science News. https://www.science.org/content/article/extinct-brown-bear-had-surprising-diet",
-      "generatedAt": "2026-06-06T09:20:02.436Z"
-    },
-    {
-      "id": "wechat-3564969279-2247530590_1",
-      "title": "树木径向生长固碳的生态学机制研究",
-      "abstract": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+      "id": "wechat-3564969279-2247530567_3",
+      "title": "【Conservation Letters】保护成效支付的成功悖论揭示瑞典食肉动物共存政策的成本与信任危机",
+      "abstract": "共存激励为何失灵",
       "journal": "Wiley生态环境",
       "type": "Comment",
       "doi": "",
-      "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w",
-      "date": "2026-06-06",
+      "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w",
+      "date": "2026-06-03",
       "sourceSignals": [
         {
           "type": "wechat",
           "name": "Wiley生态环境",
-          "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w"
+          "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w"
         }
       ],
       "tags": [
-        "plant_agroecology",
-        "biogeochemistry"
+        "conservation_management"
       ],
-      "oneLine": "本研究揭示了树木通过径向生长将光合碳长期固定在木质部中的生理生态机制。",
-      "summary": "该研究由华东师范大学-阿尔伯塔大学联合实验室何芳良教授团队完成，发表于Ecology Letters，探讨了树木如何通过径向生长将光合作用固定的碳转化为木质素等稳定化合物，长期储存于木质部中。研究利用树木年轮分析等方法，揭示了碳从短期光合产物到长期结构碳库的转化路径与关键调控因素。这一发现深化了对森林生态系统碳循环过程的理解，为评估和提升森林碳汇功能提供了生理生态学依据，对气候变化背景下的碳管理具有指导意义。尽管该研究不直接针对用户关注的生态问题，但其对生物地球化学循环的贡献值得相关领域学者关注。",
-      "reason": "该研究专注树木径向生长固碳机制，与用户核心方向（植物入侵、能源生态、农业面源污染、生态遥感等）无直接交集，属于基础生态学，相关性低。",
-      "score": 30,
+      "oneLine": "共存激励为何失灵。",
+      "summary": "共存激励为何失灵",
+      "reason": "通过主题预筛并进入三维评分。",
+      "score": 50,
       "scoreBreakdown": {
         "source": 10,
-        "theme": 10,
+        "theme": 30,
         "type": 10
       },
-      "citation": "何芳良. (2026, June 6). Ecology Letters最新研究成果：树木径向生长固碳机制. Wiley生态环境.",
-      "generatedAt": "2026-06-06T09:25:06.406Z"
+      "citation": "",
+      "generatedAt": "2026-06-06T09:00:02.263Z"
     }
   ]
 }
