@@ -3,6 +3,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const SOURCES = path.join(ROOT, "config", "sources.json");
+const WECHAT_CANDIDATES = path.join(ROOT, "data", "wechat-candidates.json");
 const OUTPUT = path.join(ROOT, "data", "candidates.json");
 const LOOKBACK_DAYS = Number(process.env.PAPER_DAILY_LOOKBACK_DAYS || 5);
 const MAX_PER_SOURCE = Number(process.env.PAPER_DAILY_MAX_PER_SOURCE || 20);
@@ -205,9 +206,20 @@ async function main() {
   const sources = JSON.parse(await fs.readFile(SOURCES, "utf8"));
   const enabled = sources.filter((source) => source.category !== "wechat" || source.feedUrl);
   const batches = await Promise.all(enabled.map(readSource));
-  const candidates = mergeCandidates(batches.flat());
+  const localWechat = await readLocalWechatCandidates();
+  const candidates = mergeCandidates([...batches.flat(), ...localWechat]);
   await fs.writeFile(OUTPUT, `${JSON.stringify(candidates, null, 2)}\n`);
-  console.log(`Wrote ${OUTPUT} with ${candidates.length} candidate(s).`);
+  console.log(`Wrote ${OUTPUT} with ${candidates.length} candidate(s), including ${localWechat.length} local WeChat candidate(s).`);
+}
+
+async function readLocalWechatCandidates() {
+  try {
+    const data = JSON.parse(await fs.readFile(WECHAT_CANDIDATES, "utf8"));
+    const items = Array.isArray(data) ? data : data.items || [];
+    return items.filter((item) => item && item.title && isRecent(item));
+  } catch {
+    return [];
+  }
 }
 
 main().catch((error) => {

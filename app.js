@@ -170,41 +170,6 @@ const sources = [
   ["微信公众号", "生态学者（Ecologist-all）", "wechat", 4, 2]
 ];
 
-const wechatTools = [
-  {
-    name: "wewe-rss",
-    repo: "cooderl/wewe-rss",
-    stars: "9.5k",
-    status: "已归档",
-    fit: "暂缓",
-    note: "星标最高，功能成熟，但 2026-05-11 已归档，只适合作为方案参考或短期试验。"
-  },
-  {
-    name: "we-mp-rss",
-    repo: "rachelos/we-mp-rss",
-    stars: "3.4k",
-    status: "活跃",
-    fit: "推荐",
-    note: "Docker 启动简单，支持 RSS、Markdown/PDF/JSON、定时更新和 Webhook，适合私有化接入。"
-  },
-  {
-    name: "Wechat2RSS",
-    repo: "ttttmr/Wechat2RSS",
-    stars: "1.4k",
-    status: "服务型",
-    fit: "备选",
-    note: "公开服务已收录 300+ 公众号，适合先验证需求；私有部署偏付费软件路线。"
-  },
-  {
-    name: "wechat-download-api",
-    repo: "tmwgsicp/wechat-download-api",
-    stars: "373",
-    status: "增长中",
-    fit: "备选",
-    note: "API 服务形式，支持 RSS 和代理池，但 star 较低，适合后期技术验证。"
-  }
-];
-
 const sourceQualityScores = {
   topJournal: 30,
   reviewJournal: 27,
@@ -235,21 +200,21 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "补充泛生态学预筛：综合期刊、新闻报道和微信公众号来源会先判断是否属于生态学相关研究，再进入主题匹配和评分。补齐当前目标期刊的 RSS 配置，新增 Journal of Ecology，并完善 Science、Science Advances、Annual Review、Trends、Frontiers 和 Ecology Letters 等来源；修正 Science、Science Advances 和 Science News 等信源归类。论文动态和日报按近 5 日分日展示，日报每天单独筛选 Top 10。信源添加页增加信源分、权重显示；移除易误触的删除操作，修改按钮改为定位到 sources.json 对应条目，重复添加同名信源时也会定位提示。修复部分 RSS 条目标题退化为期刊名、标题跳转到 RSS feed 页，以及 DOI 在引用和 DOI 行重复显示的问题。自动更新时间调整为北京时间每日 08:00。"
+      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，上传 GitHub 后合并评分。\\n3. 推荐：增加泛生态学预筛，日报按日期分别展示每日 Top 10。\\n4. 页面：精简引用显示，修复 RSS 标题、链接和 DOI 重复问题；论文标题和来源链接改为新窗口打开；自动更新时间改为北京时间 08:00。"
   },
   {
     version: "2026-06-05",
     date: "今日更新",
     title: "Paper Daily 原型上线",
     body:
-      "完成 Paper Daily 的基础页面：全部论文动态、论文日报、信源添加和更新日志。论文动态页支持按信源类型浏览、展示近 5 日信息，并按日期分别统计每日主题；论文日报按日期展示近 5 日结果，每天单独筛选质量分 Top 10；论文条目支持原始论文链接、DOI、参考文献和多来源折叠；信源添加页开始支持把期刊、新闻和公众号来源整理成后续可使用的信源配置，并对同名信源执行更新而非重复添加。"
+      "1. 页面：建立全部论文动态、论文日报、信源添加和更新日志。\\n2. 信源：支持综合期刊、专业期刊、新闻报道和微信公众号分类。\\n3. 推荐：按信源、主题和论文类型计算质量分，并支持 like/不喜欢反馈。"
   },
   {
     version: "next",
     date: "计划中",
     title: "功能完善方向",
     body:
-      "下一步优先完善信源添加方式，让期刊网页、RSS、新闻报道和微信公众号订阅更容易维护；完善公众号订阅接入，让公众号推荐能稳定进入论文候选池；完善偏好主题反馈，让 like/不喜欢更好地影响后续推荐；继续调试评分系统，让精选日报更符合个人研究关注。"
+      "1. 信源：继续完善公众号订阅和本地导入流程。\\n2. 推荐：优化主题反馈对质量分的影响。\\n3. 页面：继续减少重复字段，突出推荐理由和原文入口。"
   }
 ];
 
@@ -279,6 +244,16 @@ function stripDoiFromCitation(citation = "", doi = "") {
       .replace(new RegExp(`doi:?\\s*${escaped}`, "ig"), "");
   }
   return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
+}
+
+function compactCitation(paper) {
+  const year = (paper.date || "").slice(0, 4) || (paper.citation || "").match(/\b(19|20)\d{2}\b/)?.[0] || "";
+  const citation = stripDoiFromCitation(paper.citation || "", paper.doi);
+  let author = "";
+  const authorMatch = citation.match(/^(.+?)\s*\((?:19|20)\d{2}\)/);
+  if (authorMatch) author = authorMatch[1].trim();
+  if (!author || author === paper.title || author === paper.source) author = "";
+  return [author, year].filter(Boolean).join(" · ");
 }
 
 function inferTitleFromText(abstract = "", journal = "", doi = "") {
@@ -540,15 +515,15 @@ function sourceSignalLabel(type) {
 }
 
 function referenceBlock(paper) {
-  const citation = stripDoiFromCitation(paper.citation || paper.title, paper.doi);
+  const citation = compactCitation(paper);
   return `
     <div class="reference-block">
-      <p>${citation}</p>
+      ${citation ? `<p>${citation}</p>` : ""}
       ${paper.doi ? `<div class="doi-line">DOI: ${paper.doi}</div>` : ""}
       <div class="reference-links">
-        <a href="${paper.paperUrl}">原始论文</a>
+        <a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">原始论文</a>
         ${(paper.sourceUrls || [])
-          .map((item) => `<a href="${item.url}">${item.label}</a>`)
+          .map((item) => `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.label}</a>`)
           .join("")}
       </div>
     </div>
@@ -563,7 +538,7 @@ function paperCard(paper) {
     <article class="card paper">
       <div class="paper-top">
         <div>
-          <h2><a href="${paper.paperUrl}">${paper.title}</a></h2>
+          <h2><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></h2>
           <div class="source-line">
             <span>${paper.source}</span>
             <span>${paper.type}</span>
@@ -672,7 +647,7 @@ function renderFeed(filter = activeFeedFilter) {
                 (paper) => `
                   <article class="card feed-item">
                     <div>
-                      <div class="feed-title"><a href="${paper.paperUrl}">${paper.title}</a></div>
+                      <div class="feed-title"><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
                       <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
                       <div class="tag-row feed-tags">
                         ${paper.tags
@@ -1001,24 +976,17 @@ function renderSources() {
     </section>
     <section class="method-section">
       <div class="cluster-head">
-        <strong>微信公众号抓取方案</strong>
-        <span>按 star、维护状态和接入难度排序</span>
+        <strong>微信公众号本地导入</strong>
+        <span>在 Mac 本地完成抓取，再上传候选文件到 GitHub</span>
       </div>
-      <div class="method-list">
-        ${wechatTools
-          .map(
-            (tool) => `
-              <article class="card method-item">
-                <div>
-                  <strong>${tool.name}</strong>
-                  <span>${tool.repo} · ${tool.stars} stars · ${tool.status}</span>
-                </div>
-                <b>${tool.fit}</b>
-                <p>${tool.note}</p>
-              </article>
-            `
-          )
-          .join("")}
+      <div class="card config-export">
+        <div class="wechat-note">
+          <p>公众号订阅在本地 we-mp-rss 中管理；GitHub Pages 不能读取本机数据库，也不能直接运行本地脚本。</p>
+          <p>本地运行导入命令后，会生成 <strong>data/wechat-candidates.json</strong>。上传该文件并运行 GitHub Actions 后，公众号候选会进入评分。</p>
+        </div>
+        <div class="actions">
+          <button class="btn" id="copyWechatCommand">复制本地导入命令</button>
+        </div>
       </div>
     </section>
     <section id="sourceList"></section>
@@ -1153,6 +1121,11 @@ function bindSources() {
     await navigator.clipboard?.writeText(output.value);
   });
 
+  document.querySelector("#copyWechatCommand").addEventListener("click", async () => {
+    await navigator.clipboard?.writeText("cd /Users/xcli/Documents/Codex/prj_paper-daily && node scripts/import-wechat-local.mjs");
+    status.textContent = "已复制本地导入命令。请在 Mac 终端中运行；静态网页不能直接执行本地脚本。";
+  });
+
   document.querySelector("#downloadSourcesConfig").addEventListener("click", () => {
     downloadJson("sources.json", JSON.parse(output.value || "[]"));
   });
@@ -1168,7 +1141,10 @@ function renderChangelog() {
             <article class="card log-item">
               <div class="log-meta">${log.version} · ${log.date}</div>
               <strong>${log.title}</strong>
-              <p>${log.body}</p>
+              <div class="log-body">${log.body
+                .split("\\n")
+                .map((line) => `<p>${line}</p>`)
+                .join("")}</div>
             </article>
           `
         )

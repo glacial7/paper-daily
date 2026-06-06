@@ -110,3 +110,35 @@ The like/dislike buttons are stored in the browser first. To make feedback affec
 `config/topic-feedback.json`
 
 The scoring script reads this file and applies topic preference adjustments after a topic has at least 3 feedback samples.
+
+## Local WeChat import
+
+This project supports a low-cost WeChat workflow:
+
+1. Run `we-mp-rss` on your Mac.
+2. Subscribe to WeChat public accounts locally.
+3. Export recent WeChat articles from the local `we-mp-rss` database into `data/wechat-candidates.json`.
+4. Upload `data/wechat-candidates.json` to GitHub.
+5. Run `Actions -> Update Paper Daily -> Run workflow`.
+
+Setup:
+
+Run:
+
+`node scripts/import-wechat-local.mjs`
+
+This creates:
+
+`data/wechat-candidates.json`
+
+GitHub Actions will merge this file with journal/news RSS candidates during the next scoring run.
+
+By default, the script reads:
+
+`/Users/xcli/data/db.db`
+
+If your `we-mp-rss` data folder changes, run:
+
+`WECHAT_DB_PATH=/path/to/db.db node scripts/import-wechat-local.mjs`
+
+This command must be run in the Mac Terminal from the project folder. A static GitHub Pages website cannot run local scripts or read the local `we-mp-rss` database.

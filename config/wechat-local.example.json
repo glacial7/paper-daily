@@ -1,0 +1,8 @@
+[
+  {
+    "id": "wechat-ecologist-all",
+    "name": "生态学者",
+    "feedUrl": "http://localhost:8001/feeds/example.xml",
+    "weight": 4
+  }
+]

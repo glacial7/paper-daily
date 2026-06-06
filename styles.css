@@ -558,10 +558,20 @@ textarea {
 }
 
 .source-item span,
-.log-item p {
+.log-item p,
+.wechat-note p {
   color: var(--muted);
   line-height: 1.55;
   margin: 0;
+}
+
+.wechat-note {
+  display: grid;
+  gap: 6px;
+}
+
+.wechat-note strong {
+  color: var(--ink);
 }
 
 .source-actions {
@@ -636,6 +646,12 @@ textarea {
   color: var(--muted);
   font-size: 0.82rem;
   margin-bottom: 5px;
+}
+
+.log-body {
+  display: grid;
+  gap: 5px;
+  margin-top: 8px;
 }
 
 .metric-grid {
