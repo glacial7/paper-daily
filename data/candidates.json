@@ -221,24 +221,7 @@
     ]
   },
   {
-    "id": "science-13-U3BvbnRhbmVv",
-    "title": "Spontaneous problem-solving in bumble bees",
-    "abstract": "Science, Volume 392, Issue 6802, Page 1046-1049, June 2026.",
-    "journal": "Science",
-    "type": "Article",
-    "doi": "10.1126/science.ady1618",
-    "url": "https://www.science.org/doi/abs/10.1126/science.ady1618?af=R",
-    "date": "2026-06-04",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science",
-        "url": "https://www.science.org/doi/abs/10.1126/science.ady1618?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-14-VW5leHBlY3Rl",
+    "id": "science-13-VW5leHBlY3Rl",
     "title": "Unexpected expansion and regrowth in Earth’s mangrove forests over the past four decades",
     "abstract": "Science, Volume 392, Issue 6802, Page 1082-1087, June 2026.",
     "journal": "Science",
@@ -255,7 +238,7 @@
     ]
   },
   {
-    "id": "science-15-QSBzdGVsbGFy",
+    "id": "science-14-QSBzdGVsbGFy",
     "title": "A stellar dynamical mass measurement of an inactive black hole at redshift 2",
     "abstract": "Science, Volume 392, Issue 6802, Page 1065-1068, June 2026.",
     "journal": "Science",
@@ -272,7 +255,7 @@
     ]
   },
   {
-    "id": "science-16-TW9sZWN1bGFy",
+    "id": "science-15-TW9sZWN1bGFy",
     "title": "Molecular mimicry of a pathogen virulence target by a plant immune receptor",
     "abstract": "Science, Volume 392, Issue 6802, Page 1050-1055, June 2026.",
     "journal": "Science",
@@ -289,7 +272,7 @@
     ]
   },
   {
-    "id": "science-17-TGFuZHNjYXBl",
+    "id": "science-16-TGFuZHNjYXBl",
     "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
     "abstract": "Science, Volume 392, Issue 6802, Page 1069-1074, June 2026.",
     "journal": "Science",
@@ -306,24 +289,24 @@
     ]
   },
   {
-    "id": "science-18-SW4gT3RoZXIg",
-    "title": "In Other Journals",
-    "abstract": "Science, Volume 392, Issue 6802, Page 1037-1038, June 2026.",
+    "id": "science-17-U3BvbnRhbmVv",
+    "title": "Spontaneous problem-solving in bumble bees",
+    "abstract": "Science, Volume 392, Issue 6802, Page 1046-1049, June 2026.",
     "journal": "Science",
     "type": "Article",
-    "doi": "10.1126/science.aej3527",
-    "url": "https://www.science.org/doi/abs/10.1126/science.aej3527?af=R",
+    "doi": "10.1126/science.ady1618",
+    "url": "https://www.science.org/doi/abs/10.1126/science.ady1618?af=R",
     "date": "2026-06-04",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Science",
-        "url": "https://www.science.org/doi/abs/10.1126/science.aej3527?af=R"
+        "url": "https://www.science.org/doi/abs/10.1126/science.ady1618?af=R"
       }
     ]
   },
   {
-    "id": "science-19-QmVsaWV2aW5n",
+    "id": "science-18-QmVsaWV2aW5n",
     "title": "Believing I belong",
     "abstract": "Science, Volume 392, Issue 6802, Page 1094-1094, June 2026.",
     "journal": "Science",
@@ -336,6 +319,23 @@
         "type": "topJournal",
         "name": "Science",
         "url": "https://www.science.org/doi/abs/10.1126/science.aej3528?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-19-SW4gT3RoZXIg",
+    "title": "In Other Journals",
+    "abstract": "Science, Volume 392, Issue 6802, Page 1037-1038, June 2026.",
+    "journal": "Science",
+    "type": "Article",
+    "doi": "10.1126/science.aej3527",
+    "url": "https://www.science.org/doi/abs/10.1126/science.aej3527?af=R",
+    "date": "2026-06-04",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aej3527?af=R"
       }
     ]
   },
@@ -357,7 +357,24 @@
     ]
   },
   {
-    "id": "nature-1-RXVyb3BlIGlz",
+    "id": "nature-1-Rmlyc3QgcHJl",
+    "title": "First precise genome editing of human embryos triggers praise and alarm",
+    "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01827-8 The ‘base editing’ technique that researchers used is far from ready for the clinic, but critics worry it will spur a rush to commercialization.",
+    "journal": "Nature",
+    "type": "Article",
+    "doi": "10.1038/d41586-026-01827-8",
+    "url": "https://www.nature.com/articles/d41586-026-01827-8",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-01827-8"
+      }
+    ]
+  },
+  {
+    "id": "nature-2-RXVyb3BlIGlz",
     "title": "Europe is ditching US tech — what does this mean for researchers?",
     "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01610-9 European governments are choosing European digital tools — and some universities and researchers are doing the same.",
     "journal": "Nature",
@@ -374,7 +391,7 @@
     ]
   },
   {
-    "id": "nature-2-U2VlIGEgaGVs",
+    "id": "nature-3-U2VlIGEgaGVs",
     "title": "See a helicopter destined for Mars and a spectacular flowery frame for the Milky Way — May’s best science images",
     "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01609-2 The month’s sharpest science shots, selected by Nature’s photo team.",
     "journal": "Nature",
@@ -391,7 +408,7 @@
     ]
   },
   {
-    "id": "nature-3-RWxlY3RyaWMg",
+    "id": "nature-4-RWxlY3RyaWMg",
     "title": "Electric vehicles cut pollution in China – and prevent 260,000 premature deaths",
     "abstract": "Nature, Published online: 05 June 2026; doi:10.1038/d41586-026-01781-5 Having fewer fossil-fuel powered cars on the road is reducing some pollutants, but not others.",
     "journal": "Nature",
@@ -408,7 +425,7 @@
     ]
   },
   {
-    "id": "nature-4-QXV0aG9yIENv",
+    "id": "nature-5-QXV0aG9yIENv",
     "title": "Author Correction: Physiology and immunology of a pig-to-human decedent kidney xenotransplant",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/s41586-026-10694-2 Author Correction: Physiology and immunology of a pig-to-human decedent kidney xenotransplant",
     "journal": "Nature",
@@ -425,7 +442,7 @@
     ]
   },
   {
-    "id": "nature-5-RGV2aWNlIGNv",
+    "id": "nature-6-RGV2aWNlIGNv",
     "title": "Device could sniff out fusion reactors secretly making material for a nuclear bomb",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01764-6 Antineutrinos made alongside the production of weapons-grade plutonium could be spotted with existing technology.",
     "journal": "Nature",
@@ -442,7 +459,7 @@
     ]
   },
   {
-    "id": "nature-6-QmFiaWVz4oCZ",
+    "id": "nature-7-QmFiaWVz4oCZ",
     "title": "Babies’ birth weight improves with help of payments to parents",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01765-5 Interventions that included home visits and cash transfers led to more strapping infants in an Indian state.",
     "journal": "Nature",
@@ -459,7 +476,7 @@
     ]
   },
   {
-    "id": "nature-7-VGhpcyBteXN0",
+    "id": "nature-8-VGhpcyBteXN0",
     "title": "This mysterious lung disease affects millions of people — but a drug tested in mice shows promise",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01789-x The therapy activates a protein that could stop pulmonary fibrosis from progressing.",
     "journal": "Nature",
@@ -476,7 +493,7 @@
     ]
   },
   {
-    "id": "nature-8-U2NpZW5jZSB3",
+    "id": "nature-9-U2NpZW5jZSB3",
     "title": "Science with military applications is cited more than civilian-only research",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01770-8 Researchers analysed the scientific impact of dual-use research in US patent records and bibliometric databases.",
     "journal": "Nature",
@@ -493,7 +510,7 @@
     ]
   },
   {
-    "id": "nature-9-V2hhdOKAmXMg",
+    "id": "nature-10-V2hhdOKAmXMg",
     "title": "What’s behind China’s historically high counts of corresponding authors?",
     "abstract": "Nature, Published online: 04 June 2026; doi:10.1038/d41586-026-01623-4 From 2016 to 2020, almost one-third of papers by authors in China had multiple corresponding authors — but policy reforms are expected to have dampened the trend.",
     "journal": "Nature",
@@ -510,7 +527,7 @@
     ]
   },
   {
-    "id": "nature-10-RWRpdG9yaWFs",
+    "id": "nature-11-RWRpdG9yaWFs",
     "title": "Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10727-w Editorial Expression of Concern: Functional proteomic identification of DNA replication proteins by induced proteolysis in vivo",
     "journal": "Nature",
@@ -527,7 +544,7 @@
     ]
   },
   {
-    "id": "nature-11-QUkgaW4gc2Np",
+    "id": "nature-12-QUkgaW4gc2Np",
     "title": "AI in science recruitment: friend or foe? Join our free webinar",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01774-4 Discover the strengths, limitations and risks associated with using artificial intelligence in your science job applications.",
     "journal": "Nature",
@@ -544,7 +561,7 @@
     ]
   },
   {
-    "id": "nature-12-WW91ciBwaG9u",
+    "id": "nature-13-WW91ciBwaG9u",
     "title": "Your phone can use tiny skin-colour changes to measure your heart rate",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/d41586-026-01793-1 Passive heart-rate monitoring during regular phone use could provide early warning of health issues — plus, testing Richard Feynman’s solution to the ‘restaurant dilemma’ problem.",
     "journal": "Nature",
@@ -561,7 +578,7 @@
     ]
   },
   {
-    "id": "nature-13-UmVwbHkgdG86",
+    "id": "nature-14-UmVwbHkgdG86",
     "title": "Reply to: The size of tropical vegetation gross primary production",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10561-0 Reply to: The size of tropical vegetation gross primary production",
     "journal": "Nature",
@@ -578,7 +595,7 @@
     ]
   },
   {
-    "id": "nature-14-VGhlIHNpemUg",
+    "id": "nature-15-VGhlIHNpemUg",
     "title": "The size of tropical vegetation gross primary production",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10562-z The size of tropical vegetation gross primary production",
     "journal": "Nature",
@@ -595,7 +612,7 @@
     ]
   },
   {
-    "id": "nature-15-QSBuYXR1cmFs",
+    "id": "nature-16-QSBuYXR1cmFs",
     "title": "A natural depsipeptide antibiotic binds the E-site of the bacterial ribosome",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10589-2 Improved fractionation strategies can identify antibiotics with previously unseen scaffolds and mechanisms, exemplified by manikomycin from Streptomyces rimosus, which acts by targeting the E-site of the bacterial large ribosomal subunit.",
     "journal": "Nature",
@@ -612,7 +629,7 @@
     ]
   },
   {
-    "id": "nature-16-RWFydGjigJlz",
+    "id": "nature-17-RWFydGjigJlz",
     "title": "Earth’s east–west albedo symmetry",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10624-2 Analysis of a 25-year satellite record shows that Earth has a persistent east–west albedo symmetry split at 27° E, with clear-sky albedo, cloud radiative effect and open-ocean fraction exhibiting a triple symmetry around this meridian.",
     "journal": "Nature",
@@ -629,7 +646,7 @@
     ]
   },
   {
-    "id": "nature-17-UmVsYXRpdmlz",
+    "id": "nature-18-UmVsYXRpdmlz",
     "title": "Relativistic electron acceleration at the bow shock of Jupiter and beyond",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10473-z NASA’s Juno observations show relativistic electron acceleration at the bow shock of Jupiter and establish a universal scaling law linking shock size to maximum cosmic ray energy.",
     "journal": "Nature",
@@ -646,7 +663,7 @@
     ]
   },
   {
-    "id": "nature-18-QWNxdWlyZWQg",
+    "id": "nature-19-QWNxdWlyZWQg",
     "title": "Acquired genetic and cell-state changes in IDH-mutant glioma progression",
     "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10612-6 Longitudinal transcriptomic, chromatin and genomic analyses of the two types of IDH-mutant glioma reveal in detail how disease progression is influenced by interdependent genetic, epigenetic and microenvironmental factors.",
     "journal": "Nature",
@@ -659,23 +676,6 @@
         "type": "topJournal",
         "name": "Nature",
         "url": "https://www.nature.com/articles/s41586-026-10612-6"
-      }
-    ]
-  },
-  {
-    "id": "nature-19-TWluaW5nIHRy",
-    "title": "Mining triggers extensive additional deforestation in sub-Saharan Africa",
-    "abstract": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10551-2 Extensive mining activity leads to large-scale deforestation of dense tropical forests across sub-Saharan Africa, driven particularly by key energy transition minerals such as cobalt.",
-    "journal": "Nature",
-    "type": "Article",
-    "doi": "10.1038/s41586-026-10551-2",
-    "url": "https://www.nature.com/articles/s41586-026-10551-2",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Nature",
-        "url": "https://www.nature.com/articles/s41586-026-10551-2"
       }
     ]
   },
@@ -714,23 +714,6 @@
     ]
   },
   {
-    "id": "nature-reviews-biodiversity-2-VGhlIGFydCBv",
-    "title": "The art of the proposal",
-    "abstract": "Nature Reviews Biodiversity, Published online: 01 June 2026; doi:10.1038/s44358-026-00174-w Nature Reviews Biodiversity mainly publishes commissioned articles, but we also welcome proposals. Understanding what the editors look for in a proposal is the first step towards preparing a successful pitch.",
-    "journal": "Nature Reviews Biodiversity",
-    "type": "Review",
-    "doi": "10.1038/s44358-026-00174-w",
-    "url": "https://www.nature.com/articles/s44358-026-00174-w",
-    "date": "2026-06-01",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Nature Reviews Biodiversity",
-        "url": "https://www.nature.com/articles/s44358-026-00174-w"
-      }
-    ]
-  },
-  {
     "id": "nature-reviews-earth-environment-0-Q29tcG91bmQg",
     "title": "Compound weather and climate events in 2025",
     "abstract": "Nature Reviews Earth & Environment, Published online: 03 June 2026; doi:10.1038/s43017-026-00797-9 Compound weather and climate events in 2025",
@@ -744,57 +727,6 @@
         "type": "reviewJournal",
         "name": "Nature Reviews Earth & Environment",
         "url": "https://www.nature.com/articles/s43017-026-00797-9"
-      }
-    ]
-  },
-  {
-    "id": "nature-reviews-earth-environment-1-V2lsZGZpcmVz",
-    "title": "Wildfires in 2025",
-    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00793-z Globally, fires in 2025 burned the second-lowest area on record since 2002 and emitted the third-lowest CO2 total. Yet, a third successive year of extreme wildfire emissions prevailed in Canada, and catastrophic fires in Los Angeles, South Korea and Europe killed over 90 people and forced over 300,000 evacuations.",
-    "journal": "Nature Reviews Earth & Environment",
-    "type": "Review",
-    "doi": "10.1038/s43017-026-00793-z",
-    "url": "https://www.nature.com/articles/s43017-026-00793-z",
-    "date": "2026-06-01",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Nature Reviews Earth & Environment",
-        "url": "https://www.nature.com/articles/s43017-026-00793-z"
-      }
-    ]
-  },
-  {
-    "id": "nature-reviews-earth-environment-2-Q2xpbWF0ZSBp",
-    "title": "Climate impacts of hydrogen emissions",
-    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00792-0 Although hydrogen is not a direct greenhouse gas, its interactions with atmospheric chemistry lead to indirect climate impacts. This Review discusses sources and sinks of atmospheric hydrogen, including uncertainties and data gaps, and how the warming effect of hydrogen emissions can be estimated and accounted for in policies and standards.",
-    "journal": "Nature Reviews Earth & Environment",
-    "type": "Review",
-    "doi": "10.1038/s43017-026-00792-0",
-    "url": "https://www.nature.com/articles/s43017-026-00792-0",
-    "date": "2026-06-01",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Nature Reviews Earth & Environment",
-        "url": "https://www.nature.com/articles/s43017-026-00792-0"
-      }
-    ]
-  },
-  {
-    "id": "nature-reviews-earth-environment-3-RGVveHlnZW5h",
-    "title": "Deoxygenation in inland freshwater systems",
-    "abstract": "Nature Reviews Earth & Environment, Published online: 01 June 2026; doi:10.1038/s43017-026-00795-x Widespread declines in dissolved oxygen concentrations in lakes and rivers have ecological and socioeconomic consequences. This Review highlights spatial and temporal trends, climate and anthropogenic drivers, impacts and strategies for the management and mitigation of inland freshwater deoxygenation.",
-    "journal": "Nature Reviews Earth & Environment",
-    "type": "Review",
-    "doi": "10.1038/s43017-026-00795-x",
-    "url": "https://www.nature.com/articles/s43017-026-00795-x",
-    "date": "2026-06-01",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Nature Reviews Earth & Environment",
-        "url": "https://www.nature.com/articles/s43017-026-00795-x"
       }
     ]
   },
@@ -1489,6 +1421,108 @@
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
     "type": "Article",
+    "doi": "10.1126/sciadv.adx0930",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx0930?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx0930?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-1-VGhlIGxpZ2Fu",
+    "title": "The ligand preference of LRP1 is regulated by O-glycans",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.adx9875",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx9875?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx9875?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-2-UmVndWxhdGlv",
+    "title": "Regulation of NAT1 activity in modern humans by a novel phosphorylation site",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.ady1666",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady1666?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady1666?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-3-VW5jb3Zlcmlu",
+    "title": "Uncovering functional variants using a high-efficiency PE3-based screening platform",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.ady7359",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady7359?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady7359?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-4-SW5jb3Jwb3Jh",
+    "title": "Incorporating brain-inspired mechanisms for multimodal learning in artificial intelligence",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.ady8751",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady8751?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady8751?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-5-TGlnaHQtYmFz",
+    "title": "Light-based 3D printing of mechanoluminescent living gels loaded with dinoflagellates",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.adz0017",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz0017?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz0017?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-6-TWl0b2Nob25k",
+    "title": "Mitochondrial OXPHOS restricts SARS-CoV-2 replication",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
     "doi": "10.1126/sciadv.adz3081",
     "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz3081?af=R",
     "date": "2026-06-03",
@@ -1501,7 +1535,7 @@
     ]
   },
   {
-    "id": "science-advances-1-Q29tcGVuc2F0",
+    "id": "science-advances-7-Q29tcGVuc2F0",
     "title": "Compensatory respiration supports survival during extended heat stress in Microcystis aeruginosa",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1518,7 +1552,41 @@
     ]
   },
   {
-    "id": "science-advances-2-Q2hhcnRpbmcg",
+    "id": "science-advances-8-QSBzdXN0YWlu",
+    "title": "A sustained living coating for infectious keratitis therapy via probiotic consumption and production effects",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.aea0302",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea0302?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea0302?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-9-T2JzZXJ2YXRp",
+    "title": "Observational constraints from global ice-phase fraction indicate moderate climate sensitivity",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.aea0731",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea0731?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea0731?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-10-Q2hhcnRpbmcg",
     "title": "Charting the human-specific properties of gene expression networks in the infant prefrontal cortex",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1535,7 +1603,24 @@
     ]
   },
   {
-    "id": "science-advances-3-QW04MC1saXBp",
+    "id": "science-advances-11-QSBwb3RhdG8g",
+    "title": "A potato late blight pathogen effector interacts with ENTH-domain protein TOL9a and an activated helper NLR to suppress immunity",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.aea4500",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea4500?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea4500?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-12-QW04MC1saXBp",
     "title": "Am80-lipid nanoparticles serve as an enteric mucosal adjuvant following parenteral immunization with inactivated polio vaccine",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1552,7 +1637,7 @@
     ]
   },
   {
-    "id": "science-advances-4-Tm9uaW52YXNp",
+    "id": "science-advances-13-Tm9uaW52YXNp",
     "title": "Noninvasive optogenetic induction of cardiac arrhythmias alters systemic hemodynamics in mice",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1569,7 +1654,41 @@
     ]
   },
   {
-    "id": "science-advances-5-Q0NEQzMyIGNv",
+    "id": "science-advances-14-RXZvbHV0aW9u",
+    "title": "Evolution of a ZW sex determination system in sticklebacks",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.aeb1484",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1484?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1484?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-15-QSBwbGFudCBw",
+    "title": "A plant pathogen effector blocks stepwise assembly of a helper NLR resistosome",
+    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
+    "journal": "Science Advances",
+    "type": "Article",
+    "doi": "10.1126/sciadv.aeb1931",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1931?af=R",
+    "date": "2026-06-05",
+    "sourceSignals": [
+      {
+        "type": "topJournal",
+        "name": "Science Advances",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1931?af=R"
+      }
+    ]
+  },
+  {
+    "id": "science-advances-16-Q0NEQzMyIGNv",
     "title": "CCDC32 collaborates with the membrane to assemble the AP-2 clathrin adaptor complex",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1586,7 +1705,7 @@
     ]
   },
   {
-    "id": "science-advances-6-SWRlbnRpZmlj",
+    "id": "science-advances-17-SWRlbnRpZmlj",
     "title": "Identification of a shared antigen linking CD4+ T and B cell pathology in Sjögren’s disease",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
@@ -1603,240 +1722,36 @@
     ]
   },
   {
-    "id": "science-advances-7-SGVhdGluZyB0",
-    "title": "Heating the land cools the eastern and equatorial Pacific",
+    "id": "science-advances-18-Rm92ZWF0ZWQg",
+    "title": "Foveated light-field compound imager",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
     "type": "Article",
-    "doi": "10.1126/sciadv.aeb7004",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7004?af=R",
-    "date": "2026-06-03",
+    "doi": "10.1126/sciadv.aeb2738",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb2738?af=R",
+    "date": "2026-06-05",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7004?af=R"
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb2738?af=R"
       }
     ]
   },
   {
-    "id": "science-advances-8-RG9zZS1kZXBl",
-    "title": "Dose-dependent hormone actions at estrogen receptor enhancers specify distinct molecular and biological outcomes",
+    "id": "science-advances-19-RGlmZmVyZW50",
+    "title": "Differential DNA damage response to WRN inhibition identifies a targetable vulnerability in ARID1A-mutated cancers",
     "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
     "journal": "Science Advances",
     "type": "Article",
-    "doi": "10.1126/sciadv.aec2424",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2424?af=R",
-    "date": "2026-06-03",
+    "doi": "10.1126/sciadv.aeb3726",
+    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3726?af=R",
+    "date": "2026-06-05",
     "sourceSignals": [
       {
         "type": "topJournal",
         "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2424?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-9-QSBjaGlwLXNj",
-    "title": "A chip-scale atomic beam for nonclassical light",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec3179",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3179?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3179?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-10-U3ltbWV0cnkt",
-    "title": "Symmetry-locked six-state control of altermagnetism via sliding ferroelectricity",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec5229",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5229?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5229?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-11-U29sLWdlbCBp",
-    "title": "Sol-gel interconvertible 62-component dodecahedra assembled via amide-π–assisted anion-coordination nanoarchitectonics",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec5613",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5613?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5613?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-12-SW5mb3JtYXRp",
-    "title": "Information theory for hypergraph similarity",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec5619",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5619?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5619?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-13-R3Jhbml0aWMg",
-    "title": "Granitic intrusions enhance strain localization and rapid mantle exhumation along an oceanic detachment fault",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec6950",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec6950?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec6950?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-14-UmlzZSBvZiBt",
-    "title": "Rise of modern marine fishes captured in an early Paleocene Lagerstätte",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec8978",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8978?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8978?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-15-SW1hZ2luZyB0",
-    "title": "Imaging thick objects with deep-subangstrom resolution and deep-subpicometer precision",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aec9348",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec9348?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec9348?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-16-SW1hZ2UtYmFz",
-    "title": "Image-based phenotypic sorting of synthetic cells",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aed0860",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0860?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0860?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-17-VGhlIHNrZWxl",
-    "title": "The skeletal muscle slow myosin heavy chain regulates mammalian metabolic homeostasis through the NRF2 pathway",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aed2478",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2478?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2478?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-18-QmlvaW5zcGly",
-    "title": "Bioinspired flow sensor enables underwater robots to estimate motion and detect flow structure",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aed2847",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2847?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2847?af=R"
-      }
-    ]
-  },
-  {
-    "id": "science-advances-19-Qml2YWxlbnQg",
-    "title": "Bivalent impact of social networks on overarming: Insights on the alignment between social and individual interests",
-    "abstract": "Science Advances, Volume 12, Issue 23, June 2026.",
-    "journal": "Science Advances",
-    "type": "Article",
-    "doi": "10.1126/sciadv.aed3904",
-    "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed3904?af=R",
-    "date": "2026-06-03",
-    "sourceSignals": [
-      {
-        "type": "topJournal",
-        "name": "Science Advances",
-        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed3904?af=R"
-      }
-    ]
-  },
-  {
-    "id": "journal-of-ecology-0-RWxldmF0aW9u",
-    "title": "Elevation and environmental factors shape variability rather than the mean of seedling herbivory across subtropical forests",
-    "abstract": "Journal of Ecology, Volume 114, Issue 6, June 2026.",
-    "journal": "Journal of Ecology",
-    "type": "Article",
-    "doi": "10.1111/1365-2745.70360",
-    "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70360?af=R",
-    "date": "2026-06-01",
-    "sourceSignals": [
-      {
-        "type": "professionalJournal",
-        "name": "Journal of Ecology",
-        "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70360?af=R"
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3726?af=R"
       }
     ]
   }
