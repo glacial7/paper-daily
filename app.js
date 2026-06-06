@@ -12,7 +12,7 @@ const papers = [
     sourceType: "comprehensive",
     type: "Article",
     score: 93,
-    tags: ["invasion", "fire"],
+    tags: ["invasion", "disturbance"],
     oneLine: "入侵草本通过改变可燃物连续性和含水量，可能放大火后群落恢复差异。",
     summary:
       "研究聚焦入侵草本植物与火干扰之间的反馈关系，比较了入侵群落和本地群落在可燃物结构、地表覆盖、含水量和火后恢复速度上的差异。论文的价值在于把“入侵改变燃料条件”和“火后入侵优势扩大”连接成可检验机制链条。若原文包含长期样地、实验燃烧或遥感证据，可作为植物入侵与火风险综述中的核心文献。",
@@ -39,7 +39,7 @@ const papers = [
     sourceType: "professional",
     type: "Article",
     score: 89,
-    tags: ["wind", "invasion"],
+    tags: ["climate_anthropogenic", "invasion", "disturbance"],
     oneLine: "风电场道路和施工平台可能形成外来植物扩散廊道，并改变局地生境边缘效应。",
     summary:
       "论文围绕风电场道路、施工平台和输电通道带来的生境破碎化与传播廊道效应，分析外来植物在扰动边缘、道路交汇点和维护通道附近的出现频率。重点值得看的是其是否采用 BACI 设计、景观连通性指标或物种分布模型。如果方法扎实，可直接转化为风电项目外来植物风险分区和野外监测点位设计。",
@@ -65,7 +65,7 @@ const papers = [
     sourceType: "professional",
     type: "Review",
     score: 86,
-    tags: ["drainage"],
+    tags: ["plant_agroecology", "biogeochemistry"],
     oneLine: "沟渠结构、植被配置和水力停留时间共同影响农田排水中的氮磷削减效率。",
     summary:
       "综述总结农田排水沟渠在氮、磷和悬浮颗粒物削减中的作用，比较不同沟渠断面、植被配置、水力停留时间和季节水文条件下的净化效率。日报中应优先保留可量化参数和工程设计建议，例如缓坡、植被带宽度、沉积区设置和维护频率。该类文章适合沉淀为农田面源污染和沟渠生态功能的长期知识卡。",
@@ -88,7 +88,7 @@ const papers = [
     sourceType: "professional",
     type: "Methods",
     score: 82,
-    tags: ["methods", "fire"],
+    tags: ["modeling_methods", "disturbance"],
     oneLine: "多源遥感可用于重建火烧、施工和农业排水扰动后的植被恢复轨迹。",
     summary:
       "方法论文整合光学遥感、雷达或时间序列植被指数，识别扰动后植被恢复轨迹和异常恢复区域。阅读时应关注数据源、空间分辨率、时间窗口、模型泛化能力、代码开放情况，以及是否能迁移到风电扰动、火烧迹地或农田沟渠监测。若有清晰流程和可复用代码，可进入方法工具库。",
@@ -134,7 +134,7 @@ const papers = [
     sourceType: "news",
     type: "News",
     score: 69,
-    tags: ["drainage"],
+    tags: ["plant_agroecology", "biogeochemistry"],
     oneLine: "新闻报道适合发现新论文，但必须回到原论文确认。",
     summary:
       "新闻报道源包括 ScienceDaily、Nature News、期刊官网新闻和研究机构新闻稿。它们适合快速发现新论文和获得通俗摘要，但不能替代原文。抓取时应保存新闻链接、原始论文链接、期刊、发布日期和研究机构。找不到原论文或只有宣传性表述的内容，不进入论文日报精选。",
@@ -148,11 +148,19 @@ const papers = [
 ];
 
 const topicLabels = {
-  invasion: "植物入侵",
-  fire: "火风险",
-  wind: "风电扰动",
-  drainage: "农田排水",
-  methods: "方法工具"
+  modeling_methods: "模型/方法",
+  community_ecosystem: "群落/生态系统",
+  population_traits: "种群/性状",
+  biogeochemistry: "生物地球化学",
+  genetics_evolution: "遗传/进化",
+  landscape_macroecology: "景观/宏生态",
+  species_distribution: "物种分布",
+  climate_anthropogenic: "气候/人类影响",
+  disturbance: "扰动/火生态",
+  invasion: "生物入侵",
+  conservation_management: "保护/管理",
+  plant_agroecology: "植物/农业生态",
+  aquatic_microbe: "水域/微生物"
 };
 
 const sources = [
@@ -181,11 +189,19 @@ const sourceQualityScores = {
 
 const paperTypeScores = {
   Review: 20,
+  SystematicReview: 20,
+  MetaAnalysis: 20,
   Article: 17,
+  ResearchArticle: 17,
   Methods: 14,
   Data: 14,
+  Dataset: 14,
+  Protocol: 14,
+  Resource: 14,
+  Software: 14,
   Perspective: 10,
   Comment: 10,
+  Commentary: 10,
   Correspondence: 8,
   Letter: 8,
   Editorial: 7,
@@ -200,7 +216,7 @@ const logs = [
     date: "今日更新",
     title: "信源与筛选策略完善",
     body:
-      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，上传 GitHub 后合并评分。\\n3. 推荐：增加泛生态学预筛，日报按日期分别展示每日 Top 10。\\n4. 页面：精简引用显示，修复 RSS 标题、链接和 DOI 重复问题；论文标题和来源链接改为新窗口打开；自动更新时间改为北京时间 08:00。"
+      "1. 信源：补齐目标期刊 RSS，修正综合期刊、新闻报道和微信公众号分类。\\n2. 公众号：支持从 Mac 本地 we-mp-rss 数据库导入近 5 日公众号候选，上传 GitHub 后合并评分。\\n3. 推荐：参考生态学主题演变研究，将主题从少数兴趣词扩展为生态学主题组，并保留你的偏好反馈用于精选排序。\\n4. 页面：期刊名、文章类型和生态主题合并为标签；精简引用显示，修复 RSS 标题、链接和 DOI 重复问题；自动更新时间改为北京时间 08:00。"
   },
   {
     version: "2026-06-05",
@@ -276,6 +292,16 @@ function normalizePaperUrl(url = "", doi = "") {
   return url;
 }
 
+function normalizeTags(tags = []) {
+  const aliases = {
+    fire: "disturbance",
+    wind: "climate_anthropogenic",
+    drainage: "plant_agroecology",
+    methods: "modeling_methods"
+  };
+  return [...new Set(tags.map((tag) => aliases[tag] || tag).filter(Boolean))];
+}
+
 function normalizeGeneratedItem(item, index) {
   const sourceSignals = item.sourceSignals || [];
   const firstType = sourceSignals[0]?.type;
@@ -295,13 +321,13 @@ function normalizeGeneratedItem(item, index) {
     sourceType:
       firstType === "topJournal"
         ? "comprehensive"
-        : firstType === "scienceDaily"
+        : firstType === "scienceDaily" || firstType === "natureScienceNews"
           ? "news"
           : firstType === "wechat"
             ? "wechat"
             : "professional",
     type: item.type || "Article",
-    tags: item.tags || [],
+    tags: normalizeTags(item.tags || []),
     oneLine: decodeText(item.oneLine || item.abstract || title),
     summary: decodeText(item.summary || item.abstract || ""),
     reason: "由两阶段模型评分流程生成。",
@@ -514,6 +540,15 @@ function sourceSignalLabel(type) {
   }[type] || "其他";
 }
 
+function paperMetaTags(paper) {
+  const labels = [
+    paper.source,
+    paper.type,
+    ...(paper.tags || []).map((tag) => topicLabels[tag] || tag)
+  ];
+  return [...new Set(labels.filter(Boolean))];
+}
+
 function referenceBlock(paper) {
   const citation = compactCitation(paper);
   return `
@@ -539,9 +574,8 @@ function paperCard(paper) {
       <div class="paper-top">
         <div>
           <h2><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></h2>
-          <div class="source-line">
-            <span>${paper.source}</span>
-            <span>${paper.type}</span>
+          <div class="tag-row">
+            ${paperMetaTags(paper).map((label) => `<span class="tag">${label}</span>`).join("")}
           </div>
         </div>
         <div class="score" aria-label="质量分 ${score}">${score}</div>
@@ -565,9 +599,6 @@ function paperCard(paper) {
         <span>信源 ${parts.source}/30</span>
         <span>主题 ${parts.theme}/50</span>
         <span>类型 ${parts.type}/20</span>
-      </div>
-      <div class="tag-row">
-        ${paper.tags.map((tag) => `<span class="tag">#${tag}</span>`).join("")}
       </div>
     </article>
   `;
@@ -650,8 +681,8 @@ function renderFeed(filter = activeFeedFilter) {
                       <div class="feed-title"><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
                       <div class="feed-desc">${feedFull ? paper.summary : paper.oneLine}</div>
                       <div class="tag-row feed-tags">
-                        ${paper.tags
-                          .map((tag) => `<span class="tag">${topicLabels[tag] || tag}</span>`)
+                        ${paperMetaTags(paper)
+                          .map((label) => `<span class="tag">${label}</span>`)
                           .join("")}
                       </div>
                       ${referenceBlock(paper)}
@@ -954,7 +985,7 @@ function renderSources() {
       </div>
       <div class="field">
         <label for="sourceNote">主题</label>
-        <textarea id="sourceNote" placeholder="invasive plant, wildfire, wind farm, agricultural drainage"></textarea>
+        <textarea id="sourceNote" placeholder="例如：invasion, disturbance, plant ecology, biogeochemistry, remote sensing"></textarea>
       </div>
       <div class="actions">
         <button class="btn primary" id="sourceSubmit" type="submit">加入待提交配置</button>

@@ -13,11 +13,19 @@ const PRESCREEN_MODEL = process.env.DEEPSEEK_PRESCREEN_MODEL || "deepseek-v4-fla
 const SCORE_MODEL = process.env.DEEPSEEK_SCORE_MODEL || "deepseek-v4-pro";
 
 const topicLabels = {
-  invasion: "植物入侵",
-  fire: "火风险",
-  wind: "风电扰动",
-  drainage: "农田排水",
-  methods: "方法工具"
+  modeling_methods: "模型/方法",
+  community_ecosystem: "群落/生态系统",
+  population_traits: "种群/性状",
+  biogeochemistry: "生物地球化学",
+  genetics_evolution: "遗传/进化",
+  landscape_macroecology: "景观/宏生态",
+  species_distribution: "物种分布",
+  climate_anthropogenic: "气候/人类影响",
+  disturbance: "扰动/火生态",
+  invasion: "生物入侵",
+  conservation_management: "保护/管理",
+  plant_agroecology: "植物/农业生态",
+  aquatic_microbe: "水域/微生物"
 };
 
 const sourceQualityScores = {
@@ -31,11 +39,19 @@ const sourceQualityScores = {
 
 const paperTypeScores = {
   Review: 20,
+  SystematicReview: 20,
+  MetaAnalysis: 20,
   Article: 17,
+  ResearchArticle: 17,
   Methods: 14,
   Data: 14,
+  Dataset: 14,
+  Protocol: 14,
+  Resource: 14,
+  Software: 14,
   Perspective: 10,
   Comment: 10,
+  Commentary: 10,
   Correspondence: 8,
   Letter: 8,
   Editorial: 7,
@@ -83,18 +99,26 @@ const PRESCREEN_PROMPT = `
 
 不属于泛生态学的条目应 pass=false，即使来自综合期刊、微信公众号或新闻报道。
 
-用户关注主题：
-- invasion: 植物入侵、生物入侵、外来植物风险、入侵管理
-- fire: 火风险、野火、火干扰、可燃物、火后恢复
-- wind: 风电项目、风电道路、施工扰动、风电场生态影响
-- drainage: 农田排水、沟渠、面源污染、氮磷削减、农业水文
-- methods: 遥感、模型、机器学习、监测方法、数据集
+生态学主题组（tags 只能从这些 key 中选择）：
+- modeling_methods: 生态模型、统计建模、遥感、GIS、机器学习、监测方法、数据集、软件和方法论文
+- community_ecosystem: 群落过程、生态系统功能、食物网、物种互作、生态系统服务
+- population_traits: 种群动态、生活史、性状、运动扩散、存活率、种群统计
+- biogeochemistry: 碳氮磷循环、养分、土壤过程、温室气体、生态水文、植物-土壤过程
+- genetics_evolution: 遗传多样性、基因组、进化、系统发育、适应
+- landscape_macroecology: 景观生态、宏生态、生物地理、大尺度格局、多尺度过程
+- species_distribution: 物种分布、生态位、栖息地适宜性、范围变化
+- climate_anthropogenic: 气候变化、人类影响、土地利用、城市化、农业集约化、能源设施扰动
+- disturbance: 干扰、野火、火生态、干旱、风暴、采伐、施工扰动、恢复轨迹
+- invasion: 外来种、生物入侵、入侵风险、入侵管理
+- conservation_management: 保护生物学、恢复生态、自然保护地、管理政策、生态风险
+- plant_agroecology: 植物生态、森林/草地、农业生态、农田排水、沟渠、作物生态、植食作用
+- aquatic_microbe: 淡水、海洋、湿地、水域过程、微生物生态、微生物组
 
 预筛规则：
 1. 只根据标题、摘要、期刊、文章类型和来源信号判断。
 2. 先判断 isEcology。isEcology=false 时，pass=false。
-3. isEcology=true 且与至少一个关注主题明确相关，pass=true。
-4. isEcology=true 但只是泛泛生态、泛泛农业、泛泛气候变化，无法连接到上述主题，通常 pass=false；如果它明显属于农业生态、城市生态、恢复生态、生物多样性或生态方法，并对用户主题有潜在价值，可给低 relevance 后 pass=true。
+3. isEcology=true 且能归入至少一个生态主题组，pass=true。
+4. 对植物入侵、火生态/扰动、风电或能源设施生态影响、农田排水/氮磷/面源污染、生态遥感/模型/监测方法给予更高 relevance；其他生态学研究可以通过，但 relevance 应按与这些方向的距离降低。
 5. 微信公众号或新闻报道可以作为发现入口；如果内容指向一篇可能相关论文，也可以 pass=true，但仍必须满足 isEcology=true。
 6. 输出严格 JSON，不要输出解释文字。
 `;
@@ -115,10 +139,11 @@ const SCORE_PROMPT = `
 - 0-14: 基本无关。
 
 用户核心方向：
-- 植物入侵与火烧风险
-- 风电项目与植物入侵风险
-- 农田排水与面源污染
-- 生态遥感、模型和监测方法
+- 植物入侵与火烧/扰动风险
+- 风电、太阳能等能源设施的生态影响，尤其是与植物入侵或生境扰动相关的研究
+- 农田排水、沟渠、生态水文、氮磷和面源污染
+- 生态遥感、模型、监测方法和可复用数据集
+- 保护管理、恢复生态和生物多样性变化中能服务上述方向的研究
 
 摘要要求：
 1. 用中文写约 180-220 字。
@@ -186,6 +211,10 @@ function stripDoiFromCitation(citation = "", doi = "") {
   return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
 }
 
+function addTag(tags, tag, matched) {
+  if (matched && !tags.includes(tag)) tags.push(tag);
+}
+
 async function deepseekJson(model, messages) {
   const response = await fetch(DEEPSEEK_URL, {
     method: "POST",
@@ -213,20 +242,30 @@ async function deepseekJson(model, messages) {
 function dryPrescreen(paper) {
   const text = `${paper.title} ${paper.abstract || ""}`.toLowerCase();
   const isEcology =
-    /ecolog|ecosystem|biodiversity|conservation|restoration|urban ecology|agroecolog|agricultural ecology|landscape|community|invasion|invasive|wildfire|fire|drainage|hydrology|remote sensing|vegetation|species distribution|生态|生态学|生物多样性|保护生物学|恢复生态|城市生态|农业生态|景观|群落|生态系统|入侵|火|排水|遥感|植被/.test(
+    /ecolog|ecosystem|biodiversity|conservation|restoration|urban ecology|agroecolog|agricultural ecology|landscape|community|population|species|habitat|trait|biogeochem|carbon|nitrogen|phosphorus|soil|forest|grassland|wetland|freshwater|marine|microbial|microbiome|invasion|invasive|wildfire|fire|disturbance|drainage|hydrology|remote sensing|vegetation|species distribution|climate change|land use|生态|生态学|生物多样性|保护生物学|恢复生态|城市生态|农业生态|景观|群落|种群|物种|栖息地|性状|生态系统|生物地球化学|碳|氮|磷|土壤|森林|草地|湿地|淡水|海洋|微生物|入侵|火|扰动|排水|遥感|植被|气候变化|土地利用/.test(
       text
     );
   const tags = [];
-  if (/入侵|invasion|invasive/.test(text)) tags.push("invasion");
-  if (/火|fire|wildfire/.test(text)) tags.push("fire");
-  if (/风电|wind farm|wind power/.test(text)) tags.push("wind");
-  if (/排水|沟渠|drainage|ditch|phosphorus|nitrogen/.test(text)) tags.push("drainage");
-  if (/遥感|remote sensing|model|machine learning/.test(text)) tags.push("methods");
+  addTag(tags, "modeling_methods", /model|modelling|simulation|remote sensing|machine learning|deep learning|gis|geospatial|dataset|database|software|protocol|模型|模拟|遥感|机器学习|深度学习|地理信息|数据集|数据库|软件|方法/.test(text));
+  addTag(tags, "community_ecosystem", /community|ecosystem|food web|species interaction|ecosystem service|群落|生态系统|食物网|物种互作|生态系统服务/.test(text));
+  addTag(tags, "population_traits", /population|demograph|trait|life history|movement|dispersal|survivorship|种群|性状|生活史|迁移|扩散|存活/.test(text));
+  addTag(tags, "biogeochemistry", /biogeochem|carbon|nitrogen|phosphorus|nutrient|soil|gas flux|greenhouse gas|hydrology|生物地球化学|碳|氮|磷|养分|土壤|温室气体|水文/.test(text));
+  addTag(tags, "genetics_evolution", /genetic|genomic|evolution|phylogen|adaptation|遗传|基因组|进化|系统发育|适应/.test(text));
+  addTag(tags, "landscape_macroecology", /landscape|macroecolog|biogeograph|large scale|large-scale|scale|景观|宏生态|生物地理|大尺度|尺度/.test(text));
+  addTag(tags, "species_distribution", /species distribution|distribution model|range shift|niche|habitat suitability|物种分布|分布模型|范围变化|生态位|栖息地适宜/.test(text));
+  addTag(tags, "climate_anthropogenic", /climate change|warming|anthropogenic|urban|land use|agricultural intensification|wind farm|wind power|renewable|solar|气候变化|增温|人类影响|城市|土地利用|农业集约化|风电|新能源|太阳能/.test(text));
+  addTag(tags, "disturbance", /disturbance|fire|wildfire|drought|storm|logging|construction|restoration trajectory|扰动|火灾|野火|火烧|干旱|风暴|采伐|施工|恢复轨迹/.test(text));
+  addTag(tags, "invasion", /invasion|invasive|alien species|non-native|入侵|外来种|外来物种/.test(text));
+  addTag(tags, "conservation_management", /conservation|restoration|management|policy|protected area|risk assessment|保护|恢复|管理|政策|自然保护地|风险评估/.test(text));
+  addTag(tags, "plant_agroecology", /plant|forest|grassland|herbivor|agronom|agroecolog|crop|drainage|ditch|vegetation|植物|森林|草地|植食|农业生态|农田|作物|排水|沟渠|植被/.test(text));
+  addTag(tags, "aquatic_microbe", /aquatic|freshwater|marine|wetland|microbial|microbiome|水域|淡水|海洋|湿地|微生物|微生物组/.test(text));
+  const priorityTags = ["invasion", "disturbance", "climate_anthropogenic", "plant_agroecology", "biogeochemistry", "modeling_methods"];
+  const priorityBonus = tags.filter((tag) => priorityTags.includes(tag)).length * 2;
   return {
     pass: isEcology && tags.length > 0,
     isEcology,
     tags,
-    relevance: Math.min(40 + Math.max(tags.length - 1, 0) * 2, 50),
+    relevance: Math.min(30 + Math.max(tags.length - 1, 0) * 2 + priorityBonus, 50),
     oneLine: paper.abstract || paper.title
   };
 }

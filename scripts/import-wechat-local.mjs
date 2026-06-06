@@ -21,9 +21,15 @@ function decodeEntities(value = "") {
 
 function inferType(title = "", abstract = "") {
   const text = `${title} ${abstract}`.toLowerCase();
+  if (/systematic review|meta[- ]analysis|系统综述|荟萃/.test(text)) return "SystematicReview";
   if (/review|综述/.test(text)) return "Review";
-  if (/method|protocol|dataset|database|方法|数据/.test(text)) return "Methods";
-  if (/comment|opinion|观点|评论|letter|correspondence/.test(text)) return "Comment";
+  if (/data descriptor|dataset|database|resource|software|数据论文|数据集|数据库|资源|软件/.test(text)) return "Dataset";
+  if (/method|protocol|方法|实验方案/.test(text)) return "Methods";
+  if (/perspective|viewpoint|opinion|观点/.test(text)) return "Perspective";
+  if (/commentary|comment|评论/.test(text)) return "Comment";
+  if (/correspondence|letter|通讯|来信|信件/.test(text)) return "Correspondence";
+  if (/news\s*&\s*views|news and views/.test(text)) return "NewsAndViews";
+  if (/research highlight|研究亮点/.test(text)) return "ResearchHighlight";
   return "News";
 }
 

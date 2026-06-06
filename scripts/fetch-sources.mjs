@@ -60,7 +60,8 @@ function absoluteUrl(url, base) {
 async function fetchText(url) {
   const response = await fetch(url, {
     headers: {
-      "user-agent": "PaperDailyBot/0.1 (+https://github.com/glacial7/paper-daily)"
+      "user-agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) PaperDailyBot/0.1"
     }
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
@@ -89,28 +90,33 @@ function parseFeed(xml, source) {
     let title = firstTag(block, ["title"]);
     const links = allLinks(block);
     const abstract = firstTag(block, ["description", "summary", "content:encoded", "content"]);
+    const typeText = firstTag(block, ["prism:aggregationType", "dc:type", "category", "media:category"]);
     const dateText = firstTag(block, ["pubDate", "published", "updated", "dc:date"]);
     const date = dateText ? new Date(dateText) : null;
     const doiMatch = `${title} ${abstract} ${links.join(" ")}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
     const doi = doiMatch ? doiMatch[0].replace(/[.,;)\]]+$/, "") : "";
-    if (!title || title.trim().toLowerCase() === source.name.toLowerCase()) {
+    const needsTitleHydration = !title || title.trim().toLowerCase() === source.name.toLowerCase();
+    if (needsTitleHydration) {
       title = inferTitleFromAbstract(abstract, source.name, doi) || title;
     }
     const link = chooseArticleLink(links, source, doi) || firstTag(block, ["guid", "id"]);
     const url = resolveArticleUrl(link, source, doi);
+    const itemType = inferType(title, abstract, typeText, source, doi);
+    const signalType = itemType === "News" && source.type === "topJournal" ? "natureScienceNews" : source.type;
 
     return {
       id: `${source.id}-${index}-${Buffer.from(title || link).toString("base64url").slice(0, 12)}`,
       title,
       abstract,
       journal: source.name,
-      type: inferType(title, abstract),
+      type: itemType,
       doi,
       url,
       date: date && !Number.isNaN(date.getTime()) ? date.toISOString().slice(0, 10) : "",
+      _needsTitleHydration: needsTitleHydration,
       sourceSignals: [
         {
-          type: source.type,
+          type: signalType,
           name: source.name,
           url
         }
@@ -146,16 +152,128 @@ function inferTitleFromAbstract(abstract = "", journal = "", doi = "") {
   text = text.replace(/^Published online:\s*[^;]+;\s*/i, "");
   if (doi) text = text.replace(new RegExp(`doi:?\\s*${doi.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "");
   const sentence = text.split(/(?<=[.!?])\s+/)[0] || text;
-  return sentence.length > 12 && sentence.length < 220 ? sentence.trim() : "";
+  if (sentence.length > 12 && sentence.length < 220) return sentence.trim();
+  return text.length > 12 ? text.slice(0, 160).replace(/\s+\S*$/, "").trim() : "";
 }
 
-function inferType(title = "", abstract = "") {
-  const text = `${title} ${abstract}`.toLowerCase();
-  if (/review|综述/.test(text)) return "Review";
-  if (/method|protocol|dataset|data descriptor|database|方法|数据/.test(text)) return "Methods";
-  if (/perspective|comment|opinion|观点|评论/.test(text)) return "Perspective";
-  if (/correspondence|letter|通讯|来信/.test(text)) return "Correspondence";
-  if (/news|highlight|新闻/.test(text)) return "News";
+function cleanMetaTitle(value = "", sourceName = "") {
+  let title = stripHtml(value)
+    .replace(/\s*\|\s*Nature Portfolio\s*$/i, "")
+    .replace(/\s*-\s*Nature\s*$/i, "")
+    .replace(/\s*\|\s*Science\s*$/i, "")
+    .trim();
+  if (sourceName) {
+    title = title.replace(new RegExp(`\\s*[|–-]\\s*${sourceName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "i"), "");
+  }
+  return title.trim();
+}
+
+function metaContent(html, names) {
+  for (const name of names) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const attrFirst = html.match(new RegExp(`<meta[^>]+(?:name|property)=["']${escaped}["'][^>]+content=(["'])([\\s\\S]*?)\\1[^>]*>`, "i"));
+    if (attrFirst) return decodeEntities(attrFirst[2]);
+    const contentFirst = html.match(new RegExp(`<meta[^>]+content=(["'])([\\s\\S]*?)\\1[^>]+(?:name|property)=["']${escaped}["'][^>]*>`, "i"));
+    if (contentFirst) return decodeEntities(contentFirst[2]);
+  }
+  return "";
+}
+
+function titleFromHtml(html, sourceName = "") {
+  const metaTitle = metaContent(html, ["citation_title", "dc.title", "og:title", "twitter:title"]);
+  const titleTag = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "";
+  const title = cleanMetaTitle(metaTitle || titleTag, sourceName);
+  if (/client challenge|access denied|just a moment|forbidden/i.test(title)) return "";
+  return title && title.toLowerCase() !== sourceName.toLowerCase() ? title : "";
+}
+
+function typeFromHtml(html) {
+  return metaContent(html, [
+    "citation_article_type",
+    "dc.type",
+    "prism.aggregationType",
+    "article:section",
+    "og:type"
+  ]);
+}
+
+function typeFromCrossref(value = "") {
+  const type = value.toLowerCase();
+  if (type.includes("review")) return "Review";
+  if (type.includes("dataset")) return "Dataset";
+  if (type.includes("posted-content")) return "Article";
+  if (type.includes("journal-article")) return "Article";
+  if (type.includes("editorial")) return "Editorial";
+  return "";
+}
+
+async function metadataFromDoi(doi = "") {
+  if (!doi) return {};
+  try {
+    const text = await fetchText(`https://api.crossref.org/works/${encodeURIComponent(doi)}`);
+    const data = JSON.parse(text);
+    const message = data.message || {};
+    return {
+      title: cleanMetaTitle(message.title?.[0] || ""),
+      type: typeFromCrossref(message.type || "")
+    };
+  } catch {
+    return {};
+  }
+}
+
+function isSuspiciousTitle(item, source) {
+  const title = (item.title || "").trim().toLowerCase();
+  const sourceName = (source.name || "").trim().toLowerCase();
+  return !title || title === sourceName || title.length < 8;
+}
+
+async function hydrateSuspiciousItems(items, source) {
+  return Promise.all(
+    items.map(async (item) => {
+      const { _needsTitleHydration, ...cleanItem } = item;
+      if (!_needsTitleHydration && !isSuspiciousTitle(item, source)) return cleanItem;
+      if (!item.url || item.url === "#") return cleanItem;
+      try {
+        const html = await fetchText(item.url);
+        const pageTitle = titleFromHtml(html, source.name);
+        const htmlType = typeFromHtml(html);
+        const doiMeta = pageTitle ? {} : await metadataFromDoi(item.doi);
+        const title = pageTitle || doiMeta.title;
+        return {
+          ...cleanItem,
+          title: title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
+          type: doiMeta.type || inferType(title || item.title, item.abstract, htmlType, source, item.doi)
+        };
+      } catch {
+        const doiMeta = await metadataFromDoi(item.doi);
+        return {
+          ...cleanItem,
+          title: doiMeta.title || inferTitleFromAbstract(item.abstract, source.name, item.doi) || item.title,
+          type: doiMeta.type || cleanItem.type
+        };
+      }
+    })
+  );
+}
+
+function inferType(title = "", abstract = "", typeText = "", source = {}, doi = "") {
+  const text = `${typeText} ${title} ${abstract}`.toLowerCase();
+  if (source.category === "news") return "News";
+  if (/^10\.1038\/d41586/i.test(doi)) return "News";
+  if (/systematic review|meta[- ]analysis|meta analysis|系统综述|荟萃/.test(text)) return "SystematicReview";
+  if (/\breview\b|reviews|综述/.test(text)) return "Review";
+  if (/research article|original article|article type article|研究论文|原创研究/.test(text)) return "ResearchArticle";
+  if (/data descriptor|data paper|dataset|database|resource|software|数据论文|数据集|数据库|资源|软件/.test(text)) return "Dataset";
+  if (/method|methods|protocol|方法|实验方案/.test(text)) return "Methods";
+  if (/news\s*&\s*views|news and views/.test(text)) return "NewsAndViews";
+  if (/research highlight|highlight|研究亮点/.test(text)) return "ResearchHighlight";
+  if (/perspective|viewpoint|opinion|观点/.test(text)) return "Perspective";
+  if (/commentary|comment|评论/.test(text)) return "Comment";
+  if (/correspondence|通讯|通信|来信/.test(text)) return "Correspondence";
+  if (/\bletter\b|letters|信件/.test(text)) return "Letter";
+  if (/editorial|社论/.test(text)) return "Editorial";
+  if (/news|新闻/.test(text)) return "News";
   return "Article";
 }
 
@@ -176,7 +294,8 @@ async function readSource(source) {
       return [];
     }
     const xml = await fetchText(feedUrl);
-    return parseFeed(xml, { ...source, feedUrl }).filter((item) => item.title && isRecent(item));
+    const parsed = parseFeed(xml, { ...source, feedUrl }).filter((item) => item.title && isRecent(item));
+    return hydrateSuspiciousItems(parsed, { ...source, feedUrl });
   } catch (error) {
     console.warn(`Failed ${source.name}: ${error.message}`);
     return [];
