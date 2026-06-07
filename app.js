@@ -218,7 +218,7 @@ const logs = [
     date: "今日更新",
     title: "公众号正文导入增强",
     body:
-      "1. 公众号：本地导入不再只使用文章列表摘要，已改为优先读取 we-mp-rss 中保存的正文内容。\\n2. 推荐：公众号候选会给 DeepSeek 提供更充分的研究介绍，同时限制输入长度，避免正文过长造成不必要的 token 消耗。\\n3. 稳定性：增强模型返回格式的容错，单条候选解析失败时降级处理，不再中断整次日报更新。\\n4. 页面：日报增加 like/dislike 与反馈导出；动态页标记已进入日报推荐的论文，并折叠往日超出 3 条的动态。\\n5. 信源：信源页改为更紧凑的分类聚合视图，微信公众号按本地候选数据归入公众号分类展示。\\n6. 质量控制：为每条公众号候选记录正文可用状态，便于后续排查信息过短或未抓取正文的来源。"
+      "1. 公众号：本地导入不再只使用文章列表摘要，已改为优先读取 we-mp-rss 中保存的正文内容。\\n2. 推荐：公众号候选会给 DeepSeek 提供更充分的研究介绍，同时限制输入长度，避免正文过长造成不必要的 token 消耗。\\n3. 稳定性：增强模型返回格式的容错，单条候选解析失败时降级处理，不再中断整次日报更新。\\n4. 页面：日报增加 like/dislike 与反馈导出；动态页标记已进入日报推荐的论文，并折叠往日超出 3 条的动态。\\n5. 信源：信源页改为拼块式分类聚合视图，微信公众号按本地候选数据归入公众号分类展示。\\n6. 显示：公众号条目会从标题和正文中推断期刊名；参考文献只显示更可靠的作者或 DOI，避免把公众号或单位误当作者。\\n7. 交互：动态页点击 like/dislike 不再重绘整页，已展开的详细内容和折叠状态会保持。"
   },
   {
     version: "2026-06-06",
@@ -270,6 +270,32 @@ function stripDoiFromCitation(citation = "", doi = "") {
   return value.replace(/\s+([.,;])/g, "$1").replace(/\s{2,}/g, " ").replace(/\s*\.\s*$/, ".").trim();
 }
 
+function cleanDisplayText(value = "") {
+  return decodeText(String(value || ""))
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function localDateKey(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function normalizeDate(value = "", fallback = "") {
+  const direct = String(value || "").match(/\b(20\d{2})[-/](\d{1,2})[-/](\d{1,2})\b/);
+  if (direct) {
+    return `${direct[1]}-${direct[2].padStart(2, "0")}-${direct[3].padStart(2, "0")}`;
+  }
+  const compact = String(value || "").match(/\b(20\d{2})(\d{2})(\d{2})\b/);
+  if (compact) return `${compact[1]}-${compact[2]}-${compact[3]}`;
+  return fallback || "";
+}
+
 function compactCitation(paper) {
   const year = (paper.date || "").slice(0, 4) || (paper.citation || "").match(/\b(19|20)\d{2}\b/)?.[0] || "";
   const citation = stripDoiFromCitation(paper.citation || "", paper.doi);
@@ -291,6 +317,15 @@ function shortAuthorList(authors = []) {
 
 function referenceAuthors(paper) {
   const direct = shortAuthorList(paper.authors || []);
+  if (paper.sourceType === "wechat") {
+    if (
+      direct &&
+      !/团队|课题组|研究所|科学院|大学|学院|中心|实验室|公众号|编辑部|项目|平台/.test(direct)
+    ) {
+      return direct;
+    }
+    return "";
+  }
   if (direct) return direct;
   const citation = stripDoiFromCitation(paper.citation || "", paper.doi);
   const match = citation.match(/^(.+?)\s*\((?:19|20)\d{2}\)/);
@@ -320,6 +355,60 @@ function normalizePaperUrl(url = "", doi = "") {
   return url;
 }
 
+const journalAliases = [
+  ["Nature Ecology & Evolution", /\bNature Ecology\s*&\s*Evolution\b/i],
+  ["Nature Communications", /\bNature Communications\b|《\s*Nature Communications\s*》|\bNC\b/i],
+  ["Nature Climate Change", /\bNature Climate Change\b/i],
+  ["Nature Food", /\bNature Food\b|\bNF\b/i],
+  ["Nature", /《\s*Nature\s*》|\bNature\b|nature：/i],
+  ["Science Advances", /\bScience Advances\b/i],
+  ["Science Bulletin", /\bScience Bulletin\b/i],
+  ["Science", /《\s*Science\s*》|\bScience正刊\b|\bScience\b/i],
+  ["PNAS Nexus", /\bPNAS Nexus\b/i],
+  ["PNAS", /\bPNAS\b/i],
+  ["Global Change Biology", /\bGlobal Change Biology\b|\bGCB\b/i],
+  ["Journal of Ecology", /\bJournal of Ecology\b/i],
+  ["Ecology Letters", /\bEcology Letters\b/i],
+  ["New Phytologist", /\bNew Phytologist\b|\bNew Phytol\b/i],
+  ["Plant Physiology", /\bPlant Physiology\b/i],
+  ["Remote Sensing of Environment", /\bRemote Sensing of Environment\b|\bRSE\b/i],
+  ["ISPRS Journal of Photogrammetry and Remote Sensing", /\bISPRS\b/i],
+  ["Earth System Science Data", /\bEarth System Science Data\b|\bESSD\b/i],
+  ["Field Crops Research", /\bField Crops Research\b|\bFCR\b/i],
+  ["Forest Ecology and Management", /\bForest Ecology and Management\b|\bFEM\b/i],
+  ["Soil & Tillage Research", /\bSoil\s*&\s*Tillage Research\b|\bSTR\b/i],
+  ["Functional Ecology", /\bFunctional Ecology\b/i],
+  ["Ecological Indicators", /\bEcological Indicators\b/i],
+  ["Ecological Modelling", /\bEcological Modelling\b/i],
+  ["Applied Geography", /\bApplied Geography\b/i],
+  ["Catena", /\bCatena\b/i],
+  ["One Earth", /\bOne Earth\b/i],
+  ["Microbiome", /\bMicrobiome\b/i],
+  ["Communications Earth & Environment", /\bCommunications Earth\s*&\s*Environment\b/i],
+  ["Journal of Environmental Management", /\bJournal of Environmental Management\b/i]
+];
+
+function inferJournalName(item = {}) {
+  const haystack = cleanDisplayText(`${item.title || ""} ${item.summary || ""} ${item.abstract || ""}`);
+  const bracket = haystack.match(/《\s*([^》]{2,80})\s*》/);
+  if (bracket && !/综述|观点|项目|指南|通知|招聘|会议|沙龙|新书|课程|导师|成果/.test(bracket[1])) {
+    return bracket[1].trim();
+  }
+  const prefix = cleanDisplayText(item.title || "").split(/\s*[|丨:：]\s*/)[0];
+  if (/^[A-Za-z][A-Za-z &.\-:]{2,80}$/.test(prefix)) {
+    const alias = journalAliases.find(([, pattern]) => pattern.test(prefix));
+    return alias ? alias[0] : prefix.trim();
+  }
+  const alias = journalAliases.find(([, pattern]) => pattern.test(haystack));
+  return alias ? alias[0] : "";
+}
+
+function displayType(type = "") {
+  return String(type || "Article")
+    .replace(/ResearchArticle/g, "Research Article")
+    .replace(/SystematicReview/g, "Systematic Review");
+}
+
 function normalizeTags(tags = []) {
   const aliases = {
     fire: "disturbance",
@@ -333,19 +422,26 @@ function normalizeTags(tags = []) {
 function normalizeGeneratedItem(item, index) {
   const sourceSignals = item.sourceSignals || [];
   const firstType = sourceSignals[0]?.type;
-  const primarySource = item.journal || sourceSignals[0]?.name || "Unknown source";
+  const rawSource = item.journal || sourceSignals[0]?.name || "Unknown source";
+  const isWechat = firstType === "wechat";
+  const inferredJournal = isWechat ? inferJournalName(item) : "";
+  const primarySource = inferredJournal || rawSource;
+  const cleanedSummary = cleanDisplayText(item.summary || item.abstract || "");
+  const cleanedOneLine = cleanDisplayText(item.oneLine || item.abstract || item.summary || "");
   const title =
-    !item.title || item.title.trim().toLowerCase() === primarySource.toLowerCase()
+    !item.title || item.title.trim().toLowerCase() === rawSource.toLowerCase()
       ? inferTitleFromText(item.abstract || item.summary || "", primarySource, item.doi) || item.title
-      : decodeText(item.title);
+      : cleanDisplayText(item.title);
   const paperUrl = normalizePaperUrl(item.url, item.doi);
   return {
     id: item.id || item.doi || `generated-${index}`,
     time: item.generatedAt ? item.generatedAt.slice(11, 16) : "00:00",
-    date: item.date || (item.generatedAt ? item.generatedAt.slice(0, 10) : ""),
+    date: normalizeDate(item.date, item.generatedAt ? item.generatedAt.slice(0, 10) : ""),
     title,
     authors: item.authors || [],
     source: primarySource,
+    originalSource: rawSource,
+    inferredJournal,
     sourceSignals,
     sourceType:
       firstType === "topJournal"
@@ -354,11 +450,11 @@ function normalizeGeneratedItem(item, index) {
           ? "news"
           : firstType === "wechat"
             ? "wechat"
-            : "professional",
-    type: item.type || "Article",
+          : "professional",
+    type: displayType(item.type),
     tags: normalizeTags(item.tags || []),
-    oneLine: decodeText(item.oneLine || item.abstract || title),
-    summary: decodeText(item.summary || item.abstract || ""),
+    oneLine: cleanedOneLine || title,
+    summary: cleanedSummary || cleanedOneLine || title,
     reason: "由两阶段模型评分流程生成。",
     paperUrl,
     doi: item.doi,
@@ -559,7 +655,7 @@ function badge(type) {
 }
 
 function todayDateKey() {
-  return new Date().toISOString().slice(0, 10);
+  return localDateKey();
 }
 
 function dailyRecommendedIds() {
@@ -709,6 +805,15 @@ function feedbackControls(paper, feedback = getFeedback()) {
       <button class="${feedback[paper.id] === "dislike" ? "active negative" : ""}" data-feedback="dislike" data-paper="${paper.id}" title="不喜欢" aria-label="不喜欢">${feedbackIcon("dislike")}</button>
     </div>
   `;
+}
+
+function refreshFeedbackControls(paperId) {
+  const feedback = getFeedback();
+  document.querySelectorAll(`[data-paper="${CSS.escape(paperId)}"]`).forEach((button) => {
+    const isActive = feedback[paperId] === button.dataset.feedback;
+    button.classList.toggle("active", isActive);
+    button.classList.toggle("negative", isActive && button.dataset.feedback === "dislike");
+  });
 }
 
 function renderUpdates() {
@@ -870,7 +975,7 @@ function bindFeed() {
     const button = event.target.closest("[data-feedback]");
     if (!button) return;
     setFeedback(button.dataset.paper, button.dataset.feedback);
-    renderFeed();
+    refreshFeedbackControls(button.dataset.paper);
   });
   renderFeed();
 }
@@ -905,7 +1010,7 @@ function renderDaily() {
     const button = event.target.closest("[data-feedback]");
     if (!button) return;
     setFeedback(button.dataset.paper, button.dataset.feedback);
-    renderDaily();
+    refreshFeedbackControls(button.dataset.paper);
   });
 }
 

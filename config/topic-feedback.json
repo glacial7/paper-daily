@@ -1,4 +1,124 @@
 {
   "minFeedbackPerTopic": 3,
-  "feedback": []
+  "feedback": [
+    {
+      "paperId": "invasion-fire-001",
+      "title": "",
+      "doi": "",
+      "tags": [],
+      "value": "like"
+    },
+    {
+      "paperId": "nature-ecology-evolution-3-RGlmZmVyZW50",
+      "title": "Different planning scales for renewable expansion yield distinct biodiversity trade-offs in China",
+      "doi": "10.1038/s41559-026-03097-z",
+      "tags": [
+        "climate_anthropogenic",
+        "conservation_management"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "journal-of-ecology-0-RmlyZSBpbmNy",
+      "title": "Fire increases ecosystem sensitivity to precipitation through conversion from shrubland to annual grassland",
+      "doi": "10.1111/1365-2745.70354",
+      "tags": [
+        "disturbance",
+        "community_ecosystem"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "trends-ecology-evolution-12-TmF2aWdhdGlu",
+      "title": "Navigating transformations from degraded to functional ecosystems",
+      "doi": "",
+      "tags": [
+        "conservation_management",
+        "disturbance"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "trends-ecology-evolution-17-U29pbCBiaW9k",
+      "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
+      "doi": "",
+      "tags": [
+        "conservation_management",
+        "biogeochemistry",
+        "plant_agroecology"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "trends-ecology-evolution-6-VGhlIHJlc2hh",
+      "title": "The reshaping of trade-offs under climate warming",
+      "doi": "",
+      "tags": [
+        "climate_anthropogenic",
+        "community_ecosystem"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "wechat-3906186632-2247551372_3",
+      "title": "Partial coordination of leaf water relations with the leaf economics spectrum across diverse forest types",
+      "doi": "10.1093/plphys/kiag342",
+      "tags": [
+        "population_traits",
+        "plant_agroecology"
+      ],
+      "value": "dislike"
+    },
+    {
+      "paperId": "wechat-3564969279-2247530590_3",
+      "title": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？",
+      "doi": "",
+      "tags": [
+        "community_ecosystem",
+        "plant_agroecology"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "wechat-3906308687-2247553944_1",
+      "title": "MI-RFE-BiLSTM框架实现Landsat NDVI时空无缝重建",
+      "doi": "",
+      "tags": [
+        "modeling_methods",
+        "plant_agroecology"
+      ],
+      "value": "dislike"
+    },
+    {
+      "paperId": "wechat-3910266315-2247570671_1",
+      "title": "25-year, quarterly land change maps of China’s Loess Plateau reveal long-term and substantial water-induced soil erosion mitigation",
+      "doi": "10.57760/sciencedb.33656",
+      "tags": [
+        "modeling_methods"
+      ],
+      "value": "dislike"
+    },
+    {
+      "paperId": "science-4-R2xvYmFsIGV4",
+      "title": "Global extent and drivers of tree cover loss quantified with high-resolution satellite data",
+      "doi": "10.1126/science.adz9042",
+      "tags": [
+        "modeling_methods",
+        "landscape_macroecology",
+        "climate_anthropogenic"
+      ],
+      "value": "like"
+    },
+    {
+      "paperId": "science-16-TGFuZHNjYXBl",
+      "title": "Landscape efficiency frontiers for biodiversity, climate mitigation, and net economic value",
+      "doi": "10.1126/science.aea9058",
+      "tags": [
+        "landscape_macroecology",
+        "conservation_management",
+        "climate_anthropogenic"
+      ],
+      "value": "like"
+    }
+  ]
 }

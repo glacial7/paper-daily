@@ -56,8 +56,8 @@
     "category": "professional",
     "pageUrl": "https://www.cell.com/trends/ecology-evolution/home",
     "status": "feed configured",
-    "weight": 5,
-    "feedUrl": "https://rss.sciencedirect.com/publication/science/01695347/"
+    "weight": 4,
+    "feedUrl": "https://www.cell.com/trends/ecology-evolution/current.rss"
   },
   {
     "id": "frontiers-ecology-environment",
@@ -108,15 +108,6 @@
     "feedUrl": "https://www.sciencedaily.com/rss/earth_climate/ecology.xml",
     "status": "feed configured",
     "weight": 3
-  },
-  {
-    "id": "wechat-ecologist-all",
-    "name": "生态学者（Ecologist-all）",
-    "type": "wechat",
-    "category": "wechat",
-    "pageUrl": "",
-    "weight": 4,
-    "status": "pending we-mp-rss"
   },
   {
     "id": "science-news",
