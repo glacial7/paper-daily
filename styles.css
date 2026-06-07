@@ -235,6 +235,13 @@ textarea {
   gap: 12px;
 }
 
+.paper-side {
+  align-items: end;
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+}
+
 .paper h2 {
   margin: 0 0 7px;
   font-size: 1.12rem;
@@ -458,6 +465,24 @@ textarea {
   line-height: 1.35;
 }
 
+.feed-item.is-recommended {
+  border-color: rgba(47, 111, 85, 0.38);
+  box-shadow: inset 3px 0 0 rgba(47, 111, 85, 0.72);
+}
+
+.recommended-badge {
+  background: #e6f1eb;
+  border: 1px solid rgba(47, 111, 85, 0.34);
+  border-radius: 99px;
+  color: var(--green);
+  display: inline-flex;
+  font-size: 0.76rem;
+  font-weight: 800;
+  margin-right: 6px;
+  padding: 1px 7px;
+  vertical-align: 1px;
+}
+
 .feed-title a:hover {
   color: var(--green);
 }
@@ -521,6 +546,20 @@ textarea {
   color: var(--red);
 }
 
+.date-more {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.date-more summary {
+  color: var(--green);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 .form-grid {
   display: grid;
   gap: 12px;
@@ -567,6 +606,17 @@ textarea {
   margin-top: 18px;
 }
 
+.source-tools {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.compact-form {
+  max-width: none;
+}
+
 .source-cluster {
   margin-top: 18px;
 }
@@ -599,6 +649,55 @@ textarea {
   display: grid;
   gap: 10px;
   grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.compact-source-list {
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.compact-source-item {
+  border-radius: 7px;
+  padding: 8px 10px;
+}
+
+.compact-source-item strong {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.compact-source-item span {
+  font-size: 0.78rem;
+}
+
+.source-subgroup {
+  display: grid;
+  gap: 5px;
+}
+
+.source-subgroup + .source-subgroup {
+  margin-top: 8px;
+}
+
+.source-subgroup-title {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 2px 2px 0;
+}
+
+.source-local {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 3px 8px;
+}
+
+.empty-row {
+  color: var(--muted);
+  font-size: 0.84rem;
+  padding: 8px 2px;
 }
 
 .source-item strong,
@@ -779,6 +878,10 @@ textarea {
   .feed-item {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+
+  .source-tools {
+    grid-template-columns: 1fr;
   }
 
   .source-item {

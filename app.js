@@ -218,7 +218,7 @@ const logs = [
     date: "今日更新",
     title: "公众号正文导入增强",
     body:
-      "1. 公众号：本地导入不再只使用文章列表摘要，已改为优先读取 we-mp-rss 中保存的正文内容。\\n2. 推荐：公众号候选会给 DeepSeek 提供更充分的研究介绍，同时限制输入长度，避免正文过长造成不必要的 token 消耗。\\n3. 稳定性：增强模型返回格式的容错，单条候选解析失败时降级处理，不再中断整次日报更新。\\n4. 质量控制：为每条公众号候选记录正文可用状态，便于后续排查信息过短或未抓取正文的来源。"
+      "1. 公众号：本地导入不再只使用文章列表摘要，已改为优先读取 we-mp-rss 中保存的正文内容。\\n2. 推荐：公众号候选会给 DeepSeek 提供更充分的研究介绍，同时限制输入长度，避免正文过长造成不必要的 token 消耗。\\n3. 稳定性：增强模型返回格式的容错，单条候选解析失败时降级处理，不再中断整次日报更新。\\n4. 页面：日报增加 like/dislike 与反馈导出；动态页标记已进入日报推荐的论文，并折叠往日超出 3 条的动态。\\n5. 信源：信源页改为更紧凑的分类聚合视图，微信公众号按本地候选数据归入公众号分类展示。\\n6. 质量控制：为每条公众号候选记录正文可用状态，便于后续排查信息过短或未抓取正文的来源。"
   },
   {
     version: "2026-06-06",
@@ -558,6 +558,18 @@ function badge(type) {
   return `<span class="badge ${type}">${label}</span>`;
 }
 
+function todayDateKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function dailyRecommendedIds() {
+  const ids = new Set();
+  groupPapersByDate(recentPapers()).forEach((group) => {
+    group.entries.slice(0, 5).forEach((paper) => ids.add(paper.id));
+  });
+  return ids;
+}
+
 function sourceSignalLabel(type) {
   return {
     topJournal: "顶刊原文",
@@ -635,6 +647,7 @@ function detailBlock(paper, mode = "block") {
 function paperCard(paper, options = {}) {
   const score = adjustedScore(paper);
   const showOneLine = options.showOneLine !== false;
+  const feedback = options.showFeedback ? getFeedback() : null;
   return `
     <article class="card paper">
       <div class="paper-top">
@@ -644,7 +657,10 @@ function paperCard(paper, options = {}) {
             ${paperMetaTags(paper).map((label) => `<span class="tag">${label}</span>`).join("")}
           </div>
         </div>
-        <div class="score" aria-label="质量分 ${score}">${score}</div>
+        <div class="paper-side">
+          <div class="score" aria-label="质量分 ${score}">${score}</div>
+          ${options.showFeedback ? feedbackControls(paper, feedback) : ""}
+        </div>
       </div>
       ${showOneLine ? `<p>${paper.oneLine}</p>${detailBlock(paper)}` : `<p>${paper.summary}</p>`}
       ${sourceDetails(paper)}
@@ -686,6 +702,15 @@ function feedbackIcon(type) {
   `;
 }
 
+function feedbackControls(paper, feedback = getFeedback()) {
+  return `
+    <div class="feedback" aria-label="主题反馈">
+      <button class="${feedback[paper.id] === "like" ? "active" : ""}" data-feedback="like" data-paper="${paper.id}" title="like" aria-label="like">${feedbackIcon("like")}</button>
+      <button class="${feedback[paper.id] === "dislike" ? "active negative" : ""}" data-feedback="dislike" data-paper="${paper.id}" title="不喜欢" aria-label="不喜欢">${feedbackIcon("dislike")}</button>
+    </div>
+  `;
+}
+
 function renderUpdates() {
   const pool = recentPapers();
   root.innerHTML = `
@@ -712,44 +737,51 @@ function renderFeed(filter = activeFeedFilter) {
   const pool = recentPapers();
   const visible = filter === "all" ? pool : pool.filter((paper) => paper.sourceType === filter);
   const feedback = getFeedback();
+  const recommended = dailyRecommendedIds();
+  const today = todayDateKey();
   renderThemePanel();
   document.querySelector("#feed").innerHTML = groupPapersByDate(visible)
-    .map(
-      (group) => `
+    .map((group) => {
+      const shouldCollapse = group.date !== today && group.date !== "undated" && group.entries.length > 3;
+      const primaryEntries = shouldCollapse ? group.entries.slice(0, 3) : group.entries;
+      const hiddenEntries = shouldCollapse ? group.entries.slice(3) : [];
+      const renderItem = (paper) => `
+        <article class="card feed-item ${recommended.has(paper.id) ? "is-recommended" : ""}">
+          <div>
+            <div class="feed-title">
+              ${recommended.has(paper.id) ? `<span class="recommended-badge">已推荐</span>` : ""}
+              <a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a>
+            </div>
+            <div class="feed-desc">${paper.oneLine} ${detailBlock(paper, "inline")}</div>
+            <div class="tag-row feed-tags">
+              ${paperMetaTags(paper)
+                .map((label) => `<span class="tag">${label}</span>`)
+                .join("")}
+            </div>
+            ${sourceDetails(paper)}
+            ${referenceBlock(paper)}
+          </div>
+          <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
+          ${feedbackControls(paper, feedback)}
+        </article>
+      `;
+      return `
         <section class="date-section">
           <div class="date-heading">
             <strong>${dateLabel(group.date)}</strong>
             <span>${group.entries.length} 条</span>
           </div>
           <div class="grid">
-            ${group.entries
-              .map(
-                (paper) => `
-                  <article class="card feed-item">
-                    <div>
-                      <div class="feed-title"><a href="${paper.paperUrl}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
-                      <div class="feed-desc">${paper.oneLine} ${detailBlock(paper, "inline")}</div>
-                      <div class="tag-row feed-tags">
-                        ${paperMetaTags(paper)
-                          .map((label) => `<span class="tag">${label}</span>`)
-                          .join("")}
-                      </div>
-                      ${sourceDetails(paper)}
-                      ${referenceBlock(paper)}
-                    </div>
-                    <div class="score" aria-label="质量分 ${adjustedScore(paper)}">${adjustedScore(paper)}</div>
-                    <div class="feedback" aria-label="主题反馈">
-                      <button class="${feedback[paper.id] === "like" ? "active" : ""}" data-feedback="like" data-paper="${paper.id}" title="like" aria-label="like">${feedbackIcon("like")}</button>
-                      <button class="${feedback[paper.id] === "dislike" ? "active negative" : ""}" data-feedback="dislike" data-paper="${paper.id}" title="不喜欢" aria-label="不喜欢">${feedbackIcon("dislike")}</button>
-                    </div>
-                  </article>
-                `
-              )
-              .join("")}
+            ${primaryEntries.map(renderItem).join("")}
+            ${
+              hiddenEntries.length
+                ? `<details class="date-more"><summary>展开其余 ${hiddenEntries.length} 条</summary><div class="grid">${hiddenEntries.map(renderItem).join("")}</div></details>`
+                : ""
+            }
             </div>
         </section>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
@@ -849,7 +881,7 @@ function renderDaily() {
     entries: group.entries.slice(0, 5)
   }));
   root.innerHTML = `
-    ${renderHead("日报", `近 ${RECENT_DAYS} 日 · 每日 top 5 selected`)}
+    ${renderHead("日报", `近 ${RECENT_DAYS} 日 · 每日 top 5 selected`, '<button class="btn" id="exportFeedback">导出反馈</button>')}
     <section class="grid" id="dailyList">
       ${groups
         .map(
@@ -859,13 +891,22 @@ function renderDaily() {
                 <strong>${dateLabel(group.date)}</strong>
                 <span>Top ${group.entries.length}</span>
               </div>
-              <div class="grid">${group.entries.map((paper) => paperCard(paper, { showOneLine: false })).join("")}</div>
+              <div class="grid">${group.entries.map((paper) => paperCard(paper, { showOneLine: false, showFeedback: true })).join("")}</div>
             </section>
           `
         )
         .join("")}
     </section>
   `;
+  document.querySelector("#exportFeedback").addEventListener("click", () => {
+    downloadJson("topic-feedback.json", feedbackConfig());
+  });
+  document.querySelector("#dailyList").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-feedback]");
+    if (!button) return;
+    setFeedback(button.dataset.paper, button.dataset.feedback);
+    renderDaily();
+  });
 }
 
 function slugify(value) {
@@ -951,6 +992,9 @@ function sourceConfigToDisplay(item) {
     weight: item.weight || 3,
     sourceScore: sourceQualityScores[item.type] || 0,
     daily: item.daily || 0,
+    recentCount: item.recentCount || 0,
+    subgroup: item.subgroup || "",
+    virtual: Boolean(item.virtual),
     typeLabel:
       item.category === "wechat"
         ? "微信公众号"
@@ -995,77 +1039,99 @@ async function loadBaseSourceConfigs() {
   }
 }
 
+function wechatSubgroup(name = "") {
+  if (/遥感|GIS|GEE|地理|地球|remote|landsat|ndvi/i.test(name)) return "遥感/GIS";
+  if (/火|野火|fire/i.test(name)) return "火生态";
+  if (/农业|农田|土壤|作物|agro|soil|crop/i.test(name)) return "农业/土壤";
+  if (/生物多样性|保护|自然|动物|兽类|conservation|biodiversity/i.test(name)) return "生物多样性/保护";
+  if (/植物|植被|群落|生态系统|forest|plant|community/i.test(name)) return "植物/群落/生态系统";
+  return "综合/其他";
+}
+
+async function loadWechatSourceConfigs() {
+  try {
+    const response = await fetch("./data/wechat-candidates.json", { cache: "no-store" });
+    if (!response.ok) return [];
+    const data = await response.json();
+    const items = Array.isArray(data.items) ? data.items : [];
+    const map = new Map();
+    items.forEach((item) => {
+      const name = item.journal || item.sourceSignals?.find((signal) => signal.type === "wechat")?.name;
+      if (!name) return;
+      const key = normalizeSourceName(name);
+      const existing = map.get(key) || {
+        id: `wechat-${slugify(name)}`,
+        name,
+        category: "wechat",
+        type: "wechat",
+        weight: 4,
+        recentCount: 0,
+        subgroup: wechatSubgroup(name),
+        status: "local we-mp-rss",
+        virtual: true
+      };
+      existing.recentCount += 1;
+      map.set(key, existing);
+    });
+    return [...map.values()];
+  } catch {
+    return [];
+  }
+}
+
 function renderSources() {
   root.innerHTML = `
     ${renderHead("信源添加", "期刊 RSS、微信公众号更新链接、新闻报道 RSS")}
-    <form class="form-grid card paper" id="sourceForm">
-      <div class="two-col">
-        <div class="field">
-          <label for="sourceType">信源类型</label>
-          <select id="sourceType">
-            <option value="comprehensive">综合期刊</option>
-            <option value="professional">期刊 RSS</option>
-            <option value="news">新闻报道 RSS</option>
-            <option value="wechat">微信公众号</option>
-          </select>
+    <section id="sourceList"></section>
+    <section class="source-tools">
+      <form class="form-grid compact-form card paper" id="sourceForm">
+        <div class="two-col">
+          <div class="field">
+            <label for="sourceType">信源类型</label>
+            <select id="sourceType">
+              <option value="comprehensive">综合期刊</option>
+              <option value="professional">期刊 RSS</option>
+              <option value="news">新闻报道 RSS</option>
+              <option value="wechat">微信公众号</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sourceTier">权重等级</label>
+            <select id="sourceTier">
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </div>
         </div>
         <div class="field">
-          <label for="sourceTier">权重等级</label>
-          <select id="sourceTier">
-            <option value="5">5</option>
-            <option value="4">4</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1</option>
-          </select>
+          <label for="sourceName">名称</label>
+          <input id="sourceName" placeholder="例如：Nature Ecology & Evolution RSS" />
         </div>
-      </div>
-      <div class="field">
-        <label for="sourceName">名称</label>
-        <input id="sourceName" placeholder="例如：Nature Ecology & Evolution RSS" />
-      </div>
-      <div class="field">
-        <label for="sourceUrl">RSS 或链接</label>
-        <input id="sourceUrl" placeholder="https://..." />
-      </div>
-      <div class="field">
-        <label for="sourceNote">主题</label>
-        <textarea id="sourceNote" placeholder="例如：invasion, disturbance, plant ecology, biogeochemistry, remote sensing"></textarea>
-      </div>
-      <div class="actions">
-        <button class="btn primary" id="sourceSubmit" type="submit">加入待提交配置</button>
-      </div>
-    </form>
-    <section class="method-section">
-      <div class="cluster-head">
-        <strong>待提交信源配置</strong>
-        <span>下载后覆盖 config/sources.json，再提交到 GitHub</span>
-      </div>
+        <div class="field">
+          <label for="sourceUrl">RSS 或链接</label>
+          <input id="sourceUrl" placeholder="https://..." />
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="sourceSubmit" type="submit">加入配置</button>
+          <button class="btn" id="copyWechatCommand" type="button">复制公众号导入命令</button>
+        </div>
+      </form>
       <div class="card config-export">
+        <div class="cluster-head">
+          <strong>sources.json</strong>
+          <span>下载后覆盖 config/sources.json</span>
+        </div>
         <textarea id="sourceConfigOutput"></textarea>
-        <div class="config-status" id="sourceConfigStatus">点击信源的“修改”会定位到对应 JSON 条目；可在此处手动编辑后下载。</div>
+        <div class="config-status" id="sourceConfigStatus">点击信源的“修改”会定位到对应 JSON 条目。公众号订阅仍在本地 we-mp-rss 中管理。</div>
         <div class="actions">
           <button class="btn" id="copySourcesConfig">复制配置</button>
           <button class="btn primary" id="downloadSourcesConfig">下载 sources.json</button>
         </div>
       </div>
     </section>
-    <section class="method-section">
-      <div class="cluster-head">
-        <strong>微信公众号本地导入</strong>
-        <span>在 Mac 本地完成抓取，再上传候选文件到 GitHub</span>
-      </div>
-      <div class="card config-export">
-        <div class="wechat-note">
-          <p>公众号订阅在本地 we-mp-rss 中管理；GitHub Pages 不能读取本机数据库，也不能直接运行本地脚本。</p>
-          <p>本地运行导入命令后，会生成 <strong>data/wechat-candidates.json</strong>。上传该文件并运行 GitHub Actions 后，公众号候选会进入评分。</p>
-        </div>
-        <div class="actions">
-          <button class="btn" id="copyWechatCommand">复制本地导入命令</button>
-        </div>
-      </div>
-    </section>
-    <section id="sourceList"></section>
   `;
   bindSources();
 }
@@ -1091,7 +1157,7 @@ function bindSources() {
     sourceRanges = new Map();
     if (!items.length) return "[]";
     let cursor = 2;
-    const blocks = items.map((item) => {
+    const blocks = items.filter((item) => !item.virtual).map((item) => {
       const block = JSON.stringify(item, null, 2)
         .split("\n")
         .map((line) => `  ${line}`)
@@ -1112,6 +1178,22 @@ function bindSources() {
     status.textContent = message;
   };
 
+  const sourceRow = (item) => `
+    <article class="card source-item compact-source-item">
+      <div class="source-main">
+        <strong>${item.name}</strong>
+        <span>${item.typeLabel} · 权重 ${item.weight} · 信源分 ${item.sourceScore}/30 · ${item.recentCount ? `近5日 ${item.recentCount} 条` : item.urlLabel}</span>
+      </div>
+      <div class="source-actions">
+        ${
+          item.virtual
+            ? `<span class="source-local">本地</span>`
+            : `<button class="btn" data-source-action="edit" data-source-key="${encodeURIComponent(item.key)}">修改</button>`
+        }
+      </div>
+    </article>
+  `;
+
   const draw = (items) => {
     currentConfigs = mergeSourceConfigs(items);
     const displayItems = currentConfigs.map(sourceConfigToDisplay);
@@ -1125,30 +1207,35 @@ function bindSources() {
     list.innerHTML = Object.entries(labels)
       .map(([key, label]) => {
         const group = displayItems.filter((item) => item.category === key);
-        const volume = group.reduce((sum, item) => sum + Number(item.daily || 0), 0);
+        const volume = group.reduce((sum, item) => sum + Number(item.daily || item.recentCount || 0), 0);
+        const rows =
+          key === "wechat"
+            ? Object.entries(
+                group.reduce((acc, item) => {
+                  const subgroup = item.subgroup || "综合/其他";
+                  if (!acc[subgroup]) acc[subgroup] = [];
+                  acc[subgroup].push(item);
+                  return acc;
+                }, {})
+              )
+                .sort(([a], [b]) => a.localeCompare(b, "zh-Hans-CN"))
+                .map(
+                  ([subgroup, entries]) => `
+                    <div class="source-subgroup">
+                      <div class="source-subgroup-title">${subgroup}</div>
+                      ${entries.sort((a, b) => b.recentCount - a.recentCount || a.name.localeCompare(b.name, "zh-Hans-CN")).map(sourceRow).join("")}
+                    </div>
+                  `
+                )
+                .join("")
+            : group.sort((a, b) => b.sourceScore - a.sourceScore || a.name.localeCompare(b.name)).map(sourceRow).join("");
         return `
           <section class="source-cluster">
             <div class="cluster-head">
               <strong>${label}</strong>
-              <span>${group.length} 个信源 · 约 ${volume} 条/日</span>
+              <span>${group.length} 个信源 · ${key === "wechat" ? `近5日 ${volume} 条` : `约 ${volume} 条/日`}</span>
             </div>
-            <div class="source-list">
-              ${group
-                .map(
-                  (item) => `
-                    <article class="card source-item">
-                      <div>
-                        <strong>${item.name}</strong>
-                        <span>${item.typeLabel} · 权重 ${item.weight} · 信源分 ${item.sourceScore}/30 · ${item.urlLabel}</span>
-                      </div>
-                      <div class="source-actions">
-                        <button class="btn" data-source-action="edit" data-source-key="${encodeURIComponent(item.key)}">修改</button>
-                      </div>
-                    </article>
-                  `
-                )
-                .join("")}
-            </div>
+            <div class="source-list compact-source-list">${rows || `<div class="empty-row">暂无信源</div>`}</div>
           </section>
         `;
       })
@@ -1156,8 +1243,8 @@ function bindSources() {
     output.value = formatSourceConfig(currentConfigs);
   };
 
-  loadBaseSourceConfigs().then((baseConfigs) => {
-    currentConfigs = mergeSourceConfigs([...baseConfigs, ...saved]);
+  Promise.all([loadBaseSourceConfigs(), loadWechatSourceConfigs()]).then(([baseConfigs, wechatConfigs]) => {
+    currentConfigs = mergeSourceConfigs([...wechatConfigs, ...baseConfigs, ...saved]);
     draw(currentConfigs);
   });
 
@@ -1173,6 +1260,10 @@ function bindSources() {
     const itemKey = sourceKey(item);
     const existing = currentConfigs.find((entry) => sourceKey(entry) === itemKey);
     if (existing) {
+      if (existing.virtual) {
+        status.textContent = `已存在本地公众号订阅：${existing.name}。公众号订阅请在本地 we-mp-rss 中管理。`;
+        return;
+      }
       locateSource(
         sourceKey(existing),
         `已存在同名信源：${existing.name}。请在 sources.json 对应条目中手动修改。`
