@@ -986,30 +986,6 @@
     ]
   },
   {
-    "id": "nature-reviews-biodiversity-1-QXV0aG9yIENv",
-    "title": "Author Correction: The fate of mountain biodiversity in a warming world",
-    "abstract": "Nature Reviews Biodiversity, Published online: 02 June 2026; doi:10.1038/s44358-026-00172-y Author Correction: The fate of mountain biodiversity in a warming world",
-    "authors": [
-      "Benjamin G. Freeman",
-      "Suzette G. A. Flantua",
-      "Kenneth J. Feeley",
-      "Christy M. McCain",
-      "Jenny L. McGuire"
-    ],
-    "journal": "Nature Reviews Biodiversity",
-    "type": "Review",
-    "doi": "10.1038/s44358-026-00172-y",
-    "url": "https://www.nature.com/articles/s44358-026-00172-y",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Nature Reviews Biodiversity",
-        "url": "https://www.nature.com/articles/s44358-026-00172-y"
-      }
-    ]
-  },
-  {
     "id": "nature-reviews-earth-environment-0-Q29tcG91bmQg",
     "title": "Compound weather and climate events in 2025",
     "abstract": "Nature Reviews Earth & Environment, Published online: 03 June 2026; doi:10.1038/s43017-026-00797-9 Compound weather and climate events in 2025",
@@ -1038,7 +1014,27 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-0-TGV2ZWxsaW5n",
+    "id": "trends-ecology-evolution-0-RGVmaW5pbmcg",
+    "title": "Defining and protecting old-growth soils",
+    "abstract": "Publication date: Available online 6 June 2026 Source: Trends in Ecology & Evolution Author(s): Franciska T. de Vries",
+    "authors": [
+      "Franciska T. de Vries"
+    ],
+    "journal": "Trends in Ecology & Evolution",
+    "type": "Article",
+    "doi": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001394?dgcid=rss_sd_all",
+    "date": "",
+    "sourceSignals": [
+      {
+        "type": "reviewJournal",
+        "name": "Trends in Ecology & Evolution",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001394?dgcid=rss_sd_all"
+      }
+    ]
+  },
+  {
+    "id": "trends-ecology-evolution-1-TGV2ZWxsaW5n",
     "title": "Levelling: behaviours that constrain inequality in animal societies",
     "abstract": "Publication date: Available online 4 June 2026 Source: Trends in Ecology & Evolution Author(s): Danai Papageorgiou, Monique Borgerhoff Mulder, Sarah F. Brosnan, Eli D. Strauss",
     "authors": [
@@ -1061,7 +1057,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-1-QSBwaW9uZWVy",
+    "id": "trends-ecology-evolution-2-QSBwaW9uZWVy",
     "title": "A pioneering theory for anticipating changes in population growth?",
     "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Laura Touzot, Marlène Gamelon",
     "authors": [
@@ -1082,7 +1078,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-2-U2Nhbm5pbmcg",
+    "id": "trends-ecology-evolution-3-U2Nhbm5pbmcg",
     "title": "Scanning the horizon for harmful cyanobacterial blooms",
     "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Xuexiu Chang, Hugh J. MacIsaac, Ingrid Chorus, George S. Bullerjahn, Rainer Kurmayer, Chi-Yong Ahn, Xiangzhen Kong, Steven W. Wilhelm, Susanna A. Wood, Xiangming Tang, Hans W. Paerl, Sabine Hilt, Erik Jeppesen, David P. Hamilton, Shin-ichi Nakano, Petra Visser, Jef Huisman, Haijun Wang, Lirong Song, R. Michael Mckay",
     "authors": [
@@ -1121,7 +1117,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-3-RW52aXJvbm1l",
+    "id": "trends-ecology-evolution-4-RW52aXJvbm1l",
     "title": "Environmentally induced phenotypic diversity drives population overyielding",
     "abstract": "Publication date: Available online 2 June 2026 Source: Trends in Ecology & Evolution Author(s): Michael Opoku Adomako, James D. Bever, Bernhard Schmid, Fei-Hai Yu",
     "authors": [
@@ -1144,7 +1140,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-4-U3Vic2NyaXB0",
+    "id": "trends-ecology-evolution-5-U3Vic2NyaXB0",
     "title": "Subscription and Copyright Information",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s):",
     "authors": [],
@@ -1162,7 +1158,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-5-VGhlIHJlc2hh",
+    "id": "trends-ecology-evolution-6-VGhlIHJlc2hh",
     "title": "The reshaping of trade-offs under climate warming",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Adam M. Siepielski, Michael O’Connor, Alisha A. Shah, Alexander A. Mauro, Cameron K. Ghalambor",
     "authors": [
@@ -1186,7 +1182,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-6-TWFyaW5lIGNv",
+    "id": "trends-ecology-evolution-7-TWFyaW5lIGNv",
     "title": "Marine conservation: linking taxonomy, Red Listing, and public engagement",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Torben Riehl, Monika Böhm, Simone N. Brandão, Angelika Brandt, Chong Chen, Gregory D. Edgecombe, Hosea J. ‶Ze″ Frank, Austin J. Gallagher, Rebecca Goldburg, Pat Hutchings, Fabrizio M. Machado, Volker Mosbrugger, Riley A. Pollom, Jan Steger, Anne H. Tandberg, Swati Thiyagarajan, Ekin Tilic, Alica Torkov, Miguel Vences, Ruth Wasmund",
     "authors": [
@@ -1225,7 +1221,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-7-QW5pbWFsIGN1",
+    "id": "trends-ecology-evolution-8-QW5pbWFsIGN1",
     "title": "Animal cumulative culture through changing environments",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bradley D. Ohlinger, Josep Call, Mathieu Charbonneau, Takao Sasaki",
     "authors": [
@@ -1248,7 +1244,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-8-U2V4dWFsIHNl",
+    "id": "trends-ecology-evolution-9-U2V4dWFsIHNl",
     "title": "Sexual selection in plants and animals: toward a unified framework",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Jeanne Tonnabel, Patrice David, Tim Janicke",
     "authors": [
@@ -1270,7 +1266,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-9-VG93YXJkIGFu",
+    "id": "trends-ecology-evolution-10-VG93YXJkIGFu",
     "title": "Toward an integrated understanding of animal weapons",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Christine W. Miller, Dominic Cram, Sarah M. Lane, Romain Boisseau, Sophia Fitzgerald, Nicole Lopez, Allen J. Moore, Christina J. Painting, Alexandre V. Palaoro, Michael Ryan, Ummat Somjee, Camille Thomas-Bulle, Douglas Emlen, David Labonte",
     "authors": [
@@ -1303,7 +1299,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-10-UGh5c2lvbG9n",
+    "id": "trends-ecology-evolution-11-UGh5c2lvbG9n",
     "title": "Physiological constraints on heat adaptation in birds",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Andreas Nord, Marc T. Freeman, Andrew E. McKechnie",
     "authors": [
@@ -1325,7 +1321,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-11-TmF2aWdhdGlu",
+    "id": "trends-ecology-evolution-12-TmF2aWdhdGlu",
     "title": "Navigating transformations from degraded to functional ecosystems",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Linda E. Neaves, Iain J. Gordon, Adrian D. Manning",
     "authors": [
@@ -1347,7 +1343,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-12-V2hvIGZpbmRz",
+    "id": "trends-ecology-evolution-13-V2hvIGZpbmRz",
     "title": "Who finds the seeds? Personality matters",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Bo Wang",
     "authors": [
@@ -1367,7 +1363,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-13-TWVjaGFuaXN0",
+    "id": "trends-ecology-evolution-14-TWVjaGFuaXN0",
     "title": "Mechanistic complexity underlies the apparent simplicity of Bergmann’s rule",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marketa Zimova, Charlotte M. Probst, Brian C. Weeks",
     "authors": [
@@ -1389,7 +1385,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-14-UG9zaXRpdmUg",
+    "id": "trends-ecology-evolution-15-UG9zaXRpdmUg",
     "title": "Positive turning points: hope in the climate crisis",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Marcel Rejmánek",
     "authors": [
@@ -1409,7 +1405,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-15-RXN0YWJsaXNo",
+    "id": "trends-ecology-evolution-16-RXN0YWJsaXNo",
     "title": "Establishing transboundary protected areas to achieve sustainability",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Wenjie Li, Fang Han, Xuan Liu",
     "authors": [
@@ -1431,7 +1427,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-16-U29pbCBiaW9k",
+    "id": "trends-ecology-evolution-17-U29pbCBiaW9k",
     "title": "Soil biodiversity first: reframing desertification and restoration governance in Brazil’s semiarid region",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s): Ademir S.F. Araujo, Erika V. de Medeiros, Diogo P. da Costa, Lucas W. Mendes, Maurício R. Cherubin, Raphael M. Beirigo, George R. Lambais, Vania M.M. Melo, Rodrigo M. Santana, Vanessa N. Kavamura, Arthur P.A. Pereira",
     "authors": [
@@ -1461,7 +1457,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-17-QWR2aXNvcnkg",
+    "id": "trends-ecology-evolution-18-QWR2aXNvcnkg",
     "title": "Advisory Board and Contents",
     "abstract": "Publication date: June 2026 Source: Trends in Ecology & Evolution, Volume 41, Issue 6 Author(s):",
     "authors": [],
@@ -1479,7 +1475,7 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-18-UmV2aXNpdGlu",
+    "id": "trends-ecology-evolution-19-UmV2aXNpdGlu",
     "title": "Revisiting evolutionary rescue in the wild",
     "abstract": "Publication date: Available online 30 May 2026 Source: Trends in Ecology & Evolution Author(s): Laurinne J. Balstad, Marissa L. Baskett, Stephanie M. Carlson, Curry J. Cunningham, Peter A.H. Westley",
     "authors": [
@@ -1503,28 +1499,6 @@
     ]
   },
   {
-    "id": "trends-ecology-evolution-19-Q29sbGVjdGl2",
-    "title": "Collective social niche construction shaping adaptive social networks",
-    "abstract": "Publication date: Available online 28 May 2026 Source: Trends in Ecology & Evolution Author(s): Cédric Sueur, Ricard Solé, Jean-Louis Deneubourg",
-    "authors": [
-      "Cédric Sueur",
-      "Ricard Solé",
-      "Jean-Louis Deneubourg"
-    ],
-    "journal": "Trends in Ecology & Evolution",
-    "type": "Article",
-    "doi": "",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all",
-    "date": "",
-    "sourceSignals": [
-      {
-        "type": "reviewJournal",
-        "name": "Trends in Ecology & Evolution",
-        "url": "https://www.sciencedirect.com/science/article/pii/S0169534726001175?dgcid=rss_sd_all"
-      }
-    ]
-  },
-  {
     "id": "nature-ecology-evolution-0-QSBzdHVkeSB0",
     "title": "Pricing nature into sovereign debt",
     "abstract": "Nature Ecology & Evolution, Published online: 05 June 2026; doi:10.1038/s41559-026-03101-6 A study that couples ecological–economic scenarios with a machine-learned replica of how nations’ credit ratings are determined shows that even partial losses of just three ecosystem services could materially raise the cost of government borrowing.",
@@ -1532,7 +1506,7 @@
       "Justin Andrew Johnson"
     ],
     "journal": "Nature Ecology & Evolution",
-    "type": "Article",
+    "type": "NewsAndViews",
     "doi": "10.1038/s41559-026-03101-6",
     "url": "https://www.nature.com/articles/s41559-026-03101-6",
     "date": "2026-06-05",
@@ -1612,140 +1586,20 @@
     ]
   },
   {
-    "id": "nature-ecology-evolution-4-VHdlbnRpZXRo",
-    "title": "Twentieth-century insect declines and partial recoveries driven by changes in land use and climate",
-    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03083-5 Continuous 90-year trends of butterflies and deadwood-dependent beetles show clear mid-century declines and only partial recovery of these taxa. The declines were clearly related to agricultural intensification, and climate change and more biodiversity-friendly management helped in the recovery and stabilization — although butterflies are still far from their original diversity.",
+    "id": "sciencedaily-ecology-0-R2lhbnQgZmly",
+    "title": "Giant fire tornadoes could clean up oil spills faster with less pollution",
+    "abstract": "Researchers have shown that controlled fire whirls can clean up oil spills faster and more cleanly than traditional burning methods. The spinning flames consumed up to 95% of the oil, cut soot emissions by 40%, and could help prevent spills from reaching sensitive marine habitats.",
     "authors": [],
-    "journal": "Nature Ecology & Evolution",
-    "type": "Article",
-    "doi": "10.1038/s41559-026-03083-5",
-    "url": "https://www.nature.com/articles/s41559-026-03083-5",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "professionalJournal",
-        "name": "Nature Ecology & Evolution",
-        "url": "https://www.nature.com/articles/s41559-026-03083-5"
-      }
-    ]
-  },
-  {
-    "id": "nature-ecology-evolution-5-QWxpZ25tZW50",
-    "title": "Alignment-free integration of single-nucleus ATAC-seq across species with sPYce",
-    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03087-1 This paper presents sPYce, a method that integrates single-nucleus ATAC-seq data across species, allowing for comparison of gene regulatory evolution across species.",
-    "authors": [
-      "Leo Zeitler",
-      "Camille Berthelot"
-    ],
-    "journal": "Nature Ecology & Evolution",
-    "type": "Methods",
-    "doi": "10.1038/s41559-026-03087-1",
-    "url": "https://www.nature.com/articles/s41559-026-03087-1",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "professionalJournal",
-        "name": "Nature Ecology & Evolution",
-        "url": "https://www.nature.com/articles/s41559-026-03087-1"
-      }
-    ]
-  },
-  {
-    "id": "nature-ecology-evolution-6-R2VuZSBib2R5",
-    "title": "Gene body methylation suppresses intragenic transcription and permits epigenetic inheritance in a cnidarian",
-    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03090-6 Experiments in the cnidarian Nematostella vectensis show a role of gene body methylation in transposable element suppression and that epigenetic inheritance is constrained by chromatin context and transcriptional activity.",
-    "authors": [
-      "Lan Xu",
-      "Richard Heery",
-      "Damir Baranasic",
-      "Bojan Žunar",
-      "Alvaro Segura Campaña",
-      "Vladimir Ovchinnikov",
-      "Boris Lenhard",
-      "Alex de Mendoza"
-    ],
-    "journal": "Nature Ecology & Evolution",
-    "type": "Article",
-    "doi": "10.1038/s41559-026-03090-6",
-    "url": "https://www.nature.com/articles/s41559-026-03090-6",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "professionalJournal",
-        "name": "Nature Ecology & Evolution",
-        "url": "https://www.nature.com/articles/s41559-026-03090-6"
-      }
-    ]
-  },
-  {
-    "id": "nature-ecology-evolution-7-TmluZXR5LXll",
-    "title": "Ninety-year trends reveal sharpest insect declines in the mid-twentieth century",
-    "abstract": "Nature Ecology & Evolution, Published online: 02 June 2026; doi:10.1038/s41559-026-03074-6 Assessing the magnitude and drivers of recent biodiversity losses requires informative, long-term baseline data. Here the authors reconstruct the temporal trajectories of butterflies and saproxylic beetles in Switzerland from 1930 to 2021, shedding light on the role of climate and land-use change.",
-    "authors": [
-      "Felix Neff",
-      "Kurt Bollmann",
-      "Yannick Chittaro",
-      "Martin M. Gossner",
-      "Felix Herzog",
-      "Fränzi Korner-Nievergelt",
-      "Glenn Litsios",
-      "Carlos Martínez-Núñez",
-      "Marco Moretti",
-      "Emmanuel Rey",
-      "Andreas Sanchez",
-      "Eva Knop"
-    ],
-    "journal": "Nature Ecology & Evolution",
-    "type": "Article",
-    "doi": "10.1038/s41559-026-03074-6",
-    "url": "https://www.nature.com/articles/s41559-026-03074-6",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "professionalJournal",
-        "name": "Nature Ecology & Evolution",
-        "url": "https://www.nature.com/articles/s41559-026-03074-6"
-      }
-    ]
-  },
-  {
-    "id": "sciencedaily-agriculture-food-0-QSBoaWRkZW4g",
-    "title": "A hidden pollutant is changing how the world's forests breathe",
-    "abstract": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hidden tipping points that could affect how forests store carbon and cope with climate change.",
-    "authors": [],
-    "journal": "ScienceDaily Agriculture and Food",
+    "journal": "ScienceDaily Ecology",
     "type": "News",
     "doi": "",
-    "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
-    "date": "2026-06-02",
+    "url": "https://www.sciencedaily.com/releases/2026/06/260605023420.htm",
+    "date": "2026-06-05",
     "sourceSignals": [
-      {
-        "type": "scienceDaily",
-        "name": "ScienceDaily Agriculture and Food",
-        "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
-      },
       {
         "type": "scienceDaily",
         "name": "ScienceDaily Ecology",
-        "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm"
-      }
-    ]
-  },
-  {
-    "id": "sciencedaily-agriculture-food-1-VGhpcyBibG9v",
-    "title": "This blood-feeding fly sacrifices its sight after finding a host",
-    "abstract": "Deer keds rely on flight and vision to find a host, but everything changes once they land. After shedding their wings forever, these parasites reduce the activity of key vision-related genes by about half. Scientists believe they are effectively trading sharp eyesight for extra energy that can be used for feeding and reproduction.",
-    "authors": [],
-    "journal": "ScienceDaily Agriculture and Food",
-    "type": "News",
-    "doi": "",
-    "url": "https://www.sciencedaily.com/releases/2026/06/260602021633.htm",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "scienceDaily",
-        "name": "ScienceDaily Agriculture and Food",
-        "url": "https://www.sciencedaily.com/releases/2026/06/260602021633.htm"
+        "url": "https://www.sciencedaily.com/releases/2026/06/260605023420.htm"
       }
     ]
   },
@@ -2390,14 +2244,233 @@
     ]
   },
   {
+    "id": "wechat-3943639881-2247487740_1",
+    "title": "Global Change Biology | 长期凋落物分解，真的可以用“三库模型”解释吗？",
+    "abstract": "🍂🌍 2008：LIDET 全球长期实验揭示气候与凋落物质量如何共同控制分解 📌 文献信息 期刊 ： Global Change Biology （2008） 题目 ： Simple three-pool model accurately describes patterns of long-term litter decomposition in diverse climates 作者 ：E. Carol Adair, William J. Parton, Steven J. Del Grosso, Whendee L. Silver, Mark E. Harmon, Sonia A. Hall, Ingrid C. Burke, Stephen C. Hart 研究数据 ：LIDET，Long-term Intersite Decomposition Experiment Team 研究尺度 ：27 个站点，10 年长期分解实验，覆盖北美和中美洲多种气候与生态系统 核心关键词 ：LIDET｜three-pool model｜lignin｜cellulose｜lignin/N｜climate decomposition index｜long-term decomposition 🔥 一句话核心结论 作者基于 LIDET 10 年全球凋落物分解数据发现： 长期凋落物分解可以被一个相对简单的三库负指数模型较好描述。 其中，凋落物被划分为快速分解的易分解库、中速分解的纤维素库和难分解的顽固库；初始木质素/氮比决定易分解库与中间库大小，木质素含量决定顽固库大小，而气候通过温度和水分共同调节各库分解速率。 01 为什么这篇文章重要？🧠 凋落物分解是陆地生态系统向大气释放 CO₂ 的核心过程之一。 但长期以来，分解模型面临一个难题： 简单模型容易忽略机制，复杂模型又难以全球应用。 过去很多研究只持续 1–3 年，很难解释后期分解中木质素、纤维素和气候限制如何共同作用。LIDET 的价值在于，它提供了一个罕见的 10 年尺度、多站点、多凋落物类型的长期数据集。 📌 解读 ： 这篇文章真正解决的问题不是“凋落物分解是否受气候和质量控制”，而是进一步回答： 我们能否用少量关键变量，构建一个足够简单、但又具有机制意义的长期分解模型？ 02 研究设计：LIDET 为什么经典？🔬 LIDET 是一个长期互置凋落物实验。 研究设计包括： 🌍 27 个站点 ⏳ 10 年分解时间 🍂 叶片和细根凋落物 🌡️ 覆盖寒带、温带、热带、湿地、草地、荒漠等生态系统 🧪 测定初始凋落物质量，包括 N、C、木质素、纤维素、水溶性组分等 作者并没有直接假设一个模型，而是提出 5 个先验假设，并用 AICc 模型选择逐级比较： 凋落物是否需要分成三个碳库？ 木质素是否会限制纤维素分解？ 木质素/氮比是否决定早期分解？ 气候是否需要温度和水分的综合指标？ 温度效应是否需要可变 Q₁₀ 函数？ 📌 解读 ： 这篇文章的方法亮点在于“假设驱动 + 模型选择”。它不是在大量变量中盲目筛选，而是把生态过程转化为候选模型，再用长期数据检验哪个模型最接近真实分解轨迹。 03 主要发现 1：三库模型明显优于一库和二库模型 🧩 作者比较了一库、二库和三库负指数模型。结果显示，三库模型显著优于其他模型。 三个库分别代表： 1️⃣ 快速库：labile pool 包括糖类、氨基酸、水溶性化合物等易分解组分。 它控制早期快速质量损失。 2️⃣ 中间库：cellulose pool 主要代表纤维素和半纤维素。 它控制中期分解过程。 3️⃣ 顽固库：recalcitrant pool 主要代表木质素及其相关难分解组分。 在 10 年尺度内，其分解速率接近于 0。 📌 解读 ： 这说明长期分解不是单一 k 值就能完全表达的过程。 早期、中期和后期分解分别受不同底物库控制。 如果只用单指数模型，会把不同阶段平均成一个速率，掩盖后期顽固组分保留的机制。 三库模型的价值在于，它让“分解速率”转化为“不同化学组分库的动态变化”。 04 主要发现 2：木质素不仅慢分解，还会“保护”纤维素 🪵 作者发现，仅把木质素设为顽固库还不够。 模型还必须考虑： 木质素对纤维素分解的包埋或保护作用。 具体来说，纤维素库的分解速率会随着木质素相对比例增加而下降。最佳模型使用： 木质素 /（木质素 + 纤维素） 来调节中间库分解速率。 📌 解读 ： 这非常关键。木质素不是一个独立“慢库”那么简单，它还会通过木质素-碳水化合物复合结构限制纤维素可达性。 也就是说，纤维素是否容易分解，不只取决于纤维素含量本身，还取决于它是否被木质素“包裹”。 这对我们理解 NDF、ADF、cellulose、lignin 与分解的关系非常有启发： 结构性碳组分之间的相对关系，可能比分别看单个组分更重要。 05 主要发现 3：木质素/氮比决定早期分解速度 🌱 作者发现，用初始木质素/氮比来估计初始碳库大小，比直接使用测定的碳组分比例更能预测长期分解。 具体机制是： L/N 越低，快速库越大，早期分解越快。 L/N 越高，快速库越小，中间库越大，分解变慢。 📌 解读 ： 这说明氮含量主要影响早期分解，但不是简单通过改变某一个 k 值，而是通过改变“有多少底物进入快速分解库”。 这个观点非常适合写进凋落物分解模型讨论中： 氮并不只是提高微生物活性，也可能改变凋落物在不同分解库之间的初始分配。 06 主要发现 4：气候效应需要同时考虑温度和水分 🌡️💧 作者比较了 MAT、MAP、AET 和多个 climate decomposition index，CDI。结果显示，最佳气候变量是： Lloyd & Taylor 可变 Q₁₀ 温度函数 × 水分胁迫函数构成的 CDI。 这个指标明显优于单独使用年均温或年降水。 📌 解读 ： 这说明分解并不是简单“越热越快”或“越湿越快”。 在低温区，温度升...",
+    "journal": "麦当的生态学笔记",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/ZFisTl3ThOherTWCb4mmmQ",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 146,
+      "bodyChars": 3004,
+      "usedChars": 2503
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "麦当的生态学笔记",
+        "url": "https://mp.weixin.qq.com/s/ZFisTl3ThOherTWCb4mmmQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906308687-2247553988_1",
+    "title": "RSE最新成果|FOGA：面向功能语义的异构图聚合框架，构建全国31城2.4m城市功能区数据集",
+    "abstract": "论文摘要 城市功能区（UFZ）是城市经济与社会活动的空间载体，精细化、高精度的城市功能区制图对城市规划、城市治理与可持续发展至关重要。遥感影像与兴趣点（POI）数据具备优势互补特性，为城市功能区制图提供重要支撑。但受数据本身属性差异制约，现有城市功能区识别方法难以有效融合遥感、POI 两类多模态特征；此类方法大多依赖预先划定的分区单元，无法建模地理要素间的空间关联，易造成用地功能混杂问题。此外，从影像与 POI 中提取多源异构特征，是构建地理对象多维语义表征的关键。针对上述问题，本文提出面向功能语义的地理对象异构图聚合框架（FOGA），用于高精度城市功能区制图。FOGA 将城市空间构建为由影像层、POI 层组成的异构图；自研 MGFMamba 模块搭配 BERT 预训练模型，分别从遥感影像、POI 数据中提取功能语义特征。两类语义特征嵌入图网络后，通过构建层内与跨层关联链路，实现多模态特征融合与空间关系一体化建模。研究进一步设计异构图边注意力关系图神经网络（HEA-RGNN）完成功能区分类制图。依托该异构图架构，自适应多模态特征传播机制可动态学习特征表征范围与跨模态语义权重，无需预先划分分区单元即可完成地理要素向城市功能区的聚合归类。基于四座城市的对照试验验证了 FOGA 模型的有效性与稳定性。依托 FOGA 框架，本研究建成国内首套无预设分区单元的城市功能区数据集，覆盖全国 31 座主要城市、空间分辨率 2.4 米、基准年份 2024 年，在制图精度与精细化空间表达上优于现有同类产品。研究配套城市功能区数据与开源代码发布地址：https://github.com/haha123haha460/foga。 关键图表 图 1. 本文提出的基于异构图的城市功能区（UFZ）制图整体框架示意图 。 图 2. 城市功能区制图研究区空间范围。 图 3. 本研究所用兴趣点（POI）数据空间可视化。 图 4. 各类城",
+    "journal": "GEE遥感训练营",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/yL1Ejd-scsE_qGsQFgBNXQ",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 159,
+      "bodyChars": 814,
+      "usedChars": 814
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GEE遥感训练营",
+        "url": "https://mp.weixin.qq.com/s/yL1Ejd-scsE_qGsQFgBNXQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551372_3",
+    "title": "植物所严正兵课题组最新科研进展 | 植被结构与功能研究团队揭示叶片水分关系与经济学谱的权衡机制",
+    "abstract": "6月4日，植被结构与功能研究团队在国际学术期刊 Plant Physiology 发表题为“ Partial coordination of leaf water relations with the leaf economics spectrum across diverse forest types ”的文章，揭示了叶片水分关系与经济学谱的权衡机制。 叶片的水分状况和碳经济策略是决定植物生理过程和功能的重要基础。然而，这两类性状是完全协调还是存在独立变异的空间，目前仍存在争议。此外，性状之间的协调关系并非固定不变，而是会随环境条件发生动态调整。在不同环境背景下，叶片水分状况与碳经济策略的协调关系如何变化，仍有待探索。 植被与环境变化实验室植被结构与功能研究团队依托中国科学院林冠塔吊平台，以我国温带、亚热带和热带三大典型森林生态系统为研究对象，共采集61个物种、216株乔木的林冠叶片样本，并以叶片压力-容积曲线性状（PV性状）表征叶片水分状况，以叶经济学谱性状（LES性状）表征碳经济策略，探究二者之间的协调关系。 研究发现，PV性状与LES性状呈现部分协调关系。其中，膨压损失点这一反映植物耐旱能力的重要水力阈值独立于LES框架，而叶水容等其他PV性状则与LES协同变化。这可能是由于膨压损失点直接关联植物生存安全、变异受限，因此与资源获取策略存在功能分化；相比之下，饱和含水量既影响植物光合作用潜力，又决定叶片储水能力，从而成为连接其他PV性状与LES性状的重要桥梁。值得注意的是，PV-LES协同程度具有明显环境依赖性：在资源相对匮乏环境中，处于LES保守端的植物表现出更紧密的协同关系，以提高资源利用效率；而在资源丰富环境中，不同性状则具有更大的组合空间，PV-LES性状网络紧密程度下降。 这些发现揭示了植物叶片碳水关系协同的机制基础，加深了对植物功能策略及物种共存机制的理解，并为预测森林生态系统对气候变化的响应提供了理论依据。 叶片PV性状与LES性状协调关系示意图 实验室硕士研究生董婷婷为第一作者，严正兵研究员为通讯作者。中国科学院华南植物园刘慧研究员、华中农业大学熊栋梁教授、北京林业大学樊大勇教授、美国加州大学Lawren Sack教授、法国洛林大学Miquel Nadal研究员等参与了该项研究。该研究得到了植被结构功能与建造全国重点实验室开放课题和国家自然科学基金面上项目的资助。 文章链接： https://doi.org/10.1093/plphys/kiag342 点击底部“阅读原文” <section powered-by=\"werss\" style=\"text-align: center;",
+    "journal": "生态学者",
+    "type": "Dataset",
+    "doi": "10.1093/plphys/kiag342",
+    "url": "https://mp.weixin.qq.com/s/uW2qblIzbxemQQdyBUFqGg",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 16,
+      "bodyChars": 1121,
+      "usedChars": 1121
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/uW2qblIzbxemQQdyBUFqGg"
+      },
+      {
+        "type": "wechat",
+        "name": "植被与环境变化重点实验室",
+        "url": "https://mp.weixin.qq.com/s/0drhrHIx4jP16Mx8dZmu8Q"
+      }
+    ],
+    "authors": []
+  },
+  {
+    "id": "wechat-3906186632-2247551372_2",
+    "title": "东北地理所在长期农业管理措施调控黑土农田冻融期间温室气体排放的研究中取得进展",
+    "abstract": "东北地理所在长期农业管理措施调控黑土农田冻融期间温室气体排放的研究中取得进展\n\n在北方季节性冻融区 ，反复的冻融作用可改变土壤理化与微生物性质，破坏团聚体结构，导致微生物细胞裂解，并释放大量活性碳氮。尤其在秋冻与春融的关键转换期，底物释放及微生物群落结构重组强烈影响温室气体的排放速率与组成。然而，现有研究多集中于土壤融解阶段，对冻结过程及完整冻融周期的系统认识仍显不足。特别是在农业管理背景下，长期施肥与种植制度的差异如何通过改变土壤属性进而调控冻融期间的温室气体排放，尚不明确。针对这一问题，中国科学院东北地理与农业生态研究所李禄军研究员团队以东北黑土农田为研究对象，基于长期施肥与种植制度定位监测平台，在土壤冻结初期、冻结后期、完全冻结期、融解初期和融解后期五个冻融关键阶段，开展了非生长季高频气体采样（图 1 ）。该研究旨在揭示冻融过程中 CO 2 、 CH 4 和 N 2 O 的排放动态，及其与土壤理化性质和微生物属性变化之间的内在联系。 图 1 田间试验地点土壤水热条件变化（ a ）、气体采集（ b ）及五个典型冻融阶段的土壤情况（ c ） 研究发现，土壤 CO 2 排放速率在冻结期呈“驼峰型”动态，融解期逐渐上升，其累积排放量主要发生在秋季冻结与春季融解阶段（图 2a-c ）； CH 4 排放动态与 CO 2 相似，融解期累积排放量较冻结期增加 266% ，整个冻融期间土壤表现为 CH 4 的净吸收（图 2d-f ）； N 2 O 排放呈现显著的“脉冲式”特征，其在融解期的累积排放量显著高于冻结期（图 2i-k ）。在整个冻融期间，土壤 CO 2 、 CH 4 和 N 2 O 排放主要受到土壤温度波动和水分相变的驱动，同时也受到土壤团聚体稳定性、碳氮有效性及微生物群落变化的综合调控（图 3 和 4 ）。融解期三种温室气体排放速率与资源与微生物之间的碳氮比失衡程度均呈现显著的负相关（图 4 ），表明该期间土壤资源与微生物需求之间的化学计量失衡的缓解，触发了融解期间 CO 2 、 CH 4 和 N <span style=\"visibility:",
+    "journal": "生态学者",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/80BrmSPLuTZ6T7LwWi5kAA",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 38,
+      "bodyChars": 848,
+      "usedChars": 888
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/80BrmSPLuTZ6T7LwWi5kAA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551372_1",
+    "title": "封面文章！北京大学博士生一作发《Nature》正刊！",
+    "abstract": "近日，北京大学物理学院大气与海洋科学系老体制教授张庆红课题组联合美国中央密歇根大学John T. Allen教授，基于全球冰雹风暴事件与冰雹轨迹模拟，定量评估了未来全球变暖背景下冰雹灾害风险的变化趋势。研究发现：随着气候持续变暖，全球冰雹灾害潜势将在21世纪末显著增强，原因是变暖所伴随的冰雹谱分布向大冰雹偏移。相关成果以题为“Rising global hail damage potential in a warming world”的文章发表于国际顶级学术期刊 Nature，并被选为当期封面。 冰雹风暴是全球频发的高影响灾害天气系统之一，具有空间尺度小、生命史短，突发性强和破坏力大等特点。随着人类活动导致的温室气体持续排放，全球地表平均温度连年升高，在过去的两年中（2024-2025年），全球多地频繁出现极端冰雹事件，但是受全球冰雹观测系统的非一致性以及冰雹生长物理过程的复杂性影响，变暖背景下的全球冰雹灾害潜势变化趋势一直被IPCC报告认为是低信度。 针对这一难题，研究团队基于卫星观测识别的全球14,297次强冰雹风暴事件和CMIP6气候模式，结合准三维冰雹生长模型（semi-3D hail trajectory model）与伪全球变暖（Pseudo Global Warming, PGW）方法，定量评估了未来不同排放情景下（SSP245，SSP370，SSP585）冰雹谱分布与灾害潜势的变化。 研究发现，未来近地面冰雹谱分布将整体向“大冰雹”方向偏移（图1）。相比历史气候态，未来30毫米以下小冰雹的发生频率减少约4-12%，而30毫米以上大冰雹的发生频率则增加约38%–52%，导致全球冰雹灾害潜势显著增强，近地面冰雹累积动能预计增加约37%–42%，且排放情景越高，增幅越明显。 图1 ： 21世纪末冰雹灾害潜势的变化。(a) EC-Earth3 模式模拟的当前气候（1985–2014年）与未来气候（2071–2100年）SSP585排放情景之累计动能差异（AKED）的全球分布，差值定义为未来值减去当前值。每个 5° × 5° 网格中的情景累计动能（AKE）为该网格内所有冰雹事件的平均值。点状区域表示差异通过了 Student’s t 检验的 95% 显著性水平。(b) 当前气候背景（HIST，黑色）和 未来SSP585 排放情景（紫色）下，融化层高度（MLH，虚线）以及融化后近地表（SFC，彩色实线）的冰雹直径谱分布。 研究进一步揭示了这种变化背后的关键物理机制。未来增暖增湿的低层大气环境能够提供更丰富的云中液态水含量，更强的上升气流，使冰雹在云中获得更高的增长效率，大冰雹数目增加。然而，全球变暖同时也会抬升融化层高度，该过程对小冰雹影响更大，因此近地面小冰雹数量减少。 区域尺度上，未来冰雹灾害变化呈现显著空间差异（图1）。灾害潜势增强的冰雹事件主要分布于中高纬地区（如中国北方、美国大平原、欧洲）。这些区域低层大气强升温与弱增湿叠加，使大气不稳定能量大幅增加，上升气流更强，冰雹增长效应超过融化损失影响，更容易形成大冰雹。相比之下，热带及季风区（如赤道非洲、东南亚）低层大气升温较弱、增湿明显，不稳定能量增加有限，而融化层升高与增长层变薄导致冰雹融化损失效应更加明显，最终使近地面冰雹尺寸减小，灾害潜势减弱。 <p style='margin: 16px 0px 0px;padding: 0px;color: rgb(50, 50, 50);-webkit-font-smoothing: subpixel-antialiased;font-family: \"Microsoft Yahei\", SimSun, SimHei, \"STHeiti Light\", STHeiti, \"Lucida Grande\", Tahoma, Arial, Helvetica, sans-serif;font-style",
+    "journal": "生态学者",
+    "type": "Methods",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/DU9vMd5-phfhy3LOYZn7NQ",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 203,
+      "bodyChars": 1630,
+      "usedChars": 1630
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/DU9vMd5-phfhy3LOYZn7NQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3578328425-2247499967_1",
+    "title": "冰雪中跳动的生命：雪蝇如何适应严寒环境？",
+    "abstract": "昆虫通常被认为是变温动物，它们的体温高度依赖环境温度。然而，自然界中却存在一些例外。",
+    "journal": "生态学文献分享",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/dMrYgVztI1jg-8mcUqTVmA",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 42,
+      "bodyChars": 0,
+      "usedChars": 42
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学文献分享",
+        "url": "https://mp.weixin.qq.com/s/dMrYgVztI1jg-8mcUqTVmA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3870548585-2247485237_1",
+    "title": "郭宝成团队揭示刺鱼科物种ZW性别决定系统的起源和演化",
+    "abstract": "郭宝成团队揭示刺鱼科物种ZW性别决定系统的起源和演化",
+    "journal": "动物学会生物地理学分会",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/RbVQ8ToeshxABHorIWvyoQ",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 26,
+      "bodyChars": 0,
+      "usedChars": 26
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "动物学会生物地理学分会",
+        "url": "https://mp.weixin.qq.com/s/RbVQ8ToeshxABHorIWvyoQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545958_2",
+    "title": "nature：新能源刚需钴，正在掏空原始雨林",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/7uMcNwJRfjvnXswUSbmFzg",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/7uMcNwJRfjvnXswUSbmFzg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545958_1",
+    "title": "不懂简笔画，会被地质人笑话？",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/zTT2obkFIBa03oSzeU1QQQ",
+    "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/zTT2obkFIBa03oSzeU1QQQ"
+      }
+    ]
+  },
+  {
     "id": "wechat-3564969279-2247530590_4",
     "title": "New Phytol | 被忽视的种子传播者：我们对于未知领域究竟了解多少？",
-    "abstract": "点点击蓝字关注我们近期，New Phytologist 在线发表了 Sara Beatriz Mendes",
+    "abstract": "点 近期，New Phytologist 在线发表了 Sara Beatriz Mendes\n\n点 点 击 蓝 字 关注我们 近期， New Phytologist 在线发表了 Sara Beatriz Mendes 等人题为 “Neglected seed dispersers and research compartmenta-lisation: how much do we know about what we don’t know?” 的观点文章。作者基于目前最完整的欧洲种子传播数据库，系统评估了种子传播研究中长期存在的 “研究孤岛（research silos）” 现象，并试图回答一个值得深思的问题： 在种子传播研究领域，我们已经积累了多少知识，又遗漏了多少关键信息？",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Dataset",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/WQze9LsI-mkXngeoPYqwmw",
     "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 46,
+      "bodyChars": 295,
+      "usedChars": 343
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2409,29 +2482,47 @@
   {
     "id": "wechat-3564969279-2247530590_3",
     "title": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？",
-    "abstract": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？",
+    "abstract": "New Phytologist观点文章 | 被忽视的种子传播者：我们对于未知领域究竟了解多少？ New Phytol编辑部 生态学者 2026年6月5日 19:21 听全文 点 点 击 <p style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box;overflow-wrap: break-word !important;clear: both;",
     "journal": "Wiley生态环境",
-    "type": "Comment",
+    "type": "Perspective",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/V4G9OiTe3GzvKW2bo9cvJA",
     "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 47,
+      "bodyChars": 275,
+      "usedChars": 275
+    },
     "sourceSignals": [
       {
         "type": "wechat",
         "name": "Wiley生态环境",
         "url": "https://mp.weixin.qq.com/s/V4G9OiTe3GzvKW2bo9cvJA"
+      },
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/FXz94MdaxX1zubs5XQxEog"
       }
-    ]
+    ],
+    "authors": []
   },
   {
     "id": "wechat-3564969279-2247530590_2",
     "title": "Journal of Ecology | 海拔与环境因子驱动亚热带森林幼苗叶片虫食的变异，而非均值",
-    "abstract": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。",
+    "abstract": "昆虫植食是森林生态系统的重要生态过程，直接影响幼苗存活、森林更新和生物多样性维持。已有研究多关注虫食强度的平均水平，而较少关注群落尺度上虫食强度的变异性，但这种变异对物种相互作用和群落稳定性具有重要意义。 虫食格局由平均强度和变异性共同决定，受植物性状、群落多样性和资源可利用性等因素调控(图1)。海拔梯度为研究这些过程提供了理想条件，但已有研究结论并不一致，局域环境差异可能进一步影响虫食格局。同时，乔木与灌木幼苗在生长-防御策略上的差异，可能导致其虫食变异性呈现不同的海拔响应格局，但目前仍缺乏系统认识。本研究旨在探讨沿海拔梯度的环境变化如何塑造亚热带森林幼苗叶片虫食格局，为理解森林生态系统中的生物互作机制提供新的视角。 图1. 虫食均值(a–c)与变异性(d–f)随植物大小、植物多样性及资源可利用性变化的预测。 本研究调查 中国亚热带与热带 5座山地 415种木本幼苗 的虫食情况(图2)，从群落水平分析虫食强度均值与变异性，对比乔灌幼苗差异，揭示海拔梯度上生物与非生物因子对虫食强度的影响。 图2. 研究区域。颜色表示年均温，蓝色点标注 5 座研究山地： 浙江天目山(TMS)、江西官山(GS) 、福建戴云山(DYS)、广东车八岭(CBL)、海南霸王岭(BWL) 。 <img src=\"https://mmbiz.qpic.cn/sz_mmbiz_png/Q9szFNdzHkLNy4hKooZ4ibNNNzzqHOcnYMEEAeGRmY8BBuVicqnd5K7al0O32vWuiaqiaricvt7CicLxz8LuJFgXZCpciazF589J0emtmRLJib9eVDs/640?wx_fmt=png&wxfrom=5&wx_lazy=1&tp=webp#imgIndex=3\" style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing:",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Dataset",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/U0_f6899iEduV_TkjK-pmQ",
     "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 41,
+      "bodyChars": 878,
+      "usedChars": 878
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2443,12 +2534,18 @@
   {
     "id": "wechat-3564969279-2247530590_1",
     "title": "Ecology Letters | 华东师范大学-阿尔伯塔大学生物多样性联合实验室何芳良教授发表最新研究成果！【更新重发】",
-    "abstract": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。",
+    "abstract": "树木通过径向生长将叶片光合作用固定的碳，以木质素等稳定形态长期储存在木质部中。这一过程不仅是森林生态系统碳汇增长最主要和稳定的途径，其速率也与树木的整体健康状况，以及繁殖、抗病、为植食动物提供食物等关键生理生态功能密切相关。因此，在全球变暖背景下，树木径向生长的速率与稳定性变化趋势，极大地影响着森林生态系统的未来。 随着全球变暖导致极端气候事件的频率与强度持续增加，越来越多的研究证实其对全球树木生长造成了显著影响。目前，尚缺少大空间尺度的研究系统阐明这些环境变化对全球树木生长平均速率和年际波动性影响的时间格局及空间差异。近日，生态学期刊 Ecology Letters 发表了 华东师范大学 - 阿尔伯塔大学生物多样性联合实验室（ ECNU-Alberta Joint Lab for Biodiversity Study ） 何芳良教授 题为 “Variation in Tree Growth Increases With Global Warming” 的研究论文。该研究基于全球 20 余万条树木年轮数据，系统分析了近 600 年来树木生长速率及其年际变异的历史趋势。 <p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: left;color: rgb(51, 51, 51);font-family: Arial, 微软雅黑, Museo300, \"Open Sans\", \"Hiragino Sans GB\", STXihei, \"Microsoft YaHei\", sans-serif;font-size: 14px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: normal;orphans: 2;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decor",
     "journal": "Wiley生态环境",
-    "type": "Comment",
+    "type": "Correspondence",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/Cs6xgC80k5XOQicvIINl1w",
     "date": "2026-06-06",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 39,
+      "bodyChars": 1139,
+      "usedChars": 1139
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2458,14 +2555,43 @@
     ]
   },
   {
+    "id": "wechat-3988694333-2247488319_1",
+    "title": "NC|应对全球干旱导致作物产量损失的热点地区",
+    "abstract": "摘要：满足未来粮食需求需要对粮食系统进行转型，以同时提高产量、减少环境影响并适应气候变化。",
+    "journal": "气候韧性农业",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/3-mls_umLD1jKVHmGKzCVA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 45,
+      "bodyChars": 0,
+      "usedChars": 45
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "气候韧性农业",
+        "url": "https://mp.weixin.qq.com/s/3-mls_umLD1jKVHmGKzCVA"
+      }
+    ]
+  },
+  {
     "id": "wechat-3622875734-2247484238_1",
     "title": "PNAS | 亚马逊东南部地区森林在火灾、干旱和风暴扰动后的恢复路径",
-    "abstract": "",
+    "abstract": "Maracahipes, L., Brando, P.M., Silvério, D.V., Maracahipes-Santos, L., Silveiro, A.C., Verona, L., et al. (2026). Forest recovery pathways after fire, drought, and windstorms in southeastern Amazonia. Proceedings of the National Academy of Sciences, 123, e2532833123. ( 2026年4月发表 ) Abstrac : The future of tropical forests depends on their ability to resist and recover from multiple disturbances. Here, we evaluated how edge effects, experimental fires, extreme droughts, and blowdowns reshaped forest structure, composition, and functional traits over two decades in the Amazon–Cerrado transition. Initially, forests resisted low-intensity fires, but subsequent high-intensity fires during severe droughts sharply increased susceptibility to further disturbances. Along forest edges bordering agriculture, these compound disturbances drove losses of tree species richness, declines in Amazonian forest-specialist species, and shifts toward generalists with broad distributions, indicating increased compositional homogenization (i.e., reduced taxonomic diversity and dominance of generalist species). Once fires ceased, recovery trajectories diverged: Interior forests rapidly regained woody species richness and composition, whereas edge forests recovered more slowly. During postfire recovery, embolism-resistant species (lower P50 values) became more common, yet communities exhibited lower hydraulic safety margins (increased vulnerability to drought). At the same time, generalist species remained abundant, forest-specialist declined, and only a single woody species typical of savanna was established. Although grasses initially colonized fire-altered edges—especially light-demanding exotic Andropogon gayanus—they declined once fires stopped, leaving only small patches of shade-tolerant C3 species. Consequently, we find little evidence that fire-degraded forests transition toward persistent savanna, although recurrent fires or future climatic changes could drive long-lasting degradation or human-derived savannas. Together, these results show that even highly degraded, grass-invaded forests can recover in the absence of new disturbances, but the communities that reassemble remain vulnerable to renewed fire, drought, or windthrow. Significance : As climate and land-use change intensify in Amazonia, compound disturbances could push southeastern Amazon forests toward large-scale collapse, including transitions to alternative states. Using a 20-y experimental fire study in southe...",
     "journal": "Fire ecology",
     "type": "News",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/ibGXFxTaHllKyFydjORLHA",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 203,
+      "bodyChars": 4321,
+      "usedChars": 2503
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2475,31 +2601,739 @@
     ]
   },
   {
-    "id": "wechat-3928350969-2247487422_1",
-    "title": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动",
-    "abstract": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动",
-    "journal": "野火遥感Fire Centre",
+    "id": "wechat-3943639881-2247487734_1",
+    "title": "Ecological Modelling |  Yasso07 能准确模拟森林凋落物和死木分解吗？",
+    "abstract": "",
+    "journal": "麦当的生态学笔记",
     "type": "News",
     "doi": "",
-    "url": "https://mp.weixin.qq.com/s/y5Dn_DTLKztdmnTFgdbjwg",
+    "url": "https://mp.weixin.qq.com/s/W2s7Sdc-qIqTfKY0Mtst0w",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
     "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "麦当的生态学笔记",
+        "url": "https://mp.weixin.qq.com/s/W2s7Sdc-qIqTfKY0Mtst0w"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3256521467-2247497000_1",
+    "title": "生态学讲座 | 热带雨林的共存机制与生态修复",
+    "abstract": "PKU-RE遥感生态学“遥感生态学”由北京大学遥感生态学实验室（PKU-RE）陶胜利研究员创建，致力于推广课\n\nPKU-RE 遥感生态学 “遥感生态学”由北京大学遥感生态学实验室（PKU-RE）陶胜利研究员创建，致力于推广课题组研究工作（以激光雷达与雷达为核心技术的植被3D结构与功能研究、城市生态学、以及生态环境多要素动态变化研究），并传播、启发遥感与生态相关的新技术、新思考， ！",
+    "journal": "北京大学生态研究中心",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/2L4B0pUMka2YGa1E2oZyhw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 54,
+      "bodyChars": 136,
+      "usedChars": 192
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "北京大学生态研究中心",
+        "url": "https://mp.weixin.qq.com/s/2L4B0pUMka2YGa1E2oZyhw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570696_5",
+    "title": "可持续发展国际合作科学计划2026年度项目指南（第二批）",
+    "abstract": "为实施更加开放包容、互惠共享的国际科技合作战略，推动实现联合国可持续发展目标，助力构建人类命运共同体，国家自然科学基金委员会（以下简称“自然科学基金委”或“NSFC”）广泛联合国际科学组织以及各国科研资助机构，发起可持续发展国际合作科学计划（以下简称“科学计划”或“SDIC”），促进各国科研人员的双多边国际交流与合作，共同开展面向全球挑战的科学研究。 2026年度，科学计划将发布两批指南，包括组织间合作及战略性合作两类。本次发布的是战略性合作项目指南，主要面向中方自主牵头实施的合作研究项目和合作交流项目。 一、总体科学目标 联合国《2030可持续发展议程》的17项可持续发展目标（SDGs）相互关联、彼此促进又相互制衡，系统把握SDGs之间的协同关联与潜在矛盾，对统筹实现可持续发展三大核心维度—经济发展、社会包容与环境保护的平衡具有重要意义。 实现可持续发展是全球治理与构建人类命运共同体的核心使命，科学计划聚焦联合国2030年可持续发展议程的关键目标，围绕“应对全球共同挑战”与“布局关键战略领域”两大主线，开展跨国界、跨学科的系统性研究，推动可持续发展从科学认知迈向实践路径。 科学计划重点聚焦“一带一路”共建国家及全球典型区域，开展多层次、多场景、多要素的区域系统集成研究，推动构建可复制、可推广的可持续发展模式，为构建人类命运共同体提供支撑，为相关国家和地区实现可持续发展提供科学决策依据。 二、主要资助方向 战略性项目旨在结合全球共同挑战与国际科技前沿，围绕气候变化、生命健康、能源环境、农业安全等全球可持续发展的关键挑战相关重大科学问题，支持中外科研人员开展合作研究和交流。项目应突出系统科学与多学科交叉融合，优先资助以气候变化为核心驱动、关联多领域可持续发展的系统性研究，鼓励整合观测、模拟、大数据、人工智能与社会治理等方法，揭示复合风险的耦合机制，提出适应性解决方案。 （一）城市气候和生态系统与健康耦合机理及评估 （申请代码1须选择C、D或H下属申请代码，建议填写至最末一级）。 面向全球典型城市及城市群城市社会-生态-健康系统，阐明气候变化影响城市大健康的关键路径与阈值，研发城市气候—健康风险动态评估模型，提出可推广的气候韧性健康城市建设方案。 研究内容 包括：极端气候事件（高温热浪、暴雨洪灾等）及极端环境事件（雾霾、空气污染等）对城市居民身心健康的影响机制；城市蓝绿空间格局和过程与城市气候和生态系统韧性与公共健康及其防护体系的耦合机制；气候变化下城市传染病传播风险预警与防控策略；揭示气象风险与心脑血管、呼吸系统等疾病的暴露—反应关系及时滞效应；城乡生态环境与人群健康的协同治理模式。 （二）城市社会—技术代谢系统重构与健康协同 （申请代码1须选择D、E、G或H下属申请代码，建议填写至最末一级）。 面向全球典型城市及城市群，开发城市代谢—健康关联数据库与决策支持工具，提出面向健康优先的城市代谢系统综合重构方案。 研究内容 包括：分析城市能源、水、食物、废弃物代谢系统与人群健康的交互机理；量化清洁能源替代、饮用水安全保障、健康食物供应链优化、生活垃圾分类与资源化等代谢重构措施的健康协同效益；构建环境—经济—健康多目标优化模型；设计公正转型路径，避免代谢重构对弱势群体的负面影响。 （三）气候变化与公共卫生 （申请代码1须选择D、G或H下属申请代码，建议填写至最末一级）。 构建气候变化—传染病传播的多尺度耦合模型，研发跨境公共卫生风险早期预警系统，形成国际通用的气候适应性公共卫生防控技术指标及跨国共享的传染病防控与干预合作机制。 研究内容 包括：气候变暖与极端天气对传染病（虫媒、水源性、动物源性、呼吸道等）分布及传播动力学；气候变化下病原体变异、生态宿主迁移与人类暴露风险的关联；跨境气候相关公共卫生事件的联合监测、预警与应急响应体系；气候适应性公共卫生基础设施优化设计。 （四）气候变化下的能源安全 （申请代码1须选择D、E或G下属申请代码，建议填写至最末一级）。 揭示气候变化与能源系统的双向反馈机制，建立能源—气候耦合模拟与风险预测平台，提出兼顾安全、低碳与经济的能源系统转型国际合作方案。 研究内容 包括：全球气候变化对能源供需系统（化石能源、可再生能源、电网安全）的系统性影响；低碳能源转型与气候减排的协同路径；极端气候事件下能源系统脆弱性评估与韧性提升技术；跨国能源合作与气候治理的协同机制。 （五）气候变化下的农产品安全 （申请代码1须选择C或D下属申请代码，建议填写至最末一级）。 厘清气候变化影响区域粮食产能的核心制约因素，构建气候适配型粮食稳产预测与风险预警体系，研发推广跨境协同的气候智慧型农业方案，筑牢全球粮食安全屏障。 研究内容 包括：极端气候灾害、气温降水格局改变对主粮作物生长发育、产量品质的影响机理；气候变化下农业病虫害跨境传播规律与绿色防控技术；跨境农业水土资源调配与气候适配型种植制度优化；气候韧性农业技术跨境推广与粮食供应链安全协同保障机制。 三、2026年度资助计划 （一）资助类型 <p style=\"text-indent: 2em;margin: 0px 0px 15px;white-space: normal;padding: 0px;box-sizing: border-box",
+    "journal": "生态遥感前沿",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/8HJm5Hwc-sD1rYS0KHWhsQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 186,
+      "bodyChars": 2188,
+      "usedChars": 2188
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/8HJm5Hwc-sD1rYS0KHWhsQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570696_4",
+    "title": "Applied Geography | 厘清气候和生态恢复措施对生态系统服务的影响：以沂蒙山区为例",
+    "abstract": "原文信息 内容速递 文章概要 面对自然生态系统的严重退化，实施生态修复工程（ERP）已成为推动区域可持续发展、提升生态系...\n\n原文信息 内容速递 文章概要 面对自然生态系统的严重退化，实施生态修复工程（ERP）已成为推动区域可持续发展、提升生态系统服务（ES）的关键举措。然而，在气候条件交织影响下，多种修复措施（ERMs）如何具体影响生态系统服务的定量理解仍然有限。本研究以我国华东地区典型低山丘陵区——沂蒙山生态修复工程为例，构建了一个基于可解释机器学习的分析框架，旨在厘清该工程中涉及的9种生态修复措施与气候变量对5种生态系统服务变化的独立贡献和交互效应。结果表明，在短期评估期（2020–2023年）内，生态修复措施对生态系统服务的影响存在明显的差异化特征；修复措施的实施会加剧各类生态系统服务之间的权衡与协同关系，但不会改变二者原本的作用方向；植树造林措施对生态系统服务的整体提升效果最为显著，森林抚育措施则与气候因素存在较强的相互作用；在短期评估周期内，气候因素主导了67%至88%的生态系统服务变化。本研究首次在措施尺度上厘清了“修复措施-气候因子”的协同驱动机制，为修复策略的迭代优化和气候适应性管理提供科学支撑。 <section powered-by=\"werss\" style=\"font-size: 15px; box-sizing: bord",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/0-SKCl6-QsynlMVlZJFiNA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 63,
+      "bodyChars": 521,
+      "usedChars": 586
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/0-SKCl6-QsynlMVlZJFiNA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570696_3",
+    "title": "UIUC赵磊教授团队最新Nature Communications！地表温度无法替代气温评估热暴露，迁移学习重构真实气温，揭示热暴露空间差异！",
+    "abstract": "基本信息 标题 Transfer learning reveals large discrepancies between air and land surface temperatures in cities 迁移学习揭示城市气温与地表温度之间的巨大差异 发表时间 2026-05-18 作者 Yiwen Zhang1, Lei Zhao1,2,3,4*, TC Chakraborty5, Priyam Mazumdar6, Keer Zhang7, Pierre Gentine8* 作者机构 1 伊利诺伊大学厄巴纳-香槟分校 土木与环境工程系，美国伊利诺伊州厄巴纳 2 伊利诺伊大学厄巴纳-香槟分校 国家超级计算应用中心，美国伊利诺伊州厄巴纳 3 伊利诺伊大学厄巴纳-香槟分校 可持续能源与环境研究所 (iSEE)，美国伊利诺伊州厄巴纳 4 伊利诺伊大学厄巴纳-香槟分校 气候、气象与大气科学系，美国伊利诺伊州厄巴纳 5 太平洋西北国家实验室，美国华盛顿州里奇兰 …… 期刊 Nat Commun DOI 10.1038/s41467-026-73716-7 摘要 由于缺乏真正的城市气象站导致的数据贫乏，严重限制了对城市天气和气候的理解。因此，尽管存在根本性差异，尤其是在城市地区，从遥感平台获得的地表温度（Ts）已被广泛用作近地表气温（Ta）的替代品。 <strong",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "10.1038/s41467-026-73716-7",
+    "url": "https://mp.weixin.qq.com/s/vfivA-yQRfZ2Bpv-56hMrg",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 137,
+      "bodyChars": 590,
+      "usedChars": 590
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/vfivA-yQRfZ2Bpv-56hMrg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570696_2",
+    "title": "刘敏教授研究成果发表于国际顶级期刊《Nature Climate Change》",
+    "abstract": "1 兰州大学草地农业科技学院刘敏教授与其合作团队的研究成果“Grassland Restoration Increases Crop Yields through Local Climate Regulation”，成功发表于国际顶级期刊《Nature Climate Change》。 <p style=\"text-indent: 2em; vis",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/iGPb5kHJiy7tNVejT1J_9w",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 86,
+      "bodyChars": 175,
+      "usedChars": 175
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/iGPb5kHJiy7tNVejT1J_9w"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570696_1",
+    "title": "年仅36岁，苏州大学薛艳华副教授不幸去世",
+    "abstract": "本文来 源 ：极目新闻记者 丁伟 6月3日，极目新闻记者从苏州大学和苏州市殡仪馆了解到，苏州大学王健法学院薛艳华副教授不幸去世，年仅36岁，追悼会已于3日上午举行。 薛艳华副教授简介 据苏州大学王健法学院官网，薛艳华，女，1989年10月生，福建福州人，苏州大学王健法学院副教授。于2018年6月毕业于西南政法大学获环境与资源保护法学博士学位，曾到美国佛蒙特法学院交流访学。2018年9月任职于重庆大学法学院，从事环境与资源保护法博士后研究工作。主要研究领域为环境法、自然资源法。曾先后主持国家社会科学基金青年项目1项、省部级项目2项，参与国家社会科学基金重大项目、一般项目及省部级项目多项；在《中国软科学》《大连理工大学学报》《民商法论丛》等核心刊物上发表论文10篇；出版个人专著1部；多次在全国性学术会议上做主题报告并获得相应奖项。 得知薛艳华去世的消息，有网友留言悼念：“薛艳华老师的离去，不仅是苏州大学王健法学院的重大损失，也让我国环境法学界失去了一位极具潜力的中青年学者。”",
+    "journal": "生态遥感前沿",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/OwzhRExnY1R1geL3cJxFHQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 95,
+      "bodyChars": 442,
+      "usedChars": 442
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/OwzhRExnY1R1geL3cJxFHQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3862609533-2247493556_2",
+    "title": "GEEMu-Skill: 更好的将Google Earth Engine与你的Agent联动",
+    "abstract": "LLM已经能熟练写出语法正确的代码，但在研究中，能跑通和科学上正确之间往往隔着一些被忽略的判断，比如尺度是否",
+    "journal": "geeAI学习室",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/7VUkNmAy_YS_RNixPWkvYw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 54,
+      "bodyChars": 0,
+      "usedChars": 54
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "geeAI学习室",
+        "url": "https://mp.weixin.qq.com/s/7VUkNmAy_YS_RNixPWkvYw"
+      },
       {
         "type": "wechat",
         "name": "野火遥感Fire Centre",
         "url": "https://mp.weixin.qq.com/s/y5Dn_DTLKztdmnTFgdbjwg"
+      }
+    ],
+    "authors": []
+  },
+  {
+    "id": "wechat-3862609533-2247493556_1",
+    "title": "超级好用|RGB颜色如何变为Google Earth Engine中的16进制六位颜色，有手就可以实现",
+    "abstract": "有了这个小工具，GEE配色真的方便太多了",
+    "journal": "geeAI学习室",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/uMfKdeGqfg2zj9KWNg_mYg",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 20,
+      "bodyChars": 0,
+      "usedChars": 20
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "geeAI学习室",
+        "url": "https://mp.weixin.qq.com/s/uMfKdeGqfg2zj9KWNg_mYg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906308687-2247553944_1",
+    "title": "ISPRS最新成果|西南交通大学尹高飞团队提出MI-RFE-BiLSTM框架，实现 Landsat NDVI 时空无缝重建",
+    "abstract": "论文摘要 归一化植被指数（NDVI）是植被动态与生态健康监测的核心指标，但现有中分辨率 NDVI 产品难以满足精细化环境研究对空间细节的需求。Landsat 卫星可提供 30 米分辨率长时序观测数据，适配精细化植被监测，然而频繁云污染与 16 天重访周期造成大量数据缺失，破坏时序连续性。传统缺值填充方法存在诸多短板：依赖辅助遥感数据源、假定植被时序状态稳定、难以处理热带与山区持续性云覆盖区域的数据空缺。本文构建结合递归特征消除与双向长短期记忆的多重插补框架（MI-RFE-BiLSTM），生成时空无缝的 Landsat NDVI 时序数据集。算法分为四步：依托 GLASS NDVI 数据集，采用相关系数加权相似性分析完成空缺初填充；利用双向长短期记忆网络刻画植被物候双向时序关联；引入迭代多重插补算法，在收敛约束优化下逐步优化空缺像元与模型参数；基于梯度敏感性分析的递归特征消除算法优选时序特征、精简输入维度。选取全球 97 个跨多生态类型的研究区开展全域验证，结果表明：在各类植被与环境条件下，MI-RFE-BiLSTM 重构精度优异，决定系数\\(R^2=0.84\\sim0.93\\)、均方根误差 RMSE=0.02~0.06。鲁棒性试验证实：在有效晴空观测仅剩原始数据 5%~10% 的极端缺数场景下，模型精度平缓衰减、整体性能稳定。在多云山区大尺度落地试验中，该算法可在保留 Landsat 原生精细空间纹理的前提下，实现 NDVI 全域无缝填充。本方法在多地貌、多气候区具备优良泛化能力；攻克现有深度学习模型固定高维输入的关键瓶颈，自适应特征筛选可将输入维度压缩 30%~50%，计算效率提升近一倍，支撑大范围业务化落地。该框架为生产高质量、时序连续的 Landsat NDVI 数据提供可靠方案，可服务精准农业、生态监测与气候变化相关研究。 关键图表 图 1. Landsat 8 OLI 传感器各波段光谱响应函数，实线为本研究选用的两个波段 。 图 2. 全球研究样区空间分布图。 图 3. MI-RFE-BiLSTM 算法技术流程图。 图 4.",
+    "journal": "GEE遥感训练营",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Gt58Di7zh8QKwKjU_MgNzQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 159,
+      "bodyChars": 882,
+      "usedChars": 882
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GEE遥感训练营",
+        "url": "https://mp.weixin.qq.com/s/Gt58Di7zh8QKwKjU_MgNzQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545923_1",
+    "title": "南极冰盖底下，藏着巨型扇形裂谷，或将改写海平面命运？",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Z_xosaazTimj-RoN5ikwtQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/Z_xosaazTimj-RoN5ikwtQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551346_4",
+    "title": "沈阳生态所揭示硫沉降通过促进微生物K-策略性状提高土壤微生物碳利用效率",
+    "abstract": "土壤微生物碳利用效率是决定土壤碳循环方向的关键生理参数，受地上植被、土壤碳有效性、资源化学计量比及微生物群落组成的调控。大气硫沉降作为严重的区域性环境问题，显著改变生态系统的结构和功能。然而，硫沉降如何通过调控 植物 - 土壤 - 微生物耦合机制 进而影响微生物碳利用效率， 目前仍缺乏系统认识。 中国科学院沈阳应用生态研究所沙地和退化草地近自然恢复与多功能提升创新组群 依托 额尔古纳森林草 原 过渡带生态 系统 研究站 于 2017 年建立的 草甸 草地硫添加 长期野外控制 试验平台 ， 测定 了 不同硫添加梯度下 的微生物碳利用效率 ，同时监测 了 植被群落特征、土壤碳氮库组分、土壤微生物群落结构和潜在生态功能等指标 。通过 系统分析 “ 植被 - 土壤 - 微生物 - 碳利用效率 ” 之间的关联关系， 揭示了硫添加 影响 碳利用效率 的驱动机制。 结果表明，硫添加显著降低了微生物碳利用效率，土壤微生物群落向 K- <span style='box-sizing: border-box;margin: 16px 0px;padding: 0px;font-family: 微软雅黑,",
+    "journal": "生态学者",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/7pphbJ0BHRT3S6RZGce-TQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 129,
+      "bodyChars": 499,
+      "usedChars": 499
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/7pphbJ0BHRT3S6RZGce-TQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551346_3",
+    "title": "李德军团队揭示土地利用方式对土壤氮素转化的影响",
+    "abstract": "土壤有机氮（SON）转化是全球养分循环和生态系统生产力的关键环节，但不同土地利用类型下SON转化对气候变化的响应差异尚不清楚。SON转化包括总蛋白解聚（GPD）、微生物氮生长（N growth ）、总氮矿化（GNM）和微生物氮利用效率（NUE）等相互关联的过程。气候变化（升温、降水改变）可能通过影响酶动力学、微生物代谢和底物扩散来改变这些过程，但其方向和幅度受生态系统类型、土壤性质和养分状况的调控。然而，目前缺乏在不同气候梯度下系统比较自然森林与集约农田SON转化过程的研究，难以预测土地利用如何调控氮循环对气候变化的响应。 近日，中国科学院亚热带农业生态研究所环江喀斯特生态系统观测研究站李德军团队在该领域取得重要进展：本研究首次揭示土地利用类型是调控土壤有机氮转化气候响应性的主导因素，发现自然森林因受矿物-酶相互作用和磷限制调控而对暖湿化高度敏感且氮流失风险加剧，而集约农田因施肥和耕作缓冲了气候影响但导致氮循环过程脱钩，为土地类型特异性的氮管理策略和全球变化模型提供了关键机制认识。 研究沿中国西南亚热带气候梯度选取30对森林-农田配对样地，测定土壤理化性质、SON转化速率（ 15 N与 18 O同位素示踪法）、功能基因丰度及酶活性，利用线性混合模型、层次分割和结构方程模型分析驱动因素。结果显示：土地利用类型是调控土壤有机氮转化对气候变化响应的主导因素。森林生态系统中，蛋白质分解、微生物氮生长和总氮矿化速率均随温度升高和降水增加而显著上升，但微生物氮利用效率却随之下降，表明温暖湿润条件下森林氮循环加速但氮流失风险增高；森林中各过程紧密耦合，驱动核心是磷相对碳的有效性（DOC:AVP比）和蛋白酶活性，而非功能基因丰度。相比之下，农田由于长期施肥和耕作等人为管理，显著缓冲了气候影响，各转化过程与气候相关性弱且过程间解耦，转而由功能基因（如npr、ureC）和钙镁-铁铝氧化物比值主导。因此，未来气候变暖和降水变化下，森林土壤面临更大的氮损失威胁，需关注磷限制管理；而农田虽具缓冲能力，仍需优化养分管理以维持氮利用效率。 该成果以 Land use overrides climatic controls on soil organic nitrogen transformations: Contrasting responsiveness between forest and cropland ecosystems 为题发表于期刊 Functional Ecology 。杨馨逸副研究员为论文第一作者，段鹏鹏副研究员、何寻阳研究员、李德军研究员为论文共同通讯作者，其它合作作者还包括利兹大学Andrew T. Nottingham博士、维也纳大学Wolfgang Wanek教授、隆德大学Lettice C. Hicks博士、法国萨克雷大学Luiz A. Domeignoz-Horta博士、中国科学院亚热带农业生态研究所胡培雷副研究员、肖孔操副研究员和王克林研究员。本研究得到国家自然科学基金、广西自然科学基金、国家重点研发计划和广西八桂青年学者的资助。 多种因素与土壤有机氮转化过程联系起来的机制途径",
+    "journal": "生态学者",
+    "type": "Correspondence",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/kpyEUPQZ-1ATJaovRREZTg",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 55,
+      "bodyChars": 1314,
+      "usedChars": 1314
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/kpyEUPQZ-1ATJaovRREZTg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551346_2",
+    "title": "西北农林科技大学吕肖良研究员团队在遥感领域顶刊《Remote Sensing of Environment》",
+    "abstract": "近日，水 土保持与荒漠化整治全国重点实验室 吕肖良研究员团队在国际遥感领域顶级期刊《环境遥感》（ Remote Sensing of Environment ） ， 发表题为 “Incorporating non-photochemical quenching (NPQ) into estimating photosynthetic carbon assimilation from solar-induced chlorophyll fluorescence (SIF) ” 的研究 成果 。 资源环境学院 博士 研究 生陈佳乐 和水保学院 刘准桥教授为论文第一作者，吕肖良研究员为通讯作者。 日光诱导叶绿素荧光（ SIF ）是植物光合作用过程中释放的微弱光信号，被认为是遥感监测植被光合生产力最具潜力的指标之一。植物吸收的太阳能主要分配到光合作用、荧光发射以及非光化学猝灭（ NPQ ）三条途径。其中， NPQ 是植物在高光、干旱和高温等逆境条件下耗散过剩能量的重要保护机制，直接反映植物生理胁迫状态。然而，现有基于 SIF 估算植被总初级生产力（ GPP ）的方法通常未显式考虑 NPQ 的影响，限制了 SIF 在胁迫条件下监测植被生产力的能力。针对这一问题，研究团队自主研发了叶片尺度 “ 主动荧光 — 反射率 ” 同步观测系统，通过同步测量叶片主动荧光参数和光谱反射率，系统分析了光化学反射指数（ PRI ）与 NPQ 之间的关联规律。 研究发现，传统 PRI <span style=\"box-sizing: border-box;margin-top: 10px;display: inline;line-height: 2em;font-we",
+    "journal": "生态学者",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/TtWOmYl-30NJirPZ7dWoqA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 108,
+      "bodyChars": 730,
+      "usedChars": 730
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/TtWOmYl-30NJirPZ7dWoqA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551346_1",
+    "title": "浙江大学陈伟乐课题组《Nature Communications》最新研究成果！揭示根系和土壤微生物对全球变化的非对称物候响应及其碳汇效应",
+    "abstract": "物候是地球生命活动的重要节律。物候变化被认为是生态系统响应全球变化最敏感的信号之一。相比于植物的地上物候，地下生物群落（尤其是根系与土壤微生物）的物候变化长期缺乏系统认知。根系与土壤微生物共同主导了陆地生态系统的地下碳循环，理解它们的物候响应对于预测生态系统的碳汇变化具有重要意义。然而，目前尚不清楚根系与土壤微生物在全球变化背景下是否具有一致的物候响应模式，以及这种变化将如何影响地下碳循环。 近日，浙江大学生命科学学院、植被结构功能与建造全国重点实验室 陈伟乐课题组 在 Nature Communications 在线发表了题为“ Meta-analysis reveals asymmetric root and microbial phenology shifts under global change ”的研究论文。该研究系统分析了根系与土壤微生物的生长季物候对增温、氮沉降、干旱、植被部分去除等全球变化因子的响应特征。 研究结果表明，根系与土壤微生物对全球变化的物候响应并不同步，唯增温导致的生长季开始提前现象在二者间表现一致。进一步分析发现，在全球变化影响下，根系与土壤微生物的物候变化与其呼吸通量变化在很大程度上是解耦的。因此，即使根系或土壤微生物的年呼吸总量并未显著改变，其生长季的开始和结束节点仍可能发生明显偏移。这意味着，仅关注呼吸速率或通量的变化，可能低估全球变化对地下生态过程及其稳定性的影响。 图 1 | 全球变化下根系与土壤微生物生长季物候的转变 研究还发现，根系和土壤微生物生长季物候格局的改变，将可能显著改变自养呼吸（即根呼吸）与异养呼吸（即土壤微生物呼吸）的通量，从而对陆地生态系统碳平衡产生可量化的影响。仅变暖导致的土壤微生物生长季延长，就可能使全球异养呼吸增加2.5 ± 0.8 Pg C yr⁻¹（平均值±标准误），这一量级已接近当前全球陆地生态系统的年净碳汇量。 地下物候因观测困难而长期被全球碳循环研究所忽视。上述研究表明，地下物候对碳循环具有关键影响，将其纳入模型有助于更准确地预测生态系统未来的碳汇动态及气候反馈。 图 2 | 根系和土壤微生物的物候转变所驱动的自养和异养呼吸通量变化 浙江大学生命科学学院 博士研究生赵长兴 为论文第一作者， 陈伟乐研究员 为通讯作者。生命科学学院博士研究生钱子豪、特聘研究员梁爽，以及北京大学王少鹏教授和美国莫顿树木园Luke McCormack博士为共同作者。研究得到国家自然科学基金、国家重点研发计划、浙江省自然科学基金、浙江省领雁项目和教育部先导等项目的资助。 团队介绍 <p style=\"text-indent: 2.125em;white-space: normal;margin: 0px;padding: 0px;box-",
+    "journal": "生态学者",
+    "type": "SystematicReview",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/0WVpjZcLpD_t3yaePF9Z4g",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 201,
+      "bodyChars": 1164,
+      "usedChars": 1164
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/0WVpjZcLpD_t3yaePF9Z4g"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570671_2",
+    "title": "北京大学最新发文《地理学报》！社会—生态网络：生态系统服务关联分析新视角",
+    "abstract": "中文期刊： 《地理学报》 文章题目： 社会—生态网络：生态系统服务关联分析新视角 发表时间： 2026年5月（第81卷第5期） 文章链接： https://doi.org/10.11821/dlxb202605003 🌍 研究背景 生态系统服务（ES）是连接自然生态系统与人类社会福祉的桥梁，也是理解人地关系的核心抓手。然而，传统的ES空间制图方法多聚焦于单一服务或简单叠加，对生态系统内部以及社会—生态系统之间的复杂关联（如权衡/协同、反馈机制、空间错配等）刻画能力严重不足。这种“碎片化”认知导致生态治理缺乏整体性与系统性，生态修复工程容易顾此失彼。与此同时，湿地退化、城市扩张、气候变化等外部冲击正在深刻改变ES的供给格局与相互作用方式，亟需一种能够综合描绘社会与生态要素复杂关系的新分析工具。 🎯 研究意义 本文将社会—生态网络分析方法引入生态系统服务关联研究，系统梳理了该方法的发展历程、核心优势与应用前景。社会—生态网络利用社会—生态系统内要素间的关系构建网络，将复杂的人地系统简化为可量化、可可视化的网络结构，从而为揭示ES权衡/协同机制、识别跨区域治理的空间错配、评估适应性治理措施的系统性成效提供了全新视角。这一跨学科融合不仅推动了ES研究从“静态制图”向“动态关系”的范式转变，也为实现区域可持续发展与生物多样性保护提供了可操作的科学路径。 <",
+    "journal": "生态遥感前沿",
+    "type": "Methods",
+    "doi": "10.11821/dlxb202605003",
+    "url": "https://mp.weixin.qq.com/s/edSWfUwLWoRLfvNX-JfIKw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 112,
+      "bodyChars": 584,
+      "usedChars": 584
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/edSWfUwLWoRLfvNX-JfIKw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570671_1",
+    "title": "武汉大学Earth System Science Data最新研究 | 发布黄土高原25年100幅季度土地覆盖数据，时序密集制图揭露长期且显著的生态改善",
+    "abstract": "近期， 中国地质大学（武汉）张洪艳教授团队 在 《 地球系统科学数据 》 （ Earth System Science Data , ESSD ）发表长时序制图与土壤侵蚀 评估 的重要进展 ， 武汉大学博士生程谟凡 为 第一作者 。相关研究题为： “ 中国黄土高原 25 年季度土地变化图揭示了长期 且 显著 的 水致 土壤侵蚀缓解 （ 25-year, quarterly land change maps of China’s Loess Plateau reveal long-term and substantial water-induced soil erosion mitigation ） ” ， 张洪艳教授为论文末位通讯作者，共同通讯作者包括武汉大学 贺威 教授、 杜克大学 李卓鸿博士 ， 合作者包括武汉大学张良培教授、博士生李琳鑫。 论文： https://essd.copernicus.org/articles/18/3303/2026/ LP-QLC10 数据集 ： https://do i .org/10.57760/sciencedb.33656 不可持续的人类活动已导致全球范围内的生态退化。在中国，过去数十年间实施了一系列重大生态修复工程，旨在扭转严重退化和土壤侵蚀高发地区的生态恶化趋势，推动其逐步恢复为生态功能稳定的区域。然而，受限于长期、高时空分辨率监测数据的缺乏，这些区域土壤侵蚀演变过程的定量刻画仍面临较大挑战。为弥补这一空白并提供可靠的时空基准数据集，本研究基于自主构建的跨时空一致性约束深度学习框架，首次实现了中国典型生 态修复区—黄土高原 10 – 30 m 分辨率、季度尺度的长期连续土地覆盖变化制图。该数据集基于超过 10 TB 的 Sentinel 与 Landsat 遥感影像生成，系统记录了 2000 – 2024 年间共 100 个时相的土地覆盖动态变化过程。相关制图成果已同步发布于数据共享平台 ： https://doi.org/10.57760/sciencedb.33656 图 1 研究思路： CNN- ViT 混合 <sp",
+    "journal": "生态遥感前沿",
+    "type": "Dataset",
+    "doi": "10.57760/sciencedb.33656",
+    "url": "https://mp.weixin.qq.com/s/Mq6gECn6kzk35jAUGQryzA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 98,
+      "bodyChars": 900,
+      "usedChars": 900
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/Mq6gECn6kzk35jAUGQryzA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3571823236-2247493460_1",
+    "title": "抱歉，团队已经解散了！",
+    "abstract": "永别了，豆包！！",
+    "journal": "GISerQ",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/hUuCjDw7Gb0C10zU1Vj62A",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 8,
+      "bodyChars": 0,
+      "usedChars": 8
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GISerQ",
+        "url": "https://mp.weixin.qq.com/s/hUuCjDw7Gb0C10zU1Vj62A"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3943639881-2247487726_1",
+    "title": "新增报告！延安第四届碳氮循环会议！7月16日",
+    "abstract": "",
+    "journal": "麦当的生态学笔记",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/0exts5gn3N53IdS0LzN0Qg",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "麦当的生态学笔记",
+        "url": "https://mp.weixin.qq.com/s/0exts5gn3N53IdS0LzN0Qg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3277780355-2247581920_1",
+    "title": "PNAS封面论文：土壤氮损失及“微生物氮泵”新机制",
+    "abstract": "",
+    "journal": "生态系统生态学",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/040mqmN57o3e6lNh63dGqQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态系统生态学",
+        "url": "https://mp.weixin.qq.com/s/040mqmN57o3e6lNh63dGqQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3939246594-2247486822_1",
+    "title": "第五届全国健康土壤生态与植物营养生理学术论坛——兰州",
+    "abstract": "",
+    "journal": "农林科学",
+    "type": "Forum",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/0851veHjrVqe5MzEmzhIrw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "农林科学",
+        "url": "https://mp.weixin.qq.com/s/0851veHjrVqe5MzEmzhIrw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566666_5",
+    "title": "STR | 东北地理所在耕作方式对黑土胶体碳分布与结构变化影响方面取得进展",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/8rbLz1T5Zi-FKGDxyDO3uw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/8rbLz1T5Zi-FKGDxyDO3uw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566666_4",
+    "title": "FEM | 华东师范大学刘宇教授研究团队发现无人机“慧眼”识菌：百山祖园区揭示森林土壤真菌的秘密",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/RWUkC4G-qC4FsrXmykRIAA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/RWUkC4G-qC4FsrXmykRIAA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566666_3",
+    "title": "Communications Earth & Environment | 5600万年前的地球“发烧史”警示当下：极端变暖或致陆地碳库失稳崩溃",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/ntfpmArNzkwMYgmYX3TJKQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/ntfpmArNzkwMYgmYX3TJKQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566666_2",
+    "title": "Functional Ecology  | 环江站李德军团队揭示土地利用方式对土壤氮素转化的影响",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/9TecvEMdvMJKIgxGEOTsqA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/9TecvEMdvMJKIgxGEOTsqA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566666_1",
+    "title": "《土壤学报》综述 | 植被恢复对土壤铁结合态有机碳的影响机制研究进展",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "Review",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/kmi_1sQS_SVVCr2zj70Vdw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/kmi_1sQS_SVVCr2zj70Vdw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3256521467-2247496998_1",
+    "title": "生态学讲座 | 横断山地貌演化对生物多样性的影响",
+    "abstract": "",
+    "journal": "北京大学生态研究中心",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/ESrXFlf6EzB4Pcug-udX-A",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "北京大学生态研究中心",
+        "url": "https://mp.weixin.qq.com/s/ESrXFlf6EzB4Pcug-udX-A"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3935664765-2247491374_1",
+    "title": "第44期“青山研社”学术沙龙成功举办",
+    "abstract": "6月4日上午，实验室第44期“青山研社”学术沙龙在植物所举办，硕士研究生许卫颍分享了题为“ 不止碳储存：植物非结构性碳的进化驱动与协调策略 ”的精彩报告。 许卫颍主要从事植物非结构性碳水化合物相关研究，以第一和共同作者身份在 Nature Ecology & Evolution、Geography and Sustainability、New Phytologist 等国际期刊发表论文5篇，曾获中国科学院大学“三好学生”荣誉称号。 许卫颍从植物生长与生产力的调控理论出发，介绍了新的“碳源-碳汇协调机制”，并由此引出非结构性碳水化合物（NSC）的重要作用。他梳理了NSC领域的最新研究进展，包括NSC缓冲碳平衡的机制、NSC与植物干旱致死的关联，以及NSC对全球变化因子的响应等。为探究大尺度上NSC空间格局的决定因素，研究工作收集了全球1000多个站点、共计9000余条数据。分析发现，不同器官中的NSC受不同环境因素的调控：叶片中的NSC受降水和温度的负向影响，而根部NSC主要因干旱效应而产生“汇限制”。对2000多个物种的科水平进行分析，发现进化历史可解释NSC超过一半的变异。其中，叶片NSC随物种分歧时间的增加而增加，而根和茎中的NSC则呈现相反趋势。在进化背景下理解NSC的特异性储存策略，以及源汇-碳水的动态协调策略，对于揭示植物碳平衡机制、改进植被碳动态模拟具有重要科学意义。报告还介绍了NSC在动态植被模型改进、NSC与碳-水获取策略、地上-地下协同策略等的应用前景。 报告结束后，与会师生围绕数据收集细节、树龄的影响、环境过滤和系统发育的区分、结构性碳和非结构性碳的关系等科学问题展开了热烈讨论。 本次沙龙从系统进化的角度探究了非结构性碳水化合物这一经典指标，加强了与会师生对植物碳平衡和植被碳模拟的认识。 END 撰稿 | 邓滢 摄影 | 韩文武 编辑 | 毛志宏",
+    "journal": "植被与环境变化重点实验室",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/qSC6wGBuEmgaxsb7NjwAAA",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 173,
+      "bodyChars": 796,
+      "usedChars": 796
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "植被与环境变化重点实验室",
+        "url": "https://mp.weixin.qq.com/s/qSC6wGBuEmgaxsb7NjwAAA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3578328425-2247499960_1",
+    "title": "Nature Ecology & Evolution｜90年的长时序数据揭示：昆虫下降或始于20世纪中叶",
+    "abstract": "https://doi.org/10.1038/s41559-026-03074-6写在前面分享一个新研究。",
+    "journal": "生态学文献分享",
+    "type": "News",
+    "doi": "10.1038/s41559-026-03074-6",
+    "url": "https://mp.weixin.qq.com/s/VtMCHySK3Fr8-6YfgEWGdQ",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 54,
+      "bodyChars": 0,
+      "usedChars": 54
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学文献分享",
+        "url": "https://mp.weixin.qq.com/s/VtMCHySK3Fr8-6YfgEWGdQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545911_2",
+    "title": "同样做水文地质，她就能花样百出！",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/BLcaQzI8mBuq-n2EDPzgMw",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/BLcaQzI8mBuq-n2EDPzgMw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545911_1",
+    "title": "云南一座矿床，改写地球铁矿演化史",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/AgQGu3pF1sFYpeRsLSecQg",
+    "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/AgQGu3pF1sFYpeRsLSecQg"
       }
     ]
   },
   {
     "id": "wechat-3564969279-2247530573_4",
     "title": "GCB | 土壤与微生物的调控共同决定了自由生活固氮速率及其温度敏感性的海拔分布格局",
-    "abstract": "标题：          Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity            中译：          土壤与微生物的调控共同决定了自由生活固氮速率及其温度...",
+    "abstract": "标题： Soil and Microbial Controls Jointly Regulate Elevational Patterns of Free- Living Nitrogen Fixation Rate and Its Temperature Sensitivity 中译： 土壤与微生物的调控共同决定了自由生活固氮速率及其温度敏感性的海拔分布格局 期刊： Global Change Biology 发表年份： 2026年 影响因子： 12 第一单位： 中国科学院植物研究所 通讯作者： 刘玲莉等 文章摘要 <p style=\"-webkit-ta",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Correspondence",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/9aFwpZWeJZanxGYdtRjxVw",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 174,
+      "bodyChars": 282,
+      "usedChars": 282
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2511,12 +3345,18 @@
   {
     "id": "wechat-3564969279-2247530573_3",
     "title": "GCB | 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同的敏感性",
-    "abstract": "标题：          Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude            中译：          沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同...",
+    "abstract": "标题： Methane emissions respond to soil temperature in convergent patterns but divergent sensitivities across wetlands along altitude 中译： 沿着海拔梯度的湿地甲烷排放对土壤温度的响应呈现出趋同的模式，但具有不同的敏感性 期刊： Global Change Biology 发表年份： 2020年 影响因子（2020）： 8.555 第一单位： 中国科学院成都生物研究所 通讯作者： 朱单等 <span style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 0px; padding: 2px 4px 0px 0px; outline: 0px; max-width: 100%; font-size: 18px; color: rgb(37, 132, 181); border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(37, 132, 181); line-height: 1.5em; letter-spacing: 0em; align-items: unset; background: 0% 0% no-repeat; border-style: none none solid; border-width: 1px 1px 4px; border-radius: 0px; box-shadow: none; display: block; font-weight: bold; flex-direction: unset; float: unset; height: auto; justify-content: unset; overflow: unset; text-align: left; text-indent: 0em; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; box-sizing: border-bo",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Correspondence",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/Hm5QjJ0DWk-p8uNY166G6g",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 174,
+      "bodyChars": 940,
+      "usedChars": 940
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2528,12 +3368,18 @@
   {
     "id": "wechat-3564969279-2247530573_2",
     "title": "New Phytol | 从同源到分工：LRR受体激酶如何决定菌根与根瘤共生特异性？",
-    "abstract": "点击上方蓝字 关注我们近日，中国科学院分子植物科学卓越创新中心谢芳研究组联合广州大学孔凡江教授团队，在 Ne",
+    "abstract": "点击上方蓝字 关注我们近日，中国科学院分子植物科学卓越创新中心谢芳研究组联合广州大学孔凡江教授团队，在 Ne\n\n点击上方蓝字 关注我们 近日， 中国科学院分子植物科学卓越创新中心谢芳研究组 联合 广州大学孔凡江教授团队 ，在 New Phytologist 在线发表题为 “Paralogous LRR receptor kinases confer symbiosis specificity between arbuscular mycorrhizal and root nodule symbioses in Lotus japonicus ” 的研究论文。该研究鉴定了一个新的 丛枝菌根共生受体激酶AMK2 (Arbuscular Mycorrhizal-induced Kinase1) ，并揭示其与同源蛋白 RinRK1 分别调控丛枝菌根共生和根瘤共生，为理解植物共生信号网络的进化分化提供了重要理论依据。 丛枝菌根共生 (Arbuscular Mycorrhizal Symbiosis, AMS) 和根瘤共生 (Root Nodule Symbiosis, RNS) 是植物与微生物间最为重要的两种互利共生关系。 前者促进植物对磷氮等营养的吸收，后者则帮助豆科作物获得共生固氮的能力。 尽管菌根真菌释放的菌根因子和根瘤菌产生的结瘤因子均通过 LysM 型受体激酶识别，并激活共同共生信号通路 (Common Symbiosis Signaling Pathway, CSSP),但两种共生关系最终却形成截然不同的发育程序，其分子基础尚不明确。 谢芳研究组此前发现，富含亮氨酸重复序列的受体样激酶RinRK1受结瘤因子诱导表达，并特异调控侵染线的形成（Li et al., 2019; Zhou et al., 2024）。在本研究中，研究团队通过系统进化分析鉴定出 RinRK1 的同源蛋白 AMK2。 系统发育分析表明，AMK2 在单子叶植物中完全缺失，揭示其可能与共生进化密切相关 （图1）。 图1 AMK2 与 RinRK 同源基因的系统发育分析 进一步研究发现， AMK2 受菌根真菌诱导表达，在菌根定植的部位表达，且 AMK2 蛋白也特异定位于菌根定植的细胞中。遗传学分析表明， amk2 突变体菌根定植率显著下降，丛枝发育异常，多个菌根共生标志基因的表达受到抑制（图2），证明 AMK2 是维持高效菌根共生和丛枝发育所必需的关键因子 。 <section powered-by=\"werss\" style=\"text-align: center;margin-top: 10px;margin-botto",
     "journal": "Wiley生态环境",
     "type": "News",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/XH10oS2mnXcEfTrLrfu15Q",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 54,
+      "bodyChars": 1060,
+      "usedChars": 1116
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2545,12 +3391,18 @@
   {
     "id": "wechat-3564969279-2247530573_1",
     "title": "从世界土壤学大会分会场到特刊征稿：6个Wiley土壤科学专刊合集，欢迎参会与投稿",
-    "abstract": "征稿特刊 Calling for Papers农业生态系统中黑土的保护与修复Conservation and",
+    "abstract": "征稿特刊 Calling for Papers农业生态系统中黑土的保护与修复Conservation and\n\n征稿特刊 Calling for Papers 农业生态系统中黑土的保护与修复 Conservation and Restoration of Black Soils in Agro-ecosystems 截稿日期：Saturday, 31 October 2026 源自 402001 分会场 扫码查看征稿全文 <section powered-by=\"werss\" style=\"display: inline-block; vertical-align: top; width: 7px; flex: 0 0 auto; height: auto; padding: 0px; background-color: rgb(64, 226, 152); box-sizing:",
     "journal": "Wiley生态环境",
     "type": "News",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/GVgUd3lpyR4r_QaeJXsDgg",
     "date": "2026-06-05",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 54,
+      "bodyChars": 340,
+      "usedChars": 396
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2560,14 +3412,43 @@
     ]
   },
   {
+    "id": "wechat-3988694333-2247488328_1",
+    "title": "Science|化肥冲击使全球粮食系统面临风险",
+    "abstract": "霍尔木兹海峡的封锁切断了全球化肥贸易的关键通道，导致氮肥价格飙升。",
+    "journal": "气候韧性农业",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/kqPXw-1HfTAR_eggpsngNQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 33,
+      "bodyChars": 0,
+      "usedChars": 33
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "气候韧性农业",
+        "url": "https://mp.weixin.qq.com/s/kqPXw-1HfTAR_eggpsngNQ"
+      }
+    ]
+  },
+  {
     "id": "wechat-3634184519-2247484333_1",
     "title": "One Earth: 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标",
-    "abstract": "",
+    "abstract": "中文标题 将全球氮排放削减三分之一以实现平衡且可实现的2030年可持续发展目标 英文期刊 One Earth 通讯作者 Baojing Gu（bjgu@zju.edu.cn） 第一单位 浙江大学土壤污染控制与安全国家重点实验室（State Key Laboratory of Soil Pollution Control and Safety, Zhejiang University, Hangzhou 310058, China） 研究摘要 实现2030年可持续发展目标（SDGs）正变得日益困难。本研究引入了一个以SDG驱动的框架，评估可持续共享社会经济路径下的氮管理。研究表明，要实现平衡且可达到的目标（即氮相关SDG指数平均得分高于75，单个目标得分超过60），需要在2030年前将全球氮排放减少5000万吨（较2020年水平下降32%），其中大气减排3000万吨，水体减排2000万吨。现有技术策略即使投入1760亿美元（产生2910亿美元经济效益），也只能实现所需减排量的一半。这表明，仅靠技术不足以取得实质性进展，必须将减排技术与更广泛的社会经济转型相结合，才能推动SDGs的进展。 研究亮点 l 将氮排放减少32%对于实现可达到的SDGs至关重要 l 当前减排努力仅能实现空气和水体目标的57%和33% l 投资1760亿美元可产生2910亿美元的经济效益 l 社会经济变革可补充技术解决方案，推动可持续进展 研究方法 l <span style=\"font-family: 宋体; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-a",
     "journal": "气候韧性农业和智慧农业",
-    "type": "News",
+    "type": "Methods",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/o4rfIHPzxzTohZ2XKfTuNA",
     "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 126,
+      "bodyChars": 724,
+      "usedChars": 724
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2577,14 +3458,618 @@
     ]
   },
   {
+    "id": "wechat-3910266315-2247570663_5",
+    "title": "瑞士热带与公共卫生研究所Science正刊 | 欧洲森林干扰将在21世纪持续加剧",
+    "abstract": "Climate change will increase forest disturbances in Europe throughout the 21st century Marc Grünig et al. 2026 in Science 01 研究背景 森林干扰指大规模、离散的树木死亡事件（如野火、虫害、风害），其在短时间内重塑森林的结构、组成与功能。 森林干扰对生态系统和人类社会产生深远影响，如影响生物多样性，降低森林碳汇能力，加剧气候变暖以及直接威胁人类生命健康和经济财产。然而，准确预测未来森林干扰面临着三大科学难题：干扰与植被的反馈循环、气候变化对干扰的双重影响、以及不同干扰间的相互作用。这些挑战使得孤立模拟单一干扰类型的方法存在明显局限。为此，研究团队首次以100米分辨率构建了融合过程模型与深度学习的集成模拟框架，系统量化了21世纪欧洲野火、虫害和风灾三大干扰的动态演变及其对森林年龄结构的影响，为气候变化下的森林管理与政策制定提供了关键科学依据。 02 研究方案 研究基于深度神经网络的 植被动态模型（Scaling Vegetation Dynamics） 。该框架首先定义了由树种组成、林冠高度和叶面积指数三个维度构成的5445种森林状态，覆盖了欧洲森林生态系统的多样性。在模拟“缓慢转换”（无干扰下的自然演替）时，研究团队利用来自17个本地过程模型、13,600个样点的海量数据，训练了一个前馈深度神经网络，以当前植被状态、驻留时间、历史轨迹、土壤条件和气候条件为输入，预测森林状态的未来演变。 对于由干扰和采伐引起的“快速转换”，研究分别构建了 野火、树皮甲虫和风灾三大机理模块 ，并与“一切照旧”的 森林管理模块 集成于SVD框架。野火模块通过统计建模建立火灾频率与气候、人口、地形等因素的关系，以概率元胞自动机模拟火势扩散，并考虑燃料消耗的负反馈；树皮甲虫模块基于PHENIPS模型模拟昆虫种群动态，结合寄主树种分布、干旱胁迫和风害，动态驱动虫害爆发与扩散；风灾模块采用野火类似的统计-过程混合方法，基于风速重现期和最大阵风建立发生概率，再模拟风灾的邻域传播。 所有模块以100米空间分辨率和年时间步长运行，初始植被状态由2020年高分辨率遥感数构建，气候驱动采用EURO-CORDEX三个全球气候模式下的RCP2.6、RCP4.5、RCP8.5情景及历史气候对照。 图1 欧洲森林未来干扰模拟框架示意图 <section powered-by=\"werss\" style=\"display: inline-block; vertical-align: top; width: auto; align-self: flex-start; flex: 0 0 auto; background-color: rgb(16, 21, 97); min-width: 5%; max-width: 100%; height: auto; margin: 0px 8px 0px 0px; padding: 2px 9px; box-sizing: border-box; visi",
+    "journal": "生态遥感前沿",
+    "type": "Methods",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/hxcsQePfqGMqsKmrUCvGDQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 128,
+      "bodyChars": 1306,
+      "usedChars": 1306
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/hxcsQePfqGMqsKmrUCvGDQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570663_4",
+    "title": "《Nature Communications》发文揭示全球骤旱蔓延危及植被恢复力",
+    "abstract": "气候变暖与人类活动加剧使得全球骤旱频发且快速增强，严重威胁陆地植被生产力与生态碳汇功能。目前学界已围绕骤旱的时空演变特征、形成机制及其对植被和碳循环的负面影响开展了大量研究。但是，全球尺度下植被生产力对骤旱与缓旱的恢复力差异及其驱动机制仍尚不明确，骤旱爆发如何进一步影响植被恢复力，仍是目前被忽视且亟待解答的关键科学问题。 本研究系统揭示了全球骤旱的时空演变格局与加剧趋势，证实全球骤旱主要集中于湿润区，且全球骤旱比例正呈快速上升趋势。相较于缓旱，骤旱会引发更为强烈的气象胁迫。骤旱暴发过程急促，短期内伴随气温骤升、降水锐减等多重气象要素异常波动，区域水热格局迅速失衡，进而对植被形成强度更大、冲击更迅猛的干旱胁迫。 图1 （a）全球骤旱比例空间图；（b）全球骤旱比例年际变化。 本研究利用MFDI（Multivariate Flash Drought Indicator）识别全球骤旱热点与非热点区域后发现，相较于热点区，非热点区呈现出更强的骤旱暴发趋势。由此可见，全球骤旱正在从热点区向非热点区快速蔓延。 图2 （a）全球骤旱热点区和非热点区空间图；（b）MFDI比较；（c）MFDI趋势比较。 研究发现，全球植被对骤旱的恢复力低于缓旱，且随骤旱气象胁迫加剧，植被恢复力呈现出更强烈的下降幅度。二氧化碳施肥效应对两类干旱影响下的植被恢复力均有正向调控作用，但骤旱的加剧削弱了此效应。值得注意的是，未来骤旱加剧将持续威胁全球生态系统恢复力。本研究揭示了骤旱蔓延对全球生态系统恢复力的削弱效应，为科学应对气候变化背景下日趋严峻的骤旱风险挑战，提供了重要理论支撑与科学依据。 图3 概念模式图 该研究成果以“Increased Spread of Global Flash Droughts Threatens Vegetation Productivity Resilience”为题，于2026年3月17日在《Nature Communications》在线发表。地表过程与水土风沙灾害风险防控全国重点实验室为论文第一完成单位，郭仁杰博士为论文第一作者。研究工作得到国家重点研发计划项目（2022YFF0801802）与国家自然科学基金（42171050）的联合资助。 论文链接： https://www.nature.com/articles/s41467-026-70417-z <strong style=\"-webkit-tap-highlight-color: transparent;margin: 0px;padding: 0px;outline",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/E1GcSJeBfwbQbTe6i6ZHKQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 185,
+      "bodyChars": 1081,
+      "usedChars": 1081
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/E1GcSJeBfwbQbTe6i6ZHKQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570663_3",
+    "title": "Ecological Indicators的审稿16问",
+    "abstract": "Ecological Indicators期刊审稿人 审稿要回答的16个问题（相对来说，问题数量较多） 1. Does the subject of the paper fall within the scope of the journal? YES/NO If no, comments: 论文主题是否属于期刊的范围？ 2. Is it a new and original contribution? (not applicable for review articles) 是否具有新的原创性贡献？（不适用于综述文章） 3. Does the paper support the progress in indicator development or does it provide interesting and new indicator applications? 论文是否支持指标开发方面的进展，或者是否提供了有趣且新颖的指标应用？ 4. Are the interpretations and conclusions sound, justified by the data and consistent with the objectives? 论文的解读和结论是否合理、有数据支持，并与研究目标一致？ 5. Does the title of this paper clearly reflect its content? 论文标题是否清晰反映其内容？ 6. Is the abstract sufficiently informative especially when read in isolation? 摘要是否信息充足，尤其是在单独阅读时？ 7. Are the keywords informative and appropriate? 关键词是否信息丰富且恰当？ 8. Is the statement of objectives of the paper adequate and appropriate in view of the subject matter? 论文的目标陈述是否充分且符合研究主题？ 9. Are the methods exposed correctly and sufficiently informative to allow replications of the research? 所用方法是否表述正确且信息充分，以便他人能够重复该研究？ 10. Are the statistical methods used correctly and adequate? 所用统计方法是否正确且充分？ 11. Are the results clearly presented? 结果是否清晰呈现？ 12. Is the article structured in agreement with the guidelines for authors? Is the organization of the article satisfactory? 文章结构是否符合作者指南的要求？文章的组织是否令人满意？ 13. Does the content justify the length of the article? 文章内容是否与其篇幅相匹配？ 14. Are the illustrations and tables all necessary, complete, clearly presented, and are the captions adequate and informative? 插图和表格是否必要、完整、清晰，图例和表注是否充分且信息明确？ 15. Are the references adequate and in agreement with the Guide for Authors? 参考文献是否充分且符合作者指南的要求？ 16. Is the quality of the English satisfactory and understandable for a multidisciplinary and multinational readership? 英文质量是否令人满意，是否便于多学科和多国读者理解？ 其他信息： 1、审稿人能看到作者的姓名、单位等各种信息，即单盲评审。 2、OA期刊，上一批进入中科院一区。 3、给审稿人的时间是21天（3周）。 <section powered-by=\"werss\" style=\"-webkit-tap-highlight-color: transparent;margin: 0px;padding: 0px 10px;outline: 0px;max-width: 100%;box-sizing: border-box;overflow-wrap: break-word !",
+    "journal": "生态遥感前沿",
+    "type": "Review",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/pdYTHgCrJ0a3peZc5LPgww",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 165,
+      "bodyChars": 2070,
+      "usedChars": 2070
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/pdYTHgCrJ0a3peZc5LPgww"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570663_2",
+    "title": "新进教师 | 欢迎吴瑶研究员加入北京大学环境科学与工程学院！",
+    "abstract": "新进教师 ｜ 吴瑶 近日，吴瑶研究员入职北京大学环境科学与工程学院环境健康系。 个人简介 ...\n\n新进教师 ｜ 吴瑶 近日，吴瑶研究员入职北京大学环境科学与工程学院环境健康系。 个人简介 吴瑶 ，现任北京大学环境科学与工程学院研究员、博士生导师、助理教授，入选国家海外高层次青年人才计划。本硕毕业于北京大学公共卫生学院，博士毕业于澳大利亚蒙纳士大学，后于蒙纳士大学气候与空气质量研究中心任博士后研究员。 其研究聚焦于气候变化及极端气候事件的健康效应及潜在机制。主要成果包括：开展全球高分辨率气候健康风险评估，系统识别其时空分布特征与脆弱人群；揭示极端气候事件对慢性疾病发生发展的长期影响及潜在中介机制；结合表观遗传组学方法，阐明环境暴露影响健康的表观遗传调控规律。 近五年以第一作者/通讯作者身份在New England Journal of Medicine、The Innovation、The Lancet Planetary Health （2篇）、Environment International（3篇）等期刊发表论文20余篇。谷歌学术总引用逾3000次，H-index 33；参编英文专著2部。研究成果被联合国开发计划署、世界银行、及多国政策制定者引用。曾主持和参与多个高校和政府机构的研究项目。担任BMC Medicine 和 BMC Public Health期刊编委，Nature Health, Jama Network Open等期刊审稿人。 研究方向 吴瑶的主要研究方向为 气候变化与环境暴露的健康影响评估 。具体开展以下研究： 极端气候事件及其复合暴露的健康风险评估； <",
+    "journal": "生态遥感前沿",
+    "type": "Methods",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/4JDpmdMjTis2DZDUiU9cRg",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 48,
+      "bodyChars": 651,
+      "usedChars": 701
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/4JDpmdMjTis2DZDUiU9cRg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570663_1",
+    "title": "生态指标新情况！",
+    "abstract": "近期，生态指标官网发布一则News，招聘4位副主编，主要围绕Soil ecology/Ecosystem services/Marine ecology/Freshwater ecology4个方向。 END 以上内容为学术分享，仅供科研交流，如有错误/侵权等，请联系修改或删除。 <span style=\"-webkit-tap-highlight-color: transparent;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;bo",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/yiyDrGOpt2d_OftLT7Vd9g",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 110,
+      "bodyChars": 251,
+      "usedChars": 251
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/yiyDrGOpt2d_OftLT7Vd9g"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3862609533-2247493553_2",
+    "title": "AP-GARSS 2026 开源 GeoAI 实践专题征稿启动",
+    "abstract": "让模型、数据集不仅停留在论文中，而能够被社区发现、复现和持续使用？我们在 2026 IEEE APGARSS 组织分会——Open Source GeoAI Practice with ModelScope",
+    "journal": "geeAI学习室",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/WP6h2qWFm_nGtk7MkUW2gw",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 103,
+      "bodyChars": 0,
+      "usedChars": 103
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "geeAI学习室",
+        "url": "https://mp.weixin.qq.com/s/WP6h2qWFm_nGtk7MkUW2gw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3862609533-2247493553_1",
+    "title": "完整教程|如何在Google Earth Engine上实现年度重心转移和精美制图",
+    "abstract": "GEE上计算重心转移代码，很简答",
+    "journal": "geeAI学习室",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/g6X18nYUKZfh48Gn5kmIxA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 16,
+      "bodyChars": 0,
+      "usedChars": 16
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "geeAI学习室",
+        "url": "https://mp.weixin.qq.com/s/g6X18nYUKZfh48Gn5kmIxA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3290969015-2247487713_1",
+    "title": "成果 | Journal of Ecology 海拔与环境因子驱动亚热带森林幼苗叶片虫食的变异，而非均值",
+    "abstract": "山地森林的虫食格局由平均强度和变异性共同决定，受植物性状、群落多样性和资源可利用性等的影响",
+    "journal": "生物多样性与生态信息学",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/ESdVdfigFaHrItJ7sVzRCA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 45,
+      "bodyChars": 0,
+      "usedChars": 45
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生物多样性与生态信息学",
+        "url": "https://mp.weixin.qq.com/s/ESdVdfigFaHrItJ7sVzRCA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906308687-2247553923_1",
+    "title": "ESSD最新成果|同济大学黄炜团队发布 BuildingSense！全新多模态细粒度建筑功能分类数据集",
+    "abstract": "论文摘要 建筑功能是对建筑用途的描述。其信息的可获取性对于城市研究至关重要，包括城市形态、城市环境和人类活动模式等方面。现有的建筑功能分类方法面临两个主要瓶颈：（1）模型可解释性差；（2）多模态特征融合不足。尽管具有强可解释性和高效多模态数据融合能力的大型模型为解决这些瓶颈提供了有前景的潜力，但它们在处理多模态空间数据集方面仍然存在局限性。因此，它们在建筑功能分类中的性能也尚不清楚。据我们所知，缺乏多模态建筑功能分类数据集，这导致了有效进行其性能评估的挑战。同时，现有的建筑功能分类方案仍然较为粗略，这阻碍了它们未来支持更细粒度城市研究的能力。为了弥合这一差距，我们构建了一个用于建筑功能分类的新型多模态细粒度数据集——BuildingSense，它包含超过34000栋建筑、60000张标注图像、71654个兴趣点以及26个不同类别的3400篇建筑描述文本。基于BuildingSense，我们从分类结果和推理过程的角度评估了四个最先进的大型模型的性能。结果表明，大型模型能够有效理解多模态空间数据，这对传统观念提出了挑战。基于此，未来研究的三个关键方向可以是：（1）建立分类推理示例数据库；（2）开发经济高效的分类模型；（3）量化模型输出的置信度。我们的研究结果不仅为后续基于大型模型的分类方法的发展提供了见解，也为基于多模态融合的分类方法的进步做出了贡献。本文的数据集和代码可通过https://doi.org/10.6084/m9.figshare.30645776.v2（Su等人，2025a）获取。 关键图表 图 1. BuildingSense 数据集整体概况 。 图 2. BuildingSense 基准数据集构建技术流程图。 图 3. 建筑相关遥感影像、街景影像与兴趣点（POI）数据采集说明。 图 4. 街景影像采样方案示意图。",
+    "journal": "GEE遥感训练营",
+    "type": "Dataset",
+    "doi": "10.6084/m9.figshare.30645776.v2",
+    "url": "https://mp.weixin.qq.com/s/gqTj-QvkN8pWW_E6vejmiw",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 159,
+      "bodyChars": 777,
+      "usedChars": 777
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GEE遥感训练营",
+        "url": "https://mp.weixin.qq.com/s/gqTj-QvkN8pWW_E6vejmiw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545896_1",
+    "title": "全球的铜矿？到底哪里的最大？",
+    "abstract": "本专著共计625页，邀请了全球顶尖矿床学家来撰写每个章节，多为典型铜矿的研究进展，是一部非常值得收藏的专著。",
+    "journal": "多维地球",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Qdbu-_achIF0tPbDUFre4A",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 54,
+      "bodyChars": 0,
+      "usedChars": 54
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/Qdbu-_achIF0tPbDUFre4A"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551329_4",
+    "title": "橡胶林恢复热带雨林研究取得系列进展：从策略框架到土壤修复机制",
+    "abstract": "如何将 大面积低产边际 橡胶林科学恢复为生物多样性丰富的雨林 ， 是生态修复领域亟待解决的关键问题。近期，中国科学院西双版纳热带植物园 （以下简称 “版纳植物园”） 植物适应性与生态恢复 团队在橡胶林生态恢复领域取得系 列 进展：提出 了 分级恢复策略框架，并 通过 微生物养分循环与重金属污染削减两个关键过程验证了恢复成效，为热带人工林生态修复 提供了 从宏观策略到微观机制 的 科学参考 。 一、恢复策略：因地制宜的分级干预 发表于 Integrative Conservation （ Ecological Restoration of Rubber Monocultures: Strategies for Biodiversity and Ecosystem Recovery in Tropical Regions ） 的观点文章中，团队提出了从低干预到高投入的分级恢复框架。具体而言，对于邻近 有 天然林 分布 的橡胶林，自然恢复是成本较低的优先选择； 而 对于 退化更严重的 区域，则可采用 促进 自然恢复（ 清 除 <span style=\"box-s",
+    "journal": "生态学者",
+    "type": "Perspective",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/30h75ypp2S3Z0AIxo1gwbA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 97,
+      "bodyChars": 485,
+      "usedChars": 485
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/30h75ypp2S3Z0AIxo1gwbA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551329_3",
+    "title": "西北农林科技大学韦革宏教授/李哲斐教授《Microbiome》发文，在合成菌群防治黄芪土传病害方面取得新进展",
+    "abstract": "近日，生命科学学院韦革宏教授团队在《Microbiome》上发表了题为“Deterministic assembly of rhizosphere bacterial community enables predictable and stable suppression of Verticillium wilt via microbial homeostasis”的研究论文。该研究揭示了土传病原菌通过破坏黄芪根际微生物群落平衡而提高其侵染效率的机制，这为基于生态学过程构建抗病合成菌群提供了新思路。生命科学学院博士生艾加敏为论文第一作者，韦革宏教授、李哲斐教授为论文共同通讯作者。 根际微生物是保护植物免受土传病原菌侵染的第一道防线，因此了解病原菌在侵染植物过程中如何突破根际微生物群落对于作物土传病害的防治至关重要。本研究发现，健康黄芪通过确定性过程在根际招募有益微生物维持植物健康状态。然而大丽轮枝菌入侵使黄芪根际微生物群落的构建过程由确定性为主转变成随机性为主，从而使机会致病细菌的迅速增殖，这些细菌会快速消耗碳源、破坏原有微生物群落的平衡并降低网络稳定性，最终导致有益微生物类群的减少、根际菌群失调，而真菌病原盟友则获得竞争优势，从而加剧了黄芪黄萎病的症状。随后基于不同生态过程富集的菌株构建了合成微生物菌群，发现根据健康植物确定性过程构建的合成菌群抑病效果受接种时间或剂量影响较小，其抗病功能具有较好的稳定性。相比之下，依据随机过程构建的合成菌群抗病效果对接种时间和剂量更敏感，使其抗病功能波动较大。 总的来说，该研究结果表明微生物群落装配由确定性过程转变为随机性过程导致根际微生物失衡会加剧病原菌的侵染，而按照确定性过程构建的合成菌群比随机组装的合成菌群提供了更持久的抗病性。 该研究得到国家自然科学基金（42277317）和陕西省科技创新引导计划（2025QCY-KXJ-035）资助。 原文链接： https://doi.org/10.1186/s40168-026-02432-7",
+    "journal": "生态学者",
+    "type": "Correspondence",
+    "doi": "10.1186/s40168-026-02432-7",
+    "url": "https://mp.weixin.qq.com/s/u6kgwnPYYBtet3Z1armDOA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 203,
+      "bodyChars": 852,
+      "usedChars": 852
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/u6kgwnPYYBtet3Z1armDOA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551329_2",
+    "title": "东北地理所在耕作方式对黑土胶体碳分布与结构变化影响方面取得进展",
+    "abstract": "土壤胶体因其巨大比表面积、较小粒径以及携带大量电荷等特性，展现出优异的吸附与迁移能力，是土壤中最活跃的组分之一。它占据了绝大部分土壤比表面积和表面电荷，从而成为土壤有机碳（SOC）反应与稳定的关键位点，对SOC的固存与稳定起着重要调节作用。尽管已有大量研究探讨了黑土开发与耕作过程中SOC的转化规律，但在胶体尺度上对SOC动态变化的认知仍十分有限。为此，黑土有机碳与保护性耕作学科组依托黑土保护性耕作长期田间定位试验，采用改进的超声-离心胶体提取法，提取了不同耕作方式与土层深度的土壤胶体，系统测定了土壤胶体吸附有机碳（即土壤胶体碳，C coll ）的垂直分布、胶体中黏土矿物组成以及C coll 的热稳定性结构，旨在揭示不同耕作方式对黑土胶体碳分布与结构变化的影响。 研究发现，与常规耕作（MP）相比，免耕（NT）显著降低了土壤剖面（0–30 cm）中的胶体含量（P coll 发生跨深度的重新分布：由MP处理下的相对均匀分布，转变为NT处理下随深度增加而逐渐上升的趋势（P coll 含量降低了11.19%–23.72%。NT处理还提高了土壤C coll 中顽固性组分（Exo2）的比例。 该研究从微观角度出发，率先将土壤C coll 概念引入黑土保护性耕作领域，通过胶体尺度的新视角重新阐释了SOC的赋存机制，为推广保护性耕作提供了理论支撑。研究整合了土壤胶体特征参数、X射线衍射图谱、热重-差示扫描量热曲线等指标，系统比较了不同耕作方式土壤C coll 的垂直分布及热稳定性结构变化，阐明了土壤胶体与SOC转化的内在机制联系，从而为理解胶体尺度上的SOC稳定性提供了新依据。 相关成果以“Tillage-induced changes in the distribution and structure of soil colloidal carbon”为题发表于土壤学领域国际主流期刊《Soil & Tillage Research》（IF = 6.8）。论文第一作者为黑土有机碳与保护性耕作学科组已毕业硕士研究生刘立名，通讯作者为陈学文副研究员。梁爱珍研究员、黄丹丹工程师、硕士研究生黄文智（已毕业）、叶雯昕、焦松岩，土壤微生物与养分循环学科组田春杰研究员、山东省黄河三角洲生态环境重点实验室魏守才副教授及开罗大学Mohamed S. Abbas教授等参与了该研究。研究得到国家重点研发计划、中国科学院战略性先导科技专项、中国科学院国际合作局国际伙伴计划等项目资助。 论文链接：https://doi.org/10.1016/j.still.2026.107267",
+    "journal": "生态学者",
+    "type": "Correspondence",
+    "doi": "10.1016/j.still.2026.107267",
+    "url": "https://mp.weixin.qq.com/s/POdjSVZdKE_GUZobQLFz1w",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 203,
+      "bodyChars": 1088,
+      "usedChars": 1088
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/POdjSVZdKE_GUZobQLFz1w"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551329_1",
+    "title": "西南民族大学王志强团队与海南大学青年教师鲁静丽在ESSD合作发文！",
+    "abstract": "近日，西南民族大学四川若尔盖高寒湿地生态系统国家野外科学观测研究站王志强研究员与海南大学生态学院青年教师鲁静丽在 Earth System Science Data 上合作发表了题为 ‘Microbial necromass contribution to topsoil organic carbon storage of natural and agricultural ecosystems’ 的研究论文。该研究在全球尺度上量化了微生物残体碳对农业和自然生态系统土壤碳储量的相对贡献。海南大学生态学院青年教师鲁静丽为论文第一作者，西南民族大学四川若尔盖高寒湿地生态系统国家野外科学观测研究站王志强研究员为唯一通讯作者，合作者还包括瑞士苏黎世联邦理工学院 Thomas W. Crowther 教授，西班牙塞维利亚自然资源与农业生物研究所 Manuel Delgado-Baquerizo 教授，海南大学刘文杰教授和青年教师蒋亚敏，以及西南民族大学孙宏洋副教授。 作为陆地生物圈最大的碳库，土壤有机碳在全球碳循环与气候系统调控中发挥着关键作用。微生物残体碳作为土壤有机碳的重要组成部分，其动态变化对调节陆地碳循环及气候反馈具有日益凸显的重要性。其中，真菌与细菌残体碳对土壤有机碳的相对贡献，可作为追踪土壤有机碳储量动态变化的有效指标。然而，目前关于全球尺度下农业与自然生态系统中真菌残体碳和细菌残体碳对土壤有机碳贡献的系统研究仍显不足。 本研究基于全球 486 个位点（涵盖 145 个农业生态系统与 341 个自然生态系统） 0–20 厘米土层的 2094 个观测数据（图 1 ），系统量化了农业与自然生态系统中真菌残体碳和细菌残体碳对土壤有机碳的贡献及其比值，并深入探究了影响上述贡献及比值的主要驱动因素。 图 1 . 本研究涉及的全球分布位点 研究发现，无论是在农业还是自然生态系统中，真菌残体碳对土壤有机碳的相对贡献均约为细菌残体碳的两倍。然而，农业生态系统中真菌残体碳和细菌残体碳对土壤有机碳的贡献均显著高于自然生态系统（ P ），但真菌残体碳和细菌残体碳的比值则呈相反趋势（ P ）。土壤理化性质（尤其是碳氮比和黏粒含量）是调控两类生态系统中真菌残体碳与细菌残体碳对土壤有机碳相对贡献的关键预测因子，而地理因素则是影响真菌残体碳和细菌残体碳比值的最重要因子（图 2 ）。上述结果揭示了这两类生态系统在碳周转与稳定化路径及机制上可能存在的根本性差异，为生态系统管理类型（农业 vs. 自然）是决定微生物残体碳贡献于全球有机碳库路径的关键决定因素这一观点提供了新的证据。 图 2",
+    "journal": "生态学者",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/qX6ltE-6qP5gQV0yU4dhng",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 164,
+      "bodyChars": 1095,
+      "usedChars": 1095
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/qX6ltE-6qP5gQV0yU4dhng"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3256521467-2247496992_1",
+    "title": "王少鹏团队在PNAS发文揭示生态系统中物种共存与功能提升的协同机制",
+    "abstract": "生态系统中不同物种何以长期共存？物种多样性通过何种机制影响生态系统功能？这是生物多样性研究中的两个核心问题。尽管二者存在内在联系，但以往研究往往在不同研究框架下对二者分别探讨。理论生态学研究组前期提出一个整合理论框架，从概念上构建了物种共存、生态系统生产力、稳定性之间的关系(Wang et al. 2024)。这一框架指出，理解多样性的维持与其功能之间的关联，核心在于识别同时影响共存、生产力、稳定性三者的生态驱动因子(如系统发育与性状组成；图1)。然而，目前仍缺乏对于共存-生产力-稳定性关系、以及同时影响三者的驱动因素的经验分析。 图1 解析生物多样性维持与生态系统功能机制联系的概念图和科学假设 近日，北京大学理论生态学研究组在《Proceedings of the National Academy of the Sciences》(美国科学院院刊)在线发表题为“Mechanistic links between coexistence, productivity, and stability in experimental grasslands”的研究论文。该研究利用五个长期草地多样性实验，系统分析了共存-生产力-稳定性之间的关联，以及性状和系统发育关系如何调控这一关联。其中，共存潜力表征了物种间的生态位差异与适合度差异的差值；生产力取决于物种间的互补效应和选择效应；稳定性取决于物种平均稳定性以及种间异步性。研究结果表明，由于生态位差异与互补效应呈正相关，物种共存潜力较高的群落往往具有更高的生产力；由于选择效应与物种稳定性呈正相关，生产力越高的群落往往具有更大的稳定性(图2)。进一步分析发现，将系统发育和功能性状纳入分析后，共存潜力、生产力和稳定性之间的关联减弱甚至消失(图2&3)。这表明三者间的正相关部分源于它们受共同的生态驱动因素调控。具体而言，物种间系统发育差异越大，越有利于促进物种共存和群落生产力；群落中采取菌根协作策略的植物的优势度越大，则具有越高的生产力和稳定性(图3)。",
+    "journal": "北京大学生态研究中心",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/qKU44_mzg2VhQnfJtjyIJw",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 54,
+      "bodyChars": 857,
+      "usedChars": 857
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "北京大学生态研究中心",
+        "url": "https://mp.weixin.qq.com/s/qKU44_mzg2VhQnfJtjyIJw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3585277065-2247506544_1",
+    "title": "【悦读365·第1406天】远缘入侵植物的共同入侵通过土壤真菌病原体的协同增加而导致入侵崩溃",
+    "abstract": "",
+    "journal": "生物多样性与生态保育",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/9psnLkBYlDUYxFObgrOvyg",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生物多样性与生态保育",
+        "url": "https://mp.weixin.qq.com/s/9psnLkBYlDUYxFObgrOvyg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3533965987-2247514229_1",
+    "title": "【新增报告嘉宾】中国农大、新疆农大、西北农林、华中农大、云南农大、塔里木大学等单位专家将作报告，7月17-20日，相约大美新疆！",
+    "abstract": "",
+    "journal": "农业遥感与作物模型",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/d6rdIA4mmsDSXuZ2vqusAw",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "农业遥感与作物模型",
+        "url": "https://mp.weixin.qq.com/s/d6rdIA4mmsDSXuZ2vqusAw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3935664765-2247491368_1",
+    "title": "马克平院士当选联合国教科文组织人与生物圈计划国际协调理事会执行局主席",
+    "abstract": "当地时间6月3日，联合国教科文组织（UNESCO）人与生物圈计划(MAB)国际协调理事会第38次会议在巴拉圭埃尔南达里亚斯开幕。中国科学院院士、中国科学院植物研究所研究员马克平当选为新一届国际协调理事会执行局主席，任期自2026年至2028年。这是时隔36年，中国科学家第二次担任全球MAB最高决策机构主席。 此前，马克平应UNESCO邀请，牵头起草的《联合国教科文组织人与生物圈计划及其世界生物圈保护区网络杭州战略行动计划（2026–2035年）》在第五届世界生物圈保护区大会上审议通过，为MAB勾勒出未来十年蓝图，为实现人与自然和谐共生的可持续未来进一步指明了方向。 马克平表示，在未来任期内将凝聚全球共识，密切协作，在《杭州战略行动计划》的指引下，推动国际社会有关各方以科学赋能MAB高质量的保护和发展，包括强化世界生物圈保护区网络的生物多样性监测，并对网络的有效性进行评估，以此支撑人类建设更有韧性和活力的生物圈。 中国自1973年正式加入MAB以来，五十余载深耕不辍，已从该计划的早期主动参与者成长为如今的积极引领者。此次马克平院士的当选，既是国际社会对中国科学家卓越贡献的高度认可，更是中国深度参与全球环境治理的生动写照。站在新的起点上，中国将继续依托世界生物圈保护区网络等重要国际平台，为全球生物多样性保护与可持续发展贡献更多中国智慧与力量。 当地时间6月3日，联合国教科文组织人与生物圈计划国际协调理事会第38次会议在巴拉圭埃尔南达里亚斯开幕，马克平院士（右二）当选新一届国际协调理事会执行局主席 马克平与上一任主席雅库比•拉蒂法女士完成交接 END 来源 | 中国科学院植物研究所公众号 <section powered-by=\"werss\" style=\"display",
+    "journal": "植被与环境变化重点实验室",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/StrWNJwB1KO2R4PX8eELbA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 196,
+      "bodyChars": 745,
+      "usedChars": 745
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "植被与环境变化重点实验室",
+        "url": "https://mp.weixin.qq.com/s/StrWNJwB1KO2R4PX8eELbA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3277780355-2247581915_1",
+    "title": "中科院植物所在《GEB》发布全球SLA（比叶面积）综合数据集",
+    "abstract": "",
+    "journal": "生态系统生态学",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/NEdrqvcs2JLuxYseugDExQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态系统生态学",
+        "url": "https://mp.weixin.qq.com/s/NEdrqvcs2JLuxYseugDExQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3571823236-2247493446_2",
+    "title": "QGIS如何免费下载全球高精度18级地图",
+    "abstract": "分享一篇文章。",
+    "journal": "GISerQ",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Fivmu-nvTvtoE1oCQmIgSA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 7,
+      "bodyChars": 0,
+      "usedChars": 7
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GISerQ",
+        "url": "https://mp.weixin.qq.com/s/Fivmu-nvTvtoE1oCQmIgSA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3571823236-2247493446_1",
+    "title": "ESSD | 1992-2024年度全球逐月夜间灯光数据集（500m分辨率）",
+    "abstract": "",
+    "journal": "GISerQ",
+    "type": "Dataset",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/RyXrMKInEvh7Ay6UcdxsZA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GISerQ",
+        "url": "https://mp.weixin.qq.com/s/RyXrMKInEvh7Ay6UcdxsZA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566626_5",
+    "title": "Agricultural Water Management   | 生物降解地膜耦合控灌实现水稻节水增产减排",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/nFarKzvEoMevCKqsKYutEQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/nFarKzvEoMevCKqsKYutEQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566626_4",
+    "title": "FEM：长期生物质炭添加改变了亚热带森林中土壤可溶性有机碳氮库及微生物多样性",
+    "abstract": "FEM：长期生物质炭添加改变了亚热带森林中土壤可溶性有机碳氮库及微生物多样性",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/EJO3Z6YrWhHa0a56ulj_PQ",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 38,
+      "bodyChars": 0,
+      "usedChars": 38
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/EJO3Z6YrWhHa0a56ulj_PQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566626_3",
+    "title": "Remote Sensing of Environment  |植物所白永飞研究团队揭示草地光谱多样性-生物多样性的栖息地依赖性和种内-种间光谱分解的非对称驱动",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/chM_3P3F0moil7KHFdHYGA",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/chM_3P3F0moil7KHFdHYGA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566626_2",
+    "title": "【新书推荐】渔机所渔业水域生态工程团队《江河鱼类栖息地修复工程》正式出版",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/mkIPnL8E4wBE1b9FHTrXRw",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/mkIPnL8E4wBE1b9FHTrXRw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566626_1",
+    "title": "新闻｜清华大学电子系李勇教授团队发文提出全球气候模态统一预测模型，为 AI 赋能气候科学提供新路径",
+    "abstract": "近日，清华大学电子工程系李勇教授团队提出全球气候模态统一预测模型 UniCM，面向 AI for Science学...",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/cFalP_hXT-sJwCIxvyaS2A",
+    "date": "2026-06-04",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 60,
+      "bodyChars": 0,
+      "usedChars": 60
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/cFalP_hXT-sJwCIxvyaS2A"
+      }
+    ]
+  },
+  {
     "id": "wechat-3634184519-2247484321_1",
     "title": "Science Bulletin：中国高分辨率国家土壤信息网格制图",
-    "abstract": "",
+    "abstract": "中文标题 中国高分辨率国家土壤信息网格制图 英文期刊 Science Bulletin, 2022, Volume 67, Pages 328–340 通讯作者 Gan-Lin Zhang（张甘霖） 第一单位 中国科学院南京土壤研究所，土壤与可持续农业国家重点实验室，南京，中国 研究摘要 为应对粮食安全、水资源调节、土地退化和气候变化等全球与局部问题，需要更高质量、更一致且更详细的土壤信息。在样本有限的大范围复杂区域实现土壤属性的精确预测仍具挑战。本研究整合了预测性土壤制图范式、自适应深度函数拟合、先进的集成机器学习（分位数回归森林）以及高分辨率成土环境表征，在高性能并行计算环境下，基于近期全国土壤调查中约5000个代表性土壤剖面和一套详细的环境协变量，生成了中国90米分辨率、多深度（0–5、5–15、15–30、30–60、60–100、100–200 cm）的九种土壤属性（pH、有机碳、氮、磷、钾、阳离子交换量、容重、砾石含量、厚度）网格图。在0–5 cm深度，预测精度从非常好到中等（模型效率系数MEC为0.71–0.36）。大多数土壤属性的预测精度随深度增加而下降。与以往的土壤图相比，本研究的成果在空间细节和精度上均有显著提升，是对GlobalSoilMap.net项目的重要贡献。 研究亮点 l 高分辨率与多深度：90米空间分辨率，覆盖0–200 cm六个标准深度层，九种关键土壤属性。 l 自适应深度函数拟合：针对土壤剖面中的突变层，开发了自动识别并添加薄层的自适应样条拟合方法，优于传统等面积二次样条。 l 分位数回归森林：首次在大范围土壤制图中系统应用该算法，同时预测属性值及其90%预测区间（不确定性），PICP > 90%，不确定性估计可靠。 l 高性能并行计算：针对约12亿像素、72 GB协变量数据，划分107个矩形瓦片并行计算，解决了计算资源瓶颈。 l 精度显著提升：与SoilGrids250m、中国土壤特性数据集（1 km）、HWSD相比，MEC提高11%–>135%，RMSE降低8%–43%，空间细节极大丰富。 <sp",
     "journal": "气候韧性农业和智慧农业",
-    "type": "News",
+    "type": "Dataset",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/49G02JeKf_M7zRTUBCp8Sw",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 126,
+      "bodyChars": 883,
+      "usedChars": 883
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2594,14 +4079,480 @@
     ]
   },
   {
+    "id": "wechat-3988694333-2247488274_1",
+    "title": "NF|稻田面积扩大和秸秆还田导致全球稻田温室气体排放翻倍",
+    "abstract": "摘要：水稻田对全球粮食安全至关重要，但同时也是温室气体排放的重要来源，尤其是甲烷，甲烷是气候变化的重要驱动因素",
+    "journal": "气候韧性农业",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/S4emxUWZds1vENMQmEzAaA",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 55,
+      "bodyChars": 0,
+      "usedChars": 55
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "气候韧性农业",
+        "url": "https://mp.weixin.qq.com/s/S4emxUWZds1vENMQmEzAaA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3878877810-2247491043_1",
+    "title": "Nature | GDP及更多: 为何将自然视为资本不能拯救地球",
+    "abstract": "",
+    "journal": "基于自然的解决方案",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Jl2IrhupH5-c7tVRz1suuw",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "基于自然的解决方案",
+        "url": "https://mp.weixin.qq.com/s/Jl2IrhupH5-c7tVRz1suuw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3531854797-2247545894_1",
+    "title": "同样做地理模型，他的AI方法格外炸眼",
+    "abstract": "",
+    "journal": "多维地球",
+    "type": "Methods",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/8ewQnlKJU5s2gBD9adXikQ",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "多维地球",
+        "url": "https://mp.weixin.qq.com/s/8ewQnlKJU5s2gBD9adXikQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3943639881-2247487719_1",
+    "title": "Communications Earth & Environment | 富营养化会削弱还是增强海草蓝碳？",
+    "abstract": "",
+    "journal": "麦当的生态学笔记",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/K2KkZvRdstThK-8WZt4W7A",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "麦当的生态学笔记",
+        "url": "https://mp.weixin.qq.com/s/K2KkZvRdstThK-8WZt4W7A"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551304_3",
+    "title": "Plant, Cell & Environment丨新疆生地所在荒漠灌木适应干旱和冻融循环胁迫的水分生理机制研究方面取得进展",
+    "abstract": "我国内陆荒漠区植被的生存不仅受长期水分匮缺的制约，同时还面临季节性冻融循环带来的环境压力。",
+    "journal": "生态学者",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/5K32IwKZAQEStnl8HpQeeg",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 45,
+      "bodyChars": 0,
+      "usedChars": 45
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/5K32IwKZAQEStnl8HpQeeg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551304_2",
+    "title": "美国农业部张勋昌研究员，武汉大学陈杰教授和水保全重室刘国彬研究员合作在PNAS Nexus发文！",
+    "abstract": "",
+    "journal": "生态学者",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/l_7lEvBePeaDctSh7eNbVQ",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/l_7lEvBePeaDctSh7eNbVQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906186632-2247551304_1",
+    "title": "Nature | “坏导师”让年轻学者离开学术界？",
+    "abstract": "",
+    "journal": "生态学者",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/gooM7NjpPZ_C-yHOwc_X-w",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态学者",
+        "url": "https://mp.weixin.qq.com/s/gooM7NjpPZ_C-yHOwc_X-w"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3906308687-2247553901_1",
+    "title": "RSE最新成果|基于多分辨率光学遥感与机器学习的北极苔原覆被分数及年际变化制图",
+    "abstract": "",
+    "journal": "GEE遥感训练营",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/ak_aVjpM8inMkRup1ADe3g",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "GEE遥感训练营",
+        "url": "https://mp.weixin.qq.com/s/ak_aVjpM8inMkRup1ADe3g"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3939246594-2247486817_1",
+    "title": "土壤胞外酶的功能和调控机制以及相关指标推荐",
+    "abstract": "",
+    "journal": "农林科学",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/041BXahSylXrLos5z1fOeg",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "农林科学",
+        "url": "https://mp.weixin.qq.com/s/041BXahSylXrLos5z1fOeg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3865726596-2247493971_1",
+    "title": "我们号的粉丝还是太爱科研了",
+    "abstract": "看到好东西就不点赞，悄悄转发。",
+    "journal": "植物功能生态",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/nrA_sKk9w0PPzCIXjhJNVw",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 15,
+      "bodyChars": 0,
+      "usedChars": 15
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "植物功能生态",
+        "url": "https://mp.weixin.qq.com/s/nrA_sKk9w0PPzCIXjhJNVw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3585277065-2247506525_1",
+    "title": "【悦读365·第1405天】气候变暖会减少北针林的落叶，但不同植物功能类型对其反应有所不同",
+    "abstract": "",
+    "journal": "生物多样性与生态保育",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/S-Ozk1hqwiIwroLRupNbKw",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生物多样性与生态保育",
+        "url": "https://mp.weixin.qq.com/s/S-Ozk1hqwiIwroLRupNbKw"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3870548585-2247485229_1",
+    "title": "中国动物学会生物地理学分会第五届学术研讨会第二轮通知（更新版）",
+    "abstract": "由广东省动物学会和中国动物学会生物地理学分会主办，广东省科学院动物研究所、华南师范大学、Current Zoology等单位承办的“中国动物学会生物地理学分会第五届学术研讨会”将于2026年11月6日—11月9日在广东广州召开",
+    "journal": "动物学会生物地理学分会",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/m8-mV1v53pIJW9GLXxez5A",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 113,
+      "bodyChars": 0,
+      "usedChars": 113
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "动物学会生物地理学分会",
+        "url": "https://mp.weixin.qq.com/s/m8-mV1v53pIJW9GLXxez5A"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566608_5",
+    "title": "新疆生地所在全球糙苏属系统发育研究中揭示了性状创新驱动的生态适应与快速辐射",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/Ng9PSWeBJbQcLqazH9XsBg",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/Ng9PSWeBJbQcLqazH9XsBg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566608_4",
+    "title": "PNAS Nexus  |从生态系统韧性理论重新认识黄土高原水土保持与生态修复",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/p_FXIpGlEbBFkijULy3dXg",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/p_FXIpGlEbBFkijULy3dXg"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566608_3",
+    "title": "Journal of Environmental Management | 沈阳生态所在维生素C工业发酵副产物提高玉米产量机制的研究中取得进展",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/l8qmql6S9IUJ9rf_V8kfpQ",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/l8qmql6S9IUJ9rf_V8kfpQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566608_2",
+    "title": "Catena  | 沈阳生态所在土壤团聚体微生物调控碳氮利用效率机制方面取得研究进展",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/LrHRQpjJewUPb6VS4yGa7w",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/LrHRQpjJewUPb6VS4yGa7w"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3596723443-2247566608_1",
+    "title": "Journal of Ecology  | 沈阳生态所在硫沉降背景下草地植物地下碳分配策略研究中取得进展",
+    "abstract": "",
+    "journal": "生态与地理速报",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/CqkGa2oggnyMfUoPB73-JA",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态与地理速报",
+        "url": "https://mp.weixin.qq.com/s/CqkGa2oggnyMfUoPB73-JA"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3277780355-2247581907_2",
+    "title": "【一作解读】Nature Communications|核心微生物在草地长期修复过程中提升网络恢复力来调控植物-土壤系统的恢复力",
+    "abstract": "青藏高原是世界上最高的高原，对粮食供应、环境保护和社会发展至关重要。高寒草地占青藏高原总面积的60%以上，对维系区域乃至全球的生态安全具有不可替代的作用。",
+    "journal": "生态系统生态学",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/eIluTiAjdGDwJ74OarxfSQ",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 77,
+      "bodyChars": 0,
+      "usedChars": 77
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态系统生态学",
+        "url": "https://mp.weixin.qq.com/s/eIluTiAjdGDwJ74OarxfSQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3277780355-2247581907_1",
+    "title": "土壤胞外聚合物研究现状探讨",
+    "abstract": "",
+    "journal": "生态系统生态学",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/0ck1QDwXtS3WgG_G2DL9ZQ",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态系统生态学",
+        "url": "https://mp.weixin.qq.com/s/0ck1QDwXtS3WgG_G2DL9ZQ"
+      }
+    ]
+  },
+  {
+    "id": "wechat-3910266315-2247570640_1",
+    "title": "近期生态、环境与遥感系列专刊征稿汇总！",
+    "abstract": "",
+    "journal": "生态遥感前沿",
+    "type": "News",
+    "doi": "",
+    "url": "https://mp.weixin.qq.com/s/XLG4xky9bJNFXXF6PVXnVA",
+    "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": false,
+      "descriptionChars": 0,
+      "bodyChars": 0,
+      "usedChars": 0
+    },
+    "sourceSignals": [
+      {
+        "type": "wechat",
+        "name": "生态遥感前沿",
+        "url": "https://mp.weixin.qq.com/s/XLG4xky9bJNFXXF6PVXnVA"
+      }
+    ]
+  },
+  {
     "id": "wechat-3564969279-2247530567_5",
     "title": "New Phytol | 甲基化“锁住”感病通路：苹果抗斑点落叶病新机制被揭示",
-    "abstract": "点击上方蓝字 关注我们近日，中国农业大学园艺学院李天忠/张秋雷团队在 New Phytologist 发表了",
+    "abstract": "点击上方蓝字 关注我们近日，中国农业大学园艺学院李天忠/张秋雷团队在 New Phytologist 发表了\n\n点击上方蓝字 关注我们 近日，中国农业大学园艺学院李天忠/张秋雷团队在 New Phytologist 发表了题为“ Promoter Methylation of MdRNS3a Contributes to Alternaria Leaf Spot Resistance in Apple ( Malus × domestica ) ”的研究成果。 该研究揭示了一种由DNA甲基化介导的苹果抗病新机制 ：抗病品种通过维持MdRNS3a启动子甲基化状态，阻断致病相关tsRNA的产生，从而维持免疫基因 MdTIR-1 的表达水平并增强植株抗病性。研究进一步提出，MdRNS3a启动子甲基化位点可作为苹果抗斑点落叶病的重要分子标记，为抗病资源筛选与分子育种提供了新的理论依据与应用模型。 苹果是全球最重要的落叶果树之一。根据联合国粮食及农业组织（FAO）统计，2024年全球苹果种植面积达468.5万公顷，总产量为9788.0万吨。然而，多种病害长期制约着苹果产业的稳定高产，其中由 链格孢苹果专化型（ Alternaria alternata f. sp. mali ） 引发的苹果斑点落叶病尤为严重。病原菌侵染后，叶片迅速形成褐色至黑色坏死斑，并伴随提前落叶，导致树体光合作用能力下降、生长势减弱，最终影响果实产量与品质。在病害严重年份，该病甚至可造成果园30%–50%的产量损失。 在真菌侵染苹果树的过程中，病原体通常分泌毒素、效应因子等，而植物宿主则相应积累small RNAs，包括microRNAs (miRNAs)、hairpin RNAs、non-coding RNAs等。 这些small RNAs能够通过RNA沉默途径调控免疫相关基因表达，但其在苹果抗链格孢菌过程中的具体功能与调控机制仍不清楚。 为解析这一问题， 研究团队以苹果感病品种“金冠”、抗病品种“寒富”及“寒富×蜜脆”杂交群体中的抗病（10-28、10-92）与感病（9-118、10-69）后代为材料 ，对接种链格孢菌株ALT1后24小时叶片进行高通量small RNA测序分析，最终成功鉴定出一个受ALT1强烈诱导的新型5'tRNA的small RNA（5'tsRNA），并命名为tsRVal。功能分析表明，tsRVal并非病原侵染后的被动产物，而是参与苹果感病调控的重要因子。 tsRVal能够负向调控免疫相关基因 MdTIR-1 的表达，从而削弱苹果对ALT1的抗性 。（图1）。",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Dataset",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/LDPuH9wCvrcNUzpXtkaLXA",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 54,
+      "bodyChars": 1035,
+      "usedChars": 1091
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2613,12 +4564,18 @@
   {
     "id": "wechat-3564969279-2247530567_4",
     "title": "New Phytol | 组蛋白乙酰化及AHL调控模块促进柑橘抗寒性的分子新机制",
-    "abstract": "本研究构建了一个精巧的植物抗寒表观遗传和代谢协同调控模型：在正常条件下，由于低水平的组蛋白乙酰化，染色质处于浓缩状态，PtrA/NINV7基因保持沉寂",
+    "abstract": "本研究构建了一个精巧的植物抗寒表观遗传和代谢协同调控模型：在正常条件下，由于低水平的组蛋白乙酰化，染色质处于浓缩状态，PtrA/NINV7基因保持沉寂\n\n研究背景 低温胁迫是严重限制植物生长和农作物产量的主要环境因素之一。为了应对寒冷，植物进化出了包括转录重编程、表观遗传修饰和代谢调整在内的多层次调控网络。其中，蔗糖代谢在调节植物抗寒性方面发挥着至关重要的作用。转化酶（Invertase, INV）是不可逆地水解蔗糖生成葡萄糖和果糖的关键酶，这些还原糖的积累能显著提高植物体的渗透调节能力。越来越多的证据表明，在应对环境信号时，糖代谢与表观遗传调控（特别是组蛋白乙酰化，HA）紧密相关。组蛋白乙酰转移酶（HATs）能够中和组蛋白的正电荷，促进染色质结构松弛，从而激活基因转录。然而，将组蛋白乙酰化机制与蔗糖分解代谢整合以建立抗寒性的关键分子靶点和互作网络，目前仍未被完全阐明。 论文概要 华中农业大学的 刘继红 团队在 New Phytologist 发表题为 “TAF1 and GCN5-mediated histone acetylation of regulatory cascade AHL14/17-A/NINV7 promotes sucrose catabolism and sugar accumulation for cold tolerance in Citrus” 的论文，揭示了含有AT-hook基序的核蛋白（AHLs）通过招募组蛋白乙酰转移酶（HATs）至核基质结合区，协同促进蔗糖代谢相关基因的组蛋白乙酰化，进而加速蔗糖分解和还原糖积累，最终赋予柑橘强大抗寒性的表观遗传调控新机制。 主要研究结果介绍 PtrAHL14/17与PtrTAF1和PtrGCN5形成四元蛋白复合体； 研究团队 前期已发现枳（ Poncirus trifoliata ，一种极耐寒的柑橘近缘种）中的PtrAHL14和PtrAHL17能够形成异源二聚体，并转录激活碱性/中性转化酶基因 PtrA/NINV7 。为了解析其深层机制，研究人员通过免疫共沉淀及质谱分析，鉴定出PtrTAF1是PtrAH L17的互作蛋白。由于TAF1和GCN5均属于组蛋白乙酰转移酶（HATs）且常协同发挥作用，研究人员利用荧光素酶互补成像（LCI）、双分子荧光互补（BiFC）、Pull-down和免疫共沉淀（Co-IP）等多种体内外实验技术进行验证。结果证实，PtrAHL14和PtrAHL17能够与PtrTAF1和PtrGCN5在细胞核中发生物理互作，并且这四种蛋白能够在活体内成功组装成一个四元功能复合体（图1）。 复合物锚定于核基质以促进低温下的组蛋白乙酰化； 体外乙酰化实验表明，PtrTAF1和PtrGCN5对组蛋白H3和H4的多个特定赖氨酸位点表现出强烈的乙酰化活性。亚细胞组分分离及免疫印迹分析显示，PtrTAF1和PtrGCN5单独存在时可分布于可溶性核蛋白中，但当与PtrAHL14和PtrAHL17共表达时，它们被特异性地招募并固定在核基质（NM）组分中。更重要的是，低温胁迫显著促进了该四元复合体各组分在核基质中的富集 。染色质免疫共沉淀（ChIP-qPCR）结果进一步表明，在冷胁迫下，该复合体高度富集于 PtrA/NINV7 启动 子上的核基质结合区（MAR），从而在冷胁迫下介导该区域的组蛋白乙酰化（图2）。 <strong style=\"color: rgb(53, 179, 120);font-weight: bold;background: none left top / auto no-repeat scroll padding-box border-box rgba(0, 0, 0, 0);width: auto;height: auto;margin: 0px;padding: 0px;bor",
     "journal": "Wiley生态环境",
     "type": "News",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/X7dUcT_TiluBjOusyhCJjg",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 75,
+      "bodyChars": 1538,
+      "usedChars": 1615
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2630,12 +4587,18 @@
   {
     "id": "wechat-3564969279-2247530567_3",
     "title": "【Conservation Letters】保护成效支付的成功悖论揭示瑞典食肉动物共存政策的成本与信任危机",
-    "abstract": "共存激励为何失灵",
+    "abstract": "共存激励为何失灵\n\n点击上方 “蓝字” 关注我们 Part 1 全球 人与野生动物共存 (human–wildlife coexistence) 已成为全球生物多样性治理的重要议题。2022年全球生物多样性框架 (Global Biodiversity Framework, GBF) 在目标4中提出要尽量减少人与野生动物冲突，而大型食肉动物与放牧系统的空间重叠往往是冲突的重要来源。保护成效支付 (Conservation Performance Payments, CPPs) 通过对野生动物存在或繁殖等保护结果进行奖励，试图将共存成本从受影响社区转移到更广泛的公共财政体系。瑞典自1996年实施面向原住民萨米驯鹿牧民 (Indigenous Sámi reindeer herders) 的国家资助CPP项目，按照狼獾 (wolverine, Gulo gulo) 、欧亚猞猁 ( Lynx lynx ) 和狼 ( Canis lupus ) 的存在与繁殖记录进行补偿，覆盖北部51个驯鹿放牧社区 (herding communities, HCs)，长期被视为人与大型食肉动物共存治理的典型案例。然而，在气候变化、监测条件变化和共存成本上升背景下，这一“成功模式”的长期有效性与合法性正受到挑战。 2026年5月发表于《Conservation Letters》的研究以瑞典北部诺尔博滕县 (Norrbotten County) 为案例，评估运行近30年的保护成效支付 (Conservation Performance Payments, CPPs) 是否仍能协调大型食肉动物保护与萨米驯鹿牧民生计之间的关系。 该县是瑞典狼獾和驯鹿放牧社区高度重叠的热点区域，拥有全国51个驯鹿放牧社区中的32个。研究综合访谈资料、生态监测数据和政策记录发现，瑞典CPP项目曾通过赋予狼獾繁殖个体直接经济价值并促进牧民参与监测，推动狼獾种群恢复；但这一成效并未持续。随着狼獾恢复和共存成本上升，补偿水平未能同步反映驯鹿损失、额外劳动和社会负担；传统基于雪地巢穴和足迹的监测方法在气候变暖和积雪条件变化下可靠性下降；参与者对制度公平性和可信度的信任逐渐削弱。研究指出，结果导向型保护支付面临“成功悖论”：当物种恢复提高保护成效时，共存成本也随之增加，若制度不能通过持续问责、适应性管理和合理补偿作出调整，就会把压力转嫁给地方社区，最终同时削弱社会正义和保护目标。 Part 2 该研究的5条主要发现与核心观点如下： 1. 诺尔博滕县狼獾恢复势头出现逆转 研究显示，瑞典北部诺尔博滕县 (Norrbotten C",
     "journal": "Wiley生态环境",
-    "type": "Comment",
+    "type": "Methods",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/upmCfbPWTlXpSeWFznNe8w",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 8,
+      "bodyChars": 1091,
+      "usedChars": 1101
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2647,12 +4610,18 @@
   {
     "id": "wechat-3564969279-2247530567_2",
     "title": "Journal of Ecology | 叶片凋落物分解，究竟由“生长性状”还是“防御性状”决定？",
-    "abstract": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解         📌 文献信息          期刊        ：        Journal of Ecology        （2026）         题目        ：        Defence-related traits drive leaf litter decomposit...",
+    "abstract": "🍂🛡️ 2026：在亚热带森林中，防御相关性状比生长、大小和形状性状更能解释叶片凋落物分解 📌 文献信息 期刊 ： Journal of Ecology （2026） 题目 ： Defence-related traits drive leaf litter decomposition more than growth-related or size and shape traits in a subtropical climate 作者 ：Dangjun Wang, Wuyang Xie, Chaochao Deng, Xiaoyuan Lin, Mingxi Jiang, Feng Liu, Xiujuan Qiao, Qiuxiang Tian, Yaozhan Xu, Qiaotian Shen, Zhongming Wen, Johannes H. C. Cornelissen, Juan Zuo, Zhun Mao 研究地点 ：中国湖南八大公山亚热带森林 研究对象 ：18 种阔叶树叶片凋落物 实验设计 ：13 个月凋落物袋分解实验 + 不同网孔控制土壤动物进入 核心关键词 ：leaf litter decomposition｜defence traits｜growth-defence tradeoff｜mechanical defence｜chemical defence｜leaf size and shape｜soil fauna 🔥 一句话核心结论 作者发现，叶片凋落物分解并不是主要由传统的“生长经济谱”或叶片大小形状决定，而是更强烈地受 防御类型梯度 控制。具体来说， 机械防御越强的凋落物分解越慢 ；土壤动物虽然能整体加快分解，但并没有显著改变性状与分解之间的关系斜率。 01 为什么这篇文章重要？🧠 过去我们常用叶经济谱解释凋落物分解： 高氮、高磷、高 SLA ⬇️ 资源获取型植物 ⬇️ 凋落物更容易分解 低氮、低磷、高干物质含量 ⬇️ 资源保守型植物 ⬇️ 凋落物更难分解 但这篇文章提出了一个更细致的问题： 凋落物分解是否真的主要由“生长快慢”决定？ 叶片不仅有生长性状，也有多种防御性状，例如： 🛡️ 木质素和纤维素 🧱 撕裂强度和穿刺强度 🧪 酚类和单宁 🧬 表皮蜡质和角质层厚度 🍃 叶片大小、形状、卷曲程度 这些性状都会以“afterlife effect”的形式影响凋落物进入土壤后的命运。 📌 解读 ： 这篇文章的关键价值在于，它没有只看氮、磷、SLA 等传统经济谱性状，而是同时整合了生长、防御、大小和形状四类性状，检验到底哪一类性状最能解释分解差异。 02 研究设计：18 个树种 × 3 种网孔 × 13 个月分解 🔬 作者选择湖南八大公山亚热带森林中的 18 种本地阔叶树 ，开展凋落物袋实验。 🕳️ 三种网孔处理 0.07 mm ：允许微生物和微型动物进入，排除中型和大型土壤动物 2 mm ：允许微生物、微型动物和中型动物进入，排除大型土壤动物 5 mm ：允许微生物、中型动物和大型土壤动物进入 🍂 实验规模 18 个树种 3 种网孔 3 个收获时间 4 个重复 总计 648 个凋落物袋 🌿 测定性状 作者测定了四大类性状： 生长相关性状 ：C、N、P、SLA、干物质含量 防御相关性状 ：木质素、纤维素、酚类、单宁、蜡质、角质层厚度、叶密度、撕裂强度、穿刺强度 大小性状 ：叶长、叶宽、面积、周长、厚度 形状性状 ：边界复杂度、叶形指数、卷曲度 📌 解读 ： 这套设计非常完整。它不仅能回答“哪些性状控制分解”，还能进一步回答“土壤动物是否会改变性状对分解的调控作用”。 03 主要发现 1：土壤动物整体加快分解，但主要是大型动物起作用 🪱 不同树种的分解速率差异显著。 其中： ⚡ Davidia involucrata 和 Tapiscia sinensis 分解最快 🐢 Aesculus chinensis、Fagus lucida 和 Sassafras tzumu 分解最慢 网孔处理结果显示： 0.07 mm 到 2 mm：分解速率有所增加，但不显著 0.07 mm 到 5 mm：分解速率显著增加 2 mm 到 5 mm：差异相对较小 📌 解读 ： 这说明土壤动物确实能促进分解，但在这个亚热带森林中，大型土壤动物的作用更明显。 大型动物可能通过： 🍂 撕碎凋落物 🪱 增加凋落物与土壤接触 🧫 促进微生物定殖 💩 通过排泄物改变底物质量 🕸️ 改变凋落物层结构 来加速分解。 04 主要发现 2：存在两个重要性状空间 🧩 作者通过 PCA 发现，凋落物性状并不是随机组合，而是形成了两个主要性状空间。 1️⃣ 生长-防御空间 GDS 该空间包含两个相互正交的梯度： 防御类型梯度 从机械防御强，到化学防御强。 机械防御包括： 🧱 撕裂强度 🧱 穿刺强度 🪵 木质素 🧬 纤维素 化学防御包括： 🧪 总酚 🧪 单宁等化学保护物质 生长-防御梯度 从高 N、高 P、偏资源获取型，到整体防御较强、偏保守型。 2️⃣ 大小-形状空间 SSS 该空间也包含两个梯度： 大小梯度 从小而简单的叶片，到大而复杂的叶片。 形状梯度 从细长、平展的叶片，到圆形、卷曲的叶片。 📌 解读 ： 这篇文章的重要贡献之一，是把凋落物性状从单一“经济谱”扩展为多维性状空间。尤其是它证明，防御性状内部也存在重要分化：机械防御和化学防御并不等同。 05 主要发现 3：真正控制分解的是“防御类型梯度” 🛡️ 在四个性状梯度中，只有一个与分解速率显著相关： 防御类型梯度 也就是说，决定叶片凋落物分解快慢的关键，不是： ❌ 生长-防御梯度 ❌ 叶片大小梯度 ❌ 叶片形状梯度",
     "journal": "Wiley生态环境",
-    "type": "News",
+    "type": "Dataset",
     "doi": "",
     "url": "https://mp.weixin.qq.com/s/k5N5x_NoumPG5_jPsRryhw",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 146,
+      "bodyChars": 2404,
+      "usedChars": 2404
+    },
     "sourceSignals": [
       {
         "type": "wechat",
@@ -2664,34 +4633,23 @@
   {
     "id": "wechat-3564969279-2247530567_1",
     "title": "Journal of Applied Ecology 丨 没有一成不变的模式：城市密集化背景下局地植物多样性对传粉者及传粉服务的性状依赖性效应",
-    "abstract": "Title:          No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city            Time:          2026年5月            DOI:    ...",
+    "abstract": "Title: No one-size-fits-all: trait-dependent effects of local plant diversity on pollinators and pollination service in a densifying city Time: 2026年5月 DOI: https://doi.org/10.1111/1365-2664.70384 摘要： 城市景观的密集化（如填充式开发、城市存量优化）重塑了植物-传粉者互作关系，并影响传粉服务的供给。提升局地尺度生境质量（例如在花园等城市绿地种植更多开花植物）被认为是缓解负面效应的策略，但有效的传粉过程还依赖于传粉者与花朵之间的性状匹配。 本研究通过控制景观尺度密集化梯度与局地尺度花卉丰富度梯度的独立变异，选用4种具有不同访花专一性的植物指示种，系统评估了传粉者访花频率、丰富度及传粉成功率。 传粉者访花频率和丰富度均随城市密集化程度升高而下降，随花卉丰富度增加而上升。花卉丰富的花园支持了更多小型独居蜂和大型社会性蜜蜂，但对食蚜蝇、甲虫或小型社会性蜜蜂无显著影响。 传粉成功率随密集化升高而下降，但仅在与专性传粉者互作的植物指示种中，可被花卉丰富度所补偿。 <li style=\"-webkit-tap-highlight-col",
     "journal": "Wiley生态环境",
     "type": "News",
-    "doi": "",
+    "doi": "10.1111/1365-2664.70384",
     "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA",
     "date": "2026-06-03",
+    "wechatTextStatus": {
+      "hasContent": true,
+      "descriptionChars": 160,
+      "bodyChars": 567,
+      "usedChars": 567
+    },
     "sourceSignals": [
       {
         "type": "wechat",
         "name": "Wiley生态环境",
         "url": "https://mp.weixin.qq.com/s/895_x1BfxAERWXZ-gZ5kAA"
-      }
-    ]
-  },
-  {
-    "id": "wechat-3634184519-2247484316_1",
-    "title": "FCR: 基于机器学习和APSIM-Wheat作物模型的10米分辨率快速冬小麦产量制图",
-    "abstract": "",
-    "journal": "气候韧性农业和智慧农业",
-    "type": "News",
-    "doi": "",
-    "url": "https://mp.weixin.qq.com/s/firpySJZ0Gr0tgu7Bg7y0g",
-    "date": "2026-06-02",
-    "sourceSignals": [
-      {
-        "type": "wechat",
-        "name": "气候韧性农业和智慧农业",
-        "url": "https://mp.weixin.qq.com/s/firpySJZ0Gr0tgu7Bg7y0g"
       }
     ]
   }
