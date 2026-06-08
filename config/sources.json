@@ -138,5 +138,14 @@
     "feedUrl": "https://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2745",
     "status": "feed configured",
     "weight": 5
+  },
+  {
+    "id": "对话地球",
+    "name": "对话地球",
+    "type": "natureScienceNews",
+    "category": "news",
+    "feedUrl": "https://dialogue.earth/zh/feed/",
+    "weight": 3,
+    "status": "feed configured"
   }
 ]
