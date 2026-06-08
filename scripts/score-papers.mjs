@@ -1,8 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
+import { loadLocalEnv } from "./local-env.mjs";
 
 const ROOT = process.cwd();
+await loadLocalEnv(ROOT);
 const INPUT = path.join(ROOT, "data", "candidates.json");
 const OUTPUT = path.join(ROOT, "data", "latest.json");
 const CACHE = path.join(ROOT, "data", "paper-cache.json");
@@ -143,6 +145,7 @@ function candidateFingerprint(paper) {
     journal: paper.journal || "",
     type: paper.type || "",
     authors: paper.authors || [],
+    localPrescreen: paper.localPrescreen || null,
     sourceSignals: (paper.sourceSignals || []).map((signal) => ({
       type: signal.type || "",
       name: signal.name || "",
@@ -442,6 +445,19 @@ function dryPrescreen(paper) {
 }
 
 async function prescreen(paper) {
+  const local = paper.localPrescreen;
+  if (local && local.pass === true) {
+    return {
+      pass: true,
+      isEcology: local.isEcology !== false,
+      tags: Array.isArray(local.tags) ? local.tags : [],
+      relevance: Math.max(0, Math.min(Number(local.relevance || 30), 50)),
+      oneLine: local.oneLine || chineseOneLine(paper),
+      category: local.category,
+      source: "local-wechat-prescreen",
+      model: local.model || "local"
+    };
+  }
   if (DRY_RUN) return dryPrescreen(paper);
   try {
     return await deepseekJson(PRESCREEN_MODEL, [

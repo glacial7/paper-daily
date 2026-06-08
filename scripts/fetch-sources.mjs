@@ -389,7 +389,11 @@ async function readLocalWechatCandidates() {
   try {
     const data = JSON.parse(await fs.readFile(WECHAT_CANDIDATES, "utf8"));
     const items = Array.isArray(data) ? data : data.items || [];
-    return items.filter((item) => item && item.title && isRecent(item));
+    return items.filter((item) => {
+      if (!item || !item.title || !isRecent(item)) return false;
+      if (item.localPrescreen && item.localPrescreen.pass === false) return false;
+      return true;
+    });
   } catch {
     return [];
   }

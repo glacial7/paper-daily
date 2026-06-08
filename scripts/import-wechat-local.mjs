@@ -7,7 +7,7 @@ const OUTPUT = path.join(ROOT, "data", "wechat-candidates.json");
 const LOCAL_DB = process.env.WECHAT_DB_PATH || "/Users/xcli/data/db.db";
 const LOOKBACK_DAYS = Number(process.env.PAPER_DAILY_LOOKBACK_DAYS || 5);
 const MAX_PER_SOURCE = Number(process.env.PAPER_DAILY_MAX_PER_SOURCE || 30);
-const MAX_ABSTRACT_CHARS = Number(process.env.PAPER_DAILY_WECHAT_TEXT_CHARS || 2500);
+const MAX_ABSTRACT_CHARS = Number(process.env.PAPER_DAILY_WECHAT_TEXT_CHARS || 6000);
 
 function decodeEntities(value = "") {
   return value
@@ -139,7 +139,9 @@ function toIsoDate(seconds) {
 function toCandidate(row) {
   const title = decodeEntities(row.title || "");
   const description = compactText(row.description || "");
-  const body = compactText(row.content || row.content_html || "");
+  const contentText = compactText(row.content || "");
+  const htmlText = compactText(row.content_html || "");
+  const body = contentText.length >= htmlText.length ? contentText : htmlText;
   const abstract = truncateText(mergeDescriptionAndBody(description, body));
   const doiMatch = `${title} ${abstract} ${row.url || ""}`.match(/\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
   const doi = doiMatch ? doiMatch[0].replace(/[.,;)\]]+$/, "") : "";
@@ -156,6 +158,7 @@ function toCandidate(row) {
       hasContent: Boolean(row.has_content),
       descriptionChars: description.length,
       bodyChars: body.length,
+      bodySource: contentText.length >= htmlText.length ? "content" : "content_html",
       usedChars: abstract.length
     },
     sourceSignals: [

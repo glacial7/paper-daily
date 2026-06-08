@@ -214,6 +214,13 @@ const paperTypeScores = {
 
 const logs = [
   {
+    version: "2026-06-08",
+    date: "今日更新",
+    title: "公众号本地预筛上线",
+    body:
+      "1. 成本：暂停 GitHub Actions 的每日自动更新，避免在没有新公众号候选或明确阅读需求时消耗 DeepSeek token。\\n2. 公众号：新增 we-mp-rss API 抓取脚本，mac app 中以“公众号爬虫”按钮更新公众号并导出近 5 日文章。\\n3. 筛选：新增本地 DeepSeek 便宜模型预筛脚本，可先过滤广告、会议、课程、征稿等非研究推送。\\n4. 类型：预筛会保留研究论文、数据集、方法工具、综述和观点/评论类研究信息，并写入类型标签。\\n5. 流程：本地预筛通过的公众号候选上传后，会跳过 GitHub 端第一轮便宜预筛，只进入最终统一评分。\\n6. 透明度：新增预筛报告和缓存，记录被排除条目、全文/摘要状态，并避免 unchanged 公众号文章重复消耗 token。"
+  },
+  {
     version: "2026-06-07",
     date: "今日更新",
     title: "公众号正文导入增强",
@@ -821,7 +828,7 @@ function renderUpdates() {
   root.innerHTML = `
     ${renderHead(
       "全部论文动态",
-      `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 每日 08:00 更新`,
+      `近 ${RECENT_DAYS} 日 · ${pool.length} candidates · 手动更新`,
       '<button class="btn" id="exportFeedback">导出反馈</button>'
     )}
     <section class="theme-panel card" id="themePanel"></section>
