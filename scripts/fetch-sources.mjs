@@ -11,6 +11,7 @@ const RSS_HISTORY = process.env.PAPER_DAILY_RSS_HISTORY
 const OUTPUT = process.env.PAPER_DAILY_CANDIDATES_OUTPUT
   ? path.resolve(ROOT, process.env.PAPER_DAILY_CANDIDATES_OUTPUT)
   : path.join(ROOT, "data", "candidates.json");
+const PUBLIC_RSS_CANDIDATES = path.join(ROOT, "data", "rss-candidates.json");
 const REPORT = process.env.PAPER_DAILY_FETCH_REPORT
   ? path.resolve(ROOT, process.env.PAPER_DAILY_FETCH_REPORT)
   : OUTPUT.endsWith("rss-candidates.json")
@@ -1338,6 +1339,9 @@ async function main() {
   const webFetchReport = getWebFetchReport();
   await writeWebFetchReport();
   await fs.writeFile(OUTPUT, `${JSON.stringify(candidates, null, 2)}\n`);
+  if (STRICT_JOURNAL_RSS && path.resolve(OUTPUT) !== path.resolve(PUBLIC_RSS_CANDIDATES)) {
+    await fs.writeFile(PUBLIC_RSS_CANDIDATES, `${JSON.stringify(candidates, null, 2)}\n`);
+  }
   await fs.writeFile(
     REPORT,
     `${JSON.stringify(
