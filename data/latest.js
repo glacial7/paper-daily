@@ -1,4 +1,4 @@
-{
+globalThis.PAPER_DAILY_LATEST = {
   "generatedAt": "2026-07-19T06:28:52.069Z",
   "lookbackDays": 14,
   "dryRun": false,
@@ -13503,4 +13503,4 @@
     }
   ],
   "sourceMode": "public-journal-rss-only"
-}
+};

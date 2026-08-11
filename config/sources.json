@@ -7,7 +7,15 @@
     "pageUrl": "https://www.science.org/",
     "status": "feed configured",
     "weight": 5,
-    "feedUrl": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+    "feedUrl": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+    "feedUrls": [
+      "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+      "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science"
+    ],
+    "crossrefIssn": "0036-8075",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 100
   },
   {
     "id": "nature",
@@ -17,13 +25,71 @@
     "pageUrl": "https://www.nature.com/",
     "feedUrl": "https://www.nature.com/nature.rss",
     "status": "feed configured",
+    "weight": 5,
+    "crossrefIssn": "0028-0836",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 80
+  },
+  {
+    "id": "pnas",
+    "name": "PNAS",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.pnas.org/",
+    "feedUrl": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
+    "status": "feed configured",
+    "weight": 5,
+    "crossrefIssn": "1091-6490",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 120
+  },
+  {
+    "id": "current-biology",
+    "name": "Current Biology",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.cell.com/current-biology/home",
+    "feedUrl": "https://www.cell.com/current-biology/inpress.rss",
+    "feedUrls": [
+      "https://www.cell.com/current-biology/current.rss",
+      "https://www.cell.com/current-biology/inpress.rss"
+    ],
+    "status": "feed configured",
+    "weight": 5,
+    "crossrefIssn": "0960-9822"
+  },
+  {
+    "id": "one-earth",
+    "name": "One Earth",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.cell.com/one-earth/home",
+    "feedUrl": "https://www.cell.com/one-earth/current.rss",
+    "feedUrls": [
+      "https://www.cell.com/one-earth/current.rss",
+      "https://www.cell.com/one-earth/inpress.rss"
+    ],
+    "status": "feed configured",
     "weight": 5
+  },
+  {
+    "id": "the-innovation",
+    "name": "The Innovation",
+    "type": "topJournal",
+    "category": "comprehensive",
+    "pageUrl": "https://www.cell.com/the-innovation/home",
+    "feedUrl": "https://www.cell.com/the-innovation/inpress.rss",
+    "status": "feed configured",
+    "weight": 5,
+    "crossrefIssn": "2666-6758"
   },
   {
     "id": "nature-reviews-biodiversity",
     "name": "Nature Reviews Biodiversity",
     "type": "reviewJournal",
-    "category": "professional",
+    "category": "comprehensive",
     "pageUrl": "https://www.nature.com/nrbd/",
     "status": "feed configured",
     "weight": 4,
@@ -33,31 +99,39 @@
     "id": "nature-reviews-earth-environment",
     "name": "Nature Reviews Earth & Environment",
     "type": "reviewJournal",
-    "category": "professional",
+    "category": "comprehensive",
     "pageUrl": "https://www.nature.com/natrevearthenviron/",
     "status": "feed configured",
     "weight": 4,
     "feedUrl": "https://www.nature.com/natrevearthenviron.rss"
   },
   {
-    "id": "annual-review-ecology-evolution-systematics",
-    "name": "Annual Review of Ecology, Evolution, and Systematics",
+    "id": "biological-reviews",
+    "name": "Biological Reviews",
     "type": "reviewJournal",
-    "category": "professional",
-    "pageUrl": "https://www.annualreviews.org/content/journals/ecolsys",
+    "category": "comprehensive",
+    "pageUrl": "https://onlinelibrary.wiley.com/journal/1469185x",
+    "feedUrl": "https://onlinelibrary.wiley.com/feed/1469185x/most-recent",
     "status": "feed configured",
-    "weight": 5,
-    "feedUrl": "https://www.annualreviews.org/action/showFeed?ui=45mu4&mi=3fndc3&ai=sh&jc=ecolsys&type=etoc&feed=rss"
+    "weight": 4,
+    "crossrefIssn": "1469-185X",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 80
   },
   {
     "id": "trends-ecology-evolution",
     "name": "Trends in Ecology & Evolution",
     "type": "reviewJournal",
-    "category": "professional",
+    "category": "comprehensive",
     "pageUrl": "https://www.cell.com/trends/ecology-evolution/home",
     "status": "feed configured",
     "weight": 4,
-    "feedUrl": "https://www.cell.com/trends/ecology-evolution/current.rss"
+    "feedUrl": "https://www.cell.com/trends/ecology-evolution/current.rss",
+    "feedUrls": [
+      "https://www.cell.com/trends/ecology-evolution/current.rss",
+      "https://www.cell.com/trends/ecology-evolution/inpress.rss"
+    ]
   },
   {
     "id": "frontiers-ecology-environment",
@@ -66,8 +140,9 @@
     "category": "professional",
     "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/15409309",
     "status": "feed configured",
-    "weight": 4,
-    "feedUrl": "http://www.esajournals.org/action/showFeed?type=etoc&feed=rss&jc=fron"
+    "weight": 3,
+    "feedUrl": "https://esajournals.onlinelibrary.wiley.com/feed/15409309/most-recent",
+    "crossrefIssn": "1540-9309"
   },
   {
     "id": "nature-ecology-evolution",
@@ -77,7 +152,7 @@
     "pageUrl": "https://www.nature.com/natecolevol/",
     "feedUrl": "https://www.nature.com/natecolevol.rss",
     "status": "feed configured",
-    "weight": 5
+    "weight": 3
   },
   {
     "id": "ecology-letters",
@@ -86,38 +161,8 @@
     "category": "professional",
     "pageUrl": "https://onlinelibrary.wiley.com/journal/14610248",
     "status": "feed configured",
-    "weight": 5,
-    "feedUrl": "https://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1461-0248"
-  },
-  {
-    "id": "sciencedaily-agriculture-food",
-    "name": "ScienceDaily Agriculture and Food",
-    "type": "scienceDaily",
-    "category": "news",
-    "pageUrl": "https://www.sciencedaily.com/news/plants_animals/agriculture_and_food/",
-    "feedUrl": "https://www.sciencedaily.com/rss/plants_animals/agriculture_and_food.xml",
-    "status": "feed configured",
-    "weight": 3
-  },
-  {
-    "id": "sciencedaily-ecology",
-    "name": "ScienceDaily Ecology",
-    "type": "scienceDaily",
-    "category": "news",
-    "pageUrl": "https://www.sciencedaily.com/news/earth_climate/ecology/",
-    "feedUrl": "https://www.sciencedaily.com/rss/earth_climate/ecology.xml",
-    "status": "feed configured",
-    "weight": 3
-  },
-  {
-    "id": "science-news",
-    "name": "Science News",
-    "type": "natureScienceNews",
-    "category": "news",
-    "feedUrl": "https://www.science.org/rss/news_current.xml",
     "weight": 3,
-    "status": "feed configured",
-    "pageUrl": "https://www.science.org/news"
+    "feedUrl": "https://onlinelibrary.wiley.com/feed/14610248/most-recent"
   },
   {
     "id": "science-advances",
@@ -127,7 +172,11 @@
     "feedUrl": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
     "weight": 4,
     "status": "feed configured",
-    "pageUrl": "https://www.science.org/journal/sciadv"
+    "pageUrl": "https://www.science.org/journal/sciadv",
+    "crossrefIssn": "2375-2548",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 120
   },
   {
     "id": "journal-of-ecology",
@@ -135,17 +184,99 @@
     "type": "professionalJournal",
     "category": "professional",
     "pageUrl": "https://besjournals.onlinelibrary.wiley.com/journal/13652745",
-    "feedUrl": "https://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2745",
+    "feedUrl": "https://besjournals.onlinelibrary.wiley.com/feed/13652745/most-recent",
     "status": "feed configured",
-    "weight": 5
+    "weight": 3
   },
   {
-    "id": "对话地球",
-    "name": "对话地球",
-    "type": "natureScienceNews",
-    "category": "news",
-    "feedUrl": "https://dialogue.earth/zh/feed/",
+    "id": "journal-animal-ecology",
+    "name": "Journal of Animal Ecology",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://besjournals.onlinelibrary.wiley.com/journal/13652656",
+    "feedUrl": "https://besjournals.onlinelibrary.wiley.com/feed/13652656/most-recent",
+    "status": "feed configured",
     "weight": 3,
-    "status": "feed configured"
+    "crossrefIssn": "1365-2656"
+  },
+  {
+    "id": "journal-applied-ecology",
+    "name": "Journal of Applied Ecology",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://besjournals.onlinelibrary.wiley.com/journal/13652664",
+    "feedUrl": "https://besjournals.onlinelibrary.wiley.com/feed/13652664/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1365-2664"
+  },
+  {
+    "id": "functional-ecology",
+    "name": "Functional Ecology",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://besjournals.onlinelibrary.wiley.com/journal/13652435",
+    "feedUrl": "https://besjournals.onlinelibrary.wiley.com/feed/13652435/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1365-2435"
+  },
+  {
+    "id": "ecography",
+    "name": "Ecography",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://www.ecography.org/",
+    "feedUrl": "https://nsojournals.onlinelibrary.wiley.com/feed/16000587/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1600-0587",
+    "crossrefAugment": true,
+    "crossrefWindowDays": 15,
+    "crossrefRows": 50
+  },
+  {
+    "id": "global-ecology-biogeography",
+    "name": "Global Ecology and Biogeography",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://onlinelibrary.wiley.com/journal/14668238",
+    "feedUrl": "https://onlinelibrary.wiley.com/feed/14668238/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1466-8238"
+  },
+  {
+    "id": "ecology",
+    "name": "Ecology",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/19399170",
+    "feedUrl": "https://esajournals.onlinelibrary.wiley.com/feed/19399170/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1939-9170"
+  },
+  {
+    "id": "ecological-applications",
+    "name": "Ecological Applications",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/19395582",
+    "feedUrl": "https://esajournals.onlinelibrary.wiley.com/feed/19395582/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1939-5582"
+  },
+  {
+    "id": "ecological-monographs",
+    "name": "Ecological Monographs",
+    "type": "professionalJournal",
+    "category": "professional",
+    "pageUrl": "https://esajournals.onlinelibrary.wiley.com/journal/15577015",
+    "feedUrl": "https://esajournals.onlinelibrary.wiley.com/feed/15577015/most-recent",
+    "status": "feed configured",
+    "weight": 3,
+    "crossrefIssn": "1557-7015"
   }
 ]

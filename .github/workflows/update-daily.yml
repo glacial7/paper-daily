@@ -1,4 +1,4 @@
-name: Update Paper Daily
+name: Update Paper Daily (Journal RSS Only)
 
 on:
   workflow_dispatch:
@@ -24,15 +24,22 @@ jobs:
 
       - name: Fetch source feeds
         env:
-          PAPER_DAILY_LOOKBACK_DAYS: 5
+          PAPER_DAILY_LOOKBACK_DAYS: 14
+          PAPER_DAILY_STRICT_JOURNAL_RSS: 1
+          PAPER_DAILY_INCLUDE_WECHAT: 0
         run: node scripts/fetch-sources.mjs
 
       - name: Score papers with DeepSeek
         env:
+          PAPER_DAILY_LOOKBACK_DAYS: 14
+          PAPER_DAILY_RSS_ONLY: 1
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_PRESCREEN_MODEL: deepseek-v4-flash
           DEEPSEEK_SCORE_MODEL: deepseek-v4-pro
         run: node scripts/score-papers.mjs
+
+      - name: Verify public RSS-only boundary
+        run: node scripts/verify-public-rss-only.mjs
 
       - name: Sync latest branch before commit
         run: git pull --rebase --autostash origin main
@@ -41,4 +48,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update daily paper data"
-          file_pattern: data/candidates.json data/latest.json data/paper-cache.json
+          file_pattern: data/candidates.json data/latest.json data/latest.js data/paper-cache.json data/rss-history.json

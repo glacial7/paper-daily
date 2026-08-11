@@ -1,0 +1,11 @@
+.DS_Store
+.env.local
+node_modules/
+.cache/
+*.log
+
+data/doi-journal-patterns.local.json
+data/doi-metadata-cache.json
+data/journal-index.local.json
+data/*-report.json
+data/web-fetch-cache.json
