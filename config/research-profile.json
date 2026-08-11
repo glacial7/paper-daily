@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "profileName": "General ecology starter profile",
+  "description": "A neutral starting point for the public template. Replace these topics with your own active research questions after forking the repository.",
+  "researchQuestions": [],
+  "coreTopics": [
+    "ecosystem and community processes",
+    "biodiversity and conservation",
+    "ecological responses to global change"
+  ],
+  "supportTopics": [
+    "ecological monitoring and modeling",
+    "spatial analysis and synthesis methods"
+  ],
+  "secondaryTopics": [],
+  "downweightTopics": [],
+  "topicLabels": {
+    "novel_ecosystems_resilience": "新型生态系统/韧性",
+    "modeling_methods": "模型/方法",
+    "community_ecosystem": "群落/生态系统",
+    "population_traits": "种群/性状",
+    "biogeochemistry": "生物地球化学",
+    "genetics_evolution": "遗传/进化",
+    "landscape_macroecology": "景观/宏生态",
+    "species_distribution": "物种分布",
+    "climate_anthropogenic": "气候/人类影响",
+    "disturbance": "扰动/火生态",
+    "invasion": "生物入侵",
+    "conservation_management": "保护/管理",
+    "plant_agroecology": "植物/农业生态",
+    "aquatic_microbe": "水域/微生物"
+  },
+  "topicWeights": {
+    "novel_ecosystems_resilience": 0,
+    "modeling_methods": 1,
+    "community_ecosystem": 1,
+    "population_traits": 0,
+    "biogeochemistry": 0,
+    "genetics_evolution": 0,
+    "landscape_macroecology": 0,
+    "species_distribution": 0,
+    "climate_anthropogenic": 1,
+    "disturbance": 0,
+    "invasion": 0,
+    "conservation_management": 1,
+    "plant_agroecology": 0,
+    "aquatic_microbe": 0
+  },
+  "scoringNotes": [
+    "Topic relevance should come before journal prestige.",
+    "Do not infer a personal interest from the bundled example papers or source list.",
+    "When a profile has no matching topic, keep the relevance score conservative."
+  ]
+}

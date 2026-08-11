@@ -132,6 +132,11 @@ textarea {
   cursor: pointer;
 }
 
+a.btn {
+  align-items: center;
+  display: inline-flex;
+}
+
 .btn.primary,
 .tab.active {
   background: var(--ink);
@@ -1026,6 +1031,135 @@ textarea {
   margin-top: 8px;
 }
 
+.customize-intro {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 760px;
+}
+
+.customize-intro p {
+  margin: 0 0 12px;
+}
+
+.project-overview {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 1fr);
+  margin-bottom: 18px;
+  padding: 15px 2px;
+}
+
+.project-kicker {
+  color: var(--green);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.project-overview h2 {
+  font-size: 1.06rem;
+  line-height: 1.35;
+  margin: 0 0 7px;
+}
+
+.project-overview p,
+.project-overview dd {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.project-overview p {
+  margin: 0;
+}
+
+.project-overview-facts {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.project-overview-facts div {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 64px minmax(0, 1fr);
+}
+
+.project-overview dt {
+  font-weight: 700;
+}
+
+.project-overview dd {
+  margin: 0;
+}
+
+.project-overview-links {
+  display: flex;
+  gap: 14px;
+  grid-column: 1 / -1;
+}
+
+.project-overview-links a {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.customize-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.customize-item {
+  align-items: start;
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+}
+
+.customize-item code,
+.customize-steps code {
+  color: var(--green);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+
+.customize-item p,
+.customize-steps p,
+.customize-steps li {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.customize-item .btn {
+  justify-self: start;
+}
+
+.customize-steps {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.customize-steps h2 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.customize-steps ol {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.customize-steps p {
+  margin-bottom: 12px;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1132,5 +1266,17 @@ textarea {
 
   .metric-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .customize-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .project-overview-links {
+    grid-column: auto;
   }
 }
