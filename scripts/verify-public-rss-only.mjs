@@ -55,6 +55,10 @@ const workflow = fs.readFileSync(".github/workflows/update-daily.yml", "utf8");
 assert.match(workflow, /PAPER_DAILY_STRICT_JOURNAL_RSS:\s*1/);
 assert.match(workflow, /PAPER_DAILY_INCLUDE_WECHAT:\s*0/);
 assert.match(workflow, /PAPER_DAILY_RSS_ONLY:\s*1/);
+assert.match(workflow, /file_pattern:.*data\/rss-candidates\.json/);
+
+const fetchSources = fs.readFileSync("scripts/fetch-sources.mjs", "utf8");
+assert.match(fetchSources, /STRICT_JOURNAL_RSS[\s\S]*fs\.writeFile\(PUBLIC_RSS_CANDIDATES/);
 
 const sourcesHtml = fs.readFileSync("sources.html", "utf8");
 assert.doesNotMatch(sourcesHtml, /wechat-sources\.js/i);

@@ -48,4 +48,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update daily paper data"
-          file_pattern: data/candidates.json data/latest.json data/latest.js data/paper-cache.json data/rss-history.json
+          file_pattern: data/candidates.json data/rss-candidates.json data/latest.json data/latest.js data/paper-cache.json data/rss-history.json
