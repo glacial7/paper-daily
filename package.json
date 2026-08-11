@@ -2,6 +2,7 @@
   "name": "paper-daily-public-rss",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "RSS-only public GitHub Pages edition of PaperDaily.",
   "scripts": {
