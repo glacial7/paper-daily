@@ -13,13 +13,17 @@ import {
 
 const ROOT = process.cwd();
 await loadLocalEnv(ROOT);
-const INPUT = path.join(ROOT, "data", "candidates.json");
+const INPUT = process.env.PAPER_DAILY_CANDIDATES_INPUT
+  ? path.resolve(ROOT, process.env.PAPER_DAILY_CANDIDATES_INPUT)
+  : path.join(ROOT, "data", "candidates.json");
 const OUTPUT = path.join(ROOT, "data", "latest.json");
 const OUTPUT_JS = path.join(ROOT, "data", "latest.js");
 const CACHE = path.join(ROOT, "data", "paper-cache.json");
 const REPORT = path.join(ROOT, "data", "scoring-run-report.json");
 const RSS_CANDIDATES = path.join(ROOT, "data", "rss-candidates.json");
 const FEEDBACK = path.join(ROOT, "config", "topic-feedback.json");
+const RESEARCH_PROFILE = path.join(ROOT, "config", "research-profile.json");
+const GENERATED_AT = process.env.PAPER_DAILY_GENERATED_AT || "";
 const MODEL_PROVIDER = process.env.PAPER_DAILY_MODEL_PROVIDER || "deepseek";
 const API_KEY = process.env.PAPER_DAILY_MODEL_API_KEY || process.env.DEEPSEEK_API_KEY;
 const DRY_RUN = process.env.PAPER_DAILY_DRY_RUN === "1" || !API_KEY;
@@ -30,8 +34,8 @@ const MODEL_BASE_URL =
   "https://api.deepseek.com/chat/completions";
 const PRESCREEN_MODEL = process.env.PAPER_DAILY_PRESCREEN_MODEL || process.env.DEEPSEEK_PRESCREEN_MODEL || "deepseek-v4-flash";
 const SCORE_MODEL = process.env.PAPER_DAILY_SCORE_MODEL || process.env.DEEPSEEK_SCORE_MODEL || "deepseek-v4-pro";
-const SCORING_SYSTEM = "theme_journal_research_profile_v3";
-const SCORING_VERSION = "2026-07-15-novel-ecosystems-frame-v1";
+const SCORING_SYSTEM = "theme_journal_configurable_profile_v1";
+const SCORING_VERSION = "2026-08-11-public-configurable-profile-v3";
 const CACHE_MODE = DRY_RUN ? "dry-run" : `${MODEL_PROVIDER}:${PRESCREEN_MODEL}:${SCORE_MODEL}`;
 const COMPACT_LOG = process.env.PAPER_DAILY_COMPACT_LOG === "1";
 const TRUST_LOCAL_WECHAT_PRESCREEN = process.env.PAPER_DAILY_TRUST_LOCAL_WECHAT_PRESCREEN === "1";
@@ -69,24 +73,8 @@ function normalizeLookbackDays(value) {
   return Math.min(MAX_LOOKBACK_DAYS, Math.max(1, Math.round(days)));
 }
 
-const topicLabels = {
-  pv_invasion: "光伏/植物入侵",
-  invasion_fire: "入侵-野火反馈",
-  dry_valley_savanna: "干热河谷/河谷萨王纳",
-  pyric_herbivory: "火-食草动物互作",
-  renewable_biodiversity_risk: "新能源/生物多样性风险",
+const defaultTopicLabels = {
   novel_ecosystems_resilience: "新型生态系统/韧性",
-  invasion_ecology: "入侵生态学",
-  community_interactions: "群落互作",
-  restoration_conservation: "恢复/保护管理",
-  restoration_conservation_theme: "恢复/保护支撑",
-  spatial_risk_methods: "空间风险/SDM",
-  remote_sensing_monitoring: "遥感/监测",
-  statistical_synthesis_methods: "统计/综合方法",
-  soil_rhizosphere_microbe: "土壤/根际/微生物",
-  coastal_microalgae: "潮间带微藻",
-  saltmarsh_milu_spartina: "麋鹿/互花米草",
-  pika_arthropod_grazing: "鼠兔/放牧/节肢动物",
   modeling_methods: "模型/方法",
   community_ecosystem: "群落/生态系统",
   population_traits: "种群/性状",
@@ -101,6 +89,17 @@ const topicLabels = {
   plant_agroecology: "植物/农业生态",
   aquatic_microbe: "水域/微生物"
 };
+let topicLabels = { ...defaultTopicLabels };
+let researchProfile = {
+  profileName: "General ecology starter profile",
+  researchQuestions: [],
+  coreTopics: [],
+  supportTopics: [],
+  secondaryTopics: [],
+  downweightTopics: [],
+  topicWeights: {}
+};
+let activeTopicWeights = {};
 
 const sourceQualityScores = {
   topJournal: 5,
@@ -119,6 +118,11 @@ async function readTopicFeedback() {
   }
 }
 
+async function readResearchProfile() {
+  const loaded = await readJson(RESEARCH_PROFILE, researchProfile);
+  return loaded && typeof loaded === "object" ? loaded : researchProfile;
+}
+
 async function readJson(file, fallback) {
   try {
     return JSON.parse(await fs.readFile(file, "utf8"));
@@ -135,6 +139,11 @@ function journalRssPaper(paper = {}) {
   if (!sourceSignals.length) return null;
   const sanitized = {
     ...paper,
+    tags: (paper.tags || []).filter((tag) => Object.hasOwn(topicLabels, tag)),
+    oneLine: neutralPublicText(paper.oneLine) || chineseOneLine(paper),
+    summary: neutralPublicText(paper.summary) || chineseSummary(paper),
+    reason: neutralPublicText(paper.reason),
+    citation: neutralPublicText(paper.citation),
     sourceSignals,
     sourceType: sourceSignals.some((signal) => signal.type === "professionalJournal")
       ? "professional"
@@ -158,7 +167,24 @@ function sanitizeRssOnlyCache(cache, candidates = []) {
     if (!allowedKeys.has(key)) continue;
     const item = entry.item ? journalRssPaper(entry.item) : null;
     if (entry.item && !item) continue;
-    items[key] = item ? { ...entry, item } : entry;
+    const pre = entry.pre
+      ? {
+          ...entry.pre,
+          tags: (entry.pre.tags || []).filter((tag) => Object.hasOwn(topicLabels, tag)),
+          oneLine: neutralPublicText(entry.pre.oneLine),
+          reason: neutralPublicText(entry.pre.reason)
+        }
+      : entry.pre;
+    const score = entry.score
+      ? {
+          ...entry.score,
+          oneLine: neutralPublicText(entry.score.oneLine),
+          summary: neutralPublicText(entry.score.summary),
+          reason: neutralPublicText(entry.score.reason),
+          citation: neutralPublicText(entry.score.citation)
+        }
+      : entry.score;
+    items[key] = { ...entry, pre, score, ...(item ? { item } : {}) };
   }
   return { ...cache, items };
 }
@@ -197,11 +223,18 @@ function stableHash(value) {
   return crypto.createHash("sha256").update(JSON.stringify(value)).digest("hex");
 }
 
-function topicWeightsFromFeedback(config) {
+function topicWeightsFromFeedback(config, profile = researchProfile) {
   const safeConfig = config && typeof config === "object" ? config : {};
   const min = Number(safeConfig.minFeedbackPerTopic || 3);
   const baseWeights = Object.fromEntries(
-    Object.keys(topicLabels).map((tag) => [tag, clampTopicWeight(safeConfig.weights?.[tag] || 0)])
+    Object.keys(topicLabels).map((tag) => [
+      tag,
+      clampTopicWeight(
+        Object.hasOwn(safeConfig.weights || {}, tag)
+          ? safeConfig.weights[tag]
+          : profile.topicWeights?.[tag] || 0
+      )
+    ])
   );
   const stats = {};
   for (const item of safeConfig.feedback || []) {
@@ -230,12 +263,13 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
-function preferenceSettingsFromFeedback(config) {
+function preferenceSettingsFromFeedback(config, profile = researchProfile) {
   const safeConfig = config && typeof config === "object" ? config : {};
   return {
-    topicWeights: topicWeightsFromFeedback(safeConfig),
+    topicWeights: topicWeightsFromFeedback(safeConfig, profile),
     watchlist: watchlistFromFeedback(safeConfig),
-    watchlistBonusMax: clamp(Number(safeConfig.watchlistBonusMax || WATCHLIST_BONUS_MAX), 0, WATCHLIST_BONUS_MAX)
+    watchlistBonusMax: clamp(Number(safeConfig.watchlistBonusMax || WATCHLIST_BONUS_MAX), 0, WATCHLIST_BONUS_MAX),
+    researchProfile: profile
   };
 }
 
@@ -340,123 +374,53 @@ function candidateFingerprint(paper) {
 }
 
 function topicWeightsHash(preferences) {
-  if (preferences?.topicWeights && !(preferences.watchlist || []).length) {
-    return stableHash(preferences.topicWeights);
-  }
   return stableHash(preferences || {});
 }
 
 const PRESCREEN_PROMPT = `
-你是 Paper Daily 的低成本预筛模型。你的任务不是写摘要，而是判断候选条目是否值得进入高质量评分阶段。
+你是 PaperDaily 公开版的低成本预筛模型。你的任务不是写摘要，而是判断期刊 RSS 候选是否值得进入高质量评分。
 
-第一道门：先判断候选是否属于“泛生态学研究”。泛生态学优先看明确研究对象，而不是只看宽泛学科名：
-- 生态系统、生物群落、动植物种群、物种、栖息地、生物多样性、森林/草地/湿地/淡水/农田等生态系统
-- 这些对象与气候变化、水文、土壤、土地利用、干扰、火烧、入侵、保护管理或资源管理之间的关系
-- 群落生态、生态系统生态、景观生态、全球变化生态、恢复生态、城市生态、农业生态、保护生物学、物种分布、生态遥感和生态模型
-- 环境科学、农学、地学、植物学、动物学中的相邻研究，只有在明确服务上述生态系统/群落/种群/物种/栖息地目标时才算相关
+先判断候选是否属于泛生态学研究。应有明确的生态系统、生物群落、种群、物种、栖息地、生物多样性或生态过程对象；环境科学、农学、地学、植物学和动物学中的相邻研究，只有明确服务这些生态目标时才算相关。
 
-不属于泛生态学的条目应 pass=false，即使来自综合期刊、微信公众号或新闻报道。
-
-生态学主题组（tags 只能从这些 key 中选择）。新研究画像优先使用前面的细分 family，旧 key 仅用于兼容历史数据：
-- pv_invasion: 光伏工程/太阳能电站对植物入侵、植物群落、微生境、扩散风险和生态安全的影响
-- invasion_fire: 植物入侵-野火反馈、可燃性、燃料连通性、火后遗留效应、种子库、优先效应
-- dry_valley_savanna: 干热河谷、金沙江/元江/怒江河谷、河谷萨王纳、稀树灌草丛及其植被动态
-- pyric_herbivory: 火-食草动物互作、放牧、大型食草动物、pyric herbivory、植被斑块动态
-- renewable_biodiversity_risk: 光伏/风电/新能源基础设施与生物多样性风险、物种 range map、IUCN、exposure/vulnerability/risk
-- novel_ecosystems_resilience: 新型生态系统、生态重组、群落重组、演变路径与韧性未来；必须同时有明确生态对象/过程，不能仅凭 resilience、治理或公平等泛词命中
-- invasion_ecology: 生物入侵理论、外来种、入侵滞后、扩散廊道、生物抗性、干扰-资源波动-入侵
-- community_interactions: 种间关系、群落生态、食物网、植物-土壤反馈、竞争/促进/捕食/传粉/食草作用
-- restoration_conservation: 生态恢复、保护管理、rewilding、生态安全屏障、入侵治理
-- spatial_risk_methods: SDM、MaxEnt、物种分布、栖息地适宜性、空间风险、热点识别、景观连接度
-- remote_sensing_monitoring: Landsat、Sentinel、MODIS、GEE、UAV、LiDAR、植被指数、长期监测
-- statistical_synthesis_methods: meta-analysis、GLMM、SEM、Bayesian、层级模型、因果推断、机器学习
-- soil_rhizosphere_microbe: 根际、根系分泌物、微生物组、菌根、土壤结构；只有连接入侵、恢复、农业生态安全或干扰机制时才作为支撑。镉胁迫、植物修复、植物激素和泛根际过程不再作为主要兴趣点
-- coastal_microalgae: 潮间带/海岸底栖微藻、microphytobenthos、biofilm、benthic algal bloom、消费者 top-down control
-- saltmarsh_milu_spartina: 麋鹿再野化、互花米草、盐沼湿地、大型食草动物控制入侵
-- pika_arthropod_grazing: 鼠兔、青藏高原放牧、牦牛/绵羊、节肢动物群落、土壤扰动
-- modeling_methods: 生态模型、统计建模、生态统计、遥感、GIS、机器学习、监测方法、数据集、软件和方法论文
-- community_ecosystem: 群落过程、生态系统功能、食物网、物种互作、动植物种间关系、生态系统服务
-- population_traits: 种群动态、生活史、性状、运动扩散、存活率、种群统计
-- biogeochemistry: 碳氮磷循环、养分、土壤过程、温室气体、生态水文、植物-土壤过程
-- genetics_evolution: 遗传多样性、基因组、进化、系统发育、适应
-- landscape_macroecology: 景观生态、宏生态、生物地理、大尺度格局、多尺度过程
-- species_distribution: 物种分布、生态位、栖息地适宜性、范围变化
-- climate_anthropogenic: 气候变化、人类影响、土地利用、城市化、农业集约化、光伏工程、太阳能设施和能源设施扰动
-- disturbance: 干扰、野火、火生态、干旱、风暴、采伐、施工扰动、恢复轨迹
-- invasion: 外来种、生物入侵、入侵风险、入侵管理
-- conservation_management: 保护生物学、恢复生态、自然保护地、管理政策、生态风险
-- plant_agroecology: 植物生态、森林/草地、干热河谷植被、农业生态、农业生态安全、农田排水、沟渠、作物生态、植食作用
-- aquatic_microbe: 淡水、海洋、湿地、水域过程、微生物生态、微生物组
+用户消息中的 researchProfile 是唯一研究兴趣依据；themes 给出允许使用的主题 key。不要从示例论文、期刊等级、来源数量或未出现在 researchProfile 中的主题推断个人兴趣。
 
 预筛规则：
-1. 只根据标题、摘要、期刊、文章类型和来源信号判断。
-2. 先判断 isEcology。isEcology=false 时，pass=false。
-3. isEcology=true 且能归入至少一个生态主题组，pass=true。
-4. 当前核心任务来自 PROJECT_GOAL.md 与 README.md 的 Research Profile 部分：光伏工程与植物入侵风险、干热河谷植物入侵-野火反馈、火-食草动物-地形互作与河谷萨王纳植被动态、新能源基础设施与生物多样性风险。“新型生态系统与韧性未来”是连接弃耕、火烧或入侵地、干热河谷及光伏/新能源人造场地的上位框架；单独出现相关泛词只算支撑兴趣，只有连接具体场地、生态对象/过程和当前任务时才可提高 relevance。环境科学、农学、地学、植物学、动物学等泛生态内容可以通过，但如果没有明确生态系统、生物群落、动植物种群、物种或栖息地目标，relevance 应保守降低。
-5. 微信公众号或新闻报道可以作为发现入口；如果内容指向一篇可能相关论文，也可以 pass=true，但仍必须满足 isEcology=true。
-6. 微信公众号推送如果主要是征稿、会议、招聘、课程、广告、投稿邀请、期刊宣传、活动通知，而不是介绍一项具体研究或论文，pass=false。
-7. 输出严格 JSON，不要输出解释文字。
+1. 只根据标题、摘要、期刊、文章类型、研究画像和来源信号判断。
+2. isEcology=false 时必须 pass=false。
+3. isEcology=true 且能归入至少一个 themes key 时可以 pass=true。
+4. relevance 为 0-50；直接连接 researchProfile.coreTopics 或 researchQuestions 时较高，只是广义生态相关时应保守。
+5. 输出严格 JSON，不要输出解释文字。
 `;
 
 const SCORE_PROMPT = `
-你是 Paper Daily 的高质量评分模型。你的任务是对通过预筛的论文簇做主题相关性评分，并生成日报可读摘要。
+你是 PaperDaily 公开版的高质量评分模型。对通过预筛的期刊 RSS 论文做主题相关性评分，并生成日报可读摘要。
+
+用户消息中的 researchProfile 是唯一研究兴趣依据。不得引用维护者、示例数据或任何未列入该配置的个人课题。若 researchQuestions、coreTopics 和 supportTopics 为空，应按一般生态学相关性保守评分，不要自行猜测兴趣。
 
 分层评分由脚本计算和展示：
-- 主题相关性 theme: 0-100，由你评分；脚本会在此基础上加入用户反馈和 watchlist 小幅调整。右上角分值显示 theme，不再显示 theme+journal 总分。
-- 期刊质量 journal: 0-100，脚本按 DOI 精确元数据优先识别期刊后固定计算；A 档沿用手工规则；B1=排除 A 档后的 Nature Index、CAS 小类生态学一区或环境科学与生态学大类一区；B2=排除 A/B1 后的其它 CAS 大类/小类一区；B3=排除以上后的 JCR Q1 且 CAS 大类/小类二区；C=排除高档位后的剩余 JCR Q1；其它期刊不计 journal 分。IF 仅用于同档排序/展示，不允许升档；文章类型只在同一期刊档位内微调优先级。
-- 信源 sourceSignal: 0-10，只代表 DOI 聚合、多来源重复和信息质量，不进入总分，不允许你把公众号或新闻来源当作论文质量加分。
+- theme: 0-100，由你根据 researchProfile 评分；主题相关性优先于期刊。
+- journal: 0-100，由脚本按 DOI 元数据和期刊配置计算；不能替代相关性。
+- sourceSignal: 0-10，只表示 RSS 元数据和重复来源质量，不进入主题总分。
 
-主题相关性 0-100 评分要比普通关键词匹配更保守。请先判断命中维度：
-1. current_task: 直接命中当前核心任务。
-2. task_support: 可迁移支持当前任务的理论、对象、过程或应用场景。
-3. secondary_task: 连接未完成论文或既有待推进工作，如潮间带底栖微藻、麋鹿-互花米草、鼠兔/放牧-节肢动物。
-4. ecology_object: 明确研究生态系统、生物群落、动植物种群、物种、栖息地、生物多样性或生态过程。
-5. method_data: 提供可复用方法、模型、统计分析、遥感监测、数据集或数据源。
-6. metadata_ready: DOI、英文题名、期刊、摘要等元数据足够可信。
-
-主题相关性 0-100 评分标准：
-- 95-100: 基本不用。除非直接命中当前核心任务，且能直接支持当前课题设计、综述框架、监测方案或论文写作；普通 A 档生态论文也不要给到满分。
-- 85-94: 直接命中当前核心任务，并且至少另有一个维度支持。单一关键词命中核心方向通常不要超过 78。
-- 66-84: 明确相关。当前核心任务单维度命中，或 task_support/secondary_task + ecology_object/method_data 等两个以上维度可以在此档。
-- 45-65: 泛生态或方法/数据相关，但离当前核心任务仍偏外围。低层次期刊或公众号单一线索通常应落在此档或更低。
-- 25-49: 只有弱相关，通常不应进入精选日报。
-- 0-24: 基本无关。
-
-泛生态学扩展领域如环境科学、农学、地学、植物学、动物学可以进入评分，但除非明确研究生态系统、生物群落、动植物种群、物种、栖息地或生物多样性，并服务用户核心方向，不要因为学科相邻而给高 theme 分。
-
-必须避免的高分误判：
-- 只因为文章含有 plant、soil、water、model、Bayesian、remote sensing 等泛词，不要给 90+。
-- 只有方法/数据价值但不服务当前核心或二级兴趣时，不要给 80+。
-- 只有公众号报道、摘要缺失或 DOI/期刊不稳时，不要给 80+。
-- generic ecology、环境/水文/土壤/农业相邻主题，除非同时满足两个以上命中维度，否则整体降低一档。
-
-用户研究画像依据 PROJECT_GOAL.md 与 README.md 的 Research Profile 部分，不能把旧 topic 配置当作兴趣证据。
-当前核心任务：
-- 光伏工程与植物入侵风险：云南/西南山地干热河谷光伏电站、微生境异质性、紫茎泽兰/飞机草等入侵种、SDM/MaxEnt/GEE 和入侵预警。
-- 干热河谷植物入侵-野火反馈：入侵植物功能性状、群落可燃性、火后遗留效应、种子库/优先效应、燃料连通性和灾变阈值。
-- 火-食草动物-地形互作与河谷萨王纳植被动态：pyric herbivory、放牧/大型食草动物、地形调控、遥感时序和野外控制实验。
-- 新能源基础设施与生物多样性风险：光伏/海上风电等 renewable energy infrastructure、物种 range map、IUCN threat/habitat、exposure-vulnerability-risk 和空间热点。
-支撑兴趣：
-- 入侵生态学、群落互作、生态恢复与保护管理、遥感/SDM/空间风险、统计与综合分析方法。
-- “新型生态系统与韧性未来”是上位任务框架：关注弃耕地、火烧或入侵主导土地、干热河谷及光伏等能源工程场地中的生态过程改变、群落重组、生物多样性维持、演变路径、韧性适应和生态系统服务。
-- 该框架单独出现只算 task_support；只有同时连接上述具体场地、明确生态对象/过程和当前课题时，才按 current_task 进入高分路径。纯社会经济、公平或治理讨论不得因此获得高 theme。
-低优先背景：
-- 镉胁迫、植物修复、植物激素和泛根际过程不再作为主要兴趣点。除非论文发表在 A 档期刊，或明确连接当前核心任务、入侵/恢复/干扰机制、农业生态安全和可复用方法需求，否则不要进入高 theme 或日报推荐。
-次级任务：
-- 潮间带底栖微藻、麋鹿-互花米草、鼠兔/放牧-节肢动物等方向保留，但默认不压过当前核心课题。
+主题评分参考：
+- 85-100: 直接回答 researchQuestions 或明确服务 coreTopics，并有可信方法和元数据支持。
+- 66-84: 明确连接 coreTopics，或 supportTopics 与生态对象/方法价值同时命中。
+- 45-65: 只有广义生态相关性，或方法可复用但离配置主题较远。
+- 25-44: 弱相关，通常不进入日报。
+- 0-24: 基本无关或不属于目标研究范围。
+- 命中 downweightTopics 时应降低评分，并在 reason 中说明。
+- 不要因为期刊等级、单一宽泛关键词或常用方法名称给高分。
 
 摘要要求：
-1. title 优先使用原始论文的英文题名；如果不能识别原始论文，则为公众号或新闻内容生成一个中文研究信息标题。
-2. oneLine 必须是中文一句话，用一句话说明这篇文献研究的是什么问题、属于什么研究方向/领域，以及文献类型（如实验研究、综述、理论研究、方法论文、数据论文、评论等）；不要保留英文摘要原文。
-3. summary 必须用中文写成单段落结构化详细介绍，总字数控制在 500 字以内，语言简洁凝练，避免学术套话。
-4. summary 仍然是一个段落，不要换行分节，不要使用项目符号列表；可以在段内用 [背景]、[方法]、[发现]、[贡献]、[局限]、[精读] 这类行内小标题突出结构。
-5. summary 覆盖以下信息，每个部分只保留影响快速判断文献价值的信息：背景与动机用 2-3 句话说明为什么做、现有空白或不足，不展开文献综述；方法/设计概括方法、数据来源、样本、实验或模型设计中影响结论可信度的关键要素；关键发现按重要性概括 3-5 条最重要发现或结论，可用 1)、2)、3) 在同一段中串联，避免罗列所有数据细节；创新与贡献指出相对已有研究的独特贡献或新意；局限与边界说明作者自述或可判断的局限、适用范围或需谨慎解读之处；是否精读给出一句简短判断，可指出值得精读的方法、结果或讨论部分。
-6. 不要夸大结论，不要凭空添加 DOI、作者、期刊、样本量、地点或方法；输入证据不足时明确写“信息不足，需查原文确认”。
-7. 引用信息只能使用输入元数据；缺失则保留空缺或用已有字段。
-8. citation 不要包含 DOI、doi: 字样或 DOI URL；DOI 会由页面单独显示。
-9. 输出严格 JSON，不要输出解释文字。
+1. title 优先使用原始论文英文题名。
+2. oneLine 用一句中文说明研究问题、研究领域和文献类型。
+3. summary 用中文写成一个段落，总字数不超过 500 字，不换行分节，不使用项目符号。
+4. summary 可用 [背景]、[方法]、[发现]、[贡献]、[局限]、[精读] 作为段内小标题；[发现] 可用 1)、2)、3) 串联 3-5 条关键发现。
+5. 只保留影响快速判断文献价值的信息；证据不足时写“信息不足，需查原文确认”。
+6. 不得凭空添加 DOI、作者、期刊、样本量、地点、方法或结论。
+7. citation 只使用输入元数据，且不包含 DOI。
+8. 输出严格 JSON，不要输出解释文字。
 `;
-
 function normalizeTitle(title) {
   return title
     .toLowerCase()
@@ -1138,18 +1102,7 @@ function obviousTopJournalNonEcology(paper = {}) {
 }
 
 const PAN_ECOLOGY_CORE_TAGS = new Set([
-  "pv_invasion",
-  "invasion_fire",
-  "dry_valley_savanna",
-  "pyric_herbivory",
-  "renewable_biodiversity_risk",
   "novel_ecosystems_resilience",
-  "invasion_ecology",
-  "community_interactions",
-  "restoration_conservation",
-  "spatial_risk_methods",
-  "remote_sensing_monitoring",
-  "statistical_synthesis_methods",
   "community_ecosystem",
   "population_traits",
   "biogeochemistry",
@@ -1159,17 +1112,11 @@ const PAN_ECOLOGY_CORE_TAGS = new Set([
   "invasion",
   "conservation_management",
   "plant_agroecology",
-  "aquatic_microbe",
-  "coastal_microalgae",
-  "saltmarsh_milu_spartina",
-  "pika_arthropod_grazing"
+  "aquatic_microbe"
 ]);
 
 const PAN_ECOLOGY_SUPPORT_TAGS = new Set([
-  "soil_rhizosphere_microbe",
   "modeling_methods",
-  "statistical_synthesis_methods",
-  "remote_sensing_monitoring",
   "biogeochemistry",
   "genetics_evolution",
   "climate_anthropogenic"
@@ -1279,29 +1226,14 @@ function dryPrescreen(paper) {
     };
   }
   const isEcology =
-    /ecolog|ecosystem|environmental science|environment|pollution|contaminant|water quality|ecosystem|biodiversity|conservation|restoration|urban ecology|agronom|agroecolog|agricultural ecology|agricultural ecological security|crop|landscape|geoscience|earth system|geomorph|erosion|sediment|community|population|species|habitat|trait|botan|plant physiology|root|leaf|zoolog|animal ecology|wildlife|biogeochem|carbon|nitrogen|phosphorus|soil|forest|grassland|wetland|freshwater|marine|microbial|microbiome|\binvasion\b|\binvasive\b|wildfire|fire|disturbance|drainage|hydrology|remote sensing|vegetation|vegetation index|dry-hot valley|hot-dry valley|hot dry valley|photovoltaic|solar farm|species distribution|climate change|land use|生态|生态学|环境科学|环境|污染|水质|生物多样性|保护生物学|恢复生态|城市生态|农业生态|农业生态安全|生态安全|农学|作物|地学|地球系统|侵蚀|沉积|植物学|植物生理|动物学|野生动物|景观|群落|种群|物种|栖息地|性状|生态系统|生物地球化学|碳|氮|磷|土壤|森林|草地|湿地|淡水|海洋|微生物|入侵|火|扰动|排水|遥感|植被|植被指数|干热河谷|光伏|气候变化|土地利用/.test(
+    /ecolog|ecosystem|environmental science|environment|pollution|contaminant|water quality|ecosystem|biodiversity|conservation|restoration|urban ecology|agronom|agroecolog|agricultural ecology|agricultural ecological security|crop|landscape|geoscience|earth system|geomorph|erosion|sediment|community|population|species|habitat|trait|botan|plant physiology|root|leaf|zoolog|animal ecology|wildlife|biogeochem|carbon|nitrogen|phosphorus|soil|forest|grassland|wetland|freshwater|marine|microbial|microbiome|\binvasion\b|\binvasive\b|wildfire|fire|disturbance|drainage|hydrology|remote sensing|vegetation|vegetation index|species distribution|climate change|land use|生态|生态学|环境科学|环境|污染|水质|生物多样性|保护生物学|恢复生态|城市生态|农业生态|农业生态安全|生态安全|农学|作物|地学|地球系统|侵蚀|沉积|植物学|植物生理|动物学|野生动物|景观|群落|种群|物种|栖息地|性状|生态系统|生物地球化学|碳|氮|磷|土壤|森林|草地|湿地|淡水|海洋|微生物|入侵|火|扰动|排水|遥感|植被|植被指数|气候变化|土地利用/.test(
       text
     );
   const tags = [];
-  addTag(tags, "pv_invasion", /photovoltaic|solar farm|solar park|solar array|solar panel|agrivoltaic|panel shade|dripline|microclimate|ageratina|chromolaena|plant invasion|光伏|太阳能电站|光伏电站|光伏工程|农光互补|板下|滴水线|微气候|紫茎泽兰|飞机草|入侵植物/.test(text));
-  addTag(tags, "invasion_fire", /invasion[-\s]?fire|fire[-\s]?invasion|wildfire|fire ecology|flammability|fuel connectivity|fuel bed|post[-\s]?fire|burned plot|seed bank|priority effect|入侵.*火|火.*入侵|野火|火生态|可燃性|燃料连通|火后|火烧迹地|种子库|优先效应/.test(text));
-  addTag(tags, "dry_valley_savanna", /dry[-\s]?hot valley|hot[-\s]?dry valley|hot dry valley|jinsha river|yuanjiang|nujiang|river valley savanna|干热河谷|金沙江|元江|怒江|河谷萨王纳|稀树灌草丛/.test(text));
-  addTag(tags, "pyric_herbivory", /pyric herbivory|fire[-\s]?herbivore|grazing|livestock|large herbivore|herbivory|yak|sheep|火.*食草|食草.*火|放牧|家畜|大型食草动物|食草作用|牦牛|绵羊/.test(text));
-  addTag(tags, "renewable_biodiversity_risk", /offshore wind|wind farm|wind power|renewable energy|energy infrastructure|biodiversity risk|range map|iucn|exposure|vulnerability|hazard|risk hotspot|海上风电|风电|新能源|能源基础设施|生物多样性风险|物种分布图|暴露度|脆弱性|风险热点/.test(text));
   const novelEcosystemFrame =
     /novel ecosystem|emerging ecosystem|ecosystem reorganization|ecosystem transformation|community reassembly|新型生态系统|新生生态系统|生态系统重组|生态系统转型|群落重组/.test(text) &&
     /ecological process|ecosystem process|biodiversity|resilien|adaptation|transition|trajectory|regime shift|alternative state|ecosystem service|community reassembly|生态过程|生物多样性|韧性|适应|演变路径|转型路径|稳态转换|替代稳态|生态系统服务|群落重组/.test(text);
   addTag(tags, "novel_ecosystems_resilience", novelEcosystemFrame);
-  addTag(tags, "invasion_ecology", /\binvasion\b|\binvasive\b|alien species|non[-\s]?native|invasion lag|dispersal corridor|biotic resistance|resource fluctuation|入侵|外来种|外来物种|入侵滞后|扩散廊道|生物抗性|资源波动/.test(text));
-  addTag(tags, "community_interactions", /community ecology|food web|species interaction|interspecific|plant[-\s]?animal interaction|plant[-\s]?soil feedback|mutualism|competition|predation|pollination|seed dispersal|herbivory|facilitation|群落生态|食物网|物种互作|种间关系|种间互作|动植物互作|植物[—-]?土壤反馈|互惠|竞争|捕食|传粉|种子传播|食草作用|促进作用/.test(text));
-  addTag(tags, "restoration_conservation", /restoration|conservation|rewilding|protected area|ecosystem degradation|ecological security|invasion management|恢复|保护|再野化|自然保护地|生态退化|生态安全|入侵治理/.test(text));
-  addTag(tags, "spatial_risk_methods", /species distribution model|\bsdm\b|maxent|habitat suitability|risk assessment|risk map|hotspot|landscape connectivity|exposure|vulnerability|物种分布模型|栖息地适宜|风险评估|风险图|热点识别|景观连接度|暴露度|脆弱性/.test(text));
-  addTag(tags, "remote_sensing_monitoring", /remote sensing|google earth engine|\bgee\b|landsat|sentinel|modis|uav|lidar|hyperspectral|vegetation index|\bndvi\b|monitoring|遥感|谷歌地球引擎|哨兵|无人机|激光雷达|高光谱|植被指数|监测/.test(text));
-  addTag(tags, "statistical_synthesis_methods", /meta[-\s]?analysis|glmm|mixed model|structural equation|\bsem\b|bayesian|hierarchical model|causal inference|machine learning|模型整合|荟萃分析|混合模型|结构方程|贝叶斯|层级模型|因果推断|机器学习/.test(text));
-  addTag(tags, "soil_rhizosphere_microbe", /rhizosphere|root exudate|microbiome|mycorrhiz|soil structure|soil[-\s]?on[-\s]?chip|microfluidic|根际|根系分泌物|微生物组|菌根|土壤结构|芯片|微流控/.test(text));
-  addTag(tags, "coastal_microalgae", /benthic microalgae|microphytobenthos|biofilm|algal bloom|cyanobacteria|diatom|tidal flat|coastal food web|底栖微藻|微型底栖藻|生物膜|藻华|蓝藻|硅藻|潮滩|潮间带/.test(text));
-  addTag(tags, "saltmarsh_milu_spartina", /spartina|smooth cordgrass|milu|p[eè]re david|salt marsh|saltmarsh|互花米草|麋鹿|盐沼|滨海湿地/.test(text));
-  addTag(tags, "pika_arthropod_grazing", /pika|arthropod|alpine meadow|yak|sheep|soil perturbation|鼠兔|节肢动物|高寒草甸|牦牛|绵羊|土壤扰动/.test(text));
   addTag(tags, "modeling_methods", /model|modelling|simulation|remote sensing|machine learning|deep learning|gis|geospatial|dataset|database|software|protocol|statistic|statistical|bayesian|causal inference|mixed model|structural equation|ordination|vegetation index|\bndvi\b|\bevi\b|sentinel|landsat|\buav\b|模型|模拟|遥感|机器学习|深度学习|地理信息|数据集|数据库|软件|方法|统计|贝叶斯|因果推断|混合模型|结构方程|排序|植被指数|无人机/.test(text));
   addTag(tags, "community_ecosystem", /community|ecosystem|food web|species interaction|interspecific|plant-animal interaction|mutualism|competition|predation|pollination|seed dispersal|ecosystem service|群落|生态系统|食物网|物种互作|种间关系|种间互作|动植物互作|互惠|竞争|捕食|传粉|种子传播|生态系统服务/.test(text));
   addTag(tags, "population_traits", /population|demograph|trait|life history|movement|dispersal|survivorship|种群|性状|生活史|迁移|扩散|存活/.test(text));
@@ -1309,37 +1241,22 @@ function dryPrescreen(paper) {
   addTag(tags, "genetics_evolution", /genetic|genomic|evolution|phylogen|adaptation|遗传|基因组|进化|系统发育|适应/.test(text));
   addTag(tags, "landscape_macroecology", /landscape|macroecolog|biogeograph|large scale|large-scale|scale|景观|宏生态|生物地理|大尺度|尺度/.test(text));
   addTag(tags, "species_distribution", /species distribution|distribution model|range shift|niche|habitat suitability|物种分布|分布模型|范围变化|生态位|栖息地适宜/.test(text));
-  addTag(tags, "climate_anthropogenic", /climate change|warming|anthropogenic|urban|land use|agricultural intensification|agricultural ecological security|wind farm|wind power|renewable|solar|photovoltaic|solar farm|solar park|solar facility|environmental change|earth system|dry-hot valley|hot-dry valley|hot dry valley|气候变化|增温|人类影响|城市|土地利用|农业集约化|农业生态安全|生态安全|风电|新能源|太阳能|光伏|光伏工程|光伏电站|太阳能设施|环境变化|地球系统|干热河谷/.test(text));
-  addTag(tags, "disturbance", /disturbance|fire|wildfire|prescribed burn|burning|drought|storm|logging|construction|restoration trajectory|photovoltaic|solar farm|solar park|扰动|火灾|野火|火烧|火后|干旱|风暴|采伐|施工|恢复轨迹|光伏|光伏工程|光伏电站/.test(text));
+  addTag(tags, "climate_anthropogenic", /climate change|warming|anthropogenic|urban|land use|agricultural intensification|agricultural ecological security|environmental change|earth system|气候变化|增温|人类影响|城市|土地利用|农业集约化|农业生态安全|生态安全|环境变化|地球系统/.test(text));
+  addTag(tags, "disturbance", /disturbance|fire|wildfire|prescribed burn|burning|drought|storm|logging|construction|restoration trajectory|扰动|火灾|野火|火烧|火后|干旱|风暴|采伐|施工|恢复轨迹/.test(text));
   addTag(tags, "invasion", /\binvasion\b|\binvasive\b|alien species|non-native|入侵|外来种|外来物种/.test(text));
   addTag(tags, "conservation_management", /conservation|restoration|management|policy|protected area|risk assessment|ecological security|agricultural ecological security|保护|恢复|管理|政策|自然保护地|风险评估|生态安全|农业生态安全/.test(text));
-  addTag(tags, "plant_agroecology", /plant|botan|leaf|root|forest|grassland|herbivor|agronom|agroecolog|crop|drainage|ditch|vegetation|vegetation index|dry-hot valley|hot-dry valley|hot dry valley|photovoltaic|solar farm|solar park|agricultural ecological security|植物|植物学|叶片|根系|森林|草地|植食|农业生态|农业生态安全|农学|农田|作物|排水|沟渠|植被|植被指数|干热河谷|光伏|光伏工程|光伏电站/.test(text));
+  addTag(tags, "plant_agroecology", /plant|botan|leaf|root|forest|grassland|herbivor|agronom|agroecolog|crop|drainage|ditch|vegetation|vegetation index|agricultural ecological security|植物|植物学|叶片|根系|森林|草地|植食|农业生态|农业生态安全|农学|农田|作物|排水|沟渠|植被|植被指数/.test(text));
   addTag(tags, "aquatic_microbe", /aquatic|freshwater|marine|wetland|microbial|microbiome|水域|淡水|海洋|湿地|微生物|微生物组/.test(text));
-  const priorityTags = [
-    "pv_invasion",
-    "invasion_fire",
-    "dry_valley_savanna",
-    "pyric_herbivory",
-    "renewable_biodiversity_risk",
-    "novel_ecosystems_resilience",
-    "invasion_ecology",
-    "community_interactions",
-    "restoration_conservation",
-    "spatial_risk_methods",
-    "remote_sensing_monitoring",
-    "statistical_synthesis_methods"
-  ];
-  const priorityBonus = tags.filter((tag) => priorityTags.includes(tag)).length * 2;
   return {
     pass: isEcology && tags.length > 0,
     isEcology,
     tags,
-    relevance: Math.min(30 + Math.max(tags.length - 1, 0) * 2 + priorityBonus, 50),
+    relevance: Math.min(30 + Math.max(tags.length - 1, 0) * 2, 50),
     oneLine: paper.abstract || paper.title
   };
 }
 
-async function prescreen(paper) {
+async function prescreen(paper, profile = researchProfile) {
   const localReject = localPreModelReject(paper);
   if (localReject) return localReject;
   const local = paper.localPrescreen;
@@ -1366,6 +1283,7 @@ async function prescreen(paper) {
         role: "user",
         content: JSON.stringify({
           themes: topicLabels,
+          researchProfile: profile,
           paper: {
             title: paper.title,
             abstract: paper.abstract,
@@ -1399,6 +1317,15 @@ async function prescreen(paper) {
   }
 }
 
+const PERSONAL_READING_CONTEXT = /(?:用户|维护者|你的|您).{0,24}(?:研究|课题|方向|兴趣)|(?:当前|核心|个人).{0,12}(?:研究方向|课题|任务)/;
+
+function neutralPublicText(value = "") {
+  const text = String(value || "").trim();
+  if (!text || !PERSONAL_READING_CONTEXT.test(text)) return text;
+  const neutralized = text.replace(/\[精读\][\s\S]*$/, "[精读] 是否精读应依据自己的研究问题和方法需求判断。");
+  return PERSONAL_READING_CONTEXT.test(neutralized) ? "" : neutralized;
+}
+
 function dryScore(paper, pre, preferences = {}, options = {}) {
   const source = sourceScore(paper);
   const preferenceBonus = (pre.tags || []).reduce(
@@ -1427,9 +1354,9 @@ function dryScore(paper, pre, preferences = {}, options = {}) {
     themeDimensionCount: cappedTheme.capInfo.dimensionCount,
     scoringSystem: SCORING_SYSTEM,
     title: paper.title,
-    oneLine: chineseOneLine(paper),
-    summary: chineseSummary(paper),
-    citation: "",
+    oneLine: neutralPublicText(paper.oneLine) || chineseOneLine(paper),
+    summary: neutralPublicText(paper.summary) || chineseSummary(paper),
+    citation: neutralPublicText(paper.citation),
     modelFallback: modelStatus.score === "fallback",
     needsModelRepair: Boolean(modelStatus.needsRepair),
     modelStatus
@@ -1473,86 +1400,21 @@ function matchesAny(text = "", patterns = []) {
   return patterns.some((pattern) => pattern.test(text));
 }
 
-function lowPriorityLegacyResearch(text = "") {
-  return matchesAny(text, [
-    /\b(cadmium|cd stress|heavy metal stress|phytoremediation|phytoextraction|plant hormone|auxin|gibberellin|abscisic acid|salicylic acid|jasmonic acid)\b/i,
-    /镉|重金属胁迫|植物修复|植物提取|植物激素|生长素|赤霉素|脱落酸|水杨酸|茉莉酸/i
-  ]);
+function profileTerms(key) {
+  return Array.isArray(researchProfile?.[key])
+    ? researchProfile[key].map((term) => String(term || "").trim().toLowerCase()).filter((term) => term.length >= 4)
+    : [];
 }
 
-function soilRhizosphereConnectedToCurrentTasks(text = "", tags = new Set()) {
-  const hasSoilRhizosphere =
-    tags.has("soil_rhizosphere_microbe") ||
-    matchesAny(text, [
-      /\b(rhizosphere|root exudate|microbiome|mycorrhiz|plant[-\s]?soil[-\s]?microbe|soil microbial)\b/i,
-      /根际|根系分泌物|微生物组|菌根|植物[—-]?土壤[—-]?微生物|土壤微生物/i
-    ]);
-  if (!hasSoilRhizosphere) return false;
-  return matchesAny(text, [
-    /\b(invasion|invasive|alien species|biotic resistance|restoration ecology|ecosystem restoration|rewilding|fire ecology|wildfire|disturbance|agricultural ecological security|agroecological security)\b/i,
-    /入侵|外来种|生物抗性|生态恢复|再野化|火生态|野火|扰动|农业生态安全|生态安全/i
-  ]);
+function matchesProfileTerms(text = "", key = "") {
+  return profileTerms(key).some((term) => text.includes(term));
 }
 
-function directCurrentTaskEvidence(text = "", tags = new Set()) {
-  const hasTag = (tag) => tags.has(tag);
-  const hasPv = hasTag("pv_invasion") || matchesAny(text, [
-    /\b(photovoltaic|solar farm|solar park|solar array|solar panel|agrivoltaic|panel shade|dripline)\b/i,
-    /光伏|太阳能电站|光伏电站|农光互补|板下|滴水线/i
-  ]);
-  const hasInvasion = hasTag("invasion_ecology") || hasTag("invasion") || matchesAny(text, [
-    /\b(invasion|invasive|alien species|non[-\s]?native|ageratina|chromolaena)\b/i,
-    /入侵|外来种|紫茎泽兰|飞机草/i
-  ]);
-  const hasPlantCommunity = hasTag("plant_agroecology") || hasTag("community_ecosystem") || matchesAny(text, [
-    /\b(plant community|vegetation|species richness|biodiversity|microclimate|soil moisture|habitat suitability)\b/i,
-    /植物群落|植被|物种丰富度|生物多样性|微气候|土壤水分|栖息地适宜/i
-  ]);
-  const hasFire = hasTag("invasion_fire") || matchesAny(text, [
-    /\b(wildfire|fire ecology|flammability|fuel connectivity|fuel bed|post[-\s]?fire|burned plot|seed bank|priority effect|burn severity)\b/i,
-    /野火|火生态|可燃性|燃料连通|火后|火烧迹地|种子库|优先效应|火烧强度/i
-  ]);
-  const hasDryValley = hasTag("dry_valley_savanna") || matchesAny(text, [
-    /\b(dry[-\s]?hot valley|hot[-\s]?dry valley|jinsha river|yuanjiang|nujiang|river valley savanna)\b/i,
-    /干热河谷|金沙江|元江|怒江|河谷萨王纳|稀树灌草丛/i
-  ]);
-  const hasHerbivory = hasTag("pyric_herbivory") || matchesAny(text, [
-    /\b(pyric herbivory|fire[-\s]?herbivore|large herbivore|livestock grazing|grazing livestock)\b/i,
-    /火.*食草|食草.*火|大型食草动物|家畜放牧|放牧家畜/i
-  ]);
-  const hasRenewable = hasTag("renewable_biodiversity_risk") || matchesAny(text, [
-    /\b(offshore wind|wind farm|wind power|renewable energy infrastructure|energy infrastructure|photovoltaic|solar farm|solar park)\b/i,
-    /海上风电|风电|新能源基础设施|能源基础设施|光伏|光伏电站/i
-  ]);
-  const hasRisk = matchesAny(text, [
-    /\b(biodiversity risk|exposure|vulnerability|risk hotspot|range map|iucn|species range|habitat threat)\b/i,
-    /生物多样性风险|暴露度|脆弱性|风险热点|物种分布图|物种范围|栖息地威胁/i
-  ]);
-  const hasAgroSecurity = matchesAny(text, [
-    /\b(agricultural ecological security|agroecological security|farmland ecological security)\b/i,
-    /农业生态安全|农田生态安全/i
-  ]);
-  const hasNovelEcosystemFrame = tags.has("novel_ecosystems_resilience") || matchesAny(text, [
-    /\b(novel ecosystem|emerging ecosystem|ecosystem reorganization|ecosystem transformation|community reassembly)\b/i,
-    /新型生态系统|新生生态系统|生态系统重组|生态系统转型|群落重组/i
-  ]);
-  const hasNovelSystemContext = matchesAny(text, [
-    /\b(abandoned (?:farm)?land|land abandonment|old field|post[-\s]?agricultural|burned site|post[-\s]?fire site|invasion[-\s]?dominated|invaded site|photovoltaic site|solar (?:farm|park)|renewable energy site|dry[-\s]?hot valley)\b/i,
-    /弃耕地|弃耕农田|撂荒地|火烧迹地|火后场地|入侵地|入侵主导|光伏场地|光伏电站|新能源场地|干热河谷/i
-  ]);
-  const hasReorganizationProcess = matchesAny(text, [
-    /\b(ecological process|ecosystem process|community reassembly|biodiversity maintenance|transition trajectory|resilien(?:ce|t|cy)?|adaptation|regime shift|alternative state|ecosystem service)\b/i,
-    /生态过程|群落重组|生物多样性维持|演变路径|转型轨迹|韧性|适应能力|稳态转换|替代稳态|生态系统服务/i
-  ]);
-  return {
-    pvInvasion: hasPv && (hasInvasion || hasPlantCommunity),
-    invasionFire: hasInvasion && hasFire,
-    dryValley: hasDryValley,
-    pyricHerbivory: hasFire && hasHerbivory,
-    renewableRisk: hasRenewable && hasRisk,
-    agroSecurity: hasAgroSecurity,
-    novelEcosystems: hasNovelEcosystemFrame && hasNovelSystemContext && hasReorganizationProcess
-  };
+function configuredTopicWeight(tags = new Set()) {
+  return [...tags].reduce(
+    (best, tag) => Math.max(best, Number(activeTopicWeights?.[tag] || 0)),
+    -3
+  );
 }
 
 function themeDimensionEvidence(paper = {}, pre = {}) {
@@ -1564,63 +1426,39 @@ function themeDimensionEvidence(paper = {}, pre = {}) {
   const hasJournal = Boolean(paper.journal || pre.journal);
   const hasTitle = looksLikeEnglishTitle(paper.originalTitle || paper.title || pre.extractedTitle || "");
   const metadataReady = hasDoi || (confidence.score >= 70 && hasJournal && hasTitle);
-  const coreTaskTags = ["pv_invasion", "invasion_fire", "dry_valley_savanna", "pyric_herbivory", "renewable_biodiversity_risk"];
-  const supportTags = [
-    "novel_ecosystems_resilience",
-    "invasion_ecology",
-    "invasion",
-    "disturbance",
-    "community_interactions",
-    "restoration_conservation",
-    "restoration_conservation_theme",
-    "spatial_risk_methods",
-    "remote_sensing_monitoring",
-    "statistical_synthesis_methods",
-    "community_ecosystem",
-    "modeling_methods",
-    "species_distribution",
-    "conservation_management"
-  ];
-  const secondaryTaskTags = ["coastal_microalgae", "saltmarsh_milu_spartina", "pika_arthropod_grazing"];
+  const maxConfiguredWeight = configuredTopicWeight(tags);
+  const coreTask =
+    maxConfiguredWeight >= 2 ||
+    matchesProfileTerms(text, "researchQuestions") ||
+    matchesProfileTerms(text, "coreTopics");
+  const declaredInterest =
+    coreTask ||
+    maxConfiguredWeight >= 1 ||
+    matchesProfileTerms(text, "supportTopics");
+  const secondaryTask = matchesProfileTerms(text, "secondaryTopics");
+  const lowPriorityLegacy =
+    [...tags].some((tag) => Number(activeTopicWeights?.[tag] || 0) < 0) ||
+    matchesProfileTerms(text, "downweightTopics");
   const ecologyObjectTags = [
-    "community_interactions",
+    "novel_ecosystems_resilience",
     "community_ecosystem",
     "population_traits",
     "biogeochemistry",
+    "genetics_evolution",
     "landscape_macroecology",
     "species_distribution",
+    "climate_anthropogenic",
+    "disturbance",
+    "invasion",
+    "conservation_management",
     "plant_agroecology",
-    "aquatic_microbe",
-    "soil_rhizosphere_microbe",
-    "coastal_microalgae",
-    "saltmarsh_milu_spartina",
-    "pika_arthropod_grazing"
+    "aquatic_microbe"
   ];
-  const directCore = directCurrentTaskEvidence(text, tags);
-  const coreTask = Object.values(directCore).some(Boolean);
-  const novelEcosystemsFrame = tags.has("novel_ecosystems_resilience");
-  const secondaryTask = secondaryTaskTags.some((tag) => tags.has(tag));
-  const soilRhizosphereConnected = soilRhizosphereConnectedToCurrentTasks(text, tags);
-  const lowPriorityLegacy = lowPriorityLegacyResearch(text) || (tags.has("soil_rhizosphere_microbe") && !soilRhizosphereConnected);
-  const declaredInterest =
-    supportTags.some((tag) => tags.has(tag)) ||
-    tags.has("species_distribution") ||
-    soilRhizosphereConnected ||
-    matchesAny(text, [
-      /\b(species interaction|community ecology|plant[-\s]?soil feedback|food web|mutualis|competition|predation|pollination|herbivory)\b/i,
-      /种间关系|种间互作|群落生态|群落构建|食物网|植物[—-]?土壤反馈/i,
-      /\b(statistical model|bayesian|hierarchical model|structural equation|mixed model|causal inference)\b/i,
-      /统计模型|贝叶斯|层级模型|混合模型|结构方程|因果推断/i,
-      /\b(remote sensing|vegetation index|landsat|sentinel|lidar|hyperspectral|species distribution model|maxent|sdm|risk assessment)\b/i,
-      /遥感|植被指数|高光谱|激光雷达|物种分布模型|风险评估/i,
-      /\b(restoration|conservation|rewilding|invasion ecology|biotic resistance)\b/i,
-      /生态恢复|保护|再野化|入侵生态|生物抗性/i
-    ]);
   const broadEcology =
     ecologyObjectTags.some((tag) => tags.has(tag)) ||
     matchesAny(text, [
-      /\b(ecolog|ecosystem|community|population|species|biodiversity|habitat|vegetation|forest|grassland|wetland|soil microbe)\b/i,
-      /生态系统|生物群落|群落|种群|物种|栖息地|生物多样性|植被|森林|草地|湿地|土壤微生物/i
+      /\b(ecolog|ecosystem|community|population|species|biodiversity|habitat|vegetation|forest|grassland|wetland|microbial)\b/i,
+      /生态系统|生物群落|群落|种群|物种|栖息地|生物多样性|植被|森林|草地|湿地|微生物/i
     ]);
   const methodData =
     tags.has("modeling_methods") ||
@@ -1631,20 +1469,21 @@ function themeDimensionEvidence(paper = {}, pre = {}) {
     ]);
   const dimensions = {
     coreTask,
-    directCore,
-    novelEcosystemsFrame,
+    directCore: { configuredTopic: coreTask },
+    novelEcosystemsFrame: tags.has("novel_ecosystems_resilience"),
     declaredInterest,
     secondaryTask,
     broadEcology,
     methodData,
     metadataReady,
-    soilRhizosphereConnected,
+    soilRhizosphereConnected: false,
     lowPriorityLegacy
   };
-  const dimensionCount = ["coreTask", "declaredInterest", "secondaryTask", "broadEcology", "methodData"].filter((key) => dimensions[key]).length;
+  const dimensionCount = ["coreTask", "declaredInterest", "secondaryTask", "broadEcology", "methodData"].filter(
+    (key) => dimensions[key]
+  ).length;
   return { dimensions, dimensionCount, confidence, typeGroup };
 }
-
 function themeCapForPaper(paper = {}, pre = {}) {
   const evidence = themeDimensionEvidence(paper, pre);
   const { dimensions, dimensionCount, confidence, typeGroup } = evidence;
@@ -1675,15 +1514,9 @@ function themeCapForPaper(paper = {}, pre = {}) {
   const sourceTypes = new Set(signals.map((signal) => signal.type || ""));
   const onlyWechat = signals.length > 0 && sourceTypes.size === 1 && sourceTypes.has("wechat");
   const hasDoi = Boolean(normalizeDoi(paper.doi || ""));
-  const journalIsA = journalScore(paper) >= 82;
-  if (dimensions.novelEcosystemsFrame && !dimensions.coreTask) {
-    const frameCap = dimensions.broadEcology && dimensions.methodData ? 74 : 68;
-    cap = Math.min(cap, frameCap);
-    capReason = `${capReason}:novel_ecosystem_support_only`;
-  }
-  if (dimensions.lowPriorityLegacy && !dimensions.coreTask && !dimensions.soilRhizosphereConnected && !journalIsA) {
+  if (dimensions.lowPriorityLegacy && !dimensions.coreTask) {
     cap = Math.min(cap, 44);
-    capReason = `${capReason}:low_priority_legacy_not_a_journal`;
+    capReason = `${capReason}:configured_downweight`;
   }
   if (typeGroup === "commentary" && !dimensions.coreTask) {
     cap = Math.min(cap, 69);
@@ -1990,6 +1823,7 @@ async function scorePaper(paper, pre, preferences) {
           journal: journalScore(paper),
           type: typeScore(paper)
         },
+        researchProfile: preferences.researchProfile || researchProfile,
         watchlist: (preferences.watchlist || []).map((entry) => ({ name: entry.name, aliases: entry.aliases })),
         prescreen: pre,
         paper,
@@ -2081,7 +1915,12 @@ function findCanonicalCacheKey(cache, paper, fallbackKey) {
 function reusableSelectedCache(entry, paper, key, weightsHash) {
   if (!entry || entry.status !== "selected") return false;
   if (cacheNeedsModelRepair(entry)) return false;
-  if (entry.mode !== CACHE_MODE || entry.topicWeightsHash !== weightsHash || !entry.item) return false;
+  if (
+    entry.version !== SCORING_VERSION ||
+    entry.mode !== CACHE_MODE ||
+    entry.topicWeightsHash !== weightsHash ||
+    !entry.item
+  ) return false;
   if (key.startsWith("doi:")) return true;
   if (entry.contentFingerprint && entry.contentFingerprint === contentFingerprint(paper)) return true;
   return samePaperByTitle(entry.item, paper);
@@ -2306,12 +2145,20 @@ function selectedFromScore(paper, pre, score) {
 }
 
 async function main() {
+  researchProfile = await readResearchProfile();
+  topicLabels = {
+    ...defaultTopicLabels,
+    ...(researchProfile.topicLabels && typeof researchProfile.topicLabels === "object"
+      ? researchProfile.topicLabels
+      : {})
+  };
   const raw = await fs.readFile(INPUT, "utf8");
   const inputPayload = JSON.parse(raw);
   const rawCandidates = asArrayPayload(inputPayload).map(journalRssPaper).filter(Boolean);
   const candidates = await mergeRecentKnownSources(rawCandidates);
   const clusters = clusterCandidates(candidates);
-  const preferences = preferenceSettingsFromFeedback(await readTopicFeedback());
+  const preferences = preferenceSettingsFromFeedback(await readTopicFeedback(), researchProfile);
+  activeTopicWeights = preferences.topicWeights;
   const weightsHash = topicWeightsHash(preferences);
   const cache = sanitizeRssOnlyCache(await readCache(), rawCandidates);
   const selected = [];
@@ -2461,7 +2308,7 @@ async function main() {
     }
 
     stats.cacheMisses += 1;
-    const pre = await prescreen(paper);
+    const pre = await prescreen(paper, researchProfile);
     if (!pre.pass || pre.isEcology === false) {
       stats.rejectedMisses += 1;
       increment(stats.prescreenRejectSources, pre.source || pre.reason || "model-prescreen");
@@ -2530,7 +2377,7 @@ async function main() {
   const modelRetryTotal = Object.values(modelStats.retries).reduce((sum, value) => sum + value, 0);
   const modelFallbackTotal = Object.values(modelStats.fallbacks).reduce((sum, value) => sum + value, 0);
   const output = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: GENERATED_AT || new Date().toISOString(),
     lookbackDays: LOOKBACK_DAYS,
     dryRun: DRY_RUN,
     prescreenModel: DRY_RUN ? "local-rule" : PRESCREEN_MODEL,

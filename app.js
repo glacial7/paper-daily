@@ -1,153 +1,6 @@
-const papers = [
-  {
-    id: "invasion-fire-001",
-    time: "08:12",
-    title: "入侵草本植物改变可燃物结构并放大火后恢复差异",
-    source: "Nature",
-    sourceSignals: [
-      { type: "topJournal", name: "Nature" },
-      { type: "natureScienceNews", name: "Nature News" },
-      { type: "wechat", name: "植物入侵与生态恢复专题号" }
-    ],
-    sourceType: "comprehensive",
-    type: "Article",
-    score: 93,
-    tags: ["invasion", "disturbance"],
-    oneLine: "入侵草本通过改变可燃物连续性和含水量，可能放大火后群落恢复差异。",
-    summary:
-      "研究聚焦入侵草本植物与火干扰之间的反馈关系，比较了入侵群落和本地群落在可燃物结构、地表覆盖、含水量和火后恢复速度上的差异。论文的价值在于把“入侵改变燃料条件”和“火后入侵优势扩大”连接成可检验机制链条。若原文包含长期样地、实验燃烧或遥感证据，可作为植物入侵与火风险综述中的核心文献。",
-    reason: "服务植物入侵与火烧风险主线。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.001",
-    sourceUrls: [
-      { label: "Nature 原文", url: "#" },
-      { label: "Nature News", url: "#" },
-      { label: "公众号推荐", url: "#" }
-    ],
-    citation:
-      "Author, A. A., & Author, B. B. (2026). 入侵草本植物改变可燃物结构并放大火后恢复差异. Nature, 000, 000-000. https://doi.org/xx.xxxx/example"
-  },
-  {
-    id: "wind-invasion-001",
-    time: "08:05",
-    title: "风电场道路网络对外来植物扩散的廊道效应",
-    source: "Journal of Ecology",
-    sourceSignals: [
-      { type: "professionalJournal", name: "Journal of Ecology" },
-      { type: "scienceDaily", name: "ScienceDaily" }
-    ],
-    sourceType: "professional",
-    type: "Article",
-    score: 89,
-    tags: ["climate_anthropogenic", "invasion", "disturbance"],
-    oneLine: "风电场道路和施工平台可能形成外来植物扩散廊道，并改变局地生境边缘效应。",
-    summary:
-      "论文围绕风电场道路、施工平台和输电通道带来的生境破碎化与传播廊道效应，分析外来植物在扰动边缘、道路交汇点和维护通道附近的出现频率。重点值得看的是其是否采用 BACI 设计、景观连通性指标或物种分布模型。如果方法扎实，可直接转化为风电项目外来植物风险分区和野外监测点位设计。",
-    reason: "服务风电项目与植物入侵风险。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.002",
-    sourceUrls: [
-      { label: "Journal of Ecology 原文", url: "#" },
-      { label: "ScienceDaily 报道", url: "#" }
-    ],
-    citation:
-      "Author, C. C., Author, D. D., & Author, E. E. (2026). 风电场道路网络对外来植物扩散的廊道效应. Journal of Ecology, 000, 000-000. https://doi.org/xx.xxxx/example"
-  },
-  {
-    id: "drainage-001",
-    time: "07:48",
-    title: "农田排水沟渠的氮磷削减效率与生态工程设计",
-    source: "Annual Review of Ecology, Evolution, and Systematics",
-    sourceSignals: [
-      { type: "reviewJournal", name: "Annual Review of Ecology, Evolution, and Systematics" },
-      { type: "wechat", name: "农业生态前沿速递" }
-    ],
-    sourceType: "professional",
-    type: "Review",
-    score: 86,
-    tags: ["plant_agroecology", "biogeochemistry"],
-    oneLine: "沟渠结构、植被配置和水力停留时间共同影响农田排水中的氮磷削减效率。",
-    summary:
-      "综述总结农田排水沟渠在氮、磷和悬浮颗粒物削减中的作用，比较不同沟渠断面、植被配置、水力停留时间和季节水文条件下的净化效率。日报中应优先保留可量化参数和工程设计建议，例如缓坡、植被带宽度、沉积区设置和维护频率。该类文章适合沉淀为农田面源污染和沟渠生态功能的长期知识卡。",
-    reason: "支撑农田排水面源污染研究。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.003",
-    sourceUrls: [
-      { label: "Annual Reviews 原文", url: "#" },
-      { label: "公众号推荐", url: "#" }
-    ],
-    citation:
-      "Author, F. F., & Author, G. G. (2026). 农田排水沟渠的氮磷削减效率与生态工程设计. Annual Review of Ecology, Evolution, and Systematics, 000, 000-000. https://doi.org/xx.xxxx/example"
-  },
-  {
-    id: "methods-fire-001",
-    time: "07:31",
-    title: "多源遥感识别生态扰动后的植被恢复轨迹",
-    source: "Remote Sensing of Environment",
-    sourceSignals: [{ type: "professionalJournal", name: "Remote Sensing of Environment" }],
-    sourceType: "professional",
-    type: "Methods",
-    score: 82,
-    tags: ["modeling_methods", "disturbance"],
-    oneLine: "多源遥感可用于重建火烧、施工和农业排水扰动后的植被恢复轨迹。",
-    summary:
-      "方法论文整合光学遥感、雷达或时间序列植被指数，识别扰动后植被恢复轨迹和异常恢复区域。阅读时应关注数据源、空间分辨率、时间窗口、模型泛化能力、代码开放情况，以及是否能迁移到风电扰动、火烧迹地或农田沟渠监测。若有清晰流程和可复用代码，可进入方法工具库。",
-    reason: "补充遥感监测技术路线。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.004",
-    sourceUrls: [{ label: "Remote Sensing of Environment 原文", url: "#" }],
-    citation:
-      "Author, H. H., Author, I. I., & Author, J. J. (2026). 多源遥感识别生态扰动后的植被恢复轨迹. Remote Sensing of Environment, 000, 000-000. https://doi.org/xx.xxxx/example"
-  },
-  {
-    id: "wechat-invasion-001",
-    time: "07:08",
-    title: "外来植物风险评估的新综述",
-    source: "植物入侵与生态恢复专题号",
-    sourceSignals: [
-      { type: "wechat", name: "植物入侵与生态恢复专题号" },
-      { type: "wechat", name: "农业生态前沿速递" }
-    ],
-    sourceType: "wechat",
-    type: "Review",
-    score: 79,
-    tags: ["invasion"],
-    oneLine: "公众号推荐可作为发现入口，但需要反向定位 DOI 和原始期刊。",
-    summary:
-      "微信公众号内容不直接作为论文证据源，而是作为主题发现和中文解读入口。处理流程应是先记录推荐标题、关键词和提到的结论，再反向查找原论文、DOI、期刊和发布时间。只有能定位到原始论文并确认研究质量后，才进入日报精选。无法找到原文的内容保留在动态页，不进入精选推荐。",
-    reason: "弥补高发文量期刊不全量订阅造成的漏检。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.005",
-    sourceUrls: [
-      { label: "公众号推荐 A", url: "#" },
-      { label: "公众号推荐 B", url: "#" }
-    ],
-    citation:
-      "Author, K. K. (2026). 外来植物风险评估的新综述. Journal Name, 000, 000-000. https://doi.org/xx.xxxx/example"
-  },
-  {
-    id: "news-drainage-001",
-    time: "06:55",
-    title: "ScienceDaily 农业污染新闻反链论文",
-    source: "ScienceDaily",
-    sourceSignals: [{ type: "scienceDaily", name: "ScienceDaily" }],
-    sourceType: "news",
-    type: "News",
-    score: 69,
-    tags: ["plant_agroecology", "biogeochemistry"],
-    oneLine: "新闻报道适合发现新论文，但必须回到原论文确认。",
-    summary:
-      "新闻报道源包括 ScienceDaily、Nature News、期刊官网新闻和研究机构新闻稿。它们适合快速发现新论文和获得通俗摘要，但不能替代原文。抓取时应保存新闻链接、原始论文链接、期刊、发布日期和研究机构。找不到原论文或只有宣传性表述的内容，不进入日报精选。",
-    reason: "低成本扩展候选池。",
-    paperUrl: "#",
-    doi: "10.xxxx/example.006",
-    sourceUrls: [{ label: "ScienceDaily 报道", url: "#" }],
-    citation:
-      "Author, L. L., & Author, M. M. (2026). ScienceDaily 农业污染新闻反链论文. Journal Name, 000, 000-000. https://doi.org/xx.xxxx/example"
-  }
-];
+const papers = [];
 
-const topicLabels = {
+const defaultTopicLabels = {
   novel_ecosystems_resilience: "新型生态系统/韧性",
   modeling_methods: "模型/方法",
   community_ecosystem: "群落/生态系统",
@@ -164,55 +17,44 @@ const topicLabels = {
   aquatic_microbe: "水域/微生物"
 };
 
-const initialThemeWeights = {
-  novel_ecosystems_resilience: 2,
-  modeling_methods: 2,
-  community_ecosystem: 2,
-  population_traits: 1,
-  biogeochemistry: 1,
+let topicLabels = { ...defaultTopicLabels };
+let initialThemeWeights = {
+  novel_ecosystems_resilience: 0,
+  modeling_methods: 0,
+  community_ecosystem: 0,
+  population_traits: 0,
+  biogeochemistry: 0,
   genetics_evolution: 0,
-  landscape_macroecology: 1,
-  species_distribution: 1,
-  climate_anthropogenic: 2,
-  disturbance: 3,
-  invasion: 3,
-  conservation_management: 1,
-  plant_agroecology: 3,
+  landscape_macroecology: 0,
+  species_distribution: 0,
+  climate_anthropogenic: 0,
+  disturbance: 0,
+  invasion: 0,
+  conservation_management: 0,
+  plant_agroecology: 0,
   aquatic_microbe: 0
 };
 
-const topicPreferenceProfile = {
-  primary: [
-    "植物入侵",
-    "植被群落火烧与火后恢复",
-    "干热河谷生态系统",
-    "光伏工程影响植物群落",
-    "农业生态安全"
-  ],
-  secondary: [
-    "动植物种间关系与群落生态学",
-    "生态学统计分析方法",
-    "植被遥感技术应用"
-  ],
-  crossCutting: [
-    "新型生态系统与韧性未来：弃耕地、火烧或入侵地、干热河谷及光伏/新能源人造场地"
-  ],
-  updatedAt: "2026-07-15"
+let topicPreferenceProfile = {
+  profileName: "General ecology starter profile",
+  researchQuestions: [],
+  coreTopics: [],
+  supportTopics: [],
+  secondaryTopics: [],
+  downweightTopics: []
 };
 
 const sources = [
-  ["期刊/页面", "Science", "comprehensive", 5, 30],
+  ["期刊 RSS", "Science", "comprehensive", 5, 30],
   ["期刊 RSS", "Nature", "comprehensive", 5, 30],
-  ["期刊/页面", "Nature Reviews Biodiversity", "comprehensive", 4, 4],
-  ["期刊/页面", "Nature Reviews Earth & Environment", "comprehensive", 4, 4],
-  ["期刊/页面", "Annual Review of Ecology, Evolution, and Systematics", "comprehensive", 4, 3],
+  ["期刊 RSS", "Nature Reviews Biodiversity", "comprehensive", 4, 4],
+  ["期刊 RSS", "Nature Reviews Earth & Environment", "comprehensive", 4, 4],
+  ["期刊 RSS", "Annual Review of Ecology, Evolution, and Systematics", "comprehensive", 4, 3],
   ["期刊 RSS", "Biological Reviews", "comprehensive", 4, 3],
-  ["期刊/页面", "Trends in Ecology & Evolution", "comprehensive", 4, 8],
-  ["期刊/页面", "Frontiers in Ecology and the Environment", "professional", 3, 8],
+  ["期刊 RSS", "Trends in Ecology & Evolution", "comprehensive", 4, 8],
+  ["期刊 RSS", "Frontiers in Ecology and the Environment", "professional", 3, 8],
   ["期刊 RSS", "Nature Ecology & Evolution", "professional", 3, 12],
-  ["期刊/页面", "Ecology Letters", "professional", 3, 10],
-  ["新闻报道 RSS", "ScienceDaily Ecology", "news", 2, 18],
-  ["微信公众号", "生态学者（Ecologist-all）", "wechat", 1, 2]
+  ["期刊 RSS", "Ecology Letters", "professional", 3, 10]
 ];
 
 const embeddedSourceConfigs = [
@@ -577,33 +419,32 @@ const embeddedJournalGrades = [
 }));
 
 const projectGoal = [
-  "目标：PaperDaily 是一个面向个人课题和兴趣的文献追踪系统，优先发现真正值得阅读、能服务当前研究任务的论文。",
+  "目标：PaperDaily 是可自行配置的文献追踪模板，默认画像仅提供中性的生态学起点。",
   "日报：聚焦高相关、高价值文章，每日取 top 10% 且最多 5 篇；无推荐时显示今日休息。",
   "全部动态：保留更宽的新鲜论文流，避免过早错过潜在有价值的新方向。",
   "信源：公开版只跟踪配置中明确列出的期刊 RSS，不接入公众号、新闻聚合或私人订阅。",
-  "当前主题：一级优先植物入侵、植被群落火烧、干热河谷、光伏工程影响植物群落、农业生态安全；二级关注种间关系/群落生态、生态统计方法和植被遥感。",
-  "上位框架：关注弃耕地、火烧或入侵地、干热河谷及光伏等人造场地中的新型生态系统形成、群落重组、韧性与生态系统服务。",
+  "研究画像：主题、研究问题、降权方向和主题权重均从 config/research-profile.json 读取。",
   "主题判据：优先识别生态系统、生物群落、动植物种群、物种、栖息地和生物多样性等明确生态相关目标。",
-  "评分：日报按 theme-first 分层排序；theme 默认整体降低一档，只有命中两个以上主题/兴趣/泛生态/方法数据维度时才提档；右上角显示 theme 分，journal 以 A3/XX 等期刊标签展示。",
+  "评分：日报按 theme-first 分层排序；右上角显示 theme 分，journal 以 A3/XX 等期刊标签展示。",
   "期刊分档：A 档沿用既有手工分档；B1 为 Nature Index/生态小类一区/环境科学与生态学大类一区，B2 为其它 CAS 一区，B3 为 JCR Q1 且 CAS 二区，C 为剩余 JCR Q1。",
-  "原则：RSS 负责发现，DOI 元数据负责确认论文身份；信源数量不能替代论文质量和个人研究相关性。",
-  "反馈：后续扩展为主题、质量、信源、元数据错误和关注 PI 团队等可解释校准信号；关注团队只在 theme 中小幅加权。"
+  "原则：RSS 负责发现，DOI 元数据负责确认论文身份；信源数量和期刊等级不能替代研究相关性。",
+  "反馈：like/dislike 可导出为 config/topic-feedback.json，用于逐步校准主题权重。"
 ];
 
 const logs = [
   {
     version: "2026-08-11",
     date: "公开版更新",
+    title: "公开模板移除个人研究设置",
+    body:
+      "1. 画像：公开版改用中性生态学起始配置，不再携带维护者的课题、历史方向和反馈记录。\\n2. 配置：新增 research-profile.json，研究问题、主题、降权方向和主题权重均可在 fork 后直接修改。\\n3. 入口：新增“设置”页，集中说明信源、研究画像、反馈、期刊分档和更新工作流。"
+  },
+  {
+    version: "2026-08-11",
+    date: "公开版更新",
     title: "GitHub Pages 切换为期刊 RSS-only",
     body:
       "1. 信源：公开版仅保留配置了公开 RSS 的综合、综述和专业期刊。\\n2. 边界：移除公众号订阅、公众号候选和新闻聚合入口；本地 app 的私人信源能力不发布到 GitHub Pages。\\n3. 校验：抓取、评分和页面展示均执行 RSS-only 门控，避免旧缓存重新带回非期刊来源。"
-  },
-  {
-    version: "2026-07-15",
-    date: "今日更新",
-    title: "新型生态系统研究框架",
-    body:
-      "1. 主题：将“新型生态系统与韧性未来”纳入研究画像，重点关联弃耕、火烧或入侵地、干热河谷及光伏等人造场地。\\n2. 评分：该框架单独出现仅作为支撑兴趣；只有同时具备具体生态对象或过程并连接当前课题时才进入高分路径，避免泛化的韧性、治理或公平表述抬高分数。"
   },
   {
     version: "2026-06-28",
@@ -625,13 +466,6 @@ const logs = [
     title: "期刊分级与 IF 口径调整",
     body:
       "1. 期刊：A 档沿用既有手工分档，所有 Nature Reviews 系列归 A2；B1 为 Nature Index、CAS 小类生态学一区或环境科学与生态学大类一区，并将 Nature Microbiology、Nature Cities 作为 B1 手工关注子刊；B2 为其它 CAS 大类/小类一区；B3 为 JCR Q1 且 CAS 大类/小类二区；C 为剩余 JCR Q1。\\n2. IF：优先使用 2026 JCR 表中的正式 2025 5 Year JIF；表中缺失时用 JustScience 最新 5年平均分兜底，只用于同档排序和展示，不参与升档。\\n3. 流程：完整更新和抓取导出都会在评分前扫描候选期刊，缺少明确 CAS 分区或最新 JustScience 分区字段的期刊会先精确补全；导入更新则复用 zip 中已补全的候选。\\n4. 元数据：期刊识别按精确 DOI 元数据优先、明确文本其次、DOI pattern 兜底，减少多 DOI 公众号文章和 Nature 系列前缀带来的期刊误判。"
-  },
-  {
-    version: "2026-06-15",
-    date: "今日更新",
-    title: "个人研究画像与 Theme 分校准",
-    body:
-      "1. 推荐：根据 Zotero 与课题材料沉淀个人研究画像，优先服务光伏-入侵、干热河谷入侵-火、火-食草动物-地形、新能源生物多样性风险等当前任务。\\n2. 评分：theme 改为更保守的分档上限，单一核心主题、支撑兴趣、泛生态对象或方法数据命中不再轻易进入 90+。\\n3. 降权：镉胁迫、植物修复、植物激素和泛根际/土壤/微生物方向降为背景兴趣，除非连接当前任务或来自 A 档期刊。\\n4. 依据：预筛与评分统一读取研究画像和 theme 设计文档，避免旧关键词配置继续主导日报推荐。"
   },
   {
     version: "2026-06-14",
@@ -1313,6 +1147,19 @@ function rankPapers(a = {}, b = {}) {
     recentTimeForSort(b) - recentTimeForSort(a) ||
     adjustedScore(b) - adjustedScore(a) ||
     String(a.title || "").localeCompare(String(b.title || ""), "en")
+  );
+}
+
+async function loadResearchProfile() {
+  const profile = await loadJsonFile("./config/research-profile.json");
+  if (!profile || typeof profile !== "object") return;
+  topicPreferenceProfile = profile;
+  topicLabels = {
+    ...defaultTopicLabels,
+    ...(profile.topicLabels && typeof profile.topicLabels === "object" ? profile.topicLabels : {})
+  };
+  initialThemeWeights = Object.fromEntries(
+    Object.keys(topicLabels).map((tag) => [tag, Number(profile.topicWeights?.[tag] || 0)])
   );
 }
 
@@ -2227,7 +2074,6 @@ function feedbackConfig() {
   const feedback = getFeedback();
   return {
     weights: initialThemeWeights,
-    preferenceProfile: topicPreferenceProfile,
     watchlistBonusMax: 6,
     watchlist: [],
     minFeedbackPerTopic: 3,
@@ -2348,6 +2194,21 @@ function renderDaily() {
     : `<div class="empty-row">今日休息</div>`;
   root.innerHTML = `
     ${renderHead("日报", `近 ${recentDays()} 日 · 每日 top 10% · 最多 ${DAILY_RECOMMEND_MAX} 篇`, '<button class="btn" id="exportFeedback">导出反馈</button>')}
+    <section class="project-overview" aria-labelledby="projectOverviewTitle">
+      <div class="project-overview-copy">
+        <span class="project-kicker">公开版</span>
+        <h2 id="projectOverviewTitle">面向个人研究任务的文献追踪模板</h2>
+        <p>Paper Daily 不做通用论文热榜，而是把公开期刊 RSS 整理为两层阅读队列：日报保留少量重点文献，全部动态提供更宽的新鲜候选。</p>
+      </div>
+      <dl class="project-overview-facts">
+        <div><dt>数据边界</dt><dd>仅公开期刊 RSS，不包含微信公众号订阅、私有数据或维护者反馈。</dd></div>
+        <div><dt>个性化</dt><dd>Fork 后可替换研究画像、主题权重、期刊等级和 RSS 信源。</dd></div>
+      </dl>
+      <div class="project-overview-links">
+        <a href="./customize.html">查看设置入口</a>
+        <a href="https://github.com/glacial7/paper-daily" target="_blank" rel="noopener noreferrer">GitHub 项目</a>
+      </div>
+    </section>
     <section class="grid" id="dailyList">
       ${dailySections}
     </section>
@@ -2695,6 +2556,71 @@ function bindSources() {
   });
 }
 
+function renderCustomize() {
+  const profileName = escapeHtml(topicPreferenceProfile.profileName || "Custom research profile");
+  const configItems = [
+    {
+      title: "研究画像",
+      file: "config/research-profile.json",
+      note: "修改研究问题、核心与支撑主题、降权方向、主题标签和初始权重。",
+      href: "./config/research-profile.json"
+    },
+    {
+      title: "期刊 RSS",
+      file: "config/sources.json",
+      note: "增删期刊及其公开 RSS 地址；公开版只接受带明确 feedUrl 的期刊信源。",
+      href: "./sources.html"
+    },
+    {
+      title: "阅读反馈",
+      file: "config/topic-feedback.json",
+      note: "在日报或全部动态中标记 like/dislike，导出后替换此文件。",
+      href: "./config/topic-feedback.json"
+    },
+    {
+      title: "期刊分档",
+      file: "config/journal-grades.json",
+      note: "按自己的评价口径修改期刊档位；期刊等级只用于同等相关性下排序。",
+      href: "./config/journal-grades.json"
+    }
+  ];
+  root.innerHTML = `
+    ${renderHead("设置", `当前画像 · ${profileName}`)}
+    <section class="customize-intro">
+      <p>公开仓库不包含维护者的个人课题和反馈。要建立自己的 PaperDaily，请先 fork 仓库，再按顺序修改下面的配置。</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/glacial7/paper-daily/fork" target="_blank" rel="noopener noreferrer">Fork 仓库</a>
+        <a class="btn" href="https://github.com/glacial7/paper-daily#customize-for-your-research" target="_blank" rel="noopener noreferrer">查看完整说明</a>
+      </div>
+    </section>
+    <section class="customize-grid">
+      ${configItems
+        .map(
+          (item) => `
+            <article class="card customize-item">
+              <strong>${item.title}</strong>
+              <code>${item.file}</code>
+              <p>${item.note}</p>
+              <a class="btn" href="${item.href}" target="_blank" rel="noopener noreferrer">查看配置</a>
+            </article>
+          `
+        )
+        .join("")}
+    </section>
+    <section class="customize-steps">
+      <h2>完成更新</h2>
+      <ol>
+        <li>在 fork 的仓库中提交配置修改。</li>
+        <li>在仓库 Settings → Secrets and variables → Actions 中添加 <code>DEEPSEEK_API_KEY</code>。</li>
+        <li>运行 Actions → Update Paper Daily (Journal RSS Only)。</li>
+        <li>在 Settings → Pages 中启用 GitHub Pages。</li>
+      </ol>
+      <p>不要把 API key、私人文献库或本地缓存写入任何公开文件。</p>
+      <a class="btn" href="https://github.com/glacial7/paper-daily/actions/workflows/update-daily.yml" target="_blank" rel="noopener noreferrer">打开更新工作流</a>
+    </section>
+  `;
+}
+
 function renderChangelog() {
   const publicLogs = logs
     .filter((log) => !/公众号|微信|wechat/i.test(log.title))
@@ -2738,10 +2664,11 @@ const renderers = {
   updates: renderUpdates,
   daily: renderDaily,
   sources: renderSources,
+  customize: renderCustomize,
   changelog: renderChangelog
 };
 
-Promise.all([loadJournalGradeOverrides(), loadDoiJournalPatterns()])
+Promise.all([loadJournalGradeOverrides(), loadDoiJournalPatterns(), loadResearchProfile()])
   .then(loadGeneratedData)
   .finally(() => {
     renderers[page]?.();
