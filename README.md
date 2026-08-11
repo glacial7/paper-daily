@@ -4,6 +4,8 @@
 
 [在线示例](https://glacial7.github.io/paper-daily/) · [个性化设置](https://glacial7.github.io/paper-daily/customize.html) · [RSS 更新工作流](https://github.com/glacial7/paper-daily/actions/workflows/update-daily.yml)
 
+[MIT License](LICENSE) · [参与贡献](CONTRIBUTING.md) · [安全报告](SECURITY.md) · [最新版本](https://github.com/glacial7/paper-daily/releases/latest)
+
 Paper Daily 不做通用论文热榜。它先从公开期刊 RSS 建立较宽的候选池，再结合 DOI 元数据、研究主题和文献类型，整理出两层阅读队列：`日报`用于当天优先阅读的少量文献，`全部动态`保留更宽的新鲜候选，便于回看和主动检索。
 
 公开仓库提供一套中性的通用生态学起始配置，不包含维护者的研究项目、阅读历史、订阅列表或反馈数据。Fork 后可以把研究问题、主题权重、期刊等级和 RSS 信源替换为自己的版本。
@@ -89,3 +91,9 @@ GitHub Actions 工作流当前为手动触发，依次执行：
 ## 隐私与安全
 
 不要提交 API key、`.env.local`、Cookie、微信公众号订阅数据、本地 WeRSS 数据库、私人研究材料或个人模型缓存。公开 Fork 中的研究画像、反馈和信源列表都应被视为公开信息。
+
+发现凭据泄露、非公开数据发布或工作流安全问题时，请按照 [SECURITY.md](SECURITY.md) 使用 GitHub 私密漏洞报告，不要创建公开 Issue。贡献代码或配置前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## 许可证
+
+Paper Daily 以 [MIT License](LICENSE) 发布，允许在保留版权和许可声明的前提下使用、修改和分发。
