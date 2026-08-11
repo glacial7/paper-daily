@@ -6,19 +6,20 @@
     <title>Paper Daily</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body data-page="sources">
+  <body data-page="sources" data-edition="public-rss-only">
     <div class="shell">
       <aside class="side">
         <a class="brand" href="./index.html">Paper Daily</a>
         <nav class="nav" aria-label="Sections">
           <a href="./index.html" data-nav="daily">日报</a>
-          <a href="./updates.html" data-nav="updates">全部论文动态</a>
-          <a href="./sources.html" data-nav="sources">信源添加</a>
+          <a href="./updates.html" data-nav="updates">全部动态</a>
+          <a href="./sources.html" data-nav="sources">信源</a>
           <a href="./changelog.html" data-nav="changelog">更新日志</a>
         </nav>
       </aside>
       <main class="content" id="pageContent"></main>
     </div>
+    <script src="./data/latest.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

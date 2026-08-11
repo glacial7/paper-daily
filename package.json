@@ -1,0 +1,19 @@
+{
+  "name": "paper-daily-public-rss",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RSS-only public GitHub Pages edition of PaperDaily.",
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "prepare:public": "node scripts/prepare-public-rss-data.mjs",
+    "fetch:rss": "PAPER_DAILY_LOOKBACK_DAYS=14 PAPER_DAILY_STRICT_JOURNAL_RSS=1 PAPER_DAILY_INCLUDE_WECHAT=0 node scripts/fetch-sources.mjs",
+    "score:rss": "PAPER_DAILY_LOOKBACK_DAYS=14 PAPER_DAILY_RSS_ONLY=1 node scripts/score-papers.mjs",
+    "verify:rss-only": "node scripts/verify-public-rss-only.mjs",
+    "verify:scoring": "node scripts/verify-public-scoring.mjs",
+    "verify": "npm run verify:rss-only && npm run verify:scoring"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

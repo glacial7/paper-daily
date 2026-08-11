@@ -1,0 +1,259 @@
+{
+  "version": "2026-06-17",
+  "notes": "Manual journal ABC grades used before heuristic Nature Index/CAS/JCR rules. A grades are maintained manually. IF uses 5 Year JIF for display and same-tier sorting only; IF must not promote journal tiers.",
+  "journals": [
+    {
+      "title": "Science",
+      "subgrade": "A1",
+      "partitionScore": 25,
+      "displayScore": 97,
+      "tier": "a1_nature_science",
+      "label": "A1 Nature/Science 正刊"
+    },
+    {
+      "title": "Nature",
+      "subgrade": "A1",
+      "partitionScore": 25,
+      "displayScore": 97,
+      "tier": "a1_nature_science",
+      "label": "A1 Nature/Science 正刊"
+    },
+    {
+      "title": "Nature Reviews Biodiversity",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊"
+    },
+    {
+      "title": "Nature Reviews Earth & Environment",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊"
+    },
+    {
+      "title": "Nature Reviews Microbiology",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊",
+      "notes": "User override: all Nature Reviews journals are A2."
+    },
+    {
+      "title": "Nature Reviews Chemistry",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊",
+      "notes": "User override: all Nature Reviews journals are A2."
+    },
+    {
+      "title": "Annual Review of Ecology, Evolution, and Systematics",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊"
+    },
+    {
+      "title": "Biological Reviews",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊"
+    },
+    {
+      "title": "Trends in Ecology & Evolution",
+      "subgrade": "A2",
+      "partitionScore": 23.5,
+      "displayScore": 90,
+      "tier": "a2_top_selective",
+      "label": "A2 高影响综述期刊"
+    },
+    {
+      "title": "PNAS",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Current Biology",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "One Earth",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "The Innovation",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Science Advances",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Nature Ecology & Evolution",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Nature Sustainability",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Nature Geoscience",
+      "subgrade": "A3",
+      "partitionScore": 22,
+      "displayScore": 82,
+      "tier": "a3_high_impact_selective",
+      "label": "A3 综合期刊/大子刊"
+    },
+    {
+      "title": "Nature Microbiology",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_user_override",
+      "label": "B1 手工关注 Nature 子刊",
+      "notes": "User override: Nature Microbiology is B1."
+    },
+    {
+      "title": "Nature Cities",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_user_override",
+      "label": "B1 手工关注 Nature 子刊",
+      "notes": "User override: Nature Cities is B1."
+    },
+    {
+      "title": "Ecology Letters",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_nature_index",
+      "label": "B1 Nature Index/生态小类/环境生态大类一区"
+    },
+    {
+      "title": "Frontiers in Ecology and the Environment",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_nature_index",
+      "label": "B1 Nature Index/生态小类/环境生态大类一区"
+    },
+    {
+      "title": "Journal of Ecology",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Journal of Animal Ecology",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Journal of Applied Ecology",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Ecography",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Global Ecology and Biogeography",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Global Change Biology",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区",
+      "notes": "User override: Global Change Biology is B2."
+    },
+    {
+      "title": "Functional Ecology",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Ecology",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_nature_index",
+      "label": "B1 Nature Index/生态小类/环境生态大类一区"
+    },
+    {
+      "title": "Ecological Applications",
+      "subgrade": "B2",
+      "partitionScore": 15,
+      "displayScore": 62,
+      "tier": "b2_cas_small_or_large_q1",
+      "label": "B2 CAS 小类/大类一区"
+    },
+    {
+      "title": "Ecological Monographs",
+      "subgrade": "B1",
+      "partitionScore": 18,
+      "displayScore": 72,
+      "tier": "b1_nature_index",
+      "label": "B1 Nature Index/生态小类/环境生态大类一区"
+    }
+  ]
+}
